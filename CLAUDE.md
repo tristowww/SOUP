@@ -62,7 +62,7 @@ Use this taxonomy to route work correctly:
 When working on course differentiation, reference these proprietary contributions:
 
 1. **AIRA Framework** (`Publications/Chapter 18.md`) - AI-enabled workplace inclusion. Forthcoming OUP chapter. Five pillars: Autonomy, Individualization, Representation, Anonymity, Belonging.
-2. **LPA + NLP for Job Ads** (`Publications/Ristow_TL_D_2023.md`) - Dissertation combining latent profile analysis with transformer-based NLP for analyzing deception perception in job advertisements.
+2. **LPA + NLP for Job Ads** (`Publications/Ristow_TL_D_2023.md`) - Dissertation combining latent profile analysis with transformer-based NLP for analyzing deception perception in job advertisements. Directly applicable to job seekers (Courses 8-10) without perspective flip — powers the "Decoding Job Ads" and "Red Flag Toolkit" modules.
 3. **Curbstoning Detection** (`Publications/Curbing-Curbstoning*.md`) - Novel survey data fabrication detection methods (Psychological Methods).
 4. **VOIS Framework** (`Publications/13428_2022_Article_2045.md`) - Voice Over Internet Surveys methodology (Behavior Research Methods).
 5. **Python-Integrated HR Analytics Curriculum** - Assignments across PM (4-5) and Org Psych (2, 5, 6) courses teaching pandas, matplotlib, TextBlob, scikit-learn for HR applications.
@@ -71,7 +71,9 @@ When working on course differentiation, reference these proprietary contribution
 
 ## Commercial Course Lineup
 
-Seven courses planned (see `COURSE_STRATEGY_DELIVERABLE.md` for full details):
+Ten courses planned across two verticals (see `COURSE_STRATEGY_DELIVERABLE.md` for full details):
+
+**Employer-Side Vertical (Courses 1-7):**
 
 | # | Course Title | Priority | Price Tier | Primary Sources |
 |---|-------------|----------|------------|-----------------|
@@ -83,12 +85,23 @@ Seven courses planned (see `COURSE_STRATEGY_DELIVERABLE.md` for full details):
 | 6 | Data-Driven DEI | Phase 2 | $497-997 | Training W14; Org W13; Chapter 18 |
 | 7 | Workplace Psychology Essentials | Gateway | $49-97 | Org W4-12 |
 
+**Job-Seeker Vertical (Courses 8-10):**
+
+| # | Course Title | Priority | Price Tier | Primary Sources |
+|---|-------------|----------|------------|-----------------|
+| 8 | The Science of Getting Hired | Phase 3 | $97-197 | Selection W10-14; W5; Dissertation |
+| 9 | Choose Wisely | Phase 3 | $97-197 | Selection W3-4; Org W4,W6,W8,W12; Dissertation |
+| 10 | The Hiring Insider's Toolkit | Phase 3 | $297-997 (B2B: $5K-25K) | Courses 8-9 content; Training W3; Course 1 |
+
+**Bundle:** Courses 8+9 at $247-347
+
 ---
 
 ## Audience Segments
 
-Nine target segments identified. When creating content, consider which segment(s) the output serves:
+Twelve target segments identified across two verticals. When creating content, consider which segment(s) the output serves:
 
+**Employer-Side Segments (Courses 1-7):**
 1. **HR Professionals** - PHR/SPHR certified, continuing education seekers
 2. **People Managers** - Non-HR managers taking on HR duties
 3. **Small Business Owners** - Sub-50 employees, building HR from scratch
@@ -98,6 +111,11 @@ Nine target segments identified. When creating content, consider which segment(s
 7. **Tech/Startup People Ops** - First HR hires building processes
 8. **HR Consultants** - Building advisory practices
 9. **L&D Professionals** - Training managers, instructional designers
+
+**Job-Seeker Segments (Courses 8-10):**
+10. **Recent Graduates & Career Starters** - 0-3 years post-graduation, actively job seeking, high volume/high price sensitivity ($49-197)
+11. **Mid-Career Professionals Seeking Change** - 5-20 years experience, career pivots/transitions, moderate price sensitivity ($97-397)
+12. **Career Coaches, Outplacement, & University Career Centers** - B2B buyers, low price sensitivity ($297-997+), licensing potential
 
 ---
 
@@ -135,6 +153,21 @@ When converting academic content to commercial courses:
 - `IO_Psych_Course_Strategy_Prompt.md` - Original strategy prompt (reference for methodology)
 - Syllabi in each course directory define the canonical topic sequence
 - `Publications/` directory contains Teresa's unique research contributions
+
+---
+
+## Humanizer Requirement
+
+**ALL generated content intended as human-readable or final-draft output MUST be run through `/skills humanizer` before delivery.** This includes but is not limited to:
+
+- Module scripts and lesson content
+- Assessment questions and answer keys
+- Practitioner summaries and research syntheses
+- Templates, checklists, and tool descriptions
+- Marketing copy, course descriptions, and email drafts
+- Any other prose the end user or customer will read
+
+Internal/structural outputs (code, data tables, file listings, status updates, CLAUDE.md edits, etc.) are exempt.
 
 ---
 

@@ -271,6 +271,28 @@
        ├── Survey fabrication detection (Publication)
        ├── Reliability computation (PM W9)
        └── Meta-analytic interpretation (Multiple courses)
+
+7. JOB SEARCH & CAREER STRATEGY (CANDIDATE-SIDE)
+   ├── 7.1 Resume & Application Science
+   │   ├── Biodata validity for candidate strategy (Selection W10)
+   │   ├── ATS navigation and keyword optimization (Selection W14)
+   │   └── Application form strategy (Selection W10)
+   ├── 7.2 Interview Mastery from the Inside
+   │   ├── Structured interview scoring — candidate preparation (Selection W11)
+   │   ├── Behavioral interview technique grounded in STAR research (Selection W11)
+   │   ├── AI video interview preparation (Selection W14)
+   │   └── Assessment center navigation (Selection W13)
+   ├── 7.3 Assessment & Testing Preparation
+   │   ├── Cognitive ability test demystification (Selection W12)
+   │   ├── Personality assessment understanding (Selection W12)
+   │   ├── SJT and work simulation preparation (Selection W13)
+   │   └── Candidate rights in testing (Selection W5)
+   └── 7.4 Job Ad Red Flag Detection ★ TERESA'S MOAT (DIRECT APPLICATION)
+       ├── NLP-identified deception markers in job postings (Dissertation)
+       ├── Employer credibility evaluation framework (Dissertation + Selection W4)
+       ├── Person-job/person-org fit self-assessment (Selection W3)
+       ├── Culture assessment from the outside (Org W6)
+       └── Job satisfaction predictor evaluation (Org W4)
 ```
 
 ### Cross-Cutting Themes
@@ -285,6 +307,8 @@
 
 5. **Python/Data Analytics for HR** - PM Assignments 4-5, Org Assignments 2/5/6. Concrete computational skills that no competing I/O course platform currently offers in this integrated fashion.
 
+6. **Candidate-Side Perspective Flip** - The same selection science that informs employer-side hiring system design (Clusters 1-2) can be "flipped" to serve job seekers. Structured interview frameworks become interview preparation guides; resume screening research becomes resume optimization strategy; validity evidence becomes assessment preparation. Teresa's dissertation on deceptive job ad language (Cluster 7.4) applies directly to candidates without any flipping needed. This opens an entirely new audience vertical (Segments 10-12) from existing content.
+
 ### Depth Spectrum by Cluster
 
 | Cluster | Foundational | Intermediate | Advanced | Supports Tiered Series? |
@@ -295,12 +319,13 @@
 | Org Behavior | W2, W4 (attitudes) | W6-8 (culture, motivation) | W9-13 (stress, teams, DEI) | Single course with depth options |
 | DEI | Training W14 basics | Org W13 (analytics) | Chapter 18 (AI+DEI) | Yes - Foundation + AI Premium |
 | Data Science for HR | Org Assign 2 (intro Python) | PM Assign 4 (360 computation) | Org Assign 5 (NLP), PM Assign 5 (ICC) | Yes - Definite tiered series |
+| Job Search & Career Strategy | W3 (fit concepts), W10 (resumes) | W11 (interviews), W12 (tests), W4 (satisfaction) | W14 (AI screening), Dissertation (deception detection) | Yes - Candidate course + Coach course |
 
 ### Unique IP Indicators
 
 1. **AIRA Framework (Chapter 18)** - Teresa's original framework mapping AI solutions to inclusion barriers. Forthcoming OUP publication. No competitor has this.
 
-2. **LPA + NLP for Job Ad Analysis (Dissertation)** - Person-centered approach to understanding how different applicant types perceive deception in job postings. Unique combination of latent profile analysis with transformer-based NLP.
+2. **LPA + NLP for Job Ad Analysis (Dissertation)** - Person-centered approach to understanding how different applicant types perceive deception in job postings. Unique combination of latent profile analysis with transformer-based NLP. **Note:** This research applies directly to job seekers without any perspective flip — it is the foundation of the "Decoding Job Ads" module in Course 8 and the "Red Flag Toolkit" in Course 10, making it Teresa's strongest unique asset for the candidate-side course vertical.
 
 3. **Curbstoning Detection Methods (Publication)** - Novel, low-cost survey fraud detection. Niche but defensible IP for research methods audiences.
 
@@ -687,6 +712,136 @@
 
 ---
 
+### Segment 10: Recent Graduates & Career Starters
+
+**Who they are:** Recent college and graduate school graduates (0-3 years post-graduation), career starters, people entering the workforce for the first time or re-entering after a gap. Ages 21-30. Actively job seeking or in early-career positions considering their next move.
+
+**Pain points this content solves:**
+- Applying to hundreds of jobs with minimal response (don't understand ATS or structured screening)
+- Failing interviews without understanding what interviewers are actually measuring
+- Accepting jobs that turn out to be misrepresented (deceptive job ads)
+- No framework for evaluating employers beyond salary and brand recognition
+- Overwhelmed by generic job search advice that contradicts itself
+
+**Willingness to pay signals:**
+- Student loan debt creates urgency to land a good job quickly
+- Career services are free but end at graduation; alumni often seek continued support
+- Entry-level salary increase from landing a better job ($5,000-15,000) justifies course investment
+- Parents/family often willing to fund career development for new graduates
+- High emotional stakes: first job shapes career trajectory
+
+**Content fit:** Clusters 7.1-7.4 (full job search strategy), 1.2 (selection methods — candidate side), 1.5 (AI screening), 4.1 (satisfaction predictors), 4.2 (culture assessment)
+
+**Adaptation required:** Heavy simplification. Remove all I/O jargon. Add "first job" examples. Create step-by-step action guides. Use relatable scenarios (campus recruiting, entry-level positions, career fairs). Shorter modules with high engagement.
+
+**Competitive landscape notes:**
+- **Ramit Sethi (I Will Teach You to Be Rich):** $2,000 for Dream Job course; strong brand, not evidence-based
+- **Career Contessa:** $25-150 per course; practitioner-focused but no research backing
+- **LinkedIn Learning:** Generic interview prep; no insider perspective
+- **University career centers:** Free but inconsistent quality and limited post-graduation access
+- **Gap:** No job search course taught by someone who designs the hiring systems candidates are trying to navigate
+
+**Keyword research targets:**
+- "how to get a job after college" / "job search tips for new graduates"
+- "how to pass ATS" / "resume tips for entry level"
+- "how to prepare for interviews" / "behavioral interview preparation"
+- "job ad red flags" / "how to spot a bad employer"
+- "first job advice" / "career starter guide"
+
+**Market size signal:** Very large - 4+ million college graduates per year in the US; 70%+ actively job seeking
+**Price sensitivity:** High - $49-197 per course; personal purchases, parent-funded, or early employer reimbursement
+**Channel accessibility:** TikTok, Instagram, YouTube, Reddit (r/jobs, r/careerguidance, r/resumes), university alumni networks, LinkedIn
+
+---
+
+### Segment 11: Mid-Career Professionals Seeking Change
+
+**Who they are:** Professionals with 5-20 years of experience considering or actively pursuing career transitions. May be leaving toxic workplaces, seeking advancement, pivoting industries, or returning to work after a break. Ages 30-50. Often have financial obligations that make career decisions higher-stakes.
+
+**Pain points this content solves:**
+- Job search skills are rusty (haven't interviewed in 5-15 years; hiring has changed dramatically)
+- Don't understand modern AI screening, ATS systems, or video interviews
+- Need to evaluate whether a new opportunity is genuinely better (not just different)
+- Risk of accepting another bad-fit job due to urgency or desperation
+- Imposter syndrome and identity disruption during career transitions
+- Generic career advice doesn't account for mid-career complexity (salary history, career narrative, overqualification)
+
+**Willingness to pay signals:**
+- Higher disposable income than entry-level (willing to invest $97-397 in career development)
+- Cost of a bad career move at mid-career is enormous (salary gaps, benefit losses, relocation)
+- Executive coaching costs $200-500/hour; self-paced course is dramatically cheaper
+- Career transitions often coincide with life events (layoffs, burnout) that create urgency
+- Employer outplacement benefits may cover course costs
+
+**Content fit:** Clusters 7.1-7.4 (full job search strategy), 4.1 (satisfaction — knowing what predicts it), 4.2 (culture assessment), 4.3 (wellbeing — identifying burnout signals), 2.4 (motivation — career decision framework)
+
+**Adaptation required:** Moderate. Use mid-career examples (industry pivots, return-to-work, senior-level hiring). Address overqualification, salary negotiation from a position of experience, and career narrative construction. Include work-life balance evaluation frameworks.
+
+**Competitive landscape notes:**
+- **Korn Ferry / Right Management outplacement:** $3,000-25,000; employer-funded, available only during layoffs
+- **Career coaching (independent):** $150-500/hour; effective but expensive and variable quality
+- **Ramit Sethi Dream Job:** $2,000; broad appeal but not mid-career specific
+- **Coursera career certificates:** $39/month; skills-focused, not job search strategy
+- **Gap:** No evidence-based career transition course specifically for experienced professionals
+
+**Keyword research targets:**
+- "career change at 40" / "how to change careers"
+- "job search after layoff" / "job search strategy experienced professionals"
+- "how to evaluate a job offer" / "should I take this job"
+- "toxic workplace signs" / "how to tell if a company is good to work for"
+- "interview preparation for senior roles" / "executive job search"
+- "career pivot framework" / "career transition planning"
+
+**Market size signal:** Large - 6.5 million Americans voluntarily change jobs monthly; millions more considering
+**Price sensitivity:** Moderate - $97-397 per course; personal or outplacement-funded
+**Channel accessibility:** LinkedIn, podcasts (career-focused), Google search, professional associations, outplacement referrals
+
+---
+
+### Segment 12: Career Coaches, Outplacement Professionals, & University Career Centers
+
+**Who they are:** Independent career coaches (ICF-certified or otherwise), outplacement consultants at firms like Right Management or Lee Hecht Harrison, university career services directors and counselors, workforce development professionals. B2B and B2C buyers.
+
+**Pain points this content solves:**
+- Coaching advice is based on personal experience, not research (credibility gap)
+- Don't understand how modern hiring systems actually work (ATS, AI screening, structured interviews)
+- Need frameworks and tools to systematize coaching practice
+- University career centers need staff training on current hiring trends
+- Outplacement firms need scalable, evidence-based training for their coaches
+- Want to differentiate from the thousands of coaches offering generic advice
+
+**Willingness to pay signals:**
+- Career coaching is a $2B+ industry; practitioners invest in tools and training
+- ICF certification costs $3,000-12,000; coaches already invest heavily in credentials
+- University career centers have annual professional development budgets ($2,000-10,000/person)
+- Outplacement firms bill $3,000-25,000 per placement; training cost is negligible
+- B2B licensing for 10-50 users can generate significant per-deal revenue ($5,000-25,000)
+- Evidence-based positioning commands premium coaching rates ($250-500/hour vs. $100-200)
+
+**Content fit:** All of Clusters 7.1-7.4, plus 1.2 (employer perspective for coaches), 3.4 (coaching methodology), 4.1-4.2 (satisfaction and culture — advising frameworks)
+
+**Adaptation required:** Moderate. Repackage candidate-side content as coach knowledge base. Create client-facing deliverables (white-label templates). Add coaching business development content. Create B2B licensing materials for institutional buyers.
+
+**Competitive landscape notes:**
+- **ICF training programs:** $3,000-12,000; general coaching, not career-specific
+- **Career Thought Leaders:** $500-2,000; resume writing focused
+- **NACE (National Association of Colleges and Employers):** $500-1,500; university-focused, not evidence-based
+- **NCDA (National Career Development Association):** $200-500 for conferences; credentialing-focused
+- **Gap:** No train-the-trainer career coaching program grounded in I/O psychology selection science
+
+**Keyword research targets:**
+- "career coaching certification" / "evidence-based career coaching"
+- "career coaching tools" / "career coaching frameworks"
+- "outplacement training program" / "outplacement consultant training"
+- "university career services training" / "career counselor professional development"
+- "career coach business development" / "how to start a career coaching business"
+
+**Market size signal:** Medium - estimated 50,000+ career coaches in the US; 4,000+ university career centers; hundreds of outplacement firms
+**Price sensitivity:** Low - $297-997 for self-paced; $5,000-25,000 for B2B licenses; business investment with direct ROI
+**Channel accessibility:** ICF chapters, NACE conferences, LinkedIn, career coaching communities, outplacement firm partnerships, university career services networks
+
+---
+
 ## Step 4: Course Product Architecture
 
 ### Course 1: "Structured Hiring That Works: Build an Evidence-Based Selection System"
@@ -843,6 +998,72 @@
 
 ---
 
+### Course 8: "The Science of Getting Hired: What I/O Psychologists Know That Job Seekers Don't"
+
+**Primary Audience:** Recent Graduates & Career Starters (Segment 10), Mid-Career Professionals Seeking Change (Segment 11)
+**Secondary Audience:** I/O Psych Students/Early-Career (Segment 4), Career Coaches & Outplacement (Segment 12)
+**Core Topic Clusters Used:** 7.1 (resume science), 7.2 (interview mastery), 7.3 (assessment preparation), 7.4 (job ad red flags), 1.2 (selection methods — candidate perspective), 1.5 (AI screening)
+
+**Differentiator:** Taught by someone who designs the hiring systems candidates are trying to navigate. Teresa's research on structured interview design (Campion's 15 components), selection method validity, and her dissertation on deceptive job ad language gives candidates an insider understanding of what employers actually measure, how AI screens applications, and how to spot red-flag job postings.
+
+**Format Recommendation:** Self-paced, 6-8 modules, ~8 hours total content. Each module: 15-min video lesson + downloadable tool + self-assessment exercise.
+
+**Estimated Content Effort:** 40% existing material adaptation / 60% new creation
+- Existing: Structured interview framework — candidate prep version (Selection W11), biodata/resume validity (Selection W10), cognitive ability/personality tests (Selection W12), work simulations/ACs (Selection W13), AI video interviews and social media screening (Selection W14), candidate rights (Selection W5), deceptive job ad NLP analysis (Dissertation)
+- New needed: Video recordings, candidate-perspective case studies, resume optimization templates, interview prep worksheets, job ad evaluation checklist, assessment practice exercises, salary negotiation framework
+
+**Price Tier:** Standard ($97-197); Bundle with Course 9: $247-347
+
+**Cross-sell / Upsell Path:** → Course 9 (Choose Wisely) → Course 8+9 Bundle → Course 10 (for career coaches)
+
+**MVP Scope:** 5 core modules: (1) How Hiring Actually Works (selection systems from the inside), (2) Resume Science (ATS, biodata validity, optimization), (3) Interview Mastery (structured interview scoring, STAR grounded in research), (4) Surviving Assessments (cognitive tests, personality, SJTs, simulations), (5) Decoding Job Ads (Teresa's dissertation research: NLP-identified deception markers). Includes: resume audit checklist, STAR story bank worksheet, interview prep planner, assessment guide, job ad red flag tool.
+
+---
+
+### Course 9: "Choose Wisely: The Science of Finding a Job You Won't Want to Leave"
+
+**Primary Audience:** Mid-Career Professionals Seeking Change (Segment 11), Recent Graduates & Career Starters (Segment 10)
+**Secondary Audience:** I/O Psych Students/Early-Career (Segment 4), Career Coaches & Outplacement (Segment 12)
+**Core Topic Clusters Used:** 4.1 (satisfaction predictors), 4.2 (culture assessment), 4.3 (wellbeing/work-life), 2.4 (motivation/career decisions), 7.4 (job ad red flags), 1.1 (P-J/P-O fit — candidate side)
+
+**Differentiator:** Job search courses focus on getting hired. This course focuses on getting hired at the right place. Teresa's expertise in job satisfaction predictors, person-job/person-org fit, organizational culture assessment, and her dissertation on deceptive job ad language gives candidates a research-backed framework for evaluating employers — not just impressing them.
+
+**Format Recommendation:** Self-paced, 5-6 modules, ~6 hours total content. Each module: 15-min video lesson + evaluation tool + reflection exercise.
+
+**Estimated Content Effort:** 35% existing material adaptation / 65% new creation
+- Existing: Person-job/person-org fit (Selection W3), applicant attraction research (Selection W4), job satisfaction (Org W4), culture models (Org W6), self-determination theory (Org W8), work-life balance (Org W12), goal-setting (PM W7), coaching/mentoring (Training W3), deceptive job ads (Dissertation)
+- New needed: Video recordings, employer evaluation scorecard, career decision matrix, culture assessment interview questions, work-life fit self-assessment, career values exercise, job offer comparison tool
+
+**Price Tier:** Standard ($97-197); Bundle with Course 8: $247-347
+
+**Cross-sell / Upsell Path:** → Course 8 (The Science of Getting Hired) → Course 8+9 Bundle → Course 7 (Workplace Psychology deeper context)
+
+**MVP Scope:** 4 core modules: (1) What Actually Predicts Job Satisfaction (P-J fit, P-O fit, research on what matters beyond salary), (2) Reading Organizational Culture from the Outside (assessment during interviews, signals, questions to ask), (3) The Science of Career Decisions (SDT, goal-setting, expectancy theory applied to career choices), (4) Due Diligence (dissertation research on deceptive ads, employer credibility evaluation, offer comparison framework). Includes: career values worksheet, employer evaluation scorecard, culture assessment question bank, job offer comparison matrix, red flag checklist.
+
+---
+
+### Course 10: "The Hiring Insider's Toolkit: Evidence-Based Career Coaching Frameworks"
+
+**Primary Audience:** Career Coaches, Outplacement Professionals, & University Career Centers (Segment 12)
+**Secondary Audience:** HR Consultants (Segment 8), I/O Psych Students/Early-Career (Segment 4)
+**Core Topic Clusters Used:** 7.1-7.4 (full job search cluster — repackaged for coaches), 1.2 (employer perspective for coaches), 3.4 (coaching methodology), 4.1-4.2 (satisfaction/culture for advising)
+
+**Differentiator:** Career coaching is a $2B+ industry built largely on anecdote and personal experience. This course gives coaches and career services professionals the same I/O psychology research base that informs hiring system design — packaged into client-ready coaching frameworks. The only train-the-trainer career coaching program grounded in published selection science and organizational psychology research.
+
+**Format Recommendation:** Self-paced core: 6-8 modules, ~10 hours. Workshop-enhanced version adds 4 live coaching practice sessions. B2B license includes customization consultation and bulk access.
+
+**Estimated Content Effort:** 55% existing material adaptation / 45% new creation
+- Existing: All Course 8-9 content repackaged for coaches, Course 1 employer perspective (structured hiring), coaching methodology (Training W3), training design principles (Training W4-6)
+- New needed: Video recordings, white-label coaching templates, client-facing workshop guides, coach business development module, B2B pitch materials, case studies
+
+**Price Tier:** Premium self-paced ($297-497); Workshop-enhanced ($697-997); B2B site license ($5,000-25,000)
+
+**Cross-sell / Upsell Path:** → Workshop-enhanced version → B2B site license → Course 5 (AI-Powered HR for advanced coach knowledge) → Course 1 (employer perspective deep-dive)
+
+**MVP Scope:** 4 core modules: (1) The Science Your Clients Don't Know (how hiring systems work — selection methods, validity, decision models), (2) Client Assessment & Career Fit Frameworks (P-J fit, P-O fit, satisfaction predictors for coaching), (3) Teaching Clients to Navigate Modern Hiring (coaching protocols for resumes, interviews, AI screening), (4) The Red Flag Toolkit (dissertation research packaged for coaches). Includes: 4 client-facing workshop outlines, 8 white-label coaching templates, coach knowledge assessment, evidence-based coaching positioning guide.
+
+---
+
 ### Strategic Questions Addressed
 
 **1. Which 1-2 courses represent the lowest effort, highest demand "launch first" candidates?**
@@ -851,7 +1072,7 @@
 
 Rationale:
 - **Highest content readiness:** Both draw from the most complete course materials (Selection and PM have the most structured, week-by-week content with clear frameworks)
-- **Broadest audience appeal:** Hiring and performance management are universal needs across all 9 segments
+- **Broadest audience appeal:** Hiring and performance management are universal needs across all 12 segments
 - **Strongest search demand signals:** "how to conduct structured interviews," "performance review best practices," and "hiring bias" are high-volume, high-intent searches
 - **Lowest creation gap:** The structured interview 15-component framework (Campion et al.) and PM cycle content are already in practitioner-accessible form
 - **Clear ROI story:** Bad hires cost $15,000-240,000; dysfunctional PM systems drive turnover. The financial case for these courses writes itself.
@@ -876,6 +1097,16 @@ These are where Teresa's moat is deepest:
 - **Course 2 (PM):** Same rationale. The PM cycle applies everywhere; vary the examples, not the course.
 - **Course 3 (Training Design):** The design principles are universal; industry examples can be swapped.
 - **Courses 5-6:** The AI/DEI content is already specialized enough; no split needed.
+- **Courses 8-9 (Job Seeker):** Content is audience-universal (the hiring science applies regardless of industry), but marketing and examples should be segment-specific: Course 8 marketing emphasizes entry-level for Segment 10, career transition for Segment 11. Course 9 marketing emphasizes culture assessment for Segment 11, first-job evaluation for Segment 10.
+- **Course 10 (Coaching Toolkit):** Single course with three delivery tiers (self-paced, workshop-enhanced, B2B license) rather than version splits. The knowledge base is identical; only the delivery model and support level change.
+
+**5. How does the job-seeker vertical relate to the employer-side courses?**
+
+**Complementary, not competitive.** The job-seeker courses (8-10) serve entirely different audience segments (10-12) than the employer-side courses (1-7, serving segments 1-9). They share source material but flip the perspective. This creates several strategic advantages:
+- **Content efficiency:** 40-55% of job-seeker course content comes from existing employer-side materials, reducing creation effort
+- **Cross-referencing credibility:** "Taught by the person who designs the systems you're trying to navigate" is a powerful positioning statement
+- **B2B pipeline:** Course 10 creates a new B2B revenue stream (university career centers, outplacement firms) that doesn't exist in the employer-side lineup
+- **Audience expansion:** Job seekers are a vastly larger addressable market than HR professionals (millions vs. hundreds of thousands)
 
 **4. What content gaps exist that would need to be filled before launch?**
 
@@ -964,6 +1195,36 @@ Content-specific gaps:
 | data-driven diversity | Commercial | DEI |
 | DEI certification | Commercial | DEI Practitioners |
 
+**Group 6: Job Search & Career Strategy (Courses 8-9)**
+| Seed Keyword | Expected Intent | Target Segment |
+|-------------|----------------|----------------|
+| how to pass a structured interview | Informational/Commercial | Career Starters, Mid-Career |
+| ATS resume optimization | Commercial | Career Starters, Mid-Career |
+| job ad red flags | Informational | Career Starters, Mid-Career |
+| how to prepare for assessment center | Commercial | Career Starters, Mid-Career |
+| science of job searching | Informational | Career Starters, I/O Students |
+| how to evaluate a job offer | Informational | Mid-Career |
+| company culture red flags | Informational | Mid-Career, Career Starters |
+| career change framework | Commercial | Mid-Career |
+| job satisfaction predictors | Informational | Mid-Career, I/O Students |
+| AI interview preparation | Commercial | Career Starters, Mid-Career |
+| how to spot fake job postings | Informational | Career Starters, Mid-Career |
+| questions to ask employer in interview | Informational | Career Starters, Mid-Career |
+
+**Group 7: Career Coaching & Outplacement (Course 10)**
+| Seed Keyword | Expected Intent | Target Segment |
+|-------------|----------------|----------------|
+| career coaching certification | Commercial | Career Coaches |
+| evidence-based career coaching | Commercial | Career Coaches |
+| career coaching frameworks | Commercial | Career Coaches |
+| outplacement training program | Commercial | Outplacement Professionals |
+| university career services training | Commercial | University Career Centers |
+| career coach business development | Commercial | Career Coaches |
+| career counselor professional development | Commercial | Career Centers |
+| how to start career coaching business | Commercial | Career Coaches |
+| career coaching tools | Commercial | Career Coaches |
+| IO psychology career coaching | Informational/Commercial | I/O Students, Career Coaches |
+
 #### Google Trends Analysis
 
 Track 5-year trends for these comparison groups:
@@ -972,12 +1233,15 @@ Track 5-year trends for these comparison groups:
 - "DEI training" vs. "unconscious bias training" vs. "diversity analytics"
 - "training evaluation" vs. "training ROI" vs. "learning analytics"
 - "HR certification" vs. "people analytics certification" vs. "HR analytics course"
+- "job search tips" vs. "career coaching" vs. "interview preparation" vs. "resume tips"
 
 **Expected signals:**
 - "AI in HR" and "people analytics" trending UP (validates Course 5)
 - "DEI training" potentially declining post-2023 political backlash, but "diversity analytics" and "DEI metrics" likely stable/growing (validates data-driven positioning of Course 6)
 - "structured interview" likely steady/growing (validates Course 1)
 - "performance management" likely steady with seasonal spikes (Q4 review season) (validates Course 2)
+- "interview preparation" and "resume tips" likely very high volume with seasonal spikes (May graduation, January new-year job searches) (validates Courses 8-9)
+- "career coaching" likely growing as gig economy and career transitions increase (validates Course 10)
 
 #### Competitor Course Audit
 
@@ -997,6 +1261,13 @@ Track 5-year trends for these comparison groups:
 | SHRM | Learning System | Courses 1-3 |
 | ATD | Training Certificate | Course 3 |
 | Josh Bersin Academy | HR Professional Membership | All |
+| Ramit Sethi | Dream Job | Courses 8-9 |
+| Career Contessa | Job Search courses | Courses 8-9 |
+| The Muse | Career coaching packages | Courses 8-9 |
+| Work It Daily | Job search membership | Courses 8-9 |
+| ICF | Career coaching certification tracks | Course 10 |
+| NACE | Career services professional development | Course 10 |
+| Career Thought Leaders | Resume/career coaching training | Course 10 |
 
 #### Reddit/Community Analysis
 
@@ -1175,6 +1446,16 @@ Apply to top 3 course concepts. Ask respondents (from survey above, supplemented
 
 16. **Pre-launch email list building:** Create a lead magnet (e.g., "The Science-Backed Interview Scorecard" or "17 Biases That Destroy Performance Reviews") to build email list on Kajabi.
 
+### Job-Seeker Vertical Launch (Months 6-10)
+
+17. **Month 6-7: Launch Course 8 (The Science of Getting Hired)** - Begin candidate-side content adaptation from Selection materials. Create resume, interview, and assessment tools. Develop the "Decoding Job Ads" module from dissertation research. Market to Segments 10-11 via TikTok, YouTube, LinkedIn, and Reddit.
+
+18. **Month 7-8: Launch Course 9 (Choose Wisely)** - Develop employer evaluation and career decision frameworks from Org Psych materials. Create culture assessment and job offer evaluation tools. Bundle with Course 8 at $247-347.
+
+19. **Month 8-9: Validate Course 10 demand** - Survey Course 8-9 enrollees for interest in coaching/career services training. Begin outreach to university career centers and outplacement firms for B2B interest validation.
+
+20. **Month 9-10: Launch Course 10 (The Hiring Insider's Toolkit)** - Repackage Courses 8-9 content as coach knowledge base. Create white-label templates and client-facing workshop guides. Launch self-paced version first, then workshop-enhanced version. Begin B2B outreach for site licensing.
+
 ### Decision Gates
 
 **Gate 1 (After keyword research, ~Week 3):**
@@ -1250,6 +1531,18 @@ SHRM and HRCI continuing education credits would immediately validate Courses 1-
 | Course 5: AI-Powered HR | 45% | 55% (video, code, datasets) | **#2 (Month 5-7)** | High ($497-797) |
 | Course 6: Data-Driven DEI | 40% | 60% (video, tools, facilitation) | #3 (Month 6-8) | High ($497-997) |
 | Course 7: Workplace Essentials | 50% | 50% (video, simplified content) | **#1 (Month 2-3)** | Low-Gateway ($49-97) |
+| Course 8: The Science of Getting Hired | 40% | 60% (video, candidate-side reframing, templates) | #5 (Month 6-7) | Medium ($97-197) |
+| Course 9: Choose Wisely | 35% | 65% (video, evaluation frameworks, tools) | #6 (Month 7-8) | Medium ($97-197) |
+| Course 10: The Hiring Insider's Toolkit | 55% | 45% (video, white-label templates, B2B materials) | #7 (Month 9-10) | High ($297-997; $5K-25K B2B) |
+
+---
+
+### 6. Expand into the Job-Seeker Vertical (Courses 8-10)
+**Confidence: MEDIUM-HIGH (75%)**
+
+Teresa's unique position — an I/O psychologist who designs hiring systems and researches deceptive job ads — creates a powerful differentiator for candidate-side courses. The positioning "taught by someone who designs the systems you're trying to navigate" is compelling and no competitor can credibly claim it. Courses 8-9 target a vastly larger addressable market (millions of job seekers) than the employer-side courses (hundreds of thousands of HR professionals), while Course 10 opens a new B2B revenue stream through university career center and outplacement firm licensing. The content efficiency is strong: 40-55% of material comes from existing employer-side source materials with a perspective flip.
+
+*What could change this:* If keyword research shows that the job search course market is too saturated for premium pricing (Ramit Sethi, Career Contessa, and dozens of Udemy courses already exist); if the I/O psychology insider angle doesn't resonate with job seekers who want practical tips over research-backed frameworks. Course 10 B2B licensing model needs validation before significant investment.
 
 ---
 
