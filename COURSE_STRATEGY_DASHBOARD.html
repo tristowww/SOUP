@@ -5,260 +5,336 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOUP Course Strategy Dashboard</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg-void: #050508;
-    --bg-base: #0a0a10;
-    --bg-elevated: #111118;
-    --bg-card: rgba(255,255,255,0.04);
-    --bg-card-hover: rgba(255,255,255,0.07);
-    --glass: rgba(255,255,255,0.06);
-    --glass-border: rgba(255,255,255,0.08);
-    --fg: #EDEDEF;
-    --fg-muted: #8A8F98;
-    --fg-dim: #555;
-    --accent: #6366F1;
-    --accent-light: #818CF8;
-    --accent-glow: rgba(99,102,241,0.25);
-    --accent2: #F97316;
-    --accent2-glow: rgba(249,115,22,0.2);
-    --accent3: #10B981;
-    --accent3-glow: rgba(16,185,129,0.2);
-    --accent4: #EC4899;
-    --accent4-glow: rgba(236,72,153,0.2);
-    --accent5: #06B6D4;
-    --accent6: #8B5CF6;
-    --border: rgba(255,255,255,0.06);
-    --radius: 16px;
-    --radius-sm: 10px;
-    --radius-xs: 6px;
-    --font: 'Inter', -apple-system, sans-serif;
-    --mono: 'JetBrains Mono', monospace;
-    --shadow: 0 8px 32px rgba(0,0,0,0.4);
-    --transition: 200ms cubic-bezier(0.16,1,0.3,1);
+    --bg: #F8F6F2;
+    --bg-warm: #FDF9F4;
+    --bg-card: rgba(255,255,255,0.65);
+    --bg-card-hover: rgba(255,255,255,0.85);
+    --plum: #3D2C5E;
+    --plum-light: #5A4478;
+    --plum-muted: #7B6A94;
+    --text: #3D2C5E;
+    --text-secondary: #7B6A94;
+    --text-light: #A89BBF;
+    --sage: #B8CDBA;
+    --sage-dark: #8FB093;
+    --sage-bg: rgba(184,205,186,0.2);
+    --peach: #F4C7AB;
+    --peach-bg: rgba(244,199,171,0.2);
+    --lavender: #C5B8D9;
+    --lavender-bg: rgba(197,184,217,0.2);
+    --gold: #E8C97A;
+    --gold-bg: rgba(232,201,122,0.15);
+    --coral: #E8A0A0;
+    --coral-bg: rgba(232,160,160,0.15);
+    --mint: #A0D2C5;
+    --mint-bg: rgba(160,210,197,0.15);
+    --sky: #A5C4E0;
+    --sky-bg: rgba(165,196,224,0.15);
+    --border: rgba(61,44,94,0.08);
+    --border-hover: rgba(61,44,94,0.14);
+    --radius: 20px;
+    --radius-sm: 14px;
+    --radius-pill: 999px;
+    --shadow-sm: 0 2px 12px rgba(61,44,94,0.06);
+    --shadow: 0 4px 24px rgba(61,44,94,0.08);
+    --shadow-lg: 0 8px 40px rgba(61,44,94,0.1);
+    --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --font-serif: 'DM Serif Display', Georgia, serif;
+    --font-sans: 'Inter', -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: var(--font);
-    background: var(--bg-void);
-    color: var(--fg);
+    font-family: var(--font-sans);
+    background: var(--bg);
+    color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
   }
 
-  /* Ambient background blobs */
-  body::before, body::after {
-    content: '';
+  /* ── Dreamy gradient background blobs ── */
+  .bg-blobs {
     position: fixed;
-    border-radius: 50%;
-    filter: blur(120px);
-    opacity: 0.07;
+    inset: 0;
     z-index: 0;
     pointer-events: none;
+    overflow: hidden;
   }
-  body::before {
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.35;
+  }
+  .blob-1 {
+    width: 700px; height: 700px;
+    background: linear-gradient(135deg, var(--peach), var(--coral));
+    top: -200px; left: -150px;
+    animation: floatBlob 25s ease-in-out infinite alternate;
+  }
+  .blob-2 {
     width: 600px; height: 600px;
-    background: var(--accent);
-    top: -100px; left: -100px;
-    animation: blobFloat 20s ease-in-out infinite alternate;
+    background: linear-gradient(135deg, var(--sage), var(--mint));
+    top: 30%; right: -200px;
+    animation: floatBlob 30s ease-in-out infinite alternate-reverse;
   }
-  body::after {
+  .blob-3 {
     width: 500px; height: 500px;
-    background: var(--accent2);
-    bottom: -100px; right: -100px;
-    animation: blobFloat 25s ease-in-out infinite alternate-reverse;
+    background: linear-gradient(135deg, var(--lavender), var(--sky));
+    bottom: 10%; left: 20%;
+    animation: floatBlob 22s ease-in-out infinite alternate;
   }
-  @keyframes blobFloat {
+  .blob-4 {
+    width: 400px; height: 400px;
+    background: linear-gradient(135deg, var(--gold), var(--peach));
+    top: 60%; left: -100px;
+    animation: floatBlob 28s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes floatBlob {
     0% { transform: translate(0, 0) scale(1); }
-    50% { transform: translate(60px, 40px) scale(1.1); }
-    100% { transform: translate(-30px, 80px) scale(0.95); }
+    33% { transform: translate(40px, -30px) scale(1.05); }
+    66% { transform: translate(-20px, 50px) scale(0.97); }
+    100% { transform: translate(30px, 20px) scale(1.03); }
   }
 
   .wrapper {
     position: relative;
     z-index: 1;
-    max-width: 1440px;
+    max-width: 1320px;
     margin: 0 auto;
-    padding: 0 clamp(16px, 3vw, 48px);
+    padding: 0 clamp(20px, 4vw, 56px);
   }
 
   /* ── NAV ── */
   nav {
     position: sticky;
-    top: 0;
+    top: 16px;
     z-index: 100;
-    backdrop-filter: blur(24px) saturate(180%);
-    -webkit-backdrop-filter: blur(24px) saturate(180%);
-    background: rgba(10,10,16,0.75);
-    border-bottom: 1px solid var(--border);
-    padding: 0 clamp(16px, 3vw, 48px);
+    margin: 16px clamp(20px, 4vw, 56px) 0;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .nav-inner {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 64px;
-    gap: 24px;
+    height: 56px;
+    padding: 0 24px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    box-shadow: var(--shadow-sm);
   }
   .nav-brand {
-    font-weight: 700;
+    font-family: var(--font-serif);
     font-size: 18px;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, var(--accent-light), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    white-space: nowrap;
+    color: var(--plum);
+    letter-spacing: -0.01em;
   }
   .nav-links {
     display: flex;
-    gap: 4px;
+    gap: 2px;
     overflow-x: auto;
     scrollbar-width: none;
   }
   .nav-links::-webkit-scrollbar { display: none; }
   .nav-links a {
-    color: var(--fg-muted);
+    color: var(--text-secondary);
     text-decoration: none;
     font-size: 13px;
     font-weight: 500;
-    padding: 6px 14px;
-    border-radius: 999px;
+    padding: 7px 16px;
+    border-radius: var(--radius-pill);
     white-space: nowrap;
     transition: all var(--transition);
   }
   .nav-links a:hover {
-    color: var(--fg);
-    background: var(--glass);
+    color: var(--plum);
+    background: var(--sage-bg);
+  }
+  .nav-cta {
+    background: var(--plum) !important;
+    color: white !important;
+    font-weight: 600 !important;
+  }
+  .nav-cta:hover {
+    background: var(--plum-light) !important;
+    color: white !important;
   }
 
   /* ── HERO ── */
   .hero {
-    padding: 80px 0 48px;
+    padding: 100px 0 64px;
     text-align: center;
   }
   .hero-badge {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: var(--glass);
-    border: 1px solid var(--glass-border);
-    border-radius: 999px;
-    padding: 6px 16px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    padding: 8px 20px;
     font-size: 13px;
     font-weight: 500;
-    color: var(--accent-light);
-    margin-bottom: 24px;
+    color: var(--plum-muted);
+    margin-bottom: 28px;
+    box-shadow: var(--shadow-sm);
   }
   .hero-badge .dot {
-    width: 6px; height: 6px;
-    background: var(--accent3);
+    width: 7px; height: 7px;
+    background: var(--sage-dark);
     border-radius: 50%;
-    animation: pulse 2s ease-in-out infinite;
+    animation: pulse 2.5s ease-in-out infinite;
   }
-  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
 
   .hero h1 {
-    font-size: clamp(32px, 5vw, 56px);
-    font-weight: 800;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-    margin-bottom: 16px;
+    font-family: var(--font-serif);
+    font-size: clamp(36px, 5.5vw, 64px);
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    color: var(--plum);
   }
-  .hero h1 .gradient-text {
-    background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent2) 50%, var(--accent4) 100%);
+  .hero h1 em {
+    font-style: italic;
+    background: linear-gradient(135deg, var(--plum-light), var(--coral), var(--gold));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .hero p {
-    font-size: 18px;
-    color: var(--fg-muted);
-    max-width: 640px;
-    margin: 0 auto 32px;
+    font-size: 17px;
+    color: var(--text-secondary);
+    max-width: 580px;
+    margin: 0 auto 40px;
     line-height: 1.7;
+    font-weight: 400;
   }
   .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 48px;
+    gap: 16px;
     flex-wrap: wrap;
   }
   .hero-stat {
+    background: rgba(255,255,255,0.55);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 28px;
     text-align: center;
+    min-width: 130px;
+    transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
+  }
+  .hero-stat:hover {
+    background: rgba(255,255,255,0.8);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
   }
   .hero-stat .num {
-    font-family: var(--mono);
-    font-size: 32px;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--fg), var(--fg-muted));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    font-family: var(--font-serif);
+    font-size: 30px;
+    color: var(--plum);
+    display: block;
+    line-height: 1.2;
   }
   .hero-stat .label {
-    font-size: 13px;
-    color: var(--fg-muted);
+    font-size: 12px;
+    color: var(--text-light);
     margin-top: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
   }
 
   /* ── SECTION ── */
-  section { padding: 48px 0; }
+  section { padding: 56px 0; }
   .section-header {
-    margin-bottom: 32px;
+    margin-bottom: 36px;
   }
   .section-label {
     font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--accent-light);
+    letter-spacing: 0.12em;
+    color: var(--sage-dark);
     margin-bottom: 8px;
   }
   .section-title {
-    font-size: clamp(24px, 3vw, 36px);
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-family: var(--font-serif);
+    font-size: clamp(26px, 3.5vw, 40px);
+    font-weight: 400;
+    color: var(--plum);
+    letter-spacing: -0.01em;
   }
 
   /* ── GLASS CARD ── */
   .card {
     background: var(--bg-card);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 28px;
     transition: all var(--transition);
+    box-shadow: var(--shadow-sm);
   }
   .card:hover {
     background: var(--bg-card-hover);
-    border-color: rgba(255,255,255,0.12);
+    border-color: var(--border-hover);
     box-shadow: var(--shadow);
     transform: translateY(-2px);
   }
 
-  /* ── GRID LAYOUTS ── */
-  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
-  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-  .grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+  /* ── GRIDS ── */
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 20px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
 
-  /* ── REPOSITORY TABLE ── */
+  /* ── TAGS ── */
+  .tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: var(--radius-pill);
+    white-space: nowrap;
+    border: 1px solid;
+  }
+  .tag-plum { background: var(--lavender-bg); color: var(--plum-muted); border-color: rgba(61,44,94,0.12); }
+  .tag-sage { background: var(--sage-bg); color: var(--sage-dark); border-color: rgba(143,176,147,0.25); }
+  .tag-peach { background: var(--peach-bg); color: #C07850; border-color: rgba(244,199,171,0.35); }
+  .tag-gold { background: var(--gold-bg); color: #B89B40; border-color: rgba(232,201,122,0.3); }
+  .tag-coral { background: var(--coral-bg); color: #C07070; border-color: rgba(232,160,160,0.3); }
+  .tag-mint { background: var(--mint-bg); color: #5EA090; border-color: rgba(160,210,197,0.3); }
+  .tag-sky { background: var(--sky-bg); color: #5A8AB0; border-color: rgba(165,196,224,0.3); }
+
+  /* ── TABLE ── */
   .table-wrap {
     overflow-x: auto;
     border-radius: var(--radius);
-    border: 1px solid var(--glass-border);
-    background: var(--bg-card);
+    border: 1px solid var(--border);
+    background: rgba(255,255,255,0.5);
     backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-sm);
   }
   table {
     width: 100%;
@@ -267,130 +343,30 @@
   }
   thead th {
     text-align: left;
-    padding: 14px 16px;
+    padding: 16px 18px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 0.06em;
-    color: var(--fg-muted);
-    background: rgba(255,255,255,0.03);
+    letter-spacing: 0.07em;
+    color: var(--text-light);
+    background: rgba(255,255,255,0.4);
     border-bottom: 1px solid var(--border);
     white-space: nowrap;
   }
   tbody td {
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--border);
-    color: var(--fg);
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(61,44,94,0.05);
+    color: var(--text);
     vertical-align: top;
   }
-  tbody tr {
-    transition: background var(--transition);
-  }
-  tbody tr:hover {
-    background: rgba(255,255,255,0.04);
-  }
+  tbody tr { transition: background var(--transition); }
+  tbody tr:hover { background: rgba(184,205,186,0.08); }
   tbody tr:last-child td { border-bottom: none; }
-
-  .tag {
-    display: inline-block;
-    font-size: 11px;
+  td .file-count {
+    font-family: var(--font-mono);
     font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 999px;
-    white-space: nowrap;
-  }
-  .tag-purple { background: rgba(139,92,246,0.15); color: #A78BFA; }
-  .tag-blue { background: rgba(99,102,241,0.15); color: #818CF8; }
-  .tag-green { background: rgba(16,185,129,0.15); color: #34D399; }
-  .tag-orange { background: rgba(249,115,22,0.15); color: #FB923C; }
-  .tag-pink { background: rgba(236,72,153,0.15); color: #F472B6; }
-  .tag-cyan { background: rgba(6,182,212,0.15); color: #22D3EE; }
-
-  /* ── COURSE CARDS ── */
-  .course-card {
-    position: relative;
-    overflow: hidden;
-  }
-  .course-card .card-accent {
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-  }
-  .course-card .course-num {
-    font-family: var(--mono);
-    font-size: 11px;
-    font-weight: 600;
-    color: var(--fg-muted);
-    margin-bottom: 8px;
-  }
-  .course-card h3 {
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-    line-height: 1.3;
-  }
-  .course-card .desc {
-    font-size: 13px;
-    color: var(--fg-muted);
-    line-height: 1.5;
-    margin-bottom: 16px;
-  }
-  .course-card .meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: auto;
-  }
-  .course-card .price {
-    font-family: var(--mono);
-    font-size: 14px;
-    font-weight: 600;
-  }
-
-  /* ── PROGRESS BAR ── */
-  .progress-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 14px;
-  }
-  .progress-label {
-    font-size: 13px;
-    font-weight: 500;
-    min-width: 180px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .progress-track {
-    flex: 1;
-    height: 8px;
-    background: rgba(255,255,255,0.06);
-    border-radius: 999px;
-    overflow: hidden;
-    position: relative;
-  }
-  .progress-fill {
-    height: 100%;
-    border-radius: 999px;
-    transition: width 1s cubic-bezier(0.16,1,0.3,1);
-    position: relative;
-  }
-  .progress-fill::after {
-    content: '';
-    position: absolute;
-    right: 0; top: 0; bottom: 0; width: 20px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3));
-    border-radius: 999px;
-  }
-  .progress-pct {
-    font-family: var(--mono);
-    font-size: 12px;
-    font-weight: 600;
-    color: var(--fg-muted);
-    min-width: 36px;
-    text-align: right;
+    font-size: 15px;
+    color: var(--plum);
   }
 
   /* ── DONUT CHART ── */
@@ -398,24 +374,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 40px;
     flex-wrap: wrap;
-    padding: 16px 0;
+    padding: 20px 0;
   }
   .donut-chart {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 190px; height: 190px;
   }
   .donut-chart svg {
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     transform: rotate(-90deg);
   }
   .donut-chart circle {
     fill: none;
-    stroke-width: 20;
-    transition: stroke-dashoffset 1s cubic-bezier(0.16,1,0.3,1);
+    stroke-width: 22;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.2s cubic-bezier(0.4,0,0.2,1);
   }
   .donut-center {
     position: absolute;
@@ -424,400 +399,483 @@
     text-align: center;
   }
   .donut-center .big {
-    font-family: var(--mono);
-    font-size: 28px;
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-size: 32px;
+    color: var(--plum);
   }
   .donut-center .small {
     font-size: 12px;
-    color: var(--fg-muted);
+    color: var(--text-light);
+    font-weight: 500;
   }
   .donut-legend {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
   .legend-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     font-size: 13px;
+    color: var(--text-secondary);
   }
   .legend-dot {
-    width: 10px; height: 10px;
-    border-radius: 3px;
+    width: 12px; height: 12px;
+    border-radius: 4px;
     flex-shrink: 0;
   }
   .legend-val {
-    font-family: var(--mono);
+    font-family: var(--font-mono);
     font-weight: 600;
+    color: var(--plum);
     margin-left: auto;
-    padding-left: 16px;
+    padding-left: 20px;
+  }
+
+  /* ── COURSE CARDS ── */
+  .course-card {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+  .course-card-inner {
+    padding: 24px;
+  }
+  .course-accent {
+    height: 4px;
+    border-radius: 0 0 4px 4px;
+  }
+  .course-card .course-num {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+  .course-card h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--plum);
+    margin-bottom: 10px;
+    line-height: 1.3;
+  }
+  .course-card .desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.55;
+    margin-bottom: 16px;
+  }
+  .course-card .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .course-featured {
+    background: linear-gradient(135deg, rgba(197,184,217,0.15), rgba(244,199,171,0.1)) !important;
+    border-color: rgba(61,44,94,0.12) !important;
+  }
+
+  /* ── PROGRESS BAR ── */
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+  .progress-label {
+    font-size: 13px;
+    font-weight: 500;
+    min-width: 180px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .progress-track {
+    flex: 1;
+    height: 10px;
+    background: rgba(61,44,94,0.06);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    border-radius: var(--radius-pill);
+    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+  }
+  .progress-pct {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--plum);
+    min-width: 38px;
+    text-align: right;
   }
 
   /* ── BAR CHART ── */
-  .bar-chart {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 8px 0;
-  }
-  .bar-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+  .bar-chart { display: flex; flex-direction: column; gap: 12px; }
+  .bar-row { display: flex; align-items: center; gap: 14px; }
   .bar-label {
     font-size: 12px;
     font-weight: 500;
     min-width: 120px;
     text-align: right;
-    color: var(--fg-muted);
+    color: var(--text-secondary);
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .bar-track {
     flex: 1;
-    height: 28px;
-    background: rgba(255,255,255,0.04);
-    border-radius: var(--radius-xs);
+    height: 32px;
+    background: rgba(61,44,94,0.04);
+    border-radius: var(--radius-sm);
     overflow: hidden;
-    position: relative;
   }
   .bar-fill {
     height: 100%;
-    border-radius: var(--radius-xs);
+    border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
-    padding-left: 10px;
-    font-family: var(--mono);
-    font-size: 11px;
+    padding-left: 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
     font-weight: 600;
-    color: rgba(255,255,255,0.9);
-    transition: width 1s cubic-bezier(0.16,1,0.3,1);
-    min-width: fit-content;
+    color: var(--plum);
+    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
   }
 
   /* ── TIMELINE ── */
   .timeline {
     position: relative;
-    padding: 16px 0 16px 40px;
+    padding: 8px 0 8px 44px;
   }
   .timeline::before {
     content: '';
     position: absolute;
-    left: 15px;
+    left: 16px;
     top: 0; bottom: 0;
     width: 2px;
-    background: linear-gradient(180deg, var(--accent), var(--accent2), var(--accent4));
-    border-radius: 999px;
+    background: linear-gradient(180deg, var(--lavender), var(--sage), var(--peach));
+    border-radius: var(--radius-pill);
   }
-  .timeline-item {
+  .tl-item {
     position: relative;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
   }
-  .timeline-item:last-child { padding-bottom: 0; }
-  .timeline-item .dot {
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-dot {
     position: absolute;
-    left: -33px;
-    top: 4px;
-    width: 14px; height: 14px;
+    left: -36px;
+    top: 5px;
+    width: 16px; height: 16px;
     border-radius: 50%;
-    border: 2px solid;
-    background: var(--bg-base);
+    border: 3px solid;
+    background: var(--bg-warm);
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.6);
   }
-  .timeline-item .time {
-    font-family: var(--mono);
+  .tl-time {
+    font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 600;
     margin-bottom: 4px;
+    letter-spacing: 0.02em;
   }
-  .timeline-item h4 {
-    font-size: 15px;
-    font-weight: 700;
+  .tl-item h4 {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--plum);
     margin-bottom: 4px;
   }
-  .timeline-item p {
+  .tl-item p {
     font-size: 13px;
-    color: var(--fg-muted);
-    line-height: 1.5;
+    color: var(--text-secondary);
+    line-height: 1.55;
   }
 
   /* ── CALLOUT ── */
   .callout {
     border-radius: var(--radius);
-    padding: 24px;
+    padding: 24px 28px;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(10px);
+    transition: all var(--transition);
   }
+  .callout:hover { transform: translateY(-1px); }
   .callout::before {
     content: '';
     position: absolute;
     left: 0; top: 0; bottom: 0;
     width: 4px;
-    border-radius: 999px;
+    border-radius: var(--radius-pill);
   }
   .callout-high {
-    background: rgba(99,102,241,0.08);
-    border: 1px solid rgba(99,102,241,0.15);
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(143,176,147,0.25);
   }
-  .callout-high::before { background: var(--accent); }
+  .callout-high::before { background: var(--sage-dark); }
   .callout-med {
-    background: rgba(249,115,22,0.08);
-    border: 1px solid rgba(249,115,22,0.12);
+    background: rgba(255,255,255,0.45);
+    border: 1px solid rgba(244,199,171,0.25);
   }
-  .callout-med::before { background: var(--accent2); }
+  .callout-med::before { background: var(--peach); }
   .callout .callout-title {
-    font-weight: 700;
-    font-size: 15px;
-    margin-bottom: 6px;
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--plum);
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    flex-wrap: wrap;
   }
-  .callout .confidence {
-    font-family: var(--mono);
+  .confidence {
+    font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 600;
-    padding: 2px 8px;
-    border-radius: 999px;
+    padding: 3px 10px;
+    border-radius: var(--radius-pill);
+    border: 1px solid;
   }
-  .confidence-high { background: rgba(16,185,129,0.15); color: #34D399; }
-  .confidence-med { background: rgba(249,115,22,0.15); color: #FB923C; }
+  .conf-high { background: var(--sage-bg); color: var(--sage-dark); border-color: rgba(143,176,147,0.3); }
+  .conf-med { background: var(--peach-bg); color: #C07850; border-color: rgba(244,199,171,0.35); }
   .callout p {
     font-size: 14px;
-    color: var(--fg-muted);
-    line-height: 1.6;
+    color: var(--text-secondary);
+    line-height: 1.65;
   }
 
   /* ── SEGMENT CARDS ── */
-  .segment-card {
-    padding: 20px;
-  }
-  .segment-card .seg-id {
-    font-family: var(--mono);
+  .seg-card { padding: 22px; }
+  .seg-card .seg-id {
+    font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 600;
-    color: var(--fg-dim);
+    color: var(--text-light);
     margin-bottom: 6px;
   }
-  .segment-card h4 {
-    font-size: 14px;
-    font-weight: 700;
+  .seg-card h4 {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--plum);
     margin-bottom: 6px;
-    line-height: 1.3;
   }
-  .segment-card .who {
+  .seg-card .who {
     font-size: 12px;
-    color: var(--fg-muted);
-    line-height: 1.4;
-    margin-bottom: 12px;
+    color: var(--text-secondary);
+    line-height: 1.45;
+    margin-bottom: 14px;
   }
-  .segment-card .seg-meta {
+  .seg-card .seg-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
-    font-size: 11px;
   }
-  .seg-pill {
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-weight: 600;
-    border: 1px solid;
-  }
-  .seg-large { border-color: rgba(16,185,129,0.3); color: #34D399; background: rgba(16,185,129,0.08); }
-  .seg-medium { border-color: rgba(249,115,22,0.3); color: #FB923C; background: rgba(249,115,22,0.08); }
-  .seg-small { border-color: rgba(139,92,246,0.3); color: #A78BFA; background: rgba(139,92,246,0.08); }
 
-  /* ── PRICING CARDS ── */
+  /* ── PRICING ── */
   .pricing-card {
     text-align: center;
-    padding: 28px 20px;
+    padding: 32px 24px;
     position: relative;
   }
   .pricing-card.featured {
-    background: linear-gradient(135deg, rgba(99,102,241,0.12), rgba(249,115,22,0.08));
-    border-color: rgba(99,102,241,0.3);
+    background: linear-gradient(145deg, rgba(197,184,217,0.2), rgba(244,199,171,0.12), rgba(184,205,186,0.1)) !important;
+    border-color: rgba(61,44,94,0.12) !important;
+    box-shadow: var(--shadow) !important;
   }
-  .pricing-card.featured::before {
+  .pricing-card.featured::after {
     content: 'FLAGSHIP';
     position: absolute;
-    top: -1px; left: 50%;
+    top: 0; left: 50%;
     transform: translateX(-50%);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 0.1em;
-    padding: 4px 14px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    padding: 5px 16px;
+    background: var(--plum);
     color: white;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 10px 10px;
   }
   .pricing-tier {
     font-size: 11px;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--fg-muted);
-    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+    color: var(--text-light);
+    margin-bottom: 6px;
   }
   .pricing-name {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 16px;
+    font-family: var(--font-serif);
+    font-size: 17px;
+    color: var(--plum);
+    margin-bottom: 18px;
   }
   .pricing-price {
-    font-family: var(--mono);
-    font-size: 28px;
-    font-weight: 700;
+    font-family: var(--font-serif);
+    font-size: 32px;
+    color: var(--plum);
     margin-bottom: 4px;
   }
   .pricing-sub {
     font-size: 12px;
-    color: var(--fg-muted);
-    margin-bottom: 16px;
+    color: var(--text-light);
+    margin-bottom: 20px;
   }
   .pricing-features {
     text-align: left;
     list-style: none;
     font-size: 13px;
-    color: var(--fg-muted);
+    color: var(--text-secondary);
   }
   .pricing-features li {
-    padding: 4px 0;
-    padding-left: 20px;
+    padding: 5px 0 5px 22px;
     position: relative;
   }
   .pricing-features li::before {
     content: '';
     position: absolute;
-    left: 0; top: 10px;
-    width: 8px; height: 8px;
-    border-radius: 2px;
-    background: var(--accent3);
-    opacity: 0.6;
+    left: 0; top: 12px;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    opacity: 0.5;
   }
 
-  /* ── CLUSTER TREE ── */
+  /* ── CLUSTER CARDS ── */
   .cluster-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-  .cluster-card { padding: 20px; }
   .cluster-card h4 {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 12px;
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--plum);
+    margin-bottom: 14px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
   }
-  .cluster-card .cluster-icon {
-    width: 28px; height: 28px;
-    border-radius: 8px;
+  .cluster-icon {
+    width: 32px; height: 32px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
     flex-shrink: 0;
   }
   .cluster-list {
     list-style: none;
     font-size: 13px;
-    color: var(--fg-muted);
+    color: var(--text-secondary);
   }
   .cluster-list li {
-    padding: 4px 0 4px 16px;
+    padding: 4px 0 4px 18px;
     position: relative;
+    line-height: 1.5;
   }
   .cluster-list li::before {
     content: '';
     position: absolute;
-    left: 0; top: 12px;
-    width: 8px; height: 1px;
-    background: var(--fg-dim);
+    left: 0; top: 13px;
+    width: 8px; height: 2px;
+    border-radius: 1px;
+    background: var(--sage);
   }
-  .cluster-list .highlight {
-    color: var(--accent2);
+  .cluster-list .hl {
+    color: var(--plum);
     font-weight: 600;
   }
 
-  /* ── MOAT SECTION ── */
-  .moat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  /* ── MOAT ── */
+  .moat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
   .moat-card {
-    padding: 24px;
-    border-left: 3px solid;
+    padding: 28px;
+    border-left: 4px solid;
   }
   .moat-card h4 {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 8px;
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--plum);
+    margin-bottom: 10px;
   }
   .moat-card p {
     font-size: 13px;
-    color: var(--fg-muted);
-    line-height: 1.5;
+    color: var(--text-secondary);
+    line-height: 1.6;
   }
   .moat-card .source {
-    font-family: var(--mono);
+    font-family: var(--font-mono);
     font-size: 11px;
-    color: var(--fg-dim);
-    margin-top: 8px;
+    color: var(--text-light);
+    margin-top: 10px;
   }
 
-  /* ── COMPETITOR TABLE ── */
-  .competitor-row {
-    display: flex;
+  /* ── THEME CARDS ── */
+  .theme-card {
+    text-align: center;
+    padding: 32px 24px;
+  }
+  .theme-icon {
+    width: 56px; height: 56px;
+    border-radius: 16px;
+    display: inline-flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-    font-size: 13px;
+    justify-content: center;
+    margin-bottom: 14px;
   }
-  .competitor-row:last-child { border-bottom: none; }
-  .competitor-name {
-    font-weight: 600;
-    min-width: 140px;
+  .theme-card h4 {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    color: var(--plum);
+    margin-bottom: 8px;
   }
-  .competitor-price {
-    font-family: var(--mono);
-    font-weight: 600;
-    color: var(--accent2);
-    min-width: 100px;
-  }
-  .competitor-gap {
-    color: var(--fg-muted);
-    flex: 1;
+  .theme-card p {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.5;
   }
 
   /* ── FOOTER ── */
   footer {
-    padding: 48px 0;
+    padding: 56px 0;
     text-align: center;
-    color: var(--fg-dim);
+    color: var(--text-light);
     font-size: 13px;
     border-top: 1px solid var(--border);
-    margin-top: 48px;
+    margin-top: 56px;
+  }
+  footer strong {
+    color: var(--plum-muted);
   }
 
-  /* ── UTILITIES ── */
-  .mt-12 { margin-top: 12px; }
-  .mt-24 { margin-top: 24px; }
-  .mb-16 { margin-bottom: 16px; }
-  .gap-callouts { display: flex; flex-direction: column; gap: 16px; }
-  .flex-center { display: flex; align-items: center; justify-content: center; }
-  .text-gradient {
-    background: linear-gradient(135deg, var(--accent-light), var(--accent2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  /* ── DECORATIVE ── */
+  .organic-shape {
+    position: absolute;
+    border-radius: 50%;
+    border: 1.5px solid;
+    opacity: 0.15;
+    pointer-events: none;
   }
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 8px 0;
+  }
+  .gap-stack { display: flex; flex-direction: column; gap: 16px; }
 
-  /* Responsive */
+  /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .nav-links { display: none; }
-    .hero-stats { gap: 24px; }
+    .hero-stats { gap: 12px; }
+    .hero-stat { min-width: 100px; padding: 14px 18px; }
     .progress-label { min-width: 100px; font-size: 11px; }
     .bar-label { min-width: 80px; font-size: 11px; }
     .donut-container { flex-direction: column; }
-    .timeline { padding-left: 32px; }
+    .timeline { padding-left: 36px; }
+    section { padding: 36px 0; }
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -829,6 +887,14 @@
 </style>
 </head>
 <body>
+
+<!-- Background blobs -->
+<div class="bg-blobs">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="blob blob-4"></div>
+</div>
 
 <!-- NAV -->
 <nav>
@@ -842,7 +908,7 @@
       <a href="#readiness">Readiness</a>
       <a href="#pricing">Pricing</a>
       <a href="#timeline">Timeline</a>
-      <a href="#recommendations">Strategy</a>
+      <a href="#recommendations" class="nav-cta">Strategy</a>
     </div>
   </div>
 </nav>
@@ -855,18 +921,18 @@
     <span class="dot"></span>
     Prepared for Dr. Teresa Ristow &middot; Kajabi Platform &middot; March 2026
   </div>
-  <h1>I/O Psychology<br><span class="gradient-text">Online Course Strategy</span></h1>
-  <p>Content inventory, market analysis, and go-to-market roadmap for 10 commercial courses across 2 verticals &mdash; powered by 409 academic source files and 4 graduate-level courses.</p>
+  <h1>I/O Psychology<br><em>Online Course Strategy</em></h1>
+  <p>Content inventory, market analysis, and go-to-market roadmap for 10 commercial courses across 2 verticals, powered by 409 academic source files.</p>
   <div class="hero-stats">
-    <div class="hero-stat"><div class="num">409</div><div class="label">Source Files</div></div>
-    <div class="hero-stat"><div class="num">10</div><div class="label">Courses Planned</div></div>
-    <div class="hero-stat"><div class="num">12</div><div class="label">Target Segments</div></div>
-    <div class="hero-stat"><div class="num">7</div><div class="label">Topic Clusters</div></div>
-    <div class="hero-stat"><div class="num">$49&ndash;$997</div><div class="label">Price Range</div></div>
+    <div class="hero-stat"><span class="num">409</span><span class="label">Source Files</span></div>
+    <div class="hero-stat"><span class="num">10</span><span class="label">Courses</span></div>
+    <div class="hero-stat"><span class="num">12</span><span class="label">Segments</span></div>
+    <div class="hero-stat"><span class="num">7</span><span class="label">Clusters</span></div>
+    <div class="hero-stat"><span class="num">$49&ndash;$997</span><span class="label">Price Range</span></div>
   </div>
 </header>
 
-<!-- REPOSITORY INVENTORY -->
+<!-- INVENTORY -->
 <section id="inventory">
   <div class="section-header">
     <div class="section-label">Phase 1</div>
@@ -876,54 +942,48 @@
   <div class="table-wrap">
     <table>
       <thead>
-        <tr>
-          <th>Directory</th>
-          <th>Files</th>
-          <th>Course Code</th>
-          <th>Content Types</th>
-          <th>Key Topics</th>
-        </tr>
+        <tr><th>Directory</th><th>Files</th><th>Course Code</th><th>Content Types</th><th>Key Topics</th></tr>
       </thead>
       <tbody>
         <tr>
-          <td style="font-weight:600">Employee Selection</td>
-          <td><span style="font-family:var(--mono);font-weight:600">72</span></td>
-          <td><span class="tag tag-blue">PSYC 656</span></td>
+          <td style="font-weight:600;color:var(--plum)">Employee Selection</td>
+          <td><span class="file-count">72</span></td>
+          <td><span class="tag tag-plum">PSYC 656</span></td>
           <td>Slides, articles, textbook, exams, syllabus</td>
           <td>Structured interviews, validity, adverse impact, AI screening</td>
         </tr>
         <tr>
-          <td style="font-weight:600">Performance Mgmt</td>
-          <td><span style="font-family:var(--mono);font-weight:600">101</span></td>
-          <td><span class="tag tag-green">PSYC 654</span></td>
+          <td style="font-weight:600;color:var(--plum)">Performance Mgmt</td>
+          <td><span class="file-count">101</span></td>
+          <td><span class="tag tag-sage">PSYC 654</span></td>
           <td>Slides, articles, textbooks, assignments</td>
           <td>PM cycle, 360 feedback, bias, BARS, Python/Excel analytics</td>
         </tr>
         <tr>
-          <td style="font-weight:600">Employee Training</td>
-          <td><span style="font-family:var(--mono);font-weight:600">113</span></td>
-          <td><span class="tag tag-purple">PSYC 652</span></td>
+          <td style="font-weight:600;color:var(--plum)">Employee Training</td>
+          <td><span class="file-count">113</span></td>
+          <td><span class="tag tag-peach">PSYC 652</span></td>
           <td>Slides, articles, assignments, guest materials</td>
           <td>Needs assessment, transfer, coaching, DEI training, VR/AI</td>
         </tr>
         <tr>
-          <td style="font-weight:600">Organizational Psych</td>
-          <td><span style="font-family:var(--mono);font-weight:600">116</span></td>
-          <td><span class="tag tag-orange">PSYC 650</span></td>
+          <td style="font-weight:600;color:var(--plum)">Organizational Psych</td>
+          <td><span class="file-count">116</span></td>
+          <td><span class="tag tag-gold">PSYC 650</span></td>
           <td>Slides, articles, assignments, datasets, exams</td>
           <td>Attitudes, culture, motivation, stress, teams, Python/SPSS</td>
         </tr>
         <tr>
-          <td style="font-weight:600">Publications</td>
-          <td><span style="font-family:var(--mono);font-weight:600">6</span></td>
-          <td><span class="tag tag-pink">Research</span></td>
+          <td style="font-weight:600;color:var(--plum)">Publications</td>
+          <td><span class="file-count">6</span></td>
+          <td><span class="tag tag-coral">Research</span></td>
           <td>Dissertation, thesis, journal articles, book chapters</td>
           <td>NLP job ads, AIRA framework, curbstoning, VOIS, leader stress</td>
         </tr>
         <tr>
-          <td style="font-weight:600">Social Psych</td>
-          <td><span style="font-family:var(--mono);font-weight:600">1</span></td>
-          <td><span class="tag tag-cyan">PSYC 343</span></td>
+          <td style="font-weight:600;color:var(--plum)">Social Psych</td>
+          <td><span class="file-count">1</span></td>
+          <td><span class="tag tag-mint">PSYC 343</span></td>
           <td>Lecture slides</td>
           <td>Social psychology foundations</td>
         </tr>
@@ -931,22 +991,17 @@
     </table>
   </div>
 
-  <!-- File Distribution Donut -->
-  <div class="card mt-24">
-    <h3 style="font-size:15px;font-weight:700;margin-bottom:16px">Source File Distribution</h3>
+  <!-- Donut -->
+  <div class="card" style="margin-top:24px">
+    <h3 style="font-family:var(--font-serif);font-size:18px;color:var(--plum);margin-bottom:20px">Source File Distribution</h3>
     <div class="donut-container">
       <div class="donut-chart">
         <svg viewBox="0 0 200 200">
-          <!-- Org Psych 116/409 = 28.4% -->
-          <circle cx="100" cy="100" r="70" stroke="var(--accent2)" stroke-dasharray="124.7 315.3" stroke-dashoffset="0" opacity="0.85"/>
-          <!-- Training 113/409 = 27.6% -->
-          <circle cx="100" cy="100" r="70" stroke="var(--accent6)" stroke-dasharray="121.4 318.6" stroke-dashoffset="-124.7" opacity="0.85"/>
-          <!-- PM 101/409 = 24.7% -->
-          <circle cx="100" cy="100" r="70" stroke="var(--accent3)" stroke-dasharray="108.6 331.4" stroke-dashoffset="-246.1" opacity="0.85"/>
-          <!-- Selection 72/409 = 17.6% -->
-          <circle cx="100" cy="100" r="70" stroke="var(--accent)" stroke-dasharray="77.4 362.6" stroke-dashoffset="-354.7" opacity="0.85"/>
-          <!-- Pubs 6/409 -->
-          <circle cx="100" cy="100" r="70" stroke="var(--accent4)" stroke-dasharray="6.5 433.5" stroke-dashoffset="-432.1" opacity="0.85"/>
+          <circle cx="100" cy="100" r="70" stroke="var(--peach)" stroke-dasharray="124.7 315.3" stroke-dashoffset="0"/>
+          <circle cx="100" cy="100" r="70" stroke="var(--lavender)" stroke-dasharray="121.4 318.6" stroke-dashoffset="-124.7"/>
+          <circle cx="100" cy="100" r="70" stroke="var(--sage)" stroke-dasharray="108.6 331.4" stroke-dashoffset="-246.1"/>
+          <circle cx="100" cy="100" r="70" stroke="var(--plum-muted)" stroke-dasharray="77.4 362.6" stroke-dashoffset="-354.7"/>
+          <circle cx="100" cy="100" r="70" stroke="var(--coral)" stroke-dasharray="6.5 433.5" stroke-dashoffset="-432.1"/>
         </svg>
         <div class="donut-center">
           <div class="big">409</div>
@@ -954,12 +1009,12 @@
         </div>
       </div>
       <div class="donut-legend">
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent2)"></div>Org Psych<span class="legend-val">116</span></div>
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent6)"></div>Training<span class="legend-val">113</span></div>
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent3)"></div>Performance Mgmt<span class="legend-val">101</span></div>
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent)"></div>Employee Selection<span class="legend-val">72</span></div>
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent4)"></div>Publications<span class="legend-val">6</span></div>
-        <div class="legend-item"><div class="legend-dot" style="background:var(--accent5)"></div>Social Psych<span class="legend-val">1</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--peach)"></div>Org Psych<span class="legend-val">116</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--lavender)"></div>Training<span class="legend-val">113</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--sage)"></div>Performance Mgmt<span class="legend-val">101</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--plum-muted)"></div>Employee Selection<span class="legend-val">72</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--coral)"></div>Publications<span class="legend-val">6</span></div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--mint)"></div>Social Psych<span class="legend-val">1</span></div>
       </div>
     </div>
   </div>
@@ -975,59 +1030,56 @@
   <div class="cluster-grid">
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(99,102,241,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#818CF8" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <span class="cluster-icon" style="background:var(--lavender-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--plum-muted)" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </span>
         1. Selection &amp; Hiring
       </h4>
       <ul class="cluster-list">
         <li>Person-job/org fit, KSAOs, job analysis</li>
-        <li class="highlight">Structured interviews (15 components)</li>
+        <li class="hl">Structured interviews (15 components)</li>
         <li>Biodata, cognitive tests, work simulations</li>
         <li>Reliability, validity, Schmidt &amp; Hunter</li>
         <li>Adverse impact, 4/5ths rule, bias mitigation</li>
-        <li class="highlight">AI video interviews, social media screening</li>
+        <li class="hl">AI video interviews, social media screening</li>
       </ul>
     </div>
-
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(16,185,129,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
+        <span class="cluster-icon" style="background:var(--sage-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="2"><path d="M12 20V10"/><path d="M18 20V4"/><path d="M6 20v-4"/></svg>
         </span>
         2. Performance Management
       </h4>
       <ul class="cluster-list">
         <li>PM vs. appraisal, PM cycle</li>
-        <li class="highlight">BARS, GRS, RPM scale construction</li>
-        <li class="highlight">360-degree feedback design</li>
+        <li class="hl">BARS, GRS, RPM scale construction</li>
+        <li class="hl">360-degree feedback design</li>
         <li>Expectancy theory, goal-setting</li>
-        <li class="highlight">17+ bias types, justice framework</li>
-        <li class="highlight">NLP feedback analysis, AI analytics</li>
+        <li class="hl">17+ bias types, justice framework</li>
+        <li class="hl">NLP feedback analysis, AI analytics</li>
       </ul>
     </div>
-
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(139,92,246,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        <span class="cluster-icon" style="background:var(--peach-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C07850" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
         </span>
         3. Training &amp; Development
       </h4>
       <ul class="cluster-list">
         <li>70-20-10, training effectiveness</li>
-        <li class="highlight">3-component needs assessment</li>
-        <li class="highlight">Coaching vs. mentoring</li>
+        <li class="hl">3-component needs assessment</li>
+        <li class="hl">Coaching vs. mentoring</li>
         <li>Transfer theory, adult learning</li>
         <li>Kirkpatrick 4 levels + ROI</li>
-        <li class="highlight">AI/automation, VR, gamification</li>
+        <li class="hl">AI/automation, VR, gamification</li>
       </ul>
     </div>
-
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(249,115,22,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FB923C" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l2 2"/></svg>
+        <span class="cluster-icon" style="background:var(--gold-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B89B40" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 0 0-18 0"/><path d="M12 8v4l2 2"/></svg>
         </span>
         4. Org Behavior &amp; Culture
       </h4>
@@ -1039,11 +1091,10 @@
         <li>Team processes, virtual teams</li>
       </ul>
     </div>
-
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(236,72,153,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F472B6" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+        <span class="cluster-icon" style="background:var(--coral-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C07070" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
         </span>
         5. DEI &amp; Inclusion
       </h4>
@@ -1052,39 +1103,37 @@
         <li>DEI backfire prevention</li>
         <li>Adverse impact analytics</li>
         <li>Inclusion climate measurement</li>
-        <li class="highlight">AIRA Framework (AI + DEI)</li>
+        <li class="hl">AIRA Framework (AI + DEI)</li>
       </ul>
     </div>
-
     <div class="card cluster-card">
       <h4>
-        <span class="cluster-icon" style="background:rgba(6,182,212,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        <span class="cluster-icon" style="background:var(--mint-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5EA090" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </span>
         6. Data Science for HR
       </h4>
       <ul class="cluster-list">
-        <li class="highlight">Python: pandas, numpy, matplotlib</li>
-        <li class="highlight">NLP: TextBlob, sentiment analysis</li>
+        <li class="hl">Python: pandas, numpy, matplotlib</li>
+        <li class="hl">NLP: TextBlob, sentiment analysis</li>
         <li>AI tools: ChatGPT, Claude</li>
         <li>Predictive analytics, ML</li>
         <li>Survey fabrication detection</li>
       </ul>
     </div>
-
-    <div class="card cluster-card" style="grid-column: span 2">
+    <div class="card cluster-card" style="grid-column:span 2">
       <h4>
-        <span class="cluster-icon" style="background:rgba(34,211,238,0.15)">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <span class="cluster-icon" style="background:var(--sky-bg)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A8AB0" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
         </span>
-        7. Job Search &amp; Career Strategy (Candidate-Side)
+        7. Job Search &amp; Career Strategy
       </h4>
       <ul class="cluster-list" style="columns:2;column-gap:32px">
         <li>Resume &amp; application science (biodata validity, ATS)</li>
-        <li class="highlight">Interview mastery from the inside (15 components, STAR)</li>
+        <li class="hl">Interview mastery from the inside (15 components)</li>
         <li>Assessment &amp; testing preparation</li>
         <li>AI video interview preparation</li>
-        <li class="highlight">Job ad red flag detection (Teresa's dissertation)</li>
+        <li class="hl">Job ad red flag detection (Teresa's dissertation)</li>
         <li>Person-job/org fit self-assessment</li>
         <li>Culture assessment from the outside</li>
         <li>Job satisfaction predictor evaluation</li>
@@ -1093,333 +1142,239 @@
   </div>
 </section>
 
-<!-- UNIQUE IP / MOAT -->
+<!-- MOAT -->
 <section>
   <div class="section-header">
     <div class="section-label">Competitive Moat</div>
     <div class="section-title">Teresa's Unique Intellectual Property</div>
   </div>
-
   <div class="moat-grid">
-    <div class="card moat-card" style="border-left-color:var(--accent4)">
+    <div class="card moat-card" style="border-left-color:var(--lavender)">
       <h4>AIRA Framework</h4>
       <p>Original framework mapping AI solutions to inclusion barriers. Five pillars: Autonomy, Individualization, Representation, Anonymity, Belonging. Forthcoming Oxford University Press chapter.</p>
       <div class="source">Publications/Chapter 18.md</div>
     </div>
-    <div class="card moat-card" style="border-left-color:var(--accent)">
+    <div class="card moat-card" style="border-left-color:var(--plum-muted)">
       <h4>LPA + NLP for Job Ads</h4>
-      <p>Dissertation combining latent profile analysis with transformer-based NLP for analyzing deception perception in job advertisements. Directly powers the candidate-side courses.</p>
+      <p>Dissertation combining latent profile analysis with transformer-based NLP for analyzing deception perception in job ads. Directly powers candidate-side courses.</p>
       <div class="source">Publications/Ristow_TL_D_2023.md</div>
     </div>
-    <div class="card moat-card" style="border-left-color:var(--accent3)">
+    <div class="card moat-card" style="border-left-color:var(--sage-dark)">
       <h4>Python-Integrated HR Analytics</h4>
       <p>Systematic integration of pandas, matplotlib, TextBlob, scikit-learn into I/O psychology coursework. No competitor offers this combined approach.</p>
       <div class="source">PM Assignments 4-5, Org Assignments 2, 5, 6</div>
     </div>
-    <div class="card moat-card" style="border-left-color:var(--accent5)">
+    <div class="card moat-card" style="border-left-color:var(--peach)">
       <h4>VOIS Framework &amp; Curbstoning</h4>
-      <p>First published scalable voice protocol for online surveys (Behavior Research Methods) plus novel survey fraud detection methods (Psychological Methods).</p>
-      <div class="source">Publications/13428_2022... + Curbing-Curbstoning.md</div>
+      <p>First published scalable voice protocol for online surveys plus novel survey fraud detection methods. Published in top research journals.</p>
+      <div class="source">Behavior Research Methods &amp; Psychological Methods</div>
     </div>
   </div>
 </section>
 
-<!-- COURSE LINEUP -->
+<!-- COURSES -->
 <section id="courses">
   <div class="section-header">
     <div class="section-label">Phase 2</div>
     <div class="section-title">10-Course Product Architecture</div>
   </div>
-
-  <p style="color:var(--fg-muted);font-size:14px;margin-bottom:24px">Two verticals: <span class="tag tag-blue" style="margin:0 4px">Employer-Side (1&ndash;7)</span> and <span class="tag tag-orange" style="margin:0 4px">Job-Seeker (8&ndash;10)</span></p>
+  <p style="color:var(--text-secondary);font-size:14px;margin-bottom:28px">
+    Two verticals: <span class="tag tag-plum" style="margin:0 2px">Employer-Side (1&ndash;7)</span> &amp; <span class="tag tag-peach" style="margin:0 2px">Job-Seeker (8&ndash;10)</span>
+  </p>
 
   <div class="grid-3">
-    <!-- Course 1 -->
     <div class="card course-card">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent),var(--accent5))"></div>
-      <div class="course-num">COURSE 01</div>
-      <h3>Structured Hiring That Works</h3>
-      <div class="desc">Build an evidence-based selection system backed by 85+ years of validity research. Campion's 15-component framework + DARS rating scales.</div>
-      <div class="meta">
-        <span class="tag tag-green">Launch First</span>
-        <span class="tag tag-blue">$197&ndash;297</span>
-        <span class="tag tag-purple">65% ready</span>
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--lavender),var(--sage))"></div>
+      <div class="course-card-inner">
+        <div class="course-num">COURSE 01</div>
+        <h3>Structured Hiring That Works</h3>
+        <div class="desc">Build an evidence-based selection system backed by 85+ years of validity research. Campion's 15-component framework + DARS rating scales.</div>
+        <div class="meta"><span class="tag tag-sage">Launch First</span><span class="tag tag-plum">$197&ndash;297</span><span class="tag tag-gold">65% ready</span></div>
       </div>
     </div>
-    <!-- Course 2 -->
     <div class="card course-card">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent3),var(--accent5))"></div>
-      <div class="course-num">COURSE 02</div>
-      <h3>Performance Management That Actually Works</h3>
-      <div class="desc">From annual reviews to continuous systems. PM cycle, BARS construction, 360 feedback, 17+ bias types, interrater reliability.</div>
-      <div class="meta">
-        <span class="tag tag-green">Launch First</span>
-        <span class="tag tag-blue">$197&ndash;297</span>
-        <span class="tag tag-purple">70% ready</span>
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--sage),var(--mint))"></div>
+      <div class="course-card-inner">
+        <div class="course-num">COURSE 02</div>
+        <h3>Performance Management That Actually Works</h3>
+        <div class="desc">From annual reviews to continuous systems. PM cycle, BARS construction, 360 feedback, 17+ bias types, interrater reliability.</div>
+        <div class="meta"><span class="tag tag-sage">Launch First</span><span class="tag tag-plum">$197&ndash;297</span><span class="tag tag-gold">70% ready</span></div>
       </div>
     </div>
-    <!-- Course 3 -->
     <div class="card course-card">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent6),var(--accent4))"></div>
-      <div class="course-num">COURSE 03</div>
-      <h3>Training That Transfers</h3>
-      <div class="desc">Design, deliver, and measure learning impact. Needs assessment, transfer theory, Kirkpatrick + ROI evaluation.</div>
-      <div class="meta">
-        <span class="tag tag-orange">Phase 2</span>
-        <span class="tag tag-blue">$197&ndash;297</span>
-        <span class="tag tag-purple">60% ready</span>
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--peach),var(--coral))"></div>
+      <div class="course-card-inner">
+        <div class="course-num">COURSE 03</div>
+        <h3>Training That Transfers</h3>
+        <div class="desc">Design, deliver, and measure learning impact. Needs assessment, transfer theory, Kirkpatrick + ROI evaluation.</div>
+        <div class="meta"><span class="tag tag-peach">Phase 2</span><span class="tag tag-plum">$197&ndash;297</span><span class="tag tag-gold">60% ready</span></div>
       </div>
     </div>
-    <!-- Course 4 -->
     <div class="card course-card">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent4),var(--accent2))"></div>
-      <div class="course-num">COURSE 04</div>
-      <h3>Leadership Development by Design</h3>
-      <div class="desc">Coaching, training, and succession planning. Three scales of leadership development with evidence on what works.</div>
-      <div class="meta">
-        <span class="tag tag-orange">Phase 2</span>
-        <span class="tag tag-cyan">$397&ndash;697</span>
-        <span class="tag tag-purple">50% ready</span>
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--coral),var(--lavender))"></div>
+      <div class="course-card-inner">
+        <div class="course-num">COURSE 04</div>
+        <h3>Leadership Development by Design</h3>
+        <div class="desc">Coaching, training, and succession. Three scales of leadership development with evidence on what actually works.</div>
+        <div class="meta"><span class="tag tag-peach">Phase 2</span><span class="tag tag-plum">$397&ndash;697</span><span class="tag tag-gold">50% ready</span></div>
       </div>
     </div>
-    <!-- Course 5 -->
-    <div class="card course-card" style="background:linear-gradient(135deg,rgba(99,102,241,0.1),rgba(249,115,22,0.06));border-color:rgba(99,102,241,0.2)">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent),var(--accent2))"></div>
-      <div class="course-num" style="color:var(--accent-light)">COURSE 05 &middot; FLAGSHIP</div>
-      <h3>AI-Powered HR</h3>
-      <div class="desc">Teresa's moat. Python/NLP coding, AI tool evaluation, ethical AI framework. Hands-on Colab notebooks. No competitor combines I/O psych + coding + ethics.</div>
-      <div class="meta">
-        <span class="tag tag-orange">Phase 2</span>
-        <span class="tag tag-pink">$497&ndash;797</span>
-        <span class="tag tag-purple">45% ready</span>
+    <div class="card course-card course-featured">
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--plum-muted),var(--peach))"></div>
+      <div class="course-card-inner">
+        <div class="course-num" style="color:var(--plum-muted)">COURSE 05 &middot; FLAGSHIP</div>
+        <h3>AI-Powered HR</h3>
+        <div class="desc">Teresa's moat. Python/NLP coding, AI tool evaluation, ethical AI framework. Hands-on Colab notebooks. No competitor combines I/O psych + coding + ethics.</div>
+        <div class="meta"><span class="tag tag-peach">Phase 2</span><span class="tag tag-coral">$497&ndash;797</span><span class="tag tag-gold">45% ready</span></div>
       </div>
     </div>
-    <!-- Course 6 -->
-    <div class="card course-card" style="background:linear-gradient(135deg,rgba(236,72,153,0.08),rgba(139,92,246,0.06));border-color:rgba(236,72,153,0.15)">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent4),var(--accent6))"></div>
-      <div class="course-num" style="color:var(--accent4)">COURSE 06 &middot; SECONDARY MOAT</div>
-      <h3>Data-Driven DEI</h3>
-      <div class="desc">Beyond awareness. Adverse impact analysis, AIRA framework for AI-enabled inclusion, DEI analytics dashboard. Cohort-based.</div>
-      <div class="meta">
-        <span class="tag tag-orange">Phase 2</span>
-        <span class="tag tag-pink">$497&ndash;997</span>
-        <span class="tag tag-purple">40% ready</span>
+    <div class="card course-card course-featured">
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--coral),var(--lavender))"></div>
+      <div class="course-card-inner">
+        <div class="course-num" style="color:var(--plum-muted)">COURSE 06 &middot; SECONDARY MOAT</div>
+        <h3>Data-Driven DEI</h3>
+        <div class="desc">Beyond awareness. Adverse impact analysis, AIRA framework for AI-enabled inclusion, DEI analytics dashboard. Cohort-based.</div>
+        <div class="meta"><span class="tag tag-peach">Phase 2</span><span class="tag tag-coral">$497&ndash;997</span><span class="tag tag-gold">40% ready</span></div>
       </div>
     </div>
-    <!-- Course 7 -->
     <div class="card course-card">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent3),var(--accent))"></div>
-      <div class="course-num">COURSE 07 &middot; GATEWAY</div>
-      <h3>Workplace Psychology Essentials</h3>
-      <div class="desc">Jargon-free intro to org psych. Why people quit, building culture, managing burnout. Lead magnet for Courses 1&ndash;3.</div>
-      <div class="meta">
-        <span class="tag tag-green">Launch First</span>
-        <span class="tag tag-cyan">$49&ndash;97</span>
-        <span class="tag tag-purple">50% ready</span>
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--mint),var(--sage))"></div>
+      <div class="course-card-inner">
+        <div class="course-num">COURSE 07 &middot; GATEWAY</div>
+        <h3>Workplace Psychology Essentials</h3>
+        <div class="desc">Jargon-free intro to org psych. Why people quit, building culture, managing burnout. Lead magnet for Courses 1&ndash;3.</div>
+        <div class="meta"><span class="tag tag-sage">Launch First</span><span class="tag tag-mint">$49&ndash;97</span><span class="tag tag-gold">50% ready</span></div>
       </div>
     </div>
-    <!-- Course 8 -->
-    <div class="card course-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent2),var(--accent))"></div>
-      <div class="course-num" style="color:var(--accent2)">COURSE 08 &middot; JOB-SEEKER</div>
-      <h3>The Science of Getting Hired</h3>
-      <div class="desc">What I/O psychologists know that job seekers don't. Insider's guide to ATS, structured interviews, assessments, and deceptive job ads.</div>
-      <div class="meta">
-        <span class="tag tag-pink">Phase 3</span>
-        <span class="tag tag-blue">$97&ndash;197</span>
-        <span class="tag tag-purple">40% ready</span>
+    <div class="card course-card" style="border-color:rgba(244,199,171,0.25)">
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--peach),var(--gold))"></div>
+      <div class="course-card-inner">
+        <div class="course-num" style="color:#C07850">COURSE 08 &middot; JOB-SEEKER</div>
+        <h3>The Science of Getting Hired</h3>
+        <div class="desc">What I/O psychologists know that job seekers don't. Insider's guide to ATS, structured interviews, assessments, and deceptive job ads.</div>
+        <div class="meta"><span class="tag tag-coral">Phase 3</span><span class="tag tag-plum">$97&ndash;197</span><span class="tag tag-gold">40% ready</span></div>
       </div>
     </div>
-    <!-- Course 9 -->
-    <div class="card course-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent2),var(--accent3))"></div>
-      <div class="course-num" style="color:var(--accent2)">COURSE 09 &middot; JOB-SEEKER</div>
-      <h3>Choose Wisely</h3>
-      <div class="desc">The science of finding a job you won't want to leave. P-J/P-O fit, culture assessment, satisfaction predictors, employer due diligence.</div>
-      <div class="meta">
-        <span class="tag tag-pink">Phase 3</span>
-        <span class="tag tag-blue">$97&ndash;197</span>
-        <span class="tag tag-purple">35% ready</span>
+    <div class="card course-card" style="border-color:rgba(244,199,171,0.25)">
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--gold),var(--sage))"></div>
+      <div class="course-card-inner">
+        <div class="course-num" style="color:#C07850">COURSE 09 &middot; JOB-SEEKER</div>
+        <h3>Choose Wisely</h3>
+        <div class="desc">The science of finding a job you won't want to leave. P-J/P-O fit, culture assessment, satisfaction predictors, employer due diligence.</div>
+        <div class="meta"><span class="tag tag-coral">Phase 3</span><span class="tag tag-plum">$97&ndash;197</span><span class="tag tag-gold">35% ready</span></div>
       </div>
     </div>
-    <!-- Course 10 -->
-    <div class="card course-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="card-accent" style="background:linear-gradient(90deg,var(--accent2),var(--accent4))"></div>
-      <div class="course-num" style="color:var(--accent2)">COURSE 10 &middot; B2B</div>
-      <h3>The Hiring Insider's Toolkit</h3>
-      <div class="desc">Evidence-based career coaching frameworks. Train-the-trainer for career coaches, outplacement, and university career centers. B2B licensing.</div>
-      <div class="meta">
-        <span class="tag tag-pink">Phase 3</span>
-        <span class="tag tag-pink">$297&ndash;997</span>
-        <span class="tag tag-purple">55% ready</span>
+    <div class="card course-card" style="border-color:rgba(244,199,171,0.25)">
+      <div class="course-accent" style="background:linear-gradient(90deg,var(--peach),var(--lavender))"></div>
+      <div class="course-card-inner">
+        <div class="course-num" style="color:#C07850">COURSE 10 &middot; B2B</div>
+        <h3>The Hiring Insider's Toolkit</h3>
+        <div class="desc">Evidence-based career coaching frameworks. Train-the-trainer for coaches, outplacement, and university career centers. B2B licensing available.</div>
+        <div class="meta"><span class="tag tag-coral">Phase 3</span><span class="tag tag-coral">$297&ndash;997</span><span class="tag tag-gold">55% ready</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AUDIENCE SEGMENTS -->
+<!-- AUDIENCES -->
 <section id="audiences">
   <div class="section-header">
     <div class="section-label">Market Segmentation</div>
     <div class="section-title">12 Target Audience Segments</div>
   </div>
-
-  <p style="color:var(--fg-muted);font-size:14px;margin-bottom:24px">Two verticals: <span class="tag tag-blue" style="margin:0 4px">Employer-Side (Seg 1&ndash;9)</span> and <span class="tag tag-orange" style="margin:0 4px">Job-Seeker (Seg 10&ndash;12)</span></p>
+  <p style="color:var(--text-secondary);font-size:14px;margin-bottom:28px">
+    <span class="tag tag-plum" style="margin-right:4px">Employer-Side (1&ndash;9)</span> &amp; <span class="tag tag-peach" style="margin-left:4px">Job-Seeker (10&ndash;12)</span>
+  </p>
 
   <div class="grid-4">
-    <div class="card segment-card">
-      <div class="seg-id">SEG 01</div>
-      <h4>HR Professionals</h4>
-      <div class="who">PHR/SPHR certified, 5&ndash;15 yrs. Companies 100&ndash;5K employees.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">750K+ market</span><span class="seg-pill seg-medium">$97&ndash;497</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 02</div>
-      <h4>People Managers</h4>
-      <div class="who">Team leads taking on HR duties. Companies growing 20&ndash;100 employees.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">Very large</span><span class="seg-pill seg-medium">$49&ndash;197</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 03</div>
-      <h4>Small Business Owners</h4>
-      <div class="who">Sub-50 employees. Restaurants, retail, services, trades, startups.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">33.2M SMBs</span><span class="seg-pill seg-medium">$29&ndash;97</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 04</div>
-      <h4>I/O Grad Students</h4>
-      <div class="who">MA/PhD students and early-career practitioners, 0&ndash;5 years.</div>
-      <div class="seg-meta"><span class="seg-pill seg-small">~3.5K students</span><span class="seg-pill seg-medium">$97&ndash;297</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 05</div>
-      <h4>Nonprofit Leaders</h4>
-      <div class="who">EDs, program directors, HR directors at 10&ndash;200 employee nonprofits.</div>
-      <div class="seg-meta"><span class="seg-pill seg-medium">400K w/ staff</span><span class="seg-pill seg-medium">$49&ndash;149</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 06</div>
-      <h4>DEI Practitioners</h4>
-      <div class="who">CDOs, DEI consultants, diversity program managers. 500+ employees.</div>
-      <div class="seg-meta"><span class="seg-pill seg-medium">Growing 169%</span><span class="seg-pill seg-medium">$297&ndash;997</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 07</div>
-      <h4>Tech/Startup People Ops</h4>
-      <div class="who">First HR hire, Head of People at 50&ndash;500 employee startups.</div>
-      <div class="seg-meta"><span class="seg-pill seg-medium">70K+ companies</span><span class="seg-pill seg-medium">$197&ndash;497</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 08</div>
-      <h4>HR Consultants</h4>
-      <div class="who">Independent consultants, small OD firms. Billing $150&ndash;500/hr.</div>
-      <div class="seg-meta"><span class="seg-pill seg-medium">100K+ US</span><span class="seg-pill seg-medium">$297&ndash;997</span></div>
-    </div>
-    <div class="card segment-card">
-      <div class="seg-id">SEG 09</div>
-      <h4>L&amp;D Professionals</h4>
-      <div class="who">Training managers, CLOs, instructional designers at 200+ companies.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">35K+ ATD</span><span class="seg-pill seg-medium">$97&ndash;497</span></div>
-    </div>
-    <div class="card segment-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="seg-id" style="color:var(--accent2)">SEG 10</div>
-      <h4>Recent Graduates</h4>
-      <div class="who">0&ndash;3 yrs post-grad. Actively job seeking. High volume, price-sensitive.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">4M+ /year</span><span class="seg-pill seg-medium">$49&ndash;197</span></div>
-    </div>
-    <div class="card segment-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="seg-id" style="color:var(--accent2)">SEG 11</div>
-      <h4>Mid-Career Changers</h4>
-      <div class="who">5&ndash;20 years experience. Pivots, transitions, layoff recovery.</div>
-      <div class="seg-meta"><span class="seg-pill seg-large">6.5M monthly</span><span class="seg-pill seg-medium">$97&ndash;397</span></div>
-    </div>
-    <div class="card segment-card" style="border-color:rgba(249,115,22,0.15)">
-      <div class="seg-id" style="color:var(--accent2)">SEG 12</div>
-      <h4>Career Coaches &amp; Centers</h4>
-      <div class="who">B2B: coaches, outplacement firms, university career services.</div>
-      <div class="seg-meta"><span class="seg-pill seg-medium">50K+ coaches</span><span class="seg-pill seg-medium">$297&ndash;$25K</span></div>
-    </div>
+    <div class="card seg-card"><div class="seg-id">SEG 01</div><h4>HR Professionals</h4><div class="who">PHR/SPHR certified, 5&ndash;15 yrs. Companies with 100&ndash;5K employees.</div><div class="seg-pills"><span class="tag tag-sage">750K+ market</span><span class="tag tag-plum">$97&ndash;497</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 02</div><h4>People Managers</h4><div class="who">Team leads taking on HR duties. Companies growing 20&ndash;100 employees.</div><div class="seg-pills"><span class="tag tag-sage">Very large</span><span class="tag tag-plum">$49&ndash;197</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 03</div><h4>Small Business Owners</h4><div class="who">Sub-50 employees. Restaurants, retail, services, trades, startups.</div><div class="seg-pills"><span class="tag tag-sage">33.2M SMBs</span><span class="tag tag-plum">$29&ndash;97</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 04</div><h4>I/O Grad Students</h4><div class="who">MA/PhD students and early-career practitioners, 0&ndash;5 years.</div><div class="seg-pills"><span class="tag tag-gold">~3.5K students</span><span class="tag tag-plum">$97&ndash;297</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 05</div><h4>Nonprofit Leaders</h4><div class="who">EDs, program directors, HR directors at 10&ndash;200 employee nonprofits.</div><div class="seg-pills"><span class="tag tag-peach">400K w/ staff</span><span class="tag tag-plum">$49&ndash;149</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 06</div><h4>DEI Practitioners</h4><div class="who">CDOs, DEI consultants, diversity program managers. 500+ employees.</div><div class="seg-pills"><span class="tag tag-peach">Growing 169%</span><span class="tag tag-plum">$297&ndash;997</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 07</div><h4>Tech/Startup People Ops</h4><div class="who">First HR hire, Head of People at 50&ndash;500 employee startups.</div><div class="seg-pills"><span class="tag tag-peach">70K+ companies</span><span class="tag tag-plum">$197&ndash;497</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 08</div><h4>HR Consultants</h4><div class="who">Independent consultants, small OD firms. Billing $150&ndash;500/hr.</div><div class="seg-pills"><span class="tag tag-peach">100K+ US</span><span class="tag tag-plum">$297&ndash;997</span></div></div>
+    <div class="card seg-card"><div class="seg-id">SEG 09</div><h4>L&amp;D Professionals</h4><div class="who">Training managers, CLOs, instructional designers at 200+ companies.</div><div class="seg-pills"><span class="tag tag-sage">35K+ ATD</span><span class="tag tag-plum">$97&ndash;497</span></div></div>
+    <div class="card seg-card" style="border-color:rgba(244,199,171,0.2)"><div class="seg-id" style="color:#C07850">SEG 10</div><h4>Recent Graduates</h4><div class="who">0&ndash;3 yrs post-grad. Actively job seeking. High volume, price-sensitive.</div><div class="seg-pills"><span class="tag tag-sage">4M+ /year</span><span class="tag tag-peach">$49&ndash;197</span></div></div>
+    <div class="card seg-card" style="border-color:rgba(244,199,171,0.2)"><div class="seg-id" style="color:#C07850">SEG 11</div><h4>Mid-Career Changers</h4><div class="who">5&ndash;20 years experience. Pivots, transitions, layoff recovery.</div><div class="seg-pills"><span class="tag tag-sage">6.5M monthly</span><span class="tag tag-peach">$97&ndash;397</span></div></div>
+    <div class="card seg-card" style="border-color:rgba(244,199,171,0.2)"><div class="seg-id" style="color:#C07850">SEG 12</div><h4>Career Coaches &amp; Centers</h4><div class="who">B2B: coaches, outplacement firms, university career services.</div><div class="seg-pills"><span class="tag tag-peach">50K+ coaches</span><span class="tag tag-coral">$297&ndash;$25K</span></div></div>
   </div>
 </section>
 
-<!-- CONTENT READINESS -->
+<!-- READINESS -->
 <section id="readiness">
   <div class="section-header">
     <div class="section-label">Content Analysis</div>
     <div class="section-title">Content Readiness &amp; Revenue Potential</div>
   </div>
-
   <div class="grid-2">
     <div class="card">
-      <h3 style="font-size:15px;font-weight:700;margin-bottom:20px">Existing Content (%)</h3>
-      <div class="progress-row"><span class="progress-label">C2: Performance Mgmt</span><div class="progress-track"><div class="progress-fill" style="width:70%;background:linear-gradient(90deg,var(--accent3),var(--accent5))"></div></div><span class="progress-pct">70%</span></div>
-      <div class="progress-row"><span class="progress-label">C1: Structured Hiring</span><div class="progress-track"><div class="progress-fill" style="width:65%;background:linear-gradient(90deg,var(--accent),var(--accent5))"></div></div><span class="progress-pct">65%</span></div>
-      <div class="progress-row"><span class="progress-label">C3: Training Transfers</span><div class="progress-track"><div class="progress-fill" style="width:60%;background:linear-gradient(90deg,var(--accent6),var(--accent4))"></div></div><span class="progress-pct">60%</span></div>
-      <div class="progress-row"><span class="progress-label">C10: Hiring Insider</span><div class="progress-track"><div class="progress-fill" style="width:55%;background:linear-gradient(90deg,var(--accent2),var(--accent4))"></div></div><span class="progress-pct">55%</span></div>
-      <div class="progress-row"><span class="progress-label">C4: Leadership Dev</span><div class="progress-track"><div class="progress-fill" style="width:50%;background:linear-gradient(90deg,var(--accent4),var(--accent2))"></div></div><span class="progress-pct">50%</span></div>
-      <div class="progress-row"><span class="progress-label">C7: Workplace Psych</span><div class="progress-track"><div class="progress-fill" style="width:50%;background:linear-gradient(90deg,var(--accent3),var(--accent))"></div></div><span class="progress-pct">50%</span></div>
-      <div class="progress-row"><span class="progress-label">C5: AI-Powered HR</span><div class="progress-track"><div class="progress-fill" style="width:45%;background:linear-gradient(90deg,var(--accent),var(--accent2))"></div></div><span class="progress-pct">45%</span></div>
-      <div class="progress-row"><span class="progress-label">C6: Data-Driven DEI</span><div class="progress-track"><div class="progress-fill" style="width:40%;background:linear-gradient(90deg,var(--accent4),var(--accent6))"></div></div><span class="progress-pct">40%</span></div>
-      <div class="progress-row"><span class="progress-label">C8: Science of Hired</span><div class="progress-track"><div class="progress-fill" style="width:40%;background:linear-gradient(90deg,var(--accent2),var(--accent))"></div></div><span class="progress-pct">40%</span></div>
-      <div class="progress-row"><span class="progress-label">C9: Choose Wisely</span><div class="progress-track"><div class="progress-fill" style="width:35%;background:linear-gradient(90deg,var(--accent2),var(--accent3))"></div></div><span class="progress-pct">35%</span></div>
+      <h3 style="font-family:var(--font-serif);font-size:17px;color:var(--plum);margin-bottom:22px">Existing Content (%)</h3>
+      <div class="progress-row"><span class="progress-label">C2: Performance Mgmt</span><div class="progress-track"><div class="progress-fill" style="width:70%;background:linear-gradient(90deg,var(--sage),var(--mint))"></div></div><span class="progress-pct">70%</span></div>
+      <div class="progress-row"><span class="progress-label">C1: Structured Hiring</span><div class="progress-track"><div class="progress-fill" style="width:65%;background:linear-gradient(90deg,var(--lavender),var(--sage))"></div></div><span class="progress-pct">65%</span></div>
+      <div class="progress-row"><span class="progress-label">C3: Training Transfers</span><div class="progress-track"><div class="progress-fill" style="width:60%;background:linear-gradient(90deg,var(--peach),var(--coral))"></div></div><span class="progress-pct">60%</span></div>
+      <div class="progress-row"><span class="progress-label">C10: Hiring Insider</span><div class="progress-track"><div class="progress-fill" style="width:55%;background:linear-gradient(90deg,var(--peach),var(--lavender))"></div></div><span class="progress-pct">55%</span></div>
+      <div class="progress-row"><span class="progress-label">C4: Leadership Dev</span><div class="progress-track"><div class="progress-fill" style="width:50%;background:linear-gradient(90deg,var(--coral),var(--lavender))"></div></div><span class="progress-pct">50%</span></div>
+      <div class="progress-row"><span class="progress-label">C7: Workplace Psych</span><div class="progress-track"><div class="progress-fill" style="width:50%;background:linear-gradient(90deg,var(--mint),var(--sage))"></div></div><span class="progress-pct">50%</span></div>
+      <div class="progress-row"><span class="progress-label">C5: AI-Powered HR</span><div class="progress-track"><div class="progress-fill" style="width:45%;background:linear-gradient(90deg,var(--plum-muted),var(--peach))"></div></div><span class="progress-pct">45%</span></div>
+      <div class="progress-row"><span class="progress-label">C6: Data-Driven DEI</span><div class="progress-track"><div class="progress-fill" style="width:40%;background:linear-gradient(90deg,var(--coral),var(--lavender))"></div></div><span class="progress-pct">40%</span></div>
+      <div class="progress-row"><span class="progress-label">C8: Science of Hired</span><div class="progress-track"><div class="progress-fill" style="width:40%;background:linear-gradient(90deg,var(--peach),var(--gold))"></div></div><span class="progress-pct">40%</span></div>
+      <div class="progress-row"><span class="progress-label">C9: Choose Wisely</span><div class="progress-track"><div class="progress-fill" style="width:35%;background:linear-gradient(90deg,var(--gold),var(--sage))"></div></div><span class="progress-pct">35%</span></div>
     </div>
-
     <div class="card">
-      <h3 style="font-size:15px;font-weight:700;margin-bottom:20px">Revenue Potential (Max Price)</h3>
+      <h3 style="font-family:var(--font-serif);font-size:17px;color:var(--plum);margin-bottom:22px">Revenue Potential (Max Price)</h3>
       <div class="bar-chart">
-        <div class="bar-row"><span class="bar-label">C10: B2B License</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,var(--accent2),var(--accent4))">$25,000</div></div></div>
-        <div class="bar-row"><span class="bar-label">C6: DEI</span><div class="bar-track"><div class="bar-fill" style="width:40%;background:linear-gradient(90deg,var(--accent4),var(--accent6))">$997</div></div></div>
-        <div class="bar-row"><span class="bar-label">C5: AI-Powered</span><div class="bar-track"><div class="bar-fill" style="width:32%;background:linear-gradient(90deg,var(--accent),var(--accent2))">$797</div></div></div>
-        <div class="bar-row"><span class="bar-label">C4: Leadership</span><div class="bar-track"><div class="bar-fill" style="width:28%;background:linear-gradient(90deg,var(--accent4),var(--accent2))">$697</div></div></div>
-        <div class="bar-row"><span class="bar-label">C10: Self-paced</span><div class="bar-track"><div class="bar-fill" style="width:20%;background:linear-gradient(90deg,var(--accent2),var(--accent))">$497</div></div></div>
-        <div class="bar-row"><span class="bar-label">C1: Hiring</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--accent),var(--accent5))">$297</div></div></div>
-        <div class="bar-row"><span class="bar-label">C2: PM</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--accent3),var(--accent5))">$297</div></div></div>
-        <div class="bar-row"><span class="bar-label">C3: Training</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--accent6),var(--accent4))">$297</div></div></div>
-        <div class="bar-row"><span class="bar-label">C8&ndash;9: Job Seeker</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:linear-gradient(90deg,var(--accent2),var(--accent3))">$197</div></div></div>
-        <div class="bar-row"><span class="bar-label">C7: Gateway</span><div class="bar-track"><div class="bar-fill" style="width:4%;background:linear-gradient(90deg,var(--accent3),var(--accent))">$97</div></div></div>
+        <div class="bar-row"><span class="bar-label">C10: B2B License</span><div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,var(--peach),var(--lavender))">$25,000</div></div></div>
+        <div class="bar-row"><span class="bar-label">C6: DEI</span><div class="bar-track"><div class="bar-fill" style="width:40%;background:linear-gradient(90deg,var(--coral),var(--lavender))">$997</div></div></div>
+        <div class="bar-row"><span class="bar-label">C5: AI-Powered</span><div class="bar-track"><div class="bar-fill" style="width:32%;background:linear-gradient(90deg,var(--plum-muted),var(--peach))">$797</div></div></div>
+        <div class="bar-row"><span class="bar-label">C4: Leadership</span><div class="bar-track"><div class="bar-fill" style="width:28%;background:linear-gradient(90deg,var(--coral),var(--peach))">$697</div></div></div>
+        <div class="bar-row"><span class="bar-label">C10: Self-paced</span><div class="bar-track"><div class="bar-fill" style="width:20%;background:linear-gradient(90deg,var(--peach),var(--gold))">$497</div></div></div>
+        <div class="bar-row"><span class="bar-label">C1: Hiring</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--lavender),var(--sage))">$297</div></div></div>
+        <div class="bar-row"><span class="bar-label">C2: PM</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--sage),var(--mint))">$297</div></div></div>
+        <div class="bar-row"><span class="bar-label">C3: Training</span><div class="bar-track"><div class="bar-fill" style="width:12%;background:linear-gradient(90deg,var(--peach),var(--coral))">$297</div></div></div>
+        <div class="bar-row"><span class="bar-label">C8-9: Job Seeker</span><div class="bar-track"><div class="bar-fill" style="width:8%;background:linear-gradient(90deg,var(--gold),var(--peach))">$197</div></div></div>
+        <div class="bar-row"><span class="bar-label">C7: Gateway</span><div class="bar-track"><div class="bar-fill" style="width:4%;background:linear-gradient(90deg,var(--mint),var(--sage))">$97</div></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING BENCHMARK -->
+<!-- PRICING -->
 <section id="pricing">
   <div class="section-header">
     <div class="section-label">Market Position</div>
     <div class="section-title">Competitive Pricing Landscape</div>
   </div>
-
-  <div class="card mb-16">
-    <h3 style="font-size:15px;font-weight:700;margin-bottom:16px">Competitor Benchmark</h3>
-    <div class="table-wrap" style="border:none;background:transparent">
+  <div class="card" style="margin-bottom:24px">
+    <h3 style="font-family:var(--font-serif);font-size:17px;color:var(--plum);margin-bottom:18px">Competitor Benchmark</h3>
+    <div class="table-wrap" style="border:none;background:transparent;box-shadow:none">
       <table>
-        <thead>
-          <tr><th>Competitor</th><th>Price</th><th>Format</th><th>Gap Teresa Fills</th></tr>
-        </thead>
+        <thead><tr><th>Competitor</th><th>Price</th><th>Format</th><th>Gap Teresa Fills</th></tr></thead>
         <tbody>
-          <tr><td style="font-weight:600">AIHR</td><td><span style="font-family:var(--mono);color:var(--accent2)">$975/yr</span></td><td>Self-paced, 100+ hrs</td><td>Lacks academic rigor, no AI/NLP hands-on coding</td></tr>
-          <tr><td style="font-weight:600">Cornell eCornell</td><td><span style="font-family:var(--mono);color:var(--accent2)">$3,600</span></td><td>Cohort, 36 hrs</td><td>General DEI, no AIRA framework or data-driven approach</td></tr>
-          <tr><td style="font-weight:600">SHRM Learning</td><td><span style="font-family:var(--mono);color:var(--accent2)">$1,500&ndash;2K</span></td><td>Self-paced, 50+ hrs</td><td>Certification-focused, dry content, no AI/analytics</td></tr>
-          <tr><td style="font-weight:600">Coursera (Wharton)</td><td><span style="font-family:var(--mono);color:var(--accent2)">~$79/mo</span></td><td>Self-paced, ~16 hrs</td><td>Academic but not practitioner-focused</td></tr>
-          <tr><td style="font-weight:600">LinkedIn Learning</td><td><span style="font-family:var(--mono);color:var(--accent2)">$30/mo</span></td><td>Self-paced, 1&ndash;4 hrs</td><td>Broad but shallow, no specialized I/O content</td></tr>
-          <tr><td style="font-weight:600">Udemy</td><td><span style="font-family:var(--mono);color:var(--accent2)">$12&ndash;50</span></td><td>Self-paced, 5&ndash;20 hrs</td><td>Cheap, not evidence-based or research-backed</td></tr>
-          <tr><td style="font-weight:600">Ramit Sethi</td><td><span style="font-family:var(--mono);color:var(--accent2)">$2,000</span></td><td>Self-paced + community</td><td>No insider perspective, not evidence-based</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">AIHR</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$975/yr</span></td><td>Self-paced, 100+ hrs</td><td>Lacks academic rigor, no AI/NLP hands-on coding</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">Cornell eCornell</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$3,600</span></td><td>Cohort, 36 hrs</td><td>General DEI, no AIRA framework or data-driven approach</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">SHRM Learning</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$1,500&ndash;2K</span></td><td>Self-paced, 50+ hrs</td><td>Certification-focused, dry content, no AI/analytics</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">Coursera (Wharton)</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">~$79/mo</span></td><td>Self-paced, ~16 hrs</td><td>Academic but not practitioner-focused</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">LinkedIn Learning</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$30/mo</span></td><td>Self-paced, 1&ndash;4 hrs</td><td>Broad but shallow, no specialized I/O content</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">Udemy</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$12&ndash;50</span></td><td>Self-paced, 5&ndash;20 hrs</td><td>Cheap, not evidence-based or research-backed</td></tr>
+          <tr><td style="font-weight:600;color:var(--plum)">Ramit Sethi</td><td><span style="font-family:var(--font-mono);font-weight:600;color:#C07850">$2,000</span></td><td>Self-paced + community</td><td>No insider perspective, not evidence-based</td></tr>
         </tbody>
       </table>
     </div>
   </div>
 
-  <div class="grid-4" style="margin-top:24px">
+  <div class="grid-4">
     <div class="card pricing-card">
       <div class="pricing-tier">Gateway</div>
       <div class="pricing-name">Workplace Essentials</div>
       <div class="pricing-price">$49&ndash;97</div>
       <div class="pricing-sub">Micro-course / Lead magnet</div>
       <ul class="pricing-features">
-        <li>3&ndash;5 modules, 30&ndash;45 min each</li>
-        <li>Jargon-free introductions</li>
-        <li>Action planning worksheets</li>
-        <li>Funnel to Courses 1&ndash;3</li>
+        <li style="--dot:var(--mint)">3&ndash;5 modules, 30&ndash;45 min each</li>
+        <li style="--dot:var(--mint)">Jargon-free introductions</li>
+        <li style="--dot:var(--mint)">Action planning worksheets</li>
+        <li style="--dot:var(--mint)">Funnel to Courses 1&ndash;3</li>
       </ul>
     </div>
     <div class="card pricing-card">
@@ -1428,10 +1383,10 @@
       <div class="pricing-price">$97&ndash;297</div>
       <div class="pricing-sub">Self-paced / 6&ndash;12 hrs</div>
       <ul class="pricing-features">
-        <li>6&ndash;10 modules + video</li>
-        <li>Downloadable templates</li>
-        <li>Self-assessments &amp; quizzes</li>
-        <li>Industry-specific examples</li>
+        <li style="--dot:var(--sage)">6&ndash;10 modules + video</li>
+        <li style="--dot:var(--sage)">Downloadable templates</li>
+        <li style="--dot:var(--sage)">Self-assessments &amp; quizzes</li>
+        <li style="--dot:var(--sage)">Industry-specific examples</li>
       </ul>
     </div>
     <div class="card pricing-card featured">
@@ -1440,10 +1395,10 @@
       <div class="pricing-price">$397&ndash;997</div>
       <div class="pricing-sub">Self-paced + Cohort options</div>
       <ul class="pricing-features">
-        <li>8&ndash;15 hrs + coding labs</li>
-        <li>Colab notebooks &amp; datasets</li>
-        <li>Cohort capstone option</li>
-        <li>Teresa's unique IP (AIRA)</li>
+        <li style="--dot:var(--lavender)">8&ndash;15 hrs + coding labs</li>
+        <li style="--dot:var(--lavender)">Colab notebooks &amp; datasets</li>
+        <li style="--dot:var(--lavender)">Cohort capstone option</li>
+        <li style="--dot:var(--lavender)">Teresa's unique IP (AIRA)</li>
       </ul>
     </div>
     <div class="card pricing-card">
@@ -1452,73 +1407,71 @@
       <div class="pricing-price">$5K&ndash;25K</div>
       <div class="pricing-sub">Site licenses / Bulk access</div>
       <ul class="pricing-features">
-        <li>White-label templates</li>
-        <li>Workshop facilitation guides</li>
-        <li>Customization consultation</li>
-        <li>University &amp; outplacement</li>
+        <li style="--dot:var(--peach)">White-label templates</li>
+        <li style="--dot:var(--peach)">Workshop facilitation guides</li>
+        <li style="--dot:var(--peach)">Customization consultation</li>
+        <li style="--dot:var(--peach)">University &amp; outplacement</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- LAUNCH TIMELINE -->
+<!-- TIMELINE -->
 <section id="timeline">
   <div class="section-header">
     <div class="section-label">Go-to-Market</div>
     <div class="section-title">Launch Sequence &amp; Roadmap</div>
   </div>
-
   <div class="grid-2">
     <div class="card">
       <div class="timeline">
-        <div class="timeline-item">
-          <div class="dot" style="border-color:var(--accent3)"></div>
-          <div class="time" style="color:var(--accent3)">MONTH 2&ndash;3</div>
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:var(--sage-dark)"></div>
+          <div class="tl-time" style="color:var(--sage-dark)">MONTH 2&ndash;3</div>
           <h4>Course 7: Gateway Launch</h4>
           <p>Workplace Psychology Essentials as lead magnet. Build email list and audience trust before premium courses.</p>
         </div>
-        <div class="timeline-item">
-          <div class="dot" style="border-color:var(--accent)"></div>
-          <div class="time" style="color:var(--accent-light)">MONTH 3&ndash;4</div>
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:var(--plum-muted)"></div>
+          <div class="tl-time" style="color:var(--plum-muted)">MONTH 3&ndash;4</div>
           <h4>Courses 1 &amp; 2: Core Launch</h4>
-          <p>Structured Hiring + Performance Management. Highest readiness (65&ndash;70%), broadest appeal (6+ segments each).</p>
+          <p>Structured Hiring + Performance Management. Highest readiness (65&ndash;70%), broadest appeal across 6+ segments.</p>
         </div>
-        <div class="timeline-item">
-          <div class="dot" style="border-color:var(--accent6)"></div>
-          <div class="time" style="color:var(--accent6)">MONTH 5&ndash;7</div>
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:var(--lavender)"></div>
+          <div class="tl-time" style="color:var(--plum-light)">MONTH 5&ndash;7</div>
           <h4>Courses 3 &amp; 5: Expansion</h4>
-          <p>Training That Transfers + AI-Powered HR (flagship). Teresa's moat goes live.</p>
+          <p>Training That Transfers + AI-Powered HR (flagship). Teresa's competitive moat goes live.</p>
         </div>
-        <div class="timeline-item">
-          <div class="dot" style="border-color:var(--accent4)"></div>
-          <div class="time" style="color:var(--accent4)">MONTH 6&ndash;8</div>
-          <h4>Courses 4 &amp; 6: Premium</h4>
-          <p>Leadership Development + Data-Driven DEI. Cohort-based premium offerings.</p>
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:var(--coral)"></div>
+          <div class="tl-time" style="color:#C07070">MONTH 6&ndash;8</div>
+          <h4>Courses 4 &amp; 6: Premium Tier</h4>
+          <p>Leadership Development + Data-Driven DEI. Cohort-based premium offerings with AIRA framework.</p>
         </div>
-        <div class="timeline-item">
-          <div class="dot" style="border-color:var(--accent2)"></div>
-          <div class="time" style="color:var(--accent2)">MONTH 6&ndash;10</div>
+        <div class="tl-item">
+          <div class="tl-dot" style="border-color:var(--peach)"></div>
+          <div class="tl-time" style="color:#C07850">MONTH 6&ndash;10</div>
           <h4>Courses 8, 9, 10: Job-Seeker Vertical</h4>
           <p>Science of Getting Hired, Choose Wisely, Hiring Insider's Toolkit. New audience, new revenue stream, B2B licensing.</p>
         </div>
       </div>
     </div>
-
     <div class="card">
-      <h3 style="font-size:15px;font-weight:700;margin-bottom:20px">Critical Content Gaps</h3>
-      <div style="font-size:13px;color:var(--fg-muted);line-height:1.7">
-        <div style="margin-bottom:16px">
-          <div style="font-weight:600;color:var(--fg);margin-bottom:4px">All Courses</div>
-          <ul style="padding-left:16px">
+      <h3 style="font-family:var(--font-serif);font-size:17px;color:var(--plum);margin-bottom:22px">Critical Content Gaps</h3>
+      <div style="font-size:13px;color:var(--text-secondary);line-height:1.7">
+        <div style="margin-bottom:18px">
+          <div style="font-family:var(--font-serif);font-weight:400;color:var(--plum);margin-bottom:6px;font-size:15px">All Courses</div>
+          <ul style="padding-left:18px;list-style-type:disc">
             <li>Zero video content exists (all text/slides)</li>
-            <li>No downloadable templates or tools</li>
+            <li>No downloadable templates or tools yet</li>
             <li>Academic cases need practitioner framing</li>
             <li>Exams need self-assessment conversion</li>
           </ul>
         </div>
-        <div style="margin-bottom:16px">
-          <div style="font-weight:600;color:var(--fg);margin-bottom:4px">Course-Specific</div>
-          <ul style="padding-left:16px">
+        <div style="margin-bottom:18px">
+          <div style="font-family:var(--font-serif);font-weight:400;color:var(--plum);margin-bottom:6px;font-size:15px">Course-Specific</div>
+          <ul style="padding-left:18px;list-style-type:disc">
             <li>C1: No AI resume screening or video interview content</li>
             <li>C2: No OKR/agile PM or remote/hybrid PM</li>
             <li>C5: Needs expanded Python curriculum, real HR datasets</li>
@@ -1527,8 +1480,8 @@
           </ul>
         </div>
         <div>
-          <div style="font-weight:600;color:var(--fg);margin-bottom:4px">Infrastructure</div>
-          <ul style="padding-left:16px">
+          <div style="font-family:var(--font-serif);font-weight:400;color:var(--plum);margin-bottom:6px;font-size:15px">Infrastructure</div>
+          <ul style="padding-left:18px;list-style-type:disc">
             <li>Kajabi site architecture &amp; sales pages</li>
             <li>Email marketing automation (launch sequences)</li>
             <li>SHRM/HRCI CE credit application</li>
@@ -1540,60 +1493,36 @@
   </div>
 </section>
 
-<!-- STRATEGIC RECOMMENDATIONS -->
+<!-- RECOMMENDATIONS -->
 <section id="recommendations">
   <div class="section-header">
     <div class="section-label">Decision Dashboard</div>
     <div class="section-title">Top Strategic Recommendations</div>
   </div>
-
-  <div class="gap-callouts">
+  <div class="gap-stack">
     <div class="callout callout-high">
-      <div class="callout-title">
-        1. Launch Courses 1 (Hiring) and 2 (PM) First
-        <span class="confidence confidence-high">90% confidence</span>
-      </div>
+      <div class="callout-title">1. Launch Courses 1 (Hiring) and 2 (PM) First<span class="confidence conf-high">90% confidence</span></div>
       <p>Highest content readiness (65&ndash;70%), broadest audience appeal (6+ segments each), strongest search demand. Evidence-based framing differentiates from Udemy; practitioner focus differentiates from Coursera. Price: $197&ndash;297 each.</p>
     </div>
-
     <div class="callout callout-high">
-      <div class="callout-title">
-        2. Position AI/NLP Expertise as Premium Moat
-        <span class="confidence confidence-high">85% confidence</span>
-      </div>
-      <p>Course 5 (AI-Powered HR) and Course 6 (Data-Driven DEI) are Teresa's genuine first-mover advantages. Dissertation + AIRA framework + Python curriculum = no competitor can replicate. Premium priced at $497&ndash;997, launching 3&ndash;6 months after initial courses.</p>
+      <div class="callout-title">2. Position AI/NLP Expertise as Premium Moat<span class="confidence conf-high">85% confidence</span></div>
+      <p>Course 5 (AI-Powered HR) and Course 6 (Data-Driven DEI) are Teresa's genuine first-mover advantages. Dissertation + AIRA framework + Python curriculum = no competitor can replicate. Premium priced $497&ndash;997.</p>
     </div>
-
     <div class="callout callout-high">
-      <div class="callout-title">
-        3. Invest in Template/Tool Creation as Core Value Prop
-        <span class="confidence confidence-high">85% confidence</span>
-      </div>
-      <p>Interview scorecards, BARS worksheets, adverse impact calculators, 360 checklists &mdash; practitioners pay for and share these. Every module should end with a downloadable tool. This is table-stakes for competing above Udemy tier.</p>
+      <div class="callout-title">3. Invest in Template/Tool Creation<span class="confidence conf-high">85% confidence</span></div>
+      <p>Interview scorecards, BARS worksheets, adverse impact calculators, 360 checklists &mdash; practitioners pay for and share these. Every module should end with a downloadable tool. Table-stakes above Udemy tier.</p>
     </div>
-
     <div class="callout callout-med">
-      <div class="callout-title">
-        4. Create Gateway Micro-Course as Lead Magnet
-        <span class="confidence confidence-med">75% confidence</span>
-      </div>
-      <p>Course 7 at $49&ndash;97 (or free for email signup) is the funnel top, attracting managers and business owners who wouldn't initially pay $297. Org Psych content on attitudes, motivation, and culture is the most broadly accessible.</p>
+      <div class="callout-title">4. Create Gateway Micro-Course as Lead Magnet<span class="confidence conf-med">75% confidence</span></div>
+      <p>Course 7 at $49&ndash;97 (or free for email signup) is the funnel top, attracting managers and business owners who wouldn't initially pay $297. Org Psych content is the most broadly accessible.</p>
     </div>
-
     <div class="callout callout-med">
-      <div class="callout-title">
-        5. Expand into Job-Seeker Vertical (Courses 8&ndash;10)
-        <span class="confidence confidence-med">75% confidence</span>
-      </div>
-      <p>"Taught by the person who designs the systems you're trying to navigate" is powerful positioning no competitor can credibly claim. Vastly larger addressable market (millions of seekers vs. hundreds of thousands of HR pros). Course 10 opens B2B revenue via university career centers and outplacement firms.</p>
+      <div class="callout-title">5. Expand into Job-Seeker Vertical (Courses 8&ndash;10)<span class="confidence conf-med">75% confidence</span></div>
+      <p>"Taught by the person who designs the systems you're trying to navigate" is powerful positioning. Vastly larger addressable market. Course 10 opens B2B revenue via university career centers.</p>
     </div>
-
     <div class="callout callout-med">
-      <div class="callout-title">
-        6. Pursue SHRM/HRCI CE Credits for Courses 1&ndash;3
-        <span class="confidence confidence-med">65% confidence</span>
-      </div>
-      <p>Continuing education credits validate courses for HR Professionals (Segment 1) and unlock employer reimbursement budgets. Achievable for evidence-based I/O content through SHRM Activity Recertification Provider program.</p>
+      <div class="callout-title">6. Pursue SHRM/HRCI CE Credits<span class="confidence conf-med">65% confidence</span></div>
+      <p>Continuing education credits validate courses for HR Professionals (Segment 1) and unlock employer reimbursement budgets. Achievable through SHRM Activity Recertification Provider program.</p>
     </div>
   </div>
 </section>
@@ -1604,49 +1533,48 @@
     <div class="section-label">Strategic Themes</div>
     <div class="section-title">Cross-Cutting Differentiators</div>
   </div>
-
   <div class="grid-3">
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(249,115,22,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-light)" stroke-width="1.5"><path d="M12 2a4 4 0 0 0-4 4c0 4 4 6 4 6s4-2 4-6a4 4 0 0 0-4-4z"/><path d="M12 12v10"/><path d="M8 18l4-2 4 2"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--lavender-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--plum-muted)" stroke-width="1.5"><path d="M12 2a4 4 0 0 0-4 4c0 4 4 6 4 6s4-2 4-6a4 4 0 0 0-4-4z"/><path d="M12 12v10"/><path d="M8 18l4-2 4 2"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">AI/NLP in HR</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">Threads through 7+ content sources. Teresa's primary differentiator. No competitor combines I/O psych + Python + ethics.</p>
+      <h4>AI/NLP in HR</h4>
+      <p>Threads through 7+ content sources. Teresa's primary differentiator. No competitor combines I/O psych + Python + ethics.</p>
     </div>
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(236,72,153,0.2),rgba(139,92,246,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent4)" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--coral-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C07070" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">Bias Detection</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">Appears in 6+ source weeks. 17+ bias types, adverse impact, algorithmic bias, DEI backfire prevention. Supports standalone premium module.</p>
+      <h4>Bias Detection</h4>
+      <p>17+ bias types, adverse impact, algorithmic bias, DEI backfire prevention. Supports standalone premium module.</p>
     </div>
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(16,185,129,0.2),rgba(6,182,212,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent3)" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-10"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--sage-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="1.5"><path d="M3 3v18h18"/><path d="m7 16 4-8 4 4 4-10"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">Evidence-Based HR</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">Pervasive unifying philosophy. Mechanical vs. clinical judgment, needs assessment, science-practice gap. Differentiates from "tips and tricks."</p>
+      <h4>Evidence-Based HR</h4>
+      <p>Unifying philosophy across all courses. Differentiates from "tips and tricks" with 100+ years of research.</p>
     </div>
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(249,115,22,0.2),rgba(236,72,153,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent2)" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--peach-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C07850" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">Python for HR</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">4+ assignments with pandas, matplotlib, TextBlob, scikit-learn. No competitor offers integrated Python skills for I/O psychology.</p>
+      <h4>Python for HR</h4>
+      <p>pandas, matplotlib, TextBlob, scikit-learn integrated into I/O coursework. No competitor offers this combination.</p>
     </div>
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(99,102,241,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent5)" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--sky-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5A8AB0" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">Candidate-Side Flip</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">Same selection science flipped for job seekers. Teresa's dissertation applies directly. Opens millions-large addressable market.</p>
+      <h4>Candidate-Side Flip</h4>
+      <p>Same selection science flipped for job seekers. Teresa's dissertation applies directly. Opens massive new market.</p>
     </div>
-    <div class="card" style="text-align:center;padding:28px">
-      <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(249,115,22,0.1));display:inline-flex;align-items:center;justify-content:center;margin-bottom:12px">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent6)" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    <div class="card theme-card">
+      <div class="theme-icon" style="background:var(--gold-bg)">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B89B40" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
       </div>
-      <h4 style="font-size:14px;font-weight:700;margin-bottom:6px">Legal Compliance</h4>
-      <p style="font-size:12px;color:var(--fg-muted)">Adverse impact law, employment law, EEOC compliance, organizational justice. Essential for practitioner audiences.</p>
+      <h4>Legal Compliance</h4>
+      <p>Adverse impact law, employment law, EEOC compliance, organizational justice. Essential for practitioner audiences.</p>
     </div>
   </div>
 </section>
@@ -1655,8 +1583,8 @@
 
 <footer>
   <div class="wrapper">
-    SOUP Course Strategy Dashboard &middot; Prepared for Dr. Teresa Ristow &middot; Kajabi Platform &middot; March 2026<br>
-    <span style="color:var(--fg-dim)">10 courses &middot; 2 verticals &middot; 12 segments &middot; 409 source files &middot; $49&ndash;$25K price range</span>
+    <strong>SOUP Course Strategy Dashboard</strong> &middot; Prepared for Dr. Teresa Ristow &middot; Kajabi Platform &middot; March 2026<br>
+    <span>10 courses &middot; 2 verticals &middot; 12 segments &middot; 409 source files &middot; $49&ndash;$25K price range</span>
   </div>
 </footer>
 
