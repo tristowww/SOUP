@@ -171,6 +171,18 @@ Internal/structural outputs (code, data tables, file listings, status updates, C
 
 ---
 
+## Design, UI/UX & Frontend Skill Routing
+
+**All design, UI/UX, and frontend work must use the installed design skills.** This applies to Kajabi course page design, sales page builds, template visual design, slide deck layouts, and any work where layout, color, typography, or visual hierarchy decisions are being made.
+
+**Required skills:**
+- `/ui-ux-pro-max` for design system generation (style recommendations, color palettes, typography pairing, layout patterns, accessibility, anti-patterns)
+- `/frontend-design` for production-grade frontend implementation with high design quality
+
+**When to invoke:** Any task involving visual design decisions, page layout, color selection, typography pairing, component styling, landing page or sales page builds, course page design, or UI reviews. This directive is inherited by all child directories including `Online Courses/`.
+
+---
+
 ## Working Conventions
 
 - All files are markdown (.md) format

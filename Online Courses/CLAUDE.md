@@ -58,6 +58,12 @@ Each course subdirectory will contain the following as development progresses:
 
 ---
 
+## Design, UI/UX & Frontend Skill Routing
+
+For any work involving visual design decisions (Kajabi page design, course landing pages, sales pages, template layouts, slide decks, or visual identity work), invoke `/ui-ux-pro-max` for design system intelligence and `/frontend-design` for production-grade implementation. This is inherited from the root SOUP CLAUDE.md and applies to all course subdirectories.
+
+---
+
 ## Key Source Materials
 
 Source content lives in the parent repository directories:
