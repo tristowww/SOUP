@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teresa Ristow — Blog</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #F4F3E6;
+    --cream-light: #FAF8F0;
+    --lemon: #CDD522;
+    --lemon-soft: #E2E68A;
+    --lemon-bg: #EAECB8;
+    --cherry: #6B1A2A;
+    --cherry-light: #8A2E40;
+    --blueberry: #2B4470;
+    --blueberry-light: #3D5A8A;
+    --blueberry-pale: #DDE4EE;
+    --peach: #E8846B;
+    --peach-light: #F0A08A;
+    --peach-pale: #FCEEE8;
+    --peach-mid: #E8A88F;
+    --black: #1A1818;
+    --text-mid: #4A4540;
+    --text-light: #8A857A;
+    --border: rgba(26,24,24,0.10);
+    --border-dark: rgba(26,24,24,0.18);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--blueberry-pale); color: var(--black); font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+
+  /* ===== HEADER ===== */
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0 3rem; height: 68px;
+    background: var(--blueberry);
+    color: white;
+    border-radius: 0 0 16px 16px;
+    margin: 0 1.5rem;
+  }
+  .nav-left { display: flex; gap: 1.8rem; font-size: 0.85rem; }
+  .nav-left a { color: rgba(255,255,255,0.7); text-decoration: none; transition: 0.3s; }
+  .nav-left a:hover { color: white; }
+  .nav-left a.active { color: white; border-bottom: 1.5px solid var(--lemon); padding-bottom: 2px; }
+  .logo { font-family: 'Instrument Serif', serif; font-size: 1.5rem; font-style: italic; color: white; }
+  .studio-link { font-size: 0.78rem; color: var(--blueberry); text-decoration: none; background: var(--lemon); border-radius: 20px; padding: 0.4rem 1.1rem; font-weight: 600; transition: 0.3s; }
+  .studio-link:hover { background: white; }
+
+  /* ===== MAIN CONTENT CARD ===== */
+  .main-card {
+    background: var(--cream);
+    border-radius: 20px;
+    border: 2px solid var(--blueberry);
+    margin: 1.5rem;
+    overflow: hidden;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    padding: 3.5rem 3.5rem 3rem;
+    position: relative;
+  }
+
+  /* Subtle stripe accent on the left */
+  .hero::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 48px;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--blueberry-pale) 0px, var(--blueberry-pale) 6px,
+      transparent 6px, transparent 12px
+    );
+    border-radius: 20px 0 0 0;
+    opacity: 0.5;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-size: clamp(2.6rem, 4.8vw, 3.8rem);
+    line-height: 1.18;
+    max-width: 640px;
+    margin-bottom: 2rem;
+  }
+
+  .highlight {
+    display: inline;
+    background: var(--lemon);
+    padding: 0.05em 0.3em;
+    border-radius: 4px;
+    font-style: italic;
+  }
+
+  .highlight-peach {
+    display: inline;
+    background: var(--peach-pale);
+    border: 1.5px solid var(--peach);
+    padding: 0.02em 0.25em;
+    border-radius: 4px;
+    font-style: italic;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .hero-col p {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: var(--text-mid);
+  }
+
+  .learn-more {
+    color: var(--cherry);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .learn-more:hover { color: var(--blueberry); }
+
+  .hero-image {
+    width: 100%;
+    height: 240px;
+    background: var(--blueberry);
+    border-radius: 12px;
+    border: 2px solid var(--blueberry);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.3);
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+
+  /* ===== RIBBON BANNER ===== */
+  .ribbon {
+    background: var(--peach-mid);
+    padding: 0.7rem 2rem;
+    text-align: center;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  /* ===== TWO-COLUMN MISSION (like Who We Are / Our Mission) ===== */
+  .mission-duo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 2px solid var(--blueberry);
+  }
+
+  .mission-panel {
+    padding: 2.5rem 3rem;
+  }
+
+  .mission-panel:first-child {
+    border-right: 1px solid var(--border-dark);
+  }
+
+  .mission-panel h2 {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--cherry);
+  }
+
+  .mission-panel p {
+    font-size: 0.88rem;
+    line-height: 1.75;
+    color: var(--text-mid);
+  }
+
+  /* ===== CARD GRID (like Ways to Support Us) ===== */
+  .topics-section {
+    padding: 3rem 3.5rem;
+    text-align: center;
+    border-top: 2px solid var(--blueberry);
+  }
+
+  .topics-title {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .topic-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .topic-card {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 1rem;
+    text-align: left;
+    padding: 1.5rem;
+    border: 1.5px solid var(--border-dark);
+    border-radius: 12px;
+    background: var(--cream-light);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: default;
+  }
+
+  .topic-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26,24,24,0.06);
+  }
+
+  .topic-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+  }
+
+  .topic-card h3 {
+    font-family: 'Instrument Serif', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .topic-card p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: var(--text-mid);
+    margin-bottom: 0.5rem;
+  }
+
+  .topic-tags {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 0.68rem;
+    font-weight: 500;
+    color: var(--blueberry);
+  }
+
+  .topic-tags span::before {
+    content: '✓ ';
+    color: var(--lemon-soft);
+  }
+
+  /* ===== MARQUEE ===== */
+  .marquee { background: var(--lemon); padding: 0.8rem 0; overflow: hidden; white-space: nowrap; }
+  .marquee-inner { display: inline-block; animation: scroll 22s linear infinite; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--black); }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ===== POSTS SECTION — PEACH BG ===== */
+  .posts-outer {
+    background: var(--peach-pale);
+    margin: 0 1.5rem;
+    border-radius: 20px;
+    border: 2px solid var(--peach);
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+
+  .posts-outer::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, transparent 49.5%, rgba(232,132,107,0.06) 49.5%, rgba(232,132,107,0.06) 50.5%, transparent 50.5%),
+      linear-gradient(0deg, transparent 49.5%, rgba(232,132,107,0.06) 49.5%, rgba(232,132,107,0.06) 50.5%, transparent 50.5%);
+    background-size: 80px 80px;
+    pointer-events: none;
+    border-radius: 20px;
+  }
+
+  .posts-section { padding: 3.5rem 3.5rem; position: relative; z-index: 1; }
+
+  .posts-header { text-align: center; margin-bottom: 2.5rem; }
+  .posts-header .small-label { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.6rem; }
+  .posts-title { font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; font-size: 2.6rem; line-height: 1.15; }
+  .posts-desc { max-width: 480px; margin: 0.8rem auto 0; font-size: 0.88rem; line-height: 1.7; color: var(--text-mid); }
+
+  .post-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+  .post-card { position: relative; cursor: pointer; background: white; border-radius: 12px; border: 1.5px solid var(--border-dark); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; }
+  .post-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(26,24,24,0.08); }
+  .post-card-img { width: 100%; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; }
+  .post-card-img .symbol { font-size: 2.2rem; color: rgba(255,255,255,0.5); font-family: 'Instrument Serif', serif; }
+  .badge { position: absolute; top: 12px; right: 12px; background: var(--lemon); font-size: 0.6rem; font-weight: 600; text-transform: uppercase; padding: 0.25rem 0.7rem; border-radius: 12px; z-index: 2; color: var(--black); }
+  .post-card-body { padding: 1.2rem 1.4rem 1.4rem; }
+  .post-card-tag { font-size: 0.68rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.4rem; }
+  .tag-cherry { color: var(--cherry); }
+  .tag-blue { color: var(--blueberry); }
+  .tag-peach { color: var(--peach); }
+  .post-card-title { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 1.2rem; line-height: 1.3; margin-bottom: 0.5rem; }
+  .post-card-excerpt { font-size: 0.8rem; line-height: 1.6; color: var(--text-mid); }
+  .read-link { display: inline-block; margin-top: 0.8rem; font-size: 0.78rem; font-weight: 500; color: var(--cherry); text-decoration: underline; text-underline-offset: 3px; transition: 0.3s; }
+  .read-link:hover { color: var(--blueberry); }
+
+  /* ===== MORE POSTS — BLUEBERRY CARD ===== */
+  .more-outer {
+    background: var(--blueberry);
+    margin: 0 1.5rem 1.5rem;
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    color: white;
+  }
+
+  .more-label { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+  .more-label span { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); white-space: nowrap; }
+  .more-label .line { flex: 1; height: 1px; background: rgba(255,255,255,0.15); }
+
+  .mini-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+  .mini-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 12px; padding: 1.2rem 1.4rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: transform 0.3s, background 0.3s; }
+  .mini-card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.14); }
+  .mini-card-title { font-family: 'Instrument Serif', serif; font-style: italic; font-size: 1.05rem; margin-bottom: 0.2rem; color: white; }
+  .mini-card-tag { font-size: 0.68rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 500; }
+  .mini-card:nth-child(1) .mini-card-tag { color: var(--lemon); }
+  .mini-card:nth-child(2) .mini-card-tag { color: var(--peach-light); }
+  .mini-card:nth-child(3) .mini-card-tag { color: var(--lemon-soft); }
+  .mini-card-arrow { font-size: 1.3rem; color: white; opacity: 0.3; transition: 0.3s; }
+  .mini-card:hover .mini-card-arrow { opacity: 1; color: var(--lemon); }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    margin: 0 1.5rem 1.5rem;
+    background: var(--cream);
+    border-radius: 20px;
+    border: 2px solid var(--blueberry);
+    padding: 3.5rem;
+    text-align: center;
+  }
+  .cta-inner { max-width: 550px; margin: 0 auto; }
+  .cta-inner h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-style: italic; font-size: 2.2rem; margin-bottom: 0.8rem; }
+  .cta-inner h2 .hl { background: var(--lemon); padding: 0 0.2em; border-radius: 3px; font-style: italic; }
+  .cta-inner p { font-size: 0.9rem; line-height: 1.7; color: var(--text-mid); margin-bottom: 1.5rem; }
+  .cta-btn { display: inline-block; background: var(--cherry); color: white; font-weight: 600; font-size: 0.85rem; padding: 0.75rem 2.2rem; border-radius: 24px; text-decoration: none; transition: 0.3s; border: 2px solid var(--cherry); }
+  .cta-btn:hover { background: var(--blueberry); border-color: var(--blueberry); }
+
+  /* FOOTER */
+  footer { padding: 2rem 3rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-light); }
+  footer a { color: var(--blueberry); text-decoration: none; }
+  footer a:hover { color: var(--cherry); }
+
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .main-card { animation: fadeUp 0.9s ease both; }
+  .posts-outer { animation: fadeUp 0.9s ease 0.15s both; }
+  .more-outer { animation: fadeUp 0.9s ease 0.25s both; }
+  .cta-section { animation: fadeUp 0.9s ease 0.3s both; }
+
+  @media (max-width: 900px) {
+    header { margin: 0 0.75rem; border-radius: 0 0 12px 12px; padding: 0 1.5rem; }
+    .main-card, .posts-outer, .more-outer, .cta-section { margin-left: 0.75rem; margin-right: 0.75rem; }
+    .hero { padding: 2rem 1.5rem; }
+    .hero::before { display: none; }
+    .hero-grid { grid-template-columns: 1fr; }
+    .mission-duo { grid-template-columns: 1fr; }
+    .mission-panel:first-child { border-right: none; border-bottom: 1px solid var(--border-dark); }
+    .topic-cards, .post-cards, .mini-cards { grid-template-columns: 1fr; }
+    .topics-section, .posts-section, .more-outer { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .topic-card { grid-template-columns: 1fr; }
+    .topic-icon { margin-bottom: 0.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER — BLUEBERRY BAR -->
+<header>
+  <nav class="nav-left">
+    <a href="#" class="active">Blog</a>
+    <a href="#">About</a>
+    <a href="#">Speaking</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="logo">Teresa Ristow</div>
+  <a href="#" class="studio-link">Visit the Studio →</a>
+</header>
+
+<!-- MAIN CONTENT CARD — CREAM WITH BORDER -->
+<div class="main-card">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Empowering <span class="highlight">people science,</span> elevating how we <span class="highlight-peach">understand work.</span></h1>
+      <div class="hero-grid">
+        <div class="hero-col">
+          <p>I research how organizations listen to their people — through AI, feedback systems, and applied psychology. This blog is where I share what I'm learning.</p>
+        </div>
+        <div class="hero-col">
+          <p>Each post makes complex methods approachable — visual frameworks, data walkthroughs, and thinking-out-loud. <span class="learn-more">Learn More →</span></p>
+        </div>
+        <div class="hero-col">
+          <div class="hero-image">[ featured image ]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIBBON -->
+  <div class="ribbon">PEOPLE SCIENTIST & APPLIED AI RESEARCHER</div>
+
+  <!-- TWO-COLUMN MISSION -->
+  <div class="mission-duo">
+    <div class="mission-panel">
+      <h2>What I Write About</h2>
+      <p>Practical, visual thinking on the topics I work in every day — how organizations listen to people, how AI can help, and the frameworks that bridge research and practice.</p>
+    </div>
+    <div class="mission-panel">
+      <h2>My Approach</h2>
+      <p>I believe the best insights come from combining rigorous methods with clear visual storytelling. If I can't draw it, I probably don't understand it well enough yet.</p>
+    </div>
+  </div>
+
+  <!-- TOPIC CARDS (Ways to Support style) -->
+  <div class="topics-section">
+    <div class="topics-title">What You'll Find Here</div>
+    <div class="topic-cards">
+      <div class="topic-card">
+        <div class="topic-icon" style="background: var(--blueberry-pale);">🤖</div>
+        <div>
+          <h3>AI & Evaluation</h3>
+          <p>How to evaluate conversational AI, what good looks like, and the frameworks that help us measure quality at scale.</p>
+          <div class="topic-tags">
+            <span>CAPTUR</span>
+            <span>LLM-AS-JUDGE</span>
+          </div>
+        </div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon" style="background: var(--peach-pale);">📊</div>
+        <div>
+          <h3>People Analytics</h3>
+          <p>Turning employee feedback into insight — NLP pipelines, survey science, and what the data actually says.</p>
+          <div class="topic-tags">
+            <span>NLP</span>
+            <span>FEEDBACK</span>
+          </div>
+        </div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon" style="background: var(--lemon-bg);">📐</div>
+        <div>
+          <h3>Teaching & Methods</h3>
+          <p>Visual explainers and frameworks from the graduate courses and workshops I teach on performance and org psych.</p>
+          <div class="topic-tags">
+            <span>VISUAL GUIDES</span>
+            <span>I/O PSYCH</span>
+          </div>
+        </div>
+      </div>
+      <div class="topic-card">
+        <div class="topic-icon" style="background: var(--blueberry-pale);">✍️</div>
+        <div>
+          <h3>Thinking Out Loud</h3>
+          <p>Shorter musings, conference takeaways, reading notes, and ideas that don't fit neatly into the other boxes.</p>
+          <div class="topic-tags">
+            <span>ESSAYS</span>
+            <span>NOTES</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end main-card -->
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-inner">
+    NEW POSTS &nbsp;✦&nbsp; NEW WORKSHOPS &nbsp;✦&nbsp; MEASURE WHAT MATTERS &nbsp;✦&nbsp; LISTEN AT SCALE &nbsp;✦&nbsp; NEW POSTS &nbsp;✦&nbsp; NEW WORKSHOPS &nbsp;✦&nbsp; MEASURE WHAT MATTERS &nbsp;✦&nbsp; LISTEN AT SCALE &nbsp;✦&nbsp; NEW POSTS &nbsp;✦&nbsp; NEW WORKSHOPS &nbsp;✦&nbsp; MEASURE WHAT MATTERS &nbsp;✦&nbsp; LISTEN AT SCALE &nbsp;✦&nbsp;
+  </div>
+</div>
+
+<!-- POSTS — PEACH ROUNDED CARD -->
+<div class="posts-outer">
+  <div class="posts-section">
+    <div class="posts-header">
+      <div class="small-label">Latest Writing</div>
+      <div class="posts-title">Latest Posts</div>
+      <p class="posts-desc">Frameworks, visual explainers, and thinking-out-loud about the things I spend my days on.</p>
+    </div>
+    <div class="post-cards">
+      <div class="post-card">
+        <div class="badge">New</div>
+        <div class="post-card-img" style="background: linear-gradient(135deg, var(--blueberry), var(--blueberry-light));">
+          <span class="symbol">LLM</span>
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag tag-blue">AI · CAPTUR FRAMEWORK</div>
+          <div class="post-card-title">Evaluating Conversational AI</div>
+          <p class="post-card-excerpt">A visual primer on what quality means in AI-generated conversation — and how to measure it.</p>
+          <a class="read-link" href="#">Read More →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg, var(--cherry), var(--cherry-light));">
+          <span class="symbol">NLP</span>
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag tag-cherry">NLP · PEOPLE ANALYTICS</div>
+          <div class="post-card-title">Open-Ended Feedback at Scale</div>
+          <p class="post-card-excerpt">10,000 employee comments to actionable insight — a visual walkthrough of the pipeline.</p>
+          <a class="read-link" href="#">Read More →</a>
+        </div>
+      </div>
+      <div class="post-card">
+        <div class="post-card-img" style="background: linear-gradient(135deg, var(--peach), var(--peach-light));">
+          <span class="symbol">ψ</span>
+        </div>
+        <div class="post-card-body">
+          <div class="post-card-tag tag-peach">TEACHING · I/O PSYCHOLOGY</div>
+          <div class="post-card-title">Performance Mgmt, Illustrated</div>
+          <p class="post-card-excerpt">Core frameworks from my graduate course, redesigned as visual one-pagers.</p>
+          <a class="read-link" href="#">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MORE — BLUEBERRY CARD -->
+<div class="more-outer">
+  <div class="more-label">
+    <span>More from the archive</span>
+    <div class="line"></div>
+  </div>
+  <div class="mini-cards">
+    <div class="mini-card">
+      <div>
+        <div class="mini-card-title">AI Strain & Burnout</div>
+        <div class="mini-card-tag">WHITEPAPER · WELLBEING</div>
+      </div>
+      <span class="mini-card-arrow">→</span>
+    </div>
+    <div class="mini-card">
+      <div>
+        <div class="mini-card-title">Rest as Methodology</div>
+        <div class="mini-card-tag">BURNOUT · I/O PSYCH</div>
+      </div>
+      <span class="mini-card-arrow">→</span>
+    </div>
+    <div class="mini-card">
+      <div>
+        <div class="mini-card-title">Benchmarking LLM Providers</div>
+        <div class="mini-card-tag">AI · EVALUATION</div>
+      </div>
+      <span class="mini-card-arrow">→</span>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <h2>Interested in <span class="hl">learning</span> more?</h2>
+    <p>I teach workshops on AI evaluation, people analytics, and organizational psychology methods. Let's work together.</p>
+    <a href="#" class="cta-btn">View Upcoming Classes</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Teresa Ristow</span>
+  <a href="https://readymag.com">Built with Readymag</a>
+</footer>
+
+</body>
+</html>
