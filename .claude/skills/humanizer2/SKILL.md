@@ -1,18 +1,10 @@
 ---
 name: humanizer2
-version: 3.0.0
 description: |
   Remove signs of AI-generated writing using multi-pass semantic entropy
   restoration. Detects 39 patterns across 6 categories via a three-pass
   compartmentalized audit: Structural Extraction, Lexical Substitution,
   Syntactic Asymmetry. Context-routes to category reference files per pass.
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - AskUserQuestion
 ---
 
 # Humanizer 2: AI Writing Pattern Detection and Entropy Restoration
