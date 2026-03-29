@@ -156,9 +156,9 @@ When converting academic content to commercial courses:
 
 ---
 
-## Humanizer Requirement
+## Humanizer 2 Requirement
 
-**ALL generated content intended as human-readable or final-draft output MUST be run through `/skills humanizer` before delivery.** This includes but is not limited to:
+**ALL generated content intended as human-readable or final-draft output MUST be run through `/humanizer2` before delivery.** This includes but is not limited to:
 
 - Module scripts and lesson content
 - Assessment questions and answer keys
