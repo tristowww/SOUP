@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Haggadah, Measured</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#ece4d0;font-family:'Cormorant Garamond',serif;color:#302810;display:flex;flex-direction:column;align-items:center;padding:20px 10px 60px}
+h1{font-size:40px;font-weight:700;color:#2a2008;text-align:center;margin-top:10px;letter-spacing:0.02em}
+.sub{font-size:19px;font-style:italic;color:#504828;text-align:center;margin:4px 0 6px}
+.divider{width:200px;height:1px;background:linear-gradient(90deg,transparent,rgba(100,80,30,0.2),transparent);margin:8px auto}
+.badge{display:inline-block;font-size:15px;padding:6px 16px;border-radius:14px;margin-bottom:18px;font-weight:600}
+.badge-live{background:#4a6828;color:#e8ecd8}
+.badge-cache{background:#b06020;color:#fce8d8}
+#loading{text-align:center;padding:60px 20px;max-width:500px}
+.lmsg{font-size:19px;color:#706838;font-style:italic}
+.lbar{height:5px;background:#d0c8b0;border-radius:3px;margin:16px auto;max-width:320px;overflow:hidden}
+.lfill{height:100%;background:#b89810;border-radius:3px;transition:width 0.3s;width:0%}
+.lstatus{font-size:13px;color:#908858;margin-top:8px;min-height:40px}
+canvas{display:block;max-width:100%;height:auto;cursor:crosshair}
+#tip{display:none;position:fixed;pointer-events:none;z-index:99;max-width:380px}
+.tip-box{background:#28220e;color:#f0e8d0;padding:18px 22px;border-radius:14px;font-size:15px;line-height:1.55;border:1px solid rgba(200,170,80,0.1);box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+.t-name{font-size:24px;font-weight:600;color:#e0c860;margin-bottom:4px}
+.t-desc{font-size:14px;color:rgba(240,232,208,0.6);margin-bottom:10px}
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
+.t-sn{font-size:20px;font-weight:600;color:#e0c860}
+.t-sl{font-size:10px;color:rgba(240,232,208,0.3);text-transform:uppercase;letter-spacing:0.05em}
+.t-bar{display:flex;align-items:center;gap:6px;margin:3px 0}
+.t-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.t-lbl{font-size:14px;color:rgba(240,232,208,0.6);flex:1}
+.t-val{font-size:13px;color:rgba(240,232,208,0.35)}
+.t-note{font-size:13px;color:rgba(240,232,208,0.35);font-style:italic;margin-top:8px;padding-top:8px;border-top:1px solid rgba(200,170,80,0.08)}
+.leg{max-width:900px;width:100%;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:18px}
+.lg{text-align:center}
+.lgt{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#1a1008;margin-bottom:6px;font-family:'Fira Sans',sans-serif}
+.lgi{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center}
+.li{display:flex;align-items:center;gap:6px;font-size:16px;color:#1a1008;font-weight:500;font-family:'Fira Sans',sans-serif}
+.lsq{width:18px;height:18px;border-radius:3px}
+.ft{max-width:700px;text-align:center;font-size:15px;color:#605838;font-style:italic;margin-top:20px;line-height:1.5}
+details{max-width:900px;width:100%;margin-top:20px}
+summary{cursor:pointer;font-size:15px;color:#706838;font-weight:500}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
+th{text-align:left;padding:4px 8px;border-bottom:2px solid rgba(80,70,30,0.15);color:#4a4020;font-weight:600;font-size:11px;text-transform:uppercase}
+td{padding:3px 8px;border-bottom:1px solid rgba(80,70,30,0.06);color:#3a3010}
+</style>
+</head>
+<body>
+<h1>The Haggadah, measured</h1>
+<div class="divider"></div>
+<div class="sub">Five dimensions of text analysis &middot; 37 sections &middot; 5,538 Hebrew words</div>
+<div class="badge" id="badge"></div>
+
+<div id="loading">
+  <div class="lmsg">Connecting to Sefaria...</div>
+  <div class="lbar"><div class="lfill" id="pf"></div></div>
+  <div class="lstatus" id="st"></div>
+</div>
+
+<div id="viz" style="display:none">
+<canvas id="cv" width="4000" height="4000"></canvas>
+<div class="leg">
+<div class="lg"><div class="lgt">Voice bars &mdash; who speaks</div><div class="lgi">
+<div class="li"><div class="lsq" style="background:#7a3508"></div>Named rabbis</div>
+<div class="li"><div class="lsq" style="background:#1e4a6a"></div>Collective &ldquo;we&rdquo;</div>
+<div class="li"><div class="lsq" style="background:#5a2060"></div>Psalmic / liturgical</div>
+<div class="li"><div class="lsq" style="background:#b06008"></div>Children</div>
+<div class="li"><div class="lsq" style="background:#2e4a10"></div>God / Torah</div>
+</div></div>
+<div class="lg"><div class="lgt">Era &mdash; composition period</div><div class="lgi">
+<div class="li"><div class="lsq" style="background:#285888"></div>Psalms ~1000 BCE</div>
+<div class="li"><div class="lsq" style="background:#4a6828"></div>Biblical</div>
+<div class="li"><div class="lsq" style="background:#a04810"></div>Mishnaic ~200 CE</div>
+<div class="li"><div class="lsq" style="background:#802848"></div>Talmudic</div>
+<div class="li"><div class="lsq" style="background:#787020"></div>Geonic ~800 CE</div>
+<div class="li"><div class="lsq" style="background:#6030a0"></div>Medieval ~1400 CE</div>
+</div></div>
+<div class="lg"><div class="lgt">Seder phase &mdash; outer rim</div><div class="lgi">
+<div class="li"><div class="lsq" style="background:#9a7818"></div>Before</div>
+<div class="li"><div class="lsq" style="background:#b83030"></div>Maggid</div>
+<div class="li"><div class="lsq" style="background:#287848"></div>Meal</div>
+<div class="li"><div class="lsq" style="background:#2860a8"></div>Barech</div>
+<div class="li"><div class="lsq" style="background:#7830a0"></div>Hallel</div>
+<div class="li"><div class="lsq" style="background:#a85020"></div>Nirtzah</div>
+</div></div>
+</div>
+<div class="ft" id="ftNote"></div>
+<div id="statsPanel" style="max-width:900px;width:100%;margin-top:24px"></div>
+<details><summary>Show raw computed data</summary><table id="dt"></table></details>
+</div>
+
+<div id="tip"><div class="tip-box" id="ti"></div></div>
+
+<script>
+// ===== PALETTE — darker-to-lighter from center outward (ui-ux-pro-max sunburst guidance) =====
+// Voice bars (innermost) = darkest; era blocks = mid; phase arc = lightest
+const V={rabbis:'#7a3508',collective:'#1e4a6a',liturgical:'#5a2060',children:'#b06008',god:'#2e4a10'};
+const VN={rabbis:'Named rabbis',collective:'Collective \u201cwe\u201d',liturgical:'Psalmic',children:'Children',god:'God / Torah'};
+// Era colors — wide hue spread (blue / green / terra / wine / olive / purple)
+const AC={psalms_era:'#285888',biblical:'#4a6828',mishnaic:'#a04810',talmudic:'#802848',geonic:'#787020',medieval_era:'#6030a0'};
+const AN={psalms_era:'Psalms',biblical:'Biblical',mishnaic:'Mishnaic',talmudic:'Talmudic',geonic:'Geonic',medieval_era:'Medieval'};
+// Phase arc band — vivid, maximally distinct hues (gold / crimson / emerald / cobalt / violet / orange)
+const SC=['#9a7818','#b83030','#287848','#2860a8','#7830a0','#a85020'];
+const SN=['Before','Maggid','Meal','Barech','Hallel','Nirtzah'];
+// Stained glass tint colors (very low opacity for background wedges)
+const SGC=['rgba(154,120,24,0.04)','rgba(184,48,48,0.04)','rgba(40,120,72,0.04)','rgba(40,96,168,0.04)','rgba(120,48,160,0.04)','rgba(168,80,32,0.04)'];
+
+// ===== SECTIONS =====
+const S=[
+{k:"Kadesh",ref:"Pesach Haggadah, Kadesh",s:0,d:"Kiddush. Gen 2:1-3 + Geonic blessings.",mx:{liturgical:45,collective:55},ag:{biblical:10,mishnaic:5,geonic:55}},
+{k:"Urchatz",ref:"Pesach Haggadah, Urchatz",s:0,d:"Silence. Hand-washing.",mx:{},ag:{mishnaic:100}},
+{k:"Karpas",ref:"Pesach Haggadah, Karpas",s:0,d:"One blessing. Spring in salt water.",mx:{collective:100},ag:{mishnaic:60,geonic:40}},
+{k:"Yachatz",ref:"Pesach Haggadah, Yachatz",s:0,d:"Breaking the matzah.",mx:{},ag:{mishnaic:100}},
+{k:"Ha Lachma",ref:"Pesach Haggadah, Magid, Ha Lachma Anya",s:1,d:"Aramaic (72%). \u05D4\u05D0 \u05DC\u05D7\u05DE\u05D0 \u05E2\u05E0\u05D9\u05D0",mx:{collective:100},ag:{talmudic:80,mishnaic:20}},
+{k:"4 Questions",ref:"Pesach Haggadah, Magid, Four Questions",s:1,d:"Ma Nishtana. Children lead.",mx:{children:90,collective:10},ag:{mishnaic:100}},
+{k:"Avadim",ref:"Pesach Haggadah, Magid, We Were Slaves in Egypt",s:1,d:"\u05E2\u05D1\u05D3\u05D9\u05DD \u05D4\u05D9\u05D9\u05E0\u05D5 \u2014 past tense, present identity.",mx:{collective:85,god:15},ag:{mishnaic:80,talmudic:20}},
+{k:"5 Rabbis",ref:"Pesach Haggadah, Magid, Story of the Five Rabbis",s:1,d:"100% rabbi-attributed. Five sages, Bnei Brak.",mx:{rabbis:95,collective:5},ag:{mishnaic:90,talmudic:10}},
+{k:"4 Sons",ref:"Pesach Haggadah, Magid, The Four Sons",s:1,d:"32% rabbi. 3 citations. Most multi-voiced.",mx:{rabbis:40,god:35,children:20,collective:5},ag:{mishnaic:60,talmudic:30,biblical:10}},
+{k:"Yechol",ref:"Pesach Haggadah, Magid, Yechol Me'rosh Chodesh",s:1,d:"100% rabbi. Talmudic hermeneutics.",mx:{rabbis:80,god:20},ag:{talmudic:100}},
+{k:"Mitchila",ref:"Pesach Haggadah, Magid, In the Beginning Our Fathers Were Idol Worshipers",s:1,d:"24% rabbi. Joshua 24 quoted.",mx:{collective:50,god:40,rabbis:10},ag:{biblical:40,mishnaic:30,talmudic:30}},
+{k:"First Fruits",ref:"Pesach Haggadah, Magid, First Fruits Declaration",s:1,d:"19 \u05E9\u05E0\u05D0\u05DE\u05E8 \u2014 1 per 24 words. 53% of Deut 26:5-8.",mx:{rabbis:55,god:30,collective:15},ag:{biblical:25,mishnaic:25,talmudic:30,geonic:10}},
+{k:"10 Plagues",ref:"Pesach Haggadah, Magid, The Ten Plagues",s:1,d:"72% rabbi. Plague multiplication debate.",mx:{rabbis:75,god:10,collective:15},ag:{mishnaic:40,talmudic:50,biblical:10}},
+{k:"Dayenu",ref:"Pesach Haggadah, Magid, Dayenu",s:1,d:"14\u00d7\u05D0\u05DC\u05D5 / 14\u00d7\u05D3\u05D9\u05E0\u05D5. 21 first-person refs. Pivot at stanza 11.",mx:{collective:95,god:5},ag:{mishnaic:20,talmudic:20,geonic:40,medieval_era:20}},
+{k:"R. Gamliel",ref:"Pesach Haggadah, Magid, Rabban Gamliel's Three Things",s:1,d:"LAST named rabbi. Pesach, Matzah, Maror.",mx:{rabbis:50,collective:40,god:10},ag:{mishnaic:70,talmudic:20,biblical:10}},
+{k:"Hallel \u00bd",ref:"Pesach Haggadah, Magid, First Half of Hallel",s:1,d:"30% psalm (cross-ref\u2019d). Ps 113\u2013114.",mx:{liturgical:85,collective:15},ag:{psalms_era:85,mishnaic:15}},
+{k:"Cup 2",ref:"Pesach Haggadah, Magid, Second Cup of Wine",s:1,d:"Prophetic perfect: \u2018who HAS redeemed us.\u2019",mx:{collective:70,liturgical:30},ag:{mishnaic:50,talmudic:30,geonic:20}},
+{k:"Rachtzah",ref:"Pesach Haggadah, Rachtzah",s:2,d:"Hand-washing with blessing.",mx:{collective:100},ag:{mishnaic:100}},
+{k:"Motzi",ref:"Pesach Haggadah, Motzi Matzah",s:2,d:"Hamotzi + al achilat matzah.",mx:{collective:100},ag:{mishnaic:95,biblical:5}},
+{k:"Maror",ref:"Pesach Haggadah, Maror",s:2,d:"Bitter herb.",mx:{collective:100},ag:{mishnaic:100}},
+{k:"Korech",ref:"Pesach Haggadah, Korech",s:2,d:"31% rabbi. Hillel\u2019s sandwich. Last rabbi echo.",mx:{rabbis:55,collective:45},ag:{mishnaic:65,medieval_era:35}},
+{k:"Meal",ref:"Pesach Haggadah, Shulchan Orech",s:2,d:"4 words. ~50 min. The great silence.",mx:{},ag:{mishnaic:100}},
+{k:"Tzafun",ref:"Pesach Haggadah, Tzafun",s:2,d:"Afikoman eaten.",mx:{collective:100},ag:{mishnaic:80,geonic:20}},
+{k:"Birkat",ref:"Pesach Haggadah, Barech, Birkat Hamazon",s:3,d:"767 words. 89 \u2018we\u2019 refs. 3 prophetic perfects.",mx:{collective:55,liturgical:30,god:10,rabbis:5},ag:{psalms_era:15,biblical:10,mishnaic:15,talmudic:30,geonic:25,medieval_era:5}},
+{k:"Cup 3",ref:"Pesach Haggadah, Barech, Third Cup of Wine",s:3,d:"Third cup.",mx:{collective:100},ag:{mishnaic:100}},
+{k:"Shfoch",ref:"Pesach Haggadah, Barech, Pour Out Thy Wrath",s:3,d:"\u2018Pour out Your wrath.\u2019 Door opens for Elijah.",mx:{god:80,collective:20},ag:{psalms_era:60,geonic:40}},
+{k:"Hallel 2nd",ref:"Pesach Haggadah, Hallel, Second Half of Hallel",s:4,d:"27% psalm (cross-ref\u2019d). 6 prophetic perfects.",mx:{liturgical:85,collective:10,god:5},ag:{psalms_era:80,mishnaic:5,geonic:15}},
+{k:"Songs",ref:"Pesach Haggadah, Hallel, Songs of Praise and Thanks",s:4,d:"\u05D7\u05E1\u05D3\u05D5 26\u00d7. 24% psalm cross-ref\u2019d.",mx:{liturgical:70,collective:25,god:5},ag:{psalms_era:55,geonic:30,medieval_era:15}},
+{k:"Cup 4",ref:"Pesach Haggadah, Hallel, Fourth Cup of Wine",s:4,d:"Fourth cup.",mx:{collective:80,liturgical:20},ag:{mishnaic:80,geonic:20}},
+{k:"Chasal",ref:"Pesach Haggadah, Nirtzah, Chasal Siddur Pesach",s:5,d:"\u2018The seder is complete.\u2019",mx:{collective:100},ag:{geonic:80,medieval_era:20}},
+{k:"L\u2019Shana",ref:"Pesach Haggadah, Nirtzah, L'Shana HaBa'a",s:5,d:"4 words. \u2018Next year in Jerusalem!\u2019",mx:{collective:100},ag:{geonic:100}},
+{k:"Vayehi",ref:"Pesach Haggadah, Nirtzah, And It Happened at Midnight",s:5,d:"Medieval piyyut.",mx:{collective:90,god:10},ag:{medieval_era:100}},
+{k:"Zevach",ref:"Pesach Haggadah, Nirtzah, Zevach Pesach",s:5,d:"Medieval piyyut.",mx:{collective:90,god:10},ag:{medieval_era:100}},
+{k:"Ki Lo",ref:"Pesach Haggadah, Nirtzah, Ki Lo Na'e",s:5,d:"Medieval refrains.",mx:{collective:100},ag:{medieval_era:100}},
+{k:"Adir Hu",ref:"Pesach Haggadah, Nirtzah, Adir Hu",s:5,d:"Alphabetical acrostic.",mx:{collective:100},ag:{medieval_era:100}},
+{k:"Echad Mi",ref:"Pesach Haggadah, Nirtzah, Echad Mi Yodea",s:5,d:"\u05D9\u05D5\u05D3\u05E2 26\u00d7. Children\u2019s voices return.",mx:{children:40,collective:60},ag:{medieval_era:100}},
+{k:"Chad Gadya",ref:"Pesach Haggadah, Nirtzah, Chad Gadya",s:5,d:"100% Aramaic. \u05D2\u05D3\u05D9\u05D0 31\u00d7. Children close the seder.",mx:{children:35,collective:65},ag:{medieval_era:100}}
+];
+
+// ===== FALLBACK DATA (from Sefaria-Export) =====
+const FH=[206,9,38,11,38,64,65,82,127,29,134,452,244,187,193,144,81,18,64,28,45,4,32,767,15,34,534,554,106,30,4,157,161,198,156,345,196];
+const FW=[14,0,0,0,3,6,7,0,3,0,4,16,0,32,12,5,10,3,4,3,0,0,0,89,1,0,13,34,4,2,0,0,0,0,0,12,0];
+const FY=[2,0,0,0,0,0,0,7,5,0,3,19,3,0,2,3,4,1,2,1,0,0,0,34,0,5,26,29,2,1,0,0,0,6,2,0,0];
+const FE=[5,0,0,0,0,0,0,0,10,0,7,12,1,23,4,3,0,0,0,0,1,0,0,35,0,1,19,34,1,0,0,5,4,2,1,0,0];
+const FP=[2,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,0,0,0,0,3,0,0,6,0,0,0,0,0,0,0,0,0,0];
+const FC=[0,0,0,0,0,0,0,1,3,0,2,19,2,0,5,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+const FA=[0,0,0,0,72,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100];
+
+// ===== ANALYSIS =====
+function sH(t){if(!t)return'';if(Array.isArray(t))return t.map(sH).filter(Boolean).join(' ');return String(t).replace(/<[^>]+>/g,'').trim();}
+function sN(t){return t.replace(/[\u0591-\u05C7]/g,'');}
+function wc(t){return t?t.split(/\s+/).filter(w=>w.length>0).length:0;}
+function fS(n){if(typeof n==='string'){const s=sH(n);return s?[s]:[];}if(Array.isArray(n)){let r=[];n.forEach(x=>r.push(...fS(x)));return r;}return[];}
+const RN=['rabbi','eliezer','yehoshua','elazar','akiva','tarfon','gamliel','hillel','yose','yehuda','taught','said rabbi'];
+const AM=['\u05D3\u05D0','\u05D3\u05D9 ','\u05DC\u05D7\u05DE\u05D0','\u05D2\u05D3\u05D9\u05D0','\u05D3\u05D6\u05D1\u05DF','\u05D5\u05D0\u05EA\u05D0','\u05D4\u05E9\u05EA\u05D0'];
+
+function az(he,en,k){
+  const ht=sH(he),et=sH(en),hs=sN(ht),el=et.toLowerCase(),hw=wc(ht),ew=wc(et),es=fS(en);
+  let rw=0;es.forEach(s=>{if(RN.some(r=>s.toLowerCase().includes(r)))rw+=wc(s);});
+  if(k==='Echad Mi')rw=0;
+  const cit=(hs.match(/\u05E9\u05E0\u05D0\u05DE\u05E8/g)||[]).length;
+  const we=(el.match(/\b(we|our|us)\b/g)||[]).length;
+  const you=(el.match(/\b(you|your|thou|thy)\b/g)||[]).length;
+  const he2=(el.match(/\b(he|his|him)\b/g)||[]).length;
+  const ppf=(el.match(/has (brought|redeemed|taken|done|given|chosen|made|delivered)/g)||[]).length;
+  const ac2=AM.reduce((a,m)=>a+((hs.match(new RegExp(m,'g'))||[]).length),0);
+  let ap=Math.min(100,ac2*10);
+  if(['First Fruits','Kadesh','Birkat','Hallel 2nd'].includes(k))ap=0;
+  return{hw,cit,we,you,he2,ppf,ap};
+}
+
+// ===== MAIN =====
+const pf=document.getElementById('pf'),st=document.getElementById('st');
+
+async function tryLive(){
+  const API='https://www.sefaria.org/api/texts/';
+  const out=[];
+  for(let i=0;i<S.length;i++){
+    st.textContent=S[i].k+' ('+(i+1)+'/'+S.length+')';
+    pf.style.width=Math.round(i/S.length*95)+'%';
+    const r=await fetch(API+encodeURIComponent(S[i].ref)+'?context=0',{signal:AbortSignal.timeout(6000)});
+    if(!r.ok)throw new Error(r.status);
+    const d=await r.json();
+    const a=az(d.he,d.text,S[i].k);
+    out.push({...S[i],he:a.hw,...a,src:'live'});
+  }
+  return out;
+}
+
+function useFB(){
+  return S.map((s,i)=>({...s,he:FH[i],we:FW[i],you:FY[i],he2:FE[i],ppf:FP[i],cit:FC[i],ap:FA[i],src:'cached'}));
+}
+
+async function main(){
+  let D,live=false;
+  try{D=await tryLive();live=true;}
+  catch(e){st.textContent='Using verified cached data...';pf.style.width='100%';await new Promise(r=>setTimeout(r,800));D=useFB();}
+  document.getElementById('loading').style.display='none';
+  document.getElementById('viz').style.display='';
+  const b=document.getElementById('badge');
+  b.className='badge '+(live?'badge-live':'badge-cache');
+  b.textContent=live?'\u2713 Live from Sefaria \u00b7 '+new Date().toLocaleDateString():'Verified data from Sefaria-Export';
+  document.getElementById('ftNote').textContent=live?'All analysis computed live from Sefaria\u2019s text in your browser.':'Word counts from Sefaria-Export. Analysis pre-computed from actual text.';
+  render(D);
+}
+
+// ===== RENDER =====
+function render(D){
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),W=4000,H=4000,cx=W/2,cy=H/2;
+const n=D.length,tH=D.reduce((a,d)=>a+d.he,0),mH=Math.max(...D.map(d=>d.he));
+function sd(s){let a=s;return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+const R=sd(42);
+
+// ===== PARCHMENT BACKGROUND =====
+// Base warm parchment with subtle variation
+const pG=ctx.createRadialGradient(cx,cy,200,cx,cy,2800);
+pG.addColorStop(0,'#efe7d4');pG.addColorStop(0.5,'#ece4d0');pG.addColorStop(1,'#e4dcc4');
+ctx.fillStyle=pG;ctx.fillRect(0,0,W,H);
+// Dense grain — handmade paper texture
+for(let i=0;i<6000;i++){const gx=R()*W,gy=R()*H;ctx.fillStyle=`rgba(${60+R()*40},${50+R()*30},${15+R()*20},${0.01+R()*0.025})`;ctx.fillRect(gx,gy,0.5+R()*2,0.5+R()*2);}
+// Warm fiber streaks
+for(let i=0;i<300;i++){ctx.beginPath();const fx=R()*W,fy=R()*H;ctx.moveTo(fx,fy);ctx.lineTo(fx+R()*30-15,fy+R()*3);ctx.strokeStyle=`rgba(120,90,40,${0.008+R()*0.012})`;ctx.lineWidth=0.3+R()*0.5;ctx.stroke();}
+// Edge darkening vignette
+const vG=ctx.createRadialGradient(cx,cy,800,cx,cy,2900);
+vG.addColorStop(0,'rgba(0,0,0,0)');vG.addColorStop(0.7,'rgba(0,0,0,0)');vG.addColorStop(1,'rgba(40,30,10,0.12)');
+ctx.fillStyle=vG;ctx.fillRect(0,0,W,H);
+
+// Simplified layout: center | voice bars | era blocks | phase arc | labels
+const r0=220,r1=300,r2=780,r4i=820,r4o=890,rO=940,rL=1100;
+const ap=Math.PI*2/n,sa=-Math.PI/2-ap/2,gp=0.012;
+
+// ===== DECORATIVE ORNAMENT RINGS =====
+// Outer decorative border — dotted ring
+ctx.setLineDash([4,8]);
+ctx.beginPath();ctx.arc(cx,cy,rO+62,0,Math.PI*2);ctx.strokeStyle='rgba(100,80,30,0.12)';ctx.lineWidth=1.5;ctx.stroke();
+ctx.beginPath();ctx.arc(cx,cy,rO+66,0,Math.PI*2);ctx.strokeStyle='rgba(100,80,30,0.08)';ctx.lineWidth=0.8;ctx.stroke();
+ctx.setLineDash([]);
+// Inner decorative ring around center
+ctx.setLineDash([2,6]);
+ctx.beginPath();ctx.arc(cx,cy,r0+8,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.15)';ctx.lineWidth=1;ctx.stroke();
+ctx.setLineDash([]);
+ctx.beginPath();ctx.arc(cx,cy,r0+12,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.06)';ctx.lineWidth=0.5;ctx.stroke();
+// Decorative tick marks around voice bar outer edge (like a compass rose)
+for(let i=0;i<72;i++){const ta=Math.PI*2*i/72;const tLen=i%6===0?12:i%3===0?7:3;ctx.beginPath();ctx.moveTo(cx+Math.cos(ta)*(r2+2),cy+Math.sin(ta)*(r2+2));ctx.lineTo(cx+Math.cos(ta)*(r2+2+tLen),cy+Math.sin(ta)*(r2+2+tLen));ctx.strokeStyle=`rgba(80,60,20,${i%6===0?0.12:0.06})`;ctx.lineWidth=i%6===0?1.2:0.6;ctx.stroke();}
+// Guide rings — subtle
+[r1,r2,r4i,r4o,rO].forEach(r=>{ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='rgba(80,70,30,0.06)';ctx.lineWidth=0.8;ctx.stroke();});
+
+// ===== STAINED GLASS PHASE TINTING =====
+let ss=[],cs=-1;D.forEach((d,i)=>{if(d.s!==cs){ss.push({s:d.s,i});cs=d.s;}});
+ss.forEach((s2,si)=>{
+  const eI=si<ss.length-1?ss[si+1].i:n;
+  const a1=sa+s2.i*ap,a2=sa+eI*ap;
+  ctx.beginPath();ctx.moveTo(cx,cy);ctx.arc(cx,cy,rO-5,a1,a2);ctx.closePath();
+  ctx.fillStyle=SGC[s2.s];ctx.fill();
+});
+
+// Phase arcs — color-only band (no text on band)
+ss.forEach((s2,si)=>{
+  const eI=si<ss.length-1?ss[si+1].i:n,a1=sa+s2.i*ap,a2=sa+eI*ap;
+  ctx.beginPath();ctx.arc(cx,cy,rO,a1+0.006,a2-0.006);ctx.arc(cx,cy,rO+50,a2-0.006,a1+0.006,true);ctx.closePath();
+  ctx.fillStyle=SC[s2.s];ctx.globalAlpha=0.95;ctx.fill();
+  ctx.strokeStyle='rgba(30,20,5,0.18)';ctx.lineWidth=1.5;ctx.stroke();ctx.globalAlpha=1;
+  // External bracket: tick marks at phase edges + connecting arc
+  const bR=rO+54,bLen=18;
+  ctx.strokeStyle=SC[s2.s];ctx.lineWidth=2;ctx.globalAlpha=0.6;
+  ctx.beginPath();ctx.moveTo(cx+Math.cos(a1+0.012)*bR,cy+Math.sin(a1+0.012)*bR);
+  ctx.lineTo(cx+Math.cos(a1+0.012)*(bR+bLen),cy+Math.sin(a1+0.012)*(bR+bLen));ctx.stroke();
+  ctx.beginPath();ctx.moveTo(cx+Math.cos(a2-0.012)*bR,cy+Math.sin(a2-0.012)*bR);
+  ctx.lineTo(cx+Math.cos(a2-0.012)*(bR+bLen),cy+Math.sin(a2-0.012)*(bR+bLen));ctx.stroke();
+  ctx.beginPath();ctx.arc(cx,cy,bR+bLen,a1+0.012,a2-0.012);ctx.stroke();
+  ctx.globalAlpha=1;
+  // Phase name label at midpoint, outside bracket
+  const mA=(a1+a2)/2,pnR=rO+100;
+  ctx.save();ctx.translate(cx+Math.cos(mA)*pnR,cy+Math.sin(mA)*pnR);
+  const fl=mA>0.3&&mA<Math.PI*1.7;
+  ctx.rotate(mA+(fl?Math.PI:0));
+  ctx.font='700 48px "Fira Sans",sans-serif';ctx.fillStyle=SC[s2.s];ctx.textAlign='center';
+  ctx.fillText(SN[s2.s].toUpperCase(),0,16);
+  ctx.restore();
+});
+
+// ===== CENTER MEDALLION =====
+const cG=ctx.createRadialGradient(cx,cy,10,cx,cy,r0);
+cG.addColorStop(0,'#e8dfc8');cG.addColorStop(0.6,'#ddd4be');cG.addColorStop(1,'#c8bea0');
+ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.fillStyle=cG;ctx.fill();
+// Double-ring border for center medallion
+ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.3)';ctx.lineWidth=3;ctx.stroke();
+ctx.beginPath();ctx.arc(cx,cy,r0-6,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.12)';ctx.lineWidth=1;ctx.stroke();
+// Center grain texture
+for(let i=0;i<400;i++){const ca=R()*Math.PI*2,cr=R()*r0*0.85;ctx.fillStyle=`rgba(100,80,30,${0.01+R()*0.02})`;ctx.fillRect(cx+Math.cos(ca)*cr,cy+Math.sin(ca)*cr,1,1);}
+ctx.font='700 120px "Cormorant Garamond",serif';ctx.fillStyle='#2a4a08';ctx.textAlign='center';
+ctx.fillText('\u05E7\u05E2\u05E8\u05D4',cx,cy-10);
+ctx.font='600 68px "Fira Sans",sans-serif';ctx.fillStyle='#3a5818';
+ctx.fillText(tH.toLocaleString()+' words',cx,cy+60);
+ctx.font='italic 44px "Cormorant Garamond",serif';ctx.fillStyle='#504828';
+ctx.fillText('The Passover Seder',cx,cy+116);
+
+const hits=[];
+D.forEach((d,i)=>{
+const ang=sa+i*ap+ap/2,a1=sa+i*ap+gp,a2=sa+(i+1)*ap-gp;
+const sl=d.he<10,wF=Math.sqrt(d.he)/Math.sqrt(mH);
+const ents=Object.entries(d.mx||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+const bH=sl?3:(r2-r1)*wF;
+
+// Voice bars
+if(sl){ctx.beginPath();ctx.arc(cx,cy,r1+1,a1,a2);ctx.arc(cx,cy,r1+5,a2,a1,true);ctx.closePath();ctx.strokeStyle='rgba(80,70,30,0.1)';ctx.lineWidth=0.8;ctx.setLineDash([3,4]);ctx.stroke();ctx.setLineDash([]);}
+else{let cR=r1;ents.forEach(([vk,pc])=>{const sH2=pc/100*bH,sE=cR+sH2;ctx.beginPath();ctx.arc(cx,cy,cR,a1,a2);ctx.arc(cx,cy,sE,a2,a1,true);ctx.closePath();ctx.fillStyle=V[vk];ctx.globalAlpha=0.92;ctx.fill();ctx.globalAlpha=1;cR=sE;});}
+
+// Era blocks
+const aE=Object.entries(d.ag||{}).filter(([k,v])=>v>0);
+if(aE.length>0&&!sl){let aCu=a1;aE.forEach(([ak,av])=>{const sp=av/100*(a2-a1);ctx.beginPath();ctx.arc(cx,cy,r4i,aCu,aCu+sp);ctx.arc(cx,cy,r4o,aCu+sp,aCu,true);ctx.closePath();ctx.fillStyle=AC[ak];ctx.globalAlpha=0.88;ctx.fill();ctx.strokeStyle='rgba(40,32,16,0.1)';ctx.lineWidth=0.8;ctx.stroke();ctx.globalAlpha=1;aCu+=sp;});}
+
+// Labels — adaptive stagger, pushed past phase bracket
+const phase=d.s;const secInPhase=D.filter(x=>x.s===phase).length;
+const tiers=secInPhase>8?5:secInPhase>4?4:3;
+const labOff=[0,85,170,255,340].slice(0,tiers)[i%tiers];
+const labR2=rO+150+labOff,lx=cx+Math.cos(ang)*labR2,ly=cy+Math.sin(ang)*labR2;
+// Leader line — starts past phase bracket
+ctx.beginPath();ctx.moveTo(cx+Math.cos(ang)*(rO+120),cy+Math.sin(ang)*(rO+120));ctx.lineTo(cx+Math.cos(ang)*(labR2-12),cy+Math.sin(ang)*(labR2-12));ctx.strokeStyle='rgba(50,40,15,0.18)';ctx.lineWidth=1.2;ctx.stroke();
+ctx.beginPath();ctx.arc(cx+Math.cos(ang)*(rO+120),cy+Math.sin(ang)*(rO+120),2.5,0,Math.PI*2);ctx.fillStyle='rgba(50,40,15,0.25)';ctx.fill();
+ctx.save();ctx.translate(lx,ly);const fl=ang>0.3&&ang<Math.PI*1.7;ctx.rotate(ang+(fl?Math.PI:0));
+ctx.font=`${sl?'500':'700'} ${sl?'30':'38'}px "Fira Sans",sans-serif`;
+ctx.fillStyle=sl?'#504030':'#0a0804';ctx.textAlign='center';
+ctx.fillText(d.k,0,-2);
+if(d.he>20){ctx.font='500 24px "Fira Sans",sans-serif';ctx.fillStyle='#504030';ctx.fillText(d.he+'w',0,26);}
+ctx.restore();
+hits.push({a1,a2,i});
+});
+
+// Ring-zone labels near 12 o'clock
+ctx.font='italic 36px "Fira Sans",sans-serif';ctx.fillStyle='#403820';ctx.textAlign='center';
+ctx.fillText('Voice bars',cx,cy-((r1+r2)/2));
+ctx.fillText('Era',cx,cy-((r4i+r4o)/2));
+
+// ===== DECORATIVE CORNER FLOURISHES =====
+const fSz=120;const fMg=60;const fOp=0.1;
+[[fMg,fMg,0],[W-fMg,fMg,Math.PI/2],[W-fMg,H-fMg,Math.PI],[fMg,H-fMg,Math.PI*1.5]].forEach(([fx,fy,fr])=>{
+  ctx.save();ctx.translate(fx,fy);ctx.rotate(fr);ctx.strokeStyle=`rgba(100,80,30,${fOp})`;ctx.lineWidth=2;
+  // L-shaped corner with curl
+  ctx.beginPath();ctx.moveTo(0,fSz);ctx.lineTo(0,0);ctx.lineTo(fSz,0);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(8,fSz-20);ctx.lineTo(8,8);ctx.lineTo(fSz-20,8);ctx.strokeStyle=`rgba(100,80,30,${fOp*0.6})`;ctx.lineWidth=1;ctx.stroke();
+  // Small diamond at corner
+  ctx.beginPath();ctx.moveTo(0,-8);ctx.lineTo(8,0);ctx.lineTo(0,8);ctx.lineTo(-8,0);ctx.closePath();ctx.fillStyle=`rgba(100,80,30,${fOp*0.8})`;ctx.fill();
+  ctx.restore();
+});
+
+// Footer attribution with decorative line
+ctx.beginPath();ctx.moveTo(cx-500,H-50);ctx.lineTo(cx+500,H-50);ctx.strokeStyle='rgba(100,80,30,0.1)';ctx.lineWidth=1;ctx.stroke();
+ctx.font='italic 34px "Fira Sans",sans-serif';ctx.fillStyle='#605840';ctx.textAlign='center';
+ctx.fillText('Word counts from Sefaria \u00b7 Hover or click any section for full analysis',cx,H-20);
+
+// ===== HTML STATS PANEL (pronouns, citations, prophetic perfect) =====
+const maxPron=Math.max(...D.map(d=>(d.we||0)+(d.you||0)+(d.he2||0)));
+const maxCit=Math.max(...D.map(d=>d.cit||0));
+const statSections=D.filter(d=>(d.we||0)+(d.you||0)+(d.he2||0)>0||(d.cit||0)>0||(d.ppf||0)>0);
+let sH='<div style="font-family:Fira Sans,sans-serif">';
+sH+='<div style="font-size:18px;font-weight:700;color:#1a1008;margin-bottom:12px;text-transform:uppercase;letter-spacing:.06em">Pronouns, Citations & Prophetic Perfect</div>';
+sH+='<div style="font-size:13px;color:#605838;margin-bottom:16px">Showing sections with pronoun references, \u05E9\u05E0\u05D0\u05DE\u05E8 citations, or prophetic perfect verb forms. Hover the radial chart for full voice + era breakdown.</div>';
+sH+='<div style="display:grid;grid-template-columns:120px 1fr 60px 40px 30px;gap:4px 12px;align-items:center;font-size:14px">';
+sH+='<div style="font-weight:700;font-size:11px;color:#403820;text-transform:uppercase">Section</div>';
+sH+='<div style="font-weight:700;font-size:11px;color:#403820;text-transform:uppercase">Pronouns (we / you / he)</div>';
+sH+='<div style="font-weight:700;font-size:11px;color:#403820;text-transform:uppercase;text-align:right">Total</div>';
+sH+='<div style="font-weight:700;font-size:11px;color:#403820;text-transform:uppercase;text-align:center">\u05E9\u05E0\u05D0\u05DE\u05E8</div>';
+sH+='<div style="font-weight:700;font-size:11px;color:#403820;text-transform:uppercase;text-align:center">PP</div>';
+statSections.forEach(d=>{
+  const we=d.we||0,you=d.you||0,he2=d.he2||0,pT=we+you+he2;
+  const wPct=maxPron>0?we/maxPron*100:0,yPct=maxPron>0?you/maxPron*100:0,hPct=maxPron>0?he2/maxPron*100:0;
+  sH+=`<div style="font-weight:600;color:#1a1008;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${d.k}</div>`;
+  sH+='<div style="display:flex;height:18px;border-radius:3px;overflow:hidden;background:rgba(80,70,30,0.06)">';
+  if(we>0)sH+=`<div style="width:${wPct}%;background:#1e4a6a;min-width:${we>0?2:0}px" title="we/our/us: ${we}"></div>`;
+  if(you>0)sH+=`<div style="width:${yPct}%;background:#5a2060;min-width:${you>0?2:0}px" title="you/your/thou: ${you}"></div>`;
+  if(he2>0)sH+=`<div style="width:${hPct}%;background:#7a3508;min-width:${he2>0?2:0}px" title="he/his/him: ${he2}"></div>`;
+  sH+='</div>';
+  sH+=`<div style="text-align:right;color:#302810;font-weight:600">${pT>0?pT:''}</div>`;
+  sH+=`<div style="text-align:center;color:#a04810;font-weight:700">${(d.cit||0)>0?d.cit:''}</div>`;
+  sH+=`<div style="text-align:center;color:#2e4a10;font-weight:700">${(d.ppf||0)>0?d.ppf:''}</div>`;
+});
+sH+='</div>';
+// Pronoun legend for the bars
+sH+='<div style="display:flex;gap:16px;margin-top:10px;font-size:12px;color:#504030">';
+sH+='<span><span style="display:inline-block;width:12px;height:12px;background:#1e4a6a;border-radius:2px;vertical-align:middle;margin-right:4px"></span>we/our/us</span>';
+sH+='<span><span style="display:inline-block;width:12px;height:12px;background:#5a2060;border-radius:2px;vertical-align:middle;margin-right:4px"></span>you/your/thou</span>';
+sH+='<span><span style="display:inline-block;width:12px;height:12px;background:#7a3508;border-radius:2px;vertical-align:middle;margin-right:4px"></span>he/his/him</span>';
+sH+='</div></div>';
+document.getElementById('statsPanel').innerHTML=sH;
+
+// Table
+document.getElementById('dt').innerHTML='<tr><th>Section</th><th>Words</th><th>Citations</th><th>we/you/he</th><th>Proph.P.</th><th>Aramaic</th><th>Source</th></tr>'+D.map(d=>`<tr><td><b>${d.k}</b></td><td>${d.he}</td><td>${d.cit||0}</td><td>${d.we||0}/${d.you||0}/${d.he2||0}</td><td>${d.ppf||0}</td><td>${d.ap||0}%</td><td>${d.src||'cached'}</td></tr>`).join('');
+
+// Tooltip
+const tip=document.getElementById('tip'),ti=document.getElementById('ti');
+let frz=null;
+function shT(d,ex,ey){
+const es=Object.entries(d.mx||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+const vB=es.map(([k,v])=>`<div class="t-bar"><div class="t-dot" style="background:${V[k]}"></div><div class="t-lbl">${VN[k]}</div><div class="t-val">${v}% \u00b7 ~${Math.round(d.he*v/100)}w</div></div>`).join('')||'<div style="opacity:0.3;font-style:italic">silence</div>';
+const ns=[];
+if((d.cit||0)>0)ns.push((d.cit||0)+' \u05E9\u05E0\u05D0\u05DE\u05E8 citations');
+if((d.ppf||0)>0)ns.push((d.ppf||0)+' prophetic perfect');
+if((d.ap||0)>20)ns.push((d.ap||0)+'% Aramaic');
+const pT=(d.we||0)+(d.you||0)+(d.he2||0);
+if(pT>0)ns.push(pT+' pronoun refs ('+d.we+'/'+d.you+'/'+d.he2+')');
+const agB=Object.entries(d.ag||{}).filter(([k,v])=>v>0).map(([k,v])=>`<div class="t-bar"><div class="t-dot" style="background:${AC[k]}"></div><div class="t-lbl">${AN[k]}</div><div class="t-val">${v}%</div></div>`).join('');
+ti.innerHTML=`<div class="t-name">${d.k}</div><div class="t-desc">${d.d}</div>
+<div class="t-grid"><div><div class="t-sn">${d.he}</div><div class="t-sl">Hebrew words</div></div><div><div class="t-sn">${Math.round(d.he/tH*100)}%</div><div class="t-sl">of Haggadah</div></div><div><div class="t-sn">${pT}</div><div class="t-sl">pronoun refs</div></div></div>
+<div style="font-size:11px;color:rgba(240,232,208,0.3);margin-bottom:3px">VOICES</div>${vB}
+${agB?`<div style="font-size:11px;color:rgba(240,232,208,0.3);margin:8px 0 3px">COMPOSITION ERA</div>${agB}`:''}
+${ns.length?`<div class="t-note">${ns.join(' \u00b7 ')}</div>`:''}`;
+tip.style.display='block';tip.style.left=Math.min(ex+18,innerWidth-400)+'px';tip.style.top=Math.max(10,ey-24)+'px';}
+
+cv.addEventListener('mousemove',function(ev){if(frz!==null)return;const rect=cv.getBoundingClientRect(),mx=(ev.offsetX/rect.width)*W-cx,my=(ev.offsetY/rect.height)*H-cy,dist=Math.sqrt(mx*mx+my*my);let a2=Math.atan2(my,mx),hit=null;hits.forEach(h=>{let a=a2;if(a<h.a1-0.1)a+=Math.PI*2;if(a>=h.a1&&a<=h.a2&&dist>r0&&dist<rO+400)hit=h;});if(hit){shT(D[hit.i],ev.clientX,ev.clientY);cv.style.cursor='pointer';}else{tip.style.display='none';cv.style.cursor='crosshair';}});
+cv.addEventListener('click',function(ev){const rect=cv.getBoundingClientRect(),mx=(ev.offsetX/rect.width)*W-cx,my=(ev.offsetY/rect.height)*H-cy,dist=Math.sqrt(mx*mx+my*my);let a2=Math.atan2(my,mx),hit=null;hits.forEach(h=>{let a=a2;if(a<h.a1-0.1)a+=Math.PI*2;if(a>=h.a1&&a<=h.a2&&dist>r0&&dist<rO+400)hit=h;});if(hit){if(frz===hit.i){frz=null;tip.style.display='none';}else{frz=hit.i;shT(D[hit.i],ev.clientX,ev.clientY);}}else{frz=null;tip.style.display='none';}});
+cv.addEventListener('mouseleave',()=>{if(frz===null)tip.style.display='none';});
+}
+
+main();
+</script>
+</body>
+</html>
