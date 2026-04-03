@@ -404,23 +404,164 @@ const SGC=['rgba(154,120,24,0.04)','rgba(184,48,48,0.04)','rgba(40,120,72,0.04)'
 
 const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),W=4000,H=4000,cx=W/2,cy=H/2;
 const n=D.length,tH=D.reduce((a,d)=>a+d.he,0),mH=Math.max(...D.map(d=>d.he));
+function sd(s){{let a=s;return()=>{{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}};}}
+const R=sd(42);
 
-// Parchment background with grain
+// ===== MOSAIC TILE HELPERS =====
+function hslFromHex(hex){{
+  let r=parseInt(hex.slice(1,3),16)/255,g=parseInt(hex.slice(3,5),16)/255,b=parseInt(hex.slice(5,7),16)/255;
+  const mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2;let h=0,s=0;
+  if(mx!==mn){{const d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);
+    if(mx===r)h=((g-b)/d+(g<b?6:0))/6;else if(mx===g)h=((b-r)/d+2)/6;else h=((r-g)/d+4)/6;}}
+  return[h*360,s*100,l*100];
+}}
+function hslToFill(h,s,l){{return `hsl(${{h}},${{s}}%,${{l}}%)`;}}
+function drawMosaicArc(ctx,cx,cy,rInner,rOuter,a1,a2,baseColor,R){{
+  const tileSize=11,groutW=1.8;
+  const[bH,bS,bL]=hslFromHex(baseColor);
+  const radDepth=rOuter-rInner,arcSpan=a2-a1;
+  if(radDepth<2||arcSpan<0.001)return;
+  const nRadial=Math.max(1,Math.round(radDepth/(tileSize+groutW)));
+  const radStep=radDepth/nRadial;
+  for(let ri=0;ri<nRadial;ri++){{
+    const rI=rInner+ri*radStep+groutW/2,rE=rInner+(ri+1)*radStep-groutW/2;
+    if(rE<=rI)continue;
+    const midR=(rI+rE)/2,circ=midR*arcSpan;
+    const nArc=Math.max(1,Math.round(circ/(tileSize+groutW)));
+    const aStep=arcSpan/nArc;
+    for(let ai=0;ai<nArc;ai++){{
+      const aI=a1+ai*aStep+groutW/(2*midR),aE=a1+(ai+1)*aStep-groutW/(2*midR);
+      if(aE<=aI)continue;
+      const hV=bH+(R()-0.5)*6,sV=Math.max(0,Math.min(100,bS+(R()-0.5)*10)),lV=Math.max(5,Math.min(90,bL+(R()-0.5)*16));
+      const jI=rI+(R()-0.5)*1.2,jE=rE+(R()-0.5)*1.2,jaI=aI+(R()-0.5)*0.001,jaE=aE+(R()-0.5)*0.001;
+      ctx.beginPath();ctx.arc(cx,cy,jI,jaI,jaE);ctx.arc(cx,cy,jE,jaE,jaI,true);ctx.closePath();
+      ctx.fillStyle=hslToFill(hV,sV,lV);ctx.fill();
+    }}
+  }}
+}}
+function drawDiamondBorder(ctx,cx,cy,radius,width,R){{
+  const n2=90,grout='rgba(45,35,15,0.5)';
+  const aStep=Math.PI*2/n2;
+  for(let i=0;i<n2;i++){{
+    const a=aStep*i,aMid=a+aStep/2;
+    const rI=radius-width/2+1,rO2=radius+width/2-1,rM=(rI+rO2)/2;
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*rM,cy+Math.sin(a)*rM);
+    ctx.lineTo(cx+Math.cos(aMid)*rO2,cy+Math.sin(aMid)*rO2);
+    ctx.lineTo(cx+Math.cos(a+aStep)*rM,cy+Math.sin(a+aStep)*rM);
+    ctx.lineTo(cx+Math.cos(aMid)*rI,cy+Math.sin(aMid)*rI);
+    ctx.closePath();
+    const lV=i%2===0?35+R()*10:55+R()*10;
+    const hV=i%2===0?38+R()*8:28+R()*8;
+    ctx.fillStyle=`hsl(${{hV}},${{30+R()*15}}%,${{lV}}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1.2;ctx.stroke();
+  }}
+}}
+function drawTriangleBorder(ctx,cx,cy,radius,width,R){{
+  const n2=60,grout='rgba(45,35,15,0.5)';
+  const aStep=Math.PI*2/n2;
+  for(let i=0;i<n2;i++){{
+    const a=aStep*i;
+    const rI=radius-width/2+1,rO2=radius+width/2-1;
+    ctx.beginPath();
+    if(i%2===0){{
+      ctx.moveTo(cx+Math.cos(a)*rI,cy+Math.sin(a)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep/2)*rO2,cy+Math.sin(a+aStep/2)*rO2);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rI,cy+Math.sin(a+aStep)*rI);
+    }}else{{
+      ctx.moveTo(cx+Math.cos(a)*rO2,cy+Math.sin(a)*rO2);
+      ctx.lineTo(cx+Math.cos(a+aStep/2)*rI,cy+Math.sin(a+aStep/2)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rO2,cy+Math.sin(a+aStep)*rO2);
+    }}
+    ctx.closePath();
+    const lV=i%2===0?30+R()*12:50+R()*12;
+    ctx.fillStyle=`hsl(${{40+R()*10}},${{25+R()*15}}%,${{lV}}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1;ctx.stroke();
+  }}
+}}
+function drawZigzagBorder(ctx,cx,cy,radius,width,R){{
+  const n2=120,grout='rgba(45,35,15,0.45)';
+  const aStep=Math.PI*2/n2;
+  for(let i=0;i<n2;i++){{
+    const a=aStep*i;
+    const rI=radius-width/2+1,rO2=radius+width/2-1;
+    ctx.beginPath();
+    if(i%2===0){{
+      ctx.moveTo(cx+Math.cos(a)*rI,cy+Math.sin(a)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep*0.5)*rO2,cy+Math.sin(a+aStep*0.5)*rO2);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rI,cy+Math.sin(a+aStep)*rI);
+    }}else{{
+      ctx.moveTo(cx+Math.cos(a)*rO2,cy+Math.sin(a)*rO2);
+      ctx.lineTo(cx+Math.cos(a+aStep*0.5)*rI,cy+Math.sin(a+aStep*0.5)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rO2,cy+Math.sin(a+aStep)*rO2);
+    }}
+    ctx.closePath();
+    const gold=i%3===0;
+    const hV2=gold?42:22+R()*15;
+    const sV2=gold?50+R()*15:20+R()*12;
+    const lV2=gold?55+R()*10:32+R()*14;
+    ctx.fillStyle=`hsl(${{hV2}},${{sV2}}%,${{lV2}}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1;ctx.stroke();
+  }}
+}}
+function drawRosette(ctx,cx,cy,radius,R){{
+  const grout='rgba(45,35,15,0.5)';
+  const points=8,innerR=radius*0.35,midR=radius*0.7,outerR=radius*0.92;
+  ctx.beginPath();ctx.arc(cx,cy,radius,0,Math.PI*2);
+  const rG=ctx.createRadialGradient(cx,cy,10,cx,cy,radius);
+  rG.addColorStop(0,'#ddd4b8');rG.addColorStop(1,'#c8bea0');
+  ctx.fillStyle=rG;ctx.fill();
+  for(let i=0;i<points;i++){{
+    const a=Math.PI*2*i/points-Math.PI/2;
+    const aNext=Math.PI*2*(i+1)/points-Math.PI/2;
+    const aMid=(a+aNext)/2;
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*midR,cy+Math.sin(a)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*outerR,cy+Math.sin(aMid)*outerR);
+    ctx.lineTo(cx+Math.cos(aNext)*midR,cy+Math.sin(aNext)*midR);
+    ctx.closePath();
+    ctx.fillStyle=`hsl(${{42+R()*6}},${{50+R()*15}}%,${{48+R()*12}}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1.8;ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*innerR,cy+Math.sin(a)*innerR);
+    ctx.lineTo(cx+Math.cos(a)*midR,cy+Math.sin(a)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*midR*0.6,cy+Math.sin(aMid)*midR*0.6);
+    ctx.closePath();
+    const bg=R()>0.5;
+    ctx.fillStyle=bg?`hsl(${{200+R()*30}},${{40+R()*15}}%,${{25+R()*10}}%)`:`hsl(${{150+R()*30}},${{35+R()*15}}%,${{28+R()*10}}%)`;
+    ctx.fill();ctx.strokeStyle=grout;ctx.lineWidth=1.5;ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(aNext)*innerR,cy+Math.sin(aNext)*innerR);
+    ctx.lineTo(cx+Math.cos(aNext)*midR,cy+Math.sin(aNext)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*midR*0.6,cy+Math.sin(aMid)*midR*0.6);
+    ctx.closePath();
+    ctx.fillStyle=bg?`hsl(${{155+R()*30}},${{35+R()*15}}%,${{28+R()*10}}%)`:`hsl(${{205+R()*30}},${{40+R()*15}}%,${{25+R()*10}}%)`;
+    ctx.fill();ctx.strokeStyle=grout;ctx.lineWidth=1.5;ctx.stroke();
+  }}
+  ctx.beginPath();
+  for(let i=0;i<points;i++){{const a=Math.PI*2*i/points-Math.PI/2;ctx.lineTo(cx+Math.cos(a)*innerR,cy+Math.sin(a)*innerR);}}
+  ctx.closePath();ctx.fillStyle=`hsl(${{40+R()*5}},${{45+R()*10}}%,${{52+R()*8}}%)`;ctx.fill();
+  ctx.strokeStyle=grout;ctx.lineWidth=2;ctx.stroke();
+}}
+
+// Plaster background
 const pG=ctx.createRadialGradient(cx,cy,200,cx,cy,2800);
 pG.addColorStop(0,'#efe7d4');pG.addColorStop(0.5,'#ece4d0');pG.addColorStop(1,'#e4dcc4');
 ctx.fillStyle=pG;ctx.fillRect(0,0,W,H);
-// Edge vignette
+for(let i=0;i<12000;i++){{const gx=R()*W,gy=R()*H;ctx.fillStyle=`rgba(${{60+R()*50}},${{50+R()*35}},${{15+R()*25}},${{0.008+R()*0.018}})`;ctx.fillRect(gx,gy,0.5+R()*1.5,0.5+R()*1.5);}}
+for(let i=0;i<80;i++){{ctx.beginPath();const fx=R()*W,fy=R()*H;ctx.moveTo(fx,fy);ctx.lineTo(fx+R()*20-10,fy+R()*3);ctx.strokeStyle=`rgba(120,90,40,${{0.006+R()*0.008}})`;ctx.lineWidth=0.3+R()*0.4;ctx.stroke();}}
 const vG=ctx.createRadialGradient(cx,cy,800,cx,cy,2900);
-vG.addColorStop(0,'rgba(0,0,0,0)');vG.addColorStop(0.7,'rgba(0,0,0,0)');vG.addColorStop(1,'rgba(40,30,10,0.12)');
+vG.addColorStop(0,'rgba(0,0,0,0)');vG.addColorStop(0.7,'rgba(0,0,0,0)');vG.addColorStop(1,'rgba(40,30,10,0.14)');
 ctx.fillStyle=vG;ctx.fillRect(0,0,W,H);
 
 const r0=220,r1=300,r2=780,r4i=820,r4o=890,rO=940,rL=1100;
 const ap=Math.PI*2/n,sa=-Math.PI/2-ap/2,gp=0.008;
 
-// Decorative tick marks
-for(let i=0;i<72;i++){{const ta=Math.PI*2*i/72;const tLen=i%6===0?12:i%3===0?7:3;ctx.beginPath();ctx.moveTo(cx+Math.cos(ta)*(r2+2),cy+Math.sin(ta)*(r2+2));ctx.lineTo(cx+Math.cos(ta)*(r2+2+tLen),cy+Math.sin(ta)*(r2+2+tLen));ctx.strokeStyle='rgba(80,60,20,'+(i%6===0?0.12:0.06)+')';ctx.lineWidth=i%6===0?1.2:0.6;ctx.stroke();}}
-// Guide rings
-[r1,r2,r4i,r4o,rO].forEach(r=>{{ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='rgba(80,70,30,0.06)';ctx.lineWidth=0.8;ctx.stroke();}});
+// Geometric tile borders
+drawZigzagBorder(ctx,cx,cy,rO+52,18,R);
+drawDiamondBorder(ctx,cx,cy,(r2+r4i)/2,16,R);
+drawTriangleBorder(ctx,cx,cy,r0+10,14,R);
+[r1,r2,r4i,r4o,rO].forEach(r=>{{ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='rgba(45,35,15,0.1)';ctx.lineWidth=1;ctx.stroke();}});
 
 // Stained glass phase tinting
 let ss=[],cs2=-1;D.forEach((d,i)=>{{if(d.s!==cs2){{ss.push({{s:d.s,i}});cs2=d.s;}}}});
@@ -431,12 +572,10 @@ ss.forEach((s2,si)=>{{
   ctx.fillStyle=SGC[s2.s];ctx.fill();
 }});
 
-// Phase arcs — color-only band (no text on band)
+// Phase arcs — mosaic tile band
 ss.forEach((s2,si)=>{{
   const eI=si<ss.length-1?ss[si+1].i:n,a1=sa+s2.i*ap,a2=sa+eI*ap;
-  ctx.beginPath();ctx.arc(cx,cy,rO,a1+0.006,a2-0.006);ctx.arc(cx,cy,rO+50,a2-0.006,a1+0.006,true);ctx.closePath();
-  ctx.fillStyle=SC[s2.s];ctx.globalAlpha=0.95;ctx.fill();
-  ctx.strokeStyle='rgba(30,20,5,0.18)';ctx.lineWidth=1.5;ctx.stroke();ctx.globalAlpha=1;
+  drawMosaicArc(ctx,cx,cy,rO,rO+50,a1+0.006,a2-0.006,SC[s2.s],R);
   // External bracket
   const bR=rO+54,bLen=18;
   ctx.strokeStyle=SC[s2.s];ctx.lineWidth=2;ctx.globalAlpha=0.6;
@@ -456,18 +595,17 @@ ss.forEach((s2,si)=>{{
   ctx.restore();
 }});
 
-// Center
-const cG=ctx.createRadialGradient(cx,cy,10,cx,cy,r0);
-cG.addColorStop(0,'#e8dfc8');cG.addColorStop(0.6,'#ddd4be');cG.addColorStop(1,'#c8bea0');
-ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.fillStyle=cG;ctx.fill();
-ctx.strokeStyle='rgba(80,60,20,0.3)';ctx.lineWidth=3;ctx.stroke();
-ctx.beginPath();ctx.arc(cx,cy,r0-6,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.12)';ctx.lineWidth=1;ctx.stroke();
-ctx.font='700 120px "Cormorant Garamond",serif';ctx.fillStyle='#2a4a08';ctx.textAlign='center';
+// Center — geometric rosette
+drawRosette(ctx,cx,cy,r0,R);
+drawTriangleBorder(ctx,cx,cy,r0,12,R);
+ctx.font='700 120px "Cormorant Garamond",serif';ctx.fillStyle='#1a0a02';ctx.textAlign='center';
+ctx.shadowColor='rgba(230,220,190,0.7)';ctx.shadowBlur=8;
 ctx.fillText('\\u05E7\\u05E2\\u05E8\\u05D4',cx,cy-10);
-ctx.font='600 68px "Fira Sans",sans-serif';ctx.fillStyle='#3a5818';
+ctx.font='600 68px "Fira Sans",sans-serif';ctx.fillStyle='#1a2a08';
 ctx.fillText(tH.toLocaleString()+' words',cx,cy+60);
-ctx.font='italic 44px "Cormorant Garamond",serif';ctx.fillStyle='#504828';
+ctx.font='italic 44px "Cormorant Garamond",serif';ctx.fillStyle='#2a1808';
 ctx.fillText('The Passover Seder',cx,cy+116);
+ctx.shadowColor='transparent';ctx.shadowBlur=0;
 
 const hits=[];
 D.forEach((d,i)=>{{
@@ -476,15 +614,15 @@ D.forEach((d,i)=>{{
   const ents=Object.entries(d.mx||{{}}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
   const bH=sl?3:(r2-r1)*wF;
 
-  // Voice bars
+  // Voice bars — mosaic tiles
   if(sl){{ctx.beginPath();ctx.arc(cx,cy,r1+1,a1,a2);ctx.arc(cx,cy,r1+5,a2,a1,true);ctx.closePath();ctx.strokeStyle='rgba(80,70,30,0.1)';ctx.lineWidth=0.8;ctx.setLineDash([3,4]);ctx.stroke();ctx.setLineDash([]);}}
-  else{{let cR=r1;ents.forEach(([vk,pc])=>{{const sH=pc/100*bH,sE=cR+sH;ctx.beginPath();ctx.arc(cx,cy,cR,a1,a2);ctx.arc(cx,cy,sE,a2,a1,true);ctx.closePath();ctx.fillStyle=V[vk];ctx.globalAlpha=0.92;ctx.fill();ctx.globalAlpha=1;cR=sE;}});}};
+  else{{let cR=r1;ents.forEach(([vk,pc])=>{{const sH=pc/100*bH,sE=cR+sH;if(sE-cR>2)drawMosaicArc(ctx,cx,cy,cR,sE,a1,a2,V[vk],R);cR=sE;}});}};
 
-  // Era blocks
+  // Era blocks — mosaic tiles
   const aE=Object.entries(d.ag||{{}}).filter(([k,v])=>v>0);
-  if(aE.length>0&&!sl){{let aCu=a1;aE.forEach(([ak,av])=>{{const sp=av/100*(a2-a1);ctx.beginPath();ctx.arc(cx,cy,r4i,aCu,aCu+sp);ctx.arc(cx,cy,r4o,aCu+sp,aCu,true);ctx.closePath();ctx.fillStyle=AC[ak];ctx.globalAlpha=0.88;ctx.fill();ctx.strokeStyle='rgba(40,32,16,0.1)';ctx.lineWidth=0.8;ctx.stroke();ctx.globalAlpha=1;aCu+=sp;}});}};
+  if(aE.length>0&&!sl){{let aCu=a1;aE.forEach(([ak,av])=>{{const sp=av/100*(a2-a1);if(sp>0.002)drawMosaicArc(ctx,cx,cy,r4i,r4o,aCu,aCu+sp,AC[ak],R);aCu+=sp;}});}};
 
-  // Labels — adaptive stagger, pushed past phase bracket
+  // Labels
   const phase=d.s;const secInPhase=D.filter(x=>x.s===phase).length;
   const tiers=secInPhase>8?5:secInPhase>4?4:3;
   const labOff=[0,85,170,255,340].slice(0,tiers)[i%tiers];
@@ -509,7 +647,23 @@ ctx.font='italic 36px "Fira Sans",sans-serif';ctx.fillStyle='#403820';ctx.textAl
 ctx.fillText('Voice bars',cx,cy-((r1+r2)/2));
 ctx.fillText('Era',cx,cy-((r4i+r4o)/2));
 
-// Footer with decorative line
+// Corner mosaics
+const fSz2=100,fMg2=55,cGrOut='rgba(45,35,15,0.4)';
+[[fMg2,fMg2,0],[W-fMg2,fMg2,Math.PI/2],[W-fMg2,H-fMg2,Math.PI],[fMg2,H-fMg2,Math.PI*1.5]].forEach(([fx,fy,fr])=>{{
+  ctx.save();ctx.translate(fx,fy);ctx.rotate(fr);
+  const ts=20;
+  for(let r2=0;r2<5;r2++)for(let c=0;c<5;c++){{
+    if(r2+c>5)continue;
+    const x=c*ts+2,y=r2*ts+2;
+    const gold=(r2+c)%2===0;
+    ctx.fillStyle=gold?`hsl(${{40+R()*8}},${{40+R()*15}}%,${{48+R()*12}}%)`:`hsl(${{20+R()*15}},${{20+R()*12}}%,${{32+R()*12}}%)`;
+    ctx.fillRect(x,y,ts-3,ts-3);
+    ctx.strokeStyle=cGrOut;ctx.lineWidth=1;ctx.strokeRect(x,y,ts-3,ts-3);
+  }}
+  ctx.restore();
+}});
+
+// Footer
 ctx.beginPath();ctx.moveTo(cx-500,H-50);ctx.lineTo(cx+500,H-50);ctx.strokeStyle='rgba(100,80,30,0.1)';ctx.lineWidth=1;ctx.stroke();
 ctx.font='italic 34px "Fira Sans",sans-serif';ctx.fillStyle='#605840';ctx.textAlign='center';
 ctx.fillText('Generated from Sefaria API \\u00b7 Hover or click any section for full analysis',cx,H-20);
