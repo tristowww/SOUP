@@ -9,8 +9,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#ece4d0;font-family:'Cormorant Garamond',serif;color:#302810;display:flex;flex-direction:column;align-items:center;padding:20px 10px 60px}
-h1{font-size:40px;font-weight:700;color:#2a2008;text-align:center;margin-top:10px;letter-spacing:0.02em}
-.sub{font-size:19px;font-style:italic;color:#504828;text-align:center;margin:4px 0 6px}
+h1{font-size:clamp(28px,5vw,40px);font-weight:700;color:#2a2008;text-align:center;margin-top:10px;letter-spacing:0.02em}
+.sub{font-size:clamp(14px,2.5vw,19px);font-style:italic;color:#504828;text-align:center;margin:4px 0 6px}
 .divider{width:200px;height:1px;background:linear-gradient(90deg,transparent,rgba(100,80,30,0.2),transparent);margin:8px auto}
 .badge{display:inline-block;font-size:15px;padding:6px 16px;border-radius:14px;margin-bottom:18px;font-weight:600}
 .badge-live{background:#4a6828;color:#e8ecd8}
@@ -20,9 +20,33 @@ h1{font-size:40px;font-weight:700;color:#2a2008;text-align:center;margin-top:10p
 .lbar{height:5px;background:#d0c8b0;border-radius:3px;margin:16px auto;max-width:320px;overflow:hidden}
 .lfill{height:100%;background:#b89810;border-radius:3px;transition:width 0.3s;width:0%}
 .lstatus{font-size:13px;color:#908858;margin-top:8px;min-height:40px}
-canvas{display:block;max-width:100%;height:auto;cursor:crosshair}
+#vizWrap{width:100%;max-width:1800px;margin:0 auto;position:relative}
+canvas{display:block;width:100%;height:auto}
+#cv{cursor:crosshair}
+#ov{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
 #tip{display:none;position:fixed;pointer-events:none;z-index:99;max-width:380px}
 .tip-box{background:#28220e;color:#f0e8d0;padding:18px 22px;border-radius:14px;font-size:15px;line-height:1.55;border:1px solid rgba(200,170,80,0.1);box-shadow:0 8px 30px rgba(0,0,0,0.3)}
+#detailCard{max-width:900px;width:100%;margin:0 auto;overflow:hidden;transition:max-height 0.5s cubic-bezier(0.4,0,0.2,1),opacity 0.4s ease;max-height:0;opacity:0}
+#detailCard.open{max-height:800px;opacity:1}
+.dc-inner{background:linear-gradient(135deg,#2a2210,#1e1a0e);color:#f0e8d0;border-radius:18px;padding:32px 36px;margin:20px 0;border:1px solid rgba(200,170,80,0.12);box-shadow:0 12px 48px rgba(0,0,0,0.25)}
+.dc-head{display:flex;align-items:baseline;gap:16px;margin-bottom:4px}
+.dc-name{font-size:28px;font-weight:700;color:#e0c860;font-family:'Cormorant Garamond',serif}
+.dc-phase{font-size:13px;font-weight:600;padding:4px 12px;border-radius:10px;text-transform:uppercase;letter-spacing:0.06em;font-family:'Fira Sans',sans-serif}
+.dc-desc{font-size:15px;color:rgba(240,232,208,0.55);margin-bottom:18px;font-style:italic}
+.dc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:16px;margin-bottom:22px}
+.dc-stat{text-align:center;padding:14px;background:rgba(255,255,255,0.04);border-radius:12px;border:1px solid rgba(200,170,80,0.06)}
+.dc-sv{font-size:32px;font-weight:700;color:#e0c860;font-family:'Fira Sans',sans-serif}
+.dc-sl{font-size:11px;color:rgba(240,232,208,0.35);text-transform:uppercase;letter-spacing:0.06em;margin-top:2px}
+.dc-row{display:flex;gap:28px;flex-wrap:wrap}
+.dc-col{flex:1;min-width:200px}
+.dc-col h4{font-size:12px;color:rgba(240,232,208,0.3);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;font-family:'Fira Sans',sans-serif}
+.dc-bar{display:flex;align-items:center;gap:8px;margin:6px 0}
+.dc-bar-dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+.dc-bar-lbl{font-size:14px;color:rgba(240,232,208,0.7);flex:1}
+.dc-bar-fill{height:10px;border-radius:5px;transition:width 0.6s cubic-bezier(0.4,0,0.2,1)}
+.dc-bar-pct{font-size:13px;color:rgba(240,232,208,0.4);min-width:36px;text-align:right}
+.dc-close{position:absolute;top:16px;right:20px;background:none;border:none;color:rgba(240,232,208,0.4);font-size:22px;cursor:pointer;padding:4px 8px}
+.dc-close:hover{color:#e0c860}
 .t-name{font-size:24px;font-weight:600;color:#e0c860;margin-bottom:4px}
 .t-desc{font-size:14px;color:rgba(240,232,208,0.6);margin-bottom:10px}
 .t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:10px}
@@ -33,14 +57,14 @@ canvas{display:block;max-width:100%;height:auto;cursor:crosshair}
 .t-lbl{font-size:14px;color:rgba(240,232,208,0.6);flex:1}
 .t-val{font-size:13px;color:rgba(240,232,208,0.35)}
 .t-note{font-size:13px;color:rgba(240,232,208,0.35);font-style:italic;margin-top:8px;padding-top:8px;border-top:1px solid rgba(200,170,80,0.08)}
-.leg{max-width:900px;width:100%;display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-top:18px}
+.leg{max-width:1400px;width:100%;display:flex;flex-wrap:wrap;gap:24px;justify-content:center;margin-top:22px}
 .lg{text-align:center}
 .lgt{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:#1a1008;margin-bottom:6px;font-family:'Fira Sans',sans-serif}
 .lgi{display:flex;flex-wrap:wrap;gap:6px 18px;justify-content:center}
 .li{display:flex;align-items:center;gap:6px;font-size:16px;color:#1a1008;font-weight:500;font-family:'Fira Sans',sans-serif}
 .lsq{width:18px;height:18px;border-radius:3px}
 .ft{max-width:700px;text-align:center;font-size:15px;color:#605838;font-style:italic;margin-top:20px;line-height:1.5}
-details{max-width:900px;width:100%;margin-top:20px}
+details{max-width:1400px;width:100%;margin-top:20px}
 summary{cursor:pointer;font-size:15px;color:#706838;font-weight:500}
 table{width:100%;border-collapse:collapse;font-size:12px;margin-top:8px}
 th{text-align:left;padding:4px 8px;border-bottom:2px solid rgba(80,70,30,0.15);color:#4a4020;font-weight:600;font-size:11px;text-transform:uppercase}
@@ -60,7 +84,8 @@ td{padding:3px 8px;border-bottom:1px solid rgba(80,70,30,0.06);color:#3a3010}
 </div>
 
 <div id="viz" style="display:none">
-<canvas id="cv" width="4000" height="4000"></canvas>
+<div id="vizWrap"><canvas id="cv" width="5000" height="5000"></canvas><canvas id="ov" width="5000" height="5000"></canvas></div>
+<div id="detailCard"></div>
 <div class="leg">
 <div class="lg"><div class="lgt">Voice bars &mdash; who speaks</div><div class="lgi">
 <div class="li"><div class="lsq" style="background:#7a3508"></div>Named rabbis</div>
@@ -87,24 +112,20 @@ td{padding:3px 8px;border-bottom:1px solid rgba(80,70,30,0.06);color:#3a3010}
 </div></div>
 </div>
 <div class="ft" id="ftNote"></div>
-<div id="statsPanel" style="max-width:900px;width:100%;margin-top:24px"></div>
+<div id="statsPanel" style="max-width:1400px;width:100%;margin-top:24px"></div>
 <details><summary>Show raw computed data</summary><table id="dt"></table></details>
 </div>
 
 <div id="tip"><div class="tip-box" id="ti"></div></div>
 
 <script>
-// ===== PALETTE — darker-to-lighter from center outward (ui-ux-pro-max sunburst guidance) =====
-// Voice bars (innermost) = darkest; era blocks = mid; phase arc = lightest
+// ===== PALETTE =====
 const V={rabbis:'#7a3508',collective:'#1e4a6a',liturgical:'#5a2060',children:'#b06008',god:'#2e4a10'};
 const VN={rabbis:'Named rabbis',collective:'Collective \u201cwe\u201d',liturgical:'Psalmic',children:'Children',god:'God / Torah'};
-// Era colors — wide hue spread (blue / green / terra / wine / olive / purple)
 const AC={psalms_era:'#285888',biblical:'#4a6828',mishnaic:'#a04810',talmudic:'#802848',geonic:'#787020',medieval_era:'#6030a0'};
 const AN={psalms_era:'Psalms',biblical:'Biblical',mishnaic:'Mishnaic',talmudic:'Talmudic',geonic:'Geonic',medieval_era:'Medieval'};
-// Phase arc band — vivid, maximally distinct hues (gold / crimson / emerald / cobalt / violet / orange)
 const SC=['#9a7818','#b83030','#287848','#2860a8','#7830a0','#a85020'];
 const SN=['Before','Maggid','Meal','Barech','Hallel','Nirtzah'];
-// Stained glass tint colors (very low opacity for background wedges)
 const SGC=['rgba(154,120,24,0.04)','rgba(184,48,48,0.04)','rgba(40,120,72,0.04)','rgba(40,96,168,0.04)','rgba(120,48,160,0.04)','rgba(168,80,32,0.04)'];
 
 // ===== SECTIONS =====
@@ -217,44 +238,177 @@ async function main(){
 
 // ===== RENDER =====
 function render(D){
-const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),W=4000,H=4000,cx=W/2,cy=H/2;
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d'),W=5000,H=5000,cx=W/2,cy=H/2;
+const ov=document.getElementById('ov'),octx=ov.getContext('2d');
 const n=D.length,tH=D.reduce((a,d)=>a+d.he,0),mH=Math.max(...D.map(d=>d.he));
 function sd(s){let a=s;return()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
 const R=sd(42);
 
+// ===== MOSAIC TILE HELPERS =====
+function hslFromHex(hex){
+  let r=parseInt(hex.slice(1,3),16)/255,g=parseInt(hex.slice(3,5),16)/255,b=parseInt(hex.slice(5,7),16)/255;
+  const mx=Math.max(r,g,b),mn=Math.min(r,g,b),l=(mx+mn)/2;let h=0,s=0;
+  if(mx!==mn){const d=mx-mn;s=l>0.5?d/(2-mx-mn):d/(mx+mn);
+    if(mx===r)h=((g-b)/d+(g<b?6:0))/6;else if(mx===g)h=((b-r)/d+2)/6;else h=((r-g)/d+4)/6;}
+  return[h*360,s*100,l*100];
+}
+function hslToFill(h,s,l){return `hsl(${h},${s}%,${l}%)`;}
+
+function drawMosaicArc(ctx,cx,cy,rInner,rOuter,a1,a2,baseColor,R){
+  const tileSize=18,groutW=2.5;
+  const[bH,bS,bL]=hslFromHex(baseColor);
+  const radDepth=rOuter-rInner,arcSpan=a2-a1;
+  if(radDepth<2||arcSpan<0.001)return;
+  const nRadial=Math.max(1,Math.round(radDepth/(tileSize+groutW)));
+  const radStep=radDepth/nRadial;
+  for(let ri=0;ri<nRadial;ri++){
+    const rI=rInner+ri*radStep+groutW/2,rE=rInner+(ri+1)*radStep-groutW/2;
+    if(rE<=rI)continue;
+    const midR=(rI+rE)/2,circ=midR*arcSpan;
+    const nArc=Math.max(1,Math.round(circ/(tileSize+groutW)));
+    const aStep=arcSpan/nArc;
+    for(let ai=0;ai<nArc;ai++){
+      const aI=a1+ai*aStep+groutW/(2*midR),aE=a1+(ai+1)*aStep-groutW/(2*midR);
+      if(aE<=aI)continue;
+      const hV=bH+(R()-0.5)*6,sV=Math.max(0,Math.min(100,bS+(R()-0.5)*10)),lV=Math.max(5,Math.min(90,bL+(R()-0.5)*16));
+      const jI=rI+(R()-0.5)*1.2,jE=rE+(R()-0.5)*1.2,jaI=aI+(R()-0.5)*0.001,jaE=aE+(R()-0.5)*0.001;
+      ctx.beginPath();ctx.arc(cx,cy,jI,jaI,jaE);ctx.arc(cx,cy,jE,jaE,jaI,true);ctx.closePath();
+      ctx.fillStyle=hslToFill(hV,sV,lV);ctx.fill();
+    }
+  }
+}
+
+// Geometric border: diamond/chevron ring
+function drawDiamondBorder(ctx,cx,cy,radius,width,R){
+  const n=90,grout='rgba(45,35,15,0.5)';
+  const aStep=Math.PI*2/n;
+  for(let i=0;i<n;i++){
+    const a=aStep*i,aMid=a+aStep/2;
+    const rI=radius-width/2+1,rO=radius+width/2-1,rM=(rI+rO)/2;
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*rM,cy+Math.sin(a)*rM);
+    ctx.lineTo(cx+Math.cos(aMid)*rO,cy+Math.sin(aMid)*rO);
+    ctx.lineTo(cx+Math.cos(a+aStep)*rM,cy+Math.sin(a+aStep)*rM);
+    ctx.lineTo(cx+Math.cos(aMid)*rI,cy+Math.sin(aMid)*rI);
+    ctx.closePath();
+    const lV=i%2===0?35+R()*10:55+R()*10;
+    const hV=i%2===0?38+R()*8:28+R()*8;
+    ctx.fillStyle=`hsl(${hV},${30+R()*15}%,${lV}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1.2;ctx.stroke();
+  }
+}
+
+// Geometric border: triangular interlocking ring
+function drawTriangleBorder(ctx,cx,cy,radius,width,R){
+  const n=60,grout='rgba(45,35,15,0.5)';
+  const aStep=Math.PI*2/n;
+  for(let i=0;i<n;i++){
+    const a=aStep*i;
+    const rI=radius-width/2+1,rO=radius+width/2-1;
+    ctx.beginPath();
+    if(i%2===0){
+      ctx.moveTo(cx+Math.cos(a)*rI,cy+Math.sin(a)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep/2)*rO,cy+Math.sin(a+aStep/2)*rO);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rI,cy+Math.sin(a+aStep)*rI);
+    }else{
+      ctx.moveTo(cx+Math.cos(a)*rO,cy+Math.sin(a)*rO);
+      ctx.lineTo(cx+Math.cos(a+aStep/2)*rI,cy+Math.sin(a+aStep/2)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rO,cy+Math.sin(a+aStep)*rO);
+    }
+    ctx.closePath();
+    const lV=i%2===0?30+R()*12:50+R()*12;
+    ctx.fillStyle=`hsl(${40+R()*10},${25+R()*15}%,${lV}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1;ctx.stroke();
+  }
+}
+
+// Geometric border: zigzag tile ring
+function drawZigzagBorder(ctx,cx,cy,radius,width,R){
+  const n=120,grout='rgba(45,35,15,0.45)';
+  const aStep=Math.PI*2/n;
+  for(let i=0;i<n;i++){
+    const a=aStep*i;
+    const rI=radius-width/2+1,rO=radius+width/2-1;
+    ctx.beginPath();
+    if(i%2===0){
+      ctx.moveTo(cx+Math.cos(a)*rI,cy+Math.sin(a)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep*0.5)*rO,cy+Math.sin(a+aStep*0.5)*rO);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rI,cy+Math.sin(a+aStep)*rI);
+    }else{
+      ctx.moveTo(cx+Math.cos(a)*rO,cy+Math.sin(a)*rO);
+      ctx.lineTo(cx+Math.cos(a+aStep*0.5)*rI,cy+Math.sin(a+aStep*0.5)*rI);
+      ctx.lineTo(cx+Math.cos(a+aStep)*rO,cy+Math.sin(a+aStep)*rO);
+    }
+    ctx.closePath();
+    const gold=i%3===0;
+    const hV=gold?42:22+R()*15;
+    const sV=gold?50+R()*15:20+R()*12;
+    const lV=gold?55+R()*10:32+R()*14;
+    ctx.fillStyle=`hsl(${hV},${sV}%,${lV}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1;ctx.stroke();
+  }
+}
+
+// Center rosette: 8-pointed star from triangular mosaic tiles
+function drawRosette(ctx,cx,cy,radius,R){
+  const grout='rgba(45,35,15,0.5)';
+  const points=8,innerR=radius*0.35,midR=radius*0.7,outerR=radius*0.92;
+  ctx.beginPath();ctx.arc(cx,cy,radius,0,Math.PI*2);
+  const rG=ctx.createRadialGradient(cx,cy,10,cx,cy,radius);
+  rG.addColorStop(0,'#ddd4b8');rG.addColorStop(1,'#c8bea0');
+  ctx.fillStyle=rG;ctx.fill();
+  for(let i=0;i<points;i++){
+    const a=Math.PI*2*i/points-Math.PI/2;
+    const aNext=Math.PI*2*(i+1)/points-Math.PI/2;
+    const aMid=(a+aNext)/2;
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*midR,cy+Math.sin(a)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*outerR,cy+Math.sin(aMid)*outerR);
+    ctx.lineTo(cx+Math.cos(aNext)*midR,cy+Math.sin(aNext)*midR);
+    ctx.closePath();
+    ctx.fillStyle=`hsl(${42+R()*6},${50+R()*15}%,${48+R()*12}%)`;ctx.fill();
+    ctx.strokeStyle=grout;ctx.lineWidth=1.8;ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(a)*innerR,cy+Math.sin(a)*innerR);
+    ctx.lineTo(cx+Math.cos(a)*midR,cy+Math.sin(a)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*midR*0.6,cy+Math.sin(aMid)*midR*0.6);
+    ctx.closePath();
+    const blueGreen=R()>0.5;
+    ctx.fillStyle=blueGreen?`hsl(${200+R()*30},${40+R()*15}%,${25+R()*10}%)`:`hsl(${150+R()*30},${35+R()*15}%,${28+R()*10}%)`;
+    ctx.fill();ctx.strokeStyle=grout;ctx.lineWidth=1.5;ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(aNext)*innerR,cy+Math.sin(aNext)*innerR);
+    ctx.lineTo(cx+Math.cos(aNext)*midR,cy+Math.sin(aNext)*midR);
+    ctx.lineTo(cx+Math.cos(aMid)*midR*0.6,cy+Math.sin(aMid)*midR*0.6);
+    ctx.closePath();
+    ctx.fillStyle=blueGreen?`hsl(${155+R()*30},${35+R()*15}%,${28+R()*10}%)`:`hsl(${205+R()*30},${40+R()*15}%,${25+R()*10}%)`;
+    ctx.fill();ctx.strokeStyle=grout;ctx.lineWidth=1.5;ctx.stroke();
+  }
+  ctx.beginPath();
+  for(let i=0;i<points;i++){const a=Math.PI*2*i/points-Math.PI/2;ctx.lineTo(cx+Math.cos(a)*innerR,cy+Math.sin(a)*innerR);}
+  ctx.closePath();ctx.fillStyle=`hsl(${40+R()*5},${45+R()*10}%,${52+R()*8}%)`;ctx.fill();
+  ctx.strokeStyle=grout;ctx.lineWidth=2;ctx.stroke();
+}
+
 // ===== PARCHMENT BACKGROUND =====
-// Base warm parchment with subtle variation
-const pG=ctx.createRadialGradient(cx,cy,200,cx,cy,2800);
+const pG=ctx.createRadialGradient(cx,cy,300,cx,cy,3500);
 pG.addColorStop(0,'#efe7d4');pG.addColorStop(0.5,'#ece4d0');pG.addColorStop(1,'#e4dcc4');
 ctx.fillStyle=pG;ctx.fillRect(0,0,W,H);
-// Dense grain — handmade paper texture
-for(let i=0;i<6000;i++){const gx=R()*W,gy=R()*H;ctx.fillStyle=`rgba(${60+R()*40},${50+R()*30},${15+R()*20},${0.01+R()*0.025})`;ctx.fillRect(gx,gy,0.5+R()*2,0.5+R()*2);}
-// Warm fiber streaks
-for(let i=0;i<300;i++){ctx.beginPath();const fx=R()*W,fy=R()*H;ctx.moveTo(fx,fy);ctx.lineTo(fx+R()*30-15,fy+R()*3);ctx.strokeStyle=`rgba(120,90,40,${0.008+R()*0.012})`;ctx.lineWidth=0.3+R()*0.5;ctx.stroke();}
-// Edge darkening vignette
-const vG=ctx.createRadialGradient(cx,cy,800,cx,cy,2900);
-vG.addColorStop(0,'rgba(0,0,0,0)');vG.addColorStop(0.7,'rgba(0,0,0,0)');vG.addColorStop(1,'rgba(40,30,10,0.12)');
+for(let i=0;i<18000;i++){const gx=R()*W,gy=R()*H;ctx.fillStyle=`rgba(${60+R()*50},${50+R()*35},${15+R()*25},${0.008+R()*0.018})`;ctx.fillRect(gx,gy,0.5+R()*1.5,0.5+R()*1.5);}
+for(let i=0;i<80;i++){ctx.beginPath();const fx=R()*W,fy=R()*H;ctx.moveTo(fx,fy);ctx.lineTo(fx+R()*20-10,fy+R()*3);ctx.strokeStyle=`rgba(120,90,40,${0.006+R()*0.008})`;ctx.lineWidth=0.3+R()*0.4;ctx.stroke();}
+const vG=ctx.createRadialGradient(cx,cy,1000,cx,cy,3500);
+vG.addColorStop(0,'rgba(0,0,0,0)');vG.addColorStop(0.7,'rgba(0,0,0,0)');vG.addColorStop(1,'rgba(40,30,10,0.14)');
 ctx.fillStyle=vG;ctx.fillRect(0,0,W,H);
 
-// Simplified layout: center | voice bars | era blocks | phase arc | labels
-const r0=220,r1=300,r2=780,r4i=820,r4o=890,rO=940,rL=1100;
+// Layout — tight rings, minimal whitespace
+const r0=260,r1=300,r2=1080,r4i=1095,r4o=1260,rO=1280,rL=1400;
 const ap=Math.PI*2/n,sa=-Math.PI/2-ap/2,gp=0.012;
 
-// ===== DECORATIVE ORNAMENT RINGS =====
-// Outer decorative border — dotted ring
-ctx.setLineDash([4,8]);
-ctx.beginPath();ctx.arc(cx,cy,rO+62,0,Math.PI*2);ctx.strokeStyle='rgba(100,80,30,0.12)';ctx.lineWidth=1.5;ctx.stroke();
-ctx.beginPath();ctx.arc(cx,cy,rO+66,0,Math.PI*2);ctx.strokeStyle='rgba(100,80,30,0.08)';ctx.lineWidth=0.8;ctx.stroke();
-ctx.setLineDash([]);
-// Inner decorative ring around center
-ctx.setLineDash([2,6]);
-ctx.beginPath();ctx.arc(cx,cy,r0+8,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.15)';ctx.lineWidth=1;ctx.stroke();
-ctx.setLineDash([]);
-ctx.beginPath();ctx.arc(cx,cy,r0+12,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.06)';ctx.lineWidth=0.5;ctx.stroke();
-// Decorative tick marks around voice bar outer edge (like a compass rose)
-for(let i=0;i<72;i++){const ta=Math.PI*2*i/72;const tLen=i%6===0?12:i%3===0?7:3;ctx.beginPath();ctx.moveTo(cx+Math.cos(ta)*(r2+2),cy+Math.sin(ta)*(r2+2));ctx.lineTo(cx+Math.cos(ta)*(r2+2+tLen),cy+Math.sin(ta)*(r2+2+tLen));ctx.strokeStyle=`rgba(80,60,20,${i%6===0?0.12:0.06})`;ctx.lineWidth=i%6===0?1.2:0.6;ctx.stroke();}
-// Guide rings — subtle
-[r1,r2,r4i,r4o,rO].forEach(r=>{ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='rgba(80,70,30,0.06)';ctx.lineWidth=0.8;ctx.stroke();});
+// ===== GEOMETRIC TILE BORDERS =====
+drawZigzagBorder(ctx,cx,cy,rO+72,18,R);
+drawDiamondBorder(ctx,cx,cy,(r2+r4i)/2,12,R);
+drawTriangleBorder(ctx,cx,cy,r0+10,14,R);
+[r1,r2,r4i,r4o,rO].forEach(r=>{ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.strokeStyle='rgba(45,35,15,0.1)';ctx.lineWidth=1;ctx.stroke();});
 
 // ===== STAINED GLASS PHASE TINTING =====
 let ss=[],cs=-1;D.forEach((d,i)=>{if(d.s!==cs){ss.push({s:d.s,i});cs=d.s;}});
@@ -265,102 +419,217 @@ ss.forEach((s2,si)=>{
   ctx.fillStyle=SGC[s2.s];ctx.fill();
 });
 
-// Phase arcs — color-only band (no text on band)
+// ===== FAINT BACKGROUND ARCS — fill the voice zone so short bars don't leave blank space =====
+D.forEach((d,i)=>{
+  const a1=sa+i*ap+gp,a2=sa+(i+1)*ap-gp;
+  // Subtle phase-colored wash across the full voice zone
+  ctx.beginPath();ctx.arc(cx,cy,r1,a1,a2);ctx.arc(cx,cy,r2,a2,a1,true);ctx.closePath();
+  ctx.fillStyle=SGC[d.s];ctx.fill();
+  // Slightly stronger tint behind voice bar area for structure
+  const wF=Math.pow(d.he/mH,0.6);
+  const barEnd=d.he<10?r1+5:r1+(r2-r1)*wF;
+  if(barEnd<r2-20){
+    ctx.beginPath();ctx.arc(cx,cy,barEnd+4,a1,a2);ctx.arc(cx,cy,r2,a2,a1,true);ctx.closePath();
+    ctx.fillStyle='rgba(80,60,20,0.012)';ctx.fill();
+  }
+});
+
+// ===== CONCENTRIC GUIDE RINGS — subtle dotted circles for visual rhythm =====
+[r1+200,r1+400,r1+600].forEach(r=>{
+  if(r<r2){
+    ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);
+    ctx.strokeStyle='rgba(80,60,20,0.04)';ctx.lineWidth=1;
+    ctx.setLineDash([4,8]);ctx.stroke();ctx.setLineDash([]);
+  }
+});
+
+// ===== ALTERNATING WEDGE TINTING — fills blank space between rings =====
+D.forEach((d,i)=>{
+  const a1=sa+i*ap,a2=sa+(i+1)*ap;
+  if(i%2===0){
+    ctx.beginPath();ctx.moveTo(cx+Math.cos(a1)*r0,cy+Math.sin(a1)*r0);
+    ctx.arc(cx,cy,rO-2,a1,a2);
+    ctx.arc(cx,cy,r0,a2,a1,true);ctx.closePath();
+    ctx.fillStyle='rgba(45,35,15,0.022)';ctx.fill();
+  }
+});
+
+// ===== RADIAL SPOKE LINES — section dividers for structure =====
+D.forEach((d,i)=>{
+  const a=sa+i*ap;
+  // Thicker spokes at phase boundaries
+  const isPhaseEdge=i===0||D[i].s!==D[i-1].s;
+  ctx.beginPath();
+  ctx.moveTo(cx+Math.cos(a)*(r0+16),cy+Math.sin(a)*(r0+16));
+  ctx.lineTo(cx+Math.cos(a)*(rO+70),cy+Math.sin(a)*(rO+70));
+  ctx.strokeStyle=isPhaseEdge?'rgba(80,60,20,0.18)':'rgba(80,60,20,0.06)';
+  ctx.lineWidth=isPhaseEdge?2:1;ctx.stroke();
+});
+
+// Phase arcs — mosaic tile band
 ss.forEach((s2,si)=>{
   const eI=si<ss.length-1?ss[si+1].i:n,a1=sa+s2.i*ap,a2=sa+eI*ap;
-  ctx.beginPath();ctx.arc(cx,cy,rO,a1+0.006,a2-0.006);ctx.arc(cx,cy,rO+50,a2-0.006,a1+0.006,true);ctx.closePath();
-  ctx.fillStyle=SC[s2.s];ctx.globalAlpha=0.95;ctx.fill();
-  ctx.strokeStyle='rgba(30,20,5,0.18)';ctx.lineWidth=1.5;ctx.stroke();ctx.globalAlpha=1;
-  // External bracket: tick marks at phase edges + connecting arc
-  const bR=rO+54,bLen=18;
-  ctx.strokeStyle=SC[s2.s];ctx.lineWidth=2;ctx.globalAlpha=0.6;
-  ctx.beginPath();ctx.moveTo(cx+Math.cos(a1+0.012)*bR,cy+Math.sin(a1+0.012)*bR);
-  ctx.lineTo(cx+Math.cos(a1+0.012)*(bR+bLen),cy+Math.sin(a1+0.012)*(bR+bLen));ctx.stroke();
-  ctx.beginPath();ctx.moveTo(cx+Math.cos(a2-0.012)*bR,cy+Math.sin(a2-0.012)*bR);
-  ctx.lineTo(cx+Math.cos(a2-0.012)*(bR+bLen),cy+Math.sin(a2-0.012)*(bR+bLen));ctx.stroke();
-  ctx.beginPath();ctx.arc(cx,cy,bR+bLen,a1+0.012,a2-0.012);ctx.stroke();
-  ctx.globalAlpha=1;
-  // Phase name label at midpoint, outside bracket
-  const mA=(a1+a2)/2,pnR=rO+100;
-  ctx.save();ctx.translate(cx+Math.cos(mA)*pnR,cy+Math.sin(mA)*pnR);
+  drawMosaicArc(ctx,cx,cy,rO,rO+70,a1+0.006,a2-0.006,SC[s2.s],R);
+});
+
+// ===== PHASE LABELS — bold dark pills for readability =====
+const phasePills=[];
+ss.forEach((s2,si)=>{
+  const eI=si<ss.length-1?ss[si+1].i:n,a1=sa+s2.i*ap,a2=sa+eI*ap;
+  const mA=(a1+a2)/2,pnR=rO+140;
+  const lx=cx+Math.cos(mA)*pnR,ly=cy+Math.sin(mA)*pnR;
+  ctx.save();ctx.translate(lx,ly);
   const fl=mA>0.3&&mA<Math.PI*1.7;
   ctx.rotate(mA+(fl?Math.PI:0));
-  ctx.font='700 48px "Fira Sans",sans-serif';ctx.fillStyle=SC[s2.s];ctx.textAlign='center';
-  ctx.fillText(SN[s2.s].toUpperCase(),0,16);
+  const txt=SN[s2.s].toUpperCase();
+  ctx.font='700 52px "Fira Sans",sans-serif';
+  const tw=ctx.measureText(txt).width;
+  const px=20,py=14;
+  const rr=16,bw=tw+px*2,bh=52+py*2,bx=-bw/2,by=-32-py;
+  ctx.beginPath();
+  ctx.moveTo(bx+rr,by);ctx.lineTo(bx+bw-rr,by);ctx.quadraticCurveTo(bx+bw,by,bx+bw,by+rr);
+  ctx.lineTo(bx+bw,by+bh-rr);ctx.quadraticCurveTo(bx+bw,by+bh,bx+bw-rr,by+bh);
+  ctx.lineTo(bx+rr,by+bh);ctx.quadraticCurveTo(bx,by+bh,bx,by+bh-rr);
+  ctx.lineTo(bx,by+rr);ctx.quadraticCurveTo(bx,by,bx+rr,by);ctx.closePath();
+  ctx.fillStyle='rgba(30,24,12,0.85)';ctx.fill();
+  ctx.strokeStyle=SC[s2.s];ctx.lineWidth=3;ctx.stroke();
+  ctx.fillStyle='#f0e8d0';ctx.textAlign='center';
+  ctx.fillText(txt,0,16);
   ctx.restore();
+  const connStart=rO+76,connEnd=pnR-Math.max(tw/2+px,30);
+  if(connEnd>connStart+5){
+    ctx.beginPath();
+    ctx.moveTo(cx+Math.cos(mA)*connStart,cy+Math.sin(mA)*connStart);
+    ctx.lineTo(cx+Math.cos(mA)*connEnd,cy+Math.sin(mA)*connEnd);
+    ctx.strokeStyle=SC[s2.s];ctx.globalAlpha=0.4;ctx.lineWidth=2;ctx.stroke();ctx.globalAlpha=1;
+  }
+  // Record pill for collision avoidance
+  phasePills.push({ang:mA,r:pnR,tw:tw+px*2,totalH:bh});
 });
 
 // ===== CENTER MEDALLION =====
-const cG=ctx.createRadialGradient(cx,cy,10,cx,cy,r0);
-cG.addColorStop(0,'#e8dfc8');cG.addColorStop(0.6,'#ddd4be');cG.addColorStop(1,'#c8bea0');
-ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.fillStyle=cG;ctx.fill();
-// Double-ring border for center medallion
-ctx.beginPath();ctx.arc(cx,cy,r0,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.3)';ctx.lineWidth=3;ctx.stroke();
-ctx.beginPath();ctx.arc(cx,cy,r0-6,0,Math.PI*2);ctx.strokeStyle='rgba(80,60,20,0.12)';ctx.lineWidth=1;ctx.stroke();
-// Center grain texture
-for(let i=0;i<400;i++){const ca=R()*Math.PI*2,cr=R()*r0*0.85;ctx.fillStyle=`rgba(100,80,30,${0.01+R()*0.02})`;ctx.fillRect(cx+Math.cos(ca)*cr,cy+Math.sin(ca)*cr,1,1);}
-ctx.font='700 120px "Cormorant Garamond",serif';ctx.fillStyle='#2a4a08';ctx.textAlign='center';
-ctx.fillText('\u05E7\u05E2\u05E8\u05D4',cx,cy-10);
-ctx.font='600 68px "Fira Sans",sans-serif';ctx.fillStyle='#3a5818';
-ctx.fillText(tH.toLocaleString()+' words',cx,cy+60);
-ctx.font='italic 44px "Cormorant Garamond",serif';ctx.fillStyle='#504828';
-ctx.fillText('The Passover Seder',cx,cy+116);
+drawRosette(ctx,cx,cy,r0,R);
+drawTriangleBorder(ctx,cx,cy,r0,12,R);
+// Frosted overlay for text readability
+ctx.beginPath();ctx.arc(cx,cy,r0*0.82,0,Math.PI*2);
+ctx.fillStyle='rgba(230,224,208,0.75)';ctx.fill();
+ctx.beginPath();ctx.arc(cx,cy,r0*0.82,0,Math.PI*2);
+ctx.strokeStyle='rgba(160,140,80,0.2)';ctx.lineWidth=1.5;ctx.stroke();
+// Text on frosted center
+ctx.font='700 170px "Cormorant Garamond",serif';ctx.fillStyle='#1a0a02';ctx.textAlign='center';
+ctx.fillText('\u05E7\u05E2\u05E8\u05D4',cx,cy-18);
+ctx.font='600 90px "Fira Sans",sans-serif';ctx.fillStyle='#2a1808';
+ctx.fillText(tH.toLocaleString()+' words',cx,cy+82);
+ctx.font='italic 58px "Cormorant Garamond",serif';ctx.fillStyle='#3a2818';
+ctx.fillText('The Passover Seder',cx,cy+156);
 
 const hits=[];
 D.forEach((d,i)=>{
 const ang=sa+i*ap+ap/2,a1=sa+i*ap+gp,a2=sa+(i+1)*ap-gp;
-const sl=d.he<10,wF=Math.sqrt(d.he)/Math.sqrt(mH);
+const sl=d.he<10,wF=Math.pow(d.he/mH,0.6);
 const ents=Object.entries(d.mx||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
 const bH=sl?3:(r2-r1)*wF;
 
-// Voice bars
+// Voice bars — mosaic tiles
 if(sl){ctx.beginPath();ctx.arc(cx,cy,r1+1,a1,a2);ctx.arc(cx,cy,r1+5,a2,a1,true);ctx.closePath();ctx.strokeStyle='rgba(80,70,30,0.1)';ctx.lineWidth=0.8;ctx.setLineDash([3,4]);ctx.stroke();ctx.setLineDash([]);}
-else{let cR=r1;ents.forEach(([vk,pc])=>{const sH2=pc/100*bH,sE=cR+sH2;ctx.beginPath();ctx.arc(cx,cy,cR,a1,a2);ctx.arc(cx,cy,sE,a2,a1,true);ctx.closePath();ctx.fillStyle=V[vk];ctx.globalAlpha=0.92;ctx.fill();ctx.globalAlpha=1;cR=sE;});}
+else{let cR=r1;ents.forEach(([vk,pc])=>{const sH2=pc/100*bH,sE=cR+sH2;if(sE-cR>2)drawMosaicArc(ctx,cx,cy,cR,sE,a1,a2,V[vk],R);cR=sE;});}
 
-// Era blocks
+// Era blocks — mosaic tiles
 const aE=Object.entries(d.ag||{}).filter(([k,v])=>v>0);
-if(aE.length>0&&!sl){let aCu=a1;aE.forEach(([ak,av])=>{const sp=av/100*(a2-a1);ctx.beginPath();ctx.arc(cx,cy,r4i,aCu,aCu+sp);ctx.arc(cx,cy,r4o,aCu+sp,aCu,true);ctx.closePath();ctx.fillStyle=AC[ak];ctx.globalAlpha=0.88;ctx.fill();ctx.strokeStyle='rgba(40,32,16,0.1)';ctx.lineWidth=0.8;ctx.stroke();ctx.globalAlpha=1;aCu+=sp;});}
+if(aE.length>0&&!sl){let aCu=a1;aE.forEach(([ak,av])=>{const sp=av/100*(a2-a1);if(sp>0.002)drawMosaicArc(ctx,cx,cy,r4i,r4o,aCu,aCu+sp,AC[ak],R);aCu+=sp;});}
 
-// Labels — adaptive stagger, pushed past phase bracket
-const phase=d.s;const secInPhase=D.filter(x=>x.s===phase).length;
-const tiers=secInPhase>8?5:secInPhase>4?4:3;
-const labOff=[0,85,170,255,340].slice(0,tiers)[i%tiers];
-const labR2=rO+150+labOff,lx=cx+Math.cos(ang)*labR2,ly=cy+Math.sin(ang)*labR2;
-// Leader line — starts past phase bracket
-ctx.beginPath();ctx.moveTo(cx+Math.cos(ang)*(rO+120),cy+Math.sin(ang)*(rO+120));ctx.lineTo(cx+Math.cos(ang)*(labR2-12),cy+Math.sin(ang)*(labR2-12));ctx.strokeStyle='rgba(50,40,15,0.18)';ctx.lineWidth=1.2;ctx.stroke();
-ctx.beginPath();ctx.arc(cx+Math.cos(ang)*(rO+120),cy+Math.sin(ang)*(rO+120),2.5,0,Math.PI*2);ctx.fillStyle='rgba(50,40,15,0.25)';ctx.fill();
-ctx.save();ctx.translate(lx,ly);const fl=ang>0.3&&ang<Math.PI*1.7;ctx.rotate(ang+(fl?Math.PI:0));
-ctx.font=`${sl?'500':'700'} ${sl?'30':'38'}px "Fira Sans",sans-serif`;
-ctx.fillStyle=sl?'#504030':'#0a0804';ctx.textAlign='center';
-ctx.fillText(d.k,0,-2);
-if(d.he>20){ctx.font='500 24px "Fira Sans",sans-serif';ctx.fillStyle='#504030';ctx.fillText(d.he+'w',0,26);}
-ctx.restore();
 hits.push({a1,a2,i});
 });
 
-// Ring-zone labels near 12 o'clock
-ctx.font='italic 36px "Fira Sans",sans-serif';ctx.fillStyle='#403820';ctx.textAlign='center';
-ctx.fillText('Voice bars',cx,cy-((r1+r2)/2));
-ctx.fillText('Era',cx,cy-((r4i+r4o)/2));
+// ===== SECTION LABELS — collision-aware placement =====
+// Pass 1: compute positions & measure text
+const labels=D.map((d,i)=>{
+  const ang=sa+i*ap+ap/2;
+  const sl2=d.he<10;
+  const fontSize=sl2?36:48;
+  const subSize=32;
+  ctx.font=`${sl2?'500':'700'} ${fontSize}px "Fira Sans",sans-serif`;
+  const tw=ctx.measureText(d.k).width;
+  const subTw=d.he>20?(ctx.font=`500 ${subSize}px "Fira Sans",sans-serif`,ctx.measureText(d.he+'w').width):0;
+  const maxTw=Math.max(tw,subTw);
+  // Initial stagger based on phase density — more tiers for denser phases
+  const phase=d.s,secInPhase=D.filter(x=>x.s===phase).length;
+  const tiers=secInPhase>8?7:secInPhase>4?5:3;
+  const offsets=[0,100,200,300,400,500,600].slice(0,tiers);
+  const phaseIdx=D.filter((x,j)=>j<i&&x.s===phase).length;
+  const labOff=offsets[phaseIdx%tiers];
+  return{i,ang,sl:sl2,fontSize,subSize,tw:maxTw,r:rO+270+labOff,k:d.k,he:d.he,totalH:d.he>20?fontSize+subSize+12:fontSize+8};
+});
 
-// ===== DECORATIVE CORNER FLOURISHES =====
-const fSz=120;const fMg=60;const fOp=0.1;
-[[fMg,fMg,0],[W-fMg,fMg,Math.PI/2],[W-fMg,H-fMg,Math.PI],[fMg,H-fMg,Math.PI*1.5]].forEach(([fx,fy,fr])=>{
-  ctx.save();ctx.translate(fx,fy);ctx.rotate(fr);ctx.strokeStyle=`rgba(100,80,30,${fOp})`;ctx.lineWidth=2;
-  // L-shaped corner with curl
-  ctx.beginPath();ctx.moveTo(0,fSz);ctx.lineTo(0,0);ctx.lineTo(fSz,0);ctx.stroke();
-  ctx.beginPath();ctx.moveTo(8,fSz-20);ctx.lineTo(8,8);ctx.lineTo(fSz-20,8);ctx.strokeStyle=`rgba(100,80,30,${fOp*0.6})`;ctx.lineWidth=1;ctx.stroke();
-  // Small diamond at corner
-  ctx.beginPath();ctx.moveTo(0,-8);ctx.lineTo(8,0);ctx.lineTo(0,8);ctx.lineTo(-8,0);ctx.closePath();ctx.fillStyle=`rgba(100,80,30,${fOp*0.8})`;ctx.fill();
+// Pass 2: check against phase pills first — push any section label that overlaps a pill
+labels.forEach(lb=>{
+  phasePills.forEach(pp=>{
+    let dAng=Math.abs(lb.ang-pp.ang);
+    if(dAng>Math.PI)dAng=Math.PI*2-dAng;
+    const avgR=(lb.r+pp.r)/2;
+    const arcDist=avgR*dAng;
+    const tangentClear=(lb.tw/2+pp.tw/2)+50;
+    const radDist=Math.abs(lb.r-pp.r);
+    const radialClear=(lb.totalH/2+pp.totalH/2)+20;
+    if(arcDist<tangentClear&&radDist<radialClear){
+      lb.r=pp.r+pp.totalH/2+lb.totalH/2+40;
+    }
+  });
+});
+
+// Pass 3: resolve section-vs-section overlaps (many passes for dense Maggid)
+for(let pass=0;pass<15;pass++){
+  let moved=false;
+  for(let a=0;a<labels.length;a++){
+    for(let b=a+1;b<labels.length;b++){
+      const la=labels[a],lb2=labels[b];
+      const avgR=(la.r+lb2.r)/2;
+      let dAng=Math.abs(la.ang-lb2.ang);
+      if(dAng>Math.PI)dAng=Math.PI*2-dAng;
+      const arcDist=avgR*dAng;
+      const tangentClear=(la.tw/2+lb2.tw/2)+30;
+      const radDist=Math.abs(la.r-lb2.r);
+      const radialClear=(la.totalH/2+lb2.totalH/2)+5;
+      if(arcDist<tangentClear&&radDist<radialClear){
+        const target=la.r<=lb2.r?lb2:la;
+        target.r+=90;
+        moved=true;
+      }
+    }
+  }
+  if(!moved)break;
+}
+
+// Pass 4: draw labels
+labels.forEach(lb=>{
+  const d=D[lb.i],ang=lb.ang,labR2=lb.r;
+  const lx=cx+Math.cos(ang)*labR2,ly=cy+Math.sin(ang)*labR2;
+  // Leader line
+  ctx.beginPath();ctx.moveTo(cx+Math.cos(ang)*(rO+165),cy+Math.sin(ang)*(rO+165));
+  ctx.lineTo(cx+Math.cos(ang)*(labR2-14),cy+Math.sin(ang)*(labR2-14));
+  ctx.strokeStyle='rgba(50,40,15,0.18)';ctx.lineWidth=1.5;ctx.stroke();
+  ctx.beginPath();ctx.arc(cx+Math.cos(ang)*(rO+165),cy+Math.sin(ang)*(rO+165),3,0,Math.PI*2);
+  ctx.fillStyle='rgba(50,40,15,0.25)';ctx.fill();
+  ctx.save();ctx.translate(lx,ly);
+  const fl=ang>0.3&&ang<Math.PI*1.7;ctx.rotate(ang+(fl?Math.PI:0));
+  ctx.font=`${lb.sl?'500':'700'} ${lb.fontSize}px "Fira Sans",sans-serif`;
+  ctx.fillStyle=lb.sl?'#504030':'#0a0804';ctx.textAlign='center';
+  ctx.fillText(d.k,0,-2);
+  if(d.he>20){ctx.font=`500 ${lb.subSize}px "Fira Sans",sans-serif`;ctx.fillStyle='#504030';ctx.fillText(d.he+'w',0,lb.fontSize-10);}
   ctx.restore();
 });
 
-// Footer attribution with decorative line
-ctx.beginPath();ctx.moveTo(cx-500,H-50);ctx.lineTo(cx+500,H-50);ctx.strokeStyle='rgba(100,80,30,0.1)';ctx.lineWidth=1;ctx.stroke();
-ctx.font='italic 34px "Fira Sans",sans-serif';ctx.fillStyle='#605840';ctx.textAlign='center';
-ctx.fillText('Word counts from Sefaria \u00b7 Hover or click any section for full analysis',cx,H-20);
+// Ring-zone labels near 12 o'clock
+ctx.font='italic 52px "Fira Sans",sans-serif';ctx.fillStyle='#403820';ctx.textAlign='center';
+ctx.fillText('Voice bars',cx,cy-((r1+r2)/2));
+ctx.fillText('Era',cx,cy-((r4i+r4o)/2));
 
-// ===== HTML STATS PANEL (pronouns, citations, prophetic perfect) =====
+// Footer attribution
+ctx.beginPath();ctx.moveTo(cx-600,H-60);ctx.lineTo(cx+600,H-60);ctx.strokeStyle='rgba(100,80,30,0.1)';ctx.lineWidth=1;ctx.stroke();
+ctx.font='italic 44px "Fira Sans",sans-serif';ctx.fillStyle='#605840';ctx.textAlign='center';
+ctx.fillText('Word counts from Sefaria \u00b7 Hover or click any section for full analysis',cx,H-25);
+
+// ===== HTML STATS PANEL =====
 const maxPron=Math.max(...D.map(d=>(d.we||0)+(d.you||0)+(d.he2||0)));
 const maxCit=Math.max(...D.map(d=>d.cit||0));
 const statSections=D.filter(d=>(d.we||0)+(d.you||0)+(d.he2||0)>0||(d.cit||0)>0||(d.ppf||0)>0);
@@ -387,7 +656,6 @@ statSections.forEach(d=>{
   sH+=`<div style="text-align:center;color:#2e4a10;font-weight:700">${(d.ppf||0)>0?d.ppf:''}</div>`;
 });
 sH+='</div>';
-// Pronoun legend for the bars
 sH+='<div style="display:flex;gap:16px;margin-top:10px;font-size:12px;color:#504030">';
 sH+='<span><span style="display:inline-block;width:12px;height:12px;background:#1e4a6a;border-radius:2px;vertical-align:middle;margin-right:4px"></span>we/our/us</span>';
 sH+='<span><span style="display:inline-block;width:12px;height:12px;background:#5a2060;border-radius:2px;vertical-align:middle;margin-right:4px"></span>you/your/thou</span>';
@@ -418,9 +686,206 @@ ${agB?`<div style="font-size:11px;color:rgba(240,232,208,0.3);margin:8px 0 3px">
 ${ns.length?`<div class="t-note">${ns.join(' \u00b7 ')}</div>`:''}`;
 tip.style.display='block';tip.style.left=Math.min(ex+18,innerWidth-400)+'px';tip.style.top=Math.max(10,ey-24)+'px';}
 
-cv.addEventListener('mousemove',function(ev){if(frz!==null)return;const rect=cv.getBoundingClientRect(),mx=(ev.offsetX/rect.width)*W-cx,my=(ev.offsetY/rect.height)*H-cy,dist=Math.sqrt(mx*mx+my*my);let a2=Math.atan2(my,mx),hit=null;hits.forEach(h=>{let a=a2;if(a<h.a1-0.1)a+=Math.PI*2;if(a>=h.a1&&a<=h.a2&&dist>r0&&dist<rO+400)hit=h;});if(hit){shT(D[hit.i],ev.clientX,ev.clientY);cv.style.cursor='pointer';}else{tip.style.display='none';cv.style.cursor='crosshair';}});
-cv.addEventListener('click',function(ev){const rect=cv.getBoundingClientRect(),mx=(ev.offsetX/rect.width)*W-cx,my=(ev.offsetY/rect.height)*H-cy,dist=Math.sqrt(mx*mx+my*my);let a2=Math.atan2(my,mx),hit=null;hits.forEach(h=>{let a=a2;if(a<h.a1-0.1)a+=Math.PI*2;if(a>=h.a1&&a<=h.a2&&dist>r0&&dist<rO+400)hit=h;});if(hit){if(frz===hit.i){frz=null;tip.style.display='none';}else{frz=hit.i;shT(D[hit.i],ev.clientX,ev.clientY);}}else{frz=null;tip.style.display='none';}});
-cv.addEventListener('mouseleave',()=>{if(frz===null)tip.style.display='none';});
+// ===== INTERACTIVE OVERLAY — stained glass light effect =====
+let prevHit=-1,rafId=0,pendingEv=null;
+let glowPhase=0,glowAnim=0,lightIntensity=0,lightTarget=0;
+
+function hexToRgb(hex){
+  const r=parseInt(hex.slice(1,3),16),g=parseInt(hex.slice(3,5),16),b=parseInt(hex.slice(5,7),16);
+  return[r,g,b];
+}
+
+function drawOverlay(hitIdx,frozen){
+  octx.clearRect(0,0,W,H);
+  if(hitIdx<0)return;
+  const h=hits[hitIdx],d=D[hitIdx];
+  const a1=h.a1,a2=h.a2,ang=(a1+a2)/2;
+  const phaseCol=SC[d.s];
+  const[pr,pg,pb]=hexToRgb(phaseCol);
+
+  // Gentle dim on non-active areas
+  octx.save();
+  octx.fillStyle='rgba(236,228,208,0.3)';
+  octx.beginPath();octx.rect(0,0,W,H);
+  octx.moveTo(cx,cy);octx.arc(cx,cy,rO+90,a1-0.01,a2+0.01);octx.lineTo(cx,cy);
+  octx.closePath();octx.fill('evenodd');
+  octx.restore();
+
+  if(frozen){
+    // === STAINED GLASS LIGHT BURST ===
+    const li=lightIntensity;
+    const pulse=0.85+Math.sin(glowPhase)*0.15;
+    const spread=a2-a1;
+
+    // Light rays radiating outward from the wedge
+    const numRays=9;
+    for(let r2=0;r2<numRays;r2++){
+      const rayAng=a1+spread*(r2+0.5)/numRays;
+      const raySpread=spread/numRays*0.6;
+      const rayLen=rO+500*li;
+      // Gradient ray from center outward
+      const grd=octx.createLinearGradient(
+        cx+Math.cos(rayAng)*r0,cy+Math.sin(rayAng)*r0,
+        cx+Math.cos(rayAng)*rayLen,cy+Math.sin(rayAng)*rayLen
+      );
+      grd.addColorStop(0,`rgba(${pr},${pg},${pb},${0.15*li*pulse})`);
+      grd.addColorStop(0.4,`rgba(${pr},${pg},${pb},${0.08*li*pulse})`);
+      grd.addColorStop(1,`rgba(${pr},${pg},${pb},0)`);
+      octx.beginPath();
+      octx.moveTo(cx+Math.cos(rayAng-raySpread)*(r0+20),cy+Math.sin(rayAng-raySpread)*(r0+20));
+      octx.lineTo(cx+Math.cos(rayAng-raySpread*1.8)*rayLen,cy+Math.sin(rayAng-raySpread*1.8)*rayLen);
+      octx.lineTo(cx+Math.cos(rayAng+raySpread*1.8)*rayLen,cy+Math.sin(rayAng+raySpread*1.8)*rayLen);
+      octx.lineTo(cx+Math.cos(rayAng+raySpread)*(r0+20),cy+Math.sin(rayAng+raySpread)*(r0+20));
+      octx.closePath();
+      octx.fillStyle=grd;octx.fill();
+    }
+
+    // Warm glow behind the whole wedge
+    const wedgeGrd=octx.createRadialGradient(
+      cx+Math.cos(ang)*((r1+rO)/2),cy+Math.sin(ang)*((r1+rO)/2),50,
+      cx+Math.cos(ang)*((r1+rO)/2),cy+Math.sin(ang)*((r1+rO)/2),rO*0.8
+    );
+    wedgeGrd.addColorStop(0,`rgba(${pr},${pg},${pb},${0.18*li*pulse})`);
+    wedgeGrd.addColorStop(0.5,`rgba(${pr},${pg},${pb},${0.06*li*pulse})`);
+    wedgeGrd.addColorStop(1,`rgba(${pr},${pg},${pb},0)`);
+    octx.beginPath();octx.moveTo(cx,cy);
+    octx.arc(cx,cy,rO+200,a1-0.03,a2+0.03);
+    octx.closePath();octx.fillStyle=wedgeGrd;octx.fill();
+
+    // Bright edge glow on the phase arc
+    octx.beginPath();octx.arc(cx,cy,rO+70,a1,a2);
+    octx.strokeStyle=phaseCol;octx.lineWidth=6+Math.sin(glowPhase)*3;
+    octx.globalAlpha=0.3*li*pulse;
+    octx.shadowColor=phaseCol;octx.shadowBlur=30*li;
+    octx.stroke();octx.shadowBlur=0;octx.globalAlpha=1;
+
+    // Inner glow along voice bar edge
+    octx.beginPath();octx.arc(cx,cy,r1,a1,a2);
+    octx.strokeStyle=`rgba(255,230,150,${0.15*li*pulse})`;
+    octx.lineWidth=4;octx.stroke();
+  }
+
+  // Ring outlines (always, hover or frozen)
+  const wF2=Math.pow(d.he/mH,0.6);
+  const bH2=d.he<10?3:(r2-r1)*wF2;
+  octx.beginPath();octx.arc(cx,cy,r1,a1,a2);octx.arc(cx,cy,r1+bH2,a2,a1,true);octx.closePath();
+  octx.strokeStyle='rgba(80,50,10,0.5)';octx.lineWidth=2.5;octx.stroke();
+  octx.beginPath();octx.arc(cx,cy,r4i,a1,a2);octx.arc(cx,cy,r4o,a2,a1,true);octx.closePath();
+  octx.strokeStyle='rgba(80,50,10,0.4)';octx.lineWidth=2;octx.stroke();
+  octx.beginPath();octx.arc(cx,cy,rO,a1,a2);octx.arc(cx,cy,rO+70,a2,a1,true);octx.closePath();
+  octx.strokeStyle=phaseCol;octx.lineWidth=2.5;octx.globalAlpha=0.5;octx.stroke();octx.globalAlpha=1;
+}
+
+function findHit(ev){
+  const rect=cv.getBoundingClientRect(),mx=(ev.offsetX/rect.width)*W-cx,my=(ev.offsetY/rect.height)*H-cy,dist=Math.sqrt(mx*mx+my*my);
+  let a2=Math.atan2(my,mx),hit=null;
+  hits.forEach(h=>{let a=a2;if(a<h.a1-0.1)a+=Math.PI*2;if(a>=h.a1&&a<=h.a2&&dist>r0&&dist<rO+500)hit=h;});
+  return hit;
+}
+
+function processHover(){
+  rafId=0;
+  if(!pendingEv||frz!==null)return;
+  const ev=pendingEv;pendingEv=null;
+  const hit=findHit(ev);
+  if(hit){
+    if(hit.i!==prevHit){drawOverlay(hit.i,false);prevHit=hit.i;}
+    shT(D[hit.i],ev.clientX,ev.clientY);cv.style.cursor='pointer';
+  }else{
+    if(prevHit>=0){octx.clearRect(0,0,W,H);prevHit=-1;}
+    tip.style.display='none';cv.style.cursor='crosshair';
+  }
+}
+
+// Animation loop — smooth light intensity ramp + pulse
+function tickGlow(){
+  if(frz===null){
+    // Fade out
+    lightIntensity*=0.85;
+    if(lightIntensity<0.01){lightIntensity=0;glowAnim=0;octx.clearRect(0,0,W,H);return;}
+    drawOverlay(prevHit>=0?prevHit:0,true);
+    glowAnim=requestAnimationFrame(tickGlow);
+    return;
+  }
+  glowPhase+=0.04;
+  // Ease light intensity toward target
+  lightIntensity+=(lightTarget-lightIntensity)*0.08;
+  drawOverlay(frz,true);
+  glowAnim=requestAnimationFrame(tickGlow);
+}
+
+// ===== DETAIL CARD — rich click-to-expand panel =====
+const detailCard=document.getElementById('detailCard');
+function showDetail(d){
+  const pT=(d.we||0)+(d.you||0)+(d.he2||0);
+  const es=Object.entries(d.mx||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+  const aE=Object.entries(d.ag||{}).filter(([k,v])=>v>0).sort((a,b)=>b[1]-a[1]);
+  const ns=[];
+  if((d.cit||0)>0)ns.push('<b>'+d.cit+'</b> \u05E9\u05E0\u05D0\u05DE\u05E8 citations');
+  if((d.ppf||0)>0)ns.push('<b>'+d.ppf+'</b> prophetic perfect verbs');
+  if((d.ap||0)>20)ns.push('<b>'+d.ap+'%</b> Aramaic');
+  const voiceBars=es.map(([k,v])=>`<div class="dc-bar"><div class="dc-bar-dot" style="background:${V[k]}"></div><div class="dc-bar-lbl">${VN[k]}</div><div style="flex:2;background:rgba(255,255,255,0.06);border-radius:5px;overflow:hidden"><div class="dc-bar-fill" style="width:0%;background:${V[k]}" data-w="${v}"></div></div><div class="dc-bar-pct">${v}%</div></div>`).join('')||'<div style="opacity:0.3;font-style:italic">Silence — no words spoken</div>';
+  const eraBars=aE.map(([k,v])=>`<div class="dc-bar"><div class="dc-bar-dot" style="background:${AC[k]}"></div><div class="dc-bar-lbl">${AN[k]}</div><div style="flex:2;background:rgba(255,255,255,0.06);border-radius:5px;overflow:hidden"><div class="dc-bar-fill" style="width:0%;background:${AC[k]}" data-w="${v}"></div></div><div class="dc-bar-pct">${v}%</div></div>`).join('');
+  detailCard.innerHTML=`<div class="dc-inner" style="position:relative">
+    <button class="dc-close" onclick="closeDetail()">&times;</button>
+    <div class="dc-head"><span class="dc-name">${d.k}</span><span class="dc-phase" style="background:${SC[d.s]};color:#fff">${SN[d.s]}</span></div>
+    <div class="dc-desc">${d.d}</div>
+    <div class="dc-stats">
+      <div class="dc-stat"><div class="dc-sv">${d.he}</div><div class="dc-sl">Hebrew words</div></div>
+      <div class="dc-stat"><div class="dc-sv">${Math.round(d.he/tH*100)}%</div><div class="dc-sl">of Haggadah</div></div>
+      <div class="dc-stat"><div class="dc-sv">${pT}</div><div class="dc-sl">pronoun refs</div></div>
+      ${(d.cit||0)>0?`<div class="dc-stat"><div class="dc-sv">${d.cit}</div><div class="dc-sl">\u05E9\u05E0\u05D0\u05DE\u05E8 citations</div></div>`:''}
+      ${(d.ppf||0)>0?`<div class="dc-stat"><div class="dc-sv">${d.ppf}</div><div class="dc-sl">prophetic perfect</div></div>`:''}
+    </div>
+    <div class="dc-row">
+      <div class="dc-col"><h4>Who speaks</h4>${voiceBars}</div>
+      ${eraBars?`<div class="dc-col"><h4>Composition era</h4>${eraBars}</div>`:''}
+    </div>
+    ${ns.length?`<div style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(200,170,80,0.1);font-size:14px;color:rgba(240,232,208,0.5)">${ns.join(' &middot; ')}</div>`:''}
+  </div>`;
+  detailCard.classList.add('open');
+  // Animate bars after a tick
+  requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+    detailCard.querySelectorAll('.dc-bar-fill').forEach(el=>{el.style.width=el.dataset.w+'%';});
+  });});
+  // Scroll to card
+  setTimeout(()=>detailCard.scrollIntoView({behavior:'smooth',block:'nearest'}),100);
+}
+window.closeDetail=function(){
+  detailCard.classList.remove('open');
+  tip.style.display='none';
+  lightTarget=0;
+  frz=null;
+  // Let the tickGlow fade out the light smoothly
+  if(!glowAnim)glowAnim=requestAnimationFrame(tickGlow);
+};
+
+cv.addEventListener('mousemove',function(ev){
+  if(frz!==null)return;
+  pendingEv=ev;
+  if(!rafId)rafId=requestAnimationFrame(processHover);
+});
+cv.addEventListener('click',function(ev){
+  const hit=findHit(ev);
+  if(hit){
+    if(frz===hit.i){
+      closeDetail();
+    }else{
+      frz=hit.i;prevHit=hit.i;
+      glowPhase=0;
+      lightTarget=1;lightIntensity=0;
+      if(glowAnim)cancelAnimationFrame(glowAnim);
+      glowAnim=requestAnimationFrame(tickGlow);
+      tip.style.display='none';
+      showDetail(D[hit.i]);
+    }
+  }else{
+    closeDetail();
+  }
+});
+cv.addEventListener('mouseleave',()=>{
+  if(frz===null){tip.style.display='none';octx.clearRect(0,0,W,H);prevHit=-1;}
+});
 }
 
 main();
