@@ -12,6 +12,7 @@ This directory contains the working files for ten commercial online courses bein
 
 | Subdirectory | Course Title | Launch Priority | Price Tier |
 |---|---|---|---|
+| `00-Voice and Tone/` | Teresa Ristow's voice, tone, and writing style guide for all course content | Foundation (read first) | N/A |
 | `Course 1 - Structured Hiring That Works/` | Structured Hiring That Works: Build an Evidence-Based Selection System | Launch first (Month 3-4) | $197-297 |
 | `Course 2 - Performance Management That Actually Works/` | Performance Management That Actually Works: From Annual Reviews to Continuous Systems | Launch first (Month 3-4) | $197-297 |
 | `Course 3 - Training That Transfers/` | Training That Transfers: Design, Deliver, and Measure Learning Impact | Phase 2 (Month 5-6) | $197-297 |
@@ -79,6 +80,8 @@ See `COURSE_STRATEGY_DELIVERABLE.md` in the repository root for the full market 
 ---
 
 ## Content Adaptation Rules
+
+**Before generating any course content, read `00-Voice and Tone/Brand Voice and Tone.md`.** It defines Teresa Ristow's intellectual voice and writing patterns. The content adaptation rules below govern academic-to-practitioner conversion; the voice guide governs how the output sounds.
 
 When working in this directory, follow the content adaptation rules defined in the root `CLAUDE.md`:
 
