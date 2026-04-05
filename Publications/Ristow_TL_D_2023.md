@@ -1,26 +1,17 @@
-A Person-Centered Approach to Understanding Perceived Deception in Job Advertisement Text
+# A Person-Centered Approach to Understanding Perceived Deception in Job Advertisement Text
+
 Teresa Lauren Ristow
 
-Dissertation submitted to the faculty of Virginia Polytechnic Institute and State University in
-partial fulfillment of the requirements for the degree of
-Doctor of Philosophy
-In
-Psychology
+Virginia Polytechnic Institute and State University
+Doctor of Philosophy in Psychology
+April 24, 2023, Blacksburg, VA
 
-Ivan Hernandez, Chair
-Charles Calderwood
-Rachel Diana
-Neil Hauenstein
+Committee: Ivan Hernandez (Chair), Charles Calderwood, Rachel Diana, Neil Hauenstein
 
-April 24, 2023
-Blacksburg, VA
+Keywords: Recruiting, Job Advertisement, Perception, Deception, Natural Language Processing, Latent Profile Analysis
 
-Keywords: Recruiting, Job Advertisement, Perception, Deception, Natural Language Processing,
-Latent Profile Analysis
+## Abstract
 
-A Person-Centered Approach to Understanding Perceived Deception in Job Advertisement Text
-Teresa L. Ristow
-Abstract
 Regardless of industry or job type, most organizations aim to recruit large qualified
 applicant pools via job advertisements or postings. With little control over those individuals that
 choose to apply and those that do not, organizations and their recruiters are likely to do what they
@@ -41,9 +32,8 @@ research on best practices in job advertisement writing to gain qualified and qu
 In turn, those candidates will tend to maintain positive attitudes towards the job and organization,
 which can persist even after being hired.
 
-A Person-Centered Approach to Understanding Perceived Deception in Job Advertisement Text
-Teresa L. Ristow
-General Audience Abstract
+## General Audience Abstract
+
 In today's job market, organizations aim to attract qualified applicants through appealing
 job advertisements. However, some applicants may perceive these attempts as misleading or
 deceptive. This study explores whether there is a common view of what is deceptive within the
@@ -57,8 +47,8 @@ transparent job postings. This can attract high-quality candidates who maintain 
 towards the job and organization, ultimately contributing to improved hiring practices and
 fostering a more positive work environment.
 
-iv
-Acknowledgements
+## Acknowledgements
+
 I have so many people in my life to thank for their support, effort, and encouragement
 throughout this process. All whom this final dissertation and successful defense could not have
 come to fruition without. I specifically want to say thank you to Dr. Ivan Hernandez for being an
@@ -79,215 +69,8 @@ you to my partner Rick Baldwin for his endless tolerance and calm demeanor to ke
 grounded, as well as my dog, Luna, who spent many hours sleeping on the couch besides me as I
 worked on this manuscript.
 
-v
-Contents
-1 Introduction
-2 Literature Review
-2.1 Job Postings as a Form of Advertising
+## 1 Introduction
 
-1
-1
-1
-
-2.2 Perceived Deception in Job Advertisements
-
-3
-
-2.3 Defining Deception in Advertising
-
-5
-
-2.4 Perceived Deception as an Attitudinal Component
-
-7
-
-2.5 Mental Processes Associated with Perceived Deception
-
-8
-
-2.6 The Dimensionality and Measurement of Deception in Advertising
-
-10
-
-2.6.1 Relevance of Text in Job Advertisements
-
-14
-
-2.6.2 Text Cues in Advertisements
-
-15
-
-2.6.3 Detection of Perceived Deception in Text
-
-16
-
-2.6.4 Potential Cues of Perceived Deception in Job Advertisement Text
-
-17
-
-2.7 Methods to Detect Deception in Job Advertisements
-3 Method
-3.1 Study 1: Perceived Deception Distinction
-
-22
-23
-24
-
-3.1.1 Study 1 Sample
-
-24
-
-3.1.2 Study 1 Procedure
-
-27
-
-3.1.3 Study 1 Measures
-
-27
-
-3.1.4 Study 1 Analytic Approach
-
-28
-
-3.1.5 Study 1 Results
-
-29
-
-3.1.6 Study 1 Discussion
-
-29
-
-3.2 Study 2: Perceived Deception Distribution and Homogeneity
-
-30
-
-3.2.1 Study 2 Research Questions & Hypothesis
-
-30
-
-3.2.2 Study 2 Sample
-
-31
-
-3.2.3 Study 2 Procedure
-
-31
-
-3.2.4 Study 2 Measures
-
-31
-
-3.2.5 Study 2 Analytic Approach
-
-33
-
-3.2.6 Study 2 Results
-
-35
-
-3.2.7 Study 2 Discussion
-
-40
-
-3.3 Study 3: A Person-Centered Approach to Perceived Deception
-
-41
-
-3.3.1 Study 3 Research Questions
-
-44
-
-3.3.2 Study 3 Sample
-
-44
-
-vi
-3.3.3 Study 3 Procedure
-
-45
-
-3.3.4 Study 3 Measures
-
-45
-
-3.3.5 Study 3 Analytical Approach
-
-46
-
-3.3.6 Study 3 Results
-
-65
-
-3.3.7 Study 3 Discussion
-
-141
-
-4 Overall Discussion
-References
-
-143
-151
-
-vii
-Appendices
-Appendix A - Survey Measures
-
-171
-
-Appendix B - Indeed Job Advertisements used in Study 3
-
-182
-
-Appendix C - Job Description Dimension Results
-
-192
-
-Appendix D - Company Overview Dimension Results
-
-200
-
-Appendix E - Salary Dimension Results
-
-207
-
-Appendix F - Benefits Dimension Results
-
-213
-
-Appendix G - Responsibilities Dimension Results
-
-220
-
-Appendix H - Skills Dimension Results
-
-226
-
-Appendix I - Qualifications Dimension Results
-
-233
-
-Appendix J - Schedule Dimension Results
-
-239
-
-Appendix K - Education Dimension Results
-
-246
-
-Appendix L - Experience Dimension Results
-
-253
-
-Appendix M - Work Location Dimension Results
-
-260
-
-Appendix N - Total Job Dimension Topic Analysis
-
-266
-
-1
-1 Introduction
 This dissertation seeks to further the understanding of the type of phrases, statements, and
 text features in online job advertisements that applicants perceive as deceitful or misleading.
 This project, foremost, examines whether deceptiveness is universally perceived by respondents,
@@ -302,8 +85,11 @@ job advertisement using topic analysis techniques in NLP can help identify the s
 each job dimension that make up misleading advertisements. From these results, the project has
 the potential to inform future organizational recruitment practices and improve job seekers’
 perceptions of online job postings.
-2 Literature Review
-2.1 Job Postings as a Form of Advertising
+
+## 2 Literature Review
+
+### 2.1 Job Postings as a Form of Advertising
+
 The existing literature on advertising predominantly focuses on product or service-based
 advertising, leaving more unconventional types underexplored. One such area with limited
 research is the understanding of factors that motivate potential employees to apply for jobs based
@@ -311,7 +97,6 @@ on job advertisements (Breaugh & Starke, 2000; Rynes & Cable, 2003). Recent revi
 recruiting research acknowledge the persistent knowledge gap in comprehending the process and
 factors influencing applicants' decision-making based on job postings (Rozario et al., 2019).
 
-2
 Applied research has progressed towards using machine learning to predict applicants' likelihood
 to apply (Reddy et al., 2020) and developing algorithms for candidate-job matching (Faliagka et
 al., 2012). However, these contemporary data analytic approaches have yet to fully explain the
@@ -334,7 +119,6 @@ attitude towards the organization or job based on the job advertisement (Cable &
 These perceptions formed by a potential candidate can be due to just the job posting and
 typically require no additional outside knowledge (Borstorff et al., 2007).
 
-3
 Attitudes formed from a job advertisement can come from cognitively processed or
 affectively processed cues within the job advertisement. That is, a variety of features can result
 in a positive or negative attitude towards an advertised job and impact an applicant’s decision to
@@ -346,7 +130,9 @@ versus using a statement like, “we have a collaborative culture” could make 
 feel differently despite their similar meaning. Additionally, job advertisements may even be
 more relevant to research because outcomes for both applicants and employers can be high
 stakes.
-2.2 Perceived Deception in Job Advertisements
+
+### 2.2 Perceived Deception in Job Advertisements
+
 The goal result of an organization that posts a job advertisement is to get a larger number
 of qualified applicants. From a successful hiring perspective, assuming the validity of selection
 measures is equal across organizations as well as cut-off thresholds, these two variables are the
@@ -359,7 +145,6 @@ programs, or competitive benefits enables an organization to gain a competitive 
 beyond the competition of similar organizations offering similar job opportunities (Bradley et al.,
 2008). Due to the impact recruiting and advertising messages have on a job searcher’s intentions
 
-4
 to apply to a job, there is a strong motivation for organizations to post job advertisements that
 applicants would be most likely to apply to (Cable & Graham, 2000; Gatewood et al., 1993; Lee
 et al., 2013).
@@ -384,7 +169,6 @@ subsequent negative effects.
 When numerous individuals perceive job advertisements as containing deceptive or
 misleading information, this perception can negatively affect the organization's reputation on a
 
-5
 broader scale. The rapid dissemination of information through social media can further amplify
 this effect, as deceptive advertisements can be quickly shared and discussed among many
 individuals, casting the organization in a negative light (Sivertzen et al., 2013). A job
@@ -393,7 +177,9 @@ adverse effect on both the size and quality of the applicant pool. Given the eas
 seekers can apply for positions online, a large number of potential applicants may come across a
 job posting. So, even minor elements perceived as deceptive could significantly influence their
 decision to apply.
-2.3 Defining Deception in Advertising
+
+### 2.3 Defining Deception in Advertising
+
 A nuanced but important aspect of discussing deception in advertising is understanding
 the language typically used within this recruitment context. This project adopts the consumer
 perspective of deception (Haefner, 1972), because job advertisements are developed to attract
@@ -409,7 +195,6 @@ advertisement, and their belief of the intent of the advertiser. This consumer-f
 distinguishes the concept from “inauthenticity,” which is thought of as an active impression
 management process that includes deceptive behaviors (Chawla et al., 2021). Therefore, it is not
 
-6
 all encompassing to use these words interchangeably, and the term deception in subsequent
 sections refers to perceptions of it that advertisements elicit.
 A company or organization’s motivation to generate a positive or favorable attitude
@@ -434,14 +219,15 @@ for legal purposes, it is the most effective way to define deception for researc
 deception or feeling of being misled that people experience when viewing certain advertisements
 (Haefner, 1972). Taking a consumer-focused approach to defining deception places emphasis on
 
-7
 the perception someone has of an advertisement. That is, there is not necessarily a need to verify
 if the claims stated in the advertisement are true or not (Haefner, 1972). Additionally, an
 individual may be able to perceive things that lead to deceptive feelings that cannot be as easily
 fact checked in the more legal based definitions of deception in advertising (Armstrong et al.,
 1980). This type of consumer-focused deception can be more specifically referenced as
 perceived deception (Román, 2010). The term perceived deception maintains the consumerfocused definition of deception and emphasizes the role of the ad viewer.
-2.4 Perceived Deception as an Attitudinal Component
+
+### 2.4 Perceived Deception as an Attitudinal Component
+
 In the context of attitude formation, what someone perceives in an advertisement impacts
 their processing and evaluation of whatever is perceived. Armstrong et al. (1980) elaborates on
 deception as it relates to attitude formation and states that due to beliefs formed about an
@@ -458,10 +244,11 @@ attitude, provides evidence that the alternative of deceptive beliefs towards an
 exist and can contribute to an overall unfavorable attitude (Stepchenkova & Park, 2021).
 Additional support for perceived deception as a component of an individual’s attitude towards an
 
-8
 advertisement is provided by Held & Germelmann (2018) in their review of attitudinal theories
 of deception.
-2.5 Mental Processes Associated with Perceived Deception
+
+### 2.5 Mental Processes Associated with Perceived Deception
+
 The attitudinal component that encompasses perceived deception implies that deception
 processes include the same components, per Fishbein's definition of attitudes, as used in an
 attitude formation process. Specifically, the evaluative components of attitudes include beliefs
@@ -483,7 +270,6 @@ In Fishbein's perspective on attitude formation, perceived deception is a piece 
 attitude that fits into a traditional attitude formation framework. In this framework, deception in
 advertising is viewed from a dual process perspective. This implies that some perceptions of
 
-9
 deception come from effortful thinking and processing, which are based on an individual's
 beliefs about the object and evaluations of those beliefs (Fishbein & Ajzen, 1974), and some
 from more automatic feelings towards the advertisement (Darke & Ritchie, 2007).
@@ -507,13 +293,14 @@ message. These features are typically aimed at generating a positive attitude to
 However, it is possible that instead, a consumer may have a negative affect towards a feature in
 an ad due to the feeling of deceptiveness.
 
-10
 Overall, perceived deception is a piece of an attitude that fits into Fishbein’s attitude
 formation framework. In a similar vein, both rational and emotional appeals to a consumer in an
 ad can promote different processing and recall upon decision-making situations. Therefore,
 perceived deception can come from explicit claims in an advertisement or from a more general
 impression of an advertisement.
-2.6 The Dimensionality and Measurement of Deception in Advertising
+
+### 2.6 The Dimensionality and Measurement of Deception in Advertising
+
 When defining deception from a consumer’s perception, it takes a claim-belief stance.
 That is, deception is referenced to by what the advertisement claims and then what the consumer
 believes or perceives from that claim (Armstrong et al., 1980). Some conceptualizations of
@@ -532,7 +319,6 @@ factors of inauthenticity include consumers’ reports of feelings such as enjoy
 information, dislike, and brand loyalty, these are difficult for consumers to report on when they
 have no prior knowledge, experience, or exposure to the advertisement or product being
 
-11
 advertised. Therefore, the dimensionality of true perceived deception is best collapsed to a single
 dimension (Haefner, 1972; Nath & Gardner, 1986). This perspective ensures that the consumers
 do not need prior exposure to the ad. A single dimension of perceived deception also enables
@@ -557,7 +343,6 @@ investigation into acceptable ranges of these attributes is then needed for supp
 While this procedure and measurement of deception is thorough for a specific product class, it
 requires prior knowledge and may skew the perception of deception in that case.
 
-12
 The expectation screening procedure compares expected norms of a product class to the
 norms of an advertised product. That is, an expectation is developed by the consumer and
 compared to the perception of a given advertisement. If the expectation exceeds a reasonable
@@ -582,7 +367,6 @@ attitude towards an advertisement a consumer may have no prior experience with. 
 features in an advertisement can lead to perceptions of deception and may be captured by the
 normative belief technique and the expectation screening procedure, the consumer impression
 
-13
 technique and more specifically, the salient belief technique best measure true perceptions of
 feeling deceived when viewing an advertisement.
 Using a one-item perceived deception measure to assess an individual’s attitude formed
@@ -606,7 +390,6 @@ difference score or similarity measure in participants’ perceived deception ra
 In studies of deception outside of advertising, in contexts of dating profiles, perceived deception
 is also measured using a similar single-item scale (Toma & Hancock, 2012).
 
-14
 Support for using a single item of perceived deception as a part of an overall negative
 attitude is found in other verified measures of attitudes. One such example is the use of a single
 item to measure an employee’s job satisfaction. The single item measure is found to be valid in
@@ -616,7 +399,9 @@ beliefs on something, which directly influences their attitude (Bodur et al., 20
 2005). Additionally, single-item scales are more commonly used in organizational research and
 there is empirical evidence for their effectiveness in measuring attitudinal constructs (Fisher et
 al., 2016; Matthews et al., 2022).
-2.6.1 Relevance of Text in Job Advertisements
+
+#### 2.6.1 Relevance of Text in Job Advertisements
+
 In understanding the process of perceived deception in advertising, specifically in the
 form of job postings, it is relevant to indicate the form of the advertisement. Designating what
 applicants are forming their perception of deception from allows for a better understanding of
@@ -631,7 +416,6 @@ and job to the applicants in an efficient and effective way (Borstoff et al., 20
 allows organizations to maximize the range of applicants that see their job postings, creating a
 more diverse, qualified, and larger applicant pool. Additionally, one survey shows that 85
 
-15
 percent of companies with 500 or more employees in North America maintain an online
 recruiting presence (Schweyer, 2004).
 On the other side, job seekers are also relying on online recruitment sources; as over 52
@@ -646,7 +430,9 @@ These make it even easier for an applicant to click and apply via provided templ
 organizations to convey relevant information to job seekers. These templates are primarily textbased and allow the organization to communicate a large amount of information in a single job
 advertisement. Therefore, text plays a salient role in the job advertisement that applicants use to
 form an attitude or to perceive deception.
-2.6.2 Text Cues in Advertisements
+
+#### 2.6.2 Text Cues in Advertisements
+
 Understanding the text in job advertisements that cue deception or misleading feelings to
 job seekers enables organizations to avoid seemingly deceptive text in posting a job
 advertisement online. The relevance of job advertisement text in applicant’s perceptions, attitude
@@ -654,7 +440,6 @@ formation, and subsequent intentions to apply to the job, has previously been st
 this focus is mainly on the positive aspects of the job advertisement that influence applicants to
 pursue the job. For example, general inclusion of certain text descriptions of the expected worklife balance of the job increases applicants’ reported attraction to the job (Ehrhart et al., 2012).
 
-16
 Organizations that include statements demonstrating the organization’s values tend to attract
 more applicants than organizations that do not (Highhouse et al., 2002). This allows job seekers
 to see if they maintain values that match those of the organization and those individuals with
@@ -673,12 +458,13 @@ impact applicants’ feelings of deception and lead them to avoid applying, may 
 influential than those positive text features that encourage applying. In much of the literature on
 avoiding negative attitudes, individuals tend to weigh negative features more strongly than
 positive features (Baumeister et al., 2001).
-2.6.3 Detection of Perceived Deception in Text
+
+#### 2.6.3 Detection of Perceived Deception in Text
+
 While deception within general text has been studied, this is not frequently translated to
 the text in job advertisements. It can be assumed that text within job advertisements functions
 similarly to deceptive text in prior research. Specifically, in terms of the variety in the structure
 
-17
 and features that can convey deception and elicit an overall negative attitude towards a job
 posting.
 Prior reports of deception detection by human raters are shown to hold in the detection of
@@ -698,11 +484,12 @@ emotional elements of deception depending on the context (Markowitz & Hancock, 2
 examples of prior research on detecting deception in text indicate that textual features can
 convey perceptions of deception to individuals and computers can even be trained to replicate
 and improve upon that detection.
-2.6.4 Potential Cues of Perceived Deception in Job Advertisement Text
+
+#### 2.6.4 Potential Cues of Perceived Deception in Job Advertisement Text
+
 While, deception research in the context of job advertisements is limited, an example of
 the detection of deception in an online advertisement setting is prevalent in online dating
 
-18
 profiles. Through means of self-preservation, individuals tend to positively inflate their dating
 profiles online. However, people can pick up on linguistic cues that indicate lies in their written
 biographies (Toma & Hancock, 2012). In determining whether an individual’s online dating
@@ -727,7 +514,6 @@ processing ease leads individuals to form a positive attitude towards the target
 information that is repeated throughout the advertisement is consistent with the prior information
 advertised, applicants will feel a more positive, and potentially authentic attitude towards the ad.
 
-19
 This is due to applicants being able to form attitudes towards a job advertisement based on their
 cognitive information received from a job advertisement (Mitchell & Olson, 1977). In the case of
 fluency between job advertisements, it could potentially have the opposite effect, because there
@@ -752,7 +538,6 @@ pay that are provided appearing ambiguous and deceptive to individuals. Cognitiv
 of attitudes towards pay could also lead to deception. If an individual has prior knowledge of
 what a typical salary or pay range for a job type would be, and an advertisement depicts the job
 
-20
 as earning much more than that range, it could lead to cognitive information that feels deceptive
 or misleading based on feelings of skepticism.
 This cognitive information leading to attitude formation could also apply to individuals’
@@ -777,7 +562,6 @@ to include a comprehensive description of any aspect of the job could lead appli
 more negative attitude towards the organization as well (Lee et al., 2013). When organizations
 fail to include specific details in their recruitment advertisements, applicants feel that the ad is
 
-21
 less truthful and will be less likely to continue the application process and view the organization
 more negatively (Farida, 2010). More specificity in the rewards and benefits information
 included in the job advertisement can lead to job advertisements being viewed more positively
@@ -802,10 +586,11 @@ positions and certain rhetoric may seem inauthentic. The authors suggest to incl
 and metaphors, as well as included fewer creative statements. While this provides more
 evidence-based suggestions, the provided suggestions are simply words or phrases to avoid
 
-22
 using, and only a few are given. It also assumes homogeneity among these perceptions, whereas
 people may differ quite dramatically in how they perceive the same ad.
-2.7 Methods to Detect Deception in Job Advertisements
+
+### 2.7 Methods to Detect Deception in Job Advertisements
+
 To detect deceptiveness systematically, researchers in computer science have started to
 incorporate computational approaches. For example, researchers used a computer program to
 scan behavioral features listed as skill requirements in job advertisements and compared them to
@@ -827,7 +612,6 @@ wording of the job title. In addition to ignoring perceptions, word frequencies 
 that they lose the context of the surrounding words, which could interact with each other to make
 the ad more or less deceptive. A more advanced text model, GPT-3, which can generate/edit text
 
-23
 along a specified criterion, was employed to create diversity statements in job advertisements
 that were indistinguishable from human-generated statements (Borchers et al., 2022). This
 research highlights the importance of human perceptions of job advertisements, but unfortunately
@@ -838,7 +622,9 @@ components of job advertisements and what individuals may perceive as deceptive.
 modern language analytic techniques or natural language processing (NLP), this study aims to
 empirically understand the nature of individuals’ perceived deception of job advertisement text
 and provide theory as to why those perceptions are formed from specific text.
-3 Method
+
+## 3 Method
+
 While prior research in advertising covers linguistic cues to deceptive or misleading text
 (Gaeth & Heath, 1987; Toma & Hancock, 2012), it is not fully applied in the domain of job
 advertisements. There are several studies that indicate job advertisement features that attract
@@ -852,7 +638,6 @@ empirical support.
 The following studies aim to better understand the frequency and distribution of
 perceived deception in job advertisements. Then subsequently utilize that information to assess if
 
-24
 text cues influencing perceived deception are generalizable across individuals and there exists a
 concept of a shared deceptive perception for a job advertisement. In other words, do all
 individuals perceive deception or misleadingness in job advertisement text the same? Finally,
@@ -863,7 +648,9 @@ assessed, text responses of the reasoning or formation of those perceptions will
 better understanding using a natural language processing topic modeling approach. This novel
 and thorough method to studying deception or misleading text in job advertisements introduces
 an empirically supported, person-centered approach to explore perceptions of deception.
-3.1 Study 1: Perceived Deception Distinction
+
+### 3.1 Study 1: Perceived Deception Distinction
+
 Study 1 was conducted to provide a better understanding of applicants’ attitudes of
 deception towards text in job advertisements in a realistic context of job seeker’s job search
 behaviors. This study provides evidence that perceptions informing misleading or deceptive
@@ -871,13 +658,14 @@ attitudes are more specific and distinct from generalized negative attitudes. Th
 attitudes are a component of an overall negative attitude (Held & Germelmann, 2018;
 Stepchenkova & Park, 2021). The following study also acted as a means of collecting job
 advertisement images for subsequent studies using a realistic job search.
-3.1.1 Study 1 Sample
+
+#### 3.1.1 Study 1 Sample
+
 Study 1 focused on collecting job advertisements searched for by undergraduate
 psychology students, as a representative sample for the population of active and potential job
 seekers. Specifically, 96 undergrad social psychology students completed the job search survey
 and found links to 10 jobs each. With some missing data and incorrect links removed, this
 
-25
 resulted in a total of 628 job advertisement pictures. These images were cleaned to maintain
 consistency with the headers of the website pages and remove any ads or additional features that
 distracted from the text as the focal point of the study. The final used ads are available at the
@@ -891,7 +679,6 @@ Note. This screenshot provides an example of the job advertisements collected an
 survey to assess perceived deception. The above job advertisement has been cleaned to remove
 additional images or ratings.
 
-26
 Undergraduate student populations are commonly used in peer-reviewed research on job
 seeking behaviors and recruitment as a means to access populations typically engaging or
 preparing to engage in frequent or active job seeking behaviors (Walker et al., 2008; Yüce &
@@ -914,8 +701,8 @@ especially on web platforms such as Monster, Indeed, Glassdoor, and LinkedIn, ma
 impact on impressions of the organization as a whole, due to the sheer amount of postings
 viewed.
 
-27
-3.1.2 Study 1 Procedure
+#### 3.1.2 Study 1 Procedure
+
 Online job advertisements were sampled by providing undergraduate psychology
 students with a survey on Qualtrics.com to complete a job search specifically on Indeed.com as
 part of a course activity on attitudes. Participants were directed through the job search and asked
@@ -933,12 +720,13 @@ a conservative source of job advertisements, as they should be up to some standa
 and consistency due to the template provided. That is, if a job ad is constructed using less
 structure, it may be more likely to be viewed as misleading. Therefore, ads found on Indeed.com
 that are rated as deceptive provides a more generalizable source of data.
-3.1.3 Study 1 Measures
+
+#### 3.1.3 Study 1 Measures
+
 In the Qualtrics survey, students were asked to follow a link to Indeed.com where they
 completed a realistic job search as if they were looking for a “job position they would currently
 consider applying to”. They were asked to keep a specific job position in mind when doing this
 
-28
 job search and to input it in a text entry box. Additionally, students were asked to report what
 industry the job position was in, based on the U.S. Bureau of Labor Statistics list (2022) (see
 Appendix A1).
@@ -958,15 +746,18 @@ deception item specifically asked participants to respond to the statement: “I
 advertisement/posting in the link I provided above is deceiving” (see Appendix A3). Finally,
 participants’ intent to apply to the job was measured using an item from Staw et al. (1986) on job
 attitudes (see Appendix A4).
-3.1.4 Study 1 Analytic Approach
+
+#### 3.1.4 Study 1 Analytic Approach
+
 To provide evidence for the distinction between deception or misleading perceptions and
 negative attitudes, a Pearson correlation coefficient was calculated between the attitude and
 
-29
 deception items. This correlation acts as a means of convergent validity evidence, in that
 deception is not the same as a negative attitude towards a specific job advertisement, but instead
 is a related construct (Campbell & Fisk, 1959).
-3.1.5 Study 1 Results
+
+#### 3.1.5 Study 1 Results
+
 Convergent Validity Evidence. In order to provide support for convergent validity when
 measuring deception and negative attitudes towards the job advertisements, a Pearson correlation
 was run on the two items. In doing so, I aim to show that feelings of deception towards an ad are
@@ -981,24 +772,29 @@ around an absolute value of 0.7, however, this may be an overly optimistic estim
 attitudes and deception, because deception is only a piece of a negative attitude and may not be
 as similar as a construct that fully captures a similar spectrum of dimensions as the negative
 attitude construct.
-3.1.6 Study 1 Discussion
+
+#### 3.1.6 Study 1 Discussion
+
 Comparing the resulting correlation coefficient of -0.378 to the standard of 0.7 for
 concepts that are related but not too strongly related, there seems to be sufficient support for the
 convergence of concepts. Additionally, because the absolute value of -0.378 is less than the 0.7,
 it may be assumed that it reflects the nature of deception as a component of a negative attitude.
 
-30
 That is, the negative correlation reflects that as participants perceived job advertisements overall,
 as deceptive their overall attitude decreased or was more negatively valanced. This would be
 expected based on the negative nature of deception or misleading perceptions. The following
 results provide support for the directed study of perceived deception as a unique contribution to
 the recruiting and advertising literature.
-3.2 Study 2: Perceived Deception Distribution and Homogeneity
+
+### 3.2 Study 2: Perceived Deception Distribution and Homogeneity
+
 After establishing the distinct nature of deception, Study 2 lends a better insight into the
 base rate of perceived deception and the nature of the homogeneity of job advertisement
 perceptions across several job dimensions. Combined, this information facilitates a more
 informed design process in the subsequent Study 3.
-3.2.1 Study 2 Research Questions & Hypothesis
+
+#### 3.2.1 Study 2 Research Questions & Hypothesis
+
 Research Question 1. What does the distribution of deceptiveness look like for entry
 level jobs?
 Hypothesis 1. The distribution will be representative of a Gaussian distribution in that
@@ -1010,8 +806,8 @@ to think critically and question job advertisements in terms of their authentici
 Research Question 2. Do ratings of perceptions across different job advertisement
 dimensions demonstrate homogeneity?
 
-31
-3.2.2 Study 2 Sample
+#### 3.2.2 Study 2 Sample
+
 After the survey for collecting job advertisement images, a SONA study was conducted
 to assess the perceived deception of each job advertisement to new raters. This study was
 constructed on Qualtrics.com and participants signed up on SONA for 1 credit hour. There was a
@@ -1019,7 +815,9 @@ total of 389 undergraduate psychology students as participants. The sample of 38
 was composed of 33% male and 67% females, the distribution of ethnicities is: 68% white, 5%
 Black or African American, 7% Hispanic/Latin-American, 16% Asian, 4% other, and the mean
 age was 19.71 years (SD= 1.27).
-3.2.3 Study 2 Procedure
+
+#### 3.2.3 Study 2 Procedure
+
 After providing consent to take the survey, participants were directed to a timed section
 where they completed a series of questions on a single job advertisement that was repeated at
 random for the other job advertisements until 55 minutes had passed. Participants only saw as
@@ -1031,11 +829,12 @@ feelings of overall deceit towards the advertisement. The next block repeated th
 advertisement and had participants copy text that they found deceptive and write it as they would
 ideally want to see it in a job advertisement or as more authentic. Finally, participants moved on
 to complete demographic questions and were debriefed before exiting the survey.
-3.2.4 Study 2 Measures
+
+#### 3.2.4 Study 2 Measures
+
 Participants were asked to type the title of the job and select the industry of the job from a
 list from the U.S. Bureau of Labor Statistics (2022) (see Appendix A1). The participants were
 
-32
 then asked to rate how deceiving the job advertisement seems overall from the same scale
 (Haefner, 1972) and with the same response options (7-point Likert type scale from “strongly
 agree” to “strongly disagree”) as in the survey used for job advertisement data collection (see
@@ -1060,12 +859,13 @@ authentic to job applicants. Five text boxes were provided for 5 different pairs
 authentic text inputs. Finally, participants were asked in an open-ended question if there were
 any additional features other than the text that they found deceptive.
 
-33
 Once the 55 minutes of job advertisement questions had elapsed, the participants moved
 on to completing demographic information. This included the mini-IPIP personality measure on
 a Likert type scale (Donnellan et al., 2006) (see Appendix A6). The final three demographic
 questions were, ethnicity, gender, and age.
-3.2.5 Study 2 Analytic Approach
+
+#### 3.2.5 Study 2 Analytic Approach
+
 As a means of analyzing the distribution of deception ratings on job advertisements
 (Research Question 1, Hypothesis 1), the data from study 2 were restructured to reflect the
 number of job advertisements corresponding to each response option on the 7-point Likert type
@@ -1084,7 +884,6 @@ Senter, 2008).
 Interrater reliability was measured by looking at each participants’ rating of overall
 deceptiveness for a job ad, per job ad. However, in the design of the study, participants only saw
 
-34
 a selection of job advertisements and did not rate every ad. This ultimately led to an ill-structured
 matrix of the data. In the case of an ill-structured measurement design (ISMD) certain guidelines
 are provided to assess interrater reliability. Putka et al. (2008) suggest an alternative to traditional
@@ -1102,7 +901,6 @@ Once the data is restructured, the variance components can be estimated using st
 statistical packages (SAS, SPSS, and R) with code provided in the manuscript. In this study, SAS
 was utilized to analyze IRR by generating a G(q,k) coefficient. The method of computing the
 
-35
 interrater reliability with an ISMD utilizes the harmonic mean number of raters per target being
 rated. This allows for situations where there may be an unequal number of raters rating each
 target (Putka et al., 2008). In doing so, the harmonic mean gives equal weight to each average,
@@ -1112,7 +910,9 @@ each target being rated (Putka et al., 2008). The q multiplier functions by anal
 in the sets of raters rating each target. In the end, this method produces a value (G(q,k)) that
 reflects the reliability of the mean rating for each job advertisement, or the proportion of
 expected observed score variance that is attributed to true score variance.
-3.2.6 Study 2 Results
+
+#### 3.2.6 Study 2 Results
+
 Distribution of Deceptive Job Advertisements. As a means of providing support for the
 proposed phenomenon that job advertisements may be perceived as deceptive via specific text,
 an initial distribution of ratings was produced. The single-item deception measure used to assess
@@ -1127,7 +927,6 @@ perceived deceptiveness. Due to the large number of ads, some were not seen and 
 ratings. The distribution depicted in Figure 6 is representative of a Gaussian distribution, with
 many ads being perceived as neutral and less ads perceived as either extremely authentic or
 
-36
 extremely deceptive. Specifically, a one sample confidence interval for proportion was
 calculated using an exact binomial method, with a sample size of 611 participants. Out of these,
 179 indicated that they felt some aspect of the job ad was deceptive, resulting in a proportion of
@@ -1145,7 +944,6 @@ deceptive, neutral, or authentic. There were about 30% of job advertisements vie
 deceptive, which is a large percentage compared to the about 45% of job advertisements
 perceived as authentic. This comparison demonstrates that while many job advertisements may
 
-37
 be only slightly authentic or deceptive, there are still quite a few advertisements that participants
 feel are inauthentic or misleading in their text.
 Table 1
@@ -1153,7 +951,7 @@ Percentage of Job Advertisement Ratings
 Perceived Deception Rating
 
 Calculated Percentage of Ratings
-# of Job Ads
+\# of Job Ads
 Rated
 
 Total Job Ads
@@ -1165,28 +963,16 @@ Deceptive
 (Slightly Agree, Agree, Strongly
 Agree)
 
-179
-
-611
-
 29.3%
 
 Neutral
 (Neither Agree nor Disagree)
-
-158
-
-611
 
 25.9%
 
 Authentic
 (Strongly Disagree, Disagree,
 Slightly Disagree)
-
-274
-
-611
 
 44.8%
 
@@ -1203,7 +989,6 @@ advertisement that did not have a listed dimension included. By calculating the 
 deception and deception for each dimension, it can provide evidence that an overall higher level
 of perceived deception exists and can generalize across participants viewing the job
 
-38
 advertisements, for multiple job dimensions. When assessing the IRR metric, a standard of a
 score greater than 0.7 is typically used as evidence that a target is perceived similarly by
 individuals (Cronbach et al., 1972; Putka et al., 2008). An IRR metric can range from 0 (no
@@ -1244,11 +1029,8 @@ Female
 
 Male
 
-626
-
 0.000
 
-39
 Benefits
 
 1,149
@@ -1257,13 +1039,9 @@ Benefits
 
 Female
 
-643
-
 0.253
 
 Male
-
-314
 
 0.242
 
@@ -1275,13 +1053,9 @@ Description
 
 Female
 
-720
-
 0.147
 
 Male
-
-347
 
 0.072
 
@@ -1291,13 +1065,9 @@ Male
 
 Female
 
-706
-
 0.097
 
 Male
-
-341
 
 0.095
 
@@ -1309,13 +1079,9 @@ Education
 
 Female
 
-676
-
 0.104
 
 Male
-
-331
 
 0.095
 
@@ -1327,13 +1093,9 @@ Experience
 
 Female
 
-683
-
 0.189
 
 Male
-
-329
 
 0.000
 
@@ -1345,13 +1107,9 @@ Location
 
 Female
 
-698
-
 0.060
 
 Male
-
-337
 
 0.000
 
@@ -1363,13 +1121,9 @@ Overview
 
 Female
 
-663
-
 0.145
 
 Male
-
-327
 
 0.101
 
@@ -1379,13 +1133,9 @@ Male
 
 Female
 
-662
-
 0.286
 
 Male
-
-324
 
 0.070
 
@@ -1397,13 +1147,9 @@ Qualifications
 
 Female
 
-705
-
 0.085
 
 Male
-
-337
 
 0.059
 
@@ -1417,16 +1163,11 @@ Duties
 
 Pay
 
-40
 Female
-
-659
 
 0.118
 
 Male
-
-321
 
 0.151
 
@@ -1436,13 +1177,9 @@ Male
 
 Female
 
-691
-
 0.056
 
 Male
-
-334
 
 0.129
 
@@ -1454,7 +1191,9 @@ did not meet the 0.7 standard for agreement and aggregation of the individual sc
 column shows the number of advertisements that had more than one rater in common and an IRR
 metric was able to be calculated. Additionally, the breakdown into separate genders did not meet
 the 0.7 standard for IRR metrics.
-3.2.7 Study 2 Discussion
+
+#### 3.2.7 Study 2 Discussion
+
 Due to the lack of agreement amongst raters across multiple dimensions of job
 advertisements and within genders, Study 2 is followed up with an approach that addresses these
 limitations. Therefore, the reasons for the lack of agreement must be better understood.
@@ -1470,7 +1209,6 @@ were arranged by which ads they had viewed, a total of 1,971 ratings of advertis
 provided by all participants. The ratings able to be used in calculating IRR were 1,444 out of the
 1,971, because they corresponded with a job advertisement that had more than one rater. The
 
-41
 computed overlap in job advertisements seen by participants (Mean overlap = 0.082, Max
 overlap = 4) was too low to provide evidence for a shared perception. Additionally, participants
 only rated about 7 ads on average, which was not enough to create a higher overlap in job
@@ -1490,11 +1228,12 @@ a young child may value spending time with that child and value an organization 
 authentically in their work schedule section in a job advertisement. To address these elements of
 study design and understand perceived deception from a more person-centered perspective,
 Study 3 was conducted.
-3.3 Study 3: A Person-Centered Approach to Perceived Deception
+
+### 3.3 Study 3: A Person-Centered Approach to Perceived Deception
+
 In response to both a push in organizational research for more person-centered
 approaches and a low interrater reliability metric, an additional study was conducted (Morin et
 
-42
 al., 2018). Study 3 aims to address the evident issues in survey design in order to be more
 directed and informed in data collection.
 Specifically, after computing the interrater reliability from ill-structured measurement
@@ -1519,7 +1258,6 @@ which produced a sample of representative job advertisements with text cues for 
 Study 3 also provided participants with 1.5 SONA credits to complete and described to
 participants that it should take about 1.5 hours. This adjusts participants' expectations of how
 
-43
 long the survey takes and does not time them. While the survey from Study 2 restricted
 participants to rate within the timed 55 minutes, participants can realistically take as long as they
 want to rate all 10 job advertisements in Study 3.
@@ -1542,8 +1280,8 @@ the end of the survey (Aust et al., 2013; Verbree et al., 2020). These adjustmen
 prior studies allow for less missing data and more thoughtful responses in order to assess
 perceptions of deception from a person-centered perspective.
 
-44
-3.3.1 Study 3 Research Questions
+#### 3.3.1 Study 3 Research Questions
+
 Research Question 2a: How many latent profiles best explain perceptions of deception
 within the various job dimensions (e.g., do people view pay statements as similarly deceptive
 and non-deceptive)?
@@ -1554,7 +1292,9 @@ latent profiles) for each dimension, what are the common reasons people give for
 the dimensions misleading or deceptive?
 Research Question 3a. What are the commonalities within those perceptions across all
 dimensions?
-3.3.2 Study 3 Sample
+
+#### 3.3.2 Study 3 Sample
+
 A single round of data collection was conducted for Study 3. In order to maintain a
 consistent and representative sample of job seekers, Study 3 utilized SONA study systems. The
 survey was constructed and taken on Qualtrics.com and participants from a South Eastern
@@ -1565,8 +1305,8 @@ participants was composed of 28.07% male and 71.93% female, the distribution of 
 64.04% white, 20.18% black, 7.02% Hispanic/Latin-American, 5.26% Asian, 3.51% other, and
 the mean age was 19.56 years (SD = 1.41).
 
-45
-3.3.3 Study 3 Procedure
+#### 3.3.3 Study 3 Procedure
+
 Participants who signed up for the study on SONA, were provided with a weblink to
 access the study located on Qualtircs.com. They were sent to a consent form, in which they were
 prompted to check a box if they agreed to continue the study based on the provided information.
@@ -1582,7 +1322,9 @@ in the deceptive question. The entire survey consisted of 10 job advertisements,
 that asked participants about their reasons for their chosen rating. This part of the survey was
 expected to take about 1.5 hours to complete. The participants then moved to complete the
 demographic questions and were debriefed before exiting the survey.
-3.3.4 Study 3 Measures
+
+#### 3.3.4 Study 3 Measures
+
 The measures included in Study 3 were derived from the Study 2 measures. Participants
 rated the job dimensions per job advertisement using the same single-item deception scale as in
 Study 2. After viewing a job advertisement, participants were prompted to identify a specific
@@ -1590,7 +1332,6 @@ dimension in the job advertisement and rate it on a 7-point scale from “Strong
 “Strongly Agree” as to how deceptive/misleading that portion of the job advertisement seemed
 (Appendix A7). The same 11 dimensions were used as were used in Study 2, including: job
 
-46
 description, overview of the company, salary/pay, benefits, responsibilities/duties, skills,
 qualifications, schedule, education, and work location. Once a dimension was rated, the
 participants were asked to provided their reasoning, which is also depicted in Appendix A7.
@@ -1609,13 +1350,14 @@ chance to have their answers removed from data analysts if they were not paying 
 The end of the survey included the mini-IPIP personality measure on a Likert type scale
 (Donnellan et al., 2006) (see Appendix A6). The final three demographic questions were,
 ethnicity, gender, and age.
-3.3.5 Study 3 Analytical Approach
+
+#### 3.3.5 Study 3 Analytical Approach
+
 Latent Profile Analysis Overview. As a follow up to address the limitations of
 insufficient agreement found in the computed IRR metric (G(q,k)), a latent profile analysis
 (LPA) method was used to take a more person-centered approach to the shared perceptions of
 deception (Research Question 2, Research Questions 2a-2c). Due to the lack of homogeneity
 
-47
 amongst ratings for a specific job advertisement from the low agreement, there is not sufficient
 justification to aggregate across ratings for a single job advertisement.
 As a person-centered approach, LPA treats respondents as discrete groups, with
@@ -1639,7 +1381,6 @@ means. These can potentially be informative for assigning a qualitative label to
 profile. Simultaneously, via the Expectation-Maximization algorithm, latent profile analysis
 estimates the probabilities that each person originated from each of the produced latent profiles.
 
-48
 Therefore, if estimating P profiles for N cases, the method creates an N x P matrix containing the
 probabilities that each of the N people is a member of each of the P profiles.
 Using a person-centered approach allows for a better understanding of what types of
@@ -1664,7 +1405,6 @@ agreement indices are used to justify existence of a construct at a higher-level
 prediction, only interrater reliability is needed, as deceptiveness is considered in a relative sense–
 why are some ads perceived as more deceptive than others. To that extent, Generalizability
 
-49
 theory approaches, which partition the inconsistency attributable to rater differences and to
 item/ad differences, and to unsystematic error, can describe how uniformly perceptions exist
 across advertisements. Low consistency within advertisements suggests that latent profile
@@ -1689,7 +1429,6 @@ Power Analysis. To assess feasibility generalizability of a latent profile analy
 analysis was done to address concerns about sample size suitability. Methodologists highlight the
 Monte Carlo simulation method as a promising approach for estimating detection power based
 
-50
 on a given sample size in the context of mixture modeling (Muthén & Muthén, 1998–2010;
 Muthén & Muthén, 2002; Wolf et al., 2013). This approach simulates how well the specified
 analysis can recover a known profile solution (i.e., the correct number of profiles) under specific
@@ -1713,7 +1452,6 @@ A8). That is, any participant with a variance score greater than 0 to the synony
 check question, was dropped due to an indication that those questions were not answered in the
 same manner and is indicative of inattentive responding.
 
-51
 Data Restructuring. To set up the collected data to run the 11 LPAs for each job
 dimension, participant ratings of each of the 10 job advertisements were separated by dimension.
 In doing so, a smaller dataset of participant deceptive ratings for a single job dimension was
@@ -1740,43 +1478,7 @@ Job Ad 4
 
 A
 
-7
-
-7
-
-3
-
-6
-
 B
-
-7
-
-7
-
-3
-
-6
-
-C
-
-1
-
-1
-
-1
-
-2
-
-D
-
-1
-
-1
-
-1
-
-2
 
 Note. This table shows an example of how profiles were generated using LPA for each job
 dimension and participants' deception ratings on those dimensions for each of the 10 job
@@ -1789,7 +1491,6 @@ language using the mice package (Multivariate Imputation by Chained Equations) (
 & Groothuis-Oudshoorn, 2011). The “mean” option was used as a conservative imputation
 option to avoid artificial inflation of intercorrelations for the 10 job advertisements. Because the
 
-52
 Chronbach’s alpha is a function of how correlated the different jobs are, using alternative
 methods such as predictive mean matching could potentially lead to an increase in the
 generalizability coefficient of the job advertisement dimension. Results, however, did not
@@ -1819,7 +1520,6 @@ interaction effect. Once the main effects and interaction effects are computed t
 different sources of variability that contribute to the total observed variance, the “gtheory”
 package in R uses an ANOVA to estimate the variance components using the main effects
 
-53
 means, the deviation scores, and the sum of squares for each main effect and their interaction.
 This provides insight into the variance that can be attributed to the items, to the raters, and that is
 error or left unexplained.
@@ -1844,7 +1544,6 @@ like salary may show more profiles in terms of similar response patterns than th
 overview, which may show less profiles, providing insight into the different perceptions or how
 much variety there is in perceptions of job dimensions that make up a typical online job
 
-54
 advertisement. Additionally, in running all 11 LPAs, a supplemental overall deception dimension
 was not included as in the prior Studies 1 and 2 due to the repetitive nature of the construct. It is
 expected that the more detailed and informed nature of each dimension will provide more
@@ -1868,7 +1567,6 @@ estimate (MLE) to estimate the means, variance, and covariances of the observed 
 within each latent profile, or in this case, each job advertisement. MLE then finds the parameter
 values that maximize the likelihood of those data under that specific model. The goal being to
 
-55
 identify the model and number of profiles that best represents the underlying structure of the data
 using those estimation parameters while still maintaining a level of interpretability.
 The best fit was determined by comparing fit indices across the estimated models, where
@@ -1893,7 +1591,6 @@ nature of different groups of individuals who may view a certain section of a jo
 as deceptive, while some feel it is authentic. However, LPA cannot tell us why those perceptions
 are formed from the present job advertisement text. In order to better understand the reasoning
 
-56
 individuals, have for rating job advertisements as deceptive, a natural language processing (NLP)
 topic modeling method was used.
 Natural Language Processing Topic Analysis Overview. Although person-centered
@@ -1918,7 +1615,6 @@ handling this volume of parallel computations, with a vector representation for 
 information and another for semantic information (Yu et al., 2021). Due to recent advances in
 computational power, transformer models utilize deep neural networks to allow for
 
-57
 improvements in computational efficiency (Vaswani et al., 2017). Figure 7 below depicts the
 general architecture of a transformer model that has already been pre-trained and fine-tuned and
 is given input text to generate an output text embedding and subsequent decipherable text or
@@ -1932,7 +1628,6 @@ transformer models. This is when a specific large amount of text input is additi
 and the model is then trained on these embeddings to better understand specific use cases and
 make better predictions within those cases.
 
-58
 Figure 7
 Transformer Text Model Architecture
 
@@ -1948,7 +1643,6 @@ representations are done so through tokenization (Devlin et al., 2018). These ve
 representations of the text are the inputs transformer models use to fine-tune the pre-trained
 model to adapt to new datasets. A visualization of this process is shown in Figure 8 below.
 
-59
 Figure 8
 Visualization of Word Embeddings
 
@@ -1967,7 +1661,6 @@ with more options and information.
 Specifically, one such model is topic modeling using an open-source library of
 transformers. This study uses a specific transformer from the Hugging Face library called “AllminiLM-L6v2” (2021). This specific model utilizes deep learning models that are pre-trained
 
-60
 and simply must be fine-tuned on the text data of interest (Grootendorst, 2022). Transformer
 models contain many connected layers of pre-trained data. This pre-trained data comes from a
 dense library of text data that the model has already been trained on. In this process, the model
@@ -1986,7 +1679,6 @@ robust and flexible than previous approaches to topic modeling (Sia et al., 2020
 visual example of how topic modeling via transformer models functions is depicted in Figure 9
 below.
 
-61
 Figure 9
 Overview of Transformer Model Topic Discovery Process
 
@@ -2012,7 +1704,6 @@ language models. That is, pre-trained transformers have a head start and already
 comprehensive English embeddings and can still make good predictions when fine-tuned with a
 smaller dataset, opposed to being trained from scratch with that small dataset (Devlin et al.,
 
-62
 2018). Using a pre-trained transformer model, a topic analysis was done on each of the 11
 dimensions to identify reasons for highly deceptive ratings within profiles displaying highly
 deceptive ratings.
@@ -2037,7 +1728,6 @@ clearer, while keeping the overall meaning the same:” This prompt iterated thr
 list of reasons for deceptive perceptions per dimension. Using a descriptive prompt like the one
 used in Study 3 is found to be more effective in producing results closer to the goal depicted in
 
-63
 the prompt (OpenAI, 2022). Additionally, ChatGPT’s API allows for a hyperparameter
 adjustment to the temperature of the model, which can be adjusted from 0 to 1. In setting this
 hyperparameter to ensure low randomness and that the original meaning of the phrases input was
@@ -2111,7 +1801,6 @@ Misleading uses
 preferred instead of
 required.
 
-64
 Once the text is encoded into embeddings that represent the latent meaning of all the
 deceptive reasoning input text, the number of clusters that best fit the text data was calculated.
 Specifically, a probabilistic approach using a Gaussian Mixture Model (GMM) was used to
@@ -2136,7 +1825,6 @@ To retrieve interpretable topics from each cluster, several different methods we
 gain unique insight from each method. First, a principal component analysis (PCA) was used to
 reduce the dimensionality of the topic embeddings in their latent space to produce an
 
-65
 interpretable visualization of the clusters in a 2D graph (Sia et al., 2020). Therefore, the final
 plotted data frame contained 2D embeddings, the cluster assignments, and the corresponding
 texts in an interactive plot. A second, non-interactive plot was produced using representative text
@@ -2156,12 +1844,13 @@ embeddings in each cluster using the Euclidean distance between the data points 
 the embeddings. In addition to the representative text, the number of phrases included in each
 cluster was computed. This detailed understanding of the topics and reasons behind ratings of
 perceived deception acts as an empirical way to inform the practice of job ad writing.
-3.3.6 Study 3 Results
+
+#### 3.3.6 Study 3 Results
+
 The results of this study are categorized by job advertisement dimension, where the
 reported findings of the LPA and topic analysis for each dimension are described. While each of
 the 11 dimensions is a complex approach. It is comprehensive due to the exploratory nature of
 
-66
 this study. These 11 dimensions may lend to unique features continuing to deceive that would
 not be shown in a larger scale overall perspective of the job advertisement as a whole.
 Additionally, while there may be consistency in the finding between dimensions, that could not
@@ -2186,7 +1875,6 @@ remaining job ads were rated as either neutral or slightly authentic. There are 
 significant correlations (32 out of 45 total) amongst the job advertisement ratings. This indicates
 that while job advertisements may show similar ratings, there are distinct advertisements rated as
 
-67
 clearly deceptive. Moreover, it is possible that common textual elements in job descriptions,
 found in both deceptive and authentically perceived advertisements, may elicit comparable
 reactions when they appear in correlated job advertisements. These correlations support the idea
@@ -2211,7 +1899,6 @@ Appendix C1, Table 6. In regard to Research Question 2b, about 84.2% of the resp
 assigned to the Profile 1 or the “Mildly Skeptical with Heightened Awareness” profile, which is
 the strong majority of individuals. The smaller Profile 2, or the “Overly Trusting” profile
 
-68
 contained 15.8% of the sample. Naming each profile was done on an observational basis, but the
 reported means on each job advertisement demonstrate their perspective differences in
 perception of deception as it relates to job description for each advertisement. A visual
@@ -2225,7 +1912,6 @@ advertisements, rating on average that they are mildly authentic. In contrast, t
 participants, belonging to Profile 1, were much more concerned with the job descriptions being
 deceptive in general, or at least uncertain, and had a heightened sense of deception in response to
 
-69
 the job description in job advertisement #3, that was not shown in the Profile 2 responses. This
 specific job advertisement is that for a registered dietician, found in Appendix B1, titled
 “Deceptively Rated Job Advertisement 3” and is available on OSF at the following link under
@@ -2246,7 +1932,6 @@ Study 2, there may be artificial inflation due to study design. Specifically, th
 matrices or lack of missingness in Study 3, compared to Study 2 due to effective attention
 checks, could have decreased Study 2’s G-coefficient. The summary of variance components
 
-70
 along with the G-coefficient can be found in Appendix C1, Table 5. Of note is the proportion of
 person variance compared to the source of Item variance. About 20.9% of the variance can be
 explained by individual differences in rating the deceptiveness of the job advertisements,
@@ -2270,7 +1955,6 @@ The job description dimension had a cluster solution of best fit at n = 10 clust
 representing the reasons or further details for the deception perceptions. This is based on the BIC
 plot of the GMM fit to the embeddings of the job description dimension text (Figure 12). This
 
-71
 plot shows a clear drop in BIC when moving towards the 10-cluster solution, with no other
 cluster models being relatively close.
 Figure 12
@@ -2289,7 +1973,6 @@ Table 8. The second most populated cluster (Cluster 6) has 48 statements that fe
 nature of the ad comes from being unclear; again on several different components of the job that
 seemed to be listed in the job description section as well as other parts of the job advertisement.
 
-72
 Utilizing the PCA done on the clusters, an interactive plot of the clusters can be found at
 the following webpage:
 https://computationalorganizationalresearch.com/software/jobaddeception/job_description_plot.h
@@ -2305,7 +1988,6 @@ position.
 Figure 13
 Clusters for the Job Description Dimension
 
-73
 Job Dimension 2: Company Overview. The next dimension of interest is the company
 overview, which refers to the section provided for companies to input information that represents
 values or provides prospective employees with more information. While this section is not
@@ -2330,7 +2012,6 @@ Latent Profile Analysis for Company Overview. Study 3 aimed to identify unique
 patterns of deception within the company overview dimension. This was achieved by conducting
 a latent profile analysis on the deception ratings of the company overview for the same 10 job
 
-74
 advertisements. The fit statistics for the LPA can be found in Appendix D1, Table 10. There was
 another convergence issue for the 3-profile solution in model 2, again from the same sample size
 being used and introducing similar problems with the sample size and the model’s assumptions
@@ -2348,7 +2029,6 @@ termed the “Trusting but Occasionally Suspicious” profile, accounted for the
 the sample. These profile names were determined by observations and the reported means for
 each job advertisement. Figure 14 provides a visual representation of each profile.
 
-75
 Figure 14
 
 Evaluating these two profiles related to company overview, pertains to Research
@@ -2365,7 +2045,6 @@ In respect to the company overview in job ad number 3, there is no specific labe
 company overview section but there is a section that discusses why the company feels they are
 worthwhile to work for. This is shown below in Figure 15. This overview contains very
 
-76
 descriptive and detailed information which may be viewed as a positive. However, both profiles
 felt that the information was conveyed in a deceptive manner.
 Figure 15
@@ -2379,7 +2058,6 @@ Christiansburg Showroom.” This potentially can be perceived as deceptive based
 conveyed or certain assumptions about the company’s employees that may not feel true from the
 statement.
 
-77
 Generalizability for Company Overview. In Study 3, the generalizability coefficient was
 recalculated to assess the low generalizability of Study 2, for every dimension. This resulted in a
 G-coefficient of 0.734, which actually meets the > 0.7 standard. This finding again contradicts
@@ -2404,7 +2082,6 @@ indicating that 256 participants rated the job descriptions across the 10 advert
 level of deceptiveness. The company overview cluster solution had a best fit at n = 7 clusters.
 This is based on the BIC plot shown in Figure 16. While there is a clear second drop in solution
 
-78
 fit for 10 clusters, a 7-cluster solution was chosen based on the minor contribution of 3 additional
 clusters in lowering the BIC and minor contribution in interpretable additional clusters.
 Figure 16
@@ -2422,7 +2099,6 @@ does not seem to be perceived well in the context of conveying information about
 posting a job opening. It may seem like a conceited way to oversell something that is not as truly
 positive as it is represented.
 
-79
 In assessing the top words for Cluster 7, the words “biased” and “suspicious” come up as
 representing 8% and 6% of the frequency distribution of words (Appendix D2, Table 14). These
 indicate that there may be words in the highly rated as deceptive job ad number 3 feel biased or
@@ -2439,8 +2115,6 @@ continuum of the company description containing information that is overly posit
 biased, or seemingly fake to no company details or information. Where either extreme seems
 deceptive. A non-interactive plot is shown below in Figure 17.
 
-80
-
 Figure 17
 Clusters for the Company Overview Dimension
 
@@ -2454,7 +2128,6 @@ significant correlations between job advertisements represent those salary secti
 rated similarly in terms of perceived deceptiveness or misleadingness. Many companies report
 their salaries or pay provided to entire employees to apply so with a diverse sample of jobs, it
 
-81
 can be assumed that different salary amounts can be pierced deceptively for a potential additional
 reason(s). There are two ads of note (Ad number 1 and Ad number 3) that have ratings higher
 than the midpoint, indicating that they are perceived as somewhat deceptive. Again, there are
@@ -2476,7 +2149,6 @@ however, the generally more skeptical profile (1) with higher ratings of decepti
 advertisements 1 and 3 fairly deceptive. Profile 2 only had similar heightened levels of deception
 perceptions with the advertisement 1.
 
-82
 Figure 18
 
 These advertisements can be found in Appendix B1 and are available on the OSF website listed
@@ -2491,7 +2163,6 @@ generalizability coefficient was recalculated for the modified study design and 
 Study 3. In this study, the total G-coefficient reached 0.838, surpassing the >0.7 standard applied
 in Study 2. These results broken down by variance components can be found in Appendix E1,
 
-83
 Table 17. Contrary to the initial conclusion of unique perceptions based on Study 2’s
 generalizability computations, this increase could be due to similar profiles as to how salary is
 viewed. There are some differences in intensity and spikes of deception ratings for Profile 1,
@@ -2516,7 +2187,6 @@ representative additional topics when assessed. Also 5-clusters is a more replic
 interpretable solution for understanding how to avoid deceptive features eliciting the
 corresponding ratings during job ad construction.
 
-84
 Figure 19
 BIC Plot for Salary Cluster Solutions
 
@@ -2535,7 +2205,6 @@ left unaddressed in the subsequent job advertisement information. While one was 
 one was for hourly pay, the large range was viewed negatively regardless. The further
 breakdown of top words per cluster can be found in Appendix E2, Table 20.
 
-85
 An interactive plot of the clusters was produced and can be accessed at the following
 webpage:
 https://computationalorganizationalresearch.com/software/jobaddeception/salary_plot.html. This
@@ -2556,7 +2225,6 @@ position in job advertisement 4, it contains a broad range as well as includes a
 performance-based incentive structure, which may be confusing or unclear in regards to that
 specific position.
 
-86
 Figure 20
 Clusters for the Salary Dimension
 
@@ -2570,7 +2238,6 @@ of the 10 job ads for the benefits dimension can be found in Appendix F1, Table 
 notable aspects are evident in these data. Firstly, there is again, a high number of significant
 correlations between job advertisements, which may indicate that there is not enough variety in
 
-87
 the benefits sections of job advertisements chosen. It could also be that many companies tend to
 post similar benefits in job advertisements in terms of authenticity, regardless of the position
 advertising for. While several means are around the midpoint, there are a few that indicate slight
@@ -2594,7 +2261,6 @@ While the slight majority of participants at 57.0% belonged to the “Fluctuatin
 profile (2). Figure 21 shows the latent profile plot for the salary dimension based on the mean
 rating of each profile for each of the 10 job advertisements.
 
-88
 Figure 21
 
 Examining the two profiles for salary addresses Research Question 2c, which focuses on
@@ -2609,7 +2275,6 @@ same OSF link: https://osf.io/xf9e6/files/osfstorage.
 The only benefit listed in the section for job advertisement 3 is a flexible schedule, while
 the other two advertisements have no distinctive benefits section. This could indicate that not
 
-89
 including the information is seen as deceptive or misleading. Many companies may maintain the
 practice of waiting until the selection or hiring process to describe the benefits, however, that
 may not be best practice if applicants do not even apply due to feeling misled by the lack of
@@ -2633,7 +2298,6 @@ secondary drop in solution fit for 10 clusters, an 8-cluster solution was chosen
 BIC scores and the goal of optimizing the solution to be more generalizable and understandable.
 Additionally, more clusters would lead to smaller counts of phrases per cluster. With the smaller
 
-90
 sample size of text, that may lead to a solution that is overfitting to the specific data for the
 chosen advertisements in the study.
 Figure 22
@@ -2651,7 +2315,6 @@ misleading. That lack of clarity in benefits, but an over descriptive section of
 are more relevant during the selection process, lends to misleading or unclear feelings.
 Additionally, this demonstrates that it may matter what information is detailed and not just the
 
-91
 fact that there are details in the job description.
 The top words per cluster table found in Appendix F2, Table 26, shows that there are
 consistent themes shared with the other dimensions that inclined top contributing words such as:
@@ -2676,7 +2339,6 @@ seem misleading or have an alternative motive. This theme is also depicted in Cl
 interactive plot, where individuals note that these things are listed instead of the usual insurance
 details or it seems “too good to be true”.
 
-92
 Figure 23
 Clusters for the Benefits Dimension
 
@@ -2691,7 +2353,6 @@ intercorrelations of the 10 job ads for the responsibilities can be found in App
 27. The means for the responsibilities dimension are lower than most of the other dimensions
 with only job advertisement 3 having a mean rating above the uncertainty midpoint and has
 
-93
 ratings of slight deception. However, there are high standard deviations, meaning that the means
 do not fully represent how everyone rated each advertisement. There are many high correlations
 in the table, similar to the other dimensions. This consistency in correlated ratings across job
@@ -2716,7 +2377,6 @@ and their respective means for the 10 job advertisements. In relation to Researc
 around only 13.2% of the participants were part of Profile 1, named "Wavering Deception".
 Meanwhile, the large majority of participants, at 86.8%, belonged to Profile 2, the "Trusting but
 
-94
 Aware" profile. Figure 24 presents the latent profile plot for the benefits dimension based on the
 mean rating of each profile for each of the 10 job advertisements.
 Figure 24
@@ -2731,7 +2391,6 @@ advertisements are in Appendix B1 or at the OSF link: https://osf.io/xf9e6/files
 Job advertisement 3 for the Registered Dietician contains almost no description of
 responsibilities besides stating a section called your role, which says: “As a member of our
 
-95
 counseling team, you will provide counseling services to users who need help or advice in your
 area of expertise.” While there is a statement provided, it is vague and does not seem to match
 the job title. As for job ad 4, for the HRIS Analyst, there is a thorough description of
@@ -2746,7 +2405,6 @@ falls above the >0.7 standard and can be found in Appendix G1, Table 29. This pr
 generalizability evidence for shared perceptions of deception. This can be seen in the LPA plot
 due to the similar trends in responses between the profiles with slight variations.
 
-96
 NLP Topic Modeling for Responsibilities. To gain further insight into deception ratings
 at the individual level, participants' input text was analyzed and assigned to representative
 clusters using the same topic modeling approach, addressing Research Question 3.
@@ -2764,7 +2422,6 @@ With respect to Research Question 3, participants’ reasons for their ratings w
 summarized into a main idea for each cluster using ChatGPT. Appendix G2, Table 31 presents
 the representative words and the number of statements in each cluster. Certain clusters, such as
 
-97
 Cluster 3 and Cluster 4 share the bulk of the phrases, with 83 and 63, respectively. Cluster 3
 describes that there are responsibilities listed but they seem excessive for the position or
 understated, causing a mismatch between what the applicant feels may be required for the
@@ -2788,7 +2445,6 @@ situations require some prior knowledge of the position to recognize, so for hig
 positions where applicants are experienced, this could be an issue when responsibilities are
 misrepresented. Additionally, these jobs may have more at stake in getting applicants or have
 
-98
 more to lose if the applicant realizes the job is not what they thought. A static plot is shown
 below in Figure 27.
 Figure 27
@@ -2802,7 +2458,6 @@ Descriptive Statistics for Skills. The descriptive statistics for the 10 job adv
 and their ratings of deception for the salary dimensions are found in Appendix H1, Table 33. The
 significant correlations between job advertisements are higher than many of the other
 
-99
 dimensions, ranging mostly within 0.3 and 0.4. This may mean that many job ads have similarly
 viewed skills sections in terms of their levels of deceptiveness. Probably, these job
 advertisements could lack variability in their skills sections leading to similar perceptions. This is
@@ -2824,7 +2479,6 @@ sample. These profiles share very similar trends in their means for each job adv
 in that they are consistent in what they rate as deceptive, but there are not very high ratings of
 deception.
 
-100
 Figure 28
 
 Job advertisements 2, 3, 7, 8, and 9 are all rated at near 4, indicating that they are viewed
@@ -2839,7 +2493,6 @@ deceptive, especially for those within the Profile 2.
 These ads can be viewed in their entirety in Appendix B1 and can be accessed via the following
 OSF link: https://osf.io/xf9e6/files/osfstorage.
 
-101
 Figure 29
 Skills for Job Advertisement 2
 
@@ -2861,7 +2514,6 @@ For the skills dimension, there was a sample size of n = 266 statements, indicat
 266 participants rated the job descriptions across the 10 advertisements as deceptive. The
 company skills cluster solution demonstrated the best fit at n = 7 clusters. This choice is based on
 
-102
 the BIC plot shown in Figure 30. Although there are slightly worse solutions around the 7-cluster
 solution. There is convergence and a relatively large drop in the BIC for the 7 clusters.
 Figure 30
@@ -2879,7 +2531,6 @@ unclear or infers that the applicant understands the skills, this could even be 
 level positions such as the retail sales associate in job advertisement 9, where some individuals
 who have not worked in retail, may not know the skills but still be qualified.
 
-103
 Examining the top words for each cluster, mirrors the themes found from ChatGPT in
 running through each of the phrases per cluster. However, Table 38 in Appendix H2, shows that
 there are some prominent words of note in Cluster 6. Specifically, the top word count is
@@ -2901,7 +2552,6 @@ jobs that may need them and it is clear that they are lacking. In which, both si
 would lead to deceptive ratings. A static version of the plot can be found in Figure 31
 below.
 
-104
 Figure 31
 Clusters for the Skills Dimension
 
@@ -2915,7 +2565,6 @@ distinction is important because qualifications can be more difficult, time cons
 expensive to obtain and jobs may have less flexibility on that dimension than on the skills
 needed, where alternative skills could suffice.
 
-105
 Descriptive Statistics for Qualifications. The descriptive statistics for the 10 job
 advertisements and their ratings of deception for the Qualifications dimension can be found in
 Appendix I1, Table 39. Significant correlations between job advertisements and their
@@ -2940,7 +2589,6 @@ and their corresponding means for the 10 job advertisements. In relation to Rese
 2b, approximately 78.1% of the sample belongs to Profile 1, the "Overall Uncertain" profile,
 while the "Overly Trusting" profile encompasses the remaining 21.9% of respondents. As shown
 
-106
 in Figure 32's latent profile plot, both profiles exhibit very similar deception patterns across the
 advertisements. Even though Profile 1 viewed job advertisements as more uncertain that the
 more trusting nature of those in Profile 2, both profiles tend to find the job advertisements 2 and
@@ -2955,7 +2603,6 @@ specifically titled qualifications, but mentioned that the applicant needs, “a
 show up everyday (which includes reliable transportation and a valid driver’s license). Again this
 is a reasonable qualification but may not equate to the employee’s commitment to showing up on
 
-107
 time and may exclude those that rely on public transportation.
 These both can be viewed in their entirety in Appendix B1 and can be accessed via the following
 OSF link: https://osf.io/xf9e6/files/osfstorage.
@@ -2978,7 +2625,6 @@ NLP Topic Modeling for Qualifications. Study 3 also aimed to evaluate the decept
 perceptions at the individual level for each participant’s ratings by extracting meaning from the
 large volume of text responses. Utilizing NLP topic modeling with pre-trained transformers
 
-108
 enables a deeper examination of the reasons behind the ratings participants provided for each
 qualifications section. This covers Research Question 3.
 Within the qualifications dimension there was a sample size of n = 269 statements,
@@ -2997,7 +2643,6 @@ participants provided for their ratings into a primary idea for each cluster. Th
 with representative words and the number of statements in each cluster can be found in
 Appendix I2, Table 43. The table reveals that due to the mixing of qualifications and skills
 
-109
 section in many of the job advertisements, there are similarities between the themes. For
 example, Cluster 2, with 61 reasons, indicates that some positions seem to be asking for
 excessive qualifications for the position of interest. These listed qualifications may also lack
@@ -3022,7 +2667,6 @@ largest distances between Clusters 2 and 5 as well as Clusters 4 and 6, dimensio
 represented in the 2D space can be inferred. Specifically, the latent space from Cluster 2 to 5
 forms a continuum of the qualifications being mentioned to the qualifications missing. Then
 
-110
 from Clusters 4 to 6, there is a spectrum of excessive requirements for the position to lacking
 expected requirements for the positioning. This could indicate that a combination at either end of
 the spectrum is deceptive to applicants, including excessive requirements that do not have
@@ -3036,7 +2680,6 @@ in envisioning themselves in that advertised position. It provides tangible info
 the work week would look like for an employee and if not truly reflective of the expected
 schedule, it could lead applicants to start a job and quickly have to quit due to a schedule that
 
-111
 they did not expect and does not work for them. Additionally, flexible schedules and work-life
 balance are important factors for job applicants when searching for new opportunities and is
 probably a factor that is focused on when job searching (Kossek et al., 2011).
@@ -3061,7 +2704,6 @@ using a 2-profile solution with model 2. Adhering to the same standards for fit 
 BIC and BLRT significance, the chosen solution had the lowest BIC at 4,448, with a significant
 BLRT value of p = 0.01.
 
-112
 Appendix J1, Table 48 presents the distribution of participants across the two profiles and
 their respective means for the 10 job advertisements. With regard to Research Question 2b,
 approximately 54.4% of the participants belonged to Profile 1, labeled “Moderate Skepticism”,
@@ -3076,7 +2718,6 @@ plot, addresses Research Question 2c. Both profiles have strong fluctuations acr
 advertisements, but trend in a very similar manner. Again, the main difference is the level of
 intensity in deception deceptions. There are high ratings of deception for both profiles for job
 
-113
 advertisements 2 and 4. Additionally Profile 2 shows a heightened level of deception for job ad
 3, compared to ads 2 and 4, while Profile 1, shows a slight leniency in skepticism for job ad 3.
 Finally, both profiles were at least skeptical of job advertisement 10. These can be found in
@@ -3100,7 +2741,6 @@ the remaining 70.6% of the variance attributed to the residual which could mean 
 of deception and the corresponding rating patterns of a person may be influenced by study design
 or something unmeasured.
 
-114
 NLP Topic Modeling for Schedule. The pre-trained transformer model for topic
 discovery is the second part of Study 3 and assists in finding individual-level reasons as to why
 deception perceptions were formed or can provide more detail to the numeric rating. This aims to
@@ -3119,7 +2759,6 @@ were condensed into a central theme for each cluster using ChatGPT. Table 49, in
 displays the representative words and the quantity of statements for each cluster. Some clusters,
 like Clusters 3 and 5 had the majority of the statements at 96 and 85, respectively. However, the
 
-115
 ideas behind these clusters are quite opposing. Cluster 3 has a main idea of there being
 information about the schedule that conveys information about flexibility, work hours,
 availability and compensation for those hours. Cluster 5’s main idea focuses on a lack of
@@ -3140,8 +2779,6 @@ Additionally, a static version of the plot can be found in Figure 37, below. Som
 observations from these plots are that the continuum of no information to too much
 information between Clusters 3 and 5 is depicted.
 
-116
-
 Figure 37
 Clusters for the Schedule Dimension
 
@@ -3154,7 +2791,6 @@ for certain positions within different industries. Additionally, education is a 
 qualification that immediately invalidates someone from a position if they do not meet the
 educational requirements.
 
-117
 Descriptive Statistics for Education. Appendix K1, Table 51 presents the means,
 standard deviations, and intercorrelations of the 10 job ads cornering the education dimension.
 This table illustrates a few key points. First, there are several significant correlations between
@@ -3179,7 +2815,6 @@ value of p = 0.01.
 The spread of participants across the 3 profiles and their corresponding profile means for
 each job advertisement are presented in Appendix K1, Table 54. Addressing Research Question
 
-118
 2b, approximately 14.9% of the participants belonged to Profile 1, named the “Generally
 Trusting” group. Profile 2 contained the majority of the sample with 46.5% of the participants
 who tended to respond in a “Slightly Skeptical” manner. Finally, Profile 3 has 38.6% of the
@@ -3195,7 +2830,6 @@ in the more consistent group in terms of perceptions of deception across job adv
 other two groups fluctuate more as to what advertisements are viewed as deceptive. However, all
 of the profiles are barely above the “slightly deceptive” level, with Profile 1 actually being more
 
-119
 trusting than suspicious of the advertisements. The only two advertisements that are even
 considered deceptive in terms of education are job advertisements 4 and 8. These can be found in
 Appendix B1, or at the same OSF link: https://osf.io/xf9e6/files/osfstorage. Job advertisement 4
@@ -3219,7 +2853,6 @@ there is a clear decrease in the BIC, indicating a better fit at a 7-cluster sol
 support for this solution comes from the leveling off after the 7-cluster solution, indicating that
 there are only slight incremental improvements in the 8-10 clusters solution.
 
-120
 Figure 39
 BIC Plot for Education Cluster Solutions
 
@@ -3238,7 +2871,6 @@ participants are thinking and assessing the education information in the job adv
 However, they may be deceptive because of the other words in the cluster such as: “required”
 and “preferred” indicating that there are some education requirements that are not necessary for
 
-121
 certain positions, but there is a preference towards applicants that meet those requirements
 whether it is stated or not.
 To understand the full phrases in each cluster and the space between each cluster as
@@ -3251,7 +2883,6 @@ information to existent information. Additionally, the space between Clusters 5 
 a dimension of too high of degree requirements to too low of degree requirements compared to
 the industry standard.
 
-122
 Figure 40
 Clusters for the Education Dimension
 
@@ -3266,7 +2897,6 @@ shows that the sections in different ads are viewed similarly in terms of decept
 indicate that those sections have similar text or that the job advertisements have different text
 eliciting similar levels of deception. There are also many means at the uncertainty level with only
 
-123
 a few running into the slightly deceptive ratings. Additionally, there are high standard deviations
 for all job advertisements, indicating that there is variance around those reported means, and they
 may not be representative of every individual that viewed that job advertisement.
@@ -3285,7 +2915,6 @@ and were named the “Wavering Skepticism” group. Figure 41 shows the latent p
 the experience dimension based on the mean rating of each profile for each of the 10 job
 advertisements.
 
-124
 Figure 41
 
 The latent profile plot for experience shows that perceptions of deception are less profile
@@ -3301,7 +2930,6 @@ experience, and desire to help people.” That is the only mention of experience
 qualification of being a registered dietician. It seems inconsistent to have mention of a high
 degree of experience and not mention any of the specifics past being a registered dietician. Job
 
-125
 advertisement 8 for a health resource analyst does not mention any prior experience needs
 despite having intensive job responsibilities listed that may not be depicting an entry level
 position.
@@ -3325,7 +2953,6 @@ corresponding cluster fit. The BIC plot is shown below in Figure 41. There is a 
 at the 9-cluster solution, even with the BIC accounting for complexity and penalizing more
 dimensions to avoid overfitting.
 
-126
 Figure 41
 BIC plot for Experience Cluster Solutions
 
@@ -3343,7 +2970,6 @@ The top words per cluster are found in Appendix L2, Table 62. Of note in this ta
 way Cluster 2 seems to quantify experience. Specifically, the word “year” and “years” are at a
 combined 40.6% of the total words. This is across all job advertisements, so if entry level
 
-127
 positions mention prior years of experience, they may be inaccessible to many individuals. This
 is also in contrast to job ads that simply state “prior” experience, which may not provide enough
 specification based on the top words from Cluster 1.
@@ -3359,7 +2985,6 @@ general experience listed, or the specificity of the listed experience.
 Figure 42
 Clusters for the Experience Dimension
 
-128
 Job Dimension 11: Work Location. The work location is an essential part of the job
 advertisement. However, this can include more than just the physical location in the section on
 Indeed.com. Location can include the available telework options, whether there are multiple
@@ -3384,7 +3009,6 @@ latent profile analysis on the corresponding ratings for each of the work locati
 advertisements. The LPA fit statistics can be found in Appendix M1, Table 64. A convergence
 issue emerged for the 3-profile solution in model 2, which might be due to the sample size used.
 
-129
 The sample size could potentially cause non-convergence after 1,000 iterations as a result of
 conflicts between the sample size and the assumptions of the model. Although these solutions
 were not considered, they have been reported.
@@ -3400,7 +3024,6 @@ profile maintained a fairly even split. There were 41.2% of the participants in 
 work location dimension based on the average rating of each profile for each of the 10 job
 advertisements.
 
-130
 Figure 43
 
 Research Question 2c delves into the characteristics of each profile. A more detailed
@@ -3415,7 +3038,6 @@ is in Carson City, NV, but you need to reliably commute or plan to relocate befo
 which is preferred. Job advertisement 10, for the online marketing manager but does not state
 that it is remote, it may need to be assumed by the applicant.
 
-131
 Generalizability for Work Location. In Study 3, the generalizability coefficient was
 recalculated due to Study 2's low generalizability. This resulted in a G-coefficient of 0.861,
 which fall above the >0.7 standard and can be found in Appendix M1, Table 65. Additionally,
@@ -3433,7 +3055,6 @@ score of each cluster solution and choosing the solution with the lowest BIC. Wh
 solution of 6 and 10 are potentially comparable, the 6 cluster solution is more interpretable based
 on the resulting plot of clusters and corresponding data points.
 
-132
 Figure 44
 BIC Plot for Work Location Cluster Solutions
 
@@ -3452,7 +3073,6 @@ M2, Table 68. The top words for many of the clusters stop at one or two words. T
 limited words in the included statements and many of those simplifying being the same word.
 This could be attributed to survey fatigue or inattentive or effortless responding. However,
 
-133
 Cluster 5 has instances of words such as “remote” (10.4%), “office” (5.5%), and “address”
 (5.5%). These could indicate misleading feelings coming from the lack of specification on where
 the job is or if there are inconsistencies in remote and physical locations advertised in the job
@@ -3467,7 +3087,6 @@ specificity altogether, and that lack is what is found to be deceptive.
 Figure 45
 Clusters for the Work Location Dimension
 
-134
 Shared Topics Across Dimensions. The final Research Question 3a concerns the
 shared topics found across all 11 dimensions researched in Study 3. To assess this research
 question empirically, as opposed to looking at all of the topic plots and cluster themes per
@@ -3488,7 +3107,6 @@ solutions with a comparable BIC score. This seems to make theoretical sense as w
 combined nature of all 11 dimensions, and there could be approximately 1 cluster per dimension
 with the key concerns or reasons for deception included.
 
-135
 Figure 46
 BIC Plot for all 11 Dimensions
 
@@ -3506,7 +3124,6 @@ requirements that are unclear or have unrealistic qualifications. Cluster 3 demo
 theme around the lack of information appearing misleading. Additionally, Cluster 6 focuses on
 how salary information presented in ranges are unclear or misleading when it includes flexible
 
-136
 hours as well. Finally, of note, Cluster 10 has a focal topic about the lack of explanation behind
 the benefits listed.
 The top words table for all 11 dimensions can be found in Appendix N, Table 70. While
@@ -3531,7 +3148,6 @@ statements in Cluster 1 at the opposite end of the space, that may define the ot
 spectrum of a lack of information that should be required for the specific positions, such as
 experience or certain requirements. Although some clusters form based on dimension, there are
 
-137
 overlapping ideas among clusters that mention deception may stem from too much information
 or too little information. These misleading feelings during the application process can also be
 from the existent information appearing unclear, vague, or conflicting with information in other
@@ -3546,7 +3162,6 @@ Summary of Results for Study 3. Overall, there are similar themes across dimensi
 unclear and confusing or conflicting information being rated as deceptive. In contrast, aspects
 that can also lead to feelings of confusion or feelings of deception are job advertisements that
 
-138
 contain vague information. That is job advertisements that include information but it may seem
 atypical for the job position and is thus viewed deceptive or misleading. Additionally,
 participants felt that if there were aspects of the job ad specified that did not match the typical or
@@ -3571,7 +3186,6 @@ across many dimensions.
 The table below titled, “Summary of Results by Research Question” reports a summary of
 the expansive results of the 12 topic analyses and 11 latent profile analyses. While this table is
 
-139
 only a portion of the results, it aims to condense the main ideas into a single table for
 interpretability. This table does not include research question 3a, which assesses all dimensions
 of deception reasons in a topic analysis, this is reported above.
@@ -3661,7 +3275,6 @@ deceptive
 1: Job ad # 1 & 3
 2: Job ad # 1
 
-140
 4. Benefits
 
 2 profiles
@@ -3685,7 +3298,6 @@ information
 
 1: Job ad # 3 & 8
 2: Job ad # 3, 6, &
-8
 
 5.
 Responsibiliti
@@ -3771,9 +3383,7 @@ hours or days
 
 1. Job ad # 3 & 10
 2. Job ad # 2, 4, &
-10
 
-141
 9. Education
 
 3 profiles
@@ -3800,9 +3410,7 @@ unclear requirements
 
 1. Job ad # 2 & 8
 2. Job ad # 4, 8, &
-10
 3. Job ad # 4, 8, &
-10
 
 10.
 Experience
@@ -3855,14 +3463,15 @@ term is unclear
 
 1. Job ad # 3 & 10
 2. Job ad # 3, 8, &
-10
 
 Note. Research question 2a (RQ 2a): How many latent profiles best explain perceptions of deception within the
 various job dimensions? Research question 2b (RQ 2b): What is the proportion of respondents belonging to each
 profile? Research question 2c (RQ 2c): What is the nature of profiles’ response patterns? Research Question 3 (RQ
 3): Within different groupings of deceptiveness perceptions (latent profiles) for each dimension, what are common
 reasons people give for why they found the dimensions misleading?
-3.3.7 Study 3 Discussion
+
+#### 3.3.7 Study 3 Discussion
+
 The aim of Study 3 was to take a more person-centered approach to understanding
 perceived deception in job advertisements. This is due to the low generalizability found in Study
 2. In running the latent profile analyses on each of the 11 dimensions, 2 to 3 profiles were found
@@ -3870,7 +3479,6 @@ amongst different dimensions. However, these profiles fluctuated around the midp
 deceptive to mildly authentic. Many dimensions were displaying profiles that looked similar with
 different levels of intensity or variability across job advertisements. In finding latent profiles of
 
-142
 deception perceptions for job advertisement dimensions, the results are bounded by sample size.
 With a sample size of n =114, there was only enough power to detect 3 profiles at a reasonable
 detection rate (56%). However, the median number of latent profiles in organizational research is
@@ -3895,7 +3503,6 @@ rated, or raters rate similarly regardless of job advertisement. This situation 
 deviations and high generalizability coefficients could reflect real individual differences around
 the mean of the job advertisements’ ratings or there could be measurement errors. The latter is
 
-143
 supported by the high residual validity in the G-study, potentially reflecting that there is not
 necessarily true variability. Instead, there may be sample size issues reflected in these findings as
 well.
@@ -3909,7 +3516,9 @@ understand a spectrum of reasons deceptive perceptions are formed during a job s
 without assessing all 11 dimensions, even the similarities for deception perceptions could not be
 known in an empirical manner. It adds to the exploratory study that unique topics per cluster
 were found to further contribute to empirically supporting job advertisement writing.
-4 Overall Discussion
+
+## 4 Overall Discussion
+
 The goal of this study was mainly exploratory in nature to better understand how the text
 in job advertisements is perceived. Specifically, if that text is perceived as deceptive and the
 nature and reasoning behind those perceptions. In addressing this, I conducted 11 latent profile
@@ -3920,7 +3529,6 @@ can be empirically understood.
 The latent profile analyses demonstrated solutions of 2 to 3 profiles amongst the different
 dimensions. While these profiles did demonstrate similar patterns within dimensions with slight
 
-144
 fluctuations, these analyses and subsequent conclusions may be bounded by sample size. These
 profiles did however, indicate specific advertisements that individuals in some of the profiles
 indicated as more deceptive than others to get a better understanding of what text in the
@@ -3944,8 +3552,8 @@ support for what text may be negatively or deceptively perceived in job advertis
 there are a fair number of advertisements where this is prevalent, which can inform the job
 advertisement writing process.
 
-145
-4.1 Theoretical Implications
+### 4.1 Theoretical Implications
+
 The major theoretical implications of this dissertation include: providing initial theory for
 job advertisement features related to deception, analyzing perceptions of job advertisements from
 a person-centered approach, and aiming to better understand the prevalence of perceptions of
@@ -3968,7 +3576,6 @@ recruiting process. Much of the prior literature on attitudes and perceptions du
 automatically generalizes findings to all individuals, without appropriately assessing if
 perceptions can be aggregated to a shared perception that may generalize outside of the study.
 
-146
 Utilizing an informed latent profiles analysis can set precedent for better understanding that there
 may be groups of individuals that differ on their perceptions.
 Finally, the initial portion of this study aimed to gather a representative sample of those
@@ -3978,7 +3585,9 @@ cannot be assumed that it happens for all job searchers without empirical eviden
 provided theoretical evidence that job searchers entering the job market do find almost as many
 job advertisements slightly deceptive as slightly authentic. These theoretical contributions can
 help inform further research on recruitment and attitudes formed during that process.
-4.2 Practical Implications
+
+### 4.2 Practical Implications
+
 The major practical implication of this study includes a more empirically informed way
 to write job advertisements. There are many ways a person can interpret the information in a job
 advertisement but trying to better understand salient factors that could lead to negative attitudes
@@ -3992,7 +3601,6 @@ scarcity (Feldman et al., 2006; Lee et al., 2013). In better understanding that 
 impact at least a large portion of the applicant, job advertisement writing can be more intentional
 based on avoiding eliciting feelings of being misled by the organization.
 
-147
 I also propose that not all perceptions of job advertisements are similar, which is a
 previously unaccounted for perspective in the practice of job advertisement writing. This can
 bound prior suggestions or practices that generalize job advertisement writing. In better
@@ -4003,7 +3611,9 @@ of catering job ads to create realistic job previews for profiles of people that
 different perceptions of what is stated in the job advertisement. Overall, this research provides
 more empirical evidence that job advertisement writing should be done in a thoughtful manner to
 avoid features of text that could discourage large groups of applicants from applying.
-4.3 Limitations and Future Directions
+
+### 4.3 Limitations and Future Directions
+
 One main limitation of the study is the conflicting evidence between Studies 2 and 3 as to
 the generalizability of perceptions across individuals, that is, do all job seekers view job
 advertisements the same? While the initial G-coefficient of Study 2 suggested that there was no
@@ -4017,7 +3627,6 @@ potential unmeasured factor, issues in measuring deception, or an insufficient s
 Another limitation is the significant correlations between job advertisements in each
 dimension. This could mean that participants are not able to differentiate between sections in
 
-148
 advertisements, or that some advertisements are poorly organized and exclude sections of
 interest. Therefore, it is possible that the job advertisements included in the study were too
 similar in certain dimensions or lacked important information that was only on occasion found
@@ -4041,7 +3650,6 @@ be to focus only on a single dimension or two or even create specific examples t
 job advertisement for those dimensions. Additionally, changing the rating style to a rank
 ordering style and having participants rank statements taken from job advertisements on their
 
-149
 level of deception could avoid acquiescence, get more information on a single dimension, and
 further illustrate the nuances of potential profiles within dimensions.
 An immediate future direction for this study is to collect a larger sample size and re-run
@@ -4060,13 +3668,14 @@ write job advertisements for scratch, on the spot without any references to empi
 or findings. A final method would be to utilize generative text models like ChatGPT to construct
 job advertisements. In presenting applicants with these different advertisements from different
 sources, it can inform what method is best or at least deceptive in terms of applicant perceptions.
-5 Conclusion
+
+## 5 Conclusion
+
 The presented research adds a theoretical and methodological perspective to studying job
 advertisements perceptions that could lead to applicant behaviors that were not previously
 considered. The study found that there may be a more nuanced, person-centered approach to
 studying job advertisements that was not previously utilized, based on an assumption that these
 
-150
 perceptions were generalizable without evidence. The current study demonstrates that many
 dimensions have distinct profiles, that while trending in a similar fashion, may need more power
 or study design changes to detect additional profiles. This study also provides a theoretical
@@ -4075,8 +3684,8 @@ extends past what many prior studies have assessed. In finding common topics acr
 dimensions, and also unique topics per dimension, it contributes a strong base to further inform
 the job ad writing process in a more empirically supported manner.
 
-151
-References
+## References
+
 All-miniLM-L6v2. (2021, August 30). Hugging Face. Retrieved March 18, 2023, from
 https://huggingface.co/sentence-transformers/all-MiniLM-L6v2/commit/acbb28c8aa70f5503c85d6b90e8cd65606993a20
 Allen, D. G., Mahto, R. V., & Otondo, R. F. (2007). Web-based recruitment: Effects of
@@ -4096,7 +3705,6 @@ Aust, F., Diedenhofen, B., Ullrich, S., & Musch, J. (2013). Seriousness checks a
 improve data validity in online research. Behavior Research Methods, 45, 527-535.
 https://doi.org/10.3758/s13428-012-0265-2
 
-152
 Baum, M., & Kabst, R. (2014). The effectiveness of recruitment advertisements and recruitment
 websites: Indirect and interactive effects on applicant attraction. Human Resource
 Management, 53(3), 353-378. https://doi.org/10.1002/hrm.21571
@@ -4119,7 +3727,6 @@ preprint. https://doi.org/10.48550/arXiv.2205.11374
 Borstorff, P. C., Marker, M. B., & Bennett, D. S. (2007). Online recruitment: Attitudes and
 behaviors of job seekers. Journal of Strategic E-commerce, 5(1/2), 1.
 
-153
 https://www.proquest.com/citedby/MSTAR_192410623/9CFFE8777C884F69PQ/1?account
 id=14826
 Bradley, L., Royer, S., & Eckardt, F. (2008). There is a link between work life balance culture
@@ -4142,7 +3749,6 @@ Cajner, T., Crane, L. D., Decker, R. A., Grigsby, J., Hamins-Puertolas, A., Hurs
 Yildirmaz, A. (2020). The US labor market during the beginning of the pandemic recession
 (No. w27159). National Bureau of Economic Research. https://doi.org/10.3386/w27159
 
-154
 Campbell, D. T., & Fiske, D. W. (1959). Convergent and discriminant validation by the
 multitrait-multimethod matrix. Psychological Bulletin, 56(2), 81.
 &DPSEHOO-( 6XPQHUV*(  5HFUXLWLQJFROOHJHVWXGHQWVIRUHQWU\ဨOHYHOSRVLWLRQV
@@ -4167,7 +3773,6 @@ Collins, C. J., & Han, J. (2004). Exploring applicant pool quantity and quality:
 early recruitment practice strategies, corporate advertising, and firm reputation.
 Personnel Psychology, 57(3), 685-717. https://doi.org/10.1111/j.1744-6570.2004.00004.x
 
-155
 Curran, P. G. (2016). Methods for the detection of carelessly invalid responses in survey data.
 Journal of Experimental Social Psychology, 66, 4-19.
 https://doi.org/10.1016/j.jesp.2015.07.006
@@ -4191,7 +3796,6 @@ Eagly, A. H., Chaiken, S., Gilbert, D. T., Fiske, S. T., & Lindzey, G. (1998). A
 and function. In Gilbert, D. T., Fiske, S. T., & Lindzey, G. (Eds.), The handbook of social
 psychology (Vol.1). (pp. 269-322). Oxford University Press.
 
-156
 Ehrhart, K. H., Mayer, D. M., & Ziegert, J. C. (2012). Web-based recruitment in the Millennial
 generation: Work–life balance, website usability, and organizational attraction. European
 Journal of Work and Organizational Psychology, 21(6), 850-874.
@@ -4213,7 +3817,6 @@ Engineering on the Global Information Infrastructure (pp. 71-80).
 Fishbein, M., & Ajzen, I. (1974). Attitudes towards objects as predictors of single and multiple
 behavioral criteria. Psychological Review, 81(1), 59. https://doi.org/10.1037/h0035872
 
-157
 Fisher, G. G., Matthews, R. A., & Gibbons, A. M. (2016). Developing and investigating the use
 of single-item measures in organizational research. Journal of Occupational Health
 Psychology, 21(1), 3. https://doi.org/10.1037/a0039139
@@ -4236,7 +3839,6 @@ Third Annual Conference of the Association for Consumer Research, Chicago, IL, 3
 Harris, R. J. (1977). Comprehension of pragmatic implications in advertising. Journal of Applied
 Psychology, 62(5), 603. https://doi.org/10.1037/0021-9010.62.5.603
 
-158
 Held, J., & Germelmann, C. C. (2018). Deception in consumer behavior research: A literature
 review on objective and perceived deception. Projectics/Proyéctica/Projectique, 21(3),
 119-145. https://www.doi.org/10.3917/proj.021.0119
@@ -4260,7 +3862,6 @@ Jansen, B. J., Jansen, K. J., & Spink, A. (2005). Using the web to look for work
 for online job seeking and recruiting. Internet Research.
 https://doi.org/10.1108/10662240510577068
 
-159
 Jedidi, K., Jagpal, H. S., & DeSarbo, W. S. (1997). Finite-mixture structural equation models
 for response-based segmentation and unobserved heterogeneity. Marketing Science,
 16(1), 39-59. https://doi.org/10.1287/mksc.16.1.39
@@ -4284,7 +3885,6 @@ Perspectives on Science and Practice, 4, 352-369. https://doi.org/10.1111/j.1754
 Kozlowski, S. W. J., & Klein, K. J. (2000). A multilevel approach to theory and research in
 organizations: Contextual, temporal, and emergent processes. In K. J. Klein & S. W. J.
 
-160
 Kozlowski (Eds.), Multilevel Theory, Research and Methods in Organizations:
 Foundations, Extensions, and New Directions. 3-90. San Francisco, CA: Jossey-Bass.
 LeBreton, J. M., & Senter, J. L. (2008). Answers to 20 questions about interrater reliability and
@@ -4307,7 +3907,6 @@ Criminal Psychology, 30(4), 229-241. https://doi.org/10.1007/s11896-014-9155-0
 Matsumoto, D., Hwang, H. S., Skinner, L., & Frank, M. (2011). Evaluating truthfulness and
 detecting deception. FBI Law Enforcement Bulletin, 80, 1.
 
-161
 Matthews, R. A., Pineault, L., & Hong, Y. H. (2022). Normalizing the use of single-item
 measures: Validation of the single-item compendium for organizational psychology.
 Journal of Business and Psychology, 37(4), 639-673. https://doi.org/10.1007/s10869022-09813-3
@@ -4329,7 +3928,6 @@ advertising content in a media rich online environment?. Psychology & Marketing,
 Molnar, C. (2020). Interpretable machine learning. Lulu.com. chromeextension://efaidnbmnnnibpcajpcglclefindmkaj/https://originalstatic.aminer.cn/misc/pdf/
 Molnar-interpretable-machine-learning_compressed.pdf
 
-162
 Monteiro, S., Sullivan, G. M., & Chan, T. M. (2019). Generalizability theory made simple (r): an
 introductory primer to G-studies. Journal of Graduate Medical Education, 11(4), 365370. https://doi.org/10.4300/JGME-D-19-00464.1
 Moore, C. T. (2016). gtheory: Apply Generalizability Theory with R. R package version 0.1.2.
@@ -4351,7 +3949,6 @@ https://doi.org/10.1348/096317902167658
 Nath, D., & Gardner, D. M. (1986). Is there a theory of deception in advertising?. BEBR Faculty
 Working Paper; 1296.
 
-163
 Newman, M. L., Pennebaker, J. W., Berry, D. S., & Richards, J. M. (2003). Lying words:
 Predicting deception from linguistic styles. Personality and Social Psychology Bulletin,
 29(5), 665-675. https://doi.org/10.1177/0146167203029005010
@@ -4373,7 +3970,6 @@ Pastor, D. A., Barron, K. E., Miller, B. J., & Davis, S. L. (2007). A latent pro
 college students’ achievement goal orientation. Contemporary Educational Psychology,
 32(1), 8-47. https://doi.org/10.1016/j.cedpsych.2006.10.003
 
-164
 Peugh, J., & Fan, X. (2013). Modeling unobserved heterogeneity using latent profile analysis: A
 Monte Carlo simulation. Structural Equation Modeling: A Multidisciplinary Journal,
 20(4), 616-639. https://doi.org/10.1080/10705511.2013.824780
@@ -4396,7 +3992,6 @@ Roeder, K., & Wasserman, L. (1997). Practical Bayesian density estimation using 
 normals. Journal of the American Statistical Association, 92(439), 894-902.
 https://doi.org/10.1080/01621459.1997.10474044
 
-165
 Román, S. (2010). Relational consequences of perceived deception in online shopping: The
 moderating roles of type of product, consumer’s attitude toward the internet and
 consumer’s demographics. Journal of Business Ethics, 95(3), 373-391.
@@ -4419,7 +4014,6 @@ Schafer, J. L. (1997). Analysis of incomplete multivariate data. CRC press.
 Schweyer, A. (2004). Talent management systems: Best practices in technology solutions for
 recruitment, retention and workforce planning. John Wiley & Sons.
 
-166
 Sia, S., Dalmia, A., & Mielke, S. J. (2020). Tired of topic models? clusters of pretrained word
 embeddings make for fast and good topics too!. arXiv preprint arXiv:2004.14914.
 https://doi.org/10.48550/arXiv.2004.14914
@@ -4442,7 +4036,6 @@ Stiennon, N., Ouyang, L., Wu, J., Ziegler, D. M., Lowe, R., Voss, C., ... & Chri
 Learning to summarize from human feedback. arXiv preprint arXiv:2009.01325.
 https://dl.acm.org/doi/abs/10.5555/3495724.3495977
 
-167
 Storme, M., Myszkowski, N., Davila, A., & Bournois, F. (2015). How subjective processing
 fluency predicts attitudes toward visual advertisements and purchase intention. Journal of
 Consumer Marketing. https://doi.org/10.1108/JCM-10-2014-1187
@@ -4464,7 +4057,6 @@ van Buuren, S., & Groothuis-Oudshoorn, K. (2011). mice: Multivariate imputation 
 equations in R. Journal of Statistical Software, 45(3), 1-67.
 https://doi.org/10.18637/jss.v045.i03
 
-168
 Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I.
 (2017). Attention is all you need. Advances in Neural Information Processing Systems,
 30. https://doi.org/10.48550/arXiv.1706.03762
@@ -4489,7 +4081,6 @@ Wanous, J. P., Reichers, A. E., & Hudy, M. J. (1997). Overall job satisfaction: 
 single-item measures?. Journal of Applied Psychology, 82(2), 247.
 https://doi.org/10.1037/0021-9010.82.2.247
 
-169
 White, J., Stafford, J., & Beaver, J. (2019). Toward more effective recruitment of millennials
 according to job interest: a comparison of job titles versus job action statements.
 International Journal of the Academic Business World, 13(1), 1.
@@ -4513,15 +4104,14 @@ Zottoli, M. A., & Wanous, J. P. (2000). Recruitment source research: Current sta
 directions. Human Resource Management Review, 10(4), 353-382.
 https://doi.org/10.1016/S1053-4822(00)00032-2
 
-170
 Zusman, R. R., & Landis, R. S. (2002). Applicant preferences for web-based versus traditional
 job postings. Computers in Human behavior, 18(3), 285-296.
 https://doi.org/10.1016/S0747-5632(01)00046-2
 
-171
-Appendices
-Appendix A - Survey Measures
-Appendix A1: Selection of U.S. Bureau of Labor Statistics Industry (2022)
+## Appendix A - Survey Measures
+
+### Appendix A1: Selection of U.S. Bureau of Labor Statistics Industry (2022)
+
 What industry is your job position in?
 [ ] Natural Resources and Mining
 [ ] Construction
@@ -4535,8 +4125,8 @@ What industry is your job position in?
 [ ] Hospitality and Food Service
 [ ] Other ________________
 
-172
-Appendix A2: Attitude Scale based on Eagly et al., (1998)
+### Appendix A2: Attitude Scale based on Eagly et al., (1998)
+
 Indicate the level to which you agree with the following statement:
 I like the job advertisement/posting in the link I provided above.
 Strongly
@@ -4574,8 +4164,8 @@ Agree
 
 []
 
-173
-Appendix A3: Job Advertisement Deception Scale based on Haefner (1972)
+### Appendix A3: Job Advertisement Deception Scale based on Haefner (1972)
+
 Indicate the level to which you agree with the following statement:
 I feel the job advertisement/posting in the link I provided above is deceiving.
 By deceiving we mean:
@@ -4622,8 +4212,8 @@ Agree
 
 []
 
-174
-Appendix A4: Intent to Apply Scale (Straw et al., 1986)
+### Appendix A4: Intent to Apply Scale (Straw et al., 1986)
+
 Indicate the level to which you agree with the following statement:
 I would apply to the job advertisement/posting in the link I provided above.
 Strongly
@@ -4660,8 +4250,7 @@ Agree
 
 []
 
-175
-Appendix A5: Job Advertisement Deception Scale for Dimensions based on Haefner (1972)
+### Appendix A5: Job Advertisement Deception Scale for Dimensions based on Haefner (1972)
 
 Rate the extent to which each of the following job dimensions found in the above job advertisement/posting seems to
 provide information about the job or company in a deceptive way.
@@ -4859,7 +4448,6 @@ Education
 
 []
 
-176
 Experience
 
 []
@@ -4915,8 +4503,7 @@ __________
 
 []
 
-177
-Appendix A6: Mini-IPIP Scale for Personality (Donnellan et al., 2006)
+### Appendix A6: Mini-IPIP Scale for Personality (Donnellan et al., 2006)
 
 Describe yourself as you generally are now, not as you wish to be in the future. Describe
 yourself as you honestly see yourself, in relation to other people you know of the same sex as
@@ -5069,7 +4656,6 @@ abstract ideas.
 
 []
 
-178
 I talk to a lot of different
 people at parties.
 
@@ -5195,8 +4781,8 @@ imagination.
 
 []
 
-179
-Appendix A7: Job Advertisement Deception Rating per Dimension
+### Appendix A7: Job Advertisement Deception Rating per Dimension
+
 Job Description:
 Indicate the level to which you agree with the statement in bold below. With
 “Strongly Agree” meaning it seems deceptive or misleading and “Strongly Disagree”
@@ -5246,8 +4832,8 @@ about each job dimensions. The other 10 job dimensions (a total of 11) that were
 Benefits, Responsibilities/Duties, Skills, Qualifications, Schedule, Education, Experience, and
 Work location.
 
-180
-Appendix A8: Attention Check Items based on Synonymous Questions (Curran, 2016;
+### Appendix A8: Attention Check Items based on Synonymous Questions (Curran, 2016;
+
 DeSimone et al., 2015; Meade & Craig, 2012)
 Please select an answer to the following statement:
 I am currently employed (not including school).
@@ -5273,8 +4859,7 @@ At this time, I am employed (not including school).
 
 [ ] No
 
-181
-Appendix A9: Seriousness Check Item (Aust et al., 2013; Verbree et al., 2020)
+### Appendix A9: Seriousness Check Item (Aust et al., 2013; Verbree et al., 2020)
 
 It would be very helpful if you could tell us at this point whether you have taken part in
 this survey seriously, so that we can use your answers for our scientific analyses, or
@@ -5283,82 +4868,52 @@ whether you were not providing a serious attempt at responding
 
 [ ] No, I was not responding seriously
 
-182
-Appendix B - Indeed Job Advertisements used in Study 3
-Appendix B1: Top 5 Deceptively Rated Job Advertisements from Study 2 used in Study 3
+## Appendix B - Indeed Job Advertisements used in Study 3
+
+### Appendix B1: Top 5 Deceptively Rated Job Advertisements from Study 2 used in Study 3
+
 Deceptively Rated Job Advertisement 1 (Job advertisement #1)
 
-183
 Deceptively Rated Job Advertisement 2 (Job advertisement #2)
 
-184
 Deceptively Rated Job Advertisement 3 (Job advertisement #3)
 
-185
 Deceptively Rated Job Advertisement 4 (Job advertisement #4)
 
-186
 Deceptively Rated Job Advertisement 5 (Job advertisement #5)
 
-187
-Appendix B2: Top 5 Authentically Rated Job Advertisements from Study 2 used in Study 3
+### Appendix B2: Top 5 Authentically Rated Job Advertisements from Study 2 used in Study 3
+
 Authenticity Rated Job Advertisement 1 (Job advertisement #6)
 
-188
 Authenticity Rated Job Advertisement 2 (Job advertisement #7)
 
-189
 Authenticity Rated Job Advertisement 3 (Job advertisement #8)
 
-190
 Authenticity Rated Job Advertisement 4 (Job advertisement #9)
 
-191
 Authenticity Rated Job Advertisement 5 (Job advertisement #10)
 
-192
-Appendix C - Job Description Dimension Results
-Appendix C1: Latent Profile Analysis Results for Job Description Dimension
+## Appendix C - Job Description Dimension Results
+
+### Appendix C1: Latent Profile Analysis Results for Job Description Dimension
+
 Table 3
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Job Description Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 3.0
 
 1.8
-
-2
 
 3.0
 
 1.8
 
 0.254**
-
-3
 
 3.8
 
@@ -5367,8 +4922,6 @@ SD
 0.160
 
 0.297**
-
-4
 
 2.4
 
@@ -5379,8 +4932,6 @@ SD
 0.293**
 
 0.273**
-
-5
 
 1.9
 
@@ -5394,8 +4945,6 @@ SD
 
 0.569***
 
-6
-
 2.3
 
 1.7
@@ -5407,8 +4956,6 @@ SD
 0.156
 
 0.451*** 0.440***
-
-7
 
 2.4
 
@@ -5425,8 +4972,6 @@ SD
 0.221*
 
 0.150
-
-8
 
 2.3
 
@@ -5445,8 +4990,6 @@ SD
 0.285**
 
 0.240*
-
-9
 
 2.5
 
@@ -5468,8 +5011,6 @@ SD
 
 0.278**
 
-10
-
 2.1
 
 1.4
@@ -5490,25 +5031,18 @@ SD
 
 0.268**
 
-9
-
-10
-
 0.285**
 
 Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job advertisement’s job descriptions are on a 1-7 Likert-type scale.
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-193
 Table 4
 Latent Profile Enumeration Fit Statistics for Job Description Dimension
 Model #
 
-# of
+\# of
 Profiles
-
-LL
 
 AIC
 
@@ -5519,10 +5053,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,146
 
@@ -5535,10 +5065,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,058
 
@@ -5552,10 +5078,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,036
 
 4,156
@@ -5568,10 +5090,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,146
 
 4,332
@@ -5583,8 +5101,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -5600,10 +5116,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -5615,10 +5127,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,035
 
@@ -5632,10 +5140,6 @@ NA
 
 NA
 
-3
-
-2
-
 -1,998
 
 4,148
@@ -5647,10 +5151,6 @@ NA
 73.30
 
 0.010
-
-3
-
-3
 
 -1,954
 
@@ -5672,7 +5172,6 @@ log-likelihood ratio test. NA = indicates convergence issues during model estima
 misspecification for the data structure. Best fit model chosen from BIC due to balance of model fit and model
 complexity.
 
-194
 Table 5
 Summary of Variance Components and Generalizability Coefficients in G Study for Job Description
 Dimension
@@ -5723,7 +5222,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-195
 Table 6
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Job Description Dimension
 Mean of Job Advertisement #
@@ -5732,26 +5230,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Mildly Skeptical w/
 Heightened
@@ -5805,8 +5283,8 @@ Awareness
 
 Note. N = 114. Means are on a 1-7 scale.
 
-196
-Appendix C2: Natural Language Processing Topic Analysis Results for Job Description Dimension
+### Appendix C2: Natural Language Processing Topic Analysis Results for Job Description Dimension
+
 Table 7
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Job Description Dimension
 Cluster #
@@ -5822,15 +5300,11 @@ Summary
 
 Cluster 1
 
-15
-
 deceptive
 
 The job description is generally deceptive as a whole.
 
 Cluster 2
-
-23
 
 lacks,
 sufficient,
@@ -5842,15 +5316,11 @@ responsibilities.
 
 Cluster 3
 
-9
-
 good, true
 
 The job description seems too good to be true.
 
 Cluster 4
-
-11
 
 misleading
 
@@ -5858,15 +5328,11 @@ The job description is misleading.
 
 Cluster 5
 
-9
-
 vague
 
 The job description is vague.
 
 Cluster 6
-
-48
 
 unclear,
 responsibilities
@@ -5874,18 +5340,13 @@ responsibilities
 The job description includes instances of unclear and misleading job
 responsibilities, duties, and requirements, that require revision and clarification.
 
-197
 Cluster 7
-
-15
 
 unclear
 
 The job description is unclear.
 
 Cluster 8
-
-10
 
 confusing,
 mentions,
@@ -5901,16 +5362,12 @@ about flexibility, scheduling, and required experience.
 
 Cluster 9
 
-71
-
 job, misleading
 
 The description is deceptive, misleading, and lacks important details such as pay
 range and specific requirements, making them appear too good to be true.
 
 Cluster 10
-
-14
 
 advertised,
 The job titles and descriptions are misleading and lack clarity, causing confusion
@@ -5923,7 +5380,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 following list that conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the
 “list” referenced in the prompt.
 
-198
 Table 8
 Top Words by Cluster Based on Word Count for Job Description Dimension
 Cluster #
@@ -5931,7 +5387,6 @@ Cluster #
 Top Word 1 Top Word 2 Top Word 3 Top Word 4 Top Word 5 Top Word 6 Top Word 7 Top Word 8 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -6203,38 +5658,28 @@ focuses
 baristas
 (8.0%)
 
-199
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-200
-Appendix D - Company Overview Dimension Results
-Appendix D1: Latent Profile Analysis Results for Company Overview Dimension
+## Appendix D - Company Overview Dimension Results
+
+### Appendix D1: Latent Profile Analysis Results for Company Overview Dimension
+
 Table 9
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Company Overview Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-1
 
 2.7
 
 1.6
-
-2
 
 3.4
 
 1.8
 
 0.254**
-
-3
 
 3.8
 
@@ -6243,8 +5688,6 @@ SD
 0.185*
 
 0.118
-
-4
 
 2.8
 
@@ -6255,8 +5698,6 @@ SD
 0.276**
 
 0.340***
-
-5
 
 2.6
 
@@ -6270,8 +5711,6 @@ SD
 
 0.181
 
-6
-
 2.8
 
 1,8
@@ -6284,8 +5723,6 @@ SD
 
 0.293**
 
-7
-
 2.9
 
 1.7
@@ -6296,35 +5733,15 @@ SD
 
 0.365***
 
-8
-
 2.3
 
 1.4
 
-9
-
 3.3
-
-10
 
 2.2
 
 0.147
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
 
 -0.012
 
@@ -6366,10 +5783,6 @@ SD
 
 0.237*
 
-9
-
-10
-
 0.265**
 
 0.297**
@@ -6380,14 +5793,11 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-201
 Table 10
 Latent Profile Enumeration Fit Statistics for Company Overview Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -6398,10 +5808,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,198
 
@@ -6414,10 +5820,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,105
 
@@ -6431,10 +5833,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,081
 
 4,245
@@ -6447,10 +5845,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,198
 
 4,435
@@ -6462,8 +5856,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -6479,10 +5871,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -6494,10 +5882,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,071
 
@@ -6511,10 +5895,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,035
 
 4,222
@@ -6526,10 +5906,6 @@ NA
 72.0
 
 0.010
-
-3
-
-3
 
 -2,028
 
@@ -6550,7 +5926,6 @@ BIC = Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = 
 ratio test. NA = indicates convergence issues during model estimation potentially due to model misspecification
 for the data structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-202
 Table 11
 Summary of Variance Components and Generalizability Coefficients in G Study for Company Overview
 Dimension
@@ -6601,7 +5976,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-203
 Table 12
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Company Overview Dimension
 Mean of Job Advertisement #
@@ -6610,26 +5984,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Neutral but Aware
 of Deception
@@ -6684,8 +6038,8 @@ Suspicious
 
 Note. N = 114. Means are on a 1-7 scale.
 
-204
-Appendix D2: Natural Language Processing Topic Analysis Results for Company Overview Dimension
+### Appendix D2: Natural Language Processing Topic Analysis Results for Company Overview Dimension
+
 Table 13
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Company Overview Dimension
 Cluster #
@@ -6701,15 +6055,11 @@ Summary
 
 Cluster 1
 
-34
-
 misleading
 
 The company overview contains misleading and deceptive information.
 
 Cluster 2
-
-16
 
 unclear
 
@@ -6717,16 +6067,12 @@ The company overview has unclear information.
 
 Cluster 3
 
-34
-
 lacking
 
 The company overview lacks clear and sufficient information regarding its mission, goals,
 values, and background, leading to inadequate beliefs and a lack of professionalism.
 
 Cluster 4
-
-12
 
 did, provide,
 information
@@ -6736,8 +6082,6 @@ lack of a clear mission statement and confusing contact information.
 
 Cluster 5
 
-43
-
 misleading, lacks, The provided information feels misleading and deceptive by the company, including a lack of
 details, provide,
 details, unclear information, and misrepresentation of responsibilities and requirements.
@@ -6745,13 +6089,9 @@ assistance
 
 Cluster 6
 
-42
-
 lacks, information The provided information is insufficient and lacks relevant details.
 
 Cluster 7
-
-75
 
 misleadingly,
 positive
@@ -6760,11 +6100,9 @@ The information appears misleading, unclear, and unrealistic, with excessive use
 exclamation points and biased language, making it difficult to determine the true nature of the
 positions offered.
 
-205
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-206
 Table 14
 Top Words by Cluster Based on Word Count for Company Overview Dimension
 Cluster #
@@ -6791,7 +6129,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 deceptive
 (38.2%)
@@ -6987,45 +6324,26 @@ suspicious
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-207
-Appendix E - Salary Dimension Results
-Appendix E1: Latent Profile Analysis Results for Salary Dimension
+## Appendix E - Salary Dimension Results
+
+### Appendix E1: Latent Profile Analysis Results for Salary Dimension
+
 Table 15
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Salary Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-1
 
 4.1
 
 1.8
-
-2
 
 2.8
 
 1.7
 
 0.345***
-
-3
 
 4.1
 
@@ -7034,8 +6352,6 @@ SD
 0.323***
 
 0.196*
-
-4
 
 2.9
 
@@ -7046,8 +6362,6 @@ SD
 0.172
 
 0.111
-
-5
 
 2.6
 
@@ -7060,8 +6374,6 @@ SD
 0.100
 
 0.130
-
-6
 
 1.9
 
@@ -7076,8 +6388,6 @@ SD
 0.271*
 
 0.216*
-
-7
 
 1.9
 
@@ -7095,8 +6405,6 @@ SD
 
 0.400***
 
-8
-
 2.3
 
 1.6
@@ -7113,8 +6421,6 @@ SD
 
 0.187*
 
-9
-
 2.3
 
 1.5
@@ -7130,8 +6436,6 @@ SD
 0.350*** 0.342*** 0.375***
 
 0.266**
-
-10
 
 2.6
 
@@ -7151,14 +6455,6 @@ SD
 
 0.139
 
-7
-
-8
-
-9
-
-10
-
 0.209*
 
 0.278**
@@ -7169,14 +6465,11 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-208
 Table 16
 Latent Profile Enumeration Fit Statistics for Salary Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -7187,10 +6480,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,156
 
@@ -7203,10 +6492,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,058
 
@@ -7220,10 +6505,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,057
 
 4,197
@@ -7236,10 +6517,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,156
 
 4,351
@@ -7251,8 +6528,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -7268,10 +6543,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -7283,10 +6554,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,063
 
@@ -7300,10 +6567,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,041
 
 4,235
@@ -7315,10 +6578,6 @@ NA
 43.90
 
 0.020
-
-3
-
-3
 
 -2,032
 
@@ -7339,7 +6598,6 @@ Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootst
 test. NA = indicates convergence issues during model estimation potentially due to model misspecification for the
 data structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-209
 Table 17
 Summary of Variance Components and Generalizability Coefficients in G Study for Salary Dimension
 Source
@@ -7389,7 +6647,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-210
 Table 18
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Salary Dimension
 Mean of Job Advertisement #
@@ -7398,26 +6655,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Wary and Alert
 
@@ -7469,8 +6706,8 @@ Sample
 
 Note. N = 114. Means are on a 1-7 scale.
 
-211
-Appendix E2: Natural Language Processing Topic Analysis Results for Salary Dimension
+### Appendix E2: Natural Language Processing Topic Analysis Results for Salary Dimension
+
 Table 19
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Salary Dimension
 Cluster #
@@ -7485,8 +6722,6 @@ Summary
 
 Cluster 1
 
-41
-
 unclear, information
 
 The salary information provided is unclear, misleading, and lacks specificity,
@@ -7494,15 +6729,11 @@ causing confusion and suspicion regarding accuracy and truthfulness.
 
 Cluster 2
 
-19
-
 misleading
 
 The salary information is misleading.
 
 Cluster 3
-
-46
 
 salary, range, misleading
 
@@ -7511,8 +6742,6 @@ difficult to accurately determine potential earnings and causing suspicion about
 accuracy and adequacy of the salaries listed.
 
 Cluster 4
-
-93
 
 advertised, hour,
 suspicious, potentially,
@@ -7524,8 +6753,6 @@ about bonuses and raises, leading to suspicion and confusion among applicants.
 
 Cluster 5
 
-60
-
 range, unclear,
 unexplained
 
@@ -7536,7 +6763,6 @@ inconsistencies depending on experience and other factors.
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-212
 Table 20
 Top Words by Cluster Based on Word Count for Salary Dimension
 Cluster #
@@ -7556,7 +6782,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -7704,49 +6929,26 @@ hour (1.6%)
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-213
-Appendix F - Benefits Dimension Results
-Appendix F1: Latent Profile Analysis Results for Benefits Dimension
+## Appendix F - Benefits Dimension Results
+
+### Appendix F1: Latent Profile Analysis Results for Benefits Dimension
+
 Table 21
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Benefits Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 2.9
 
 1.7
-
-2
 
 2.6
 
 1.8
 
 0.169
-
-3
 
 3.9
 
@@ -7756,8 +6958,6 @@ SD
 
 0.236*
 
-4
-
 2.2
 
 1.6
@@ -7766,8 +6966,6 @@ SD
 
 0.426***
 
-5
-
 2.1
 
 1.5
@@ -7775,8 +6973,6 @@ SD
 0.189*
 
 0.403*** 0.309*** 0.394***
-
-6
 
 3.8
 
@@ -7791,8 +6987,6 @@ SD
 0.008
 
 -0.093
-
-7
 
 3.1
 
@@ -7809,8 +7003,6 @@ SD
 0.107
 
 0.149
-
-8
 
 4.3
 
@@ -7829,8 +7021,6 @@ SD
 0.345***
 
 0.177
-
-9
 
 2.5
 
@@ -7852,8 +7042,6 @@ SD
 
 0.127
 
-10
-
 3.3
 
 1.8
@@ -7874,10 +7062,6 @@ SD
 
 0.276**
 
-9
-
-10
-
 0.270**
 
 0.122
@@ -7886,14 +7070,11 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-214
 Table 22
 Latent Profile Enumeration Fit Statistics for Benefits Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -7904,10 +7085,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,219
 
@@ -7920,10 +7097,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,139
 
@@ -7937,10 +7110,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,123
 
 4,330
@@ -7953,10 +7122,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,219
 
 4,478
@@ -7968,8 +7133,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -7985,10 +7148,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -8000,10 +7159,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,119
 
@@ -8017,10 +7172,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,110
 
 4,372
@@ -8032,10 +7183,6 @@ NA
 17.40
 
 0.772
-
-3
-
-3
 
 -2,098
 
@@ -8056,7 +7203,6 @@ BIC = Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = 
 ratio test. NA = indicates convergence issues during model estimation potentially due to model misspecification
 for the data structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-215
 Table 23
 Summary of Variance Components and Generalizability Coefficients in G Study for Benefits Dimension
 Source
@@ -8106,7 +7252,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-216
 Table 24
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Benefits Dimension
 Mean of Job Advertisement #
@@ -8115,26 +7260,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Slightly Skeptical
 
@@ -8187,8 +7312,8 @@ Deception
 
 Note. N = 114. Means are on a 1-7 scale.
 
-217
-Appendix F2: Natural Language Processing Topic Analysis Results for Benefits Dimension
+### Appendix F2: Natural Language Processing Topic Analysis Results for Benefits Dimension
+
 Table 25
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Benefits Dimension
 Cluster #
@@ -8204,8 +7329,6 @@ Summary
 
 Cluster 1
 
-39
-
 unclear, misleading
 
 The company uses misleading and unclear language, lack of specific details, and focus on
@@ -8213,8 +7336,6 @@ COVID protocols instead of other important job details may cause confusion and d
 for employees, requiring changes to be made for transparency and accuracy.
 
 Cluster 2
-
-82
 
 listed, flexible,
 schedule, benefit,
@@ -8225,8 +7346,6 @@ but many of the listed benefits are misleading or lack important information.
 
 Cluster 3
 
-65
-
 deceptive,
 advertised
 
@@ -8236,15 +7355,11 @@ applicants.
 
 Cluster 4
 
-24
-
 listed
 
 The benefits were not included or mentioned, some of those that were seemed odd.
 
 Cluster 5
-
-15
 
 uniform, allowance
 
@@ -8254,16 +7369,11 @@ requirement, but there is a lack of clarity as to what it means.
 
 Cluster 6
 
-20
-
 misleading
 
 The job ad contains misleading information.
 
-218
 Cluster 7
-
-24
 
 lacked, information
 
@@ -8271,8 +7381,6 @@ There are various instances where information is lacking or insufficient, leadin
 skepticism and a lack of clarity.
 
 Cluster 8
-
-34
 
 unclear
 
@@ -8282,40 +7390,29 @@ details frequently undisclosed or missed, requiring revision or clarification.
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-219
 Table 26
 Top Words by Cluster Based on Word Count for Benefits Dimension
 Cluster #
 
 Top Word
-1
 
 Top Word
-2
 
 Top Word
-3
 
 Top Word
-4
 
 Top Word
-5
 
 Top Word
-6
 
 Top Word
-7
 
 Top Word
-8
 
 Top Word
-9
 
 Top Word
-10
 
 Cluster 1
 
@@ -8555,51 +7652,26 @@ minimal
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-220
-Appendix G - Responsibilities Dimension Results
-Appendix G1: Latent Profile Analysis Results for Responsibilities Dimension
+## Appendix G - Responsibilities Dimension Results
+
+### Appendix G1: Latent Profile Analysis Results for Responsibilities Dimension
+
 Table 27
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Responsibilities Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-1
 
 2.8
 
 1.7
-
-2
 
 3.1
 
 1.7
 
 0.201*
-
-3
 
 4.0
 
@@ -8608,8 +7680,6 @@ SD
 -0.002
 
 0.198*
-
-4
 
 2.3
 
@@ -8620,8 +7690,6 @@ SD
 0.125
 
 0.300**
-
-5
 
 2.1
 
@@ -8635,8 +7703,6 @@ SD
 
 0.458***
 
-6
-
 2.3
 
 1.8
@@ -8648,8 +7714,6 @@ SD
 0.036
 
 0.121
-
-7
 
 2.2
 
@@ -8664,8 +7728,6 @@ SD
 0.470*** 0.355***
 
 0.072
-
-8
 
 2.5
 
@@ -8683,8 +7745,6 @@ SD
 
 0.154
 
-9
-
 2.1
 
 1.3
@@ -8701,8 +7761,6 @@ SD
 
 0.459***
 
-10
-
 1.9
 
 1.1
@@ -8715,8 +7773,6 @@ SD
 
 0.488*** 0.431*** 0.323*** 0.343*** 0.411*** 0.445***
 
-10
-
 0.162
 
 0.271**
@@ -8725,14 +7781,11 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-221
 Table 28
 Latent Profile Enumeration Fit Statistics for Responsibilities Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -8743,10 +7796,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,084
 
@@ -8759,8 +7808,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
 
 2*
 
@@ -8776,10 +7823,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -1,976
 
 4,036
@@ -8791,10 +7834,6 @@ NA
 35.90
 
 0.010
-
-2
-
-1
 
 -2,084
 
@@ -8808,10 +7847,6 @@ NA
 
 NA
 
-2
-
-2
-
 NA
 
 NA
@@ -8819,14 +7854,6 @@ NA
 NA
 
 NA
-
-NA
-
-NA
-
-2
-
-3
 
 NA
 
@@ -8840,9 +7867,9 @@ NA
 
 NA
 
-3
+NA
 
-1
+NA
 
 -1,959
 
@@ -8856,10 +7883,6 @@ NA
 
 NA
 
-3
-
-2
-
 -1,924
 
 4,001
@@ -8871,10 +7894,6 @@ NA
 68.50
 
 0.010
-
-3
-
-3
 
 -1,886
 
@@ -8895,7 +7914,6 @@ information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootstrapped lo
 indicates convergence issues during model estimation potentially due to model misspecification for the data structure.
 Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-222
 Table 29
 Summary of Variance Components and Generalizability Coefficients in G Study for Responsibilities
 Dimension
@@ -8946,7 +7964,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-223
 Table 30
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Responsibilities Dimension
 Mean of Job Advertisement #
@@ -8955,26 +7972,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Wavering
 Deception
@@ -9027,8 +8024,8 @@ Deception
 
 Note. N = 114. Means are on a 1-7 scale.
 
-224
-Appendix G2: Natural Language Processing Topic Analysis Results for Responsibilities Dimension
+### Appendix G2: Natural Language Processing Topic Analysis Results for Responsibilities Dimension
+
 Table 31
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Responsibilities Dimension
 Cluster #
@@ -9044,8 +8041,6 @@ Summary
 
 Cluster 1
 
-14
-
 unclear, provide,
 The counselor position was misrepresented as primarily dealing with mental health,
 information, tasks, but it actually focuses on dieticians and includes separate roles for counseling and
@@ -9059,16 +8054,12 @@ unsure, entails
 
 Cluster 2
 
-45
-
 unclear,
 misleading
 
 The responsibilities contain unclear and misleading information.
 
 Cluster 3
-
-83
 
 deceptive, unclear
 
@@ -9078,8 +8069,6 @@ making it difficult for applicants to understand the actual job and discouraging
 from applying.
 
 Cluster 4
-
-63
 
 lacks, clear,
 information
@@ -9091,7 +8080,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 that conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in
 the prompt.
 
-225
 Table 32
 Top Words by Cluster Based on Word Count for Responsibilities Dimension
 Cluster #
@@ -9111,7 +8099,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -9230,41 +8217,26 @@ s (6.2%)
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-226
-Appendix H - Skills Dimension Results
-Appendix H1: Latent Profile Analysis Results for Skills Dimension
+## Appendix H - Skills Dimension Results
+
+### Appendix H1: Latent Profile Analysis Results for Skills Dimension
+
 Table 33
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Skills Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-1
 
 2.9
 
 1.6
-
-2
 
 3.6
 
 1.8
 
 0.221*
-
-3
 
 3.7
 
@@ -9273,8 +8245,6 @@ SD
 0.044
 
 0.178
-
-4
 
 2.2
 
@@ -9286,8 +8256,6 @@ SD
 
 0.190*
 
-5
-
 2.2
 
 1.5
@@ -9298,8 +8266,6 @@ SD
 
 0.313*** 0.406***
 
-6
-
 2.1
 
 1.4
@@ -9308,23 +8274,17 @@ SD
 
 0.117
 
-7
-
 2.9
 
 1.7
 
 0.424*** 0.356***
 
-8
-
 3.7
 
 1.8
 
 0.246**
-
-9
 
 3.3
 
@@ -9336,8 +8296,6 @@ SD
 
 0.275**
 
-10
-
 2.2
 
 1.7
@@ -9347,14 +8305,6 @@ SD
 0.137
 
 0.133
-
-5
-
-6
-
-7
-
-8
 
 0.060
 
@@ -9394,24 +8344,17 @@ SD
 
 0.275**
 
-9
-
-10
-
 0.006
 
 Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job advertisement’s job descriptions are on a 1-7 Likert-type scale.
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-227
 Table 34
 Latent Profile Enumeration Fit Statistics for Skills Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -9422,10 +8365,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,172
 
@@ -9438,10 +8377,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,111
 
@@ -9455,10 +8390,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,052
 
 4,187
@@ -9470,10 +8401,6 @@ NA
 118.00
 
 0.010
-
-2
-
-1
 
 -2,172
 
@@ -9487,10 +8414,6 @@ NA
 
 NA
 
-2
-
-2
-
 -2,029
 
 4,140
@@ -9502,8 +8425,6 @@ NA
 287.00
 
 0.010
-
-2
 
 3*
 
@@ -9519,10 +8440,6 @@ NA
 
 0.010
 
-3
-
-1
-
 -2,065
 
 4,259
@@ -9535,10 +8452,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,045
 
 4,242
@@ -9550,10 +8463,6 @@ NA
 39.6
 
 0.030
-
-3
-
-3
 
 -1,987
 
@@ -9574,7 +8483,6 @@ BIC = Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = 
 ratio test. NA = indicates convergence issues during model estimation potentially due to model misspecification
 for the data structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-228
 Table 35
 Summary of Variance Components and Generalizability Coefficients in G Study for Skills Dimension
 Source
@@ -9624,7 +8532,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-229
 Table 36
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Skills Dimension
 Mean of Job Advertisement #
@@ -9633,26 +8540,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Mostly Trusting
 
@@ -9730,8 +8617,8 @@ Slightly Skeptical
 
 Note. N = 114. Means are on a 1-7 scale.
 
-230
-Appendix H2: Natural Language Processing Topic Analysis Results for Skills Dimension
+### Appendix H2: Natural Language Processing Topic Analysis Results for Skills Dimension
+
 Table 37
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Skills Dimension
 Cluster #
@@ -9747,8 +8634,6 @@ Summary
 
 Cluster 1
 
-53
-
 unclear,
 requirements
 
@@ -9757,16 +8642,12 @@ information provided, making it unclear and misleading.
 
 Cluster 2
 
-28
-
 requirements,
 misleading
 
 The skills required are confusing and misleading.
 
 Cluster 3
-
-14
 
 deceptive, did,
 list, necessary
@@ -9776,8 +8657,6 @@ required skills information, causing the person to feel deceived or that the inf
 is being misrepresented.
 
 Cluster 4
-
-89
 
 lacks, clear,
 inferred,
@@ -9790,8 +8669,6 @@ qualification and other misleading listing requirements or responsibilities.
 
 Cluster 5
 
-38
-
 skills, required,
 clearly, stated
 
@@ -9801,8 +8678,6 @@ skills.
 
 Cluster 6
 
-8
-
 requires,
 registered,
 dietitian, lacks,
@@ -9811,13 +8686,10 @@ information,
 The list of skills required for becoming a registered dietitian are unclear and
 misleading, lacking sufficient information and specific skill requirements.
 
-231
 necessary, like,
 communication,
 experience
 Cluster 7
-
-36
 
 unclear, listed
 
@@ -9827,7 +8699,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the
 prompt.
 
-232
 Table 38
 Top Words by Cluster Based on Word Count for Skills Dimension
 Cluster #
@@ -9847,7 +8718,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -10054,47 +8924,26 @@ unclearly
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-233
-Appendix I - Qualifications Dimension Results
-Appendix I1: Latent Profile Analysis Results for Qualifications Dimension
+## Appendix I - Qualifications Dimension Results
+
+### Appendix I1: Latent Profile Analysis Results for Qualifications Dimension
+
 Table 39
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Qualifications Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-1
 
 3.1
 
 1.8
-
-2
 
 3.7
 
 1.9
 
 0.271**
-
-3
 
 3.0
 
@@ -10103,8 +8952,6 @@ SD
 0.046
 
 0.166
-
-4
 
 2.7
 
@@ -10115,8 +8962,6 @@ SD
 0.231*
 
 0.109
-
-5
 
 2.1
 
@@ -10129,8 +8974,6 @@ SD
 0.199*
 
 0.294**
-
-6
 
 2.3
 
@@ -10145,8 +8988,6 @@ SD
 0.335***
 
 0.206*
-
-7
 
 2.8
 
@@ -10163,8 +9004,6 @@ SD
 0.125
 
 0.306***
-
-8
 
 3.6
 
@@ -10184,8 +9023,6 @@ SD
 
 0.191*
 
-9
-
 2.9
 
 1.7
@@ -10204,8 +9041,6 @@ SD
 
 0.202*
 
-10
-
 2.6
 
 1.7
@@ -10220,12 +9055,6 @@ SD
 
 0.248**
 
-8
-
-9
-
-10
-
 0.128
 
 0.414*** 0.368*** 0.323***
@@ -10236,14 +9065,11 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-234
 Table 40
 Latent Profile Enumeration Fit Statistics for Qualifications Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -10254,10 +9080,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,232
 
@@ -10270,10 +9092,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,166
 
@@ -10287,10 +9105,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,141
 
 4,365
@@ -10303,10 +9117,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,232
 
 4,504
@@ -10318,8 +9128,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -10335,10 +9143,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -10350,10 +9154,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,145
 
@@ -10367,10 +9167,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,140
 
 4,432
@@ -10382,10 +9178,6 @@ NA
 9.40
 
 0.970
-
-3
-
-3
 
 -2,090
 
@@ -10406,7 +9198,6 @@ Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootst
 test. NA = indicates convergence issues during model estimation potentially due to model misspecification for the
 data structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-235
 Table 41
 Summary of Variance Components and Generalizability Coefficients in G Study for Qualifications
 Dimension
@@ -10457,7 +9248,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-236
 Table 42
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Qualifications Dimension
 Mean of Job Advertisement #
@@ -10466,26 +9256,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Overall Uncertain
 
@@ -10537,8 +9307,8 @@ Sample
 
 Note. N = 114. Means are on a 1-7 scale.
 
-237
-Appendix I2: Natural Language Processing Topic Analysis Results for Qualifications Dimension
+### Appendix I2: Natural Language Processing Topic Analysis Results for Qualifications Dimension
+
 Table 43
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Qualifications Dimension
 Cluster #
@@ -10551,15 +9321,11 @@ Summary
 
 Cluster 1
 
-35
-
 misleading
 
 The qualifications are a mix of unclear, misleading, and confusing.
 
 Cluster 2
-
-61
 
 qualifications,
 specified
@@ -10568,8 +9334,6 @@ The job qualifications listed are often misleading and unclear, with some requir
 education or experience, while others lack clarity and specificity.
 
 Cluster 3
-
-21
 
 requires, registered,
 dietician, doesn’t,
@@ -10583,8 +9347,6 @@ registration as a therapist or nutrition specialist, making it difficult to asse
 
 Cluster 4
 
-62
-
 unclear, requirements
 
 The qualifications lack necessary and clear requirements, with some being misleading and
@@ -10593,16 +9355,12 @@ insufficiently provided.
 
 Cluster 5
 
-54
-
 deceptive
 
 The qualifications were deceptive and misleading, lacking accurate information and leading
 to false beliefs about qualifications, salary, and job requirements.
 
 Cluster 6
-
-36
 
 lacks, clear
 
@@ -10612,7 +9370,6 @@ and inconsistency.
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-238
 Table 44
 Top Words by Cluster Based on Word Count for Qualifications Dimension
 Cluster #
@@ -10636,7 +9393,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -10818,49 +9574,26 @@ list (1.7%)
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-239
-Appendix J - Schedule Dimension Results
-Appendix J1: Latent Profile Analysis Results for Schedule Dimension
+## Appendix J - Schedule Dimension Results
+
+### Appendix J1: Latent Profile Analysis Results for Schedule Dimension
+
 Table 45
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Schedule Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 2.8
 
 1.8
-
-2
 
 4.0
 
 1.7
 
 0.156
-
-3
 
 4.1
 
@@ -10869,8 +9602,6 @@ SD
 -0.015
 
 0.108
-
-4
 
 4.1
 
@@ -10881,8 +9612,6 @@ SD
 0.475***
 
 0.185*
-
-5
 
 2.2
 
@@ -10895,8 +9624,6 @@ SD
 0.106
 
 0.253**
-
-6
 
 3.1
 
@@ -10911,8 +9638,6 @@ SD
 0.142
 
 0.200*
-
-7
 
 2.4
 
@@ -10929,8 +9654,6 @@ SD
 0.280**
 
 0.019
-
-8
 
 3.3
 
@@ -10949,8 +9672,6 @@ SD
 0.202*
 
 0.092
-
-9
 
 2.9
 
@@ -10972,8 +9693,6 @@ SD
 
 0.372***
 
-10
-
 3.9
 
 1.8
@@ -10994,24 +9713,17 @@ SD
 
 0.129
 
-9
-
-10
-
 0.170
 
 Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job advertisement’s job descriptions are on a 1-7 Likert-type scale.
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-240
 Table 46
 Latent Profile Enumeration Fit Statistics for Schedule Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -11022,10 +9734,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,255
 
@@ -11038,10 +9746,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,200
 
@@ -11055,10 +9759,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,175
 
 4,434
@@ -11071,10 +9771,6 @@ NA
 
 0.010
 
-2
-
-1
-
 -2,255
 
 4,550
@@ -11086,8 +9782,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -11103,10 +9797,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -11118,10 +9808,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,173
 
@@ -11135,10 +9821,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,160
 
 4,472
@@ -11150,10 +9832,6 @@ NA
 26.00
 
 0.228
-
-3
-
-3
 
 -2,135
 
@@ -11174,7 +9852,6 @@ Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootst
 NA = indicates convergence issues during model estimation potentially due to model misspecification for the data
 structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-241
 Table 47
 Summary of Variance Components and Generalizability Coefficients in G Study for Schedule Dimension
 Source
@@ -11224,7 +9901,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-242
 Table 48
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Schedule Dimension
 Mean of Job Advertisement #
@@ -11233,26 +9909,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Moderate
 Skepticism
@@ -11305,8 +9961,8 @@ Skepticism
 
 Note. N = 114. Means are on a 1-7 scale.
 
-243
-Appendix J2: Natural Language Processing Topic Analysis Results for Schedule Dimension
+### Appendix J2: Natural Language Processing Topic Analysis Results for Schedule Dimension
+
 Table 49
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Schedule Dimension
 Cluster #
@@ -11322,15 +9978,11 @@ Summary
 
 Cluster 1
 
-46
-
 misleading
 
 The schedule contains a mix of unclear and misleading information.
 
 Cluster 2
-
-64
 
 stated, full, time,
 misleading
@@ -11341,8 +9993,6 @@ regarding work hours, availability, and compensation.
 
 Cluster 3
 
-85
-
 specified,
 misleading
 
@@ -11352,8 +10002,6 @@ seekers.
 
 Cluster 4
 
-50
-
 unclear, lacks,
 specific, details
 
@@ -11362,8 +10010,6 @@ descriptions and unclear timeframes, and involves online and in-office work with
 varying contexts for flexibility needs.
 
 Cluster 5
-
-96
 
 unclear,
 required, work
@@ -11377,10 +10023,7 @@ The schedule information is misleading and lacks clear information about require
 work hours, shift availability, and scheduling factors, causing confusion and
 uncertainty for potential employees.
 
-244
 Cluster 6
-
-31
 
 lacks,
 information,
@@ -11394,7 +10037,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the
 prompt.
 
-245
 Table 50
 Top Words by Cluster Based on Word Count for Schedule Dimension
 Cluster #
@@ -11421,7 +10063,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 unclear
 (41.3%)
@@ -11596,49 +10237,26 @@ clear (3.8%)
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-246
-Appendix K - Education Dimension Results
-Appendix K1: Latent Profile Analysis Results for Education Dimension
+## Appendix K - Education Dimension Results
+
+### Appendix K1: Latent Profile Analysis Results for Education Dimension
+
 Table 51
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Education Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 3.8
 
 1.6
-
-2
 
 3.6
 
 2.0
 
 0.143
-
-3
 
 3.6
 
@@ -11647,8 +10265,6 @@ SD
 0.275**
 
 0.288**
-
-4
 
 3.9
 
@@ -11659,8 +10275,6 @@ SD
 0.167
 
 0.328***
-
-5
 
 2.4
 
@@ -11673,8 +10287,6 @@ SD
 0.292**
 
 0.182
-
-6
 
 2.2
 
@@ -11689,8 +10301,6 @@ SD
 0.220*
 
 -0.017
-
-7
 
 2.7
 
@@ -11708,8 +10318,6 @@ SD
 
 0.145
 
-8
-
 4.5
 
 1.9
@@ -11725,8 +10333,6 @@ SD
 0.089
 
 0.171
-
-9
 
 2.3
 
@@ -11748,8 +10354,6 @@ SD
 
 0.182
 
-10
-
 3.6
 
 1.7
@@ -11770,24 +10374,17 @@ SD
 
 0.443***
 
-9
-
-10
-
 0.122
 
 Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job advertisement’s job descriptions are on a 1-7 Likert-type scale.
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-247
 Table 52
 Latent Profile Enumeration Fit Statistics for Education Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -11798,10 +10395,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,221
 
@@ -11814,10 +10407,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,160
 
@@ -11831,10 +10420,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,129
 
 4,341
@@ -11846,10 +10431,6 @@ NA
 62.20
 
 0.010
-
-2
-
-1
 
 -2,221
 
@@ -11863,10 +10444,6 @@ NA
 
 NA
 
-2
-
-2
-
 -2,123
 
 4,328
@@ -11878,8 +10455,6 @@ NA
 196.00
 
 0.010
-
-2
 
 3*
 
@@ -11895,10 +10470,6 @@ NA
 
 0.010
 
-3
-
-1
-
 -2,123
 
 4,377
@@ -11911,10 +10482,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,109
 
 4,371
@@ -11926,10 +10493,6 @@ NA
 28.10
 
 0.198
-
-3
-
-3
 
 -2,080
 
@@ -11950,7 +10513,6 @@ Bayesian information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootst
 NA = indicates convergence issues during model estimation potentially due to model misspecification for the data
 structure. Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-248
 Table 53
 Summary of Variance Components and Generalizability Coefficients in G Study for Education Dimension
 Source
@@ -12000,7 +10562,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-249
 Table 54
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Education Dimension
 Mean of Job Advertisement #
@@ -12009,26 +10570,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Generally Trusting
 
@@ -12105,8 +10646,8 @@ Heighten Awareness
 
 Note. N = 114. Means are on a 1-7 scale.
 
-250
-Appendix K2: Natural Language Processing Topic Analysis Results for Education Dimension
+### Appendix K2: Natural Language Processing Topic Analysis Results for Education Dimension
+
 Table 55
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Education Dimension
 Cluster #
@@ -12122,16 +10663,12 @@ Summary
 
 Cluster 1
 
-33
-
 requirements
 misleading
 
 The education section lists misleading requirements.
 
 Cluster 2
-
-41
 
 misleading
 requirements,
@@ -12143,8 +10680,6 @@ education and degree qualifications in job postings.
 
 Cluster 3
 
-32
-
 lacks
 information,
 requirements
@@ -12154,8 +10689,6 @@ qualifications and educational requirements.
 
 Cluster 4
 
-134
-
 misleading,
 requirements,
 mentioned
@@ -12164,8 +10697,6 @@ The requirements listed were often unclear, misleading, and lacked necessary
 information, causing confusion and uncertainty for potential applicants.
 
 Cluster 5
-
-26
 
 misleading,
 required, high
@@ -12177,8 +10708,6 @@ to confusion and potentially deceiving applicants.
 
 Cluster 6
 
-26
-
 education,
 requirements,
 specified
@@ -12186,10 +10715,7 @@ specified
 The education requirements for a particular position were either not clearly stated,
 specified, or unclear, leading to confusion and the need for clarification.
 
-251
 Cluster 7
-
-39
 
 unclear,
 requirements
@@ -12200,7 +10726,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the
 prompt.
 
-252
 Table 56
 Top Words by Cluster Based on Word Count for Education Dimension
 Cluster #
@@ -12227,7 +10752,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 requirements (50.0%)
 
@@ -12423,49 +10947,26 @@ confusing
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-253
-Appendix L - Experience Dimension Results
-Appendix L1: Latent Profile Analysis Results for Experience Dimension
+## Appendix L - Experience Dimension Results
+
+### Appendix L1: Latent Profile Analysis Results for Experience Dimension
+
 Table 57
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Experience Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 3.3
 
 1.8
-
-2
 
 3.8
 
 1.9
 
 0.290**
-
-3
 
 4.0
 
@@ -12474,8 +10975,6 @@ SD
 0.111
 
 0.247**
-
-4
 
 2.4
 
@@ -12486,8 +10985,6 @@ SD
 0.075
 
 0.151
-
-5
 
 2.1
 
@@ -12501,8 +10998,6 @@ SD
 
 0.336***
 
-6
-
 2.6
 
 1.6
@@ -12515,8 +11010,6 @@ SD
 
 0.295**
 
-7
-
 2.5
 
 1.6
@@ -12528,8 +11021,6 @@ SD
 0.292**
 
 0.353*** 0.309***
-
-8
 
 4.2
 
@@ -12548,8 +11039,6 @@ SD
 0.142
 
 0.164
-
-9
 
 2.6
 
@@ -12571,8 +11060,6 @@ SD
 
 0.178
 
-10
-
 2.7
 
 1.9
@@ -12593,10 +11080,6 @@ SD
 
 0.146
 
-9
-
-10
-
 -0.007
 0.145
 
@@ -12606,15 +11089,12 @@ Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job adve
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-254
 Table 58
 Latent Profile Enumeration Fit Statistics for Experience Dimension
 Model #
 
-# of
+\# of
 Profiles
-
-LL
 
 AIC
 
@@ -12625,10 +11105,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,215
 
@@ -12641,10 +11117,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,171
 
@@ -12658,10 +11130,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,130
 
 4,343
@@ -12673,10 +11141,6 @@ NA
 85.30
 
 0.010
-
-2
-
-1
 
 -2,215
 
@@ -12690,10 +11154,6 @@ NA
 
 NA
 
-2
-
-2
-
 -2,092
 
 4,266
@@ -12705,8 +11165,6 @@ NA
 246.00
 
 0.010
-
-2
 
 3*
 
@@ -12722,10 +11180,6 @@ NA
 
 0.010
 
-3
-
-1
-
 -2,128
 
 4,385
@@ -12738,10 +11192,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,113
 
 4,377
@@ -12753,10 +11203,6 @@ NA
 29.90
 
 0.178
-
-3
-
-3
 
 -2,089
 
@@ -12777,7 +11223,6 @@ criteria; BIC = Bayesian information criteria; SSA-BIC = sample-size-adjusted BI
 misspecification for the data structure. Best fit model chosen from BIC due to balance of model fit and model
 complexity.
 
-255
 Table 59
 Summary of Variance Components and Generalizability Coefficients in G Study for Experience
 Dimension
@@ -12828,7 +11273,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-256
 Table 60
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Experience Dimension
 Mean of Job Advertisement #
@@ -12837,26 +11281,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Generally Trusting
 
@@ -12933,8 +11357,8 @@ Skepticism
 
 Note. N = 114. Means are on a 1-7 scale.
 
-257
-Appendix L2: Natural Language Processing Topic Analysis Results for Experience Dimension
+### Appendix L2: Natural Language Processing Topic Analysis Results for Experience Dimension
+
 Table 61
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Experience Dimension
 Cluster #
@@ -12950,8 +11374,6 @@ Summary
 
 Cluster 1
 
-30
-
 prior, required
 
 The job posting lacked clarity and did not clearly state all necessary prior
@@ -12959,8 +11381,6 @@ requirements, including mental health services and hands-on experience, which ma
 favor inexperienced candidates but also raises concerns about credibility.
 
 Cluster 2
-
-14
 
 requiring,
 excessive, years
@@ -12970,8 +11390,6 @@ excessive years of experience, complex skills, and niche qualifications.
 
 Cluster 3
 
-58
-
 deceptive,
 misrepresented,
 required
@@ -12980,8 +11398,6 @@ The job experience requirements were misleading and lack necessary specificity,
 leading to confusion and disappointment for candidates.
 
 Cluster 4
-
-56
 
 fails, specify,
 necessary,
@@ -12993,23 +11409,16 @@ qualifications and experience needed for the role.
 
 Cluster 5
 
-28
-
 unclear, necessary The experience required is unclear and necessary information is missing, making it
 seem misleading.
 
 Cluster 6
 
-9
-
 agreed
 
 There is agreement to the deceptive nature of the experience listed.
 
-258
 Cluster 7
-
-31
 
 experience,
 requirements,
@@ -13019,8 +11428,6 @@ The job requires specific and clearly stated experience requirements.
 
 Cluster 8
 
-44
-
 unclear,
 requirements
 
@@ -13028,8 +11435,6 @@ The requirements stated are insufficient, unclear, excessive, or lack necessary
 information, leading to confusion and suspicion.
 
 Cluster 9
-
-25
 
 did, specify,
 required
@@ -13042,7 +11447,6 @@ Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the
 prompt.
 
-259
 Table 62
 Top Words by Cluster Based on Word Count for Experience Dimension
 Cluster #
@@ -13062,7 +11466,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -13326,49 +11729,26 @@ Note. Percentages in parentheses represent word count percentage based on overal
 
 lacks (4.2%) requirements (4.2%)
 
-260
-Appendix M - Work Location Dimension Results
-Appendix M1: Latent Profile Analysis Results for Work Location Dimension
+## Appendix M - Work Location Dimension Results
+
+### Appendix M1: Latent Profile Analysis Results for Work Location Dimension
+
 Table 63
 Means, Standard Deviations, and Intercorrelations of Job Advertisements for Work Location Dimension
 Job Ad
-#
-
-M
+\#
 
 SD
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-1
 
 1.9
 
 1.3
-
-2
 
 3.2
 
 1.7
 
 0.319***
-
-3
 
 3.6
 
@@ -13377,8 +11757,6 @@ SD
 0.119
 
 0.029
-
-4
 
 2.4
 
@@ -13389,8 +11767,6 @@ SD
 0.182
 
 0.180
-
-5
 
 2.2
 
@@ -13403,8 +11779,6 @@ SD
 0.152
 
 0.082
-
-6
 
 1.9
 
@@ -13419,8 +11793,6 @@ SD
 0.389***
 
 0.109
-
-7
 
 2.4
 
@@ -13437,8 +11809,6 @@ SD
 0.411***
 
 0.099
-
-8
 
 2.6
 
@@ -13457,8 +11827,6 @@ SD
 0.192*
 
 0.286**
-
-9
 
 2.1
 
@@ -13480,8 +11848,6 @@ SD
 
 0.284**
 
-10
-
 3.7
 
 2.0
@@ -13502,24 +11868,17 @@ SD
 
 0.102
 
-9
-
-10
-
 0.026
 
 Note. N = 114. *p < .05, ** p < .01, *** p < .001. Deception ratings of job advertisement’s job descriptions are on a 1-7 Likert-type scale.
 Images of job advertisements and corresponding numbers can be found in Appendix B and at https://osf.io/xf9e6/files/osfstorage under
 “Indeed Job Ads used in Study 3”.
 
-261
 Table 64
 Latent Profile Enumeration Fit Statistics for Work Location Dimension
 Model #
 
-# of Profiles
-
-LL
+\# of Profiles
 
 AIC
 
@@ -13530,10 +11889,6 @@ SSA-BIC
 BLRT
 
 BLRT pvalue
-
-1
-
-1
 
 -2,161
 
@@ -13546,10 +11901,6 @@ BLRT pvalue
 0.00
 
 NA
-
-1
-
-2
 
 -2,088
 
@@ -13563,10 +11914,6 @@ NA
 
 0.010
 
-1
-
-3
-
 -2,074
 
 4,232
@@ -13579,10 +11926,6 @@ NA
 
 0.050
 
-2
-
-1
-
 -2,161
 
 4,362
@@ -13594,8 +11937,6 @@ NA
 0.00
 
 NA
-
-2
 
 2*
 
@@ -13611,10 +11952,6 @@ NA
 
 0.010
 
-2
-
-3
-
 NA
 
 NA
@@ -13626,10 +11963,6 @@ NA
 NA
 
 NA
-
-3
-
-1
 
 -2,085
 
@@ -13643,10 +11976,6 @@ NA
 
 NA
 
-3
-
-2
-
 -2,060
 
 4,271
@@ -13658,10 +11987,6 @@ NA
 50.70
 
 0.010
-
-3
-
-3
 
 -2,032
 
@@ -13682,7 +12007,6 @@ information criteria; SSA-BIC = sample-size-adjusted BIC; BLRT = bootstrapped lo
 indicates convergence issues during model estimation potentially due to model misspecification for the data structure.
 Best fit model chosen from BIC due to balance of model fit and model complexity.
 
-262
 Table 65
 Summary of Variance Components and Generalizability Coefficients in G Study for Work Location
 Dimension
@@ -13733,7 +12057,6 @@ Note. N = 114. Based on Generalizability Theory in R code from Huebner & Lucht (
 design code was used in R to compute G coefficient. G coefficient standard based on > 0.7 (Cronbach et
 al., 1972; Putka et al., 2008).
 
-263
 Table 66
 Percent of Sample by Profile and Means of Job Advertisements by Profile for Work Location Dimension
 Mean of Job Advertisement #
@@ -13742,26 +12065,6 @@ Profile # and Names
 Percent
 of
 Sample
-
-1
-
-2
-
-3
-
-4
-
-5
-
-6
-
-7
-
-8
-
-9
-
-10
 
 1. Uncertain but
 Trusting
@@ -13816,8 +12119,8 @@ Deception
 
 Note. N = 114. Means are on a 1-7 scale.
 
-264
-Appendix M2: Natural Language Processing Topic Analysis Results for Work Location Dimension
+### Appendix M2: Natural Language Processing Topic Analysis Results for Work Location Dimension
+
 Table 67
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings in the Work Location Dimension
 Cluster #
@@ -13833,8 +12136,6 @@ Summary
 
 Cluster 1
 
-19
-
 lacks, specific
 information
 
@@ -13843,15 +12144,11 @@ unclear addresses, making it difficult to understand and potentially misleading.
 
 Cluster 2
 
-27
-
 specified
 
 The work location information was not provided or specified.
 
 Cluster 3
-
-18
 
 misleading
 
@@ -13859,15 +12156,11 @@ The work location information has misleading information.
 
 Cluster 4
 
-13
-
 unclear
 
 The work location information consists of unclear information.
 
 Cluster 5
-
-129
 
 unclear, misleading
 
@@ -13877,8 +12170,6 @@ determine the actual job location.
 
 Cluster 6
 
-8
-
 confusing
 
 The work location information is confusing and ambiguous.
@@ -13886,7 +12177,6 @@ The work location information is confusing and ambiguous.
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-265
 Table 68
 Top Words by Cluster Based on Word Count for Work Location Dimension
 Cluster #
@@ -13906,7 +12196,6 @@ Top Word 8
 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -14068,8 +12357,8 @@ ambiguous
 
 Note. Percentages in parentheses represent word count percentage based on overall word count.
 
-266
-Appendix N - Total Job Dimension Topic Analysis
+## Appendix N - Total Job Dimension Topic Analysis
+
 Table 69
 ChatGPT-3.5 Generated Summary for Topic Clusters from Word Embeddings for all 11 Dimensions
 Cluster #
@@ -14086,16 +12375,12 @@ Summary
 
 Cluster 1
 
-122
-
 deceptive
 
 The job ads contained false information, lacked important qualifications and information, and
 provided insufficient and unclear reasons, making them deceptive.
 
 Cluster 2
-
-395
 
 education,
 requirements,
@@ -14106,8 +12391,6 @@ some positions requiring excessive or unrealistic qualifications, while others d
 necessary education levels or provide confusing information.
 
 Cluster 3
-
-228
 
 lacks, information
 
@@ -14128,8 +12411,6 @@ uncertainty for job seekers.
 
 Cluster 5
 
-110
-
 changes, needed,
 vague, unclearly
 
@@ -14138,26 +12419,19 @@ information about the job.
 
 Cluster 6
 
-237
-
 unclear, pay,
 range
 
 The job listings are found to often be deceptive from unclear salary information, broad pay
 ranges, and misleading promises of high salaries and flexible hours.
 
-267
 Cluster 7
-
-153
 
 unclear
 
 There are multiple instances of unclear or confusing statements in the job advertisements.
 
 Cluster 8
-
-204
 
 unclear,
 experience,
@@ -14168,8 +12442,6 @@ certifications, and skills, leading to confusion and disappointment among potent
 
 Cluster 9
 
-288
-
 unclear, work,
 schedule
 
@@ -14178,8 +12450,6 @@ promises of flexibility and weekend availability that contradicts actual require
 specific details.
 
 Cluster 10
-
-137
 
 benefits, listed,
 description
@@ -14191,18 +12461,15 @@ actual benefits available.
 Note. OpenAI ChatGPT API used in Python with the prompt “Write a condensed and succinct summary sentence for the following list that
 conveys the main ideas of the list.” The code iterated through the text input for each cluster which made up the “list” referenced in the prompt.
 
-268
 Table 70
 Top Words by Cluster Based on Word Count for all 11 Dimensions
 Cluster #
 
 Top Word
-1
 
 Top Word 2 Top Word 3 Top Word 4 Top Word 5 Top Word 6 Top Word 7 Top Word 8 Top Word 9
 
 Top Word
-10
 
 Cluster 1
 
@@ -14500,7 +12767,4 @@ offered
 uniform
 (3.5%)
 
-269
 Note. Percentages in parentheses represent word count percentage based on overall word count.
-
-

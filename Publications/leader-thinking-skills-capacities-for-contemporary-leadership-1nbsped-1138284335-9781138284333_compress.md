@@ -1,170 +1,11 @@
-LEADER THINKING SKILLS
+# Leader Thinking Skills: Capacities for Contemporary Leadership
 
-This book examines the thinking skills that leaders may need to find success in
-organizations and institutions, covering a wide array of skills deemed important
-by key leadership scholars.
-Bridging theory and practice, chapters summarize major findings with respect
-to a particular ability, knowledge, or skill, providing theoretical frameworks for
-understanding how these contribute to leader emergence and performance, and
-considering implications for leader selection, assessment, and development. The
-text appraises the existing research on the critical cognitive capabilities that underlie
-leader problem solving and implications for the assessment and development of
-leadership potential in real-world settings. The role of creative thinking skills on
-leader performance is also addressed, bearing on the importance of processes such
-as problem definition and idea generation, but also using constraints to potentially
-stimulate creative thought.
-With contributions from some of the most eminent scholars working in
-the field of leadership, this book will be an invaluable resource to academics,
-researchers, graduate students, and professionals interested in leadership and leader
-skills, industrial and organizational psychology, and business management.
-Michael D. Mumford is the George Lynn Cross Distinguished Research
-Professor of Psychology at the University of Oklahoma and serves as the Director
-of the Center for Applied Social Research.
-Cory A. Higgs is a graduate of the University of Oklahoma’s Industrial and
-Organizational Psychology program. He has published peer-reviewed journal
-articles and book chapters in the areas of leadership, ethics, and creativity.
+Edited by Michael D. Mumford and Cory A. Higgs
 
-LEADER THINKING
-SKILLS
-Capacities for Contemporary
-Leadership
+Routledge (Taylor & Francis), 2020
+ISBN: 978-1-138-28431-9 (hbk) | 978-1-138-28433-3 (pbk) | 978-1-315-26957-3 (ebk)
 
-Edited by Michael D. Mumford
-and Cory A. Higgs
-
-First edition published 2020
-by Routledge
-52 Vanderbilt Avenue, New York, NY 10017
-and by Routledge
-2 Park Square, Milton Park, Abingdon, Oxon, OX14 4RN
-Routledge is an imprint of the Taylor & Francis Group, an informa business
-© 2020 Taylor & Francis
-The right of the Editors Michael D. Mumford and Cory A. Higgs to be
-identified as the authors of the editorial material, and of the authors for
-their individual chapters, has been asserted in accordance with sections 77
-and 78 of the Copyright, Designs and Patents Act 1988.
-All rights reserved. No part of this book may be reprinted or reproduced
-or utilised in any form or by any electronic, mechanical, or other means,
-now known or hereafter invented, including photocopying and recording,
-or in any information storage or retrieval system, without permission in
-writing from the publishers.
-Trademark notice: Product or corporate names may be trademarks or
-registered trademarks, and are used only for identification and explanation
-without intent to infringe.
-Library of Congress Cataloging-in-Publication Data
-Names: Mumford, Michael D., editor. | Higgs, Cory A., 1989– editor.
-Title: Leader thinking skills : capacities for contemporary leadership /
-edited by Michael D. Mumford and Cory A. Higgs.
-Description: 1 Edition. | New York : Routledge, 2020. | Includes
-bibliographical references and index.
-Identifiers: LCCN 2019014160 (print) | LCCN 2019015509 (ebook) |
-ISBN 9781315269573 (ebook) | ISBN 9781138284319 (hardback) |
-ISBN 9781138284333 (pbk.) | ISBN 9781315269573 (ebk)
-Subjects: LCSH: Leadership. | Decision making. | Problem solving.
-Classification: LCC HD57.7 (ebook) | LCC HD57.7 .L4183 2020
-(print) | DDC 658.4/092—dc23
-LC record available at https://lccn.loc.gov/2019014160
-ISBN: 978-1-138-28431-9 (hbk)
-ISBN: 978-1-138-28433-3 (pbk)
-ISBN: 978-1-315-26957-3 (ebk)
-Typeset in Bembo
-by Apex CoVantage, LLC
-
-CONTENTS
-
-Note on Contributors
-Leader Thinking Skills
-Michael D. Mumford and Cory A. Higgs
-1 Intelligence and Leadership
-John Antonakis, Dean Keith Simonton, and Jonathan Wai
-
-vii
-1
-14
-
-2 Leadership and Information Processing: A Dynamic
-System, Dual-Processing Perspective
-Robert G. Lord
-
-46
-
-3 Uncertainty and Problem Solving: The Role of Leader
-Information-Gathering Strategies
-Jay J. Caughron, Teresa Ristow, and Alison L. Antes
-
-71
-
-4 Are Satisfied Employees Productive or Productive
-Employees Satisfied? How Leaders Think About
-and Apply Causal Information
-David R. Peterson
-5 Thinking About Causes: How Leaders Identify
-the Critical Variables to Act On
-Michael D. Mumford, Cory A. Higgs, Erin Michelle Todd,
-and Samantha Elliott
-
-98
-
-122
-
-vi
-
-Contents
-
-6 Leaders’ Shifts in Attention During an Organizational
-Crisis: Longitudinal Evidence of Responses to a Crisis
-Within a Top Management Team
-Ian A. Combe and David J. Carrington
-7 Creative Problem Solving: Processes, Strategies,
-and Considerations for Leaders
-Kelsey E. Medeiros, Belinda C. Williams,
-and Adam Damadzic
-8 Seeing the Future Through the Past: Forecasting Skill
-as a Basis for Leader Performance
-Michael D. Mumford, Mark Fichtel, Tanner Newbold,
-Samantha England, and Cory A. Higgs
-9 Leader Decision Making Capacity: An Information
-Processing Perspective
-Shing Kwan Tam, Dawn L. Eubanks, and
-Tamara L. Friedrich
-
-148
-
-176
-
-205
-
-227
-
-10 Making Sense of Leaders Making Sense
-Peter Gronn
-
-260
-
-11 Leaders, Teams, and Their Mental Models
-Jensine Paoletti, Denise L. Reyes, and Eduardo Salas
-
-277
-
-12 Leader Social Acuity
-Stephen J. Zaccaro and Elisa M. Torres
-
-307
-
-13 Leadership and Monitoring Skills
-David V. Day, Ronald E. Riggio, and Rowan Y. Mulligan
-
-340
-
-14 Wisdom, Foolishness, and Toxicity in Leadership:
-How Does One Know Which Is Which?
-Robert J. Sternberg
-
-362
-
-Index382
-
-CONTRIBUTORS
+## Contributors
 
 Alison L. Antes is an industrial-organizational psychologist. She is an assis-
 
@@ -187,8 +28,6 @@ David J. Carrington is a teaching fellow in strategy and the program director
 for BSc Business & Management at Aston Business School, Birmingham, UK.
 David completed his PhD at Aston University in 2017, focusing on managerial
 and organizational cognition during crises. This longitudinal study used a variety
-
-viii Contributors
 
 of cognitive research methods with particular focus on causal cognitive mapping through in-depth interviews. David’s research interests are in sensemaking,
 consensus, strategic cognition, and cognitive shifts. His work to date has been
@@ -223,8 +62,6 @@ Association, Association for Psychological Science, International Association of
 Applied Psychology, and the Society for Industrial and Organizational Psychology. He has published more than 100 peer-reviewed journal articles, books, and
 book chapters, many pertaining to the core topics of leadership and leadership
 development. In 2010, Day received the Walter F. Ulmer Research Award from
-
-Contributors
 
 ix
 
@@ -264,8 +101,6 @@ Review.
 Peter Gronn is emeritus professor, University of Cambridge and Monash University. He is a leading scholar in the leadership field where he has contributed
 to recent developments in distributed leadership, and more recently to the idea
 
-x
-
 Contributors
 
 of leadership configurations. He has served on a number of editorial boards,
@@ -298,8 +133,6 @@ has served as senior editor on The Leadership Quarterly and sits on the editoria
 boards of the Creativity Research Journal, the Psychology of Aesthetics, Creativity, and
 the Arts, the Journal of Creative Behavior, Group and Organization Management, and
 Ethics and Behavior, among other journals. He has served as principal investigator
-
-Contributors
 
 xi
 
@@ -339,8 +172,6 @@ including leadership, stress, leader cognition, and sensemaking. These topics sp
 the work on her thesis, an SIOP poster, and work on several academic articles.
 Additionally, Teresa has worked on many consulting projects through her master’s
 
-xii
-
 Contributors
 
 program at Radford University as well as several human resource jobs. Most of
@@ -378,8 +209,6 @@ Shing Kwan Tam is a PhD student in management at the Warwick Business
 
 School. Her area of research is primarily focused on cross-cultural leadership in
 
-Contributors
-
 xiii
 
 organizations and how this subject is influenced by leader identity construction.
@@ -416,8 +245,6 @@ research specializing in group creativity and applied work in selection assessme
 and training/development consulting. Williams currently works as an assessment
 consultant and maintains her licensure as a licensed professional counselor specializing in crisis evaluation and assessment.
 
-xiv
-
 Contributors
 
 Stephen J. Zaccaro is professor of psychology at George Mason University, Fair-
@@ -436,8 +263,9 @@ the Association for Psychological Science, and of the American Psychological
 Association, Divisions 14 (Society for Industrial and Organizational Psychology)
 and 19 (Military Psychology).
 
-LEADER THINKING SKILLS
-Michael D. Mumford and Cory A. Higgs
+## Introduction: Leader Thinking Skills
+
+*Michael D. Mumford and Cory A. Higgs*
 
 People see leaders as romantic figures—people whom they attach themselves to
 at a deep emotional level (Meindl, 1995). People often acquire their identity from
@@ -460,8 +288,6 @@ citizenship behaviors (Yukl, 2011), one is left with a queasy feeling about thes
 varied behavioral models of leadership. It seems students of leadership are often
 simply proposing their ideal of leadership and finding that leaders who express
 their ideal have more impact on, or are evaluated more favorably, by their followers. As Mumford and Fried (2014) have pointed out, however, there is reason,
-
-2
 
 Michael D. Mumford and Cory A. Higgs
 
@@ -486,7 +312,8 @@ models is the assumption that leadership exists in the eyes of the follower. Thi
 frame, however, ignores the possibility that leadership may exist in the eye of the
 institution, in the eye of peers, in the eye of historians, and in the eyes of society.
 
-Functional Leadership
+### Functional Leadership
+
 Recognition of the many different lenses through which we can understand, and
 seek to study, leadership presents the field with a core, critical problem: What
 exactly is leadership? At a global level, most agree with the proposition that leadership involves the exercise of social influence (Bass & Bass, 2009; Yukl, 2011).
@@ -498,10 +325,6 @@ that arises is exactly what is meant by the term “effective”. Did the budget
 These observations led Fleishman et al. (1991) to argue that the effective exercise of influence is best understood from a pragmatic, or functional, perspective
 (Mumford & Van Doorn, 2001). In their view, leaders occupy and are granted
 occupancy of a distinct role in a team, firm, or institution. Teams, firms, and institutions define these roles in an attempt to ensure viable, or adaptive, performance
-
-Leader Thinking Skills
-
-3
 
 on the part of the team, firm, or institution. Thus, in this functional, or pragmatic,
 model leaders exercise influence to improve the survival and performance of the
@@ -541,14 +364,13 @@ cognitive skills, or social cognitive skills, people have acquired as a function
 experience will prove one of the most powerful predictors of effective leader
 performance. Our goal in the present volume is to examine the key skills people
 
-4
-
 Michael D. Mumford and Cory A. Higgs
 
 need to solve the kinds of problems they will be presented with whenever they
 occupy a leadership role.
 
-Early Studies
+### Early Studies
+
 An initial study examining the impact of cognitive skills on leader performance
 was conducted by Connelly et al. (2000). In this study, some 1,800 army officers
 were asked to complete a battery of cognitive skill measures where their performance in resulting critical incidents was assessed, along with rank attained and
@@ -580,10 +402,6 @@ These skills, however, do not influence performance only on army or educational 
 Mumford (2005) asked teams of undergraduates to formulate plans for turning
 around a failing firm. Turnaround plans were appraised by judges for quality and
 originality. After completing their plans, team members nominated their leader.
-
-Leader Thinking Skills
-
-5
 
 Before starting work, the planning skills of all team members were assessed. It was
 found that those teams whose leaders had the strongest planning skills produced
@@ -623,8 +441,6 @@ in preparing people for leadership roles, however, is not limited to the laborat
 Mumford, Marks, Connelly, Zaccaro, and Reiter-Palmon (2000) examined the
 effectiveness of various army leadership development programs. They found that
 
-6
-
 Michael D. Mumford and Cory A. Higgs
 
 the most effective programs were those focusing most “tightly” on development
@@ -639,7 +455,8 @@ performance. In formulating strategy plans, teams might be expressly asked to
 forecast the implications of plan execution, both good and bad outcomes, with
 these forecasts being used a basis for plan revision.
 
-Leader Skills
+### Leader Skills
+
 These practical implications of understanding how cognitive skills shape performance in leadership roles implies that we need a better understanding of the key
 cognitive skills that make performance in leadership roles possible. The present
 volume is intended to serve this need. In fact, many of the most eminent scholars
@@ -660,10 +477,6 @@ findings imply, a point noted by Antonakis et al. (this volume), that senior exe
 reason to suspect that intelligence is, in fact, a crucial determinant of performance
 in leadership roles.
 Antonakis, Simonton, and Wai (this volume), however, note that other capacities will be required beyond intelligence to ensure adequate performance in
-
-Leader Thinking Skills
-
-7
 
 leadership roles. One key capacity required for applying intelligence is knowledge
 or expertise. Lord (this volume) examines how leaders use knowledge. He argues
@@ -705,8 +518,6 @@ Crises, however, require leaders to focus on or attend to the crisis. This obser
 management skills. Indeed, the many varied crises brought to leader’s attention
 suggests that both selective attention and flexibility in attention may be critical
 
-8
-
 Michael D. Mumford and Cory A. Higgs
 
 determinants of leader performance. Combe and Carrington (this volume) examine how attentional management skills contribute to the performance of top
@@ -744,10 +555,6 @@ with leader sensemaking establishing a context in which followers can understand
 the significance of a decision for organizational action.
 Gronn (this volume) extends this argument. He examines how leaders go
 about sensemaking in the distinctly social, highly complex setting of institutions
-
-Leader Thinking Skills
-
-9
 
 or firms. He notes effective leader sensemaking depends not only on expertise
 and experience but also on political skill and the effective use of power. These
@@ -788,8 +595,6 @@ Mulligan (this volume) examine leader monitoring skills. They identify the skill
 leaders need to monitor individual and team task performance—for example,
 appraisal flaws, monitoring changes in context, and attending to individual and
 
-10 Michael D. Mumford and Cory A. Higgs
-
 team feedback information. They note, however, that leader monitoring may be
 a far more complex activity than simply monitoring production performance.
 They suggest that leaders must actively scan the organizational environment and
@@ -807,7 +612,8 @@ Instead, he views leader thinking skills as a powerful and evocative force shapi
 human life, where these thinking skills must involve wisdom and a concern for
 the people and the institutions in which they work.
 
-Conclusions
+### Conclusions
+
 Our summary of the chapters presented in this volume is, in fact, far too simple.
 Each of the contributions examines these skills in far more detail than one can
 address in a general introduction. By the same token, a careful reading of all their
@@ -827,10 +633,6 @@ to how leader social acuity contributes to the development of wisdom. Of course,
 many other research questions are posed by the various chapters presented in this
 volume. Thus, the present volume should not be viewed as the final statement of
 
-Leader Thinking Skills
-
-11
-
 leader thinking skills. Instead, we hope it serves as an impetus for future research
 in an area we know to be critical in accounting for leader performance.
 Indeed, such research is not simply a matter of academic interest. All these
@@ -849,14 +651,16 @@ this research in such a way as to build intervention systems that actually impro
 leader thinking skills, we may be able to develop the kind of thoughtful leaders
 that will improve the lives of those working in a host of different institutions.
 
-Acknowledgments
+### Acknowledgments
+
 We would like to thank Tristan McIntosh, Tyler Mulhearn, Erin Michelle Todd,
 Robert Martin, and Samantha Elliott for their contributions to the present effort.
 Correspondence should be addressed to Dr. Michael D. Mumford, Department
 of Psychology, The University of Oklahoma, Norman, Oklahoma, 73019, or
 mmumford@ou.edu.
 
-References
+### References
+
 Avolio, B. J., & Gardner, W. L. (2005). Authentic leadership development: Getting to the
 root of positive forms of leadership. Leadership Quarterly, 16, 315–338.
 Bass, B. M., & Bass, R. (2009). The Bass handbook of leadership: Theory, research, and managerial
@@ -867,8 +671,6 @@ M. D. (2000). Exploring the relationship of leadership skills and knowledge to l
 performance. Leadership Quarterly, 11, 65–86.
 Finke, R. A., Ward, T. B., & Smith, S. M. (1992). Creative cognition: Theory, research, and
 applications. Cambridge, MA: MIT Press.
-
-12 Michael D. Mumford and Cory A. Higgs
 
 Fleishman, E. A. (1953). The description of supervisory behavior. Journal of Applied Psychology, 37, 1–6.
 Fleishman, E. A., Mumford, M. D., Zaccaro, S. J., Levin, K. Y., Korotkin, A. L., & Hein,
@@ -907,10 +709,6 @@ Mumford, M. D., Marks, M. A., Connelly, M. S., Zaccaro, S. J., & Reiter-Palmon, 
 Mumford, M. D., Schultz, R. A., & Van Doorn, J. R. (2001). Performance in planning:
 Processes, requirements, and errors. Review of General Psychology, 5, 213.
 
-Leader Thinking Skills
-
-13
-
 Mumford, M. D., Todd, E. M., Higgs, C., & McIntosh, T. (2017). Cognitive skills and leadership performance: The nine critical skills. Leadership Quarterly, 28, 24–39.
 Mumford, M. D., Zaccaro, S. J., Harding, F. D., Jacobs, T. O., & Fleishman, E. A. (2000).
 Leadership skills for a changing world: Solving complex social problems. Leadership
@@ -937,10 +735,9 @@ organizational continuance and retention: The mediating role of developmental ex
 Zaccaro, S. J., Green, J. P., Dubrow, S., & Kolze, M. (2018). Leader individual differences,
 situational parameters, and leadership outcomes: A comprehensive review and integration. Leadership Quarterly, 29, 2–43.
 
-1
-INTELLIGENCE AND LEADERSHIP
-John Antonakis, Dean Keith Simonton,
-and Jonathan Wai
+## Chapter 1: Intelligence and Leadership
+
+*John Antonakis, Dean Keith Simonton, and Jonathan Wai*
 
 During the 2016 United States presidential campaign, the leading contender for
 the Republican nomination, Donald Trump, boasted of his superior intelligence,
@@ -967,14 +764,11 @@ historiometric. In this chapter we discuss these issues and others to make the c
 that intelligence is a key determinant of leader success. We bring to the fore issues
 concerning measurement, the criterion predicted, the importance of context, and
 
-Intelligence and Leadership
-
-15
-
 methodological issues that should be considered by applied researchers interested
 in the topic of intelligence.
 
-Psychometric Intelligence
+### Psychometric Intelligence
+
 Psychometric research applies quantitative techniques to assess how individuals
 vary on abilities, traits, preferences, or other factors. These techniques date back
 to the very beginning of scientific psychology (e.g., Cattell, 1890; Galton, 1883).
@@ -985,7 +779,8 @@ exhibit temporal and situational stability, and (d) predict attitudes, decisions
 behaviours and consequently outcomes” (Antonakis, 2011, p. 268). After discussing the general research literature on psychometric intelligence, we turn to the
 specific question about how the resulting scores are associated with leadership.
 
-Research on General Intelligence
+### Research on General Intelligence
+
 The idea of intelligence is not by any means a new concept. Throughout history, philosophers have discussed human faculties. Aristotle, for example, discussed
 the “five wits”: imagination, fantasy, memory, reason, and the “common sense”
 (Ritchie, 2015). In The Republic, Plato wrote extensively about what qualities,
@@ -1008,8 +803,6 @@ how to best define or operationalize it. Though there are many verbal definition
 researchers:
 Intelligence is a very general mental capability that, among other things,
 involves the ability to reason, plan, solve problems, think abstractly,
-
-16 John Antonakis et al.
 
 comprehend complex ideas, learn quickly, and learn from experience. It is
 not merely book-learning, a narrow academic skill, or test-taking smarts.
@@ -1051,15 +844,12 @@ achievement g and cognitive g are essentially the same (Kaufman, Reynolds, Liu,
 Kaufman, & McGrew, 2012), which means that achievement and cognitive tests
 essentially both measure the same g. Some recent advances in the measurement of
 
-Intelligence and Leadership
-
-17
-
 intelligence include chronometric research, the use of elementary cognitive tasks
 or reaction times to “clock the mind” (Beaujean, 2005; Jensen, 2006). Intelligence
 can be measured with better reliability than any other individual differences variable ( Jensen, 1998).
 
-The Nature and Nurture of Intelligence
+### The Nature and Nurture of Intelligence
+
 Intelligence, like most other traits, is due in part both to nature and nurture. The
 nurture aspect regarding the development of intelligence, however, must account
 for the nature aspect. Thus, research on intelligence from the field of behavioral
@@ -1073,7 +863,8 @@ molecular genetics area when studying intelligence (for comprehensive reviews, s
 Plomin & Deary, 2014; Plomin & von Stumm, 2018). Suffice it to say, the evidence
 has accumulated such that intelligence is in part due to nature as well as nurture.
 
-The Significant Correlates of Intelligence
+### The Significant Correlates of Intelligence
+
 General intelligence, or g, has been called a “rosetta stone” or a crucial key given
 its broad links to many phenomena of interest in psychology, social science, and
 society ( Jensen, 2006). Large amounts of data spanning the last century have indicated links between intelligence and numerous outcomes of consequence, including educational achievement, occupational success, income, mortality, and others
@@ -1090,8 +881,6 @@ has even been linked to higher creativity (Mosing, Pedersen, Madison, & Ullén,
 also been linked to political preferences and religion, among an array of other
 outcomes (for an extensive list of correlations between g and many outcomes, see
 Jensen, 1998; Strenze, 2015).
-
-18 John Antonakis et al.
 
 However, for the purposes of this review, two sets of outcomes are most relevant. First, general intelligence has been linked to many educational outcomes.
 A very large and representative sample from the United Kingdom (Deary, Strand,
@@ -1125,10 +914,6 @@ both job training outcomes and job performance outcomes. A major meta-analysis
 of 85 years of research found that the core job performance predictor was g combined with another test, such as structured interviews or a measure of integrity
 (Schmidt & Hunter, 1998). General ability also predicts job training and job performance, and, among other things, the prediction of g on outcomes increased as
 the complexity of the job increased (Schmidt & Hunter, 1998). Other researchers
-
-Intelligence and Leadership
-
-19
 
 have shown that g is positively related to everything from training success, leader
 effectiveness, occupational performance in low- and high-complexity jobs, and
@@ -1167,9 +952,8 @@ the very top of occupational performance. Given that leadership is a specific fo
 of occupation, such findings are highly pertinent here, as we discuss next. First,
 we briefly discuss how correlates of intelligence may condition leader emergence.
 
-20 John Antonakis et al.
+### How Correlates of Intelligence May Condition Leader Emergence
 
-How Correlates of Intelligence May Condition Leader Emergence
 We know that intelligence is tightly connected to educational and occupational
 attainment and achievement as reviewed previously. Moreover, these correlates,
 in a way, do indeed condition access to leadership roles. Such a model would
@@ -1197,7 +981,8 @@ personality, interests, and knowledge combine in intellectual development. For a
 review of leader individual differences and leader emergence and outcomes, see
 Zaccaro, Green, Dubrow, and Kolze (2018).
 
-Research on General Intelligence and Leadership
+### Research on General Intelligence and Leadership
+
 Psychometric research on the effect of intelligence on leadership has a long, though
 tumultuous history. Although qualitative reviews did show that intelligence mattered for leadership (Mann, 1959; Stogdill, 1948) and managerial effectiveness, too
 (Campbell, Dunnette, Lawler, & Weick, 1970), the evidence was interpreted to
@@ -1206,10 +991,6 @@ Zaccaro, 2012; Zaccaro et al., 2018; Zaccaro, Kemp, & Bader, 2004). Of course, i
 the early to mid-twentieth century, measures were coarse and researchers did not
 have the tools to synthesize research findings. What characterized the zeitgeist
 were statements such as “Leadership resides not exclusively in the individual but
-
-Intelligence and Leadership
-
-21
 
 in his functional relation with other members of his group” (Gibb, 1947, p. 283).
 These declarations signaled to researchers that individual differences did not matter and that situational aspects were key to understanding leadership effectiveness
@@ -1245,10 +1026,9 @@ the effects of intelligence on outcomes are, surprisingly, not as high as antici
 That is, objectively measured intelligence on ratings of leadership effectiveness are
 low; both meta-analyses found an estimate of ρ = .17. Is this estimate accurate?
 
-Joining the Dots, Correctly
-The Judge et al. (2004) meta-analysis provides us with some hints about the problems of modeling the effect of intelligence. For instance, the effect of objectively
+### Joining the Dots, Correctly
 
-22 John Antonakis et al.
+The Judge et al. (2004) meta-analysis provides us with some hints about the problems of modeling the effect of intelligence. For instance, the effect of objectively
 
 measured intelligence on objective performance is ρ =.33. Why is this correlation
 stronger—and more respectable, but still not very large—than when predicting
@@ -1282,33 +1062,15 @@ the relation is positive initially and then at high levels of intelligence it ta
 
 Idealized influence attributed
 
-4
-
 Observed
-
-10
-
-15
-
-20
 
 25
 30
 Wonderlic scores
 
-35
-
-40
-
-45
-
 FIGURE 1.1 Linear Relation (With Observed Scatterplot) Between Intelligence Scores
 
 and Leadership
-
-Intelligence and Leadership
-
-23
 
 3.5
 3
@@ -1320,25 +1082,7 @@ and Leadership
 
 Idealized influence attributed
 
-4
-
 Adjusted
-
-10
-
-15
-
-20
-
-25
-
-30
-
-35
-
-40
-
-45
 
 Wonderlic scores
 FIGURE 1.2 
@@ -1365,8 +1109,6 @@ two aspects, which bear in mind the context in which the leader exercises influe
 leader can keep rivals at bay? In a more elaborate extension (i.e., see Model 4
 in Simonton, 1985), he predicted that the functional form would be curvilinear
 as we show in our Figure 1.2. That is, the optimal intelligence level of a leader
-
-24 John Antonakis et al.
 
 should be higher than the mean of the group led, but not too high. It must be
 higher so that leaders can have the needed insights and smarts to provide solutions
@@ -1404,17 +1146,13 @@ Simply put, intelligence matters.
 leadership?” Simply put, the answer is a firm “no”. However, because authors supporting alternative notions of intelligence have made many unsubstantiated claims
 concerning alternative notions of intelligence, we provide some brief explanations in the Appendix for interested readers.
 
-Intelligence as an “Instrumental Variable”
-for Causal Identification
+### Intelligence as an Instrumental Variable for Causal Identification
+
 Apart from intelligence being useful as a predictor in models of leader outcomes,
 measures of intelligence have very useful properties and can help estimate other
 kinds of models. Recall, intelligence has high heritability (Bouchard & Loehlin,
 2001; Bouchard & McGue, 2003; Polderman et al., 2015). As a result, it can help
 solve a major problem that we have in the field of leadership: identifying the
-
-Intelligence and Leadership
-
-25
 
 causal effect of measured leadership style on outcomes. To estimate the causal
 effect of a predictor, IQ, on an outcome, y (subordinate performance), the predictor must be exogenous. If it is exogenous, the assumptions made by OLS or ML
@@ -1458,8 +1196,6 @@ endogeneity problems and x could still correlate with the disturbance v if x is
 not exogenous (Antonakis et al., 2010). The predictor x may not be exogenous
 for many reasons. For instance, if those who rate the leader have knowledge of y,
 which is normal that they would, they may rate the leader higher or lower on x as
-
-26 John Antonakis et al.
 
 a function of y, the well-known performance-cue effect (Lord, Binning, Rush, &
 Thomas, 1978). The leader’s gender may play a role; so, too, may the leader’s
@@ -1507,10 +1243,6 @@ considered for most intents and purposes exogenous. The preceding procedure
 should give researchers pretty good estimates and have useful policy implications.
 However, intelligence is not 100% exogenous because (1) intelligence tests are not
 
-Intelligence and Leadership
-
-27
-
 perfect measures and corrections for this problem are approximations, (2) environmental factors can still have some impact on intelligence (e.g., Ritchie &
 Tucker-Drob, 2018), and (3) unknown selection or censoring could still bias
 results to some degree. To take instrumental variable estimation to the next level,
@@ -1520,7 +1252,8 @@ this procedure is now making inroads in applied research to identify the effects
 phenotypes on a host of outcomes (e.g., see DiPrete, Burik, & Koellinger, 2018;
 von Hinke, Smith, Lawlor, Propper, & Windmeijer, 2016).
 
-Historiometric Intelligence
+### Historiometric Intelligence
+
 A long and roughly parallel research tradition on the relation between intelligence
 and leadership relied on historiometric techniques (Simonton, 2009). Historiometrics constitutes a set of methods for the extraction of objective and quantitative
 measures from historical data, particularly using biographical information about
@@ -1544,12 +1277,10 @@ between intelligence and leadership, it would be expected that a portion of that
 literature should concern that empirical issue (Simonton, 2009). Next we will
 consider three illustrations that reveal different aspects of the subject.
 
-Rated Intellect and the Evaluated Leadership
-and Eminence of European Monarchs
+### Rated Intellect and the Evaluated Leadership and Eminence of European Monarchs
+
 The researcher who first coined the term “historiometry” was a geneticist rather
 than a psychologist, namely, Woods (1909, 1911). However, Woods was inspired
-
-28 John Antonakis et al.
 
 by Galton’s (1869) classic Hereditary Genius, which promoted the family pedigree
 method for discerning genetic inheritance. But whereas Galton studied eminent
@@ -1589,12 +1320,8 @@ network, albeit largely as an exogenous variable with downstream effects among
 endogenous variables—much as argued earlier with respect to psychometric
 intelligence.
 
-Intelligence and Leadership
+### Estimated IQ and the Achieved Eminence of Political, Military, and Religious Leaders
 
-29
-
-Estimated IQ and the Achieved Eminence of Political,
-Military, and Religious Leaders
 As observed earlier, Terman (1916) developed the Stanford-Binet Scale, the first
 standardized measure of psychometric intelligence. Less well-known is the fact
 that Terman (1917), just one year later, came up with a method for the historiometric assessment of intelligence that operated according to very different principles from those seen in Woods (1906), Thorndike (1936), and Simonton (1983,
@@ -1630,8 +1357,6 @@ a significant relationship has been replicated multiple times in the historiomet
 literature using different samples or methods or both (Simonton, 1976; Simonton & Song, 2009; Walberg, Rasher, & Hase, 1978). Given that this correlation
 assumes a linear function, the result also falls in line with the psychometric literature discussed earlier.
 
-30 John Antonakis et al.
-
 Second, the expected IQ varies systematically across the achievement domains
 (Cox, 1926). As a first cut, the predicted IQs of eminent leaders fall about a half
 standard deviation below those predicted for eminent creators (Simonton, 1976).
@@ -1645,8 +1370,8 @@ Unfortunately, none of the studies just cited tested for curvilinear functions, 
 did any determine whether the intelligence–eminence function was moderated
 by domain of achievement. Those questions are thus left for future researchers.
 
-Assessed Intellectual Brilliance and the Leader
-Performance of US Presidents
+### Assessed Intellectual Brilliance and the Leader Performance of US Presidents
+
 The previous two illustrations involved instances where the researcher decided
 to assess historic figures on intelligence—intellect or IQ—from the very onset
 of the investigation. Yet this final example entails a case where something like
@@ -1669,10 +1394,6 @@ inquiry began having research assistants extract personality descriptions from b
 To avoid possible political biases as much as possible, the raw data sources were
 deliberately chosen to represent the consensus of historical scholarship on the
 presidents (e.g., Armbruster, 1982). The next step was to recruit a separate team
-
-Intelligence and Leadership
-
-31
 
 of independent raters who would use these anonymous extracts to evaluate the
 presidents on the descriptors in the Gough Adjective Check List (ACL; Gough &
@@ -1710,8 +1431,6 @@ that Rubenzer, Faschingbauer, and Ones (2000) assessed for the 41 US presidents
 prior to George W. Bush (using observer-based expert surveys; Simonton, 2001,
 2006). Because several of the ACL descriptors defining the factor also define the
 
-32 John Antonakis et al.
-
 Creative Personality Scale (Gough, 1979), it might be considered more creativity
 than intelligence, and yet it correlates only r = .47 with an independent assessment of presidential creative style (Simonton, 1988). For similar reasons, although
 a certain conceptual overlap seems to exist between Intellectual Brilliance and
@@ -1722,7 +1441,8 @@ integrate both cognitive abilities and personality traits, it seems analogous to
 concept of the “intelligent personality” (Chamorro-Premuzic & Furhnam, 2006),
 but specifically tailored toward success as a chief executive in the White House.
 
-Conclusions
+### Conclusions
+
 As our chapter has shown, literature on the measurement of general intelligence is
 long-standing and very broad; it has captured the interest of ancient philosophers
 to all the way to modern-day psychometricians, historiometricians, and beyond.
@@ -1747,10 +1467,6 @@ especially in cognitively complex domains (Schmidt & Hunter, 1998)—of course,
 as we suggested before, it is important to consider the criterion. For leadership
 outcomes that require technical skills, more seems to be better. If the criterion
 concerns interpersonal interaction, leaders must be smart but not too smart. The
-
-Intelligence and Leadership
-
-33
 
 “sweet spot” is easily derived from the work of Simonton, who showed that the
 leader should have an IQ score of about 1.2 SDs higher than the group led (about
@@ -1782,14 +1498,13 @@ made about how intelligence should be studied. According to the playwright
 Menander (Xenophon, 1764):
 Δις ἐξαμαρτεῖν ταὐτόν, οὐκ ανδρός σοφοῦ3
 
-Notes
+### Notes
+
 1. The Judge et al. (2004) meta-analysis differentiated perceptual from objective ratings,
 the criterion for the Hoffman et al. (2011) meta-analysis mixed the two, noting their
 criterion consisted of “objective and rating-based measures of the leader’s overall effectiveness and performance” (p. 355).
 2. Estimating the effect of leaders on outcomes is tricky. For instance, many studies have
 measures of leader outcomes that are at the team level—thus, to what extent is the team
-
-34 John Antonakis et al.
 
 level outcome due to the leader or the team? Apart from omitted team effects, there
 could be other omitted variables, including at the firm, industry, or country level; time
@@ -1809,7 +1524,8 @@ of the effect of intelligence on outcomes can be, to a large extent, consistentl
 loosely it means making the same mistake twice is not a mark of an intelligent (clever,
 wise, skilled) person.
 
-References
+### References
+
 Ackerman, P. L. (1996). A theory of adult intellectual development: Process, personality,
 interests, and knowledge. Intelligence, 22(2), 227–257.
 Adams, R., Keloharju, M., & Knüpfer, S. (2018). Are CEOs born leaders? Lessons from
@@ -1834,10 +1550,6 @@ Antonakis, J., & Day, D. V. (2017). Leadership: Past, present, and future. In J.
 D. V. Day (Eds.), The nature of leadership (3rd ed.). Thousand Oaks, CA: Sage Publications.
 Antonakis, J., Day, D. V., & Schyns, B. (2012). Leadership and individual differences: At the
 cusp of a renaissance. Leadership Quarterly, 23(4), 643–650.
-
-Intelligence and Leadership
-
-35
 
 Antonakis, J., & Dietz, J. (2010). Emotional intelligence: On definitions, neuroscience, and
 marshmallows. Industrial and Organizational Psychology, 3(2), 165–170.
@@ -1881,8 +1593,6 @@ Cavazotte, F., Moreno, V., & Hickmann, M. (2012). Effects of leader intelligence
 Chabris, C. F. (2007). Cognitive and neurobiological mechanisms of the law of general
 intelligence. In M. J. Roberts (Ed.), Integrating the mind: Domain general versus domain
 specific processes in higher cognition (pp. 449–491). New York, NY: Psychology Press.
-
-36 John Antonakis et al.
 
 Chamorro-Premuzic, T., & Furhnam, A. (2006). Intellectual competence and the intelligent personality: A third way in differential psychology. Review of General Psychology,
 10(3), 251–267.
@@ -1929,10 +1639,6 @@ Galton, F. (1883). Inquiries into human faculty and its development. London: Mac
 Genç, E., Fraenz, C., Schlüter, C., Friedrich, P., Hossiep, R., Voelkle, M. C., . . . Ling, J. M.
 (2018). Diffusion markers of dendritic density and arborization in gray matter predict
 differences in intelligence. Nature Communications, 9(1), 1905.
-
-Intelligence and Leadership
-
-37
 
 Gibb, C. A. (1947). The principles and traits of leadership. Journal of Abnormal and Social
 Psychology, 42, 267–284.
@@ -1982,8 +1688,6 @@ research are vastly exaggerated. Academy of Management Review, 21, 203–224.
 House, R. J., Spangler, W. D., & Woycke, J. (1991). Personality and charisma in the U.S.
 presidency: A psychological theory of leader effectiveness. Administrative Science Quarterly, 36, 364–396.
 
-38 John Antonakis et al.
-
 Hsu, S., & Wai, J. (2015). These 25 schools are responsible for the greatest advances in science.
 Quartz. Retrieved from http://qz.com/498534/these-25-schools-are-responsible-forthe-greatest-advances-in-science/
 Hunt, E. (2011). Human intelligence. New York, NY: Cambridge University Press.
@@ -2028,10 +1732,6 @@ reanalyses. Intelligence, 47, 159–174.
 Liden, R. C., & Antonakis, J. (2009). Considering context in psychological leadership
 research. Human Relations, 62(11), 1587–1605.
 
-Intelligence and Leadership
-
-39
-
 Ligon, G. S., Harris, D. J., & Hunter, S. T. (2012). Quantifying leader lives: What historiometric approaches can tell us. Leadership Quarterly, 23(6), 1104–1133.
 Lord, R. G., Binning, J. F., Rush, M. C., & Thomas, J. C. (1978). The effect of performance
 cues and leader behavior on questionnaire ratings of leadership behavior. Organizational
@@ -2075,8 +1775,6 @@ Plomin, R., & Deary, I. J. (2014). Genetics and intelligence differences: Five s
 [Expert review]. Molecular Psychiatry, 20, 98.
 Plomin, R., & von Stumm, S. (2018). The new genetics of intelligence. Nature Reviews
 Genetics, 19(3), 148.
-
-40 John Antonakis et al.
 
 Podsakoff, P. M., MacKenzie, S. B., Lee, J.-Y., & Podsakoff, N. P. (2003). Common method
 biases in behavioral research: A critical review of the literature and recommended remedies. Journal of Applied Psychology, 89(5), 879–903.
@@ -2124,10 +1822,6 @@ Simonton, D. K. (1983). Intergenerational transfer of individual differences in 
 monarchs: Genetic, role-modeling, cohort, or sociocultural effects? Journal of Personality
 and Social Psychology, 44(2), 354–364.
 
-Intelligence and Leadership
-
-41
-
 Simonton, D. K. (1984). Leaders as eponyms: Individual and situational determinants of
 ruler eminence. Journal of Personality, 52(1), 1–21.
 Simonton, D. K. (1985). Intelligence and personal influence in groups: Four nonlinear
@@ -2172,8 +1866,6 @@ Terman, L. M. (1916). The measurement of intelligence: An explanation of and a c
 for the use of the Stanford revision and extension of the Binet-Simon intelligence scale. Boston,
 MA: Houghton Mifflin.
 
-42 John Antonakis et al.
-
 Terman, L. M. (1917). The intelligence quotient of Francis Galton in childhood. American
 Journal of Psychology, 28(2), 209–215.
 Terman, L. M. (1925). Mental and physical traits of a thousand gifted children. Stanford, CA:
@@ -2217,10 +1909,6 @@ Wraw, C., Deary, I. J., Gale, C. R., & Der, G. (2015). Intelligence in youth and
 Xenophon. (1764). Xenophontis E Libris Memorabilium Socratis Selecta: Quibus Accesserunt
 Isocratis Orationes Duae, Menandri Sententiae, Et Anacreontis, Odae Selectae. Ad Usum Scholarum Humaniorum Universitatis Viennensis: Grund.
 
-Intelligence and Leadership
-
-43
-
 Zaccaro, S. J. (2012). Individual differences and leadership: Contributions to a third tipping
 point. Leadership Quarterly, 23, 718–728.
 Zaccaro, S. J., Foti, R. J., & Kenny, D. A. (1991). Self-monitoring and trait-based variance in
@@ -2231,7 +1919,6 @@ situational parameters, and leadership outcomes: A comprehensive review and inte
 Zaccaro, S. J., Kemp, C., & Bader, P. (2004). Leader traits and attributes. In J. Antonakis,
 A. T. Cianciolo, & R. J. Sternberg (Eds.), The nature of leadership (pp. 101–124). Thousand Oaks, CA: Sage.
 
-APPENDIX
 Do Other Forms of Intelligence Matter?
 
 Although not directly relevant for what we discuss in this chapter regarding intelligence per se, we elaborate a bit on this topic because many researchers believe
@@ -2259,10 +1946,6 @@ intelligence on leadership outcomes. Importantly, results from two meta-analyses
 show that emotional intelligence, whether measured using self-reported trait-like
 questionnaires or ability (i.e., performance) tests, does nothing to predict leadership
 
-Intelligence and Leadership
-
-45
-
 outcomes when controlling for personality and intelligence (Harms & Credé,
 2010a, 2010b).
 We must note, too, that there have been some serious efforts to measure emotional intelligence as an ability (e.g., the MSCEIT measure of Mayer, Salovey, &
@@ -2277,12 +1960,9 @@ is the large number of varied constructs measured by researchers, which in fact
 may be measuring intelligence. This problem is usually called “the old wine in
 new bottles” problem and is also known as the “jangle fallacy” (e.g., Kelley, 1927).
 
-2
-LEADERSHIP AND
-INFORMATION PROCESSING
-A Dynamic System,
-Dual-Processing Perspective
-Robert G. Lord
+## Chapter 2: Leadership and Information Processing: A Dynamic System, Dual-Processing Perspective
+
+*Robert G. Lord*
 
 As societies have evolved, leadership processes have changed and developed (Spisak, O’Brien, Nicholson, & Van Vugt, 2015), with modern executives managing
 decentralized, global organizations that exist as complex, international networks
@@ -2305,8 +1985,6 @@ Chui, 2016). These structures influence reactions to immediate task and social
 stimuli, but they also allow prospective thought, which attempts to anticipate
 the future and prepare for it in proactive ways that foster better future outcomes
 
-Leadership and Information Processing 47
-
 (Baumeister, Vohs, & Oettingen, 2016). Consequently, there are important ties
 among the self, virtual time travel, forecasting, vision development, and vision
 implementation (Shipman, Byrne, & Mumford, 2010; Stam, Lord, van Knippenberg, & Wisse, 2014).
@@ -2322,7 +2000,8 @@ time through the interaction of members in CAS (Acton, Foti, Lord, & Gladfelter,
 out in larger CAS (Hazy & Uhl-Bien, 2014; Uhl-Bien & Marion, 2008), which
 help structure leadership processes and are, in turn, structured by leadership processes as systems spontaneously adjust to and create changing environments.
 
-The Individual as an Information Processing System
+### The Individual as an Information Processing System
+
 The critical adaptive tasks for human beings is to acquire and use many types of
 skills that have been learned over time so as to effectively adjust to or anticipate
 their changing circumstances. In other words, they need to be adaptive systems.
@@ -2343,9 +2022,8 @@ a lifetime of learning to adjust to changing environments through both reactive
 and proactive strategies. Leadership processes both depend on and contribute to
 these adaptive processes.
 
-48 Robert G. Lord
+### Dual-Processing Theories
 
-Dual-Processing Theories
 Extensive research on both local and brain-scale processing (Baars, 1997; Dehaene,
 2014; Dehaene & Naccache, 2001) supports a dual-processing model that explains
 how the human mental system adjusts to context without central direction.
@@ -2372,15 +2050,14 @@ Dinh, & Hoffman, 2015). Both local modular and brain-scale processing systems
 are structured to integrate information as addressed in the next section, but they
 do this on different timescales because of their physical organization.
 
-Integration in Local, Modular Neural Networks
+### Integration in Local, Modular Neural Networks
+
 Stability and Plasticity in Leadership Perceptions
 As Grossberg’s (2013) adaptive resonance theory stresses, “the brain autonomously learns to categorize, recognize, and predict objects and events in a changing world” (p. 2). Further, it must do this without catastrophic forgetting of old
 information when it encounters a new stimulus (e.g., a new type of leader). Thus,
 rather than basing our understanding of leadership on each new example we
 encounter, people develop ILTs based on their extensive experience (Epitropaki
 et al., 2013; Lord, Foti, & De Vader, 1984). But such theories aren’t rigidly applied.
-
-Leadership and Information Processing 49
 
 Instead, they are adjusted based on top-down constraints that allow perceptions
 and learning to be guided by a perceiver’s expectations, and such guidance is
@@ -2390,7 +2067,8 @@ theories of perception and learning. In short, cognitive and perceptual systems
 exhibit stability and plasticity, rather than exhibiting catastrophic forgetting when
 new stimuli are encountered.
 
-Connectionist Neural Networks
+### Connectionist Neural Networks
+
 As described extensively in the following sections, stability and plasticity are
 inherent aspects of some types of neural networks, but they also accrue from
 the modular/hierarchical structure of the brain (Dehaene, 2014). For many tasks,
@@ -2420,14 +2098,13 @@ may be instantly recognized with little effort or attention, and this interpreta
 can then cue familiar knowledge, emotions, and behaviors. However, if stressed,
 tired, or highly emotional, the expression conveyed by the face may be quite
 
-50 Robert G. Lord
-
 different, and it may cue attention and conscious problem solving, or perhaps
 more automatic, but atypical responses (e.g., sympathy, support). In short, neural
 systems that normally produce efficient and predictable functioning can, under
 unusual circumstances, also foster creative, adaptive responses.
 
-The Role of Person Schema
+### The Role of Person Schema
+
 Because stable patterns are associated with many relatively routine processes, their
 underlying structures and content are often studied in a particular domain such as
 leadership. To illustrate, extensive research has examined the elements of leadership categories, which are often referred to as ILTs (Epitropaki & Martin, 2004,
@@ -2454,8 +2131,6 @@ higher-level expectations based on gender, age, race, and ethnicity (Freeman &
 Ambady, 2011).
 Figure 2.1 abstractly represents such a network, which produces leadership
 perceptions as the recurrent hexagonal structure in the center (i.e., a leadership prototype) is constrained from many sources in a top-down manner and is
-
-Leadership and Information Processing 51
 
 Recent
 Cognitions
@@ -2498,8 +2173,6 @@ some features of leadership prototypes in both Asian (e.g., dynamic) and Caucasi
 Asian (intelligent, dedicated) and Caucasian (masculine, dynamic) groups. More­
 over, through this mediational process of prototype contextualization, leadership
 
-52 Robert G. Lord
-
 expectations and perceptions are tuned to these racial constraints, creating “competent leader prototypes” for Asian Americans and “agentic leader prototypes”
 (Figure 3, p. 910) for Caucasian Americans.
 Research shows that category definitions can change with a number of factors
@@ -2517,7 +2190,8 @@ Lord, 2018). However, this negative effect is eliminated if people have establis
 themselves in leadership roles or if they are in contexts that call for creativity, such
 as filmmaking (Mainemelis & Epitropaki, 2015).
 
-The Role of Event Schema
+### The Role of Event Schema
+
 Grossberg’s ART (2013) emphasizes that perception and action-related schemas
 are integrated in self-regulatory systems. The social-cognitive and motivational
 psychological literatures often conceptualize the action components as arising
@@ -2536,8 +2210,6 @@ this involves using the self as a vehicle for time travel into the future, and r
 Railton, Baumeister, & Sripada, 2013).
 Because case-based knowledge follows a story structure, it may be particularly
 useful in helping individuals see how tasks can be accomplished (Mumford et al.,
-
-Leadership and Information Processing 53
 
 2017; Mumford, Medeiros, & Partlow, 2012). Such knowledge may incorporate
 event-related information from past experience, and it is most likely encoded
@@ -2563,7 +2235,8 @@ enacted by an individual, an organization, or its external environment (Lord et 
 2015). For this reason, even experts doing familiar tasks (e.g. surgeons) often have
 to revise their plans as tasks unfold (Ericsson & Pool, 2016).
 
-Expertise and Limits to Conscious Processing
+### Expertise and Limits to Conscious Processing
+
 There are other limits to the extent that conscious, rational processing actually
 describes leadership functioning, even though intuitively that seems to reflect
 how information processing works. Often, organizational systems are so complex
@@ -2572,8 +2245,6 @@ At other times, people may short-circuit rational analysis (Simon, 1956), relyin
 on satisfactory solutions that are readily available, or script-based knowledge to
 understand actions. For example, in assessing causality, people tend to stop at the
 first plausible explanation (Taylor & Fiske, 1978). Illustrating this effect, salient
-
-54 Robert G. Lord
 
 factors are overemphasized as causal sources. Applying this idea to the leadership
 area, a carefully designed experiment found that simply moving a person from the
@@ -2605,13 +2276,12 @@ to a safe water landing (Cooper, 2009). Such actions reflect the integration of
 meaning created by connectionist systems with higher-level conscious, cognitive
 processes skills. Precisely how this occurs is addressed in more detail in the following section.
 
-Integration in Global Neuronal Workspace (GNW)
+### Integration in Global Neuronal Workspace
+
 Situating Leadership Processes
 Consciousness reflects a global sharing of information from local modules that
 are connected to a global neuronal workspace (Baars, 1997; Dehaene, 2014;
 Dehaene & Naccache, 2001). This can occur because local modules, which operate semi-autonomously, are also connected to a global network. Specifically, the
-
-Leadership and Information Processing 55
 
 neocortex consists of layers that process specific types of information (e.g., facial
 expressions) in columns through these layers. These are the modules that Dehaene
@@ -2643,13 +2313,12 @@ knowledge, yet they can apply this information in new contexts whether real
 or virtual. Thus, although leadership research has tended to ignore context (Oc,
 2018), human information processing systems are structured to adjust to contextual variations, often automatically.
 
-Simulated Context and Time Travel
+### Simulated Context and Time Travel
+
 The GNW, in conjunction with local modules, is also a virtual simulator. This
 capacity allows one to visualize the consequences of actions on future outcomes
 as the GNW adjusts recall of episodic events to newly experienced or anticipated
 contexts. The hippocampus plays a particularly important role in such processes
-
-56 Robert G. Lord
 
 (Addis & Schacter, 2012) as it allows one to “virtually time travel” by retrieving
 elements from the past that are stored in episodic memory and combining them
@@ -2665,7 +2334,8 @@ grounds cognitions in the momentary contexts created by the continual behavioral
 and emergent GNW meaning structures. Moreover, behavioral streams are always
 creating new realities, as Hernes and Maitlis (2010) stress.
 
-Stability and Plasticity in the Self
+### Stability and Plasticity in the Self
+
 Self-relevant knowledge is centrally involved in regulating within-person achievement behavior as well as between-person social perceptions and behaviors that are
 central to leadership (Ibarra, Wittman, Petriglieri, & Day, 2014; Lord & Brown,
 2004; Lord, Diefendorff, Schmidt, & Hall, 2010; Markus & Wurf, 1987). Consequently, the self has a potentially profound effect on leadership processes and
@@ -2676,7 +2346,8 @@ reasons, we take a closer look at self-relevant information processing and also 
 how the self develops over time. The seeds of a leader’s vision may also lie in his
 or her understanding of oneself in a future context.
 
-Information Processing and the Self
+### Information Processing and the Self
+
 The self is defined as an overarching knowledge structure (Kihlstrom & Klein,
 1994) that contains cognitive or affective beliefs about the self (Fisk & Taylor,
 2013). It is so fundamental to our understanding of how we relate to the world
@@ -2685,12 +2356,11 @@ and self-relevant outcomes and integrating this information into an autobiograph
 into a life story (McLean et al., 2007) that integrates the past, present, and future.
 In this story, new episodes are enacted in the present as they are composed, yet
 
-Leadership and Information Processing 57
-
 people also spend considerable time thinking about and planning for the future
 (Baumeister & Vohs, 2016).
 
-An Application of Dual-Processing Theory
+### An Application of Dual-Processing Theory
+
 Modular Self-Schema and Contextualized Identities
 Applying the dual-processing perspective already developed, the self can be
 viewed as a higher-level processing structure that constrains and motivates many
@@ -2719,14 +2389,13 @@ an integrative, context-sensitive self-construal (Lord et al., 2016; Lord & Chui
 2018). They involve conscious assessments created by the GNW (Dehaene, 2014),
 which was described previously.
 
-Mental Time Travel and the Self
+### Mental Time Travel and the Self
+
 Because the GNW can act as a virtual simulator, it can locate the self-identity
 with respect to a specific contemporary task or social context, but it can also
 transport the self to the past, as when one recalls an event from the previous
 day or retrieves a childhood memory of a self-relevant event. Time travel to
 the future can also be simulated, and placing the self in an imagined future
-
-58 Robert G. Lord
 
 is even more common than thinking about past selves (Baumeister & Vohs,
 2016). People do this for pragmatic reasons (Baumeister, Vohs, & Oettingen,
@@ -2748,7 +2417,8 @@ could be developed. It is also likely that in doing this, the GNW draws on modul
 IFTs part of simulated futures. Explicit reasoning and beliefs or implicit theories
 about causality are also important to this process, as they are inherent in adjustments in the present as a way to influence the future.
 
-Social Aspects of Self-Schemas and Identities
+### Social Aspects of Self-Schemas and Identities
+
 It is also important to recognize that both self-schemas and self-identities have
 an essential social component. Indeed, social feedback is an important source
 of information for constructing context-relevant identities (Asforth & Schinoff,
@@ -2764,9 +2434,8 @@ social structures can prompt one to consider new identities. For example, one ma
 not recognize their own leadership potential until feedback from others grant
 them this status.
 
-Leadership and Information Processing 59
+### Skills and Emotions
 
-Skills and Emotions
 Learning and Using Leadership Skills
 Self-structures have two additional effects that bear on leadership processes. One
 is that because experiences are organized and interpreted within self-schemas
@@ -2777,7 +2446,8 @@ identities or identity-related goals. Being able to process leadership experienc
 in terms of self-structures may also be necessary for one to profit from leadership
 experience (Day & Sin, 2011).
 
-Emotions and Cognition
+### Emotions and Cognition
+
 The second effect of importance is that active self-structures relate to emotions
 on a fundamental level. Indeed, primary appraisal of the potential of a situation to
 harm or benefit the self automatically evokes emotions (LeDoux, 1999). Perhaps
@@ -2792,7 +2462,8 @@ the self, there are no emotions. Emotions also bind context, actions, and outcom
 in episodic memory (Allen, Kaut, & Lord, 2008), providing a micro-level basis for
 memory and skill development.
 
-Emotions, Social Processes, and Leadership
+### Emotions, Social Processes, and Leadership
+
 The importance of emotions to leadership processes has been widely recognized
 (Ashkanasy & Humphry, 2014). As LeDoux and Brown (2017) emphasize, emotions are grounded in self-systems, but they also reflect social processes, and thus
 emotions are a bridge to considering leadership and information processing in
@@ -2802,8 +2473,6 @@ charisma (Sy, Horton, & Riggio, 2018). They also affect interpersonal behavior b
 structuring leader–member exchanges (Tse, Troth, Ashkanasy, & Colling, 2018);
 and they affect group creativity (Visser, van Knippenberg, van Kleef, & Wisse,
 2013) and cooperation, conflict, and task performance (Barsade, 2002).
-
-60 Robert G. Lord
 
 To understand the information processing behind such effects, one needs to
 recognize that not all information processing involves brain structures, particularly
@@ -2841,8 +2510,6 @@ use of language (Naidoo & Lord, 2008). Emotional communications may register
 locally in terms of facial mimicry, but their integration with other tasks or social
 processes likely reflects brain-scale and embodied processing. Thus, even with
 
-Leadership and Information Processing 61
-
 emotions, we have dual-processing systems that are dynamic, and they are able
 to flexibly tune social processes to a particular context, albeit an emotional one.
 In sum, we have seen that humans use cognitive structures as a basis for stability,
@@ -2856,7 +2523,8 @@ processing in groups, which follows many of the same principles found within
 individuals. To simplify exposition, we treat dyads and groups equivalently from
 an information-processing perspective, although they reflect different literatures.
 
-Information-Processing Groups
+### Information-Processing Groups
+
 Information processing in groups also depends on a structural basis that is created
 in part by leadership processes (formal and informal), by the task environment,
 and by emergent processes that characterize dynamic systems. These structures
@@ -2879,8 +2547,6 @@ this may depend on how dyads are embedded in social networks (Sparrowe, &
 Liden, 2005).
 Another important source of structure is the task context itself, which
 recently has gained increased attention in leadership research (Oc, 2018). Task
-
-62 Robert G. Lord
 
 environments coupled with internal goals often cue scripts for behavior, which are
 then accomplished in a specific environment. Weick and Roberts (1993) provide
@@ -2919,8 +2585,6 @@ that supplements formal leadership. For example, in trauma centers, which have
 very clear and strong hierarchies, highly skilled and empowered nurses provided a
 redundant layer that reduced the likelihood of medical errors. They often stepped
 
-Leadership and Information Processing 63
-
 in to indicate to resident surgeons when additional expertise was needed (Klein
 et al., 2006). Leadership theory addresses such processes in groups, explaining that
 over time, clear interrelated patterns developed among team members, and these
@@ -2930,7 +2594,8 @@ identities (Acton et al., 2019; DeRue, 2011). In this way, structures are tuned 
 the momentary requirements of dynamic systems, much as consciousness in the
 GNW operates for individuals.
 
-Information Processing in Complex Adaptive Systems
+### Information Processing in Complex Adaptive Systems
+
 Information processing in larger CAS can be described by many of the same
 processes described heretofore, but because there are more hierarchical levels,
 these systems are more complex and are often slower to adapt. Further, because
@@ -2958,8 +2623,6 @@ for a leader’s actions and the actions of others throughout a CAS (Lord, 2018)
 There are also many interesting aspects of information processing in CAS that
 go beyond insights drawn from individuals or small groups. For example, Goldstein et al. (2010) address the importance of novelty in creating new futures for
 
-64 Robert G. Lord
-
 CAS that are more adaptive. Novelty is often an inherent result of differences in
 such systems (Page, 2007), but it needs to be supported by leadership practices
 that in the terms of Goldstein et al. are “generative”. This may involve supporting
@@ -2971,7 +2634,8 @@ markets. Systems that foster novelty and learning (e.g., Apple) can outperform
 systems with more resources but a more regimented environment (e.g., the old
 AT&T), as noted by Goldstein et al. (p. 101).
 
-Conclusions
+### Conclusions
+
 The perspective taken in this chapter is that leadership information processing,
 and leadership processes in general, are embedded in hierarchical structures that
 learn and adjust but are also proactive. These CAS are dual-processing systems
@@ -2983,11 +2647,13 @@ alternatively, as a modular activity. CAS also involve local and more global pro
 that can make innovation and novelty central or peripheral aspects of adaptation
 and growth.
 
-Acknowledgments
+### Acknowledgments
+
 I would like to thank Rosalie Hall and Xiaotong ( Janey) Zheng for many helpful
 comments on an earlier version of this chapter.
 
-References
+### References
+
 Acton, B. P., Foti, R. J., Lord, R. G., & Gladfelter, J. A. (2019). Putting emergence back in
 leadership emergence: A dynamic, multilevel, process-oriented framework. Leadership
 Quarterly, 30, 145–164.
@@ -2998,8 +2664,6 @@ research (Vol. 18, pp. 115–132). Amsterdam: Elsevier Science.
 Ashforth, B. E., & Schinoff, B. S. (2016). Identity under construction: How individuals come
 to define themselves in organizations. Annual Review of Organizational Psychology and
 Organizational Behavior, 3, 111–137. doi:10.1146/annurev-orgpsych-041015-062322
-
-Leadership and Information Processing 65
 
 Ashkanasy, N. M., & Humphry, R. H. (2014). Leadership and emotion: A multilevel perspective. In D. V. Day (Ed.), The Oxford handbook of leadership and organizations (pp. 783–
 804). Oxford, UK: Oxford University Press.
@@ -3043,8 +2707,6 @@ Applied Psychology, 90, 1084–1095.
 Engle, E., & Lord, R. G. (1997). Implicit theories, self-schema, and leader-member
 exchange. Academy of Management Journal, 40, 988–1010.
 
-66 Robert G. Lord
-
 Epitropaki, O., & Martin, R. (2004). Implicit leadership theories in applied settings: Factor structure, generalizability and stability over time. Journal of Applied Psychology, 89,
 293–310.
 Epitropaki, O., & Martin, R. (2005). From ideal to real: A longitudinal study of implicit
@@ -3086,8 +2748,6 @@ Hansbrough, T. K., Lord, R. G., Schyns, B., Foti, R. J., & Liden, R. (2019). Rat
 semantic memory effects on the validity of leadership scales. Manuscript submitted for publication.
 Hatfield, E., Cacioppo, J., & Rapson, R. L. (1994). Emotional contagion. New York, NY:
 Cambridge University Press.
-
-Leadership and Information Processing 67
 
 Hazy, J. K., & Uhl-Bien, M. (2014). Changing the rules: The implications of complexity
 science for leadership research and practice. In D. V. Day (Ed.), The Oxford handbook of
@@ -3135,8 +2795,6 @@ Routledge.
 Lord, R. G., & Brown, D. J. (2004). Leadership processes and follower self-identity. Mahwah, NJ:
 Lawrence Erlbaum Associates.
 
-68 Robert G. Lord
-
 Lord, R. G., Brown, D. J., & Freiberg, S. J. (1999). Understanding the dynamics of leadership: The role of follower self-concepts in the leader/follower relationship. Organizational Behavior and Human Decision Processes, 78, 167–203.
 Lord, R. G., Brown, D. J., Harvey, J. L., & Hall, R. J. (2001). Contextual constraints on
 prototype generation and their multi-level consequences for leadership perceptions.
@@ -3176,8 +2834,6 @@ Miller, G. A., Galanter, E., & Pribram, K. H. (1960). Plans and the structure of
 York, NY: Henry Holt.
 Morgeson, F. P. (2005). The external leadership of self-managing teams: Intervening in
 the context of novel and disruptive events. Journal of Applied Psychology, 90, 497–508.
-
-Leadership and Information Processing 69
 
 Mumford, M. D., Medeiros, K. E., & Partlow, P. J. (2012). Creative thinking: Processes,
 strategies, and knowledge. Journal of Creative Behavior, 46, 30–47.
@@ -3220,8 +2876,6 @@ Simon, H. A. (1969). The sciences of the artificial. Cambridge, MA: MIT Press.
 Smith, E. R., & DeCoster, J. (2000). Dual-process models in social and cognitive psychology: Conceptual integration and links to underlying memory systems. Personality and
 Social Psychology Review, 4, 108–131.
 
-70 Robert G. Lord
-
 Sparrowe, R. T., & Liden, R. C. (2005). Two routes to influence: Integrating leadermember exchange and social network perspectives. Administrative Science Quarterly, 50,
 505–535.
 Spisak, B. R., O’Brien, M. J., Nicholson, N., & Van Vugt, M. (2015). Niche construction
@@ -3260,12 +2914,9 @@ and creative versus analytic performance. Leadership Quarterly, 24, 172–188.
 Weick, K. E. (1995). Sensemaking in organizations. Thousand Oaks, CA: Sage.
 Weick, K. E., & Roberts, K. H. (1993). Collective mind in organizations: Heedful interrelating on flights decks. Administrative Science Quarterly, 38, 357–381.
 
-3
-UNCERTAINTY AND
-PROBLEM SOLVING
-The Role of Leader
-Information-Gathering Strategies
-Jay J. Caughron, Teresa Ristow, and Alison L. Antes
+## Chapter 3: Uncertainty and Problem Solving: The Role of Leader Information-Gathering Strategies
+
+*Jay J. Caughron, Teresa Ristow, and Alison L. Antes*
 
 Sensemaking is the process of working to reduce uncertainty and enhancing one’s
 understanding of an event (Bartunek, 1984; Benford & Snow, 2000; Cornelissen,
@@ -3291,7 +2942,6 @@ Mental models are cognitive representations of environmental variables and
 how they interact with each other ( Johnson-Laird, 1983; Gentner, 1983; CannonBowers, Salas, & Converse, 1993). As such, they guide the process of information
 gathering by highlighting critical variables, contingencies to be navigated, and goals
 
-Info Gathering
 Strategy Selected
 
 Available Info
@@ -3317,10 +2967,6 @@ Sensemaking
 Problem-solving
 Efforts
 
-Uncertainty and Problem Solving
-
-73
-
 worth pursuing. More specifically, mental models leverage a leader’s past experience to guide information search processes as organizational problems emerge.
 Some information search processes are barely conscious, such as latent scanning;
 while others are overt and deliberative (Daft & Weick, 1984; Heath & Gay, 1997;
@@ -3332,7 +2978,8 @@ environmental conditions, that uncertainty motivates leaders to gather informati
 their information-gathering strategy as they iterate through problem solving and
 solution crafting.
 
-Uncertainty
+### Uncertainty
+
 Uncertainty is frequently mentioned in discussions of leader decision making,
 problem solving, and sensemaking. It motivates sensemaking (Weick, 1995),
 causes leaders to be uncomfortable (Lachlan, Spence, & Nelson, 2010; Heath &
@@ -3358,7 +3005,6 @@ role in defining or reducing uncertainty.
 While this first observation may seem trivial, it is important to recognize how
 leader uncertainty has typically been discussed. Uncertainty has been described in
 
-74 Jay J. Caughron et al.
 TABLE 3.1 Summary of Environmental Variables Causing Uncertainty
 
 Novelty
@@ -3396,16 +3042,13 @@ complex, volatile, or numerous (multiplicity), each of which makes the leader’
 decision-making process and alternatives unclear. We later describe how these
 environmental characteristics impact leader information gathering and summarize them in Table 3.1.
 
-Specific Causes of Uncertainty
+### Specific Causes of Uncertainty
+
 New experiences for a leader create the perception of novelty. A novel environment is perceived as unfamiliar (Herrmann & Felfe, 2013), either because
 the leader lacks relevant experience, has failed to recognize the relevance of past
 experiences, or relevant information does not exist because the event is truly
 novel. In contrast, ambiguity is an environmental characteristic that causes a leader
 to experience uncertainty but for completely different reasons. Ambiguity arises
-
-Uncertainty and Problem Solving
-
-75
 
 from experiencing conflicting variables within an environment (Hill & Levenhagen, 1995). When sources of information contradict each other, it makes it challenging for the leader to identify what information to pay attention to and utilize.
 Therefore, the leader is tasked with seeking additional information to clarify or
@@ -3441,14 +3084,13 @@ leaders has shifted from information finding to information filtering. Leaders a
 tasked with identifying small troves of relevant information amidst a deluge of
 irrelevant information (Allard, Levine, & Tenopir, 2009; Bates, 2006). They will
 
-76 Jay J. Caughron et al.
-
 need strategies to effectively execute this increasingly important responsibility.
 Ideally, filtering will occur as a non-conscious or low-resource process stemming
 from sensemaking. However, a leader’s existing sensemaking structures and strategies are likely to align poorly with emerging challenges such as those described
 in Table 3.1.
 
-Information-Gathering Strategies
+### Information-Gathering Strategies
+
 Gick (1986) suggested a set of specific information-gathering strategies in her
 review of approaches to problem solving. They include information search
 directed toward pattern recognition (Greeno, 1976), searching based on compartmentalizing the problem into subunits (Greeno, 1980b), and searching for
@@ -3478,10 +3120,6 @@ have developed a mental model that represents their environment (Gick, 1986;
 Huang & Hutchinson, 2013).
 Compartmentalization is the process of simplifying the information-gathering
 task by breaking it into subunits or structuring it such that information flows can
-
-Uncertainty and Problem Solving
-
-77
 
 TABLE 3.2 Summary of Information-Gathering Strategies With Selected References
 
@@ -3552,8 +3190,6 @@ In contrast to compartmentalizing and pattern recognition, analogizing is a
 strategy that is likely to be used by experts rather than novices (Hershey et al.,
 1990). Here expert leaders gather information that allows them to map the features
 
-78 Jay J. Caughron et al.
-
 of a current problem state to a preexisting case or mental model. In this way the
 leader identifies the most relevant concepts and ideas and reapplies them, shortening the information-gathering process and leading them to implement a strategy
 that has proven successful in the past (Hill et al., 2014; Mumford et al., 2002).
@@ -3593,10 +3229,6 @@ and should result in a more efficient information-gathering process (Choo et al.
 these arguments and provides propositions that researchers could test to confirm
 the use of these strategies and the contexts in which leaders are likely to be successful implementing them.
 
-Uncertainty and Problem Solving
-
-79
-
 TABLE 3.3 Propositions About Leader Information Gathering Strategies
 
 Proposition 1: Pattern recognition information-gathering strategies
@@ -3630,7 +3262,8 @@ remains static
 • Will be used when the leader needs a communication channel that does not
 currently exist
 
-Information Sources
+### Information Sources
+
 The source of the information may have a dramatic impact on the type of
 information strategy a leader uses. Ultimately, leaders gather information from
 two sources: communication with others and directly observing their environment. Communication is an interpersonal form of information gathering
@@ -3639,9 +3272,8 @@ person (Boies, Fiset, & Gill, 2015). As such, it includes implementing the
 information-gathering strategies described earlier in conversations with colleagues, while reviewing documents prepared by others, and through social
 networking efforts.
 
-80 Jay J. Caughron et al.
+### Communication Tactics and Organizational Structure
 
-Communication Tactics and Organizational Structure
 Communication between individuals is a complex process in which messages
 must often be tailored in order to be effective (Mohr & Nevin, 1990). Leaders can
 use a predefined strategy, such as pattern recognition or compartmentalization,
@@ -3678,10 +3310,6 @@ without communicating its meaning or structuring it for the consumer is also
 discouraged. Sixth, and finally, information-oriented organizations encourage a
 proactive stance when it comes to the use of information. Leaders that encourage
 
-Uncertainty and Problem Solving
-
-81
-
 a proactive stance with regard to information use will discuss the use of information, evaluate information sources, and encourage the use of new information
 when coaching subordinates on problem-solving and decision-making tasks.
 Clearly, research on communication tactics and organizational information
@@ -3690,7 +3318,8 @@ potential information-gathering activities. For information gathering to be effe
 frequency, direction, modality, and content of their communications, while bearing in mind the culture, climate, power structures, and technical capacity of the
 organization.
 
-Social Networking
+### Social Networking
+
 Leaders’ relationships to sources of information can be described as being
 strong or weak ties (Granovetter, 1973; Kikuit & Ende, 2007). Strong ties are
 described as relationships between individuals that are characterized by frequent contact, trust, information exchange, and mutual understanding (Gilsing & Nooteboom, 2005; Handley, 2006; Hansen, 1999; Reagans & McEvily,
@@ -3717,8 +3346,6 @@ colleagues, more open-ended, ad hoc, and idiosyncratic information-gathering
 strategies are likely to be developed as the dyad iterates through multiple rounds
 of information exchange.
 
-82 Jay J. Caughron et al.
-
 Leaders are more likely to seek out weak-tie colleagues when a situation
 demands information that is not available to their core social network. Thus the
 types of information needed should be well-known and can be solicited fairly
@@ -3741,7 +3368,8 @@ topics are more likely to emphasize specific information sources and content in
 an attempt for both individuals to identify new pieces of information or avenues
 for future collection efforts.
 
-Direct Observation
+### Direct Observation
+
 In some cases, leaders may elect to use direct observational techniques rather than
 communication. Most of the research on managers’ directly observing employees
 has focused on performance appraisal and the validity of manager ratings of performance. Research on the popular management technique called “management
@@ -3756,10 +3384,6 @@ of focus here, which is how leaders use direct observational techniques to gathe
 information to reduce uncertainty.
 In his examination of the Mann Gulch disaster, Weick (1993) discussed direct
 observation by leaders. Among the firefighting crew attending to the impending
-
-Uncertainty and Problem Solving
-
-83
 
 disaster, the information-gathering activities of two individuals stood out, one a
 local ranger and one a long-tenured member of the forest service. Upon arriving
@@ -3799,7 +3423,6 @@ Problem Solving
 Once a leader has made sense of their environment by collecting enough information to sufficiently reduce their uncertainty, they can decide on whether or not
 a problem state exists. This decision is likely to be determined largely by examining the emerging situation in light of goals and values (Mumford et al., 2007).
 
-84 Jay J. Caughron et al.
 TABLE 3.4 Propositions About Information Sources in Information Gathering
 
 Communication Tactics and Organizational Structures
@@ -3848,14 +3471,12 @@ mechanisms
 If the emerging event threatens goals or could result in the violation of values, the
 leader is likely to consider the situation a problem and then move to a concerted
 problem-solving effort.
-A great deal of research has been conducted on creative problem solving, much
+
+### Problem Solving and Information Gathering
+
 of it focused on leaders (Mumford & Connelly, 1992). Problem solving has been
 identified as a critical predictor of leader continuance—one measure of leader
 success—in an examination of US Army officers (Zaccaro et al., 2015). This
-
-Uncertainty and Problem Solving
-
-85
 
 recent evidence bolsters the arguments for problem solving as a critical contributor to leader success.
 Models of leader cognition, problem solving, and decision making suggest that
@@ -3897,8 +3518,6 @@ idea evaluation, visioning, coalition building, forecasting
 Planning, contingency planning, plan implementation, plan
 revision, solution monitoring, inter-team communication
 
-86 Jay J. Caughron et al.
-
 process of responding to uncertainty, it cannot be isolated to the early stages of
 sensemaking and problem construction. Leader problem solving is enacted in an
 environment that is changing over time, and the process is inherently iterative.
@@ -3936,10 +3555,6 @@ purpose for using an ad hoc strategy is different. Under conditions of ambiguity
 the leader is likely to use an ad hoc strategy as a means of managing stakeholder
 concerns, entering discussions with different groups with an open mind and with
 
-Uncertainty and Problem Solving
-
-87
-
 a posture of listening rather than of asserting a set of priorities they have already
 decided upon.
 Other information-gathering strategies are also likely to be useful in disambiguating the environment. Experimentation can be used to send up “trial balloons”
@@ -3975,8 +3590,6 @@ seek to gather more information about these variables if needed (Caughron et al.
 2009; Mumford et al., 2007). Thus, when using a deliberative approach, leaders
 are more likely to rely on compartmentalizing strategies and readily available
 
-88 Jay J. Caughron et al.
-
 idiosyncratic channels for information gathering. However, when leaders use an
 intuitive approach to ideation, information gathering is more likely to rely on serendipity and be guided by non-conscious processes that are difficult to verbalize
 in a step-by-step, logic-based narrative (Dane et al., 2011; Garfield, Taylor, Dennis, & Satzinger, 2001; Miller & Ireland, 2005). As such, information gathering
@@ -4010,10 +3623,6 @@ to shift toward idea promotion in organizational settings (Kikuit & Ende, 2007).
 Execution
 Once a viable idea has been developed and vetted, a leader can begin to enact
 the idea. Leader implementation planning involves a detailed alignment of problem features, steps of solution implementation, and organizational characteristics.
-
-Uncertainty and Problem Solving
-
-89
 
 Information gathering associated with implementing an idea will focus around
 details regarding processes. This includes practical considerations such as manpower, expertise of workers, timetables for deliverables, and available resources
@@ -4061,7 +3670,6 @@ information gathering is complete
 Developing a unified language across units
 (Continued)
 
-90 Jay J. Caughron et al.
 TABLE 3.6 (Continued)
 
 Problem-Solving Phase Info Gathering Strategy Functional Example
@@ -4121,7 +3729,8 @@ workers
 Creating communication channels
 between units to facilitate coordination
 
-Conclusions
+### Conclusions
+
 It is clear that leaders engage in information-gathering activities, yet little
 research has examined these critical processes. Information-gathering processes
 are ­complex—they are influenced by the environment, the state of the problem
@@ -4129,10 +3738,6 @@ space/solution development, and the sources of information accessible to leaders
 We explored information gathering as an activity leaders engage as they iterate
 through problem-solving phases from a multilevel perspective. We focused in
 particular on the information-gathering strategies successful leaders use when
-
-Uncertainty and Problem Solving
-
-91
 
 they need to solve problems. We also outlined caveats and contingencies associated with this process.
 Leaders experience uncertainty because of the tasks they are expected to complete in their high-stakes positions. Being uncertain when they need to enact
@@ -4169,9 +3774,8 @@ and information search strategies as described here serve as a useful taxonomy
 for describing leader information search processes and the environments that
 prompt them.
 
-92 Jay J. Caughron et al.
+### References
 
-References
 Allard, S., Levine, J. K., & Tenopir, C. (2009). Design engineers and technical professional
 at work: Observing information usage in the workplace. Journal of the American Society
 for Information Science and Technology, 60, 443–454.
@@ -4209,10 +3813,6 @@ Caughron, J. J., Shipman, A. D., Beeler, C. K., & Mumford, M. D. (2009). Social 
 Solving, 19, 7–32.
 Chen, H., Chiang, R., & Storey, V. (2012). Business intelligence and analytics: From big
 data to big impact. MIS Quarterly, 36, 1165–1188.
-
-Uncertainty and Problem Solving
-
-93
 
 Choo, C., Bergeron, P., Detlor, B., & Heaton, L. (2008). Information culture and information use: An exploratory study of three organizations. Journal of the American Society for
 Information Science and Technology, 59, 792–804.
@@ -4257,8 +3857,6 @@ Galbraith, J. (1973). Designing complex organizations. Reading, MA: Addison-Wesl
 Garfield, M., Taylor, N., Dennis, A., & Satzinger, J. (2001). Modifying paradigms—
 Individual differences, creativity techniques, and exposure to ideas in group idea generation. Information Systems Research, 12, 322–333.
 Garner, W. (1962). Uncertainty and structure as psychological concepts. New York, NY: Wiley.
-
-94 Jay J. Caughron et al.
 
 Gentner, D. (1983). Structure-Mapping: A Theoretical Framework for Analogy*. Cognitive
 Science, 7(2), 155.
@@ -4306,10 +3904,6 @@ uncertainty. Business and Professional Communication Quarterly, 72, 215–221.
 Janis, I. L., & Mann, L. (1977). Decision making: A psychological analysis of conflict, choice, and
 commitment. New York, NY: Free Press.
 
-Uncertainty and Problem Solving
-
-95
-
 Johnson-Laird, P. N. (1983). Mental Models. Towards a Cognitive Science of Language,
 Inference and Consciousness. Cambridge, UK: Cambridge University Press.
 Kikuit, B., & Ende, J. (2007). The organizational life of an idea: Integrating social network,
@@ -4353,8 +3947,6 @@ Mumford, M. D., & Connelly, M. S. (1992). Leaders as creators: Leader performanc
 problem-solving in ill-defined domains. Leadership Quarterly, 2, 289–315.
 Mumford, M. D., Friedrich, T. L., Caughron, J. J., & Byrne, C. L. (2007). Leader cognition in
 real-world settings: How do leaders think about crises? The Leadership Quarterly, 18, 515–453.
-
-96 Jay J. Caughron et al.
 
 Mumford, M. D., & Gustafson, S. B. (1988). Creativity syndrome: Integration, application,
 and innovation. Psychological Bulletin, 103, 27.
@@ -4402,10 +3994,6 @@ performance: Situational demands, behavioral requirements, and planning. Leaders
 Quarterly, 16, 97–120.
 Scott, G. M., Lonergan, D. C., & Mumford, M. D. (2005). Conceptual combination: Alternative knowledge structures, alternative heuristics. Creativity Research Journal, 17, 79–98.
 
-Uncertainty and Problem Solving
-
-97
-
 Shannon, C., & Weaver, W. (1949). The mathematical theory of communication. Urbana, IL:
 University of Illinois Press.
 Sharma, G., & Good, D. (2013). The work of middle managers: Sensemaking and sensegiving for creating positive social change. Journal of Applied Behavioral Science, 49, 95–122.
@@ -4441,13 +4029,10 @@ Zaheer, A., & Bell, G. (2005). Benefiting from network position: Firm capabiliti
 Zheng, W., Yang, B., & McLean, G. (2010). Linking organizational culture, structure, strategy, and organizational effectiveness: Mediating role of knowledge management. Journal
 of Business Research, 63, 763–771.
 
-4
-ARE SATISFIED EMPLOYEES
-PRODUCTIVE OR PRODUCTIVE
-EMPLOYEES SATISFIED?
-How Leaders Think About and
-Apply Causal Information
-David R. Peterson
+## Chapter 4: Are Satisfied Employees Productive or Productive Employees Satisfied? How Leaders Think About and Apply Causal Information
+
+*David R. Peterson*
+
 Leaders seem to be constantly looking for ways to motivate their followers. One
 belief is that increasing employees’ satisfaction at work will cause higher motivation, which, in turn, will lead to higher performance. For example, a report
 from the Society of Human Resource Management recently tied problems in
@@ -4466,8 +4051,6 @@ points to the ability to be productive in one’s job as the real heart of motiv
 employees can be high performers, rather than focusing on ways to increase
 their job satisfaction per se.
 (p. 85)
-
-How Leaders Apply Causal Information 99
 
 The confusion over the causal link between productivity and job satisfaction
 highlights the role of causal information in leaders’ attempts to interpret and
@@ -4505,12 +4088,11 @@ leader causal analysis by reviewing research from two distinct literatures: caus
 analysis and causal reasoning. Here I distinguish between retrospective causal attributions, which leaders make to explain causes of past events, and prospective
 causal analysis, which refers to leaders’ application of causal information to guide
 
-100 David R. Peterson
-
 goal-directed actions. I conclude by noting both directions for future research on
 leader causal analysis and implications for leadership practice and development.
 
-Mental Models and Complex Systems
+### Mental Models and Complex Systems
+
 Leaders operate in profoundly complex systems—organizations (Katz & Kahn,
 1966). From a general systems perspective, the entire world is a system composed
 of subsystems of subsystems, etc. (Boulding, 1956). While there are many different types of systems in the world—social, biological, mechanical, conceptual,
@@ -4543,10 +4125,6 @@ from similar cultures possess similar mental models of common social environment
 they tend to exhibit similar behaviors in these scripted situations (Bower, Black, &
 Turner, 1979).
 
-How Leaders Apply Causal Information
-
-101
-
 A particularly important feature of mental models is the way individuals represent information about cause-and-effect ( Johnson-Laird, 1980). Studies have
 provided evidence that causal information in mental models influences creative
 problem solving (Marcy & Mumford, 2007; Mumford et al., 2012), skill acquisition (Frese et al., 1988; Kieras & Bovair, 1984), and teamwork (Mohammed, Ferzandi, & Hamilton, 2010). Numerous studies have provided evidence that leaders
@@ -4572,7 +4150,8 @@ the basis for leaders’ attempts to influence the complex sociotechnical system
 which they operate is the causal information embedded in their descriptive and
 prescriptive mental models.
 
-Causal Analysis
+### Causal Analysis
+
 Causal information includes “identifiable events, activities, or actions that result in
 or cause downstream events or outcomes, be they immediate or distant” ( Johnson
 et al., 2012, p. 64). Bettman and Weitz (1983) distinguished between prospective
@@ -4581,8 +4160,6 @@ refers to leaders’ attempts to “process information in such a way as to maxi
 future benefits relative to costs” and is focused on “providing accurate explanations of events to enhance control of future outcomes” (Bettman & Weitz, 1983,
 pp. 165–166). Causal analysis, a form of prospective causal reasoning (Harvey,
 Madison, Martinko, Crook, & Crook, 2014), is the process whereby leaders make
-
-102 David R. Peterson
 
 sense of causal information and use it to guide goal-oriented actions (Mccormick & Martinko, 2004; Stenmark et al., 2010).
 Retrospective causal reasoning “consists of rationalizing prior behavior in an
@@ -4593,7 +4170,8 @@ play an important role in the way leaders encode causal information into their
 descriptive mental models. Less research has been conducted on the prospective
 analysis of causal information by leaders.
 
-Prospective Causal Analysis
+### Prospective Causal Analysis
+
 Both retrospective and prospective causal analysis are important leadership cognitive processes because although people rely on causal information when solving
 problems (Hershey, Walsh, Read, & Chulef, 1990), they tend to make many cognitive errors when doing so (Hogarth & Makridakis, 1981; Mumford et al., 2007;
 Xiao, Milgram, & Doyle, 1997). For example, in one study participants preferred
@@ -4606,7 +4184,8 @@ sociotechnical environments. With its focus on predicting and controlling future
 events, prospective causal analysis is best understood in terms of the input and
 processes leaders use to formulate prescriptive mental models.
 
-Causal Content
+### Causal Content
+
 With regard to the causal information that serves as input into leader causal analysis, the adage “garbage in, garbage out” seems appropriate. Indeed, evidence suggests that not all causal information is equally useful. Johnson and Keil (2014)
 described two criteria for causal information that would be more useful “as control
 variables for bringing about desired effects” (p. 2224). First, more useful causes are
@@ -4616,10 +4195,6 @@ selection tool in the repertoire of leaders in charge of selection and developme
 Second, useful causal information is specific—effects can be dissected into causeand-effect relationships with specific causal variables. For example, the romanticized perspective of creative performance, which holds that creativity is mostly
 an unknowable, innate talent, is far less useful than scientific perspectives, which
 trace creative performance to an individual’s motivation, creative thinking skills,
-
-How Leaders Apply Causal Information
-
-103
 
 and domain-specific knowledge (Amabile, 1983; Mumford & Gustafson, 1988),
 the impact of which is moderated by the context in which an individual is meant
@@ -4659,8 +4234,6 @@ be more specific and more focused on revealing cause-and-effect relationships
 than non-scientific information such as industry publications or expert analysis
 (Rousseau, 2006; Rousseau, Manning, & Denyer, 2008). Moreover, it is unlikely
 
-104 David R. Peterson
-
 that leaders will be able to reach the same level of effectiveness on their own that
 they might otherwise achieve with the use of scientific evidence to inform their
 mental models (Rousseau & McCarthy, 2007).
@@ -4698,10 +4271,6 @@ effects of causal analysis training on performance in a leadership simulation. A
 receiving varying levels of training, 160 undergraduates completed the computerbased simulation and were scored on game performance (weighted to reflect
 realistic leadership outcomes such as organizational performance), sensemaking
 
-How Leaders Apply Causal Information
-
-105
-
 activities, and adaptation in response to environmental changes. Not only did they
 find that leadership scores were lower in more complex simulations (medium
 effect) but they also found that causal analysis training increased scores (medium
@@ -4715,7 +4284,8 @@ problems. It may be that the causal analysis training provides leaders with a us
 starting point—the key causes in the system—for developing creative solutions
 when solving unfamiliar problems.
 
-Causal Analysis Strategies
+### Causal Analysis Strategies
+
 It is not enough for leaders to simply possess high-quality (invariant and specific)
 causal information in their descriptive and prescriptive mental models. They must
 also employ effective strategies for applying that information in the development
@@ -4742,8 +4312,6 @@ of these strategies. The seven strategies encourage leaders to identify causes t
 Can be manipulated,
 Can be controlled (by the leader),
 Have direct effects,
-
-106 David R. Peterson
 
 4.
 5.
@@ -4784,10 +4352,6 @@ could only modify finances and distribution of the marketing channel. A second m
 some participants being encouraged to focus on objective performance information, some on subjective social information, and some on both. It is important
 to note that both objective and subjective strategies were framed in terms of
 
-How Leaders Apply Causal Information
-
-107
-
 causal analysis. For example, participants might have been encouraged to identify
 causes and contingencies (objective) or affective causes and causes embedded in
 social systems (subjective). For both the creative and business criteria, medium
@@ -4825,12 +4389,11 @@ unnecessarily discount more complex or more unfamiliar causal variables. Leaders
 with exposure to multiple and varied experiences, including negative experiences
 (Williams, 1996), with specific causal factors may be able to more accurately assess
 
-108 David R. Peterson
-
 the relative causal contributions of those variables (Spellman, 1996b; Wasserman,
 Kao, Hamme, Katagiri, & Young, 1996).
 
-Retrospective Causal Attribution
+### Retrospective Causal Attribution
+
 Prospective causal reasoning is focused on predicting and controlling future events
 through identification and analysis of causal information contained in sociotechnical systems. Prospective causal analysis is affected by the content of leaders’
 descriptive mental models (Cheng et al., 1996) and occurs primarily when leaders are applying prescriptive mental models to plan and execute goal-directed
@@ -4852,7 +4415,8 @@ by certain characteristics of the information used to make those attributions (K
 attribution process that can cause inaccurate information to become stored in
 leader’s mental models (Martinko et al., 2007).
 
-Causal Attributions
+### Causal Attributions
+
 The information people use to make causal attributions can be described in terms
 of consensus, consistency, and distinctiveness (Kelley, 1973; Kelley & Michela,
 1980). Consensus refers to whether the observation at hand is characteristic of
@@ -4860,10 +4424,6 @@ other entities within the same context. For example, if a coworker speaks loudly
 in a meeting in which everyone else is also speaking loudly there is said to be
 high consensus. If the coworker was the only one speaking loudly there would be
 low consensus for that individual’s behavior in that situation. Consistency considers the temporal consistency of the observation for a given entity within a given
-
-How Leaders Apply Causal Information
-
-109
 
 context. If the loud coworker is always (rarely) loud in meetings there is said to
 be high (low) consistency. Finally, distinctiveness compares the observation to
@@ -4899,8 +4459,6 @@ systems. Causal variables in sociotechnical systems can be human or nonhuman,
 single entities or subnetworks of interacting concepts (Cooper & Foster, 1971).
 While none of these attribution models purports to be comprehensive, the lack of
 
-110 David R. Peterson
-
 coverage of group, organizational, and nonhuman attributional targets (outcomes)
 is problematic when considering that leaders must make decisions intended to
 influence not just individuals but research and development processes, resources,
@@ -4935,14 +4493,11 @@ attention on causes that can be manipulated and controlled, have direct and larg
 effects, influence multiple outcomes, are functionally similar to other causes, and
 interact with other causes (Marcy & Mumford, 2007).
 
-Attributional Biases
+### Attributional Biases
+
 Individuals, including leaders, are prone to several well-documented biases when
 they make causal attributions (Brown & Mitchell, 1986; Harvey, Martinko, &
 Douglas, 2006; Martinko et al., 2007). These biases are likely to create inaccuracies
-
-How Leaders Apply Causal Information
-
-111
 
 in leaders’ descriptive mental models of their sociotechnical systems (Strange &
 Mumford, 2013). Given the role of descriptive mental models in prospective
@@ -4979,8 +4534,6 @@ leaders in the long term.
 Second, as leaders adopt more effective prospective causal analysis strategies, the
 quality of information contained in their descriptive mental models and the completeness of those models should increase. As noted previously, descriptive mental
 models are formed in part through leaders’ interactions within their sociotechnical
-
-112 David R. Peterson
 
 systems as they obtain feedback from the system about actions they take. Explicitly
 focusing influence attempts on specific types of causes should allow for clearer system feedback. This is in part due to a focus on more specific causal variables. For
@@ -5021,10 +4574,6 @@ information from or distort information given to leaders (Glauser, 1984; Roberts
 causal information from leaders in teams (Mesmer-Magnus & DeChurch, 2009),
 new product development ( Jespersen, 2012), and creative work (Alge, Ballinger,
 
-How Leaders Apply Causal Information
-
-113
-
 Tangirala, & Oakley, 2006; Gong, Kim, Lee, & Zhu, 2013), to name a few. This
 makes it particularly difficult for leaders to obtain the useful causal information
 ( Johnson & Keil, 2014) that would help them determine whether or not their
@@ -5062,8 +4611,6 @@ Another, perhaps more fundamental approach here is for leaders to develop
 a deeper understanding of human (and nonhuman) systems. Such efforts should
 involve leaders learning more about the science of human cognition and behavior.
 
-114 David R. Peterson
-
 As noted previously, scientific information tends to be more useful for causal
 analysis ( Johnson & Keil, 2014; Rousseau et al., 2008). This means that leaders and organizations should set high standards for their sources of leadership or
 managerial information. One way to do this would be to rely less on popular press
@@ -5071,7 +4618,8 @@ sources and on so-called experts and instead become more informed consumers
 of scientific evidence (Abrahamson, 1996; Lewis, Schmisseur, Stephens, & Weir,
 2006; Rousseau & McCarthy, 2007).
 
-Conclusions
+### Conclusions
+
 In this chapter I have attempted to integrate research on how leaders work with
 causal information. People in general naturally seek causal information to better
 understand and control their environments (Perales & Catena, 2006). To be useful, this information should be both specific (refer to specific causes and effects)
@@ -5098,10 +4646,6 @@ leaders’ prospective causal analysis (Hester et al., 2012; Marcy & Mumford, 20
 
 Directions for Future Research
 There are several promising avenues for additional research on leader causal analysis. For example, future research should examine indirect effects of attributional
-
-How Leaders Apply Causal Information
-
-115
 
 biases on leader performance via the formation of prescriptive mental models,
 action plans, and vision statements. In addition to linking attribution research
@@ -5138,9 +4682,8 @@ empirical evidence bearing on how leaders obtain and use causal information will
 allow for more effective interventions to help leaders identify high-quality causal
 information. This research will also help to determine whether leader causal analysis is, in fact, a critical leader competency underlying leader performance.
 
-116 David R. Peterson
+### References
 
-References
 Abrahamson, E. (1996). Management fashion. Academy of Management Review, 21, 254–285.
 Abramson, L. Y., Seligman, M. E., & Teasdale, J. D. (1978). Learned helplessness in humans:
 Critique and reformulation. Journal of Abnormal Psychology, 87, 49–74.
@@ -5184,10 +4727,6 @@ focal sets. In D. R. Shanks, K. J. Holyoak, & D. L. Medin (Eds.), Causal learnin
 pp. 313–355). San Diego, CA: Academic Press.
 Cooper, R., & Foster, M. (1971). Sociotechnical systems. American Psychologist, 26, 467–474.
 
-How Leaders Apply Causal Information
-
-117
-
 Corbin, J. (2017, March 7). The Gallup 2017 employee engagement report is out: And the
 results . . . nothing has changed—Mobile employee communications and engagement
 app. Retrieved from www.theemployeeapp.com/gallup-2017-employee-engagementreport-results-nothing-changed/
@@ -5228,8 +4767,6 @@ Hayes-Roth, B., & Hayes-Roth, F. (1979). A cognitive model of planning. Cognitiv
 3, 275–310.
 Hershey, D. A., Walsh, D. A., Read, S. J., & Chulef, A. S. (1990). The effects of expertise on
 financial problem solving: Evidence for goal-directed, problem-solving scripts. Organizational Behavior and Human Decision Processes, 46, 77–101.
-
-118 David R. Peterson
 
 Hester, K. S., Robledo, I. C., Barrett, J. D., Peterson, D. R., Hougen, D. P., Day, E. A., . . .
 Mumford, M. D. (2012). Causal analysis to enhance creative problem-solving: Performance and effects on mental models. Creativity Research Journal, 24, 115–133.
@@ -5272,10 +4809,6 @@ Marcy, R. T., & Mumford, M. D. (2007). Social innovation: Enhancing creative per
 Marcy, R. T., & Mumford, M. D. (2010). Leader cognition: Improving leader performance
 through causal analysis. Leadership Quarterly, 21, 1–19.
 Marta, S., Leritz, L. E., & Mumford, M. D. (2005). Leadership skills and the group performance: Situational demands, behavioral requirements, and planning. Leadership Quarterly, 16, 97–120.
-
-How Leaders Apply Causal Information
-
-119
 
 Martinko, M. J., & Gardner, W. L. (1987). The leader/member attribution process. Academy
 of Management Review, 12, 235–249.
@@ -5322,8 +4855,6 @@ D. L. Medin (Eds.), Causal learning (Vol. 34, pp. 393–435). San Diego, CA: Aca
 Perales, J., & Catena, A. (2006). Human causal induction: A glimpse at the whole picture.
 European Journal of Cognitive Psychology, 18, 277–320.
 
-120 David R. Peterson
-
 Preacher, K. J., & Hayes, A. F. (2008). Contemporary approaches to assessing mediation in communication research. In A. F. Hayes, M. D. Slater, & L. B. Snyder (Eds.), The Sage sourcebook of
 advanced data analysis methods for communication research (pp. 13–54). Thousand Oaks, CA: Sage.
 Ree, M. J., & Earles, J. A. (1992). Intelligence is the best predictor of job performance. Current Directions in Psychological Science, 1, 86–89.
@@ -5362,10 +4893,6 @@ Strange, J. M., & Mumford, M. D. (2005). The origins of vision: Effects of refle
 Strange, J. M., & Mumford, M. D. (2013). Vision and mental models: The case of charismatic
 and ideological leadership. In B. J. Avolio & F. J. Yammarino (Eds.), Transformational and
 
-How Leaders Apply Causal Information
-
-121
-
 charismatic leadership: The road ahead (Vol. 5, 10th anniv. ed., pp. 125–158). Bingley, UK:
 Emerald Group Publishing.
 Vessey, W. B., Barrett, J., & Mumford, M. D. (2011). Leader cognition under threat: “Just
@@ -5390,12 +4917,9 @@ Part A: Systems and Humans, 27, 313–324.
 Zhao, X., Lynch, J. G., & Chen, Q. (2010). Reconsidering Baron and Kenny: Myths and
 truths about mediation analysis. Journal of Consumer Research, 37, 197–206.
 
-5
-THINKING ABOUT CAUSES
-How Leaders Identify the Critical Variables
-to Act On
-Michael D. Mumford, Cory A. Higgs,
-Erin Michelle Todd, and Samantha Elliott
+## Chapter 5: Thinking About Causes: How Leaders Identify the Critical Variables to Act On
+
+*Michael D. Mumford, Cory A. Higgs, Erin Michelle Todd, and Samantha Elliott*
 
 Consider some of the things leaders must do on the job. They must appraise the
 reasons for drops in the quality of production. They must appraise how budget
@@ -5420,13 +4944,10 @@ truly exceptional causal analysis skill (Marcy & Mumford, 2010). In the present
 effort we examine what we know about the impact of causal analysis skills on
 leader performance. Subsequently, we examine how leaders should work with
 
-Thinking About Causes
-
-123
-
 causes as they seek to formulate solutions to the many varied problems that influence individual, team, and firm performance (Mumford et al., 2007).
 
-Causes and Leadership
+### Causes and Leadership
+
 People, including many scholars, assume that leaders simply make decisions
 (Snowden & Boone, 2007), typically decisions about when, where, and how to
 exercise influence (Bass & Bass, 2008; Yukl, 2011). What must be recognized
@@ -5450,7 +4971,8 @@ to presumed causes of the event because assumptions made about causation help
 people to identify the actions likely to bring about goal attainment (Weick, 1995).
 Thus, peoples’ tendency to understand events based on presumed causes is, ultimately, an adaptive activity.
 
-Causation and Leadership Styles
+### Causation and Leadership Styles
+
 Our foregoing observations suggest that leaders, as they attempt to make sense of
 events, will impose assumptions about the likely causes of events. In fact, it can
 be argued that the nature of the assumptions people make about the causes of
@@ -5458,8 +4980,6 @@ events in sensemaking reflect not just the objective attributes of the event, bu
 also cumulative life experience (Ligon, Hunter, & Mumford, 2008). The preferences people have to apply to different causes, and/or different types of causes, in
 explaining events represent styles of thinking (Tyler, 1964). Mumford (2006) has,
 in fact, argued the major styles of leadership we talk about, charismatic, ideological,
-
-124 Michael D. Mumford et al.
 
 and pragmatic leadership (Weber, 1947), are based, in part, on assumptions leaders
 make about the nature of causes and how they operate to shape events.
@@ -5497,15 +5017,12 @@ respect to their status on these two key types of causes—the locus of causatio
 (people, situation, or both) and the controllability of causes (controllable, uncontrollable, or mixed). They found that charismatic leaders saw people as causes with
 those causes being controllable. Ideological leaders, in contrast, saw situational
 
-Thinking About Causes
-
-125
-
 variables as the key causes operating. Pragmatic leaders, however, were more likely
 to see both people and situational variables as causes with some, but not all, causes
 being subject to control by the leader.
 
-Causation and Mental Models
+### Causation and Mental Models
+
 The findings obtained by Mumford, Hunter, and colleagues (e.g., Hunter et al.,
 2011; Mumford, 2006) clearly indicate the assumptions leaders make about causation have a wide-ranging impact on leader behavior. Mumford (2006) and
 Strange and Mumford (2002) have argued that assumptions leaders make about
@@ -5538,8 +5055,6 @@ Mental models, however, have a number of other advantageous characteristics. Fir
 specifying causes to be investigated and, vis-à-vis associated cases and experience,
 thereby suggesting actions to be taken. Second, mental models permit rapid
 directed and adaptive responses to emergent crises—crises which leaders are typically held to account (Mumford et al., 2007). Third, they provide a structure for
-
-126 Michael D. Mumford et al.
 
 follower actions which allow followers to maintain autonomy when actions occur
 in the context of the model being articulated by the leader (Mumford, 2006).
@@ -5577,10 +5092,6 @@ have negative effects, (4) think about causal interdependence.
 Four key findings emerged from this study. First, those participants who evidenced stronger mental models prior to starting work on the problem produced
 solutions of better quality, originality, and elegance. Second, instruction in causal
 
-Thinking About Causes
-
-127
-
 analysis strategies also resulted in the production of higher quality, more original,
 and more elegant problem solutions. Third, the value of causal analysis instruction
 interacted with participants’ mental models with causal analysis training proving more effective for people evidencing stronger mental models. Fourth, training in causal analysis strategies appeared to result in acquisition of stronger post
@@ -5588,7 +5099,8 @@ problem-solving mental models. Thus, analysis of causes appears to give rise to
 acquisition of stronger mental models—mental models that provide a basis for
 leaders’ formation of a vision (Partlow et al., 2015).
 
-Causal Analysis
+### Causal Analysis
+
 The Hester et al. (2012) study, however, brings to fore a new question—how do
 people work with causes embedded in their mental models? An initial answer to
 this question has been provided in a study by Strange and Mumford (2005). They
@@ -5613,8 +5125,6 @@ were, or were not, asked to work through self-paced instructional modules. These
 modules defined, provided practice applying, and gave feedback concerning seven
 potentially viable strategies for analyzing causes: (1) work with causes that can be
 manipulated, (2) work with causes that influence multiple outcomes, (3) work
-
-128 Michael D. Mumford et al.
 
 with causes that have large effects, (4) work with causes that can be controlled,
 (5) work with causes that have synergistic effects, (6) work with causes that work
@@ -5652,15 +5162,12 @@ Moreover, causal analysis, and reflection and deliberation on key causes, contri
 models for understanding leadership issues. Notably, these mental models provide a basis not only for leader planning and forecasting (Mumford, Mecca, &
 Watts, 2015), but provide a basis for the construction of viable vision statements
 
-Thinking About Causes
-
-129
-
 which have long been held to be a critical feature of effective leadership. Thus, the
 available evidence, in fact, indicates analysis of causes, and the causal analysis skills
 contributing to effective analysis, are likely a critical skill underlying both movement into leadership roles (e.g., emergence) and viable performance in these roles.
 
-Applying Causal Analysis Skills
+### Applying Causal Analysis Skills
+
 Our foregoing observations, taken as a whole, indicate that causal analysis skills are
 a critical capacity underlying leader performance. Indeed, causal analysis skills are
 not only likely critical to performance, they may become an ever more important influence on leader performance as leaders advance to higher level positions
@@ -5678,7 +5185,8 @@ causes, potential answers to those seven basic questions may lay a foundation fo
 future attempts to understanding leaders’ causal analysis and the skills leaders need
 for effective causal analysis.
 
-What Model Should I Apply?
+### What Model Should I Apply?
+
 Causes, and thus causal analysis, are embedded in leaders’ mental models. What
 should be recognized here however, is people, and leaders, do not possess just one
 mental model. Thus, a leader may have a mental model of follower performance
@@ -5694,8 +5202,6 @@ have different goals in any situation. As a result, it seems reasonable to expec
 that the goals activating application of a particular mental model in any situation
 will be those of high value stakeholders. What is of note here, however, is that
 high-value stakeholders are defined, in part, as a function of experience and, in
-
-130 Michael D. Mumford et al.
 
 part, as a function of institutional enculturation, personal values, and professional
 experience.
@@ -5735,10 +5241,6 @@ and why leaders shift from a goal-based framework for mental model selection
 to another alternative framework for the selection of a mental model. In this
 regard, however, it is important to bear in mind the observations of Weick (1995).
 
-Thinking About Causes
-
-131
-
 More specifically, his observations suggest that selection of an inappropriate mental model for understanding problem situations may have disastrous consequences
 for both the leader and his or her followers.
 
@@ -5775,8 +5277,6 @@ not simply be a result of the leaders’ beliefs. Situations can emerge which cr
 a belief that causes are controllable when, in fact, they are not. This observation is noteworthy because it suggests that successful leaders in causal analysis
 will actively analyze the controllability of causes and will do so in an objective fashion where causal controllability can be empirically established vis-à-vis
 methods such as role modeling, benchmarking, and reflection on personal past
-
-132 Michael D. Mumford et al.
 
 experience. What should also be recognized here, however, is that leaders will
 seek to establish control over key causes to ensure their analysis is meaningful
@@ -5819,10 +5319,6 @@ however, causes are not a fixed set. Thus, leaders will think about causes that
 can be introduced to a system that will amplify the effects of other causes with
 which they are working. For example, a new hire with a unique skill set might
 
-Thinking About Causes
-
-133
-
 be introduced to a team. The introduction of new cause, of course, implies leaders using causal analysis do not just respond to the system as it is, but they may
 actively seek to recreate a system of causal operatives (Mumford & Connelly,
 1991). In other words, leaders are active forces reshaping firms through analysis
@@ -5862,8 +5358,6 @@ Our foregoing observations suggest that although leaders may at times analyze
 causes in a simplistic fashion, for certain problems effective leaders must employ
 a more complex, subtle approach to causal analysis considering multiple causes
 
-134 Michael D. Mumford et al.
-
 operating synergistically where the causes impact multiple outcomes (albeit
 under certain conditions). The complex nature of leaders’ causal analysis, however, broaches another question. How can leaders be sure their analysis of causes
 works? Put differently, how do leaders test their causal analysis? Broadly speaking,
@@ -5901,10 +5395,6 @@ leaders in forecasting suggest that both expertise and implementation intentions
 In fact, Dailey and Mumford (2006) have provided evidence indicating forecasting improves when people have expertise in the domain and believe that actions
 will result from their forecasts.
 
-Thinking About Causes
-
-135
-
 Although forecasts provide leaders with a cognitive approach for appraising
 causes, leaders may also employ an observational approach in appraising the relevance of the causes they have chosen to work with. One approach that might be
 used here is to appraise causes with respect to benchmark cases (e.g., cases drawn
@@ -5939,8 +5429,6 @@ techniques, forecasting and observation, are used in appraising causes. Another
 way leaders might appraise causes, however, is to seek feedback from others concerning their analysis of causes. And, in fact, one might argue that leaders conduct
 meetings with peers, superiors, and followers as a means of seeking feedback bearing on their appraisal of causes (Yukl, 2011). Bearing in mind the many variables
 that influence adoption of social feedback, processing time, feedback clarity, normative framing, social consensus framing, and the status of the people providing
-
-136 Michael D. Mumford et al.
 
 the feedback, there may be some value in leaders seeking social feedback in the
 appraisal of causes.
@@ -5978,10 +5466,6 @@ their evaluations of a specific or particular causes significance.
 Although these efforts may vary as a function of leadership styles (Mumford &
 Van Doorn, 2001), they do have some noteworthy implications for understanding leader behavior. To begin, leaders’ visions are based on their mental models
 and the causal relationships embedded in these mental models. As a result, leaders,
-
-Thinking About Causes
-
-137
 
 to protect their vision, may be unwilling to consider alternate mental models.
 Perhaps more centrally, leaders may be inclined to discount counterfactuals or
@@ -6023,8 +5507,6 @@ cause. As a result, leaders’ assessment of the status of causes may be unrelia
 complicate matters further, the diagnostics leaders employ will often be based on
 personal experience. When experience is relevant such diagnostics may result in
 
-138 Michael D. Mumford et al.
-
 the selection of valid appraisals. In many cases, however, the diagnostics employed
 by leaders may have little basis in fact. One way leaders may address these problems, however, is to guide monitoring in a search for patterns of diagnostics with
 patterns being employed more extensively in assessment of causes as ambiguity
@@ -6065,10 +5547,6 @@ plans need to be executed for actions being taken to affect a cause.
 The need for backup plans and monitoring when leaders act on causes, of
 course, implies that leaders, in acting, must be adaptive and flexible. This adaptive
 
-Thinking About Causes
-
-139
-
 flexibility, in turn, implies that leaders when acting on causes must be engaged, in
 real-time, in actions taken with respect to the cause or causes of concern. Such
 engagement, however, comes at a risk. When people act, and act in an environment, deliberation, and thus depth processing, are inhibited (Gollwitzer, 1999).
@@ -6107,8 +5585,6 @@ to prove successful. What should be recognized here, however, is that leaders ma
 need to take preparatory actions—actions intended to ensure appropriate status of
 relevant mediators and moderators. Clearly, these preparatory actions will, in part,
 determine the time at which action on a key cause is likely to prove workable.
-
-140 Michael D. Mumford et al.
 
 Not only must leaders establish conditions where their actions on causes are
 likely to prove effective, they must also bear in mind another issue. Rarely will
@@ -6151,10 +5627,6 @@ change may reflect nothing more than random or seasonal variation (Cook,
 Campbell, & Day, 1979). In fact, in firms where outcomes vary naturally, failure
 to establish the significance of a change vis-à-vis other fluctuations may not only
 
-Thinking About Causes
-
-141
-
 result in inappropriate appraisals of success, it may be used by leaders to justify
 their success based on a non-event.
 Our foregoing observations, of course, point to another concerning appraising the effects of actions on causes with respect to outcomes. Actions in firms are
@@ -6189,12 +5661,11 @@ to the actions they have taken. At one level, the observation points to the need
 for cognitive complexity, and caution, among those asked to lead in firms (Shipman & Mumford, 2011). At another level, however, it provides an explanation for
 the surprise leaders often exhibit after their actions have unintended consequences.
 
-Conclusions
+### Conclusions
+
 Before turning to broader conclusions flowing from the present effort, certain
 limitations should be noted. To begin, we have in the present piece focused on
 how leaders act on and analyze causes. Of course, causal analysis is not the only,
-
-142 Michael D. Mumford et al.
 
 nor necessarily the most important, cognitive skill leaders must employ. Mumford,
 Todd, Higgs, and McIntosh (2017) have noted leaders must also be able to define
@@ -6233,10 +5704,6 @@ performance in both solving leadership problems and acting in leadership roles
 analysis skills represent a key skill making a real contribution to performance in
 leadership roles.
 
-Thinking About Causes
-
-143
-
 Not only have we in the present effort demonstrated the impact of causal
 analysis skills on leader performance, we have addressed two other issues of real
 importance. First, we have examined the kind of knowledge leaders are working with when they analyze causes. More specifically, it appears leaders’ causal
@@ -6265,17 +5732,17 @@ peoples’ potential for filling key leadership roles, allowing for the developm
 of new, potentially highly valid measures for appraising leadership potential. We
 hope the present effort provides an impetus for future work along these lines.
 
-Acknowledgments
+### Acknowledgments
+
 We would like to thank Rich Marcy, Sam Hunter, Katrina Bedell-Avers, Tamara
 Friedrich, and Dawn Eubanks for their contributions in the present effort. Correspondence should be addressed to Dr. Michael D. Mumford, Department
 of Psychology, The University of Oklahoma, Norman, Oklahoma, 73019, or
 mmumford@ou.edu.
 
-References
+### References
+
 Andersen, H., Barker, P., & Chen, X. (2006). The cognitive structure of scientific revolutions.
 Cambridge, UK: Cambridge University Press.
-
-144 Michael D. Mumford et al.
 
 Antes, A. L., & Mumford, M. D. (2012). Strategies for leader cognition: Viewing the glass
 “half full” and “half empty”. Leadership Quarterly, 23, 425–442.
@@ -6316,10 +5783,6 @@ Fleishman, E. A. (1953). The description of supervisory behavior. Journal of App
 Fleishman, E. A., Mumford, M. D., Zaccaro, S. J., Levin, K. Y., Korotkin, A. L., & Hein,
 M. B. (1991). Taxonomic efforts in the description of leader behavior: A synthesis and
 functional interpretation. Leadership Quarterly, 2, 245–287.
-
-Thinking About Causes
-
-145
 
 Gibson, C., & Mumford, M. D. (2013). Evaluation, criticism, and creativity: Criticism
 content and effects on creative problem solving. Psychology of Aesthetics, Creativity, and
@@ -6363,8 +5826,6 @@ Marcy, R. T., & Mumford, M. D. (2007). Social innovation: Enhancing creative per
 Marcy, R. T., & Mumford, M. D. (2010). Leader cognition: Improving leader performance
 through causal analysis. Leadership Quarterly, 21, 1–19.
 
-146 Michael D. Mumford et al.
-
 Marta, S., Leritz, L. E., & Mumford, M. D. (2005). Leadership skills and the group performance: Situational demands, behavioral requirements, and planning. Leadership Quarterly, 16, 97–120.
 McIntosh, T., Mulhearn, T., & Mumford, M. D. (in press). Taking the good with the bad:
 The impact of forecasting timing and valence on idea evaluation and creativity. Psychology of Aesthetics, Creativity, and the Arts.
@@ -6400,10 +5861,6 @@ Mumford, T. V., Campion, M. A., & Morgeson, F. P. (2007). The leadership skills 
 154–166.
 Partlow, P. J., Medeiros, K. E., & Mumford, M. D. (2015). Leader cognition in vision formation: Simplicity and negativity. Leadership Quarterly, 26, 448–469.
 
-Thinking About Causes
-
-147
-
 Rogers, E. M., & Adhikarya, R. (1979). Diffusion of innovations: An up-to-date review
 and commentary. Communication Yearbook, 3, 67–81.
 Rouse, W. B., & Morris, N. M. (1986). On looking into the black box: Prospects and limits
@@ -6436,14 +5893,10 @@ K. Grint, B. Jackson, & M. Uhl-Bien (Eds.), The SAGE handbook of leadership (pp.
 298). Thousand Oaks, CA: Sage.
 Zsambok, C. E., & Klein, G. (2014). Naturalistic decision making. New York, NY: Psychology Press.
 
-6
-LEADERS’ SHIFTS IN ATTENTION
-DURING AN ORGANIZATIONAL
-CRISIS
-Longitudinal Evidence of Responses to a
-Crisis Within a Top Management Team
-Ian A. Combe and David J. Carrington
-Attempting to explain how some firms successfully manage environmental change
+## Chapter 6: Leaders' Shifts in Attention During an Organizational Crisis
+
+*Ian A. Combe and David J. Carrington*
+
 and overcome any subsequent organizational crises by solving complex and
 ambiguous problems has long been an important goal in management research.
 The importance of this research is starkly highlighted by the quest to understand
@@ -6467,10 +5920,6 @@ responsibility to resolve matters. They will have to engage in analytical consci
 deliberations under time pressure, stress, and fatigue, which will invariably reduce
 attention capacity (Mumford, Friedrich, Caughron, & Byrne, 2007). Negative
 emotions may also reduce attention capacity (Collins & Jackson, 2015). Therefore,
-
-An Organizational Crisis
-
-149
 
 the novelty and complexity faced during a crisis may overwhelm their limited
 attention capacity (Kahneman, 1973).
@@ -6510,8 +5959,6 @@ experiential learning (Salas et al., 2010), it is very likely that diversity in 
 allocation will be a feature of leadership teams grappling with a crisis.
 There is limited longitudinal empirical research to help understand how leaders shift their attention during organizational crises. Combe and Carrington
 
-150 Ian A. Combe and David J. Carrington
-
 (2015) and Carrington, Combe, and Mumford (2019) provide rare examples of
 changes to leaders’ mental models as they resolve an organizational crisis over
 time. In this chapter we build on this work and report on shifts in attention within
@@ -6523,7 +5970,8 @@ how to deal with a crisis will be lacking. This may delay organizational change
 and exacerbate the organizational crisis, and in a worse-case scenario, lead to
 company failure.
 
-Individual Differences in Selective Attention
+### Individual Differences in Selective Attention
+
 In an early study, Dearborn and Simon (1958) provided evidence of differences
 in managers’ selective attention based on the functional departmental background within a single firm. When standardizing for a competitive situation in
 an experimental research design, managers within the same firm were found to
@@ -6550,10 +5998,6 @@ attention.
 In taking an attention-based perspective we contribute to understanding of
 how individuals within a top management team can focus their attention on different issues in their responses to resolve a crisis.
 
-An Organizational Crisis
-
-151
-
 In attempting to make sense of an environmental change, which often precedes
 organizational crises, the process starts with scanning, monitoring, and information gathering (Mumford et al., 2007). However, this process is not explained
 merely by rational decision making because leaders are prone to errors and biases
@@ -6568,7 +6012,8 @@ information when evaluating opportunities (Li et al., 2013). Therefore, it is po
 change that is likely to produce a crisis, to be forewarned, is only one significant
 challenge for leaders. Another, even more important challenge, is directing attention to a particular response to overcome an organizational crisis when it occurs.
 
-Errors in Leaders’ Decision Making
+### Errors in Leaders' Decision Making
+
 Decision-making errors within leaders and their influence on leaders’ performance has been discussed by scholars such as Mumford et al. (2007) and investigated by Eubanks and Mumford (2010). These authors point to a series of errors
 that can influence leaders’ performance, especially when facing complex and
 ambiguous problems involving time pressure and stress associated with resolving
@@ -6587,8 +6032,6 @@ However, a considerable dilemma is set up for firms facing a crisis. Research
 suggests that there are advantages when leader’s attention within a top management team is directed in different ways, but this diversity is likely to reduce the
 chance of consensus required to resolve the crisis. To address this dilemma leaders need to direct their attention in different ways to make sense of a crisis. After
 
-152 Ian A. Combe and David J. Carrington
-
 sensemaking, leaders need to suggest alternative strategic options, but then form
 consensus and collectively direct their attention to implementing the best option
 to resolve the crisis. Problems can occur when leaders focus on outcomes too
@@ -6597,7 +6040,8 @@ early as this may undermine a thorough analysis thereby giving rise to errors
 emergency and military contexts, can evolve incrementally, forming consensus
 around a vision for the future can take some time.
 
-Mental Models, Sensemaking, and Vision Formation
+### Mental Models, Sensemaking, and Vision Formation
+
 To address the complexity faced when attempting to resolve a crisis, individuals
 construct mental models as simplified representations of their world so that they
 are not overwhelmed by data (Daft & Weick, 1984; Walsh, 1988). Mental models
@@ -6628,12 +6072,8 @@ Mumford, 2005). The development of a new prescriptive mental model is critical,
 because the stability of leaders’ cognition in the face of a changing external environment has been found to be a contributor to inertia and organizational failure
 (Barr et al., 1992; Hodgkinson, 1997).
 
-An Organizational Crisis
+### Attentional Demands and Information Processing in Decision Making
 
-153
-
-Attentional Demands and Information
-Processing in Decision Making
 Judgments under uncertain conditions, such as those thrown up by an organizational crisis, have long been an important topic for research (see Tversky &
 Kahneman, 1980). Experimental evidence suggests that individuals usually think
 in terms of causes and effects and have more confidence in causal predictions
@@ -6661,25 +6101,25 @@ up unique problems where past experience may be of little help. In these situati
 thinking skills, or the ability to evaluate evidence and arguments independently of
 prior beliefs, may be required (West, Toplak, & Stanovich, 2008).
 
-Leaders’ Shifts in Attention During
-an Organizational Crisis
+### Leaders' Shifts in Attention During an Organizational Crisis
+
 Currently, there is limited research on how the attention of leaders within a top
 management team is directed to similar or different issues when resolving an
 organizational crisis within a real-life setting. There is an expectation, based on
 
-154 Ian A. Combe and David J. Carrington
-
 prior research, that the different levels of past experience and different experiential knowledge will influence the way attention is directed within a top management team when resolving a crisis. In this chapter we provide an overview of our
 longitudinal data to explore this issue.
 
-Method
+### Method
+
 We investigated attention in the leaders when responding to a cumulative crisis
 using a single case study method (see Yin, 2013), which would provide rich data
 on the complexities in cognition at an individual level (see Bougon, Weick, &
 Binkhorst, 1977; Combe & Carrington, 2015; Hodgkinson & Johnson, 1994;
 Markóczy, 1997; Wacker, 1981; Walsh, 1988; Weick, 1979).
 
-Case Study/Context
+### Case Study/Context
+
 The chosen case study firm was a not-for-profit organization that for the purposes
 of this research was anonymously named Health Change UK. The organization operates in the United Kingdom’s health sector, which over recent years has
 undergone dramatic changes. These changes were due to major political reforms
@@ -6713,20 +6153,10 @@ New UK Majority Government
 Lost XXX Contract (Service D—15% of turnover*)
 Data Collection—Phase 3
 
-2011
-
-2012
-
 2013
 2014
 
-2015
-
 * Approximate % of turnover at the time contract was won or lost
-
-An Organizational Crisis
-
-155
 
 sector’s principle funding source). There was deregulation allowing for increased
 competition from the private sector and this radical change eventually led to a
@@ -6768,14 +6198,10 @@ This technique is used to standardize the production of cognitive maps which
 is vital when they are to be compared and contrasted. In stage 2, these ten factors
 are used to generate cognitive maps in real time by asking each participant to
 
-156 Ian A. Combe and David J. Carrington
-
 Employee
 relationships
 
 Internal efficiency
-
-2
 
 3 3
 Developing staff
@@ -6795,16 +6221,10 @@ Service quality
 Targeting new
 funders
 
-1
-
-2
-
 Relationships with
 partner agencies
 
 3 3
-
-3
 
 2
 Innovative
@@ -6833,10 +6253,6 @@ top management team individual differences between pairs of maps were analyzed
 by Markóczy and Goldberg (1995) is a development of formula 12 proposed by
 Langfield-Smith and Wirth (1992). This provides a statistical value between individual maps so each participant’s cognitive map was individually compared to the
 other participants. Therefore, the dataset of four top managers across three phases
-
-An Organizational Crisis
-
-157
 
 resulted in 66 pairs of distances calculated. Following Markóczy and Goldberg
 (1995), if a value of 0 is present then the maps are exactly identical whereas a
@@ -6877,7 +6293,6 @@ necessarily shift; it just becomes more focused.
 However, attention shifts greatly between Phases 2 and 3, with three members
 of the top management team moving further away from both of the initial phases.
 
-0.000
 0.971
 0.686
 0.784
@@ -7004,24 +6419,14 @@ CTM02
 
 CTM03
 
-0.000
-
 CTM04
-
-An Organizational Crisis
-
-159
 
 Object Points
 Common Space
 
-1.0
-
 CTM03
 
 Dimension 2
-
-0.5
 
 ATM01
 BTM03
@@ -7054,13 +6459,7 @@ ATM04
 
 –0.5
 
-0.0
-
 CTM01
-
-0.5
-
-1.0
 
 Dimension 1
 FIGURE 6.2 MDS of the Top Management Team Over Three Phases
@@ -7080,8 +6479,6 @@ factors shared by other top managers across the three phases. This central posit
 reflects the convergence towards the middle ground of attention within the top
 management team across the three phases. This is also demonstrated by TM02’s
 shift in attention from right to left. This is the only top manager who makes this
-
-160 Ian A. Combe and David J. Carrington
 
 continuous movement over the three phases. Therefore, the data indicates that this
 top manager has moved towards a more neutral and collective position. However,
@@ -7133,42 +6530,12 @@ TM04
 
 Total
 
-23
-
-17
-
-3
-
-3
-
-3
-
-3
-
-3
-
-3
-
 Target focused
 
 3
 3
 
-3
-
-5
-
-5
-
-5
-
 3 3
-
-2
-
-3
-
-3
 
 2
 3 3
@@ -7177,12 +6544,6 @@ Control of service
 costs
 
 3 3
-
-4
-
-6
-
-2
 
 Planning ahead
 
@@ -7197,36 +6558,14 @@ Planning ahead
 6
 6
 
-2
-
-2
-
 2 2
 
-3
-
-1
-
-3
-
 Internal efficiency
-
-6
-
-3
-
-3
-
-3
 
 Employee
 relationships
 
-2
-
 Motivation of staff
-
-2
 
 Relationships with
 partner agencies
@@ -7240,8 +6579,6 @@ analysis
 
 Service quality
 
-3
-
 Measuring customer
 achievements
 
@@ -7249,8 +6586,6 @@ achievements
 
 Helping clients
 achieve recovery
-
-162 Ian A. Combe and David J. Carrington
 
 analysis starts to demonstrate that from the onset of the crisis the top management
 team were divided on how to respond to the crisis. Despite the majority (i.e.,
@@ -7289,10 +6624,6 @@ phase of data collection as the crisis evolved further. Table 6.4 shows the shar
 and different beliefs for each top manager while Figure 6.4 is the shared cognitive
 map of the top management team in Phase 2.
 
-An Organizational Crisis
-
-163
-
 TABLE 6.4 Shared and Different Beliefs in Phase 2
 
 Shared
@@ -7315,10 +6646,6 @@ TM04
 4
 
 Total
-
-27
-
-13
 
 Earlier analysis demonstrated that the top management team by Phase 2 had
 built consensus and became more unified around some of the shared beliefs from
@@ -7347,10 +6674,6 @@ Figure 6.5 is the shared cognitive map of the top management team in Phase 3.
 In the third phase of data collection we observe a universal belief within the
 top management team, of the need to target new funders to respond to the cumulative crisis. This was not surprising following a further significant loss of contracts
 
-3
-
-6
-
 Motivation of staff
 
 3
@@ -7358,16 +6681,6 @@ Motivation of staff
 
 3 3
 
-3
-
-6
-
-6
-
-6
-
-3
-
 3 3
 
 5
@@ -7378,33 +6691,17 @@ Motivation of staff
 6
 2
 
-2
-
-2
-
 2 2
 
 Measuring customer
 achievements
 
-2
-
-6
-
 Service quality
 
-1
-
-3
-
-5
-
 3
 3
 
 3
-3
-
 3
 
 Innovative
@@ -7419,8 +6716,6 @@ Helping clients
 achieve recovery
 1
 
-3
-
 Targeting new
 funders
 
@@ -7433,15 +6728,7 @@ relationships
 
 Developing staff
 
-2
-
-3
-
 Internal efficiency
-
-An Organizational Crisis
-
-165
 
 TABLE 6.5 Shared and Different Beliefs in Phase 3
 
@@ -7466,10 +6753,6 @@ TM04
 
 Total
 
-21
-
-19
-
 and revenue immediately prior to this phase of data collection. The loss of these
 contracts nearly halved the amount financial income generated by the company.
 Consequently, in such a short period of time a radical decline in revenue of this
@@ -7482,7 +6765,8 @@ streams, the means or strategies used to do so remains mixed. The attention is
 divided between the importance of staff (motivation and development), competition (service differentiation and price differentiation), innovation, promotion, and
 the building resources for the future.
 
-Discussion of Findings
+### Discussion of Findings
+
 This empirical research has made the following contributions to understanding
 shifts in attention in the leaders within a top management team during a response
 to a crisis over time.
@@ -7498,28 +6782,13 @@ consensus over time (Combe & Carrington, 2015; Kilduff et al., 2000; Markóczy,
 in time; beginning and end. The inclusion of a midpoint in the data collection
 has allowed for a more detailed understanding of longitudinal analysis of convergence ( Jehn & Mannix, 2001). However, these observed fluctuations between
 
-Innovative
 services
 
 3
 2 3
 
-3
-
 Price differentiation
 from competitors
-
-3
-
-6
-
-3
-
-3
-
-3
-
-3
 
 Promoting the
 service
@@ -7529,24 +6798,14 @@ service
 
 Planning ahead
 
-3
-
 Differentiation of services
 from competitors
 
-3
-
-3
-
 2 2
-
-6
 
 Motivation of staff
 
 3 6
-
-2
 
 3 3
 
@@ -7556,24 +6815,16 @@ Boxes; Majority Shared Beliefs (3 out of 4) = Grey Boxes; Partially Shared Belie
 
 FIGURE 6.5 Aggregated Cognitive Map of Shared Beliefs Within the Top Management Team. Unanimously Shared Beliefs (4 out of 4) = Black
 
-3
-
 Building resources
 for the future
 
 3 3
 
 6
-
-6
 6
 
 Targeting new
 funders
-
-An Organizational Crisis
-
-167
 
 three phases over four years must be met with some caution, because this was an
 ongoing crisis so identifying its beginning and end is problematic.
@@ -7613,8 +6864,6 @@ et al., 2007) or internally, through recent poor performance (Kilduff et al., 20
 However, it is difficult to differentiate which of the two are effecting the levels of
 diversity in this case, or whether it is combination of both, as they are not mutually exclusive. The stabilizing of the industry and better understanding of the crisis
 
-168 Ian A. Combe and David J. Carrington
-
 by the second phase may have resulted in a possible movement towards building
 consensus. This is coupled with stronger financial performance through the winning of additional contracts. However, after the midpoint in data collection, the
 external environment destabilizes further and also financial revenues fall more
@@ -7625,7 +6874,8 @@ heightened consensus by the midpoint, it becomes clear that this was only tempor
 within the organization. Additionally, the research provides further evidence that
 organizational crises are not static one-off events, but perpetuating cascading situations that have lasting implications.
 
-Limitations
+### Limitations
+
 The case study is based on a cumulative type of crisis and its implications over
 a four year period. In contrast, sudden and abrupt crises can emerge within
 hours and require an immediate response (Hwang & Lichtenthal, 2000; James &
@@ -7652,10 +6902,6 @@ aware of individual differences in the focus of attention that can occur within 
 management team when sensemaking and putting forward resolutions to crises
 over time. We contend that a major implication of our findings is that leaders
 need to reflect on their individual differences as a first step to discussions for
-
-An Organizational Crisis
-
-169
 
 consensus building around a vision for the future. The standardized cognitive
 mapping technique we have employed here can be used to highlight both similarities and differences in individuals’ focus of attention. Understanding where the
@@ -7691,8 +6937,6 @@ used by participants. There is no limit set as to the number of beliefs included
 in a cognitive map. The standardized more nomothetic approach used in this
 current study involves presenting the same large pool of a priori beliefs so that
 participants chose the ten most important to them. The approach, using sorting technique as a basis for producing hand drawn causal cognitive maps in real
-
-170 Ian A. Combe and David J. Carrington
 
 time during face-to-face interviews, takes approximately 20 minutes to produce a
 cognitive map. There is less potential for interviewer bias as no direct communication occurs between the interviewer and participants. The input into Cognizer
@@ -7761,11 +7005,8 @@ Consensus building by highlighting and
 reflecting on individual similarities and
 differences
 
-An Organizational Crisis
+### Future Research
 
-171
-
-Future Research
 Future research could investigate leaders’ attention in multiple case studies to cross
 reference or embark on a large-scale quantitative research design exploring different industries, sectors, and contexts such as stable and turbulent environments
 exploring different types of crises (abrupt versus cumulative).
@@ -7778,7 +7019,8 @@ CEO (Bromiley & Rau, 2016). As a result, additional empirical research could
 help understand the power dynamics that play a part in vision formation and
 action to resolve crises within top management teams.
 
-References
+### References
+
 Ackermann, F., & Eden, C. (2011). Negotiation in strategy making teams: Group support systems and the process of cognitive change. Group Decision and Negotiation, 20(3),
 293–314.
 Akrivou, K., & Bradbury-Huang, H. (2011). Executive catalysts: Predicting sustainable
@@ -7806,8 +7048,6 @@ Collins, M. D., & Jackson, C. J. (2015). A process model of self-regulation and 
 How attentional resource capacity and negative emotions influence constructive and
 destructive leadership. Leadership Quarterly, 26, 386–401.
 Combe, I. A., & Carrington, D. J. (2015). Leaders’ sensemaking under crises: Emerging cognitive consensus over time within management teams. Leadership Quarterly, 26, 307–322.
-
-172 Ian A. Combe and David J. Carrington
 
 Cowan, N. (1988). Evolving conceptions of memory storage, selective attention, and their
 mutual constraints within the human information-processing system. Psychological Bulletin, 104, 163–191.
@@ -7846,10 +7086,6 @@ Hitt, M. A., Dacin, M. T., Tyler, B. B., & Park, D. (1997). Understanding the di
 in Korean and US executives’ strategic orientations. Strategic Management Journal, 18,
 159–167.
 Hodgkinson, G. P. (1997). Cognitive inertia in a turbulent market: The case of UK residential estate agents. Journal of Management Studies, 34, 921–945.
-
-An Organizational Crisis
-
-173
 
 Hodgkinson, G. P., & Johnson, G. (1994). Exploring the mental models of competitive strategists: The case for a processual approach. Journal of Management Studies, 31,
 525–552.
@@ -7894,8 +7130,6 @@ Li, Q., Maggitti, P. G., Smith, K. G., Tesluk, P. E., & Katila, R. (2013). Top m
 attention to innovation: The role of search selection and intensity in new product
 introductions. Academy of Management Journal, 56, 893–916.
 
-174 Ian A. Combe and David J. Carrington
-
 Marcy, R. T., & Mumford, M. D. (2010). Leader cognition: Improving leader performance
 through causal analysis. Leadership Quarterly, 21, 1–19.
 Markóczy, L. (1997). Measuring beliefs: Accept no substitutes. Academy of Management Journal, 40, 1228–1242.
@@ -7938,10 +7172,6 @@ Strange, J. M., & Mumford, M. D. (2005). The origins of vision: Effects of refle
 Taylor, S. E., Pham, L. B., Rivkin, I. D., & Armor, D. A. (1998). Harnessing the imagination:
 Mental simulation, self-regulation, and coping. American Psychologist, 53, 429.
 
-An Organizational Crisis
-
-175
-
 Teece, D. J. (2007). Explicating dynamic capabilities: The nature and microfoundations of
 (sustainable) enterprise performance. Strategic Management Journal, 28, 1319–1350.
 Tegarden, D. P., Tegarden, L. F., & Sheetz, S. D. (2009). Cognitive factions in a top management team: Surfacing and analyzing cognitive diversity using causal maps. Group
@@ -7964,12 +7194,9 @@ critical thinking: Associations with cognitive ability and thinking dispositions
 Educational Psychology, 100, 930–941.
 Yin, R. K. (2013). Case study research: Design and methods (5th ed.). London: Sage.
 
-7
-CREATIVE PROBLEM SOLVING
-Processes, Strategies, and
-Considerations for Leaders
-Kelsey E. Medeiros, Belinda C. Williams,
-and Adam Damadzic
+## Chapter 7: Creative Problem Solving: Processes, Strategies, and Considerations for Leaders
+
+*Kelsey E. Medeiros, Belinda C. Williams, and Adam Damadzic*
 
 Creativity, once ascribed primarily to those with great artistic or inventive talent
 such as that of Pablo Picasso or Maya Angelou, has since been recognized by both
@@ -7992,10 +7219,6 @@ The CEO at the time, David Novak, recalled:
 The bottlers told me, “David, it’s a great idea, and we think we can make
 it great, but it needs to taste more like Pepsi,” Novak said. And I didn’t
 
-Creative Problem Solving
-
-177
-
 want to hear it. I was rolling the thing out nationally and I didn’t listen
 to them.
 (Pollack, 2007)
@@ -8015,7 +7238,8 @@ so. Thus, the present chapter focuses on these processes as well as the individu
 differences and cross-process cognitive strategies necessary for facilitating creative
 problem solving and, more broadly, effective leadership.
 
-Leader Creative Problem Solving
+### Leader Creative Problem Solving
+
 Even outside of innovative efforts, leaders are often faced with novel, rapidly
 evolving problems that require creative problem-solving skills in order to generate viable solutions (Mumford & Connelly, 1991; Mumford et al., 2000; ReiterPalmon & Illes, 2004; Mumford, Todd, Higgs, & McIntosh, 2017). It is during
 these situations, compared to more routine problems, where leadership becomes
@@ -8029,8 +7253,6 @@ Grant, 1974; Chusmir & Koberg, 1986; Sinetar, 1985; Covington, 1987; Zaccaro et 
 relationship between creative problem solving and leadership across a range of
 performance criteria.
 For instance, Simonton (1988) examined the characteristics of US presidents and performance outcomes. Presidential biographies, in conjunction with
-
-178 Kelsey E. Medeiros et al.
 
 previous data, were analyzed to identify themes in presidential leadership. Simonton identified five dimensions related to presidential style, including creativity.
 Although scores on all dimensions were uniquely related to performance and
@@ -8066,10 +7288,6 @@ Lastly, a critical study by Vincent, Decker, and Mumford (2002), examined
 the influence of divergent thinking, intelligence, and expertise on leader creative
 problem solving, and performance. Using a sample of 110 military leaders in the
 
-Creative Problem Solving
-
-179
-
 US Army, the researchers found that divergent thinking, intelligence, and expertise did not directly predict leader performance. However, a mediating relationship was identified, such that these attributes predicted problem-solving activities
 (i.e., idea generation, implementation planning), which, in turn, predicted creative
 problem solving and performance. This finding highlights the importance of both
@@ -8094,7 +7312,8 @@ engage. This is followed by individual differences related to creative problem s
 execute the creative problem-solving process. Lastly, methods for intervening in
 leader creative problem solving are discussed.
 
-Creative Problem-Solving Processes
+### Creative Problem-Solving Processes
+
 Creative problem solving, by nature, is complex, requiring the execution of a
 dynamic set of processes and skills. Similar to other complex problems, it can
 be best understood through the use of process models (Mumford, Medeiros, &
@@ -8105,8 +7324,6 @@ Each process relies on the previous process and often cycles back at the conclus
 execution of earlier processes, necessitating that each process be carried out with
 thought and care.
 
-180 Kelsey E. Medeiros et al.
-
 Multiple models of creative problem solving have been presented and discussed
 over the years (e.g., Amabile, 1996; Lubart, 2001; Mumford et al., 1991; Osborn,
 1952; Treffinger & Isaksen, 1992). Generally, these models all contain four similar,
@@ -8115,7 +7332,8 @@ idea evaluation. However, Mumford et al. (1991) discussed an additional four pro
 leaders to understand how to navigate eight key processes: problem identification,
 information gathering, concept selection, conceptual combination, idea generation, idea evaluation, implementation planning, and solution monitoring.
 
-Problem Identification
+### Problem Identification
+
 A key feature of creative problem solving is that the problem is inherently illdefined. Thus, leaders often face novel problems that require active processing to
 identify and structure. Reiter-Palmon and Robinson (2009) reviewed the literature in this area and strongly argued for the importance of problem identification for creativity. Indeed, several studies have argued for, and established the link
 between, active engagement and training, in problem identification and creative
@@ -8134,16 +7352,13 @@ problem may shift or change, and the leader is responsible for redefining the pr
 to incorporate into their problem definition. This leads to the second key process:
 information gathering.
 
-Information Gathering
+### Information Gathering
+
 At times, information gathering is discussed without definition, as the phrase
 tends to speak for itself. Generally, however, information gathering refers to the
 process by which individuals collect information either on their own or collaboratively (Mumford, Baughman, Supinski, & Maher, 1996). This is accomplished by
 searching both the external and internal environment for information and cues
 bearing on the problem at hand. During this process, it is important that leaders
-
-Creative Problem Solving
-
-181
 
 identify key facts and look for anomalies in the information gathered (Mumford
 et al., 1996). In other words, leaders must search for patterns in the information
@@ -8158,7 +7373,8 @@ and importance of this information may change as the problem definition and
 other problem characteristics change. Thus, it is important that leaders remain
 flexible in their thinking when working through this process (and others).
 
-Concept Selection
+### Concept Selection
+
 Concept selection refers to the extraction of pertinent concepts from the information gathered (Mumford et al., 1991, 1996). Thus, leaders must be able to identify key concepts from the information presented. Another manner of explaining
 concept selection is through categorization of knowledge or information. Leaders
 may create categories and group together those that are similar while eliminating
@@ -8174,11 +7390,10 @@ structured in a practical manner that allows for the application of these princi
 to the problem at hand. Once a structure has been imposed, these concepts can be
 combined to begin the generation of new knowledge, ideas, and solutions.
 
-Conceptual Combination
+### Conceptual Combination
+
 Referring to the combination or reorganization of two or more existing concepts, conceptual combination is the process by which individuals reshape and
 reorganize existing information to create new cognitive structures (Mumford,
-
-182 Kelsey E. Medeiros et al.
 
 Connelly, & Gaddis, 2003). By combining existing concepts, leaders lay the
 groundwork for generating new and novel solutions. Indeed, early studies by
@@ -8216,10 +7431,6 @@ manner in which the problem is defined will influence idea generation activities
 and also provides a framework by which to evaluate the potential viability of
 solutions generated.
 
-Creative Problem Solving
-
-183
-
 Idea Evaluation
 Although previous conceptions of creativity held idea evaluation as an unnecessary, negative component of creative thinking which inhibited idea generation (Runco, 2003), research has continuously challenged this notion, finding
 idea evaluation to be essential for creative problem solving, especially for leaders
@@ -8254,8 +7465,6 @@ stimulate new ideas to overcome potential problems (Osburn & Mumford, 2006).
 Planning begins with a search for information related to goals of the problem
 at hand (Earley & Perry, 1987; Thomas & McDaniel, 1990). A key piece of information gathered during this process is information bearing on constraints relevant
 to the implementation process such as production capabilities and resources. In
-
-184 Kelsey E. Medeiros et al.
 
 other words, when planning, a leader must consider the practicalities of implementing their idea and address how he or she plans to see it through given their
 current environment (Mumford, Hunter, & Bedell-Avers, 2008). Although this
@@ -8294,11 +7503,8 @@ the solution after implementation. It is critical that leaders continuously moni
 their solutions as new information and changes may emerge, which may impact
 the effectiveness of the solution.
 
-Creative Problem Solving
+### Summary
 
-185
-
-Summary
 The creative problem-solving process described is quite complex, warranting
 advanced leader cognitive strategies for successful implementation. Additionally,
 as highlighted in the previous discussion, leaders should be aware that this process is not necessarily linear and does not often lead clearly from one process to
@@ -8328,8 +7534,6 @@ thinking is a combination of several cognitive capacities, including fluency, fl
 Research (e.g., Diehl & Stroebe, 1987; Mullen, Johnson, & Salas, 1991; Paulus,
 Kohn, & Arditti, 2011) continuously supports the relationship between generating more ideas with generating a novel solution. Thus, if one can generate a large
 number of ideas in a short amount of time, they may be more likely to generate
-
-186 Kelsey E. Medeiros et al.
 
 more potential novel solutions compared to someone who takes a longer amount
 of time to generate ideas. Flexibility refers to the switch between categories or
@@ -8365,10 +7569,6 @@ the relationship differed when lower-order cognitive ability factors (i.e., verb
 when creativity is operationalized differently, unique relationships are observed.
 Batey, Chamorro-Premuzic, and Furnham (2010), for example, assessed creativity vis-à-vis ideational behavior and found a small relationship with intelligence.
 
-Creative Problem Solving
-
-187
-
 Adding to the complexity, Vincent et al. (2002) observed a strong positive relationship with divergent thinking but a small relationship between intelligence and
 idea generation. Thus, they argued that intelligence may interact with divergent
 thinking and expertise to influence creative problem solving. Taken together, the
@@ -8393,7 +7593,8 @@ collaborate with others on portions of the creative problem-solving processes in
 order to acquire the necessary levels of expertise in all pertinent domains to arrive
 at a viable and novel solution.
 
-Summary
+### Summary
+
 These individual differences suggest that leaders must possess the ability to think
 flexibly while rigidly applying standards to evaluate solutions. Still, these processes
 interact with a leader’s expertise and knowledge base, such that the effectiveness
@@ -8403,8 +7604,6 @@ role intelligence may play in the interaction of these individual differences su
 that intelligence, at some level, likely influences the acquisition of expertise as well
 as a leader’s ability to engage in divergent and convergent thinking. These individual differences will subsequently contribute to several key cognitive strategies
 necessary to effectively engage in the creative problem-solving processes.
-
-188 Kelsey E. Medeiros et al.
 
 A Model of Creative Processes and Strategies
 These underlying individual differences form the foundation of creative problem
@@ -8438,8 +7637,6 @@ Scanning
 During the early processes of creative problem solving, leaders must identify the
 problem as well as gather information relevant to the problem at hand. To do so,
 leaders scan, or search the environment for information bearing on events, trends,
-
-FIGURE 7.1 Leader Creative Problem-Solving Model
 
 Knowledge &
 Expertise
@@ -8487,8 +7684,6 @@ Problem ID
 
 Creative Problem-Solving Processes
 
-190 Kelsey E. Medeiros et al.
-
 and relationships both within and outside of an organization, allowing leaders to
 assess the current environment to incorporate relevant information to identify
 problems as well as direct problem-solving activities (Choo, 1999; Verhaeghe &
@@ -8523,10 +7718,6 @@ so, leaders scan the relevant environment to identify reactions as well as imple
 problem identification, information gathering, and solution monitoring, it should
 not be considered exclusive to these processes. Indeed, leaders should be continuously scanning their environment to identify emergent information bearing
 
-Creative Problem Solving
-
-191
-
 on the problem at hand. This information may inform the specific process or
 potentially lead back to earlier processes. Key information that should be identified during the scanning process are the constraints operating in the environment.
 
@@ -8559,8 +7750,6 @@ To examine the effects of introducing new constraints, Medeiros et al. (2018)
 conducted an experimental study introducing constraints during various creative
 processes. Findings suggest that introducing constraints prior to problem identification did not hinder creative problem solving, whereas introducing constraints
 during mid- and late-cycle processes negatively impacted creative outcomes.
-
-192 Kelsey E. Medeiros et al.
 
 These findings should be interpreted in conjunction with Onarheim’s (2012)
 findings that when new constraints were introduced later in a project, those
@@ -8595,10 +7784,6 @@ on divergent thinking. However, the emerging literature on constraints and creat
 ideation may, in fact, be a dynamic process between divergent and convergent
 thinking. Indeed, inherent in the creative problem-solving process is the need
 to solve a particular problem. Ideation then is, by definition, constrained to the
-
-Creative Problem Solving
-
-193
 
 problem at hand (Medeiros et al., 2017). This necessitates that potential solutions
 be considered within the boundaries set forth by constraints and other information gathered during the scanning and constraint management processes. Thus, in
@@ -8636,8 +7821,6 @@ to move to market may be particularly ineffective at forecasting due to an overr
 (Berg, 2016). This issue is further compounded by a tendency to overestimate
 the potential success of one’s one ideas (Runco & Smith, 1992; Berg, 2016), suggesting that those who generate solutions may not forecast markedly well either.
 
-194 Kelsey E. Medeiros et al.
-
 Thus, forecasting the potential success of a creative solution is a particularly difficult exercise.
 Despite difficulty in successful execution, the importance of forecasting to creative problem solving has been bolstered by recent empirical work. For instance,
 Byrne et al. (2010) asked undergraduates to generate ten marketing campaign
@@ -8673,10 +7856,6 @@ a means by which one creates a shared understanding of a situation, problem, or
 event (Lyles & Mitroff, 1980; Morgan, 1980) that are formed based on conceptual
 knowledge of underlying causal relationships (Bradley, Paul, & Seeman, 2006).
 
-Creative Problem Solving
-
-195
-
 However, in the case of creative problem solving, leaders must incorporate both
 existing information as well as forecasted circumstances to generate a viable mental model that depicts the situation in which the solution implementation will
 unfold.
@@ -8703,7 +7882,8 @@ to share with their followers in order to align their mental models. As this vis
 unfolds, it is critical that the leader continuously reassess his or her vision with
 reality, which requires active scanning of the environment.
 
-Summary
+### Summary
+
 When faced with a problem requiring a creative solution, leaders must employ
 several complex cognitive strategies including scanning, constraint identification,
 ideation, forecasting, and sensemaking. Although the preceding discussion highlighted the unique role of these strategies in specific processes, it is critical for
@@ -8712,8 +7892,6 @@ possibly execute multiple strategies simultaneously. As noted in the discussion,
 as well as Figure 7.1, the execution of these cross-process strategies depends on
 several individual differences. Together, these strategies and individual differences
 interact to influence the processes necessary for leader creative problem solving.
-
-196 Kelsey E. Medeiros et al.
 
 Application
 The importance of creative problem solving in leadership highlights the need to
@@ -8748,10 +7926,6 @@ et al., 2004; Ellspermann et al., 2007; Peterson et al., 2013; Basadur et al., 1
 In a meta-analytic review of creativity training, Scott et al. (2004) found training
 on cognitive processes to be beneficial across multiple outcomes and populations.
 
-Creative Problem Solving
-
-197
-
 Further, previous research found support for the benefit of training cross-process
 strategies as well (e.g., Osburn & Mumford, 2006; Peterson et al., 2013).
 Findings that creative thinking may be improved by training efforts brings to
@@ -8780,11 +7954,10 @@ that they are tackling tough problems in a supportive environment. More broadly,
 however, it is important that organizations emphasize that creativity is valued and
 encouraged (Gilson & Shalley, 2004).
 
-Conclusions
+### Conclusions
+
 Leaders are often faced with unstructured and ill-defined problems that require
 a novel solution. Thus, leaders must be prepared to engage in creative problem
-
-198 Kelsey E. Medeiros et al.
 
 solving if they are to lead effectively. As the foregoing discussion highlights, this is
 no easy task, as leaders must possess a sufficient amount of expertise, think both
@@ -8793,7 +7966,8 @@ to successfully execute the requisite creative processes. However, with careful
 thought and execution, leaders may successfully navigate this process to develop
 effective solutions to an organization’s or society’s most pressing problems.
 
-References
+### References
+
 Amabile, T. M. (1983). The social psychology of creativity: A componential conceptualization. Journal of Personality and Social Psychology, 45, 357–376.
 Amabile, T. M. (1996). Creativity in context. Boulder, CO: Westview Press.
 Amabile, T. M., & Gryskiewicz, N. D. (1989). The creative environment scales: Work
@@ -8822,10 +7996,6 @@ Brown, V. R., & Paulus, P. B. (2002). Making group brainstorming more effective:
 Byrne, C. L., Mumford, M. D., Barrett, J. D., & Vessey, W. B. (2009). Examining the leaders of creative efforts: What do they do, and what do they think about? Creativity and
 Innovation Management, 18, 256–268.
 Byrne, C. L., Shipman, A. S., & Mumford, M. D. (2010). The effects of forecasting on creative problem solving: An experimental study. Creativity Research Journal, 22, 119–138.
-
-Creative Problem Solving
-
-199
 
 Caughron, J. J., Antes, A. L., Stenmark, C. K., Thiel, C. E., Wang, X., & Mumford, M. D.
 (2011). Sensemaking strategies for ethical decision-making. Ethics & Behavior, 21, 351–366.
@@ -8871,8 +8041,6 @@ Giorgini, V., & Mumford, M. D. (2013). Backup plans and creative problem-solving
 Effects of causal, error, and resource processing. International Journal of Creativity and
 Problem Solving, 23, 121–146.
 
-200 Kelsey E. Medeiros et al.
-
 Guilford, J. P. (1950). Creativity. American Psychologist, 5, 444–453.
 Guilford, J. P. (1967). Creativity: Yesterday, today, and tomorrow. Journal of Creative Behavior,
 1, 3–14.
@@ -8914,10 +8082,6 @@ Ma, H. H. (2009). The effect size of variables associated with creativity. Creat
 Journal, 21, 30–42.
 McIntosh, T., Mulhearn, T., & Mumford, M. D. (in press). Taking the good with the bad:
 The impact of forecasting timing and valence on idea evaluation and creativity. Psychology of Aesthetics, Creativity, and the Arts.
-
-Creative Problem Solving
-
-201
 
 Medeiros, K. E., Partlow, P. J., & Mumford, M. D. (2014). Not too much, not too little: The
 influence of constraints on creative problem solving. Psychology of Aesthetics, Creativity,
@@ -8962,8 +8126,6 @@ and cognition: Applying problem representations in ill-defined domains. In M. A.
 Runco (Ed.), Creativity research: Problem finding, problem solving, and creativity (pp. 3–39).
 Westport, CT: Ablex Publishing.
 
-202 Kelsey E. Medeiros et al.
-
 Mumford, M. D., Schultz, R. A., & Osburn, H. K. (2002). Planning in organizations: Performance as a multi-level phenomenon. In F. J. Yammarino (Ed.), The many faces of
 multi-level issues (pp. 3–65). Bingley, UK: Emerald Group Publishing.
 Mumford, M. D., Scott, G. M., Gaddis, B., & Strange, J. M. (2002). Leading creative people:
@@ -9006,10 +8168,6 @@ Reiter-Palmon, R., & Robinson, E. J. (2009). Problem identification and construc
 What do we know, what is the future? Psychology of Aesthetics, Creativity, and the Arts, 3,
 43–47.
 
-Creative Problem Solving
-
-203
-
 Rokeach, M., & Rothman, G. (1965). The principle of belief congruence and the congruity principle as models of cognitive interaction. Psychological Review, 72, 128–142.
 Runco, M. A. (2003). Idea evaluation, divergent thinking, and creativity. In M. A. Runco
 (Ed.), Critical creative processes (pp. 69–94). Cresskill, NJ: Hampton.
@@ -9051,8 +8209,6 @@ Verhaeghe, A., & Kfir, R. (2002). Managing innovation in a knowledge intensive t
 Vincent, A. S., Decker, B. P., & Mumford, M. D. (2002). Divergent thinking, intelligence,
 and expertise: A test of alternative models. Creativity Research Journal, 14, 163–178.
 
-204 Kelsey E. Medeiros et al.
-
 Weick, K. E., Sutcliffe, K. M., & Obstfeld, D. (2005). Organizing and the process of sensemaking. Organization Science, 16, 409–421.
 Weisberg, R. W. (1995). Prolegomena to theories of insight and problem-solving: A taxonomy of problems. In R. J. Sternberg & J. E. Davidson (Eds.), The nature of insight
 (pp. 157–196). Cambridge, MA: MIT Press.
@@ -9069,13 +8225,9 @@ Zhou, J., & Shalley, C. E. (2003). Research on employee creativity: A critical r
 directions for future research. In J. J. Martocchio (Ed.), Research in personnel and human
 resource management (pp. 165–217). Bingley, UK: Emerald Group Publishing.
 
-8
-SEEING THE FUTURE
-THROUGH THE PAST
-Forecasting Skill as a Basis
-for Leader Performance
-Michael D. Mumford, Mark Fichtel, Tanner Newbold,
-Samantha England, and Cory A. Higgs
+## Chapter 8: Seeing the Future Through the Past: Forecasting Skill as a Basis for Leader Performance
+
+*Michael D. Mumford, Mark Fichtel, Tanner Newbold, Samantha England, and Cory A. Higgs*
 
 Over the years many models of the key activities to be executed by those adopting leadership roles have been proposed (Bass & Bass, 2008; Yukl, 2011). These
 activities, however, are often held to depend on the level, institutionally, in which
@@ -9100,8 +8252,6 @@ Forecasting appears critical to effective crisis resolution (Drazin, Glynn, & Ka
 (Osburn & Mumford, 2006). And, forecasting has been shown to be a key capacity
 contributing to the construction of viable visions by institutional leaders (Mumford & Strange, 2013).
 
-206 Michael D. Mumford et al.
-
 Given these observations, our intent in the present effort is to examine the
 impact of forecasting skill on leader performance. We begin by examining what
 we know about how effective people are at forecasting and the conditions giving
@@ -9112,7 +8262,9 @@ how leaders might go about creating conditions that will allow more effective
 forecasting.
 
 Forecasting and Leadership
-Forecasting
+
+### Forecasting and Leadership
+
 The term forecasting refers to the attempts of people, individuals, teams, or collectives to envision how events will unfold in the future (Einhorn & Hogarth, 1981).
 Thus, forecasting can be viewed as a form of mental time travel—albeit time
 travel into the future (Schacter, Addis, & Buckner, 2008). This definition of course
@@ -9136,10 +8288,6 @@ types of content? If people cannot forecast accurately, then the adaptive value 
 forecasting is inherently limited. Moreover, leaders forecasting will be of little practical significance representing nothing more than an oddity of the human mind.
 In fact, initial research examining the accuracy of people’s forecasts was not at
 all promising. Armstrong (1986) conducted a review of various studies of forecasting accuracy with respect to the future status of specific outcomes. Broadly
-
-Forecasting Skill for Leader Performance
-
-207
 
 speaking, his findings indicated that people, including experts, were poor at forecasting outcomes, especially long-term outcomes. He attributed this poor performance in forecasting to various cognitive biases operating to undermine accuracy
 in forecasts. Indeed, many studies (e.g., Bovi, 2009; Buehler & McFarland, 2001)
@@ -9174,8 +8322,6 @@ addition, an instructional manipulation was made to encourage people to believe,
 or not believe, their recommendations would be followed by the foundation.
 The resulting data indicated peoples’ forecasts were not, in general, especially accurate. In forecasting, people tended to overestimate outcomes and
 
-208 Michael D. Mumford et al.
-
 underestimate resources required for obtaining these outcomes. However, when
 participants had expertise in the domain, the educational proposals, as opposed
 to public policy proposals, and they believed their forecasts, or evaluations, would
@@ -9205,7 +8351,9 @@ material leaders should consider in forecasting (e.g., events, resources, produc
 and affect) can be accurately forecasted.
 
 Forecasting and Leadership Performance
-We do not have evidence indicating that peoples’ skill in forecasting influences
+
+### Forecasting and Leadership Performance
+
 their emergence as a leader. However, we do have a growing body of evidence
 indicating that forecasting skill results in better performance among those who
 occupy leadership roles. In one study along these lines, Shipman, Byrne, and
@@ -9213,10 +8361,6 @@ Mumford (2010) asked participants, some 250, to work through Strange and
 Mumford’s (2005) educational leadership task. On this task, participants are asked
 to assume the role of the principal (i.e., the leader) of a new experimental secondary school, and prepare a written plan for leading this school and formulate a
 speech to be given to students, parents, and teachers describing their plan. Plans
-
-Forecasting Skill for Leader Performance
-
-209
 
 were appraised by judges, who displayed adequate agreement, for quality, originality, and elegance, while speeches were appraised by judges for perceived utility and
 emotional impact.
@@ -9257,8 +8401,6 @@ activities. It was found that the extensiveness of participant’s forecasting a
 was positively related to plan quality, originality, and elegance in the low .40s—a
 finding in keeping with earlier studies (Byrne, Shipman, and Mumford 2010;
 
-210 Michael D. Mumford et al.
-
 Shipman et al., 2010). Moreover, appraisals of overall forecast quality were also
 strongly positively related (r̄ =.38) to plan quality, originality, and elegance.
 In yet another study, Mulhearn, McIntosh, and Mumford (in press) asked 260
@@ -9282,7 +8424,9 @@ that forecasting skill is more strongly related to performance in leadership rol
 than capacities such as intelligence, divergent thinking, and motivation.
 
 Forecasting Model
-Given the relationship between forecasting and leader performance, a new question comes to fore. How do people go about forecasting? An initial answer to
+
+### Forecasting Model
+
 this question has been provided by Mumford, Steele, McIntosh, and Mulhearn
 (2015). This model, describing the processes required for effective forecasting, is
 presented in Figure 8.1.
@@ -9298,10 +8442,6 @@ knowledge about causes, resources, restrictions, contingencies, actors, affect, 
 and systems (Hammond, 1990). Attached to these cases are diagnostics, which,
 if encountered, serve to activate a set of cases (Hershey, Walsh, Read, & Chulef,
 1990; Xiao, Milgram, & Doyle, 1997). People can act on a single case. However,
-
-Forecasting Skill for Leader Performance
-
-211
 
 Scanning
 
@@ -9347,8 +8487,6 @@ Morris, 1986). These mental models provide a basis for organizing both indexing
 systems and the cases unto themselves, allowing people to adapt experiences to
 anticipate the future or forecast.
 
-212 Michael D. Mumford et al.
-
 In fact, it appears that case-based knowledge is the key type of knowledge
 used as people attempt to address the issues brought to them in leadership roles
 (Berger & Jordan, 1992). For example, Strange and Mumford (2005), in a study of
@@ -9378,15 +8516,13 @@ processes, and how these forecasts unfold over varying periods of time may be
 appraised.
 
 Forecasting Content
-Causes and Goals
+
+### Forecasting Content
+
 The model presented earlier holds that forecasts are typically based on identification of key causes and goals. In fact, Lawrence et al. (2006) have argued that
 forecasts will prove more effective when they are based on an accurate appraisal of
 key causes. Moreover, a series of studies by Stenmark et al. (2010) and Stenmark
 et al. (2011) has provided some rather compelling support for this proposition.
-
-Forecasting Skill for Leader Performance
-
-213
 
 In both of these studies, some 100 participants, all undergraduates, were asked
 to assume the role of a middle manager working in an electronics firm. After
@@ -9424,8 +8560,6 @@ exercise, they were provided with training in various causal analysis strategies
 Specifically they were instructed to think about (1) causes that can be manipulated, (2) causes that influence multiple outcomes, (3) causes that have large effects,
 (4) causes that have direct effects, (5) causes that they could control, (6) causes that
 work together, and (7) causes that work synergistically. It was found that training
-
-214 Michael D. Mumford et al.
 
 in viable strategies for causal analysis resulted in better performance on the simulation exercise—in part, perhaps, due to better leader forecasting.
 
@@ -9466,10 +8600,6 @@ their mental models in terms of structural equations models. Prior studies by
 Mumford et al. (2012) have shown not only that this instruction is effective, but
 that those who illustrate stronger mental models also evidence better performance
 
-Forecasting Skill for Leader Performance
-
-215
-
 on leadership tasks such as formulating a visionary plan for leading a new experimental secondary school.
 In the Bagdasarov et al. (2016) study, following training participants were presented with a complex two- or three-page case and were asked to illustrate their
 mental model for understanding this case. Subsequently, participants were presented with an ethical leadership problem involving dealing with fraudulent bid
@@ -9488,7 +8618,9 @@ of causes and constraints, contributes to their ability to produce viable foreca
 when working through leadership problems.
 
 Forecasting Performance
-Our foregoing observations not only provide support for the model of leaders’ forecasting processes presented earlier, they also indicate that the viability of
+
+### Forecasting Performance
+
 forecasts produced depends on leaders’ mental models, the nature of the cases
 considered, and analysis of causes, goals, and constraints. The issue not addressed,
 however, is what actions can leaders take in forecasting that will improve their
@@ -9504,8 +8636,6 @@ elaboration in written plans as they worked on a leadership task. They found tha
 more extensive elaboration (r̄ = .40) was strongly positively related to forecasting
 effectiveness. In another study along these lines, Antes et al. (2012) also found
 elaboration to contribute (r̄ = .20) to the effectiveness of forecasting.
-
-216 Michael D. Mumford et al.
 
 Somewhat more direct evidence bearing on the importance of extensiveness
 to forecasting performance has been provided in a study by Beeler et al. (2010).
@@ -9548,10 +8678,6 @@ the forecasts provided. Specifically, judges, all displaying adequate agreement,
 asked to appraise the number of positive consequences forecasted, the number
 of negative consequences forecasted, and the number of critical consequences
 
-Forecasting Skill for Leader Performance
-
-217
-
 forecasted. It was found forecast quality, and the viability of leader decisions, were
 most strongly related to the number of positive consequences forecasted (β = .22)
 and the number of critical consequences (β = .64) forecasted. Of course, thinking
@@ -9588,8 +8714,6 @@ In the Caughron et al. (2011) study, some 160 undergraduates were asked
 to assume the role of a manager (e.g., a leader) working on producing a new
 drug in a pharmaceutical firm. After reading a description of the firm, and
 their role in the firm, they were presented with a set of six “emails” requiring a decision in their role as a leader. Written responses to these emails were
-
-218 Michael D. Mumford et al.
 
 coded by judges who appraised forecast quality. The description of the firm
 and their role as a leader focused on locus of control, personal versus situational
@@ -9628,10 +8752,6 @@ not (e.g., Armstrong, 1986). Of course, many factors such as expert’s assumpti
 and failing to fully analyze the issue across a range of considerations (e.g., Hoerger
 et al., 2010) all may act to undermine expert forecasting.
 
-Forecasting Skill for Leader Performance
-
-219
-
 By the same token, the findings obtained in the Marcy and Mumford (2007)
 study cited earlier should be borne in mind. In this study, participants were asked
 to anticipate the outcomes of and resource required for executing public policy
@@ -9668,8 +8788,6 @@ seem to act to undermine peoples’ effectiveness in forecasting. One of these b
 is an optimistic bias (Buehler, Griffin, & Ross, 1994). This optimistic bias leads
 people to underestimate potential negative events, such as the resources required
 
-220 Michael D. Mumford et al.
-
 on emergent contingencies, and overestimate potential outcomes of actions. The
 second key bias is derived from the focus of forecasting (Wilson & Gilbert, 2005).
 This focal bias leads people to overestimate the effects of the event being forecasted while discounting other events that might arise. Put differently, focal bias is
@@ -9693,7 +8811,8 @@ interest in their own right, point to a broader conclusion. By formulating a bet
 understanding of how people go about forecasting, it might be possible to manage work processes in such a way as to improve the accuracy and effectiveness of
 peoples’ forecasting activities.
 
-Conclusions
+### Conclusions
+
 Before turning to the broader conclusions flowing from the present effort, certain
 limitations should be noted. To begin, for some time scholars have discounted the
 possibility of people consistently producing accurate forecasts (Pant & Starbuck,
@@ -9705,10 +8824,6 @@ nature. Experiments, of course, have real value in identifying causation under
 controlled conditions. Nonetheless, with a few notable exceptions, for example,
 Mellers et al. (2014), we do not know much about how forecasting occurs in
 real-world settings.
-
-Forecasting Skill for Leader Performance
-
-221
 
 Even bearing these limitations in mind, however, we believe the present effort
 has some noteworthy implications for understanding forecasting and the importance of forecasting skill for those who occupy leadership roles. Leaders must
@@ -9746,14 +8861,13 @@ broaches a number of new questions which needs to be investigated. For example,
 when and what types of negative outcomes should leaders think about in forecasting? What is a viable time frame for forecasting with respect to different types
 of leader activities? How do leaders determine when forecasting is sufficiently
 
-222 Michael D. Mumford et al.
-
 extensive? Although we cannot, at this point, provide concrete answers to these
 questions, we hope the present effort, by demonstrating the powerful impact of
 forecasting skill on leader performance, will provide an impetus for further work
 along these lines.
 
-References
+### References
+
 Antes, A. L., Thiel, C. E., Martin, L. E., Stenmark, C. K., Connelly, S., Devenport, L. D., . . .
 Mumford, M. D. (2012). Applying cases to solve ethical problems: The significance of
 positive and process-oriented reflection. Ethics & Behavior, 22, 113–130.
@@ -9789,10 +8903,6 @@ Caughron, J. J., Antes, A. L., Stenmark, C. K., Thiel, C. E., Wang, X., & Mumfor
 Caughron, J. J., Antes, A. L., Stenmark, C. K., Thiel, C. E., Wang, X., & Mumford, M.
 D. (2013). Competition and sensemaking in ethical situations. Journal of Applied Social
 Psychology, 43, 1491–1507.
-
-Forecasting Skill for Leader Performance
-
-223
 
 Clemen, R. T. (1989). Combining forecasts: A review and annotated bibliography. International Journal of Forecasting, 5, 559–583.
 Dailey, L., & Mumford, M. D. (2006). Evaluative aspects of creative thought: Errors in
@@ -9835,8 +8945,6 @@ of leaders’ influence on creativity in research groups. Creativity and Innovat
 Hershey, D. A., Walsh, D. A., Read, S. J., & Chulef, A. S. (1990). The effects of expertise on
 financial problem solving: Evidence for goal-directed, problem-solving scripts. Organizational Behavior and Human Decision Processes, 46, 77–101.
 
-224 Michael D. Mumford et al.
-
 Hoerger, M., Quirk, S. W., Lucas, R. E., & Carr, T. H. (2010). Cognitive determinants of
 affective forecasting errors. Judgment and Decision Making, 5, 365–373.
 House, R. J., Spangler, W. D., & Woycke, J. (1991). Personality and charisma in the US
@@ -9878,10 +8986,6 @@ Mulhearn, T., McIntosh, T., & Mumford, M. D. (in press). Reflecting on the past 
 looking to the future: The effects of case analysis and outcome valence on forecasting.
 Creativity Research Journal.
 
-Forecasting Skill for Leader Performance
-
-225
-
 Mumford, M. D. (2006). Pathways to outstanding leadership: A comparative analysis of charismatic, ideological, and pragmatic leaders. Mahwah, NJ: Erlbaum Press.
 Mumford, M. D., Baughman, W. A., Supinski, E. P., & Maher, M. A. (1996). Processbased measures of creative problem-solving skills: II. Information encoding. Creativity
 Research Journal, 9, 77–88.
@@ -9922,8 +9026,6 @@ Stenmark, C. K., Antes, A. L., Wang, X., Caughron, J. J., Thiel, C. E., & Mumfor
 (2010). Strategies in forecasting outcomes in ethical decision-making: Identifying and
 analyzing the causes of the problem. Ethics & Behavior, 20, 110–127.
 
-226 Michael D. Mumford et al.
-
 Strange, J. M., & Mumford, M. D. (2005). The origins of vision: Effects of reflection, models, and analysis. Leadership Quarterly, 16, 121–148.
 Vessey, W. B., Barrett, J., & Mumford, M. D. (2011). Leader cognition under threat: “Just
 the Facts”. Leadership Quarterly, 22, 710–728.
@@ -9940,12 +9042,9 @@ Zaccaro, S. J., Connelly, S., Repchick, K. M., Daza, A. I., Young, M. C., Kilcul
 Gilrane, V. L. (2015). The influence of higher order cognitive capacities on leader
 organizational continuance and retention: The mediating role of developmental experiences. Leadership Quarterly, 26, 342–358.
 
-9
-LEADER DECISION MAKING
-CAPACITY
-An Information Processing Perspective
-Shing Kwan Tam, Dawn L. Eubanks,
-and Tamara L. Friedrich
+## Chapter 9: Leader Decision Making Capacity: An Information Processing Perspective
+
+*Shing Kwan Tam, Dawn L. Eubanks, and Tamara L. Friedrich*
 
 Decision making is regarded as a crucial activity for leaders because their decisions
 have tremendous impact on organizations and their followers (Westaby, Probst, &
@@ -9972,8 +9071,6 @@ making capacity.
 A key contribution of this chapter is that it addresses the complicated nature
 of decision making capacity with a comprehensive view from skills and contextual perspectives. Decision making research has been a dominating subject
 in economic and later psychology research. Decision making research has been
-
-Social Judgment
 
 Sensemaking
 Ideas evaluation
@@ -10030,10 +9127,6 @@ Decision
 Making
 Effectiveness
 
-Leader Decision Making Capacity
-
-229
-
 departing from such a mathematical approach in the past decades, and establishing,
 through experimental studies, how the phenomenon often violates the expectations of rational behavior (Oppenheimer & Kelso, 2015). We now must move a
 step further by realizing that the complexity involved in decision making cannot
@@ -10052,7 +9145,9 @@ varied events affect leader behaviors and further trigger subsequent decisions, 
 Balthazard, & Peterson, 2011).
 
 Decision Making Foundations
-A key focus of decision making research is on the question of how people choose
+
+### Decision Making Foundations
+
 actions rationally, or how they make decisions under ambiguous situations or with
 conflicting goals (Newell, Lagnado, & Shanks, 2015). The principle of rationality
 is the underlying logic of decision making where the criteria of consistency and
@@ -10072,8 +9167,6 @@ a prevalent approach to understanding decision making is to look for domainspeci
 to reduce the complexity of assessing task probabilities and value prediction
 to s­impler decision making rules (Tversky & Kahneman, 1974). These simple
 ­decision making rules include the choice of an option that comes to mind most
-
-230 Shing Kwan Tam et al.
 
 easily, or an option that has highest priority on the most important dimension
 (Oppenheimer & Kelso, 2015). This approach concerns the problem of decision
@@ -10109,10 +9202,6 @@ related to skill acquisition, change with practice (Fleischman & Mumford, 1989;
 Mumford et al., 2000). In this sense, although general cognitive capabilities are
 less likely to be changed drastically, certain capacities such as problem solving and
 
-Leader Decision Making Capacity
-
-231
-
 decision making can be enhanced with practice and career experience through
 the acquisition of skills (Connelly et al., 2000; Yukl, 2013).
 Mumford et al. (2017) suggest enhancement of certain leader skills can in turn
@@ -10133,7 +9222,9 @@ and the consideration of contextual factors (i.e., time and environmental contex
 will facilitate our understanding of the outcome variations.
 
 Decision Making Processes
-Decision making as a process is highly sensitive to available information (Kahneman & Tversky, 1979; Weick, 1995). Kahneman and Tversky (1979) further
+
+### Decision Making Processes
+
 enhanced the Expected Utility Theory described earlier with Prospect Theory,
 to explain decision making with framing and evaluation. A decision frame is the
 decision maker’s conception of outcomes and contingencies associated with a
@@ -10153,8 +9244,6 @@ over weight unlikely events (small probabilities) and under weight highly likely
 events (moderate and high probabilities) (Tversky & Kahneman, 1985). It means
 when people are under the condition of risk, they may irrationally give too much
 attention to low probability events when they weigh the options, but higher
-
-232 Shing Kwan Tam et al.
 
 probability events are not given enough weight during decision making. Framing
 influences how people perceive a problem and in turn make judgments about
@@ -10183,7 +9272,9 @@ preferred outcome associated with the frame while ignoring the bigger picture
 rational or irrational we are as we make decisions.
 
 Irrationality and Decision Making
-Although it is assumed that people would make decisions rationally, the subjective nature of human behavior does impact problem framing and option preferences (Tversky & Kahneman, 1982). Along related lines, Oppenheimer and Kelso
+
+### Irrationality and Decision Making
+
 (2015) suggest that the integration of diversified evidence is necessary in decision
 making to help offset irrational decisions.
 Information has an impact on how a decision is made, yet irrational factors
@@ -10193,10 +9284,6 @@ Loewenstein, Weber, Hsee, & Welch, 2001). De Martino, Kumaran, Seymour,
 and Dolan (2006) demonstrated this emotional effect suggested by Loewenstein
 et al. (2001) by framing a prospect in one of two ways—“keep $20 of the $50” (a
 gain frame) or “lose $30 of the $50” (a loss frame). Although the equivalence of
-
-Leader Decision Making Capacity
-
-233
 
 the alternative formulations is transparent, the option that was framed positively
 (with the use of the word “keep”) was selected more frequently than the option
@@ -10237,8 +9324,6 @@ uncontrollable consequences. Second, the protection of Americans’ civil libert
 from the breach of privacy and less safe situations was framed as the favorable
 alternative. Third, by using his experience and knowledge, he pointed out the
 
-234 Shing Kwan Tam et al.
-
 government downplayed the impact of building a “backdoor” software because
 once it is created, it could be used by other devices, through hacking or carelessness, to crack open other iPhones, and that would “put millions of people at risk”
 (Grossman, 2016).
@@ -10278,10 +9363,6 @@ the continuous process of evidence accumulation (Weick, 1995). The information
 collected is then used for framing the problems and leads to further analysis of the
 available options for a decision (Hogarth & Makridakis, 1981). It is noteworthy
 
-Leader Decision Making Capacity
-
-235
-
 that information embedded in the social network is not to be neglected because
 the information collection process plays a critical role in decision making, and
 leaders need diversified information for more objective judgments (Mumford
@@ -10318,8 +9399,6 @@ developed as a framework, the information gathering process is initiated to defi
 the nature and consequences of the event (Weick, 1995). This will, in turn, activate
 the descriptive mental models that include the causes and goals of the event.
 
-236 Shing Kwan Tam et al.
-
 During the information interpretation process, decision makers develop or
 apply ways of comprehending the meaning of information. It facilitates the fitting of information into frameworks for understanding and further actions (Gioia,
 1986). Along similar lines, Mumford et al. (2007) assert in their leader cognition
@@ -10344,7 +9423,9 @@ the subsequent actions taken are dependent on the interpretation of information
 (Maitlis & Christianson, 2014; Zeni et al., 2016).
 
 Idea Evaluation
-Being able to construct solutions is regarded as one of the effective problem
+
+### Idea Evaluation
+
 solving behaviors for leaders (Zaccaro, Rittman, & Marks, 2001). With the information gathered and analyzed, it forms a basis for planning and forecasting that
 help the leaders to generate ideas and actions (Mumford et al., 2017). However,
 as argued by Mumford et al (2000), selecting and implementing the best possible
@@ -10357,10 +9438,6 @@ The key function of idea evaluation is to recognize original ideas (Runco &
 Basadur, 1993). What is relevant about idea evaluation to problem solving is the
 appraisal of a projected outcome of adopting an idea according to applied performance standards (Kuipers, Moskowitz, & Kassirer, 1988). Runco, Okuda, and
 Thurston (1987) assert that ideas are evaluated initially in regards to appropriateness and relevance, and, subsequently, on originality. That is, the appropriateness of
-
-Leader Decision Making Capacity
-
-237
 
 criteria involves two elements, first, the practical benefit, such as low implementation cost and the fit of the idea with the current system and environment, and,
 second, the originality of the idea that provides a new solution to the problem
@@ -10401,8 +9478,6 @@ was always well-prepared, almost without exception” (Davis, 2016).
 As recalled by her followers, during her time as senator, she had regular “cardtable” sessions every few months where she and her team came together and
 worked with two tables of newspaper clippings, position papers and random scraps
 
-238 Shing Kwan Tam et al.
-
 of papers (Klein, 2016). It is a categorization exercise where they discussed and
 prioritized issues, and, most importantly, Clinton requested her team to follow up
 on these issues. From the decision making theory perspective, Clinton collects
@@ -10424,7 +9499,9 @@ information gathering and interpretation stage in order to improve their ultimat
 idea evaluation performance (Mumford et al., 2017; Vessey et al., 2011).
 
 Social Judgment and Using Multilevel Information Sources
-Decision making takes place at different levels in organizations, and people’s
+
+### Social Judgment and Using Multilevel Information Sources
+
 perspectives and opinions are found to have an impact on the decision making
 outcome (Mumford et al., 2007). As stated earlier, decision making needs both
 performance information (such as causes, resources available, restrictions, and contingencies) and social information (such as actors involved, affect, goals, and the
@@ -10440,10 +9517,6 @@ quality (Murase, Carter, DeChurch & Marks, 2014). Along similar lines, leaders
 need to have a multilevel understanding of decision making because decision
 making is regarded as a process involving all team members. Their behaviors and
 activities that happen across different organizational levels are argued to influence
-
-Leader Decision Making Capacity
-
-239
 
 the overall group decision making outcomes (Hollenbeck et al. 1995). As such,
 in order to have a comprehensive view in the context of decision making, it is
@@ -10480,8 +9553,6 @@ ideas to others, the collaboration with others in the face of resistance and con
 and the people skills necessary to foster changes in an organization (Mumford
 et al., 2000). In other words, this skill is applicable when leaders need to collect
 the information from the followers during decision making.
-
-240 Shing Kwan Tam et al.
 
 In regards to the information collected from followers, it is suggested that one
 of the most direct ways to influence follower understanding about the problem
@@ -10521,10 +9592,6 @@ Morrison & Milliken, 2000).
 The importance of social judgment can be illustrated by how the former Proctor & Gamble CEO A. G. Lafley led the turnaround of P&G. Lafley was named as
 the CEO of the Year in 2006 by Chief Executive magazine (Hashemipour, 2016).
 
-Leader Decision Making Capacity
-
-241
-
 Lafley took over the position of CEO in 2000 while P&G was in the midst of a
 crisis with a loss of US$85 billion in the market capitalization (Lafley, 2009). He
 realized it was “a crisis of confidence”—the employees (including P&G leaders), customers, and investors lost confidence in P&G. In order to turn around
@@ -10546,7 +9613,9 @@ external customers. All of these examples show Lafley’s social judgment and hi
 sensitivity to the importance of social information during decision making.
 
 Emotion Management
-Related to social judgment are emotions. Affect and emotions are closely intertwined with the process of leading and leader outcomes such as decision making (Gooty et al., 2010). Affect as a broader concept is defined as longer lasting
+
+### Emotion Management
+
 emotional experience where emotion is short-term and context specific (Gooty,
 et al., 2010; Wang & Seibert, 2015). Individuals’ affective responses to events has
 implications for behaviors (Gaddis, Connelly, & Mumford, 2004). Leader affect is
@@ -10560,8 +9629,6 @@ wise and effective leaders need to manage during decision making, because leader
 sharing within the team (Griffith et al., 2015; McKenna et al., 2009; Savage, 1954).
 Emotion management is regarded as a key part of effective leadership because it is
 not just about how leaders manage their own emotions, but also how they manage the emotions of their followers (Connelly et al., 2013). Previous studies have
-
-242 Shing Kwan Tam et al.
 
 demonstrated the link between emotional management, such as emotional awareness of oneself and others and emotion regulation, to decision making processes
 such as problem framing, information processing, divergent thinking, and risk
@@ -10597,10 +9664,6 @@ People’s views that are embedded in the social network affect framing of the
 problems and envisioning of solutions. The social network is also a platform for
 accessing resources and marshaling people’s active support in policy decision making (Hoppe & Reinelt, 2010). As such, if the opinions in the social networks are
 managed and utilized effectively, the leaders will find it more convenient to seek
-
-Leader Decision Making Capacity
-
-243
 
 a discussion about the issues of concern, mobilize support, influence policy, and
 allocate resources during the decision making process (Hoppe & Reinelt, 2010).
@@ -10641,15 +9704,15 @@ sources to frame problems and make judgments (Mumford et al., 2007).
 It is clear that emotions impact leader performance of cognitive tasks including
 information processing and decision making (Thiel, Connelly, & Griffith, 2012).
 
-244 Shing Kwan Tam et al.
-
 Thus, it is necessary for leaders to enhance their skills to manage emotions by
 being sensitive to emotions in themselves and others, and, most importantly, they
 need to adopt appropriate emotion regulation strategies to minimize the negative impact of emotions on decision making, and maximize their usefulness as an
 additional source of information (Yukl, 2013).
 
 Contextual Factors
-Decision making is sensitive to the changing environment and the context affects
+
+### Contextual Factors
+
 how leaders frame problems and evaluate options (Lord & Shondrick, 2011; Tversky & Simonson, 1993; VanLehn & Ball, 1991). One key element of the context
 is the time available for working through the decision. Leaders need to manage
 the impact and intensity of time pressure because it can benefit or disadvantage
@@ -10669,7 +9732,9 @@ decisions (Vroom & Jago, 2007). Therefore, the impact of the contextual factors
 of time and environmental context will be discussed in this section.
 
 Time as a Contextual Factor
-As Tversky and Kahneman (1985) suggest, leaders are unaware that their preferences are changed by framing, and their perspectives do change over time
+
+### Time as a Contextual Factor
+
 with more information and evidence collected along the way. Thus, time as a
 contextual factor needs to be considered when it comes to decision making.
 Busemeyer and Townsend (1993) assert that preferences change during deliberation and final choices are impacted by the amount of time spent on decision
@@ -10678,10 +9743,6 @@ influence on the outcome of a decision because a repeated sampling of relevant
 information is collected over time. Moreover, the amount of attention distributed to the varied outcomes also changes over time during the deliberation
 process. In other words, during the process of decision making, many different
 consequences may be considered, preference for an action is formed according
-
-Leader Decision Making Capacity
-
-245
 
 to gradual accumulation of evidence, and that will eventually lead to a decision
 (Oppenheimer & Kelso, 2015).
@@ -10716,8 +9777,6 @@ This approach can cause more errors (i.e., decrease of decision accuracy) due to
 the lack of considerations of viable decisions (Hunter et al., 2011).
 Emotion regulation, a concept discussed earlier, is particularly impactful when
 leaders are under stressful circumstances such as organizational change or crisis where leaders need to make a decision with limited time and inadequate
-
-246 Shing Kwan Tam et al.
 
 information (Lawrence et al., 2011). It is found that stress or anxiety experienced
 as a result of restrictions such as time pressure leads to a decrease in information
@@ -10757,10 +9816,6 @@ on follower attitudes about information sharing and their relationships with the
 leaders, because these factors affect their decision making and communication
 styles (Hofstede et al., 2010).
 
-Leader Decision Making Capacity
-
-247
-
 Power distance is one aspect of culture frequently used to explain the variations in leader decision making (Lee, Scandura, & Sharif, 2014). Power distance
 means the degree that followers show a willingness to disagree with the leaders
 (Hofstede et al., 2010). Individuals from high power distance cultures show a
@@ -10791,14 +9846,14 @@ decision making, leaders may encounter difficulties in collecting diversified in
 conflict and expressing differing opinions.
 
 Market Forces and Organizational Context
-The study of the external environment where organizations are embedded is
+
+### Market Forces and Organizational Context
+
 important because they do not exist in isolation. They need to constantly interact
 with other institutions such as markets and communities in regard to business
 development (Whetten, Felin, & King, 2009). It is asserted that organizations
 earn support and legitimacy through conforming to the rules, requirements, and
 norms of the external environment (DiMaggio & Powell, 1983; Scott, 1987). In
-
-248 Shing Kwan Tam et al.
 
 the context of decision making, leaders are found to adopt different decision rules
 in response to diverse situations, and the market elements may in turn influence
@@ -10836,10 +9891,6 @@ which are in general thought to be desirable, would be equally effective in each
 situation. In order to tackle the restrictions and uncertainties that exist in the
 environment that were discussed earlier, leaders play a critical role in responding to the aforementioned tensions. Their decisions and actions in response to
 
-Leader Decision Making Capacity
-
-249
-
 limitations can create conditions to influence their followers and performance
 (Floyd & Lane, 2000; He & Wong, 2004; Jarzabkowski, 2008; Smith, 2014). Precisely speaking, facilitating a multilevel and flexible context for joint decision
 making can help leaders under stressful situations (Smith, 2014). It is because the
@@ -10856,7 +9907,8 @@ In summary, leaders need to consider how time and environmental context
 impact information gathering, option evaluation, and analysis, and their followers’
 willingness to participate during the decision making process.
 
-Conclusions
+### Conclusions
+
 In the past several decades, scholars have been continuously studying the behavioral pattern for which decision making theories cannot easily account (Oppenheimer & Kelso, 2015). In the context of decision making, Kahneman and Tversky
 (1986) point out that both rationality and people’s beliefs and preferences that
 are influenced by framing are factors that need to be considered, and the tension
@@ -10874,8 +9926,6 @@ preferences and beliefs of decision makers due to the impact of people’s emoti
 and experiences (Kahneman & Tversky, 2000; Tversky & Kahneman, 1985). That
 is, the capacity of decision makers to resist irrelevant information during decision
 making is affected by the problem and option framing. For example, emotionally
-
-250 Shing Kwan Tam et al.
 
 loaded words can impact the selection or avoidance of choices, which may eventually impact the outcome (De Martino et al., 2006; Kahneman & Frederick, 2007).
 Following the same logic, because subjective interpretation of outcomes could
@@ -10910,16 +9960,13 @@ Furthermore, the influence of followers needs to be considered more carefully.
 The follower situation is one of the factors that would shape the degree to which
 a leader would involve followers during decision making, because leadership has
 
-Leader Decision Making Capacity
-
-251
-
 been conceptualized as a mutual influencing process among leaders and followers
 (Day et al., 2004; Oc, 2018; Pearce & Conger, 2003; Morgeson, DeRue, & Karam,
 2010). In essence, a more comprehensive view that integrates follower impact in
 terms of leader decision making is recommended.
 
-References
+### References
+
 Amabile, T. M., Barsade, S. G., Mueller, J. S., & Staw, B. M. (2005). Affect and creativity at
 work. Administrative Science Quarterly, 50, 367–403.
 Ashforth, B. E., & Humphrey, R. H. (1995). Emotion in the workplace: A reappraisal.
@@ -10955,8 +10002,6 @@ hillary-clintons-senate-years-provide-insight-into-how-she-might-govern
 Day, D. V., Gronn, P., & Salas, E. (2004). Leadership capacity in teams. Leadership Quarterly,
 15, 857–880.
 De Dreu, C. K. (2003). Time pressure and closing of the mind in negotiation. Organizational Behavior and Human Decision Processes, 91, 280–295.
-
-252 Shing Kwan Tam et al.
 
 De Martino, B., Kumaran, D., Seymour, B., & Dolan, R. J. (2006). Frames, biases, and
 rational decision-making in the human brain. Science, 313, 684–687.
@@ -10995,10 +10040,6 @@ Grossman, L. (2016, March 17). Inside Apple CEO Tim Cook’s fight with the FBI.
 Retrieved from http://time.com/4262480/tim-cook-apple-fbi-2/
 Hahn, T., Preuss, L., Pinkse, J., & Figge, F. (2014). Cognitive frames in corporate sustainability: Managerial sensemaking with paradoxical and business case frames. Academy of
 Management Review, 39, 463–487.
-
-Leader Decision Making Capacity
-
-253
 
 Hannah, S. T., Uhl-Bien, M., Avolio, B. J., & Cavarretta, F. L. (2009). A framework for
 examining leadership in extreme contexts. Leadership Quarterly, 20, 897–919.
@@ -11040,8 +10081,6 @@ review and test of theoretical propositions. Journal of Applied Psychology, 89, 
 Kahneman, D. (2011). Thinking, fast and slow. London: Macmillan.
 Kahneman, D., & Frederick, S. (2007). Frames and brains: Elicitation and control of response
 tendencies. Trends in Cognitive Sciences, 11, 45–46.
-
-254 Shing Kwan Tam et al.
 
 Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk.
 Econometrica, 47, 263–291.
@@ -11088,10 +10127,6 @@ Loewenstein, G. F., Weber, E. U., Hsee, C. K., & Welch, N. (2001). Risk as feeli
 Lonergan, D. C., Scott, G. M., & Mumford, M. D. (2004). Evaluative aspects of creative thought: Effects of appraisal and revision standards. Creativity Research Journal, 16,
 231–246.
 
-Leader Decision Making Capacity
-
-255
-
 Lopes, P. N., Cote, S., & Salovey, P. (2006). An ability model of emotional intelligence:
 Implications for assessment and training. In V. U. Druskat, F. Sala, & G. Mount (Eds.),
 Linking emotional intelligence and performance at work: Current research evidence with individuals and groups (pp. 53–80). Mahwah, NJ: Lawrence Erlbaum.
@@ -11135,8 +10170,6 @@ in real-world settings: How do leaders think about crises? The Leadership Quarte
 Mumford, M. D., Steele, L., McIntosh, T., & Mulhearn, T. (2015). Forecasting and leader
 performance: Objective cognition in a socio-organizational context. Leadership Quarterly, 26(3), 359–369.
 
-256 Shing Kwan Tam et al.
-
 Mumford, M. D., Todd, E. M., Higgs, C., & McIntosh, T. (2017). Cognitive skills and leadership performance: The nine critical skills. Leadership Quarterly, 28, 24–39.
 Mumford, M. D., Zaccaro, S. J., Connelly, M. S., & Marks, M. A. (2000). Leadership skills:
 Conclusions and future directions. Leadership Quarterly, 11, 155–170.
@@ -11178,10 +10211,6 @@ perspective broadening reduces self-reported affect and psychophysiological resp
 distressing films and autobiographical memories. Journal of Abnormal Psychology, 118, 15.
 Schmidt, F. L., & Hunter, J. E. (2000). Select on intelligence. In E. A. Locke (Ed.), Handbook
 of principles of organizational behavior (pp. 3–14). Oxford, UK: Blackwell.
-
-Leader Decision Making Capacity
-
-257
 
 Schön, D. A. (1983). The reflective practitioner: How professionals think in action. New York,
 NY: Basic Books.
@@ -11226,8 +10255,6 @@ Tversky, A., & Kahneman, D. (1985). The framing of decisions and the psychology 
 choice. In V. T. Covello, J. L. Mumpower, P. J. M. Stallen, & V. R. R. Uppuluri (Eds.),
 Environmental impact assessment, technology assessment, and risk analysis (pp. 107–129). Berlin, Heidelberg: Springer.
 
-258 Shing Kwan Tam et al.
-
 Tversky, A., & Kahneman, D. (1986). Rational choice and the framing of decisions. Journal
 of Business, 59, S251–S278.
 Tversky, A., & Simonson, I. (1993). Context-dependent preferences. Management Science,
@@ -11269,10 +10296,6 @@ intelligence: Linking social perceptiveness and behavioral flexibility to leader
 Zaccaro, S. J., & Klimoski, R. J. (Eds.). (2002). The nature of organizational leadership: Understanding the performance imperatives confronting today’s leaders (Vol. 12). San Francisco, CA:
 Jossey-Bass.
 
-Leader Decision Making Capacity
-
-259
-
 Zaccaro, S. J., Rittman, A. L., & Marks, M. A. (2001). Team leadership. Leadership Quarterly,
 12, 451–483.
 Zeni, T. A., Buckley, M. R., Mumford, M. D., & Griffith, J. A. (2016). Making “sense” of
@@ -11280,10 +10303,9 @@ ethical decision making. Leadership Quarterly, 27, 838–855.
 Zhao, B., & Olivera, F. (2006). Error reporting in organizations. Academy of Management
 Review, 31, 1012–1030.
 
-10
-MAKING SENSE OF
-LEADERS MAKING SENSE
-Peter Gronn
+## Chapter 10: Making Sense of Leaders Making Sense
+
+*Peter Gronn*
 
 During the resurgence of leadership in the late 1970s and the succeeding two decades or so, the idea of sensemaking claimed space as a focus of theory and research.
 Its emergence was due principally to the efforts of Karl Weick, an organizational psychologist who asserted that “organizations are in the business of making
@@ -11306,10 +10328,6 @@ starting point, Weick articulated a theory of sensemaking as enactment.
 This chapter analyzes sensemaking and its legacy for the field of leadership.
 Chapter-length space allocation precludes a full-scale literature review, but in the
 
-Making Sense of Leaders Making Sense
-
-261
-
 early discussion sections the key features of leader sensemaking are summarized,
 as initially outlined and then later developed by Weick himself (1979, 1995), and
 then by others (e.g., Maitlis & Christianson, 2014). Since Weick wrote, however,
@@ -11323,7 +10341,9 @@ science research, the ontological assumptions on which leader sensemaking and
 its model of cognition rest might benefit from a rethink.
 
 Enacting Enactment
-Weick’s style of expression (especially in his earlier writings) does not always guarantee ready accessibility to the substantive import of his discussion. This is because
+
+### Enacting Enactment
+
 he relies very heavily on metaphor and the license that this affords, he resorts to
 a highly liberal (even permissive) view of human agency, and at times his claims
 border on the obscurantist (as in “Departments are arbitrary collections of double
@@ -11343,8 +10363,6 @@ and he viewed enactment as the equivalent of natural variation. It expressed the
 “more active role that we presume organizational members play in creating
 the environments which then impose on them” (Weick, 1979, p. 130). This
 environmental creation was said to be facilitated by the participants’ (mental)
-
-262 Peter Gronn
 
 construction of cause maps, which in Weick’s illustrative case of performing
 musicians are superimposed on the making of music. The imposition of one
@@ -11382,10 +10400,6 @@ implemented is a strategy.
 In effect, the conventionally understand sequencing is reversed, because “meaning is always imposed after the fact and only after elapsed actions are available for
 review” (Weick, 1979, p. 188).
 
-Making Sense of Leaders Making Sense
-
-263
-
 Amplification and Illustrations
 About 15 years after his initial monograph-length exposition of enactment,
 Weick’s (1995) follow-up analysis shored up further the intellectual underpinnings of the how-do-I-know-what-I-think-until-I-see-what-I-say recipe. Some
@@ -11420,8 +10434,6 @@ internally is contingent upon others”. Better still, then, than such a straigh
 reflection might be the public reporting of one’s words (in, say, a newspaper) followed by a later diary reflection, because this interplay between the two sources
 introduces the public expectations to which one has been required to respond.
 
-264 Peter Gronn
-
 Eastward across the Tasman Sea, in early 1929, another educationalist, a youthful
 Englishman, James Darling—headmaster of Geelong Grammar School, Australia
 (1930–1961)—was leading a party of English schoolboys on a tour of New Zealand.
@@ -11455,10 +10467,6 @@ Sense-giving, in short, was the “attempt to influence the sensemaking and mean
 refer to “influence tactics”. But there is a problem here. While the labeling of the
 CEO’s or president’s new self-understanding of future directions as making sense
 seems sensible enough, why should his subsequent action be characterized as
-
-Making Sense of Leaders Making Sense
-
-265
 
 sense-giving? Given that the infinitive “to influence” is used twice in the quoted
 extracts, sense-giving is either superfluous or even redundant. That is, what does
@@ -11499,8 +10507,6 @@ In relation to such proliferating peripheral sensemaking-related concepts, Maitl
 and Christianson (2014, p. 107) caution that, because these are “not always clearly
 defined”, researchers should concentrate on the core process of sensemaking.
 
-266 Peter Gronn
-
 For Weick, that core process shifted in two overlapping directions: analysis of
 empirical studies of crises (low probability, although high consequence, events)
 and instances of distributed or collective mind (in what he termed high reliability systems). These two developments overlapped in Weick’s analyses because, if
@@ -11540,10 +10546,6 @@ collapse of interrelated sensemaking and structure produced the disaster at Mann
 Gulch. Disintegration in a situation of potential death caused the firefighters to
 panic. In an improvised response to being trapped, the fire service leader ordered
 
-Making Sense of Leaders Making Sense
-
-267
-
 his men to drop their tools and he ignited a fire in advance of fast-moving flames
 so as to create (by way of elimination of a flammable fuel source) a safe zone
 and possible exit route, and ordered the crew to lie down in it with him. They
@@ -11578,8 +10580,6 @@ professional principles of the Chartered College of Teaching (undated [2018]), i
 which a chartered teacher:
 Identifies and draws on relevant education research and combines this with
 their knowledge of subject or specialism to develop a subject- or specialismspecific teaching repertoire.
-
-268 Peter Gronn
 
 Such expertise might be displayed by a classroom teacher or a schoolwide teacher
 leader (in, say, curriculum). In respect of school principals’ leadership in assisting
@@ -11616,10 +10616,6 @@ frame and conditions at hand” (Mumford et al., 2007, pp. 518, 522). While Weic
 (1995, p. 51) accorded significance to context (i.e., conditions at hand) as generating cues for making sense, he said little about the concept. Moreover, because he
 modeled retrospectively determined enactment as an isolated mental act, he said
 
-Making Sense of Leaders Making Sense
-
-269
-
 little about time. In reality, however, cognitive modeling for problem solving, be
 the problems straightforward or protracted, entails constant leader or leadership
 team scanning, attention to feedback, and reworking of mental models. That is,
@@ -11653,8 +10649,6 @@ crisis, for example, emerged as the outcome of his prudent analysis of the inter
 Mumford (2010, p. 17) found, after a computer simulation exercise with 160
 undergraduate students, that “leaders’ performance can benefit from training in
 causal analysis, particularly those working in complex environments where strategic interventions are often required”. Apposite strategic interventions might
-
-270 Peter Gronn
 
 require variation, however, according to the degree of environmentally induced
 threat or stress experienced by leaders. In a closely related study, therefore, Barrett et al. (2011) distinguished between informational strategy training (i.e., a
@@ -11691,10 +10685,6 @@ Darling’s problem. For about a fortnight (much to the embarrassment of the
 headmaster and the school) the Sydney press—the boys had been apprehended in
 Sydney by transport officials—covered the story, and it was debated in the federal
 parliament, until in the end the newspapers and (it was thought) public opinion
-
-Making Sense of Leaders Making Sense
-
-271
 
 had turned in the school’s favor. In their reporting, the newspapers may have been
 trying (at one level) to make sense of the rights and wrongs of the boys’, politicians’, and officials’ actions, but if this problem (for all the parties) is interpreted
@@ -11734,8 +10724,6 @@ plausibility criteria for assessing what may be happening, and so on. If so, the
 where does that leave sensemaking? In their review, Maitlis and Christianson
 (2014, p. 98) also concede that attention to power had been inadequate until
 
-272 Peter Gronn
-
 publication of the preceding acknowledgment and concession by Weick et al.
 (2005), and that over the succeeding decade sensemaking research has become
 “less politically naïve”:
@@ -11762,10 +10750,6 @@ of cognition (referred to euphemistically as the Cartesian view) is that a mind 
 located within a person, bounded by skull and skin, and is the sole locus of understanding. Here, the mind, when considered in isolation is both part and whole.
 With collective sensemaking, however, the locus of understanding is broadened
 by the presence of 2+ individuals and the conception of mind is modified. In
-
-Making Sense of Leaders Making Sense
-
-273
 
 one modification, the skull-bound mind view is retained but augmented. Thus,
 an aggregation of individuals may interact to create a cognitive collection (or
@@ -11803,8 +10787,6 @@ means that non-biological tools and structures “can become sufficiently well i
 this way”. While Giere (2007, p. 319) has queried the resort to what he regards
 as a “super, or collective, agent” in order to understand “how members of groups
 
-274 Peter Gronn
-
 collectively make the system work”, Gallagher (2013, p. 10) defends the view that
 engagement with worldly externalities transforms humans’ cognitive processes,
 both neural and non-neural.
@@ -11822,7 +10804,8 @@ Clark’s challenging claims—cognition as “embodied, embedded and extended�
 (Wilson, 2014, p. 21)—entails more than mere bodily co-presence and the cues
 that bodies may transmit for the purposes of sensemaking.
 
-Conclusions
+### Conclusions
+
 Sensemaking is an important component of leader cognition and for that reason
 has warranted detailed review. The discussion of it provided a summary of developments, along with an appraisal of thinking and research in this area of knowledge, which as noted has been mostly shaped by Weick. Since its emergence as a
 scholarly focus, sensemaking has been, and continues to be, grounded primarily
@@ -11841,14 +10824,11 @@ aggregated individual minds. Given the importance of sensemaking as a skill for
 leaders, the discussion also documented some highly productive possibilities for
 training uptake in leader development. The chapter ended by pointing to some
 
-Making Sense of Leaders Making Sense
-
-275
-
 challenging developments in the wider domains of cognitive and neuro science
 that, in the coming decades, might yield some new and potentially exciting perspectives on sensemaking.
 
-References
+### References
+
 Abolafia, M. Y. (2010). Narrative construction as sensemaking: How a central bank thinks.
 Organization Studies, 31, 349–367.
 Barrett, J. D., Vessey, W. B., & Mumford, M. D. (2011). Getting leaders to think: Effects of
@@ -11884,8 +10864,6 @@ Mumford, M. D., Friedrich, T. L., Caughron, J. J., & Byrne, C. L. (2007). Leader
 Mumford, M. D., Watts, L. L., & Partlow, P. J. (2015). Leader cognition: Approaches and
 findings. Leadership Quarterly, 26, 301–306.
 
-276 Peter Gronn
-
 Partlow, P. J., Medeiros, K. E., & Mumford, M. D. (2015). Leader cognition in vision formation: Simplicity and negativity. Leadership Quarterly, 26, 448–469.
 Robinson, V. (2011). Student-centred leadership. San Francisco, CA: Jossey-Bass.
 Stein, M. K., & Nelson, B. S. (2003). Leadership content knowledge. Educational Evaluation
@@ -11905,10 +10883,9 @@ Wilson, R. A. (2014). Ten questions concerning extended cognition. Philosophical
 Wren, J. T. (2006). A quest for a grand theory of leadership. In G. Goethals & G. L. J. Sorenson
 (Eds.), The Quest for a General Theory of Leadership (pp. 1–38). Cheltenham, UK: Edward Elgar.
 
-11
-LEADERS, TEAMS, AND
-THEIR MENTAL MODELS
-Jensine Paoletti, Denise L. Reyes, and Eduardo Salas
+## Chapter 11: Leaders, Teams, and Their Mental Models
+
+*Jensine Paoletti, Denise L. Reyes, and Eduardo Salas*
 
 As we go through our daily lives, work, learn, and perform, we have an unseen
 mechanism guiding our actions and thoughts. Mental models are an internal representation of our views of the world and include the information we know. As
@@ -11931,8 +10908,6 @@ previous years, while many of the schools that brought in new presidents were
 able to create professional degree tracks and faced better odds of staying in operation. This change was not always welcome, as it declined to follow the philosophy
 of liberal arts education, but changes in college leadership sometimes helped to
 change the universities’ program offerings, as the incoming college presidents
-
-278 Jensine Paoletti et al.
 
 brought their previous organization’s mental model of professional degrees within
 liberal arts education. Some of these new leaders came from state universities,
@@ -11972,10 +10947,6 @@ metal models are a foundational aspect of reasoning (Goldvarg & Johnson-Laird,
 2001). Notably, metal models do not apply to any information “represented in the
 mind”, as some earlier articles suggest.
 
-Leaders, Teams, and Their Mental Models
-
-279
-
 Importantly, mental models are not the only way to consider cognition. Transactive memory states are also used to understand cognition, particularly in teams
 where they are a way to consider who holds what knowledge (DeChurch &
 Mesmer-Magnus, 2010). They will not be discussed further in this chapter, but
@@ -12009,8 +10980,6 @@ change due to effective leadership. According to Lord and Maher, leadership
 these elements are interpreted by followers” (Lord & Maher, 1993, p. 11). Therefore, effective leadership must occur within the context of the followers’ interpretations and perceptions. It necessarily includes a cognitive component of a leader’s
 influence on the followers’ mental models. This is what differentiates mental
 models of a lay individual from leaders’ mental models. Followers’ models must
-
-280 Jensine Paoletti et al.
 
 be modified through the leadership process, through the leaders’ mental models (Benson, 2016). Leadership is defined in this chapter as an influence process
 ( Jacobs, 1971), which can be accomplished by one formal leader or shared among
@@ -12048,10 +11017,6 @@ the most important experiences were challenges and hardships experienced on
 the job, rather than graduate school, conferences, and workshops. This suggests
 that job rotation and job enlargement may be effective ways to enhance leader
 
-Leaders, Teams, and Their Mental Models
-
-281
-
 mental models within the transformative learning framework. However, this is
 not conclusive evidence, as there is also evidence that training can be effective for
 updating leaders’ mental models.
@@ -12085,7 +11050,6 @@ to build leader mental models. For example, diagrams within training helped
 to build accurate participant mental models (Cuevas et al., 2002). The use of
 diagrams in training also helped participants to make connections across parts
 
-IMPROVED
 TEACHING
 ON CAMPUS
 
@@ -12147,10 +11111,6 @@ linked to
 teaching
 performance
 
-Leaders, Teams, and Their Mental Models
-
-283
-
 of a training program in one study, as evidenced by integrative but not declarative knowledge (Fiore, Cuevas, & Oser, 2003). This suggests that individuals, particularly leaders, may unknowingly build their mental models with the help of
 diagrams within the context of training programs that transfers to other aspects
 of their work life. This may be particularly important considering that researchers regularly worry that only a small portion of what is trained is applied to the
@@ -12187,8 +11147,6 @@ coaching process. Here, leaders take the thoughts and behaviors that they identi
 result in modifications to the leader’s mental models and attitudes at work across
 a potentially wide variety of topics and situations.
 
-284 Jensine Paoletti et al.
-
 Leadership Development
 Academics and scholars define leadership based on a variety of theories that
 have become standards for approaching leadership. Implicit leadership theories
@@ -12223,13 +11181,11 @@ interpretation of an environment, and prescribe the skills associated with leade
 orientation (Lord & Hall, 2005).
 
 Leader Mental Models’ Impacts on Leader Performance
-Individuals’ mental models act as a perceptual filter through which information
+
+### Leader Mental Models' Impacts on Leader Performance
+
 is passed. The same is true for leaders, however they are in a unique position of
 power within their organizations. This allows for their mental models to have
-
-Leaders, Teams, and Their Mental Models
-
-285
 
 widespread effects throughout the organization and interpersonally (RitchieDunham & Puente, 2008). Leaders’ mental models are important for vision formation, a step towards planning, goal achievement, and performance. Leaders’
 mental models affect their performance on all ends of the task spectrum, from
@@ -12265,8 +11221,6 @@ on information about cause and effect within the leaders’ cognition (Goldvarg 
 Johnson-Laird, 2001). They are also related to leader performance because understanding the current and future state prepares the leader for action. Forecasts are
 also related to vision, mentioned before, through prescriptive mental models. Figure 11.2 shows the model of forecasting developed by Mumford and colleagues
 in context with other cognitive processes (Mumford, Steele, McIntosh, & Mulhearn, 2015).
-
-286 Jensine Paoletti et al.
 
 Scanning
 
@@ -12309,10 +11263,6 @@ Eubanks, & Mumford, 2009). These mental models have five distinguishing componen
 experience, targets of influence, and locus of causation (Bedell-Avers et al., 2009;
 Mumford, 2006). One historiometric study of civil rights leaders found that
 
-Leaders, Teams, and Their Mental Models
-
-287
-
 charismatic, ideological, and pragmatic leaders interact with leaders outside of
 their mental model of leadership differently compared to their followers.
 Charismatic and pragmatic leaders, for example, appear to capitalize on the
@@ -12345,8 +11295,6 @@ service was a growing industry. Their focus on customer service allowed for a su
 change in a knowledge-based economy, driven by globalization and technological
 advances (David & Foray, 2003; McGregor, Arndt, Berner, Rowley, & Hall, 2006;
 Von Krogh, Ichijo, & Nonaka, 2000). In this environment, leaders’ mental models
-
-288 Jensine Paoletti et al.
 
 can impede or promote innovation. Simply by living in the past and not understanding the nuances of the global market, leaders can hamper innovation and
 progress for their organization. By aligning their mental models of the economic
@@ -12382,12 +11330,10 @@ mental models support their organization’s social responsibility and fairness 
 greater engagement, commitment, and satisfaction from their employees (Lindorff & Peck, 2010). This combines “to create an organizational climate for CSR
 which contributes to a firm’s overall social reputation” (Aguilera, Rupp, Williams, & Ganapathi, 2007, p. 840). Therefore, leaders’ models can hinder and support ethics in an organization.
 
-Leaders, Teams, and Their Mental Models
-
-289
-
 Leader Mental Models’ Impacts on Team Performance
-Leaders’ mental models impact their teams’ performance (e.g., Dionne, Sayama,
+
+### Leader Mental Models' Impacts on Team Performance
+
 Hao, & Bush, 2010; Zaccaro, Rittman, & Marks, 2001). Although not specified,
 topics discussed previously have explicit (vision, sensemaking, innovation, etc.)
 implications for those working under the leader. So far, the focus has been primarily on designated leaders, but the focus will begin to include information
@@ -12418,8 +11364,6 @@ through information exchange. Marks, Zaccaro, and Mathieu (2000) found that
 the more information given to leaders during a briefing resulted in greater mental
 model similarity within the team. Their study compared adaptive performance
 between teams whose leaders had been briefed and teams whose leaders had
-
-290 Jensine Paoletti et al.
 
 not been briefed. In their study, they found that leaders’ knowledge was communicated to their teams, which was thought to positively influence team mental
 model development (Marks, Zaccaro, & Mathieu, 2000). Thus, there is evidence
@@ -12457,10 +11401,6 @@ Reddy, & Friedenberg, 2014). The leader’s behavior sets the team up for succes
 coordination throughout the project. The team is able to get a sense that “everything is laid out, everyone’s on the same page, you don’t really, like you don’t
 waste any time, it’s more efficient”, per one participant in McNeese et al. (2014).
 
-Leaders, Teams, and Their Mental Models
-
-291
-
 This efficiency translates to more productive teamwork. This higher performance
 quality is spurred by the team’s leader via the team’s mental model. Additionally,
 the leader also helps manage conflict within the team (McNeese et al., 2014).
@@ -12497,8 +11437,6 @@ characteristics of team members that help define the contributions each can
 make to successful collective action. The strategies and tactics that emerge
 from a consideration of these factors, their moderating contingencies,
 and specific roles of each task member in particular action plans become
-
-292 Jensine Paoletti et al.
 
 incorporated into the team interaction model. The quality and elaboration
 of this model is associated with how well team members will be able to
@@ -12538,10 +11476,6 @@ unique information as opposed to common knowledge. Although this seems
 intuitive, oftentimes team members may feel discomfort sharing information that
 they think could deviate from what the team already has established, resulting
 
-Leaders, Teams, and Their Mental Models
-
-293
-
 in groupthink rather than having an accurate understanding of the team’s taskrelated problem and solution ( Janis, 1982). The studies described later elaborate
 on methods of how to communicate effectively.
 DeChurch and Mesmer-Magnus (2010) suggested that leadership is probably
@@ -12580,8 +11514,6 @@ which found that frequency of meetings and phone calls were positively related
 to the development of SMMs. However, email exchanges did not show any effect.
 Similarly, Sætrevik and Eid (2014) note from their field studies on emergency
 
-294 Jensine Paoletti et al.
-
 management teams, that even if a leader is well-informed, the team’s similarity
 index score can be negatively affected if they do not effectively communicate
 their knowledge about the team’s work, goals, and priorities, in turn, lowering
@@ -12619,10 +11551,6 @@ idea is unpopular (Edmondson, 1999). Leaders can foster psychological safety by
 admitting their own faults. These practices can help ensure that the team is all on
 the same page.
 
-Leaders, Teams, and Their Mental Models
-
-295
-
 Using strategic communication (e.g., debriefing, planning, and sense-giving)
 can even foster the development of multiteam system collective cognition. Multiteam systems are two or more teams that work interdependently to accomplish
 shared goals (Mathieu, Marks, & Zaccaro, 2002). Murase, Carter, DeChurch, and
@@ -12656,8 +11584,6 @@ support). Other team contexts can also benefit from a leader exhibiting this kin
 of behavior. The leader is in a unique position to have a motivational role on the
 team, which can influence how they motivate each other and find a shared meaning in their team’s work.
 
-296 Jensine Paoletti et al.
-
 Shared Experiences
 Experience over time can help team members have more similar cognitions about
 the team and their task. Kivlighan, Markin, Stahl, and Salahuddin (2007) found
@@ -12690,10 +11616,6 @@ climate (i.e., high member engagement, low avoidance, and unresolved conflict;
 MacKenzie, 1983). They found that over time, the coleaders had more similar
 mental models about the group, and that the more similar their mental models were, the more productive group climate was. Also, the similarity of mental
 models was positively related to immediate increases in group engagement in
-
-Leaders, Teams, and Their Mental Models
-
-297
 
 following group sessions. They suggest that the required pre-group preparation
 and discussions between the coleaders may have possibly contributed to the convergence of their mental models. Other researchers also share this idea that allotting time for discussion helps facilitate the development of a shared mental model
@@ -12734,9 +11656,8 @@ demonstrated more initiative and leadership. These examples demonstrate how
 giving team members the freedom to speak up and step up as leaders can foster
 a strong SMM.
 
-298 Jensine Paoletti et al.
+### Future Directions
 
-Future Directions
 From our exploration into leaders’ mental models, we can see that much progress
 has been made in recent decades to advance our understanding of how leaders, non-leaders, and teams hold and process information in the form of mental
 models. However, there are still gaps in the literature that future research should
@@ -12768,13 +11689,10 @@ need to understand why leader mental models might result in team failure. For
 instance, does a lack of psychological safety affect the follower’s willingness or
 ability to challenge a supervisor’s mental model with new information?
 
-Conclusions
+### Conclusions
+
 Leaders are key components to their workplaces, whether they are operating
 in a team or group setting, whether they are experts or novices, and whether
-
-Leaders, Teams, and Their Mental Models
-
-299
 
 they work in a hierarchical or distributed leadership environment. Their mental models, or cognitive lenses to view the world, are drivers of their behaviors
 and attitudes. These mental models are evaluated via their similarity or accuracy compared to an expert’s model. In such examples, an educator with low
@@ -12795,12 +11713,14 @@ the chapter by noting what areas of the literature could be further augmented
 by future research endeavors. Leaders’ mental models are important for leaders,
 followers, teams, and organizations.
 
-Acknowledgments
+### Acknowledgments
+
 This work was supported in part by contracts NNX16AP96G and NNX16AB08G with National Aeronautics and Space (NASA) to Rice University. This
 work was also supported, in part, by research grants from the Ann and John Doerr
 Institute for New Leaders at Rice University.
 
-References
+### References
+
 Aguilera, R. V., Rupp, D. E., Williams, C. A., & Ganapathi, J. (2007). Putting the S back
 in corporate social responsibility: A multilevel theory of social change in organizations.
 Academy of Management Review, 32, 836–863.
@@ -12811,8 +11731,6 @@ B. Schyns & J. R. Meindl (Eds.), Implicit leadership theories: Essays and explor
 Baldwin, T. T., & Ford, J. K. (1988). Transfer of training: A review and directions for future
 research. Personnel Psychology, 41, 63–105.
 Bazerman, M. H., & Chugh, D. (2006). Bounded awareness: Focusing failures in negotiation. Negotiation Theory and Research, 7, 9–10.
-
-300 Jensine Paoletti et al.
 
 Bedell-Avers, K. E., Hunter, S. T., Angie, A. D., Eubanks, D. L., & Mumford, M. D. (2009).
 Charismatic, ideological, and pragmatic leaders: An examination of leader–leader interactions. Leadership Quarterly, 20, 299–315.
@@ -12853,10 +11771,6 @@ process. Organizational Behavior and Human Performance, 13, 46–78.
 David, P. A., & Foray, D. (2003). Economic fundamentals of the knowledge society. Policy
 Futures in Education, 1, 20–49.
 
-Leaders, Teams, and Their Mental Models
-
-301
-
 Davies, M., Stankov, L., & Roberts, R. D. (1998). Emotional intelligence: In search of an
 elusive construct. Journal of Personality and Social Psychology, 75, 989–1015.
 DeChurch, L. A., & Mesmer-Magnus, J. R. (2010). The cognitive underpinnings of effective teamwork: A meta-analysis. Journal of Applied Psychology, 95, 32–53.
@@ -12895,8 +11809,6 @@ Goldstein, I. L., & Ford, J. K. (2002). Training in organizations: Needs assessm
 and evaluation (4th ed.). Belmont, CA: Wadsworth.
 Goldvarg, E., & Johnson-Laird, P. N. (2001). Naive causality: A mental model theory of
 causal meaning and reasoning. Cognitive Science, 25, 565–610.
-
-302 Jensine Paoletti et al.
 
 Gosling, J., & Mintzberg, H. (2006). Management Education as if both matter. Management
 Learning, 37, 419–428.
@@ -12938,10 +11850,6 @@ Klein, K. J., & House, R. J. (1995). On fire: Charismatic leadership and levels 
 Leadership Quarterly, 6, 183–198.
 Klimoski, R., & Mohammed, S. (1994). Team mental model: Construct or metaphor?
 Journal of Management, 20, 403–437.
-
-Leaders, Teams, and Their Mental Models
-
-303
 
 Koopman, P. L., & Wierdsma, A. F. M. (1998). Participative management. In P. J. D.
 Doentu, P. Thierry, & C. J. de Wolf (Eds.), Personnel psychology: Handbook of work and
@@ -12987,8 +11895,6 @@ issues (Vol. 6, pp. 95–147). Amsterdam: Elsevier.
 McGregor, J., Arndt, M., Berner, R., Rowley, I., & Hall, K. (2006, April 24). The world’s
 most innovative companies. Business Week, p. 62.
 
-304 Jensine Paoletti et al.
-
 McIntyre, H. H., & Foti, R. J. (2013). The impact of shared leadership on teamwork mental
 models and performance in self-directed teams. Group Processes & Intergroup Relations,
 16, 46–57.
@@ -13030,10 +11936,6 @@ of team conflict: A team-level meta-analysis of task, relationship, and process 
 Human Performance, 26, 236–260.
 Partlow, P. J., Medeiros, K. E., & Mumford, M. D. (2015). Leader cognition in vision formation: Simplicity and negativity. Leadership Quarterly, 26, 448–469.
 
-Leaders, Teams, and Their Mental Models
-
-305
-
 Pearce, C. L., & Sims, H. P., Jr. (2002). Vertical versus shared leadership as predictors of the
 effectiveness of change management teams: An examination of aversive, directive, transactional, transformational, and empowering leader behaviors. Group Dynamics: Theory,
 Research, and Practice, 6, 172–197.
@@ -13071,8 +11973,6 @@ Skilton, P. F., & Dooley, K. J. (2010). The effects of repeat collaboration on c
 Slater, S. F., & Narver, J. C. (1995). Market orientation and the learning organization. Journal of Marketing, 59(3), 63–74. https://doi.org/10.1177/002224299505900306
 Smith-Jentsch, K. A., Mathieu, J. E., & Kraiger, K. (2005). Investigating linear and interactive effects of shared mental models on safety and efficiency in a field setting. Journal of
 Applied Psychology, 90, 523–535.
-
-306 Jensine Paoletti et al.
 
 Solansky, S. T., Duchon, D., Plowman, D. A., & Martínez, P. G. (2008). On the same page:
 The value of paid and volunteer leaders sharing mental models in churches. Nonprofit
@@ -13113,9 +12013,9 @@ Studies, 9, 15–32.
 Zaccaro, S. J., Rittman, A. L., & Marks, M. A. (2001). Team leadership. Leadership Quarterly,
 12(4), 451–483.
 
-12
-LEADER SOCIAL ACUITY
-Stephen J. Zaccaro and Elisa M. Torres
+## Chapter 12: Leader Social Acuity
+
+*Stephen J. Zaccaro and Elisa M. Torres*
 
 Leaders contribute to organization effectiveness by identifying emerging problems,
 generating solutions, and implementing the best-fitting ones (Mumford, Zaccaro,
@@ -13139,8 +12039,6 @@ Social acuity refers to skill in perceptual accuracy and understanding of social
 domains (Funder & Harris, 1986). It reflects the detection of determinative cues
 and patterns in such domains and the correct interpretation of their meaning.
 Leaders with high social acuity skills are consistently effective at maintaining
-
-308 Stephen J. Zaccaro and Elisa M. Torres
 
 social awareness and engaging in sensemaking. They possess more complex social
 schemas that aid in such detection and interpretation (Cantor & Kihlstrom, 1987;
@@ -13173,10 +12071,6 @@ social domains results from the sociotechnical systems nature of organizations
 (Katz & Kahn, 1978; Mumford & Connelly, 1991; Zaccaro et al., 1991). Mumford
 and Connelly (1991) noted that integrated and embedded organizational systems
 mean that problem solutions can entail multiple connected stakeholders. Accordingly, the first, second, and third order effects of such solutions can reverberate across numerous social sectors within the organizational space. Strong social
-
-Leader Social Acuity
-
-309
 
 acuity skills allow leaders to perceive these social influences and patterns when
 defining problem scope and solution parameters.
@@ -13215,8 +12109,6 @@ construction processes by which certain understandings of leadership come about
 and are given privileged ontology” (p. 655). This suggests that how leadership
 is to be practiced derives from social interactions and agreements with multiple
 
-310 Stephen J. Zaccaro and Elisa M. Torres
-
 stakeholders within a leadership network. Thus, leadership granting occurs not
 only “upward” from followers to potential leaders but also in contexts where middle managers and senior executives grant leadership roles “downward” to their
 subordinate managers. In these instances, the granting of leadership autonomy
@@ -13252,10 +12144,6 @@ follower endorsements of leader role taking and of the amount of solution discre
 who were seeking a leadership role and those who granted that role. She found
 that social skills of the leader, which included social perceptiveness skills, were
 positively correlated with such agreements. Individuals without such skills were
-
-Leader Social Acuity
-
-311
 
 more likely to have disconnected leadership relationships (i.e., rejected leadership
 taking, or unrequited leadership granting).
@@ -13295,7 +12183,6 @@ action processes that are drivers of effective leadership (Maitlis, 2005; Morges
 et al., 2010; Mumford et al., 2000). Table 12.1 identifies a number of these processes
 drawn from multiple sources. The first two columns present a problem-solving
 
-Perception of situational status and detection of changes
 that indicate possible problems. (Endsley, 1995)
 “The process by which people first become concerned
 that events may be taking an unexpected and undesirable
@@ -13366,7 +12253,6 @@ Social Dynamics and Elements
 
 TABLE 12.1 Definition of Leader Problem-Solving Processes With Corresponding Social Dynamics and Elements
 
-Solution
 Implementation
 and Monitoring
 
@@ -13407,8 +12293,6 @@ actors
 • Analysis of collective and unit capacities
 • Combination of social information to derive best fitting solutions
 
-314 Stephen J. Zaccaro and Elisa M. Torres
-
 process with corresponding definitions. The third column identifies particular
 social dynamics that can imbue that process, and therefore need to be perceived
 and interpreted by the leader.
@@ -13446,10 +12330,6 @@ inconsistencies with respect to known facts” (Mumford et al., 2017, p. 29).
 In social domains, problem construction entails gathering information in order
 to identify the stakeholders connected to the problem, including how each contributes to the problem. For example, Smith (1989) defines the initial stage in the
 
-Leader Social Acuity
-
-315
-
 development of a problem definition as the “identification of relevant stakeholders. Who owns the problem, is directly concerned with its resolution? What other
 agents are involved in the situation?” (p. 973). He also notes:
 One can consider the situation in terms of relevant systems (Checkland,
@@ -13480,8 +12360,6 @@ problem-detection threshold, galvanizes a need for explanation (Cowan, 1986;
 Louis, 1980) and the process of developing problem meaning. This meaningmaking process includes cause analysis and establishes the basis for subsequent
 goals and constraint analyses that in turn provide a foundation for planning and
 solution generation (Mumford et al., 2017).
-
-316 Stephen J. Zaccaro and Elisa M. Torres
 
 The process driving problem sensemaking entails development of a situation
 model and a comparison of this model to existing problem schemas in long-term
@@ -13518,10 +12396,6 @@ of social participants.
 Leaders with higher social acuity, then, are able to interpret social cues and derive
 problem models more quickly than those lower in social acuity. Their problem models are also likely to be more complex, meaning that they “make more
 fine-grained distinctions among types of persons, situations, and social episodes”
-
-Leader Social Acuity
-
-317
 
 (Zaccaro et al., 1991, p. 327), and integrate these distinctions into a more comprehensive narrative (Zaccaro, 2001).
 Problem meaning-making is not restricted to the lone leader. Several perspectives of organizational sensemaking define it as “a social process that occurs
@@ -13560,8 +12434,6 @@ systems are likely to consider a greater range of actors and social outcomes in
 their schema-based problem forecasting (Cantor & Kihlstrom, 1987; Zaccaro
 et al., 1991).
 
-318 Stephen J. Zaccaro and Elisa M. Torres
-
 Problem representations and forecasting provide a basis for goals and constraint
 analyses that in turn contribute to solution generation and planning (Mumford
 et al., 2017). Mumford and colleagues (2017, p. 29) defined goals analysis as “the
@@ -13598,10 +12470,6 @@ ideas within the contexts of their own needs, values, and agendas. Leaders with
 higher social acuity would be more adept at discerning these stakeholder motive
 structures and incorporating their perceptions into their own process of solution
 selection and implementation.
-
-Leader Social Acuity
-
-319
 
 Earlier we noted forecasting as a key process determining how an emerging
 problem is likely to play out if left unresolved. Forecasting is also an important
@@ -13640,8 +12508,6 @@ familiarity with a domain made more accurate evaluations of solution resource
 requirements and the social outcomes of problem solutions. We have noted
 that social expertise and the complexity of social knowledge stores comprise a
 major element of social acuity (Cantor & Kihlstrom, 1987; Zaccaro et al., 1991).
-
-320 Stephen J. Zaccaro and Elisa M. Torres
 
 The results of the study by Daily and Mumford suggest that these knowledge
 representations play a critical role in forecasting the social implications of problem
@@ -13683,10 +12549,6 @@ For example, in problem detection, construction, and sensemaking, an observed
 negative delta between expected and actual performance may signal a disconnect
 between the KSAs of an actor and the performance requirements of a particular
 
-Leader Social Acuity
-
-321
-
 task. The meaning-making process may center on whether the task requirements
 have changed in ways beyond the capacity of the performer. An observed delta
 may also signal a decrease in motivation and engagement of the actor for the task.
@@ -13721,8 +12583,6 @@ Action Potentialities
 The social acuity of leaders extends to their perceptions of leadership demand
 characteristics and social affordances in their extant organizational context (Zaccaro et al., 2018). These perceptions refer to the behavioral requirements and
 potential action choices in the environment relative to the leaders’ goal intentions.
-
-322 Stephen J. Zaccaro and Elisa M. Torres
 
 According to Zaccaro et al. (2018) “leadership demand characteristics refer to
 contextual information that signals or cues which leadership strategies and activities are necessary for performance success in a particular situation” (p. 30). Problem
@@ -13760,10 +12620,6 @@ that is, situational characteristics offer information about the person’s ‘i
 aspects’, or those purposes for which contextual elements can serve (Fiebich,
 2014, p. 152)” (p. 31).
 
-Leader Social Acuity
-
-323
-
 These arguments suggest that characteristics of the leader will influence their
 proactive perception of the social context, as they attend to social elements that
 correspond to their intended or preferred actions. When their perceptual scanning identifies matching social elements, the consequence should be greater
@@ -13799,8 +12655,6 @@ to align them with perceived action possibilities in the environment. Second,
 they need clear awareness of their goals and intentions, and particularly if they
 are calibrated accurately to their problem sensemaking and solution parameters.
 
-324 Stephen J. Zaccaro and Elisa M. Torres
-
 The quality of their goal analysis would contribute to this awareness. Third,
 higher social acuity is associated with more complex knowledge stores and schemas about the social context (Cantor & Kihlstrom, 1987; Zaccaro et al., 1991).
 These complex schemas could extend the perceptual array that leaders apply to
@@ -13811,7 +12665,8 @@ and more attuned to distinctions among followers in terms of such attributes as
 abilities, personality, and regulatory fit. Accordingly, social acuity may correspond
 to an ability to detect a wider array of social affordances.
 
-Summary: Core Social Acuity Skills in Leader Problem Solving
+### Summary: Core Social Acuity Skills in Leader Problem Solving
+
 In this chapter, we have denoted a number of processes in leader social problem solving, identified the social elements that are considered in such problem
 solving, and highlighted the role of social acuity in facilitating the identification and consideration of these elements. Leaders with high social acuity skills
 have more multifaceted schemas and stored social knowledge structures that are
@@ -13835,10 +12690,6 @@ social knowledge to determine the best-fitting use of social resources and appro
 Witt, & Hochwarter, 2001). Social forecasting reflects the skill to accurately project
 the consequences of potential solutions in a social context (e.g., Shipman et al.,
 2010). Activation of social capacities refers to skill in using social knowledge stores
-
-Leader Social Acuity
-
-325
 
 Social
 Scanning
@@ -13880,8 +12731,6 @@ perceptiveness as anchors for the related attributes. Social perceptiveness skil
 is one of the core attributes of social intelligence (Zaccaro et al., 1991). Social
 intelligence refers to both the ability to interpret and understand social contexts
 and select appropriate behaviors reflecting that understanding (Marlow, 1986).
-
-TABLE 12.2 Social Acuity and Related Constructs
 
 Concept
 
@@ -13946,10 +12795,6 @@ Self-Monitoring
 Perspective
 Taking
 
-Leader Social Acuity
-
-327
-
 Concept
 
 Definition
@@ -14004,8 +12849,6 @@ the analysis and evaluation of social situations produces judgments of best-fitt
 leadership responses. Along this line, Zaccaro, Foti, and Kenny (1991) found that
 self-monitoring skills were positively associated with leader emergence across
 
-328 Stephen J. Zaccaro and Elisa M. Torres
-
 different situations composed of varying task requirements and group composition. Each leadership context required different sets of leadership responses. Presumably, individuals who consistently emerged as leaders across the situations use
 their social acuity skills in detecting the shifts in leadership requirements and
 adjusting to those shifts. Other studies have demonstrated similar positive associations between self-monitoring and leader emergence (Foti & Hauenstein, 2007;
@@ -14039,10 +12882,6 @@ incorporates a number of skills and processes we have defined as reflecting soci
 acuity but applies them specifically to multicultural or cross-cultural contexts.
 Cultural acuity skills would facilitate leadership in such diverse contexts. Accordingly, Lisak and Erez (2015) reported that cultural intelligence was associated with
 
-Leader Social Acuity
-
-329
-
 leader emergence in multicultural teams, but only when such acuity skills were
 paired with a global identity and an openness to cultural diversity. Rockstuhl and
 colleagues (2011) found that cultural intelligence was more strongly related to
@@ -14075,12 +12914,11 @@ to positive leadership outcomes (e.g., Brouer, Douglas, Treadway, & Ferris, 2013
 Ferris, Perrewé, Daniels, Lawong, & Holmes, 2017; Morris, 1997; Tocher, Oswald,
 Shook, & Adams, 2012).
 
-Conclusions
+### Conclusions
+
 This brief summary of concepts in the leadership literature that include elements
 of social acuity in their definitions indicates that they have become widespread in
 models of leadership effectiveness. In their review of leader individual differences
-
-330 Stephen J. Zaccaro and Elisa M. Torres
 
 and the leadership context, Zaccaro et al. (2018) argued that social acuity and
 behavioral flexibility help foster a greater congruence between leader attributes
@@ -14117,10 +12955,6 @@ has been included in 49% of assessment centers (p. 390). Herd, Alagaraja, and
 Cumberland (2016) described assessment centers for evaluating global leadership
 competence. Based on Conger and O’Neil (2012), they noted that the competencies to be included in such assessment centers were “skills in reading and
 responding appropriately to cross-cultural cues and norms, and working in a
-
-Leader Social Acuity
-
-331
 
 variety of cultural contexts to influence others in order to achieve organizational
 objectives” (p. 29). This recommendation would include several of the social acuity skills presented in Figure 12.1. However, they also observed that “very little
@@ -14161,9 +12995,8 @@ across the organization. Progress in these areas can further our understanding o
 construct that is at once ubiquitous in the leadership domain but still obscured in
 terms of all the precise ways it advances the effective practice of leadership.
 
-332 Stephen J. Zaccaro and Elisa M. Torres
+### References
 
-References
 Ahearn, K. K., Ferris, G. R., Hochwarter, W. A., Douglas, C., & Ammeter, A. P. (2004).
 Leader political skill and team performance. Journal of Management, 30(3), 309–327.
 Ang, S., Van Dyne, L., & Rockstuhl, T. (2015). Cultural intelligence: Origins, conceptualization, evolution and methodological diversity. In M. Gelfand, C. Y. Chiu, & Y. Y.
@@ -14203,10 +13036,6 @@ Strategy, 35(2), 52.
 Conjar, E. A. (2014). The influence of social network relationships on development: An empirical
 examination of leadership development (Unpublished doctoral dissertation). George Mason
 University, Fairfax, VA.
-
-Leader Social Acuity
-
-333
 
 Côté, S., Lopes, P., Salovey, P., & Miners, C. (2010). Emotional intelligence and leadership
 emergence in small groups. Leadership Quarterly, 21(3), 496–508.
@@ -14253,8 +13082,6 @@ leaders’ situational responsiveness under conditions of changing group tasks a
 Ferris, G. R., Perrewé, P. L., Daniels, S. R., Lawong, D., & Holmes, J. J. (2017). Social influence and politics in organizational research: What we know and what we need to know.
 Journal of Leadership & Organizational Studies, 24(1), 5–19.
 
-334 Stephen J. Zaccaro and Elisa M. Torres
-
 Ferris, G. R., Treadway, D. C., Kolodinsky, R. W, Hochwarter, W. A., Kacmar, C. J.,
 Douglas, C., . . . Frink, D. D. (2005). Development and validation of the political skill
 inventory. Journal of Management, 31(1), 126–152.
@@ -14297,10 +13124,6 @@ Graen, G. B., & Scandura, T. A. (1987). Toward a psychology of dyadic organizing
 in Organizational Behavior, 9, 175–208.
 Graen, G. B., & Uhl-Bien, M. (1995). Relationship-based approach to leadership: Development of leader-member exchange (LMX) theory of leadership over 25 years: Applying a multi-level multi-domain perspective. Leadership Quarterly, 6(2), 219–247.
 
-Leader Social Acuity
-
-335
-
 Griffin, D. W., & Ross, L. (1991). Subjective construal, social inference, and human misunderstanding. Advances in Experimental Social Psychology, 24, 319–359.
 Guerin, D. W., Oliver, P. H., Gottfried, A. W., Gottfried, A. E., Reichard, R. J., & Riggio, R. E. (2011). Childhood and adolescent antecedents of social skills and leadership
 potential in adulthood: Temperamental approach/withdrawal and extraversion. Leadership Quarterly, 22(3), 482–494.
@@ -14338,8 +13161,6 @@ of the internal market for reputation in organizations. Academy of Management Jo
 37(1), 87–108.
 Kilduff, M., Mehra, A., Gioia, D. A. D., & Borgatti, S. (2017). Brokering trust to enhance leadership: A self-monitoring approach to leadership emergence. In J. Glückler, E. Lazega, &
 I. Hammer (Eds.), Knowledge and networks (pp. 221–240). Cham, Switzerland: Springer.
-
-336 Stephen J. Zaccaro and Elisa M. Torres
 
 Kimura, T. (2015). A review of political skill: Current research trend and directions for
 future research. International Journal of Management Reviews, 17(3), 312–332.
@@ -14380,10 +13201,6 @@ Mitchell, R. K., Agle, B. R., & Wood, D. J. (1997). Toward a theory of stakehold
 Management Review, 22(4), 853–886.
 Moore, M. H. (1976). Anatomy of the heroin problem: An exercise in problem definition.
 Policy Analysis, 2, 639–662.
-
-Leader Social Acuity
-
-337
 
 Morgeson, F. P., DeRue, D. S., & Karam, E. P. (2010). Leadership in teams: A functional
 approach to understanding leadership structures and processes. Journal of Management,
@@ -14429,8 +13246,6 @@ Shamir, B., Arthur, M. B., & House, R. J. (1994). The rhetoric of charismatic le
 A theoretical extension, a case study, and implications for research. Leadership Quarterly,
 5(1), 25–42.
 
-338 Stephen J. Zaccaro and Elisa M. Torres
-
 Shamir, B., House, R. J., & Arthur, M. B. (1993). The motivational effects of charismatic
 leadership: A self-concept based theory. Organization Science, 4(4), 577–594.
 Shipman, A. D., Byrne, C. L., & Mumford, M. D. (2010). Leader vision formation and forecasting: The effects of forecasting extent, resources, and timeframe. Leadership Quarterly,
@@ -14473,10 +13288,6 @@ Zaccaro, S. J., Foti, R. J., & Kenny, D. A. (1991). Self-monitoring and trait-ba
 leadership: An investigation of leader flexibility across multiple group situations. Journal
 of Applied Psychology, 76(2), 308–315.
 
-Leader Social Acuity
-
-339
-
 Zaccaro, S. J., Gilbert, J., Thor, K., & Mumford, M. (1991). Leadership and social intelligence: Linking social perceptiveness and behavioral flexibility to leader effectiveness.
 Leadership Quarterly, 2(4), 317–342.
 Zaccaro, S. J., Green, J. P., Dubrow, S., & Kolze, M. (2018). Leader individual differences,
@@ -14485,11 +13296,9 @@ Zaccaro, S. J., Weis, E., Chen, T. R., & Matthews, M. D. (2014). Situational loa
 Perez, & E. L. Baker (Eds.), Teaching and measuring cognitive readiness (pp. 93–115). New
 York, NY: Springer.
 
-13
-LEADERSHIP AND
-MONITORING SKILLS
-David V. Day, Ronald E. Riggio,
-and Rowan Y. Mulligan
+## Chapter 13: Leadership and Monitoring Skills
+
+*David V. Day, Ronald E. Riggio, and Rowan Y. Mulligan*
 
 Leaders have many and varied responsibilities. Included among these myriad
 responsibilities is ensuring that work goals are being met, that ethical standards are
@@ -14512,10 +13321,6 @@ management, exemplification and ingratiation, have been positively related to
 perceived transformational leadership, leader effectiveness, and follower satisfaction (Gardner & Cleavenger, 1998). Exemplification refers to taking personal risks
 and making personal sacrifices, while ingratiation encompasses charming helping
 behavior, work praise, and non-job-related compliments to elicit a desired image
-
-Leadership and Monitoring Skills
-
-341
 
 in the minds of others. That is, leaders who have portrayed themselves as worthy
 role models and communicated a genuine interest and prioritization of the individual follower are more likely to be perceived as an effective transformational
@@ -14552,8 +13357,6 @@ across 23 samples demonstrated a positive, non-zero relationship (corrected
 r = .21) between self-monitoring and various measures of leadership behavior
 (Day, Schleicher, Unckless, & Hiller, 2002). Subsequent research has demonstrated
 
-342 David V. Day et al.
-
 that self-monitoring moderates the relationship between leadership style and
 vision theme. Specifically, the form of the relationship is such that high self-­
 monitoring strengthened the relationship between charismatic leadership and
@@ -14586,10 +13389,6 @@ reveals his or her “true self ” while simultaneously cultivating the true gr
 Self-Presentation
 Self-awareness also contributes to an area that has received a great deal of attention: leader self-presentation, which is the notion that leaders monitor their own
 performance in a leadership role. Self-presentation is an omnipresent ingratiatory
-
-Leadership and Monitoring Skills
-
-343
 
 behavioral strategy in that most individuals and leaders seek to present themselves
 in the best light in order to gain respectable and positive impressions among others (Liden & Mitchell, 1988; Barrick, Shaffer, & DeGrassi, 2009). This is supported
@@ -14628,8 +13427,6 @@ researchers found that positive and negative self-presentations were not mediate
 mainly an unconscious process (Gergen & Wishnov, 1965).
 Future research offers an opportunity to delve further into the interplay
 between leader self-presentation, follower impressions, as well as objective and
-
-344 David V. Day et al.
 
 subjective measures of job and task performance of both the leader and the group.
 Perhaps, to a certain extent, job performance and output quality ratings are moderated by the overall impressions that the leader has unconsciously made on the
@@ -14670,10 +13467,6 @@ not until later that individuals present more modest self-depictions that requir
 more effort to enact (Paulhus et al., 1989). Effortful self-presentations (i.e., those
 involving unfamiliar or atypical presentations) have been conceptualized as
 
-Leadership and Monitoring Skills
-
-345
-
 a generalized resource that can deplete overall self-regulatory resources (Vohs,
 Baumeister, & Ciarocco, 2005). For instance, counter-normative self-presentation
 (e.g., violations of gender norms) has led to impaired self-regulation in future
@@ -14709,8 +13502,6 @@ affective tone (i.e., collective mood; Sy et al., 2005).
 Related to this line of research, Barsade (2002) found that the valence of leader
 affect was key, while the intensity and arousal of leader moods had no effect on
 
-346 David V. Day et al.
-
 the work group’s task cooperation or conflict. Displays of positive affect have also
 been suggested to lead to higher ratings of charismatic leadership (Damen, van
 Knippenberg, & van Knippenberg-Wisse, 2008). Caza, Zhang, Wang, and Bai
@@ -14745,10 +13536,6 @@ Leaders have an important responsibility in monitoring others in their work
 groups and teams. The reasons why this is an important function vary from simply
 understanding others in the workplace, including being able to understand both
 verbal and nonverbal/emotional messages, to more complex forms of monitoring that include the more managerial aspects of performance management and
-
-Leadership and Monitoring Skills
-
-347
 
 appraisal, to the inherent responsibility all leaders have to develop others (Pulakos,
 Mueller-Hanson, & Arad, 2019). Appraising performance and helping others to
@@ -14786,15 +13573,15 @@ A construct that is closely related to emotional sensitivity and empathy is
 empathic accuracy. Empathic accuracy is the ability to accurately infer the feelings
 and thoughts of another (Ickes, 2003). It is a critical element of relationship development and maintenance, and as such, is important for leader-follower relationships. Successful empathic accuracy requires carefully monitoring the behavior
 
-348 David V. Day et al.
-
 of another, searching for cues of emotion, attitude, and dominance/submissiveness (Ickes & Tooke, 1988). A practical question to consider is the extent that
 empathic accuracy can be trained. This seems to be a likely possibility; however,
 it should be considered as an important domain on its own without invoking
 scientifically dubious constructs such as emotional intelligence.
 
 Performance Monitoring
-Perhaps one of the most important tasks of supervisors and leaders is monitoring
+
+### Performance Monitoring
+
 the performance of direct reports and followers, providing constructive feedback
 for performance improvement (Aguinis, 2019; London, 2015). For the most part,
 workplace performance monitoring focuses on assessments of worker productivity, but it could also include the observation and assessment of employees’ abilities
@@ -14821,10 +13608,6 @@ idea is that for many jobs in production, sales, and customer service, computers
 aid leaders in performance monitoring when productivity can be easily quantified.
 Leader performance monitoring is an essential skill for coaching employees.
 In order to be an effective coach a leader must monitor the employee’s work
-
-Leadership and Monitoring Skills
-
-349
 
 performance, paying attention to attainment of goals, the employee’s development
 of skills and competencies, and what the employee needs to better perform his or
@@ -14861,8 +13644,6 @@ In a qualitative study of extreme action teams, researchers identified a process
 role (Klein, Ziegert, Knight, & Xiao, 2006). The focus was on trauma resuscitation units in a teaching hospital where the senior leader (i.e., attending surgeon)
 engage in “rapid and repeated delegation of the active leadership role to and withdrawal of the active leadership role for more junior leaders of the team” (p. 590).
 
-350 David V. Day et al.
-
 In this model, team leaders monitor the performance of the team by watching
 and questioning performance to ensure that the team does not make any serious errors in treatment. The observational data suggested that monitoring can be
 close and highly active (i.e., watching another closely and actively questioning
@@ -14898,10 +13679,6 @@ both internal and external stakeholders. This type of executive monitoring has
 also been called environmental scanning, in which information about events, trends,
 and relationships at the organization or institutional level is acquired and used for
 strategic action (Choo, 2001; Choo & Auster, 1993). Given that one of the fundamental requirements of top-level leaders is to shape the strategic direction of their
-
-Leadership and Monitoring Skills
-
-351
 
 respective organizations through sound decision making (Donaldson & Lorsch,
 1983), this requires ongoing monitoring of the organization and its internal and
@@ -14942,8 +13719,6 @@ in organizational awareness in order to know and understand the organization
 in its entirety (via monitoring) and to manipulate the organizational situation
 accordingly, which will in turn achieve desired outcomes. For instance, monitoring comes into play in the organizational context with respect to social networks.
 
-352 David V. Day et al.
-
 Mehra, Kilduff, and Brass (2001) found that high self-monitors were more likely to
 have achieved central positions in social networks in the organization. High selfmonitors also exhibited a unique tendency, not present in the low self-monitors,
 for their tenure to correlate with occupancy of beneficial network positions
@@ -14980,10 +13755,6 @@ financial presses, the ongoing political climate, as well as information gatheri
 through mergers and acquisitions to enhance horizontal or vertical integration.
 These involve high-level monitoring skills on the part of leaders, as well as being
 
-Leadership and Monitoring Skills
-
-353
-
 able to consult with specialists across various technical domains (e.g., finance,
 strategy, legal). An area of potential future interest is in better understanding the
 link between developing strategic thinking competency (Dragoni et al., 2014)
@@ -15015,8 +13786,6 @@ social capital of an organization, there is also the somewhat intangible value a
 built up over long periods of time what can be lost in an instant, and there
 certainly are examples of how transitory reputations—including organizational
 reputations—can be (Volkswagen as a recent example). In addition to monitoring organizational identity and image, top leaders need to monitor organizational
-
-354 David V. Day et al.
 
 reputation as they are the key stewards of that important organizational asset. This
 would likely involve marketing and advertising functions within an organization,
@@ -15054,10 +13823,6 @@ only one aspect of the domain. Understanding the timing and amount of monitoring
 organization-monitoring skills to their maximum effects. At present, there does
 not appear to be much evidence-based guidance on the scope or timing of leader
 
-Leadership and Monitoring Skills
-
-355
-
 monitoring behavior. This is an area in need of further research before concrete
 recommendations can be made with some of the more nuanced aspects associated
 with the monitoring behavior of leaders.
@@ -15068,7 +13833,8 @@ whether the relationships between leader monitoring behavior and various outcome
 appears to be a large number of research-related questions to be answered before
 any conclusive practical recommendations can be made.
 
-Conclusions
+### Conclusions
+
 The purpose of this chapter was to review the various forms of monitoring skills
 enacted by organizational leaders. The review focused on aspects of monitoring
 self, monitoring others, and monitoring the organization. At the level of monitoring self, a distinction was drawn between dispositional approaches to understand
@@ -15092,14 +13858,13 @@ stand-alone set of skills, but is linked to actions associated with behavioral r
 organization, industry) levels. Framing this in somewhat different terms, leadership monitoring is part of a broader set of skills that leaders need to ensure
 effective functioning at the individual, team, and organizational levels. More fully
 
-356 David V. Day et al.
-
 unpacking these related skills can offer a potential template for purposes of leader
 development. Monitoring behavior is an inherent component of functions associated with developing self, developing others, and developing the organization. As
 such, they deserve greater theoretical and empirical attention in terms of ongoing
 development of leaders and leadership (Day & Dragoni, 2015).
 
-References
+### References
+
 Aguinis, H. (2019). Performance management (4th ed.). Chicago, IL: Chicago Business Press.
 Albert, S., & Whetten, D. A. (1985). Organizational identity. Research in Organizational
 Behavior, 7, 263–295.
@@ -15133,10 +13898,6 @@ Buss, A. H. (1980). Self-consciousness and social anxiety. San Francisco, CA: Fr
 Caza, A., Zhang, G., Wang, L., & Bai, Y. (2015). How do you really feel? Effect of leaders’ perceived emotional sincerity on followers’ trust. Leadership Quarterly, 26, 518–531.
 Chang, C. H., Rosen, C. C., Siemieniec, G. M., & Johnson, R. E. (2012). Perceptions of
 organizational politics and employee citizenship behaviors: Conscientiousness and selfmonitoring as moderators. Journal of Business and Psychology, 27, 395–406.
-
-Leadership and Monitoring Skills
-
-357
 
 Cheng, C. M., & Chartrand, T. L. (2003). Self-monitoring without awareness: Using mimicry as a nonconscious affiliation strategy. Journal of Personality and Social Psychology, 85,
 1170–1179.
@@ -15176,8 +13937,6 @@ see the real me?” A self-based model of authentic leader and follower developm
 Leadership Quarterly, 16, 343–372.
 Gardner, W. L., & Cleavenger, D. (1998). Impression management behaviors of transformational leaders at the world-class level: A psycho-historical assessment. Management
 Communication Quarterly, 12, 3–41.
-
-358 David V. Day et al.
 
 Gardner, W. L., & Martinko, M. J. (1988). Impression management: An observational study
 linking audience characteristics with verbal self-presentations. Academy of Management
@@ -15223,10 +13982,6 @@ Lau, M. A., Bishop, S. R., Segal, Z. V., Buis, T., Anderson, N. D., Carlson, L.,
 (2006). The Toronto mindfulness scale: Development and validation. Journal of Clinical
 Psychology, 62, 1445–1467.
 
-Leadership and Monitoring Skills
-
-359
-
 Leary, M. R., Robertson, R. B., Barnes, B. D., & Miller, R. S. (1986). Self-presentations of
 small group leaders: Effects of role requirements and leadership orientation. Journal of
 Personality and Social Psychology, 51, 742–748.
@@ -15267,8 +14022,6 @@ and task performance: Subordinates’ self-esteem and self-presentation as moder
 Journal of Occupational and Organizational Psychology, 82, 465–489.
 Riggio, R. E. (2005). Business applications of nonverbal communication. In R. E. Riggio & R. S. Feldman (Eds.), Applications of nonverbal communication research (pp. 119–138).
 Mahwah, NJ: Lawrence Erlbaum Associates.
-
-360 David V. Day et al.
 
 Riggio, R. E. (2014). A social skills model for understanding the foundations of leader communication. In R. E. Riggio & S. J. Tan (Eds.), Leader interpersonal and influence skills: The
 soft skills of leadership (pp. 31–49). New York, NY: Routledge/Psychology Press.
@@ -15313,24 +14066,16 @@ and minds of followers. Academy of Management Annals, 10, 799–840.
 Vohs, K. D., Baumeister, R. F., & Ciarocco, N. J. (2005). Self-regulation and self-presentation:
 Regulatory resource depletion impairs impression management and effortful self-
 
-Leadership and Monitoring Skills
-
-361
-
 presentation depletes regulatory resources. Journal of Personality and Social Psychology, 88,
 632–657.
 Zaccaro, S. J. (2001). The nature of executive leadership: A conceptual and empirical analysis of
 success. Washington, DC: American Psychological Association.
 Zohar, D. (2002). Modifying supervisory practices to improve subunit safety: A leadershipbased intervention model. Journal of Applied Psychology, 87, 156–163.
 
-14
-WISDOM, FOOLISHNESS, AND
-TOXICITY IN LEADERSHIP
-How Does One Know Which Is Which?
-Robert J. Sternberg
+## Chapter 14: Wisdom, Foolishness, and Toxicity in Leadership: How Does One Know Which Is Which?
 
-One would expect, in the twenty-first century, that people would have learned
-enough from history to select wise leaders. So much for expectations. Are you
+*Robert J. Sternberg*
+
 impressed with the wisdom of many of our elected leaders? Well, let’s try a lower
 standard: Are you impressed with the wisdom of any of them? If so, why? If not,
 why not?
@@ -15353,10 +14098,6 @@ people and wise ideas—why they often prefer foolish to wise ideas (see also Ac
 Palfi, & Kekecs, 2015; Sternberg, 2004). That is, I will propose a theory not only
 of the production of wisdom but also of its reception (and why it often is not
 well received). The augmented balance theory represents an integration of work
-
-Wisdom, Foolishness, Toxicity in Leadership
-
-363
 
 I have done on the psychology of cognitive skills and wisdom (e.g., Sternberg,
 2003b, 2003c, 2018) and work I have done on the psychology of loving and liking
@@ -15395,8 +14136,6 @@ Because tacit knowledge is wedded to contexts, the tacit knowledge that would
 apply in one specific context would likely not precisely apply in a different context. To help a learner develop tacit knowledge, a mentor should furnish mediated
 learning experiences rather than direct instruction as to what to do, and when to do
 it. Leaders need to learn how contexts apply constraints on tacit knowledge: Tacit
-
-364 Robert J. Sternberg
 
 knowledge that works in one context may fail miserably in another, as the recent
 spate of scandals regarding sexual abuse has illustrated. Behavior that may have
@@ -15439,10 +14178,6 @@ result of our use of such tests. The people who get into power sometimes have
 the intelligence to figure out how to get what they want, but not the wisdom
 to apply their skills more broadly to society nor even the desire even to want to
 
-Wisdom, Foolishness, Toxicity in Leadership
-
-365
-
 apply wisdom. The result can be a government that is self-serving for people in
 it and for those like the people in it (e.g., large contributors to campaigns). If you
 disagree, try to compile a list of wise politicians in 2019. I suspect the list will be
@@ -15478,8 +14213,6 @@ In the balance theory, wisdom inheres in the interaction between an individual
 (or group) and one or more situational contexts, much as is the case for intelligence, broadly defined (see also Grossman, 2017; Sternberg, 1997a; Valsiner &
 Leung, 1994), as well as for creativity (see also Csikszentmihalyi, 1996; Mumford,
 Connelly, & Gaddis, 2003; Mumford & Gustafson, 2007; Sternberg, 2004, 2005;
-
-366 Robert J. Sternberg
 
 Sternberg & Lubart, 1995). Thus, the kinds of balance incorporated into the
 balance theory of wisdom are different from those in many other theories of
@@ -15520,10 +14253,6 @@ and friends. They also may be practically intelligent in disguising their intent
 usually by stating publicly that what they are doing is for the good of the common
 man or woman. But they are not wise because their ends are all related to their
 own interests, not the interests of others or the interests of their organizations or
-
-Wisdom, Foolishness, Toxicity in Leadership
-
-367
 
 nations. When speaking of a “common good”, it must truly be a common good
 for all, not just those whom one views as like oneself, in the case of Hitler, the
@@ -15571,8 +14300,6 @@ It might seem that ethical values would differ greatly from one culture to
 another. There seem to be some ethical values, however, that cross cultures, such
 as honesty, integrity, sincerity, and reciprocality (Golden Rule) (Sternberg, 2012).
 
-368 Robert J. Sternberg
-
 Thus, I believe core ethical values are universal. At the same time, these values
 may be warped, intentionally or otherwise, by toxic leaders seeking to impose on
 people a system of false ethical values that actually do little more than to serve the
@@ -15608,10 +14335,6 @@ intelligent, in understanding him or herself, and be totally fine with using thi
 understanding to exploit other people. In each case, a leader may be intelligent in
 some way without being wise.
 
-Wisdom, Foolishness, Toxicity in Leadership
-
-369
-
 Measuring Wisdom
 In the balance theory, the ideal problems for measuring wisdom are likely to be
 complex conflict-resolution problems involving the formation of wise judgments,
@@ -15646,8 +14369,6 @@ in a kind of practical intelligence, Machiavellian intelligence (Byrne & Whiten,
 1988). Toxic leaders are ones who are destructive of rather than constructive for
 the units they are supposed to lead. They appeal to people’s susceptibility to being
 manipulated and even fooled, and harm the very people who help them.
-
-370 Robert J. Sternberg
 
 One could choose any toxic individual or leader to illustrate why toxic leaders
 are so engaging (Lipman-Blumen, 2006). I have chosen primarily (although not
@@ -15687,15 +14408,11 @@ pride. The ploy remains the same—only the particular country changes.
 Their line is that past leaders have betrayed the country. You can trust Hitler
 (or Stalin or Orban or whoever) to put the country and its people first, not
 
-Wisdom, Foolishness, Toxicity in Leadership
-
 •
 
 •
 
 •
-
-371
 
 like other people who have designs upon the country and its resources. Usually, the toxic leaders define the “people” narrowly, setting preferred groups
 against vilified groups.
@@ -15734,8 +14451,6 @@ A second characteristic of toxic leaders some people come to love is that they
 may feel passionate about them. (Passion also can arise out of ideas or people
 we hate—see Sternberg & Sternberg, 2008). Observe rallies for Hitler (available
 online) or for Donald Trump, for that matter, with mobs screaming “Lock her up”
-
-372 Robert J. Sternberg
 
 against Hillary Clinton. People differ widely in the extent to which they become
 passionate (Tennov, 1979) but all of us feel passion under some circumstances to
@@ -15781,10 +14496,6 @@ were in some respect deified. Although toxic leaders work by the same playbook, 
 not have anyone like Hitler before he came onto the scene. The moral and
 ethical sense of followers comes to be severely degraded, often without the
 followers realizing it.
-
-Wisdom, Foolishness, Toxicity in Leadership
-
-373
 
 Commitment
 •
@@ -15833,8 +14544,6 @@ order to further their own personal interests; and their values are anything but
 ethical. One might wonder why people would let themselves be fooled, or in
 some cases, convinced with eyes open. One goes back to the fundamental principle of attraction: We are attracted to others like ourselves. As the great Biblical
 
-374 Robert J. Sternberg
-
 and other prophets recognized, we all have toxic elements within ourselves. Jesus
 seemed perhaps unique in history for not having such elements, and it has been
 understood in part because he was, for Christians, part of a Holy Trinity comprising God. But Jesus aside, many of us, with greater or lesser success, fight those
@@ -15873,10 +14582,6 @@ chieftain, for example. Toxic leaders present themselves as saviors (deity story
 one can be pretty confident that any potential leader who advertises himself as a
 savior will be anything but, just as anyone who advertises himself as wise almost
 certainly isn’t.
-
-Wisdom, Foolishness, Toxicity in Leadership
-
-375
 
 TABLE 14.1 Stories of Leadership
 
@@ -15921,14 +14626,13 @@ a threat, real or much more likely imagined, that supposedly only they can deal
 with. The threat can be people who are of a certain nationality, or religion, or
 ethnicity, ideology, or whatever. There are any number of stories of hate that the
 
-376 Robert J. Sternberg
-
 cynical, toxic leader can call upon—those targeted groups as manipulators, subhuman, evil, enemies of God, power-crazy, unworthy outsiders, thieves trying to
 steal land or other resources, and so on (Sternberg, 2003a; Sternberg & Sternberg,
 2008). It is sad that, even in the twenty-first century, these crude manipulative
 techniques often work like a charm, just as they always have.
 
-Conclusions
+### Conclusions
+
 IQs increased, quite substantially, in the twentieth century (Flynn, 1987, 2012,
 in press; Neisser, 1998). The gains, roughly 30 points of IQ over 100 years, were
 primarily in fluid abilities and only secondarily in crystallized abilities. But it is
@@ -15963,10 +14667,6 @@ they do not read or do mathematics well (see, e.g., Spear-Swerling & Sternberg,
 1994). But the greatest problem today is not reading or math—it is the failure to
 teach students to think wisely and well.
 
-Wisdom, Foolishness, Toxicity in Leadership
-
-377
-
 Given the turmoil in the world today, educators need to pay much more attention than they have to the development of wisdom, not just to the development
 of knowledge or to academic skills. Global climate change for example, is close to
 being out of control, if it has not already reached that point. Can we afford to be
@@ -15974,7 +14674,8 @@ oblivious? If schools do not teach for wisdom, who will (Maxwell, 2013; Sternber
 Note: My ideas about leadership, wisdom, toxicity, and related constructs are also
 discussed in sources such as Sternberg (2003a, 2003b, 2017a, 2017b, 2018).
 
-References
+### References
+
 Aczel, B., Palfi, B., & Kekecs, Z. (2015). What is stupid? People’s conception of unintelligent behavior. Intelligence, 53, 51–58.
 Ambrose, D., & Cross, T. L. (Eds.). (2009). Morality, ethics, and gifted minds. New York, NY:
 Springer Science.
@@ -16006,8 +14707,6 @@ greatness. New York, NY: Paulist Press.
 Grossmann, I. (2017). Wisdom in context. Perspectives on Psychological Science, 12(2), 233–257.
 Grossmann, I., Gerlach, T. M., & Denissen, J. J. A. (2016). Wise reasoning in the face of
 everyday life Challenges. Social Psychological and Personality Science, 7(7), 611–622.
-
-378 Robert J. Sternberg
 
 Grossmann, I., Na, J., Varnum, M. E. W., Kitayama, S., & Nisbett, R. E. (2013). A route
 to well-being: Intelligence versus wise reasoning. Journal of Experimental Psychology:
@@ -16051,10 +14750,6 @@ Mayer, J. D., & Salovey, P. (1993). The intelligence of emotional intelligence. 
 Milgram, S. (1963). Behavioral study of obedience. Journal of Abnormal and Social Psychology,
 67, 371–378.
 
-Wisdom, Foolishness, Toxicity in Leadership
-
-379
-
 Milgram, S. (1974). Obedience to authority. New York, NY: Harper & Row.
 Mumford, M. D., Connelly, S., & Gaddis, B. (2003). How creative leaders think: Experimental findings and cases. Leadership Quarterly, 14, 411–432.
 Mumford, M. D., & Gustafson, S. B. (2007). Creative thought: Cognition and problem
@@ -16094,8 +14789,6 @@ Sternberg, R. J. (1997c). What does it mean to be smart? Educational Leadership,
 20–24.
 Sternberg, R. J. (1998a). A balance theory of wisdom. Review of General Psychology, 2,
 347–365.
-
-380 Robert J. Sternberg
 
 Sternberg, R. J. (1998b). Cupid’s arrow. New York, NY: Cambridge University Press.
 Sternberg, R. J. (1998c). Love is a story. New York, NY: Oxford University Press.
@@ -16144,10 +14837,6 @@ Sternberg, R. J., & Hagen, E. (2019). Teaching for wisdom. In R. J. Sternberg & 
 (Eds.), Cambridge handbook of wisdom (pp. 372–406). New York, NY: Cambridge
 ­University Press.
 
-Wisdom, Foolishness, Toxicity in Leadership
-
-381
-
 Sternberg, R. J., & Hedlund, J. (2002). Practical intelligence, g, and work psychology.
 Human Performance, 15(1–2), 143–160.
 Sternberg, R. J., & Jordan, J. (Eds.). (2005). Handbook of wisdom: Psychological perspectives.
@@ -16181,7 +14870,7 @@ benevolent prototypes. Personality and Social Psychology Bulletin, 42(5), 662–
 Zhang, L. F., & Sternberg, R. J. (1998). Thinking styles, abilities, and academic achievement
 among Hong Kong University students. Hong Kong Educational Research Association Educational Research Journal, 13, 41–62.
 
-INDEX
+## Index
 
 Note: Page numbers in italics indicate figures, and page numbers in bold indicate tables on
 the corresponding pages.
@@ -16241,8 +14930,6 @@ styles and 123 – 124; as a leader skill
 122 – 123; mental models and 125 – 127,
 129 – 131; presumed causes 123;
 
-Index
-
 prospective 102 – 108; retrospective 102,
 108 – 111; skills 129; strategies 105 – 108,
 127, 128, 131
@@ -16295,8 +14982,6 @@ mental models 104 – 105, 110, 152,
 168 – 169, 215, 298; in occupational
 contexts 18 – 19, 21; organizational
 100; sensemaking during complex
-
-383
 
 crises 148 – 149; social 311, 319, 324;
 in solution evaluation 126, 138;
@@ -16351,8 +15036,6 @@ CSR see corporate social responsibility
 (CSR)
 cultural intelligence 308, 327, 328 – 329
 Cunningham, K.S. 263
-
-384 Index
 
 Darling, James 263 – 264, 269 – 271
 decision making: accuracy in 245, 248;
@@ -16461,8 +15144,6 @@ social dynamics and 312, 313; social
 forecasting 9, 319, 324, 325; timing
 and 206, 215 – 216
 
-Index
-
 Fortune 500 companies 18 – 19, 24
 fragmentation 74, 75, 91
 functional leadership 2 – 4, 309, 349
@@ -16514,8 +15195,6 @@ intelligence and 187; problem solving
 and 179 – 180, 182, 189
 ideation 85, 85, 87 – 88, 90, 192;
 intelligence and 186 – 187; problem
-
-385
 
 solving and 186 – 187, 189, 192 – 193;
 rational vs. intuitive 87 – 88
@@ -16571,8 +15250,6 @@ leadership and 14 – 15; Machiavellian
 369; modeling 21 – 22; morality and 28;
 nature vs. nurture 17; practical 364 – 365;
 psychometric research 15 – 27; threshold
-
-386 Index
 
 theory of 186; see also cognition; IQ
 (intelligence quotient)
@@ -16677,8 +15354,6 @@ mental models 148 – 149, 279 – 289,
 climate and 288, 296 – 297; power and
 284 – 285; sensemaking and 152; shared
 
-Index
-
 experiences 296; shared leadership 278,
 289, 297; shared mental models (SMMs)
 291 – 296, 297, 299
@@ -16729,8 +15404,6 @@ Open Market Committee 271, 274
 Orban,Victor 369 – 370
 organizational citizenship behavior (OCB)
 111, 314, 351 – 352
-
-387
 
 organizational climate: creativity in 197;
 goal orientation in 61; mental models
@@ -16784,8 +15457,6 @@ future research in 91; ideation 85,
 and 86 – 89, 84, 85, 89 – 90; model of
 72, 73; “outsourcing” of 187; pattern
 recognition 86 – 88, 89 – 90; problem
-
-388 Index
 
 construction 85, 85 – 87, 314, 312;
 problem detection 180, 312, 314 – 315,
@@ -16889,8 +15560,6 @@ social perceptiveness 239, 310, 321,
 social problem solving 3 – 4, 317, 324
 solitary actor 262 – 263
 
-Index
-
 solution generation 233, 235; social
 dynamics and 307, 313, 318,
 321 – 322
@@ -16923,8 +15592,6 @@ participation and 289, 295, 298; toxic
 transparency 1, 80, 84, 232 – 233, 244
 Trump, Donald 14, 371 – 372
 
-389
-
 trust 60, 81 – 83; follower trust 321, 346,
 353; idea evaluation and 88; toxic
 leadership and 370 – 371
@@ -16951,5 +15618,3 @@ World Economic Forum 19, 24
 Xi Jinping 373
 Yerkes, Robert 15
 Zuma, Jacob 373
-
-
