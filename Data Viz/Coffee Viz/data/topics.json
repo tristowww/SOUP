@@ -1,0 +1,126 @@
+{
+  "en": [
+    {
+      "id": 0,
+      "terms": [
+        "cup",
+        "sweetness",
+        "acidity",
+        "peach",
+        "like",
+        "ripe",
+        "profile"
+      ]
+    },
+    {
+      "id": 1,
+      "terms": [
+        "chocolate",
+        "dark",
+        "dark chocolate",
+        "milk",
+        "milk chocolate",
+        "cherry",
+        "caramel"
+      ]
+    },
+    {
+      "id": 2,
+      "terms": [
+        "process",
+        "varietal",
+        "espresso",
+        "producer",
+        "region",
+        "recipes",
+        "recipes espresso"
+      ]
+    },
+    {
+      "id": 3,
+      "terms": [
+        "fruit",
+        "stone",
+        "stone fruit",
+        "tropical",
+        "tropical fruit",
+        "citrus",
+        "like"
+      ]
+    },
+    {
+      "id": 4,
+      "terms": [
+        "coffee",
+        "sweet",
+        "notes",
+        "flavors",
+        "blend",
+        "floral",
+        "balanced"
+      ]
+    }
+  ],
+  "es": [
+    {
+      "id": 0,
+      "terms": [
+        "cuerpo",
+        "acidez",
+        "acidez jugosa",
+        "jugosa",
+        "tiene cuerpo",
+        "tiene",
+        "cremoso"
+      ]
+    },
+    {
+      "id": 1,
+      "terms": [
+        "café",
+        "dulce",
+        "miel",
+        "perfil",
+        "flor",
+        "jugoso",
+        "limpio"
+      ]
+    },
+    {
+      "id": 2,
+      "terms": [
+        "cacao",
+        "chocolate",
+        "caramelo",
+        "polvo",
+        "cacao polvo",
+        "cereza",
+        "chocolate leche"
+      ]
+    },
+    {
+      "id": 3,
+      "terms": [
+        "sabor",
+        "aroma",
+        "presentes taza",
+        "sabor presentes",
+        "presentes",
+        "aroma sabor",
+        "sabor aroma"
+      ]
+    },
+    {
+      "id": 4,
+      "terms": [
+        "kiwi",
+        "kiwi amarillo",
+        "amarillo",
+        "rojos",
+        "frutos",
+        "frutos rojos",
+        "vino"
+      ]
+    }
+  ]
+}

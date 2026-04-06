@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Lost in Translation | Loom Coffee Co.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--cream:#faf7f2;--warm:#fffcf8;--ink:#1e1410;--loom:#2a1810;--med:#4a3528;--sienna:#6b4a30;--accent:#a04420;--en:#0b6d8c;--es:#c43a18;--gold:#a07418;--green:#2e7228;--faint:#d0c4b4}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.site-bar{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto}.site-bar .logo{font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--loom);letter-spacing:1.5px;text-transform:uppercase}.site-bar .meta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
+.hero{position:relative;padding:60px 40px 40px;max-width:1100px;margin:0 auto}.hero-kicker{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:16px}.hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(36px,5.5vw,64px);line-height:1.05;color:var(--loom);max-width:700px;margin-bottom:20px}.hero h1 em{font-weight:300;font-style:italic;color:var(--accent)}.hero-deck{font-size:18px;font-weight:300;line-height:1.8;color:var(--med);max-width:580px}.hero-byline{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);margin-top:20px}.hero-byline a{color:var(--accent);text-decoration:none}
+.viz-section{padding:40px 0 20px;max-width:1100px;margin:0 auto}.viz-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--accent);padding:0 40px;margin-bottom:8px}.viz-caption{font-size:13px;line-height:1.6;color:var(--med);padding:0 40px;max-width:640px;margin-bottom:20px}.viz-frame{background:var(--warm);border-top:1.5px solid rgba(0,0,0,.06);border-bottom:1.5px solid rgba(0,0,0,.06);overflow:hidden}.viz-cw{width:100%;height:820px;position:relative}.viz-cw canvas{width:100%;height:100%;display:block}.tt{position:absolute;pointer-events:none;background:var(--loom);color:#f5ede4;padding:12px 16px;border-radius:5px;max-width:260px;opacity:0;transition:opacity .15s;z-index:20;font-size:12px;line-height:1.4;box-shadow:0 4px 16px rgba(0,0,0,.2)}.tt.on{opacity:1}.tt strong{font-family:'Fraunces',serif;font-size:15px;font-weight:600;display:block}.tt em{font-family:'DM Mono',monospace;font-size:9px;font-style:normal;letter-spacing:1px;text-transform:uppercase;color:#c9a87c;display:block;margin-bottom:4px}
+.viz-legend{display:flex;gap:20px;padding:14px 40px;font-size:12px;font-weight:500;flex-wrap:wrap}.viz-legend div{display:flex;align-items:center;gap:6px}.viz-legend span{width:24px;height:3px;border-radius:2px;display:inline-block}.viz-legend .dot{width:9px;height:9px;border-radius:50%}.viz-instruct{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);padding:0 40px;font-style:italic}
+.article{max-width:680px;margin:0 auto;padding:60px 40px}.article h2{font-family:'Fraunces',serif;font-weight:600;font-size:28px;color:var(--loom);margin-bottom:16px;margin-top:56px;line-height:1.2}.article h2:first-child{margin-top:0}.article p{font-size:16px;line-height:1.85;color:var(--ink);margin-bottom:20px}.term-en{font-weight:600;color:var(--en)}.term-es{font-weight:600;color:var(--es)}
+.data-note{margin:36px 0;padding:16px 20px;background:rgba(0,0,0,.03);border-radius:5px;border-left:3px solid var(--accent);font-family:'DM Mono',monospace;font-size:11px;line-height:1.7;color:var(--sienna)}.data-note strong{color:var(--loom);font-weight:500}
+.data-tables{margin:40px 0}.data-tables h3{font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--loom);margin-bottom:6px}.data-tables .table-note{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);margin-bottom:16px}.table-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:28px}.data-tbl{width:100%;border-collapse:collapse;font-size:13px}.data-tbl caption{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;text-align:left;padding-bottom:8px}.data-tbl th{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--sienna);text-align:left;padding:6px 8px;border-bottom:1.5px solid rgba(0,0,0,.12)}.data-tbl td{padding:5px 8px;border-bottom:1px solid rgba(0,0,0,.05)}.data-tbl td:last-child{font-family:'DM Mono',monospace;font-size:12px;text-align:right;color:var(--med)}.data-tbl .bar{display:inline-block;height:8px;border-radius:2px;vertical-align:middle;margin-right:6px}
+.align-tbl{width:100%;border-collapse:collapse;font-size:13px}.align-tbl th{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--sienna);text-align:left;padding:6px 8px;border-bottom:1.5px solid rgba(0,0,0,.12)}.align-tbl td{padding:5px 8px;border-bottom:1px solid rgba(0,0,0,.05)}.align-tbl .score{font-family:'DM Mono',monospace;font-size:11px;padding:2px 8px;border-radius:3px}.align-tbl .strong{background:rgba(46,114,40,.12);color:var(--green)}.align-tbl .partial{background:rgba(160,116,24,.12);color:var(--gold)}.align-tbl .weak{background:rgba(196,58,24,.1);color:var(--es)}
+.example-row{margin:28px 0;padding:20px 24px;background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:6px}.example-row .ex-label{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px}.example-row .ex-chain{font-size:14px;line-height:1.7}.example-row .stage{font-weight:600}.example-row .arrow{color:var(--gold);margin:0 6px}
+.blog-footer{max-width:680px;margin:0 auto;padding:40px;border-top:1.5px solid rgba(0,0,0,.07)}.blog-footer .author{display:flex;gap:16px;align-items:flex-start}.blog-footer .avatar{width:48px;height:48px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--cream);flex-shrink:0}.blog-footer .author-info h4{font-family:'Fraunces',serif;font-size:16px;font-weight:600;color:var(--loom)}.blog-footer .author-info p{font-size:13px;line-height:1.5;color:var(--med)}
+.site-footer{padding:30px 40px;max-width:1100px;margin:0 auto;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between}.site-footer span{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
+@media(max-width:700px){.hero,.article{padding-left:20px;padding-right:20px}.viz-label,.viz-caption,.viz-legend,.viz-instruct{padding-left:20px;padding-right:20px}.table-grid{grid-template-columns:1fr}}
+</style></head><body>
+<div class="site-bar"><div class="logo">Loom Coffee Co.</div><div class="meta">Blog</div></div>
+<div class="hero"><div class="hero-kicker">Data &middot; Language &middot; Equity</div><h1>Lost in <em>Translation</em></h1><p class="hero-deck">The coffee in your cup was described in at least three different languages before it reached you. Somewhere along the way, the producer's voice was replaced by the roaster's vocabulary.</p><div class="hero-byline">By <a href="#">Teresa Ristow</a> &middot; Loom Coffee Co. &middot; 2026</div></div>
+
+<div class="viz-section"><div class="viz-label">Interactive Visualization</div><div class="viz-caption">Each line is a flavor descriptor. Blue threads for US roaster English, red for Latin American producer Spanish. Golden connections mark shared meaning. Hover any thread to see its data.</div>
+<div class="viz-frame"><div class="viz-cw" id="w-threads"><canvas id="cv-threads" width="1600" height="1640"></canvas><div class="tt" id="tp-threads"><strong></strong><em></em><span></span></div></div></div>
+<div class="viz-legend"><div><span style="background:var(--en)"></span> English: US roaster</div><div><span style="background:var(--es)"></span> Spanish: producer</div><div><span class="dot" style="background:var(--gold)"></span> Cross-lingual connection</div></div>
+<div class="viz-instruct">Hover any thread to see connections and frequency.</div></div>
+
+<div class="article">
+<h2>The bag says "blueberry, meyer lemon, and honey." The farmer said "dulce."</h2>
+<p>Specialty coffee uses one of the most detailed sensory vocabularies of any consumer product. A single bag might describe its contents using terms like <span class="term-en">bright citrus acidity</span>, <span class="term-en">stone fruit</span>, and <span class="term-en">syrupy body</span>, language drawn from decades of cupping science, largely codified through the SCA Flavor Wheel. These terms are precise, internally consistent, and widely understood by the roasting and buying community that created them.</p>
+<p>But those protocols were developed in English, by cuppers and roasters in consuming countries. When a Colombian farmer describes the same coffee, the language looks different. A producer might say <span class="term-es">dulce</span> (sweet), <span class="term-es">cuerpo</span> (body), or <span class="term-es">suave</span> (smooth). The gap between these descriptions is not a failure of translation. It is a structural difference in how each side of the supply chain talks about quality.</p>
+<p>This project applies NLP and cross-lingual analysis to that gap: scraping tasting note language from US roasters and Latin American producers, extracting actual flavor descriptor phrases (filtering out marketing copy, farm names, and negated terms), counting frequencies within those phrases, and mapping where meaning aligns, diverges, or inverts.</p>
+
+<h2>Background</h2>
+<p>A worker-owned roastery asks "who benefits?" about every decision: sourcing, wages, community investment. This project applies that question to language. Who benefits from the way specialty coffee describes flavor, and whose vocabulary gets overwritten along the way?</p>
+
+<h2>Methodology</h2>
+<p>English tasting notes were extracted from product descriptions scraped via the Shopify JSON API across US specialty roasters. Rather than counting terms across entire product pages, the pipeline first isolates actual tasting note phrases using four strategies: structured HTML elements with note-related classes, regex patterns matching "Notes: X, Y, Z" formats, detection of comma-separated flavor lists, and sentence-level filtering for contexts containing signal words and known flavor vocabulary. Negated terms are excluded. Capitalized mid-sentence terms that likely represent proper nouns are skipped. Spanish descriptors were scraped from Latin American cooperative websites and filtered using adapted patterns ("notas de," "sabor a," "perfil de taza").</p>
+
+<div class="data-note" id="source-note"><strong>Data source:</strong> Loading...</div>
+
+<div class="data-tables">
+<h3>Term frequency data</h3>
+<div class="table-note" id="table-source-note">Loading data...</div>
+<div class="table-grid">
+<table class="data-tbl"><caption style="color:var(--en)">English: US roaster descriptors</caption><tr><th>Term</th><th>Freq</th></tr><tbody id="en-table-body"></tbody></table>
+<table class="data-tbl"><caption style="color:var(--es)">Spanish: producer descriptors</caption><tr><th>Term</th><th>Freq</th></tr><tbody id="es-table-body"></tbody></table>
+</div>
+<h3>Cross-lingual alignment</h3>
+<div class="table-note">Cosine similarity from bilingual cupping pairs. Strong &gt; 0.7, Partial 0.4 &ndash; 0.7, Weak &lt; 0.4.</div>
+<table class="align-tbl"><tr><th>English</th><th>Spanish</th><th>Alignment</th></tr><tbody id="align-table-body"></tbody></table>
+<div class="data-note" style="margin-top:20px" id="gaps-note"><strong>Vocabulary gaps:</strong> Loading...</div>
+</div>
+
+<h2>How description changes across the supply chain</h2>
+<div class="example-row"><div class="ex-label">One coffee, four descriptions</div><div class="ex-chain"><span class="stage" style="color:var(--es)">Producer:</span> "Dulce, suave, buen cuerpo" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--gold)">Exporter:</span> "Sweet, full body, smooth" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--green)">Importer:</span> "Honey sweetness, heavy body, silky mouthfeel" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--en)">Roaster:</span> "Caramel and honey, syrupy body, bright and juicy with notes of blueberry"</div></div>
+<p>At each handoff the description is rewritten. No one is being dishonest; each person describes what they taste using available tools. But the cumulative effect is that the producer's voice is overwritten entirely by the time the coffee reaches a consumer.</p>
+
+<h2>Valence inversions</h2>
+<p>Some terms carry opposite connotations depending on context. <span class="term-en">Fermented</span> signals desirable complexity in US specialty but marks a defect in Colombian quality control. <span class="term-en">Bright</span> is high praise on a US cupping table, cautious for Latin American producers, and "sour" to retail consumers. <span class="term-en">Earthy</span> is a defect flag in US specialty but a defining terroir characteristic for Sumatran wet-hulled coffees. When the same word registers as praise in one context and failure in another, the issue extends beyond translation into whose value system the vocabulary encodes.</p>
+
+<h2>Implications for equity</h2>
+<p>Price is tightly coupled to description. A lot marketed as <span class="term-en">complex acidity, stone fruit, and floral notes</span> commands a different price than <span class="term-es">dulce y suave</span>, even for the same coffee. The English vocabulary does not just describe flavor; it assigns economic value. There is room to build on the SCA Flavor Wheel by incorporating producer-originated descriptors, preserving terms like <span class="term-es">panela</span> and <span class="term-es">suave</span> on labels (the way wine preserves <em>terroir</em> and <em>cru</em>), and involving producers in their own coffee's narrative.</p>
+
+<h2>About the visualization</h2>
+<p>A loom weaves individual threads into fabric stronger than its parts. Each flavor descriptor is a thread positioned by frequency rank. Cross-lingual connections are drawn as arcs between aligned term pairs. Hover any thread to isolate it and see its connections. Gold threads are shared vocabulary. The gaps between unconnected threads are the work ahead.</p>
+<div class="data-note"><strong>For anyone working in coffee</strong> who finds this relevant or sees something that needs correcting: reach out through the contact page.</div>
+
+<h2>How we built this</h2>
+<p>This analysis is built on real data, not hypotheticals. Here is what the pipeline does, step by step:</p>
+<p><strong>1. Scrape product descriptions.</strong> We pull tasting notes from the public product pages of over 20 US specialty roasters and several Latin American producer and cooperative sites. English-language sites use the Shopify product API; Spanish-language sites use a mix of Shopify endpoints and direct HTML scraping.</p>
+<p><strong>2. Extract actual flavor language.</strong> Raw product pages contain marketing copy, farm names, altitude numbers, and processing details alongside flavor descriptors. The pipeline filters down to actual tasting note phrases using pattern matching, flavor vocabulary detection, and negation filtering. Terms like "not bitter" are excluded. Proper nouns and brand names are skipped.</p>
+<p><strong>3. Count what is distinctive.</strong> Rather than simple word counts, we use TF-IDF (term frequency-inverse document frequency) to surface terms that are characteristic of each language's vocabulary, not just frequent. This separates the signal — the words each tradition actually relies on — from the noise.</p>
+<p><strong>4. Align across languages.</strong> To compare English and Spanish terms, we use multilingual sentence embeddings — a model trained to place words with similar meanings close together regardless of language. This lets us measure how well "honey" and "miel" align without relying on a dictionary.</p>
+<p><strong>5. Discover topic structures.</strong> NMF (non-negative matrix factorization) topic modeling groups terms into clusters for each language independently. This reveals whether the two vocabularies organize flavor into the same categories or fundamentally different ones.</p>
+<p><strong>6. Score valence flips.</strong> Some terms carry opposite connotations in different contexts. The pipeline scores each term's positive or negative framing within its surrounding text to detect where meaning inverts across the supply chain.</p>
+<p>All of the data you see in the tables and visualization above was generated by this pipeline. The code, data, and methodology are open source.</p>
+<div class="data-note"><strong>View the source code:</strong> <a href="https://github.com/PLACEHOLDER/SOUP/tree/main/Data%20Viz/Coffee%20Viz" style="color:var(--accent)">github.com/PLACEHOLDER/SOUP — Coffee Viz</a><br>The full pipeline runs in a single Python script. Contributions, corrections, and suggestions are welcome.</div>
+</div>
+
+<div class="blog-footer"><div class="author"><div class="avatar">TR</div><div class="author-info"><h4>Teresa Ristow</h4><p>People Scientist &amp; Applied AI Researcher. I/O Psychology PhD. Based in Greensboro, NC.</p></div></div></div>
+<div class="site-footer"><span>Loom Coffee Co. &middot; Greensboro, NC</span><span>Worker-owned. Quality-driven.</span></div>
+
+<script>
+// Data embedded directly - works standalone from filesystem.
+// Run scrape.py to regenerate this file with real scraped data.
+var DATA={"en": [{"t": "chocolate", "f": 38}, {"t": "fruit", "f": 36}, {"t": "sweet", "f": 35}, {"t": "sweetness", "f": 28}, {"t": "like", "f": 28}, {"t": "citrus", "f": 26}, {"t": "cherry", "f": 26}, {"t": "acidity", "f": 25}, {"t": "notes", "f": 23}, {"t": "peach", "f": 23}, {"t": "tropical", "f": 22}, {"t": "honey", "f": 21}], "es": [{"t": "café", "f": 68, "e": "Café"}, {"t": "chocolate", "f": 57, "e": "chocolate"}, {"t": "cacao", "f": 50, "e": "Cacao"}, {"t": "cuerpo", "f": 49, "e": "body"}, {"t": "acidez", "f": 46, "e": "acidity"}, {"t": "miel", "f": 45, "e": "honey"}, {"t": "taza", "f": 44, "e": "Taza"}, {"t": "caramelo", "f": 39, "e": "caramel"}, {"t": "dulce", "f": 38, "e": "sweet"}, {"t": "sabor", "f": 36, "e": "flavor"}, {"t": "kiwi", "f": 34, "e": "Kiwi"}, {"t": "leche", "f": 32, "e": "Leche"}], "alignment": [{"en": "chocolate", "es": "chocolate", "s": 1.0}, {"en": "fruit", "es": "frutas", "s": 0.983}, {"en": "honey", "es": "miel", "s": 0.951}, {"en": "sweet", "es": "dulce", "s": 0.937}, {"en": "acidity", "es": "acidez", "s": 0.921}, {"en": "sweetness", "es": "dulce", "s": 0.877}, {"en": "profile", "es": "perfil", "s": 0.844}, {"en": "flavors", "es": "sabor", "s": 0.82}, {"en": "citrus", "es": "naranja", "s": 0.765}, {"en": "peach", "es": "frutas", "s": 0.746}, {"en": "citrus", "es": "limón", "s": 0.724}, {"en": "flavors", "es": "aroma", "s": 0.703}], "align_table": [{"en": "chocolate", "es": "chocolate", "score": 1.0, "level": "strong"}, {"en": "fruit", "es": "frutas", "score": 0.983, "level": "strong"}, {"en": "honey", "es": "miel", "score": 0.951, "level": "strong"}, {"en": "sweet", "es": "dulce", "score": 0.937, "level": "strong"}, {"en": "acidity", "es": "acidez", "score": 0.921, "level": "strong"}, {"en": "sweetness", "es": "dulce", "score": 0.877, "level": "strong"}, {"en": "profile", "es": "perfil", "score": 0.844, "level": "strong"}, {"en": "flavors", "es": "sabor", "score": 0.82, "level": "strong"}, {"en": "citrus", "es": "naranja", "score": 0.765, "level": "strong"}, {"en": "peach", "es": "frutas", "score": 0.746, "level": "strong"}, {"en": "citrus", "es": "limón", "score": 0.724, "level": "strong"}, {"en": "flavors", "es": "aroma", "score": 0.703, "level": "strong"}, {"en": "like", "es": "dulzor", "score": 0.692, "level": "partial"}, {"en": "sweetness", "es": "caramelo", "score": 0.681, "level": "partial"}, {"en": "like", "es": "leche", "score": 0.674, "level": "partial"}, {"en": "like", "es": "cuerpo", "score": 0.666, "level": "partial"}, {"en": "cherry", "es": "dulce", "score": 0.644, "level": "partial"}, {"en": "tea", "es": "café", "score": 0.634, "level": "partial"}, {"en": "citrus", "es": "jugosa", "score": 0.619, "level": "partial"}, {"en": "tropical", "es": "jugosa", "score": 0.605, "level": "partial"}, {"en": "floral", "es": "frutas", "score": 0.567, "level": "partial"}, {"en": "red", "es": "naranja", "score": 0.561, "level": "partial"}, {"en": "notes", "es": "dulzor", "score": 0.531, "level": "partial"}, {"en": "stone", "es": "leche", "score": 0.498, "level": "partial"}, {"en": "milk", "es": "jugosa", "score": 0.496, "level": "partial"}, {"en": "milk", "es": "piña", "score": 0.473, "level": "partial"}, {"en": "fruit", "es": "cacao", "score": 0.465, "level": "partial"}, {"en": "dark", "es": "dulzor", "score": 0.454, "level": "partial"}, {"en": "like", "es": "taza", "score": 0.434, "level": "partial"}, {"en": "stone", "es": "kiwi", "score": 0.372, "level": "weak"}], "en_only": ["stone", "dark", "milk", "bright", "finish", "ripe", "stone fruit", "balanced"], "es_only": ["cacao", "taza", "kiwi", "piña", "chocolate leche", "pera", "amarillo", "kiwi amarillo"], "topics": {"en": [{"id": 0, "terms": ["cup", "sweetness", "acidity", "peach", "like", "ripe", "profile"]}, {"id": 1, "terms": ["chocolate", "dark", "dark chocolate", "milk", "milk chocolate", "cherry", "caramel"]}, {"id": 2, "terms": ["process", "varietal", "espresso", "producer", "region", "recipes", "recipes espresso"]}, {"id": 3, "terms": ["fruit", "stone", "stone fruit", "tropical", "tropical fruit", "citrus", "like"]}, {"id": 4, "terms": ["coffee", "sweet", "notes", "flavors", "blend", "floral", "balanced"]}], "es": [{"id": 0, "terms": ["cuerpo", "acidez", "acidez jugosa", "jugosa", "tiene cuerpo", "tiene", "cremoso"]}, {"id": 1, "terms": ["café", "dulce", "miel", "perfil", "flor", "jugoso", "limpio"]}, {"id": 2, "terms": ["cacao", "chocolate", "caramelo", "polvo", "cacao polvo", "cereza", "chocolate leche"]}, {"id": 3, "terms": ["sabor", "aroma", "presentes taza", "sabor presentes", "presentes", "aroma sabor", "sabor aroma"]}, {"id": 4, "terms": ["kiwi", "kiwi amarillo", "amarillo", "rojos", "frutos", "frutos rojos", "vino"]}]}, "valence": [{"term_en": "fermented", "term_es": "fermentado", "en_valence": "neutral", "en_positive_pct": 0.2, "en_occurrences": 10, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}, {"term_en": "bright", "term_es": "brillante", "en_valence": "neutral", "en_positive_pct": 0.23529411764705882, "en_occurrences": 136, "es_valence": "neutral", "es_positive_pct": 0.0, "es_occurrences": 3, "inversion": false}, {"term_en": "earthy", "term_es": "terroso", "en_valence": "neutral", "en_positive_pct": 0.0, "en_occurrences": 2, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}, {"term_en": "strong", "term_es": "fuerte", "en_valence": "absent", "en_positive_pct": 0, "en_occurrences": 0, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}], "meta": {"en_notes": 2243, "es_notes": 61, "en_products": 3960, "es_pages": 200, "roasters": 20, "scraped": "April 06, 2026", "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring"}};
+
+var Bl='#0b6d8c',Rd='#c43a18',Gd='#a07418',Ik='#1e1410',Fd='#d0c4b4',dp=Math.min(devicePixelRatio,2);
+
+// Try to load fresh data from data.json (works on a server), fall back to embedded DATA
+window.addEventListener('load',function(){
+  fetch('data/data.json').then(function(r){return r.json()}).then(function(D){
+    DATA=D; init();
+  }).catch(function(){
+    init(); // Use embedded data
+  });
+});
+
+function init(){
+  buildTables(DATA);
+  buildViz(DATA);
+}
+
+function buildTables(D){
+  var m=D.meta||{};
+  var src=m.roasters?'Extracted from '+m.en_notes+' tasting note phrases across '+m.roasters+' US roasters ('+m.en_products+' products) and '+m.es_notes+' producer phrases ('+m.es_pages+' pages). Scraped '+m.scraped+'.':m.scraped||'';
+  document.getElementById('source-note').innerHTML='<strong>Data source:</strong> '+src;
+  document.getElementById('table-source-note').textContent=src;
+
+  // EN table
+  var enBody=document.getElementById('en-table-body');
+  var maxEn=D.en[0]?D.en[0].f:1;
+  D.en.forEach(function(d){
+    var bw=Math.round(80*d.f/maxEn);
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td><span class="bar" style="width:'+bw+'px;background:var(--en)"></span>'+d.t.charAt(0).toUpperCase()+d.t.slice(1)+'</td><td>'+d.f+'</td>';
+    enBody.appendChild(tr);
+  });
+
+  // ES table
+  var esBody=document.getElementById('es-table-body');
+  var maxEs=D.es[0]?D.es[0].f:1;
+  D.es.forEach(function(d){
+    var bw=Math.round(72*d.f/maxEs);
+    var label=d.t+(d.e&&d.e!==d.t?' <em style="font-size:11px;color:var(--sienna)">('+d.e+')</em>':'');
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td><span class="bar" style="width:'+bw+'px;background:var(--es)"></span>'+label+'</td><td>'+d.f+'</td>';
+    esBody.appendChild(tr);
+  });
+
+  // Alignment table
+  var alBody=document.getElementById('align-table-body');
+  (D.align_table||[]).forEach(function(a){
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td style="color:var(--en)">'+a.en.charAt(0).toUpperCase()+a.en.slice(1)+'</td><td style="color:var(--es)">'+a.es+'</td><td><span class="score '+a.level+'">'+a.score.toFixed(2)+' '+a.level.charAt(0).toUpperCase()+a.level.slice(1)+'</span></td>';
+    alBody.appendChild(tr);
+  });
+
+  // Gaps
+  var enOnly=(D.en_only||[]).join(', ');
+  var esOnly=(D.es_only||[]).join(', ');
+  document.getElementById('gaps-note').innerHTML='<strong>Vocabulary gaps:</strong><br>EN only: '+(enOnly||'none detected')+'<br>ES only: '+(esOnly||'none detected');
+}
+
+function buildViz(D){
+  var c=document.getElementById('cv-threads'),wr=document.getElementById('w-threads'),tp=document.getElementById('tp-threads');
+  var w=wr.offsetWidth,h=wr.offsetHeight;
+  if(w<10||h<10){w=800;h=820;}
+  c.width=w*dp;c.height=h*dp;c.style.width=w+'px';c.style.height=h+'px';
+  var x=c.getContext('2d'),hv=-1;
+  var EN=D.en,ES=D.es,AL=D.alignment||[];
+  var enTop=60,enBot=h*0.43,esTop=h*0.57,esBot=h-50;
+  var T=[];
+
+  EN.forEach(function(d,i){
+    var yB=enTop+(i/Math.max(EN.length-1,1))*(enBot-enTop);
+    var pts=[];
+    for(var px=0;px<=w;px+=4){pts.push({x:px,y:yB+Math.sin(i*0.5+px*0.008)*(5+d.f/250)*Math.sin(px/w*Math.PI)});}
+    T.push({t:d.t,f:d.f,e:null,lang:'en',pts:pts,yB:yB,idx:i});
+  });
+  ES.forEach(function(d,i){
+    var gi=i+EN.length;
+    var yB=esTop+(i/Math.max(ES.length-1,1))*(esBot-esTop);
+    var pts=[];
+    for(var px=0;px<=w;px+=4){pts.push({x:px,y:yB+Math.sin(gi*0.5+px*0.008)*(5+d.f/250)*Math.sin(px/w*Math.PI)});}
+    T.push({t:d.t,f:d.f,e:d.e,lang:'es',pts:pts,yB:yB,idx:gi});
+  });
+
+  var WP=[];
+  AL.forEach(function(a){
+    var en=T.find(function(t){return t.t===a.en&&t.lang==='en'});
+    var es=T.find(function(t){return t.t===a.es&&t.lang==='es'});
+    if(en&&es)WP.push({en:en,es:es,px:w*(0.3+Math.random()*0.4),s:a.s});
+  });
+
+  function draw(){
+    x.clearRect(0,0,c.width,c.height);x.save();x.scale(dp,dp);
+    var midY=h*0.5;
+    x.strokeStyle=Fd+'50';x.lineWidth=1;x.setLineDash([8,8]);
+    x.beginPath();x.moveTo(80,midY);x.lineTo(w-80,midY);x.stroke();x.setLineDash([]);
+    x.font="500 10px 'DM Mono'";x.textAlign='left';
+    x.fillStyle=Bl;x.fillText('US ROASTER ENGLISH',14,46);
+    x.fillStyle=Rd;x.fillText('PRODUCER SPANISH',14,esTop-16);
+
+    WP.forEach(function(wp){
+      var hot=hv===wp.en.idx||hv===wp.es.idx;
+      var linked=hv>=0&&(wp.en.idx===hv||wp.es.idx===hv);
+      if(hv>=0&&!linked)return;
+      var pi=Math.min(Math.floor(wp.px/4),T[0].pts.length-1);
+      var ey=wp.en.pts[pi]?wp.en.pts[pi].y:wp.en.yB;
+      var sy=wp.es.pts[pi]?wp.es.pts[pi].y:wp.es.yB;
+      x.beginPath();x.moveTo(wp.px-80,ey);x.quadraticCurveTo(wp.px,(ey+sy)/2,wp.px+80,sy);
+      x.strokeStyle=hot?Gd:Gd+'30';x.lineWidth=hot?2.5:1;x.stroke();
+      if(hot){x.font="500 9px 'DM Mono'";x.fillStyle=Gd;x.textAlign='center';x.fillText(Math.round(wp.s*100)+'%',wp.px,(ey+sy)/2-10);}
+    });
+
+    T.forEach(function(t,idx){
+      var hot=idx===hv;
+      var lnk=hv>=0&&WP.some(function(wp){return(wp.en.idx===hv&&wp.es.idx===idx)||(wp.es.idx===hv&&wp.en.idx===idx)});
+      var dim=hv>=0&&!hot&&!lnk;
+      var col=t.lang==='en'?Bl:Rd;
+      x.beginPath();t.pts.forEach(function(p,i){i===0?x.moveTo(p.x,p.y):x.lineTo(p.x,p.y)});
+      x.strokeStyle=dim?Fd:col;x.lineWidth=hot?2.5:1.2;x.stroke();
+      if(hot){
+        var lx=t.lang==='en'?14:w-14;
+        x.font="600 14px 'DM Sans'";x.fillStyle=Ik;x.textAlign=t.lang==='en'?'left':'right';
+        x.fillText(t.t,lx,t.yB-10);
+        x.font="400 10px 'DM Mono'";x.fillStyle=col+'90';x.fillText(t.f+' mentions',lx,t.yB+5);
+      }
+    });
+    x.restore();requestAnimationFrame(draw);
+  }
+
+  wr.addEventListener('mousemove',function(ev){
+    var r=c.getBoundingClientRect();var my=ev.clientY-r.top,mx=ev.clientX-r.left;
+    hv=-1;var md=18;
+    T.forEach(function(t,idx){var d=Math.abs(t.yB-my);if(d<md){md=d;hv=idx;}});
+    if(hv>=0){
+      var t=T[hv];
+      tp.querySelector('strong').textContent=t.t;
+      tp.querySelector('em').textContent=t.lang==='en'?'US Roaster English':'Producer Spanish: "'+(t.e||t.t)+'"';
+      tp.querySelector('span').textContent='Frequency: '+t.f+' mentions';
+      var tx=mx+16;if(tx+240>w)tx=mx-256;
+      tp.style.left=tx+'px';tp.style.top=Math.max(4,my-10)+'px';tp.classList.add('on');
+    }else{tp.classList.remove('on');}
+  });
+  wr.addEventListener('mouseleave',function(){hv=-1;tp.classList.remove('on')});
+  draw();
+}
+</script>
+</body></html>
