@@ -1,0 +1,559 @@
+{
+  "en": [
+    {
+      "t": "chocolate",
+      "f": 38
+    },
+    {
+      "t": "fruit",
+      "f": 36
+    },
+    {
+      "t": "sweet",
+      "f": 35
+    },
+    {
+      "t": "sweetness",
+      "f": 28
+    },
+    {
+      "t": "like",
+      "f": 28
+    },
+    {
+      "t": "citrus",
+      "f": 26
+    },
+    {
+      "t": "cherry",
+      "f": 26
+    },
+    {
+      "t": "acidity",
+      "f": 25
+    },
+    {
+      "t": "notes",
+      "f": 23
+    },
+    {
+      "t": "peach",
+      "f": 23
+    },
+    {
+      "t": "tropical",
+      "f": 22
+    },
+    {
+      "t": "honey",
+      "f": 21
+    }
+  ],
+  "es": [
+    {
+      "t": "café",
+      "f": 68,
+      "e": "Café"
+    },
+    {
+      "t": "chocolate",
+      "f": 57,
+      "e": "chocolate"
+    },
+    {
+      "t": "cacao",
+      "f": 50,
+      "e": "Cacao"
+    },
+    {
+      "t": "cuerpo",
+      "f": 49,
+      "e": "body"
+    },
+    {
+      "t": "acidez",
+      "f": 46,
+      "e": "acidity"
+    },
+    {
+      "t": "miel",
+      "f": 45,
+      "e": "honey"
+    },
+    {
+      "t": "taza",
+      "f": 44,
+      "e": "Taza"
+    },
+    {
+      "t": "caramelo",
+      "f": 39,
+      "e": "caramel"
+    },
+    {
+      "t": "dulce",
+      "f": 38,
+      "e": "sweet"
+    },
+    {
+      "t": "sabor",
+      "f": 36,
+      "e": "flavor"
+    },
+    {
+      "t": "kiwi",
+      "f": 34,
+      "e": "Kiwi"
+    },
+    {
+      "t": "leche",
+      "f": 32,
+      "e": "Leche"
+    }
+  ],
+  "alignment": [
+    {
+      "en": "chocolate",
+      "es": "chocolate",
+      "s": 1.0
+    },
+    {
+      "en": "fruit",
+      "es": "frutas",
+      "s": 0.983
+    },
+    {
+      "en": "honey",
+      "es": "miel",
+      "s": 0.951
+    },
+    {
+      "en": "sweet",
+      "es": "dulce",
+      "s": 0.937
+    },
+    {
+      "en": "acidity",
+      "es": "acidez",
+      "s": 0.921
+    },
+    {
+      "en": "sweetness",
+      "es": "dulce",
+      "s": 0.877
+    },
+    {
+      "en": "profile",
+      "es": "perfil",
+      "s": 0.844
+    },
+    {
+      "en": "flavors",
+      "es": "sabor",
+      "s": 0.82
+    },
+    {
+      "en": "citrus",
+      "es": "naranja",
+      "s": 0.765
+    },
+    {
+      "en": "peach",
+      "es": "frutas",
+      "s": 0.746
+    },
+    {
+      "en": "citrus",
+      "es": "limón",
+      "s": 0.724
+    },
+    {
+      "en": "flavors",
+      "es": "aroma",
+      "s": 0.703
+    }
+  ],
+  "align_table": [
+    {
+      "en": "chocolate",
+      "es": "chocolate",
+      "score": 1.0,
+      "level": "strong"
+    },
+    {
+      "en": "fruit",
+      "es": "frutas",
+      "score": 0.983,
+      "level": "strong"
+    },
+    {
+      "en": "honey",
+      "es": "miel",
+      "score": 0.951,
+      "level": "strong"
+    },
+    {
+      "en": "sweet",
+      "es": "dulce",
+      "score": 0.937,
+      "level": "strong"
+    },
+    {
+      "en": "acidity",
+      "es": "acidez",
+      "score": 0.921,
+      "level": "strong"
+    },
+    {
+      "en": "sweetness",
+      "es": "dulce",
+      "score": 0.877,
+      "level": "strong"
+    },
+    {
+      "en": "profile",
+      "es": "perfil",
+      "score": 0.844,
+      "level": "strong"
+    },
+    {
+      "en": "flavors",
+      "es": "sabor",
+      "score": 0.82,
+      "level": "strong"
+    },
+    {
+      "en": "citrus",
+      "es": "naranja",
+      "score": 0.765,
+      "level": "strong"
+    },
+    {
+      "en": "peach",
+      "es": "frutas",
+      "score": 0.746,
+      "level": "strong"
+    },
+    {
+      "en": "citrus",
+      "es": "limón",
+      "score": 0.724,
+      "level": "strong"
+    },
+    {
+      "en": "flavors",
+      "es": "aroma",
+      "score": 0.703,
+      "level": "strong"
+    },
+    {
+      "en": "like",
+      "es": "dulzor",
+      "score": 0.692,
+      "level": "partial"
+    },
+    {
+      "en": "sweetness",
+      "es": "caramelo",
+      "score": 0.681,
+      "level": "partial"
+    },
+    {
+      "en": "like",
+      "es": "leche",
+      "score": 0.674,
+      "level": "partial"
+    },
+    {
+      "en": "like",
+      "es": "cuerpo",
+      "score": 0.666,
+      "level": "partial"
+    },
+    {
+      "en": "cherry",
+      "es": "dulce",
+      "score": 0.644,
+      "level": "partial"
+    },
+    {
+      "en": "tea",
+      "es": "café",
+      "score": 0.634,
+      "level": "partial"
+    },
+    {
+      "en": "citrus",
+      "es": "jugosa",
+      "score": 0.619,
+      "level": "partial"
+    },
+    {
+      "en": "tropical",
+      "es": "jugosa",
+      "score": 0.605,
+      "level": "partial"
+    },
+    {
+      "en": "floral",
+      "es": "frutas",
+      "score": 0.567,
+      "level": "partial"
+    },
+    {
+      "en": "red",
+      "es": "naranja",
+      "score": 0.561,
+      "level": "partial"
+    },
+    {
+      "en": "notes",
+      "es": "dulzor",
+      "score": 0.531,
+      "level": "partial"
+    },
+    {
+      "en": "stone",
+      "es": "leche",
+      "score": 0.498,
+      "level": "partial"
+    },
+    {
+      "en": "milk",
+      "es": "jugosa",
+      "score": 0.496,
+      "level": "partial"
+    },
+    {
+      "en": "milk",
+      "es": "piña",
+      "score": 0.473,
+      "level": "partial"
+    },
+    {
+      "en": "fruit",
+      "es": "cacao",
+      "score": 0.465,
+      "level": "partial"
+    },
+    {
+      "en": "dark",
+      "es": "dulzor",
+      "score": 0.454,
+      "level": "partial"
+    },
+    {
+      "en": "like",
+      "es": "taza",
+      "score": 0.434,
+      "level": "partial"
+    },
+    {
+      "en": "stone",
+      "es": "kiwi",
+      "score": 0.372,
+      "level": "weak"
+    }
+  ],
+  "en_only": [
+    "stone",
+    "dark",
+    "milk",
+    "bright",
+    "finish",
+    "ripe",
+    "stone fruit",
+    "balanced"
+  ],
+  "es_only": [
+    "cacao",
+    "taza",
+    "kiwi",
+    "piña",
+    "chocolate leche",
+    "pera",
+    "amarillo",
+    "kiwi amarillo"
+  ],
+  "topics": {
+    "en": [
+      {
+        "id": 0,
+        "terms": [
+          "cup",
+          "sweetness",
+          "acidity",
+          "peach",
+          "like",
+          "ripe",
+          "profile"
+        ]
+      },
+      {
+        "id": 1,
+        "terms": [
+          "chocolate",
+          "dark",
+          "dark chocolate",
+          "milk",
+          "milk chocolate",
+          "cherry",
+          "caramel"
+        ]
+      },
+      {
+        "id": 2,
+        "terms": [
+          "process",
+          "varietal",
+          "espresso",
+          "producer",
+          "region",
+          "recipes",
+          "recipes espresso"
+        ]
+      },
+      {
+        "id": 3,
+        "terms": [
+          "fruit",
+          "stone",
+          "stone fruit",
+          "tropical",
+          "tropical fruit",
+          "citrus",
+          "like"
+        ]
+      },
+      {
+        "id": 4,
+        "terms": [
+          "coffee",
+          "sweet",
+          "notes",
+          "flavors",
+          "blend",
+          "floral",
+          "balanced"
+        ]
+      }
+    ],
+    "es": [
+      {
+        "id": 0,
+        "terms": [
+          "cuerpo",
+          "acidez",
+          "acidez jugosa",
+          "jugosa",
+          "tiene cuerpo",
+          "tiene",
+          "cremoso"
+        ]
+      },
+      {
+        "id": 1,
+        "terms": [
+          "café",
+          "dulce",
+          "miel",
+          "perfil",
+          "flor",
+          "jugoso",
+          "limpio"
+        ]
+      },
+      {
+        "id": 2,
+        "terms": [
+          "cacao",
+          "chocolate",
+          "caramelo",
+          "polvo",
+          "cacao polvo",
+          "cereza",
+          "chocolate leche"
+        ]
+      },
+      {
+        "id": 3,
+        "terms": [
+          "sabor",
+          "aroma",
+          "presentes taza",
+          "sabor presentes",
+          "presentes",
+          "aroma sabor",
+          "sabor aroma"
+        ]
+      },
+      {
+        "id": 4,
+        "terms": [
+          "kiwi",
+          "kiwi amarillo",
+          "amarillo",
+          "rojos",
+          "frutos",
+          "frutos rojos",
+          "vino"
+        ]
+      }
+    ]
+  },
+  "valence": [
+    {
+      "term_en": "fermented",
+      "term_es": "fermentado",
+      "en_valence": "neutral",
+      "en_positive_pct": 0.2,
+      "en_occurrences": 10,
+      "es_valence": "absent",
+      "es_positive_pct": 0,
+      "es_occurrences": 0,
+      "inversion": false
+    },
+    {
+      "term_en": "bright",
+      "term_es": "brillante",
+      "en_valence": "neutral",
+      "en_positive_pct": 0.23529411764705882,
+      "en_occurrences": 136,
+      "es_valence": "neutral",
+      "es_positive_pct": 0.0,
+      "es_occurrences": 3,
+      "inversion": false
+    },
+    {
+      "term_en": "earthy",
+      "term_es": "terroso",
+      "en_valence": "neutral",
+      "en_positive_pct": 0.0,
+      "en_occurrences": 2,
+      "es_valence": "absent",
+      "es_positive_pct": 0,
+      "es_occurrences": 0,
+      "inversion": false
+    },
+    {
+      "term_en": "strong",
+      "term_es": "fuerte",
+      "en_valence": "absent",
+      "en_positive_pct": 0,
+      "en_occurrences": 0,
+      "es_valence": "absent",
+      "es_positive_pct": 0,
+      "es_occurrences": 0,
+      "inversion": false
+    }
+  ],
+  "meta": {
+    "en_notes": 2243,
+    "es_notes": 61,
+    "en_products": 3960,
+    "es_pages": 200,
+    "roasters": 20,
+    "scraped": "April 06, 2026",
+    "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring"
+  }
+}

@@ -1,0 +1,5 @@
+term_en,term_es,en_valence,en_positive_pct,en_occurrences,es_valence,es_positive_pct,es_occurrences,inversion
+fermented,fermentado,neutral,0.2,10,absent,0.0,0,False
+bright,brillante,neutral,0.23529411764705882,136,neutral,0.0,3,False
+earthy,terroso,neutral,0.0,2,absent,0.0,0,False
+strong,fuerte,absent,0.0,0,absent,0.0,0,False
