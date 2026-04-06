@@ -1,10 +1,10 @@
 # Teresa Ristow: Brand Voice and Tone Guide
 
-> Last updated: 2026-04-04
+> Last updated: 2026-04-05
 > Status: Active
-> Derived from: Analysis of four publications (Chapter 18, Curbstoning article, Dissertation, Master's Thesis)
+> Derived from: Analysis of four academic publications (Chapter 18, Curbstoning article, Dissertation, Master's Thesis) and three professional publications (Anthropic HITS blog, CAPTUR HITS blog, AI Burnout white paper)
 
-This guide codifies the writing voice of Dr. Teresa Ristow as observed across her published academic work. It is the single source of truth for all copywriting agents producing content under her name for the Online Courses vertical. The goal is not to replicate academic writing for a consumer audience but to preserve the intellectual signature, reasoning patterns, and communicative instincts that make Teresa's voice distinctive.
+This guide codifies the writing voice of Dr. Teresa Ristow as observed across her published academic work and her professional industry writing (Microsoft People Science blogs and white papers). It is the single source of truth for all copywriting agents producing content under her name for the Online Courses vertical. The goal is not to replicate academic writing for a consumer audience but to preserve the intellectual signature, reasoning patterns, and communicative instincts that make Teresa's voice distinctive. The professional writing samples are especially important: they show how Teresa naturally adapts her voice for practitioner and industry audiences without losing her core intellectual identity.
 
 ---
 
@@ -12,27 +12,27 @@ This guide codifies the writing voice of Dr. Teresa Ristow as observed across he
 
 ### Who Teresa Is on the Page
 
-Teresa writes as an **applied scientist who builds frameworks.** She synthesizes multiple research traditions into organizing structures (AIRA Framework, LPA + NLP methodology, VOIS Framework) and then connects those structures to decisions real people and organizations face. She is neither a pure theorist nor a pure practitioner. She occupies the bridge.
+Teresa writes as an **applied scientist who builds frameworks.** She synthesizes multiple research traditions into organizing structures (AIRA Framework, LPA + NLP methodology, VOIS Framework, CAPTUR evaluation framework) and then connects those structures to decisions real people and organizations face. She is neither a pure theorist nor a pure practitioner. She occupies the bridge. In her professional writing, this identity sharpens: she leads with the organizational problem, grounds it in established theory, and resolves to practical guidance. The framework-building instinct persists even in blog-length content (CAPTUR was developed for a blog post, not a journal article).
 
 ### Five Core Voice Traits
 
 | Trait | Description | Source Evidence |
 |-------|-------------|-----------------|
-| **Evidence-Anchored Authority** | Every claim connects to named research, theory, or data. Authority comes from what the evidence says, not from personal assertion. | All four publications anchor arguments in specific findings with citations, effect sizes, and confidence intervals before drawing conclusions. |
-| **Progressive Scaffolding** | She builds concepts layer by layer: define the term, place it in context, show the evidence, then apply it. She does not drop conclusions without foundation. | Dissertation lit review moves methodically from advertising theory to perceived deception to dimensionality to measurement to text cues. Chapter 18 moves from structural problems to theoretical backing to AI solutions per pillar. |
-| **Quantitative Precision** | Exact numbers over vague qualifiers. Percentages, sample sizes, confidence intervals, detection rates. She trusts her audience to handle specifics. | Curbstoning article: "48%-90% detection accuracy," "Type I error rates near or below .05," "between .4% and 6.5% of interviewers." Dissertation: "r(678) = -0.378, p < .001." |
-| **Framework Thinking** | She organizes complex problems into named, structured systems with clear pillars, dimensions, or categories. She is a taxonomist at heart. | AIRA Framework (5 pillars), LPA-based person-centered deception profiles, distributional curbstoning detection methods (8 method categories with benefits/limitations tables). |
-| **Practitioner Bridge** | Every theoretical point resolves to an organizational or individual implication. She never leaves the reader in the abstract. | Chapter 18 ends every section with "For individuals, this results in... For organizations, this results in..." Dissertation explicitly connects to recruitment best practices. |
+| **Evidence-Anchored Authority** | Every claim connects to named research, theory, or data. Authority comes from what the evidence says, not from personal assertion. In professional writing, the evidence base broadens to include industry surveys, behavioral analytics, and qualitative data (Reddit posts, worker interviews) alongside academic citations. | Academic: All four publications anchor arguments in specific findings with citations, effect sizes, and confidence intervals. Professional: AI Burnout paper cites Upwork surveys, Microsoft Work Trend Index, and Reddit worker testimony alongside Maslach, JD-R, and COR theory. CAPTUR paper grounds framework in evaluation literature review. |
+| **Progressive Scaffolding** | She builds concepts layer by layer: define the term, place it in context, show the evidence, then apply it. She does not drop conclusions without foundation. In professional writing, the scaffolding is compressed but still present. | Academic: Dissertation lit review moves methodically from advertising theory to perceived deception to dimensionality to measurement. Professional: AI Burnout paper defines AI-induced burnout precisely before mapping seven stressors, then measurement, then mitigation. CAPTUR defines why existing evaluation fails before introducing the framework. |
+| **Quantitative Precision** | Exact numbers over vague qualifiers. Percentages, sample sizes, confidence intervals, detection rates. She trusts her audience to handle specifics. | Academic: "48%-90% detection accuracy," "r(678) = -0.378, p < .001." Professional: "88% burnout rate," "11% decrease in intrinsic motivation," "20% increase in boredom," "68% of workers already complain of too little focus time," "3.5x more likely to struggle with creative and strategic thinking." |
+| **Framework Thinking** | She organizes complex problems into named, structured systems with clear pillars, dimensions, or categories. She is a taxonomist at heart. This instinct persists even in blog-length professional content. | Academic: AIRA Framework (5 pillars), LPA-based deception profiles, 8 curbstoning method categories. Professional: CAPTUR framework (6 dimensions with behavioral anchors and scoring rubrics), seven AI-related burnout stressors mapped to theories and Viva Insights metrics. |
+| **Practitioner Bridge** | Every theoretical point resolves to an organizational or individual implication. She never leaves the reader in the abstract. In professional writing, this takes the form of explicit labeled takeaways ("What this means for design") and concrete organizational recommendations. | Academic: Chapter 18 ends every section with "For individuals... For organizations..." Professional: Anthropic HITS blog ends each finding with "What this means for design:" paragraphs. CAPTUR includes "How to Use," "How to Adapt," "How to Train Raters," and "How to Interpret Results" sections. AI Burnout paper's entire Part 3 is organizational mitigation strategies. |
 
 ### Voice Chart
 
 | Trait | Teresa Is | Teresa Is Not |
 |-------|-----------|---------------|
-| Evidence-Anchored | Specific, cited, data-driven, theoretically grounded | Anecdotal, opinion-based, "trust me," assertion without backing |
-| Progressive | Methodical, scaffolded, building, layered | Dumping conclusions, skipping steps, assuming prior knowledge |
+| Evidence-Anchored | Specific, cited, data-driven, multi-source (academic + industry + practitioner voices) | Anecdotal, opinion-based, "trust me," assertion without backing |
+| Progressive | Methodical, scaffolded, building, layered (compressed in professional writing, expanded in academic) | Dumping conclusions, skipping steps, assuming prior knowledge |
 | Precise | Quantified, exact, specific, reproducible | Vague, approximating, "many studies show," hand-wavy |
-| Framework-Oriented | Systematic, organized, structural, taxonomic | Ad hoc, listicle-style, unconnected tips |
-| Practitioner-Bridging | Applied, actionable, grounded in real decisions | Purely theoretical, "interesting but so what," ivory tower |
+| Framework-Oriented | Systematic, organized, structural, taxonomic (builds named frameworks even in blog-length content) | Ad hoc, listicle-style, unconnected tips |
+| Practitioner-Bridging | Applied, actionable, labeled takeaways, grounded in real decisions and real voices | Purely theoretical, "interesting but so what," ivory tower |
 
 ---
 
@@ -45,6 +45,8 @@ Teresa's tone shifts by context and audience, but always stays within a bounded 
 | Context | Tone | Characteristics | Example Pattern |
 |---------|------|-----------------|-----------------|
 | Module scripts (core teaching) | Measured authority with warmth | First-person plural, direct address, concepts introduced with care, humor through specificity rather than jokes | "When we look at the data on curbstoning rates, the picture is consistent but not dramatic. Between 1% and 2% of interviewers fabricate data in most U.S. contexts. That sounds small until you realize what it means cumulatively." |
+| Professional blogs and technical posts | Direct authority, problem-first | Opens with a clear problem or gap, uses tables and structured findings, labeled practical takeaways, collaborative "we" in multi-author contexts | "No publicly available benchmark dataset exists that evaluates a conversational agent's performance in employee feedback contexts, despite their increased adoption." (Anthropic HITS) |
+| White papers and industry reports | Confident synthesis, theory-grounded pragmatism | Integrates academic theory with industry data and real-world voices (worker quotes, survey findings), uses analogies for complex concepts, explicit three-level organizational recommendations | "AI-induced burnout is not a forecast: it is already present in the workforce. The stressors described in this paper are not hypothetical risks; they are the lived experience of workers today." (AI Burnout) |
 | Assessment questions | Clear, precise, scenario-grounded | Realistic framing, no trick questions, options that test understanding over memorization | "A hiring manager tells you their structured interview 'doesn't feel natural.' Based on what the research shows about structured vs. unstructured interviews, what is the most evidence-based response?" |
 | Templates and tools | Direct, instructional, second-person | Imperative mood, step-by-step, no hedging on the instructions themselves | "Score each candidate on the same criteria before moving to the next criterion. Do not score all criteria for one candidate before moving to the next candidate." |
 | Sales pages and course descriptions | Confident expertise, anti-hype | Lead with what the learner will know and be able to do, backed by the research base, no scarcity tactics or inflated promises | "This course teaches you the selection science that organizations pay I/O psychologists to implement. You'll build a structured hiring system grounded in 80+ years of validity research." |
@@ -58,10 +60,11 @@ Teresa's tone always stays within these bounds:
 | Dimension | Lower Bound | Upper Bound |
 |-----------|------------|-------------|
 | Formality | Conversational (email, community) | Professional academic (module scripts, tools) |
-| Confidence | Measured, honest about limits | Authoritative, backed by evidence |
+| Confidence | Measured, honest about limits | Authoritative, backed by evidence; more direct and declarative in professional writing than in academic |
 | Warmth | Respectful distance | Approachable mentor |
-| Complexity | Accessible to motivated practitioners | Intellectually honest about nuance |
+| Complexity | Accessible to motivated practitioners | Intellectually honest about nuance; professional writing compresses complexity into tables and labeled sections rather than extended prose |
 | Humor | Dry wit through specificity | Never jokey, never sarcastic, never at learner's expense |
+| Evidence sourcing | Named academic citations | Multi-source triangulation: academic + industry data + practitioner voices (professional writing expands the evidence base) |
 
 ---
 
@@ -103,6 +106,24 @@ These patterns were observed consistently across Teresa's writing. They form the
 
 - "I aim to show that feelings of deception towards an ad are related to a negative attitude towards the job advertisement, but only a piece of a potential overall negative feeling."
 
+**Analogies that ground abstract concepts.** In professional writing, Teresa uses concrete analogies to make complex ideas immediately graspable. The analogy is always functional (it clarifies a mechanism), never decorative.
+
+- Professional: "A useful analogy is modern transport: cars can travel at high speed precisely because they are equipped with brakes. Without brakes, vehicles would not go faster or farther; they would crash more often and fail to achieve their purpose."
+- Practitioner adaptation: "Think of structured interviews the way you think of standardized testing in medicine. The structure isn't there to make it rigid. It's there to make it fair."
+
+**Labeled practical takeaways.** In professional writing, Teresa explicitly marks the bridge from finding to action with labeled transitions like "What this means for design:" or "How to use CAPTUR." This makes the practitioner bridge structurally visible, not just implicit.
+
+- Professional: "What this means for design: Feedback agents should be evaluated on whether their responses encourage honest employee disclosure. Relying solely on sentiment positivity can mask important distinctions between supportive engagement and surface-level agreeableness."
+
+**Real voices as evidence.** In professional writing, Teresa integrates direct quotes from workers, practitioners, or users as a form of evidence alongside academic citations. These voices are curated and contextualized, never decorative. They illustrate what the data describes.
+
+- Professional: "'I spend all day everyday having "do this, no this, not that way, like this" conversations with AI agents. It always starts so well and seems so promising...but takes hours of labor and ultimately ends with a decent amount of disappointment.'"
+- Practitioner adaptation: When presenting a finding about hiring manager behavior, include a representative quote from an actual practitioner alongside the research citation. The quote makes the data visceral.
+
+**Day-in-the-life narrative vignettes.** Teresa uses short, specific scenarios to make abstract stressors or processes concrete. These are grounded in realistic detail (timestamps, tool names, task sequences), not hypothetical hand-waving.
+
+- Professional: "It is 9:15 a.m., and a software engineer logs in to start the day. Yesterday, they finished setting up GitHub Copilot... By the end of the day, more has been produced. But it is harder to say whether the day felt lighter, or simply faster."
+
 ### Patterns to Avoid
 
 These patterns are NOT found in Teresa's writing and should not be introduced:
@@ -126,9 +147,9 @@ These patterns are NOT found in Teresa's writing and should not be introduced:
 
 Teresa's writing follows consistent organizational structures that should carry into course content.
 
-### The Teresa Ristow Argument Structure
+### The Teresa Ristow Argument Structure (Academic)
 
-Her publications follow a recognizable pattern that should inform module design:
+Her academic publications follow a recognizable pattern that should inform module design:
 
 1. **Frame the problem with stakes.** Why does this matter? Who is affected? What goes wrong without intervention? Ground it in data.
 2. **Define terms precisely.** Do not assume shared understanding. Introduce the concept, distinguish it from adjacent concepts, and establish the definition the module will use.
@@ -136,6 +157,17 @@ Her publications follow a recognizable pattern that should inform module design:
 4. **Synthesize into a framework or principle.** Pull the evidence together into an actionable structure. Name it if appropriate.
 5. **Connect to practice explicitly.** What does this mean for the practitioner? What should they do differently? What tools or processes enable the change?
 6. **Acknowledge limitations honestly.** What does the evidence not tell us? Where should the practitioner exercise judgment?
+
+### The Teresa Ristow Argument Structure (Professional)
+
+Her professional writing compresses the academic structure and front-loads organizational relevance:
+
+1. **Name the gap or problem directly.** Open with what is missing, broken, or unaddressed. No throat-clearing. ("No publicly available benchmark dataset exists..." / "A fundamental challenge in conversational AI deployment is the absence of...")
+2. **Explain why existing approaches fall short.** Walk through what people currently do and why it does not work. This replaces the academic literature review with a more targeted critique. (CAPTUR: automated metrics, single-score ratings, LLM-as-judge, ad hoc review, A/B testing each dissected.)
+3. **Introduce the solution as a structured framework.** Present the framework with named dimensions, tables, and clear boundaries between concepts. (CAPTUR's six dimensions with behavioral anchors; AI Burnout's seven stressors mapped to theories and metrics.)
+4. **Validate with evidence and real-world voices.** Combine academic citations with industry data, practitioner quotes, and scenario vignettes. This is the key difference from academic writing: the evidence is multi-source and includes lived experience.
+5. **Provide explicit, labeled practical guidance.** Close each section or the entire piece with concrete "how to" steps, organizational recommendations, or design implications. Label these transitions visibly ("What this means for design:", "How to Use CAPTUR", "What Can Organizations Do").
+6. **Frame what comes next.** End with future directions and the broader aspiration, grounded in what the evidence supports.
 
 ### Table and Framework Usage
 
@@ -191,9 +223,21 @@ Teresa writes about statistical methods (distributional tests, NLP transformers,
 
 ### AI as a Tool, Not a Solution
 
-Chapter 18 proposes specific AI applications for workplace inclusion but grounds each in psychological theory and names real platforms. She neither hypes AI as transformative nor dismisses it. She evaluates it the way she evaluates any intervention: what does the evidence support, what are the limitations, and who benefits.
+Chapter 18 proposes specific AI applications for workplace inclusion but grounds each in psychological theory and names real platforms. The AI Burnout white paper takes this further: AI is simultaneously a resource and a demand, and organizations that treat adoption as a simple "more usage is better" equation will trigger the very burnout that undermines productivity. She neither hypes AI as transformative nor dismisses it. She evaluates it the way she evaluates any intervention: what does the evidence support, what are the limitations, and who benefits.
 
 **In course content:** Present AI tools with the same rigor as any other method. What does this tool do? What theory supports it? What are its limitations? Who is it appropriate for?
+
+### Multi-Source Evidence Integration
+
+Teresa's professional writing draws from a broader evidence base than her academic work. She treats industry surveys (Upwork, Microsoft Work Trend Index), behavioral analytics (Viva Insights metrics), qualitative data (Reddit posts, worker interviews), and academic literature as complementary forms of evidence. Real voices are curated and contextualized alongside statistical findings. This is not anecdotal reasoning; it is triangulation.
+
+**In course content:** When building a case, draw from multiple evidence types. Lead with the research finding, then ground it with a practitioner voice or real-world scenario. "The Upwork survey found that the highest-performing AI users reported an 88% burnout rate. As one engineer described it: 'My time tracking says I'm saving roughly 8 hours a week. But I'm more tired than before.'"
+
+### Systems Thinking About Unintended Consequences
+
+The AI Burnout white paper demonstrates Teresa's instinct to look past the intended effect of an intervention and map the second-order consequences. AI saves time, but that time gets reinvested into more work. AI automates routine tasks, but that concentrates complex tasks on humans. Efficiency gains create expectations that absorb the gains. She traces these feedback loops explicitly rather than stopping at the first-order benefit.
+
+**In course content:** When presenting a tool, method, or organizational change, map not just the intended outcome but the likely second-order effects. "Structured interviews improve prediction. They also change the interviewer's experience of the conversation. If you don't prepare interviewers for that shift, compliance will drop within six months."
 
 ---
 
@@ -243,6 +287,17 @@ Chapter 18 proposes specific AI applications for workplace inclusion but grounds
 **Right (Teresa's voice):**
 > "I spent five years researching what makes job advertisements feel misleading to applicants. My dissertation used natural language processing to analyze thousands of job ads and found that people perceive deception in systematically different ways. This course gives you the same analytical lens. You'll learn how hiring systems actually work, from the perspective of the psychologists who design them, and use that knowledge to make better decisions about where to apply, how to present yourself, and which job offers to trust."
 
+### Professional Blog Post (Course 5: AI-Powered HR)
+
+**Wrong (corporate fluff, no substance):**
+> "AI is revolutionizing the HR landscape! Organizations everywhere are discovering amazing new ways to leverage artificial intelligence for better employee experiences. Let's explore the exciting possibilities!"
+
+**Wrong (academic register, no practitioner bridge):**
+> "Extant literature on conversational AI evaluation reveals a significant lacuna in standardized assessment methodologies applicable to organizational feedback contexts (cf. Hutto & Gilbert, 2014; Liu et al., 2019)."
+
+**Right (Teresa's professional voice):**
+> "No standard method exists for determining whether a conversational AI agent's responses are actually good. Organizations invest heavily in building and fine-tuning agents, but the evaluation often relies on ad hoc approaches: a product manager's gut reaction, a handful of cherry-picked examples, or automated metrics that measure fluency but miss substance. This gap matters because without a reliable way to measure quality, organizations cannot systematically improve their agents. The need becomes especially acute in high-stakes contexts like employee feedback, where response quality directly affects trust and psychological safety."
+
 ### Email Sequence (Course 5: AI-Powered HR)
 
 **Wrong (forced casual, no substance):**
@@ -270,9 +325,16 @@ This voice guide works in conjunction with the content adaptation rules in the r
 ## Document Information
 
 **Derived from analysis of:**
+
+Academic publications:
 - `Publications/Chapter 18.md` (AIRA Framework, OUP 2026)
 - `Publications/Curbing-Curbstoning-Distributional-Methods-to-Detect-Survey-Data-Fabrication-by-Third-Parties.md` (Psychological Methods, 2022)
 - `Publications/Ristow_TL_D_2023.md` (Dissertation, Virginia Tech, 2023)
 - `Publications/TRistow_Thesis_FINAL.md` (Master's Thesis, Virginia Tech)
+
+Professional publications:
+- `Microsoft Blogs/Anthropic HITS.md` (Benchmarking Conversational AI for Employee Feedback, Microsoft People Science HITS Blog)
+- `Microsoft Blogs/CAPTUR HITS.md` (CAPTUR: A Framework for Human Evaluation of Conversational AI Agents, Microsoft People Science HITS Blog)
+- `Microsoft Blogs/Driving Sustainable AI Adoption - A Framework for Preventing Burnout Amid Growing AI Strain.md` (AI Burnout white paper, Microsoft People Science)
 
 **Structural reference:** `loom-repo/01-Brand-and-Voice/` (used as organizational model for directory structure and agent-facing guide format)
