@@ -4,7 +4,7 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--cream:#faf7f2;--warm:#fffcf8;--ink:#1e1410;--loom:#2a1810;--med:#4a3528;--sienna:#6b4a30;--accent:#a04420;--en:#0b6d8c;--es:#c43a18;--gold:#a07418;--green:#2e7228;--faint:#d0c4b4}
+:root{--cream:#faf7f2;--warm:#fffcf8;--ink:#1e1410;--loom:#2a1810;--med:#4a3528;--sienna:#6b4a30;--accent:#a04420;--en:#0b6d8c;--es:#c43a18;--gold:#a07418;--green:#2e7228;--faint:#d0c4b4;--importer:#1a8a5c;--institution:#7b4bb3;--roaster:#0b6d8c;--producer:#c43a18}
 body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 .site-bar{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:0 auto}.site-bar .logo{font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--loom);letter-spacing:1.5px;text-transform:uppercase}.site-bar .meta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
 .hero{position:relative;padding:60px 40px 40px;max-width:1100px;margin:0 auto}.hero-kicker{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:16px}.hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(36px,5.5vw,64px);line-height:1.05;color:var(--loom);max-width:700px;margin-bottom:20px}.hero h1 em{font-weight:300;font-style:italic;color:var(--accent)}.hero-deck{font-size:18px;font-weight:300;line-height:1.8;color:var(--med);max-width:580px}.hero-byline{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);margin-top:20px}.hero-byline a{color:var(--accent);text-decoration:none}
@@ -17,15 +17,16 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-
 .example-row{margin:28px 0;padding:20px 24px;background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:6px}.example-row .ex-label{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px}.example-row .ex-chain{font-size:14px;line-height:1.7}.example-row .stage{font-weight:600}.example-row .arrow{color:var(--gold);margin:0 6px}
 .blog-footer{max-width:680px;margin:0 auto;padding:40px;border-top:1.5px solid rgba(0,0,0,.07)}.blog-footer .author{display:flex;gap:16px;align-items:flex-start}.blog-footer .avatar{width:48px;height:48px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:18px;font-weight:600;color:var(--cream);flex-shrink:0}.blog-footer .author-info h4{font-family:'Fraunces',serif;font-size:16px;font-weight:600;color:var(--loom)}.blog-footer .author-info p{font-size:13px;line-height:1.5;color:var(--med)}
 .site-footer{padding:30px 40px;max-width:1100px;margin:0 auto;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between}.site-footer span{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
-@media(max-width:700px){.hero,.article{padding-left:20px;padding-right:20px}.viz-label,.viz-caption,.viz-legend,.viz-instruct{padding-left:20px;padding-right:20px}.table-grid{grid-template-columns:1fr}}
+.sc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0 28px}.sc-col{background:var(--warm);border-radius:6px;padding:16px;border-top:3px solid var(--faint)}.sc-col.roaster{border-top-color:var(--roaster)}.sc-col.importer{border-top-color:var(--importer)}.sc-col.institution{border-top-color:var(--institution)}.sc-col.producer{border-top-color:var(--producer)}.sc-col h4{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;margin-bottom:4px}.sc-col.roaster h4{color:var(--roaster)}.sc-col.importer h4{color:var(--importer)}.sc-col.institution h4{color:var(--institution)}.sc-col.producer h4{color:var(--producer)}.sc-col .sc-count{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);margin-bottom:10px}.sc-col ol{list-style:none;padding:0;margin:0;counter-reset:sc}.sc-col ol li{font-size:13px;line-height:1.7;counter-increment:sc;display:flex;align-items:baseline;gap:6px}.sc-col ol li::before{content:counter(sc);font-family:'DM Mono',monospace;font-size:9px;color:var(--sienna);min-width:12px}.sc-col ol li .sc-bar{display:inline-block;height:6px;border-radius:2px;vertical-align:middle}.sc-col.roaster .sc-bar{background:var(--roaster)}.sc-col.importer .sc-bar{background:var(--importer)}.sc-col.institution .sc-bar{background:var(--institution)}.sc-col.producer .sc-bar{background:var(--producer)}
+@media(max-width:700px){.hero,.article{padding-left:20px;padding-right:20px}.viz-label,.viz-caption,.viz-legend,.viz-instruct{padding-left:20px;padding-right:20px}.table-grid{grid-template-columns:1fr}.sc-grid{grid-template-columns:1fr 1fr}}
 </style></head><body>
 <div class="site-bar"><div class="logo">Loom Coffee Co.</div><div class="meta">Blog</div></div>
 <div class="hero"><div class="hero-kicker">Data &middot; Language &middot; Equity</div><h1>Lost in <em>Translation</em></h1><p class="hero-deck">The coffee in your cup was described in at least three different languages before it reached you. Somewhere along the way, the producer's voice was replaced by the roaster's vocabulary.</p><div class="hero-byline">By <a href="#">Teresa Ristow</a> &middot; Loom Coffee Co. &middot; 2026</div></div>
 
-<div class="viz-section"><div class="viz-label">Interactive Visualization</div><div class="viz-caption">Each line is a flavor descriptor. Blue threads for US roaster English, red for Latin American producer Spanish. Golden connections mark shared meaning. Hover any thread to see its data.</div>
+<div class="viz-section"><div class="viz-label">Interactive Visualization</div><div class="viz-caption">Each thread is a flavor descriptor, color-coded by source type: <span style="color:var(--roaster);font-weight:600">roasters</span>, <span style="color:var(--importer);font-weight:600">importers</span>, <span style="color:var(--institution);font-weight:600">institutions</span>, and <span style="color:var(--producer);font-weight:600">producers</span>. Golden arcs mark shared meaning across languages. Hover any thread to see its source and connections.</div>
 <div class="viz-frame"><div class="viz-cw" id="w-threads"><canvas id="cv-threads" width="1600" height="1640"></canvas><div class="tt" id="tp-threads"><strong></strong><em></em><span></span></div></div></div>
-<div class="viz-legend"><div><span style="background:var(--en)"></span> English: US roaster</div><div><span style="background:var(--es)"></span> Spanish: producer</div><div><span class="dot" style="background:var(--gold)"></span> Cross-lingual connection</div></div>
-<div class="viz-instruct">Hover any thread to see connections and frequency.</div></div>
+<div class="viz-legend"><div><span style="background:var(--roaster)"></span> Roaster</div><div><span style="background:var(--importer)"></span> Importer</div><div><span style="background:var(--institution)"></span> Institution</div><div><span style="background:var(--producer)"></span> Producer</div><div><span class="dot" style="background:var(--gold)"></span> Cross-lingual connection</div></div>
+<div class="viz-instruct">Hover any thread to see its source type, connections, and frequency.</div></div>
 
 <div class="article">
 <h2>The bag says "blueberry, meyer lemon, and honey." The farmer said "dulce."</h2>
@@ -54,6 +55,11 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-
 <div class="data-note" style="margin-top:20px" id="gaps-note"><strong>Vocabulary gaps:</strong> Loading...</div>
 </div>
 
+<h2>Language across the supply chain</h2>
+<p>The same coffee passes through distinct vocabularies at each stage. Roasters lean on precise sensory descriptors; importers bridge origin and market language; institutions codify standards and definitions; producers describe what they grow in their own terms. The grid below shows how the top terms shift at each link in the chain.</p>
+<div class="sc-grid" id="sc-grid"><!-- filled by JS --></div>
+<div class="data-note"><strong>Reading this grid:</strong> Each column shows the top terms extracted from that source type's content. Terms that appear in multiple columns represent shared vocabulary; terms unique to one column reveal where language diverges.</div>
+
 <h2>How description changes across the supply chain</h2>
 <div class="example-row"><div class="ex-label">One coffee, four descriptions</div><div class="ex-chain"><span class="stage" style="color:var(--es)">Producer:</span> "Dulce, suave, buen cuerpo" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--gold)">Exporter:</span> "Sweet, full body, smooth" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--green)">Importer:</span> "Honey sweetness, heavy body, silky mouthfeel" <span class="arrow">&rarr;</span> <span class="stage" style="color:var(--en)">Roaster:</span> "Caramel and honey, syrupy body, bright and juicy with notes of blueberry"</div></div>
 <p>At each handoff the description is rewritten. No one is being dishonest; each person describes what they taste using available tools. But the cumulative effect is that the producer's voice is overwritten entirely by the time the coffee reaches a consumer.</p>
@@ -70,7 +76,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-
 
 <h2>How we built this</h2>
 <p>This analysis is built on real data, not hypotheticals. Here is what the pipeline does, step by step:</p>
-<p><strong>1. Scrape product descriptions.</strong> We pull tasting notes from the public product pages of over 20 US specialty roasters and several Latin American producer and cooperative sites. English-language sites use the Shopify product API; Spanish-language sites use a mix of Shopify endpoints and direct HTML scraping.</p>
+<p><strong>1. Scrape product descriptions.</strong> We pull tasting notes from four source types across the coffee supply chain: US specialty roasters (Shopify product API), green coffee importers like Ally Coffee and Cafe Imports (HTML scraping of offering lists), coffee institutions like the National Coffee Association and SCA (educational and standards content), and Latin American producer and cooperative sites (Shopify endpoints and direct HTML scraping).</p>
 <p><strong>2. Extract actual flavor language.</strong> Raw product pages contain marketing copy, farm names, altitude numbers, and processing details alongside flavor descriptors. The pipeline filters down to actual tasting note phrases using pattern matching, flavor vocabulary detection, and negation filtering. Terms like "not bitter" are excluded. Proper nouns and brand names are skipped.</p>
 <p><strong>3. Count what is distinctive.</strong> Rather than simple word counts, we use TF-IDF (term frequency-inverse document frequency) to surface terms that are characteristic of each language's vocabulary, not just frequent. This separates the signal — the words each tradition actually relies on — from the noise.</p>
 <p><strong>4. Align across languages.</strong> To compare English and Spanish terms, we use multilingual sentence embeddings — a model trained to place words with similar meanings close together regardless of language. This lets us measure how well "honey" and "miel" align without relying on a dictionary.</p>
@@ -89,6 +95,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-
 var DATA={"en": [{"t": "chocolate", "f": 38}, {"t": "fruit", "f": 36}, {"t": "sweet", "f": 35}, {"t": "sweetness", "f": 28}, {"t": "like", "f": 28}, {"t": "citrus", "f": 26}, {"t": "cherry", "f": 26}, {"t": "acidity", "f": 25}, {"t": "notes", "f": 23}, {"t": "peach", "f": 23}, {"t": "tropical", "f": 22}, {"t": "honey", "f": 21}], "es": [{"t": "café", "f": 68, "e": "Café"}, {"t": "chocolate", "f": 57, "e": "chocolate"}, {"t": "cacao", "f": 50, "e": "Cacao"}, {"t": "cuerpo", "f": 49, "e": "body"}, {"t": "acidez", "f": 46, "e": "acidity"}, {"t": "miel", "f": 45, "e": "honey"}, {"t": "taza", "f": 44, "e": "Taza"}, {"t": "caramelo", "f": 39, "e": "caramel"}, {"t": "dulce", "f": 38, "e": "sweet"}, {"t": "sabor", "f": 36, "e": "flavor"}, {"t": "kiwi", "f": 34, "e": "Kiwi"}, {"t": "leche", "f": 32, "e": "Leche"}], "alignment": [{"en": "chocolate", "es": "chocolate", "s": 1.0}, {"en": "fruit", "es": "frutas", "s": 0.983}, {"en": "honey", "es": "miel", "s": 0.951}, {"en": "sweet", "es": "dulce", "s": 0.937}, {"en": "acidity", "es": "acidez", "s": 0.921}, {"en": "sweetness", "es": "dulce", "s": 0.877}, {"en": "profile", "es": "perfil", "s": 0.844}, {"en": "flavors", "es": "sabor", "s": 0.82}, {"en": "citrus", "es": "naranja", "s": 0.765}, {"en": "peach", "es": "frutas", "s": 0.746}, {"en": "citrus", "es": "limón", "s": 0.724}, {"en": "flavors", "es": "aroma", "s": 0.703}], "align_table": [{"en": "chocolate", "es": "chocolate", "score": 1.0, "level": "strong"}, {"en": "fruit", "es": "frutas", "score": 0.983, "level": "strong"}, {"en": "honey", "es": "miel", "score": 0.951, "level": "strong"}, {"en": "sweet", "es": "dulce", "score": 0.937, "level": "strong"}, {"en": "acidity", "es": "acidez", "score": 0.921, "level": "strong"}, {"en": "sweetness", "es": "dulce", "score": 0.877, "level": "strong"}, {"en": "profile", "es": "perfil", "score": 0.844, "level": "strong"}, {"en": "flavors", "es": "sabor", "score": 0.82, "level": "strong"}, {"en": "citrus", "es": "naranja", "score": 0.765, "level": "strong"}, {"en": "peach", "es": "frutas", "score": 0.746, "level": "strong"}, {"en": "citrus", "es": "limón", "score": 0.724, "level": "strong"}, {"en": "flavors", "es": "aroma", "score": 0.703, "level": "strong"}, {"en": "like", "es": "dulzor", "score": 0.692, "level": "partial"}, {"en": "sweetness", "es": "caramelo", "score": 0.681, "level": "partial"}, {"en": "like", "es": "leche", "score": 0.674, "level": "partial"}, {"en": "like", "es": "cuerpo", "score": 0.666, "level": "partial"}, {"en": "cherry", "es": "dulce", "score": 0.644, "level": "partial"}, {"en": "tea", "es": "café", "score": 0.634, "level": "partial"}, {"en": "citrus", "es": "jugosa", "score": 0.619, "level": "partial"}, {"en": "tropical", "es": "jugosa", "score": 0.605, "level": "partial"}, {"en": "floral", "es": "frutas", "score": 0.567, "level": "partial"}, {"en": "red", "es": "naranja", "score": 0.561, "level": "partial"}, {"en": "notes", "es": "dulzor", "score": 0.531, "level": "partial"}, {"en": "stone", "es": "leche", "score": 0.498, "level": "partial"}, {"en": "milk", "es": "jugosa", "score": 0.496, "level": "partial"}, {"en": "milk", "es": "piña", "score": 0.473, "level": "partial"}, {"en": "fruit", "es": "cacao", "score": 0.465, "level": "partial"}, {"en": "dark", "es": "dulzor", "score": 0.454, "level": "partial"}, {"en": "like", "es": "taza", "score": 0.434, "level": "partial"}, {"en": "stone", "es": "kiwi", "score": 0.372, "level": "weak"}], "en_only": ["stone", "dark", "milk", "bright", "finish", "ripe", "stone fruit", "balanced"], "es_only": ["cacao", "taza", "kiwi", "piña", "chocolate leche", "pera", "amarillo", "kiwi amarillo"], "topics": {"en": [{"id": 0, "terms": ["cup", "sweetness", "acidity", "peach", "like", "ripe", "profile"]}, {"id": 1, "terms": ["chocolate", "dark", "dark chocolate", "milk", "milk chocolate", "cherry", "caramel"]}, {"id": 2, "terms": ["process", "varietal", "espresso", "producer", "region", "recipes", "recipes espresso"]}, {"id": 3, "terms": ["fruit", "stone", "stone fruit", "tropical", "tropical fruit", "citrus", "like"]}, {"id": 4, "terms": ["coffee", "sweet", "notes", "flavors", "blend", "floral", "balanced"]}], "es": [{"id": 0, "terms": ["cuerpo", "acidez", "acidez jugosa", "jugosa", "tiene cuerpo", "tiene", "cremoso"]}, {"id": 1, "terms": ["café", "dulce", "miel", "perfil", "flor", "jugoso", "limpio"]}, {"id": 2, "terms": ["cacao", "chocolate", "caramelo", "polvo", "cacao polvo", "cereza", "chocolate leche"]}, {"id": 3, "terms": ["sabor", "aroma", "presentes taza", "sabor presentes", "presentes", "aroma sabor", "sabor aroma"]}, {"id": 4, "terms": ["kiwi", "kiwi amarillo", "amarillo", "rojos", "frutos", "frutos rojos", "vino"]}]}, "valence": [{"term_en": "fermented", "term_es": "fermentado", "en_valence": "neutral", "en_positive_pct": 0.2, "en_occurrences": 10, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}, {"term_en": "bright", "term_es": "brillante", "en_valence": "neutral", "en_positive_pct": 0.23529411764705882, "en_occurrences": 136, "es_valence": "neutral", "es_positive_pct": 0.0, "es_occurrences": 3, "inversion": false}, {"term_en": "earthy", "term_es": "terroso", "en_valence": "neutral", "en_positive_pct": 0.0, "en_occurrences": 2, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}, {"term_en": "strong", "term_es": "fuerte", "en_valence": "absent", "en_positive_pct": 0, "en_occurrences": 0, "es_valence": "absent", "es_positive_pct": 0, "es_occurrences": 0, "inversion": false}], "meta": {"en_notes": 2243, "es_notes": 61, "en_products": 3960, "es_pages": 200, "roasters": 20, "scraped": "April 06, 2026", "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring"}};
 
 var Bl='#0b6d8c',Rd='#c43a18',Gd='#a07418',Ik='#1e1410',Fd='#d0c4b4',dp=Math.min(devicePixelRatio,2);
+var STC={roaster:'#0b6d8c',importer:'#1a8a5c',institution:'#7b4bb3',producer:'#c43a18'};
+var STL={roaster:'Roaster',importer:'Importer',institution:'Institution',producer:'Producer'};
 
 // Try to load fresh data from data.json (works on a server), fall back to embedded DATA
 window.addEventListener('load',function(){
@@ -106,7 +114,8 @@ function init(){
 
 function buildTables(D){
   var m=D.meta||{};
-  var src=m.roasters?'Extracted from '+m.en_notes+' tasting note phrases across '+m.roasters+' US roasters ('+m.en_products+' products) and '+m.es_notes+' producer phrases ('+m.es_pages+' pages). Scraped '+m.scraped+'.':m.scraped||'';
+  var sc=m.source_counts||{};
+  var src=m.roasters?'Extracted from '+m.en_notes+' EN tasting phrases and '+m.es_notes+' ES producer phrases across '+m.roasters+' sources ('+(sc.roaster||0)+' roaster, '+(sc.importer||0)+' importer, '+(sc.institution||0)+' institution, '+(sc.producer||0)+' producer phrases). Scraped '+m.scraped+'.':m.scraped||'';
   document.getElementById('source-note').innerHTML='<strong>Data source:</strong> '+src;
   document.getElementById('table-source-note').textContent=src;
 
@@ -143,6 +152,25 @@ function buildTables(D){
   var enOnly=(D.en_only||[]).join(', ');
   var esOnly=(D.es_only||[]).join(', ');
   document.getElementById('gaps-note').innerHTML='<strong>Vocabulary gaps:</strong><br>EN only: '+(enOnly||'none detected')+'<br>ES only: '+(esOnly||'none detected');
+
+  // Supply chain comparison grid
+  var st=D.source_types||{};
+  var grid=document.getElementById('sc-grid');
+  if(grid){
+    ['roaster','importer','institution','producer'].forEach(function(stype){
+      var info=st[stype]||{count:0,terms:[]};
+      var col=document.createElement('div');
+      col.className='sc-col '+stype;
+      var maxF=info.terms[0]?info.terms[0].f:1;
+      var termsHtml='';
+      (info.terms||[]).slice(0,8).forEach(function(t){
+        var bw=Math.max(4,Math.round(50*t.f/maxF));
+        termsHtml+='<li><span class="sc-bar" style="width:'+bw+'px"></span>'+t.t+' <span style="font-family:DM Mono,monospace;font-size:10px;color:var(--sienna)">('+t.f+')</span></li>';
+      });
+      col.innerHTML='<h4>'+STL[stype]+'</h4><div class="sc-count">'+info.count+' phrases</div><ol>'+termsHtml+'</ol>';
+      grid.appendChild(col);
+    });
+  }
 }
 
 function buildViz(D){
@@ -151,22 +179,66 @@ function buildViz(D){
   if(w<10||h<10){w=800;h=820;}
   c.width=w*dp;c.height=h*dp;c.style.width=w+'px';c.style.height=h+'px';
   var x=c.getContext('2d'),hv=-1;
-  var EN=D.en,ES=D.es,AL=D.alignment||[];
-  var enTop=60,enBot=h*0.43,esTop=h*0.57,esBot=h-50;
+  var EN=D.en,ES=D.es,AL=D.alignment||[],st=D.source_types||{};
   var T=[];
 
-  EN.forEach(function(d,i){
-    var yB=enTop+(i/Math.max(EN.length-1,1))*(enBot-enTop);
-    var pts=[];
-    for(var px=0;px<=w;px+=4){pts.push({x:px,y:yB+Math.sin(i*0.5+px*0.008)*(5+d.f/250)*Math.sin(px/w*Math.PI)});}
-    T.push({t:d.t,f:d.f,e:null,lang:'en',pts:pts,yB:yB,idx:i});
+  // Determine dominant source type for each EN term
+  function dominantType(term){
+    var best='roaster',bestF=0;
+    ['roaster','importer','institution'].forEach(function(stype){
+      var info=st[stype]||{terms:[]};
+      (info.terms||[]).forEach(function(t){
+        if(t.t.toLowerCase()===term.toLowerCase()&&t.f>bestF){bestF=t.f;best=stype;}
+      });
+    });
+    return best;
+  }
+
+  // Four vertical bands: roaster, importer, institution (EN side), producer (ES side)
+  // EN bands occupy top 43%, ES band occupies bottom 43%, gap in middle
+  var enTop=60,enBot=h*0.43,esTop=h*0.57,esBot=h-50;
+  var enBandH=(enBot-enTop);
+
+  // Assign EN terms to bands by dominant source type
+  var bands={roaster:[],importer:[],institution:[]};
+  EN.forEach(function(d){
+    var dt=dominantType(d.t);
+    bands[dt].push(d);
   });
+
+  // Layout: roaster band at top, importer in middle, institution at bottom of EN zone
+  var bandOrder=['roaster','importer','institution'];
+  var bandRanges={};
+  var yOff=enTop;
+  var totalTerms=EN.length||1;
+  bandOrder.forEach(function(bt){
+    var n=bands[bt].length;
+    var bh=Math.max(30,enBandH*(n/totalTerms));
+    bandRanges[bt]={top:yOff,bot:yOff+bh,count:n};
+    yOff+=bh;
+  });
+
+  // Create EN threads with source-type color
+  var gi=0;
+  bandOrder.forEach(function(bt){
+    var br=bandRanges[bt];
+    bands[bt].forEach(function(d,i){
+      var yB=br.top+(i/Math.max(br.count-1,1))*(br.bot-br.top);
+      if(br.count===1)yB=(br.top+br.bot)/2;
+      var pts=[];
+      for(var px=0;px<=w;px+=4){pts.push({x:px,y:yB+Math.sin(gi*0.5+px*0.008)*(5+d.f/250)*Math.sin(px/w*Math.PI)});}
+      T.push({t:d.t,f:d.f,e:null,lang:'en',stype:bt,col:STC[bt],pts:pts,yB:yB,idx:gi});
+      gi++;
+    });
+  });
+
+  // Create ES threads
   ES.forEach(function(d,i){
-    var gi=i+EN.length;
     var yB=esTop+(i/Math.max(ES.length-1,1))*(esBot-esTop);
     var pts=[];
     for(var px=0;px<=w;px+=4){pts.push({x:px,y:yB+Math.sin(gi*0.5+px*0.008)*(5+d.f/250)*Math.sin(px/w*Math.PI)});}
-    T.push({t:d.t,f:d.f,e:d.e,lang:'es',pts:pts,yB:yB,idx:gi});
+    T.push({t:d.t,f:d.f,e:d.e,lang:'es',stype:'producer',col:STC.producer,pts:pts,yB:yB,idx:gi});
+    gi++;
   });
 
   var WP=[];
@@ -181,9 +253,25 @@ function buildViz(D){
     var midY=h*0.5;
     x.strokeStyle=Fd+'50';x.lineWidth=1;x.setLineDash([8,8]);
     x.beginPath();x.moveTo(80,midY);x.lineTo(w-80,midY);x.stroke();x.setLineDash([]);
+
+    // Band labels on left
     x.font="500 10px 'DM Mono'";x.textAlign='left';
-    x.fillStyle=Bl;x.fillText('US ROASTER ENGLISH',14,46);
-    x.fillStyle=Rd;x.fillText('PRODUCER SPANISH',14,esTop-16);
+    bandOrder.forEach(function(bt){
+      var br=bandRanges[bt];
+      if(br.count>0){
+        x.fillStyle=STC[bt];
+        x.fillText(STL[bt].toUpperCase()+' ('+br.count+')',14,br.top-6);
+      }
+    });
+    x.fillStyle=STC.producer;x.fillText('PRODUCER SPANISH',14,esTop-16);
+
+    // Faint band separators
+    x.strokeStyle=Fd+'30';x.lineWidth=0.5;x.setLineDash([4,6]);
+    bandOrder.forEach(function(bt){
+      var br=bandRanges[bt];
+      x.beginPath();x.moveTo(10,br.bot+2);x.lineTo(w-10,br.bot+2);x.stroke();
+    });
+    x.setLineDash([]);
 
     WP.forEach(function(wp){
       var hot=hv===wp.en.idx||hv===wp.es.idx;
@@ -201,14 +289,13 @@ function buildViz(D){
       var hot=idx===hv;
       var lnk=hv>=0&&WP.some(function(wp){return(wp.en.idx===hv&&wp.es.idx===idx)||(wp.es.idx===hv&&wp.en.idx===idx)});
       var dim=hv>=0&&!hot&&!lnk;
-      var col=t.lang==='en'?Bl:Rd;
       x.beginPath();t.pts.forEach(function(p,i){i===0?x.moveTo(p.x,p.y):x.lineTo(p.x,p.y)});
-      x.strokeStyle=dim?Fd:col;x.lineWidth=hot?2.5:1.2;x.stroke();
+      x.strokeStyle=dim?Fd:t.col;x.lineWidth=hot?2.5:1.2;x.stroke();
       if(hot){
         var lx=t.lang==='en'?14:w-14;
         x.font="600 14px 'DM Sans'";x.fillStyle=Ik;x.textAlign=t.lang==='en'?'left':'right';
         x.fillText(t.t,lx,t.yB-10);
-        x.font="400 10px 'DM Mono'";x.fillStyle=col+'90';x.fillText(t.f+' mentions',lx,t.yB+5);
+        x.font="400 10px 'DM Mono'";x.fillStyle=t.col+'90';x.fillText(STL[t.stype]+' · '+t.f+' mentions',lx,t.yB+5);
       }
     });
     x.restore();requestAnimationFrame(draw);
@@ -221,8 +308,9 @@ function buildViz(D){
     if(hv>=0){
       var t=T[hv];
       tp.querySelector('strong').textContent=t.t;
-      tp.querySelector('em').textContent=t.lang==='en'?'US Roaster English':'Producer Spanish: "'+(t.e||t.t)+'"';
-      tp.querySelector('span').textContent='Frequency: '+t.f+' mentions';
+      var typeLabel=STL[t.stype]||t.stype;
+      tp.querySelector('em').textContent=t.lang==='en'?typeLabel+' English':'Producer Spanish: "'+(t.e||t.t)+'"';
+      tp.querySelector('span').textContent=typeLabel+' · '+t.f+' mentions';
       var tx=mx+16;if(tx+240>w)tx=mx-256;
       tp.style.left=tx+'px';tp.style.top=Math.max(4,my-10)+'px';tp.classList.add('on');
     }else{tp.classList.remove('on');}

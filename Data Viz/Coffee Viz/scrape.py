@@ -103,6 +103,55 @@ PRODUCERS_HTML = [
     ("Anacafe",          "https://www.anacafe.org",        ["/cafes-de-guatemala"]),
 ]
 
+# Green coffee importers — offering lists, origin profiles, tasting notes
+IMPORTERS = [
+    ("Ally Coffee",       "https://www.allycoffee.com",
+     ["/offerings", "/origins", "/about-coffee"]),
+    ("Cafe Imports",      "https://www.cafeimports.com",
+     ["/offerings", "/origins", "/blog"]),
+    ("Royal Coffee",      "https://royalcoffee.com",
+     ["/offerings", "/the-crown"]),
+    ("Genuine Origin",    "https://www.genuineorigin.com",
+     ["/coffee-offerings", "/origins", "/resources"]),
+    ("Olam Specialty",    "https://www.olamspecialtycoffee.com",
+     ["/offerings", "/origins"]),
+    ("Mercanta",          "https://www.mercanta.com",
+     ["/coffees", "/origins", "/knowledge"]),
+    ("InterAmerican Coffee","https://www.interamericancoffee.com",
+     ["/offerings", "/origins"]),
+    ("Sucafina Specialty","https://specialty.sucafina.com",
+     ["/coffees", "/origins"]),
+]
+
+# Coffee institutions — educational content, research, cupping standards
+INSTITUTIONS = [
+    ("National Coffee Association", "https://www.ncausa.org",
+     ["/about-coffee", "/coffee-roasts-guide", "/how-to-brew-coffee",
+      "/10-steps-from-seed-to-cup", "/the-history-of-coffee"]),
+    ("SCA", "https://sca.coffee",
+     ["/research", "/education", "/coffee-standards",
+      "/cupping-protocols", "/value-assessment",
+      "/sca-coffee-tasters-flavor-wheel",
+      "/coffee-flavors-and-aromas", "/sensory-analysis",
+      "/green-coffee-standards", "/cupping-form",
+      "/coffee-processing", "/arabica-coffee-varieties",
+      "/water-quality-standards", "/brewing-standards"]),
+    ("SCA Research", "https://research.sca.coffee",
+     ["/", "/coffee-science", "/sensory"]),
+    ("SCA 25 Magazine", "https://sca.coffee/25-magazine",
+     ["/", "/issue-1", "/issue-2", "/issue-3"]),
+    ("Coffee Quality Institute", "https://www.coffeeinstitute.org",
+     ["/our-work", "/q-program", "/research",
+      "/coffee-science", "/sensory-skills"]),
+    ("World Coffee Research",    "https://worldcoffeeresearch.org",
+     ["/work/sensory-lexicon", "/work/breeding", "/work/agronomy",
+      "/resources", "/varieties"]),
+    ("Barista Hustle",           "https://www.baristahustle.com",
+     ["/blog", "/glossary"]),
+    ("Perfect Daily Grind",      "https://perfectdailygrind.com",
+     ["/coffee-science", "/origin", "/roasting"]),
+]
+
 def shopify_products(domain):
     products = []
     for page in range(1, 6):
@@ -129,7 +178,8 @@ def scrape_en():
             body_html = p.get("body_html", "")
             desc = html_to_text(body_html)
             if len(desc) < 20: continue
-            rows.append({"source":name,"language":"en","coffee_name":p.get("title",""),
+            rows.append({"source":name,"source_type":"roaster","language":"en",
+                         "coffee_name":p.get("title",""),
                          "description":desc[:3000],"body_html":body_html[:5000],
                          "url":f"{domain}/products/{p.get('handle','')}"})
             count += 1
@@ -155,8 +205,8 @@ def scrape_es():
             body_html = p.get("body_html", "")
             desc = html_to_text(body_html)
             if len(desc) < 20: continue
-            rows.append({"source": name, "language": "es",
-                         "coffee_name": p.get("title", ""),
+            rows.append({"source": name, "source_type": "roaster",
+                         "language": "es", "coffee_name": p.get("title", ""),
                          "description": desc[:3000], "body_html": body_html[:5000],
                          "url": f"{domain}/products/{p.get('handle','')}"})
             count += 1
@@ -173,11 +223,98 @@ def scrape_es():
             text = " ".join(el.get_text(" ", strip=True)
                             for el in soup.select("p") if len(el.get_text(strip=True)) > 15)
             if len(text) > 50:
-                rows.append({"source": name, "language": "es",
-                             "coffee_name": name, "description": text[:3000],
+                rows.append({"source": name, "source_type": "producer",
+                             "language": "es", "coffee_name": name,
+                             "description": text[:3000],
                              "body_html": "", "url": base + path})
 
     log.info(f"  {len(rows)} ES rows collected")
+    return rows
+
+
+def scrape_importers():
+    """Scrape green coffee importers for offering descriptions and origin profiles."""
+    log.info("STEP 1c: SCRAPING GREEN COFFEE IMPORTERS")
+    rows = []
+    for name, base, paths in IMPORTERS:
+        log.info(f"  {name} ...")
+        count = 0
+        for path in paths:
+            r = fetch(base + path, delay=3)
+            if not r:
+                continue
+            soup = BeautifulSoup(r.text, "lxml")
+            # Remove nav, footer, sidebar noise
+            for tag in soup.select("nav, footer, header, aside, script, style"):
+                tag.decompose()
+            # Try structured offering cards first
+            cards = soup.select(
+                '[class*="offering"], [class*="coffee"], [class*="product"],'
+                '[class*="card"], [class*="lot"], article'
+            )
+            if cards:
+                for card in cards:
+                    text = card.get_text(" ", strip=True)
+                    if len(text) > 30 and has_flavor_words(text):
+                        rows.append({
+                            "source": name, "source_type": "importer",
+                            "language": "en", "coffee_name": name,
+                            "description": text[:3000], "body_html": "",
+                            "url": base + path,
+                        })
+                        count += 1
+            # Fallback: paragraph-level extraction
+            else:
+                paragraphs = soup.select("p, li, dd")
+                text = " ".join(
+                    el.get_text(" ", strip=True)
+                    for el in paragraphs if len(el.get_text(strip=True)) > 20
+                )
+                if len(text) > 50:
+                    rows.append({
+                        "source": name, "source_type": "importer",
+                        "language": "en", "coffee_name": name,
+                        "description": text[:3000], "body_html": "",
+                        "url": base + path,
+                    })
+                    count += 1
+        log.info(f"    {count} pages with flavor content")
+    log.info(f"  {len(rows)} importer rows collected")
+    return rows
+
+
+def scrape_institutions():
+    """Scrape coffee institutions for educational/standards content on flavor and quality."""
+    log.info("STEP 1d: SCRAPING COFFEE INSTITUTIONS")
+    rows = []
+    for name, base, paths in INSTITUTIONS:
+        log.info(f"  {name} ...")
+        count = 0
+        for path in paths:
+            r = fetch(base + path, delay=3)
+            if not r:
+                continue
+            soup = BeautifulSoup(r.text, "lxml")
+            for tag in soup.select("nav, footer, header, aside, script, style"):
+                tag.decompose()
+            # Main content area
+            main = soup.select_one("main, article, [role='main'], .content, .entry-content")
+            container = main if main else soup
+            paragraphs = container.select("p, li, dd, blockquote, figcaption")
+            text = " ".join(
+                el.get_text(" ", strip=True)
+                for el in paragraphs if len(el.get_text(strip=True)) > 15
+            )
+            if len(text) > 80:
+                rows.append({
+                    "source": name, "source_type": "institution",
+                    "language": "en", "coffee_name": name,
+                    "description": text[:5000], "body_html": "",
+                    "url": base + path,
+                })
+                count += 1
+        log.info(f"    {count} pages collected")
+    log.info(f"  {len(rows)} institution rows collected")
     return rows
 
 
@@ -627,8 +764,18 @@ ES_TRANS = {
     "vainilla":"vanilla","madera":"wood","sedoso":"silky",
 }
 
+def _term_freq_in_notes(notes, terms):
+    """Count how many notes each term appears in. Returns {term: count}."""
+    counts = {}
+    for t in terms:
+        pat = re.compile(r'\b' + re.escape(t.lower()) + r'\b')
+        counts[t] = sum(1 for n in notes if pat.search(n.lower()))
+    return counts
+
+
 def build_data_json(en_tfidf, es_tfidf, alignments, topics, valence,
-                    en_notes_count, es_notes_count, en_desc_count, es_desc_count, roaster_count):
+                    en_notes_count, es_notes_count, en_desc_count, es_desc_count, roaster_count,
+                    notes_by_type=None):
     """Build the data.json that the blog HTML reads."""
 
     # Use TF-IDF terms for frequency (scaled by relative importance)
@@ -650,6 +797,30 @@ def build_data_json(en_tfidf, es_tfidf, alignments, topics, valence,
     en_only = [t["term"] for t in en_tfidf[:25] if t["term"].lower() not in en_set][:8]
     es_only = [t["term"] for t in es_tfidf[:25] if t["term"].lower() not in es_set][:8]
 
+    # Per-source-type term frequency breakdown (supply chain comparison)
+    source_types = {}
+    if notes_by_type:
+        # Use top EN + ES terms as the shared comparison set
+        compare_terms = [t["term"] for t in en_tfidf[:15]] + [t["term"] for t in es_tfidf[:10]]
+        compare_terms = list(dict.fromkeys(compare_terms))  # deduplicate, preserve order
+
+        for stype in ["roaster", "importer", "institution", "producer"]:
+            snotes = notes_by_type.get(stype, [])
+            if not snotes:
+                source_types[stype] = {"count": 0, "terms": []}
+                continue
+            freq = _term_freq_in_notes(snotes, compare_terms)
+            # Top terms for this source type, sorted by frequency
+            ranked = sorted(freq.items(), key=lambda x: -x[1])
+            top = [{"t": t, "f": f} for t, f in ranked if f > 0][:12]
+            source_types[stype] = {"count": len(snotes), "terms": top}
+
+        log.info("  Source-type term breakdown computed")
+        for stype, info in source_types.items():
+            if info["terms"]:
+                top3 = ", ".join(f"{t['t']}({t['f']})" for t in info["terms"][:3])
+                log.info(f"    {stype}: {info['count']} notes, top: {top3}")
+
     data = {
         "en": en_top,
         "es": es_top,
@@ -659,6 +830,7 @@ def build_data_json(en_tfidf, es_tfidf, alignments, topics, valence,
         "es_only": es_only,
         "topics": topics,
         "valence": valence,
+        "source_types": source_types,
         "meta": {
             "en_notes": en_notes_count,
             "es_notes": es_notes_count,
@@ -667,6 +839,10 @@ def build_data_json(en_tfidf, es_tfidf, alignments, topics, valence,
             "roasters": roaster_count,
             "scraped": datetime.now().strftime("%B %d, %Y"),
             "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring",
+            "source_counts": {
+                stype: info["count"]
+                for stype, info in source_types.items()
+            } if source_types else {},
         }
     }
     return data
@@ -696,19 +872,44 @@ def main():
     # Step 1: Scrape
     en_rows = scrape_en()
     es_rows = scrape_es()
-    all_rows = en_rows + es_rows
-    for r in all_rows: r["scraped_at"] = datetime.now().isoformat()
+    importer_rows = scrape_importers()
+    institution_rows = scrape_institutions()
+    all_rows = en_rows + es_rows + importer_rows + institution_rows
+    for r in all_rows:
+        r["scraped_at"] = datetime.now().isoformat()
+        r.setdefault("source_type", "roaster")
     pd.DataFrame(all_rows).to_csv(DATA / "all_coffees.csv", index=False)
-    log.info(f"\n  {len(all_rows)} descriptions -> data/all_coffees.csv")
+    log.info(f"\n  {len(en_rows)} roaster + {len(importer_rows)} importer + "
+             f"{len(institution_rows)} institution + {len(es_rows)} ES = "
+             f"{len(all_rows)} total descriptions -> data/all_coffees.csv")
 
-    # Step 2: Extract tasting note phrases
+    # Step 2: Extract tasting note phrases (tracked by source type)
     log.info("\nSTEP 2: EXTRACTING TASTING NOTE PHRASES")
-    en_notes = []
-    for row in en_rows: en_notes.extend(extract_notes_en(row))
-    es_notes = []
-    for row in es_rows: es_notes.extend(extract_notes_es(row))
-    log.info(f"  EN: {len(en_notes)} phrases from {len(en_rows)} products")
-    log.info(f"  ES: {len(es_notes)} phrases from {len(es_rows)} pages")
+    en_all_rows = en_rows + importer_rows + institution_rows
+    en_notes, es_notes = [], []
+    # Per-source-type note tracking for supply chain comparison
+    notes_by_type = {"roaster": [], "importer": [], "institution": [], "producer": []}
+    for row in en_rows:
+        extracted = extract_notes_en(row)
+        en_notes.extend(extracted)
+        notes_by_type["roaster"].extend(extracted)
+    for row in importer_rows:
+        extracted = extract_notes_en(row)
+        en_notes.extend(extracted)
+        notes_by_type["importer"].extend(extracted)
+    for row in institution_rows:
+        extracted = extract_notes_en(row)
+        en_notes.extend(extracted)
+        notes_by_type["institution"].extend(extracted)
+    for row in es_rows:
+        extracted = extract_notes_es(row)
+        es_notes.extend(extracted)
+        notes_by_type["producer"].extend(extracted)
+    for stype, snotes in notes_by_type.items():
+        log.info(f"  {stype}: {len(snotes)} phrases")
+    log.info(f"  EN total: {len(en_notes)} phrases from {len(en_all_rows)} sources "
+             f"({len(en_rows)} roasters, {len(importer_rows)} importers, {len(institution_rows)} institutions)")
+    log.info(f"  ES total: {len(es_notes)} phrases from {len(es_rows)} pages")
     pd.DataFrame({"note": en_notes, "lang": "en"}).to_csv(DATA / "en_notes.csv", index=False)
     pd.DataFrame({"note": es_notes, "lang": "es"}).to_csv(DATA / "es_notes.csv", index=False)
 
@@ -729,10 +930,11 @@ def main():
 
     # Step 7: Build outputs
     log.info("\nSTEP 7: GENERATING OUTPUTS")
-    roaster_count = len(set(r["source"] for r in en_rows))
+    roaster_count = len(set(r["source"] for r in en_all_rows))
     data_json = build_data_json(
         en_tfidf, es_tfidf, alignments, topics, valence,
-        len(en_notes), len(es_notes), len(en_rows), len(es_rows), roaster_count
+        len(en_notes), len(es_notes), len(en_all_rows), len(es_rows), roaster_count,
+        notes_by_type
     )
     (DATA / "data.json").write_text(json.dumps(data_json, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info(f"  data/data.json written")
