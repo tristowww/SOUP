@@ -3,42 +3,6 @@
     {
       "id": 0,
       "terms": [
-        "cup",
-        "sweetness",
-        "acidity",
-        "peach",
-        "like",
-        "ripe",
-        "profile"
-      ]
-    },
-    {
-      "id": 1,
-      "terms": [
-        "chocolate",
-        "dark",
-        "dark chocolate",
-        "milk",
-        "milk chocolate",
-        "cherry",
-        "caramel"
-      ]
-    },
-    {
-      "id": 2,
-      "terms": [
-        "process",
-        "varietal",
-        "espresso",
-        "producer",
-        "region",
-        "recipes",
-        "recipes espresso"
-      ]
-    },
-    {
-      "id": 3,
-      "terms": [
         "fruit",
         "stone",
         "stone fruit",
@@ -49,15 +13,51 @@
       ]
     },
     {
+      "id": 1,
+      "terms": [
+        "cupping",
+        "coffee",
+        "sca",
+        "sensory",
+        "protocol",
+        "sca cupping",
+        "assessment"
+      ]
+    },
+    {
+      "id": 2,
+      "terms": [
+        "chocolate",
+        "dark",
+        "milk",
+        "milk chocolate",
+        "dark chocolate",
+        "cherry",
+        "sweet"
+      ]
+    },
+    {
+      "id": 3,
+      "terms": [
+        "process",
+        "varietal",
+        "espresso",
+        "producer",
+        "region",
+        "natural",
+        "recipes"
+      ]
+    },
+    {
       "id": 4,
       "terms": [
-        "coffee",
-        "sweet",
-        "notes",
-        "flavors",
-        "blend",
-        "floral",
-        "balanced"
+        "cup",
+        "sweetness",
+        "acidity",
+        "peach",
+        "like",
+        "profile",
+        "sweet"
       ]
     }
   ],
@@ -77,13 +77,13 @@
     {
       "id": 1,
       "terms": [
-        "caf�",
+        "café",
         "dulce",
         "miel",
         "perfil",
-        "flor",
-        "jugoso",
-        "limpio"
+        "notas",
+        "boca",
+        "jugoso"
       ]
     },
     {
@@ -91,9 +91,9 @@
       "terms": [
         "cacao",
         "chocolate",
-        "caramelo",
         "polvo",
         "cacao polvo",
+        "caramelo",
         "cereza",
         "chocolate leche"
       ]
@@ -103,10 +103,10 @@
       "terms": [
         "sabor",
         "aroma",
-        "presentes taza",
-        "sabor presentes",
-        "presentes",
         "aroma sabor",
+        "presentes taza",
+        "presentes",
+        "sabor presentes",
         "sabor aroma"
       ]
     },
@@ -116,10 +116,10 @@
         "kiwi",
         "kiwi amarillo",
         "amarillo",
-        "rojos",
+        "orejones",
         "frutos",
-        "frutos rojos",
-        "vino"
+        "cítricos",
+        "rojos"
       ]
     }
   ]

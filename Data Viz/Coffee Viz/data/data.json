@@ -1,114 +1,114 @@
 {
   "en": [
     {
+      "t": "cupping",
+      "f": 33
+    },
+    {
       "t": "chocolate",
-      "f": 38
+      "f": 31
     },
     {
       "t": "fruit",
-      "f": 36
+      "f": 29
     },
     {
       "t": "sweet",
-      "f": 35
+      "f": 29
     },
     {
       "t": "sweetness",
-      "f": 28
-    },
-    {
-      "t": "like",
-      "f": 28
-    },
-    {
-      "t": "citrus",
-      "f": 26
-    },
-    {
-      "t": "cherry",
-      "f": 26
-    },
-    {
-      "t": "acidity",
       "f": 25
     },
     {
-      "t": "notes",
+      "t": "acidity",
       "f": 23
+    },
+    {
+      "t": "like",
+      "f": 23
+    },
+    {
+      "t": "citrus",
+      "f": 21
+    },
+    {
+      "t": "notes",
+      "f": 20
+    },
+    {
+      "t": "cherry",
+      "f": 19
     },
     {
       "t": "peach",
-      "f": 23
+      "f": 18
     },
     {
       "t": "tropical",
-      "f": 22
-    },
-    {
-      "t": "honey",
-      "f": 21
+      "f": 17
     }
   ],
   "es": [
     {
       "t": "café",
-      "f": 68,
+      "f": 77,
       "e": "Café"
     },
     {
-      "t": "chocolate",
-      "f": 57,
-      "e": "chocolate"
-    },
-    {
-      "t": "cacao",
-      "f": 50,
-      "e": "Cacao"
-    },
-    {
       "t": "cuerpo",
-      "f": 49,
+      "f": 56,
       "e": "body"
     },
     {
+      "t": "chocolate",
+      "f": 48,
+      "e": "chocolate"
+    },
+    {
       "t": "acidez",
-      "f": 46,
+      "f": 48,
       "e": "acidity"
     },
     {
       "t": "miel",
-      "f": 45,
+      "f": 47,
       "e": "honey"
     },
     {
       "t": "taza",
-      "f": 44,
+      "f": 45,
       "e": "Taza"
     },
     {
-      "t": "caramelo",
-      "f": 39,
-      "e": "caramel"
+      "t": "cacao",
+      "f": 44,
+      "e": "Cacao"
     },
     {
       "t": "dulce",
-      "f": 38,
+      "f": 39,
       "e": "sweet"
     },
     {
       "t": "sabor",
-      "f": 36,
+      "f": 37,
       "e": "flavor"
     },
     {
       "t": "kiwi",
-      "f": 34,
+      "f": 35,
       "e": "Kiwi"
     },
     {
       "t": "leche",
       "f": 32,
       "e": "Leche"
+    },
+    {
+      "t": "dulzor",
+      "f": 29,
+      "e": "Dulzor"
     }
   ],
   "alignment": [
@@ -119,8 +119,8 @@
     },
     {
       "en": "fruit",
-      "es": "frutas",
-      "s": 0.983
+      "es": "frutos",
+      "s": 0.982
     },
     {
       "en": "honey",
@@ -159,8 +159,8 @@
     },
     {
       "en": "peach",
-      "es": "frutas",
-      "s": 0.746
+      "es": "frutos",
+      "s": 0.742
     },
     {
       "en": "citrus",
@@ -182,8 +182,8 @@
     },
     {
       "en": "fruit",
-      "es": "frutas",
-      "score": 0.983,
+      "es": "frutos",
+      "score": 0.982,
       "level": "strong"
     },
     {
@@ -230,8 +230,8 @@
     },
     {
       "en": "peach",
-      "es": "frutas",
-      "score": 0.746,
+      "es": "frutos",
+      "score": 0.742,
       "level": "strong"
     },
     {
@@ -295,15 +295,15 @@
       "level": "partial"
     },
     {
-      "en": "floral",
-      "es": "frutas",
-      "score": 0.567,
+      "en": "cupping",
+      "es": "jugosa",
+      "score": 0.589,
       "level": "partial"
     },
     {
-      "en": "red",
-      "es": "naranja",
-      "score": 0.561,
+      "en": "floral",
+      "es": "dulce",
+      "score": 0.533,
       "level": "partial"
     },
     {
@@ -313,21 +313,15 @@
       "level": "partial"
     },
     {
-      "en": "stone",
-      "es": "leche",
-      "score": 0.498,
-      "level": "partial"
-    },
-    {
       "en": "milk",
       "es": "jugosa",
       "score": 0.496,
       "level": "partial"
     },
     {
-      "en": "milk",
+      "en": "cupping",
       "es": "piña",
-      "score": 0.473,
+      "score": 0.482,
       "level": "partial"
     },
     {
@@ -343,78 +337,48 @@
       "level": "partial"
     },
     {
+      "en": "intensity",
+      "es": "cuerpo",
+      "score": 0.451,
+      "level": "partial"
+    },
+    {
       "en": "like",
       "es": "taza",
       "score": 0.434,
       "level": "partial"
     },
     {
-      "en": "stone",
+      "en": "like",
       "es": "kiwi",
-      "score": 0.372,
+      "score": 0.356,
       "level": "weak"
     }
   ],
   "en_only": [
-    "stone",
-    "dark",
+    "intensity",
     "milk",
+    "dark",
+    "red",
+    "stone",
+    "balanced",
     "bright",
-    "finish",
-    "ripe",
-    "stone fruit",
-    "balanced"
+    "jasmine"
   ],
   "es_only": [
-    "cacao",
     "taza",
+    "cacao",
     "kiwi",
     "piña",
-    "chocolate leche",
-    "pera",
+    "notas",
+    "kiwi amarillo",
     "amarillo",
-    "kiwi amarillo"
+    "níspero"
   ],
   "topics": {
     "en": [
       {
         "id": 0,
-        "terms": [
-          "cup",
-          "sweetness",
-          "acidity",
-          "peach",
-          "like",
-          "ripe",
-          "profile"
-        ]
-      },
-      {
-        "id": 1,
-        "terms": [
-          "chocolate",
-          "dark",
-          "dark chocolate",
-          "milk",
-          "milk chocolate",
-          "cherry",
-          "caramel"
-        ]
-      },
-      {
-        "id": 2,
-        "terms": [
-          "process",
-          "varietal",
-          "espresso",
-          "producer",
-          "region",
-          "recipes",
-          "recipes espresso"
-        ]
-      },
-      {
-        "id": 3,
         "terms": [
           "fruit",
           "stone",
@@ -426,15 +390,51 @@
         ]
       },
       {
+        "id": 1,
+        "terms": [
+          "cupping",
+          "coffee",
+          "sca",
+          "sensory",
+          "protocol",
+          "sca cupping",
+          "assessment"
+        ]
+      },
+      {
+        "id": 2,
+        "terms": [
+          "chocolate",
+          "dark",
+          "milk",
+          "milk chocolate",
+          "dark chocolate",
+          "cherry",
+          "sweet"
+        ]
+      },
+      {
+        "id": 3,
+        "terms": [
+          "process",
+          "varietal",
+          "espresso",
+          "producer",
+          "region",
+          "natural",
+          "recipes"
+        ]
+      },
+      {
         "id": 4,
         "terms": [
-          "coffee",
-          "sweet",
-          "notes",
-          "flavors",
-          "blend",
-          "floral",
-          "balanced"
+          "cup",
+          "sweetness",
+          "acidity",
+          "peach",
+          "like",
+          "profile",
+          "sweet"
         ]
       }
     ],
@@ -458,9 +458,9 @@
           "dulce",
           "miel",
           "perfil",
-          "flor",
-          "jugoso",
-          "limpio"
+          "notas",
+          "boca",
+          "jugoso"
         ]
       },
       {
@@ -468,9 +468,9 @@
         "terms": [
           "cacao",
           "chocolate",
-          "caramelo",
           "polvo",
           "cacao polvo",
+          "caramelo",
           "cereza",
           "chocolate leche"
         ]
@@ -480,10 +480,10 @@
         "terms": [
           "sabor",
           "aroma",
-          "presentes taza",
-          "sabor presentes",
-          "presentes",
           "aroma sabor",
+          "presentes taza",
+          "presentes",
+          "sabor presentes",
           "sabor aroma"
         ]
       },
@@ -493,10 +493,10 @@
           "kiwi",
           "kiwi amarillo",
           "amarillo",
-          "rojos",
+          "orejones",
           "frutos",
-          "frutos rojos",
-          "vino"
+          "cítricos",
+          "rojos"
         ]
       }
     ]
@@ -506,8 +506,8 @@
       "term_en": "fermented",
       "term_es": "fermentado",
       "en_valence": "neutral",
-      "en_positive_pct": 0.2,
-      "en_occurrences": 10,
+      "en_positive_pct": 0.043478260869565216,
+      "en_occurrences": 46,
       "es_valence": "absent",
       "es_positive_pct": 0,
       "es_occurrences": 0,
@@ -517,8 +517,8 @@
       "term_en": "bright",
       "term_es": "brillante",
       "en_valence": "neutral",
-      "en_positive_pct": 0.23529411764705882,
-      "en_occurrences": 136,
+      "en_positive_pct": 0.2302158273381295,
+      "en_occurrences": 139,
       "es_valence": "neutral",
       "es_positive_pct": 0.0,
       "es_occurrences": 3,
@@ -527,9 +527,9 @@
     {
       "term_en": "earthy",
       "term_es": "terroso",
-      "en_valence": "neutral",
+      "en_valence": "negative",
       "en_positive_pct": 0.0,
-      "en_occurrences": 2,
+      "en_occurrences": 17,
       "es_valence": "absent",
       "es_positive_pct": 0,
       "es_occurrences": 0,
@@ -538,22 +538,238 @@
     {
       "term_en": "strong",
       "term_es": "fuerte",
-      "en_valence": "absent",
-      "en_positive_pct": 0,
-      "en_occurrences": 0,
+      "en_valence": "neutral",
+      "en_positive_pct": 0.0,
+      "en_occurrences": 10,
       "es_valence": "absent",
       "es_positive_pct": 0,
       "es_occurrences": 0,
       "inversion": false
     }
   ],
+  "source_types": {
+    "roaster": {
+      "count": 2247,
+      "terms": [
+        {
+          "t": "chocolate",
+          "f": 397
+        },
+        {
+          "t": "fruit",
+          "f": 387
+        },
+        {
+          "t": "sweet",
+          "f": 352
+        },
+        {
+          "t": "sweetness",
+          "f": 271
+        },
+        {
+          "t": "acidity",
+          "f": 266
+        },
+        {
+          "t": "citrus",
+          "f": 249
+        },
+        {
+          "t": "like",
+          "f": 248
+        },
+        {
+          "t": "notes",
+          "f": 226
+        },
+        {
+          "t": "cherry",
+          "f": 205
+        },
+        {
+          "t": "peach",
+          "f": 200
+        },
+        {
+          "t": "tropical",
+          "f": 185
+        },
+        {
+          "t": "floral",
+          "f": 182
+        }
+      ]
+    },
+    "importer": {
+      "count": 58,
+      "terms": [
+        {
+          "t": "chocolate",
+          "f": 23
+        },
+        {
+          "t": "cherry",
+          "f": 11
+        },
+        {
+          "t": "acidity",
+          "f": 10
+        },
+        {
+          "t": "honey",
+          "f": 10
+        },
+        {
+          "t": "fruit",
+          "f": 7
+        },
+        {
+          "t": "sweetness",
+          "f": 7
+        },
+        {
+          "t": "citrus",
+          "f": 5
+        },
+        {
+          "t": "kiwi",
+          "f": 5
+        },
+        {
+          "t": "like",
+          "f": 4
+        },
+        {
+          "t": "notes",
+          "f": 3
+        },
+        {
+          "t": "sweet",
+          "f": 2
+        },
+        {
+          "t": "tea",
+          "f": 1
+        }
+      ]
+    },
+    "institution": {
+      "count": 1015,
+      "terms": [
+        {
+          "t": "cupping",
+          "f": 359
+        },
+        {
+          "t": "acidity",
+          "f": 44
+        },
+        {
+          "t": "notes",
+          "f": 44
+        },
+        {
+          "t": "sweetness",
+          "f": 34
+        },
+        {
+          "t": "sweet",
+          "f": 30
+        },
+        {
+          "t": "floral",
+          "f": 23
+        },
+        {
+          "t": "fruit",
+          "f": 20
+        },
+        {
+          "t": "like",
+          "f": 19
+        },
+        {
+          "t": "citrus",
+          "f": 17
+        },
+        {
+          "t": "chocolate",
+          "f": 14
+        },
+        {
+          "t": "café",
+          "f": 8
+        },
+        {
+          "t": "honey",
+          "f": 4
+        }
+      ]
+    },
+    "producer": {
+      "count": 59,
+      "terms": [
+        {
+          "t": "cuerpo",
+          "f": 12
+        },
+        {
+          "t": "acidez",
+          "f": 12
+        },
+        {
+          "t": "café",
+          "f": 10
+        },
+        {
+          "t": "chocolate",
+          "f": 9
+        },
+        {
+          "t": "taza",
+          "f": 9
+        },
+        {
+          "t": "miel",
+          "f": 7
+        },
+        {
+          "t": "sabor",
+          "f": 7
+        },
+        {
+          "t": "cacao",
+          "f": 6
+        },
+        {
+          "t": "kiwi",
+          "f": 6
+        },
+        {
+          "t": "dulce",
+          "f": 5
+        },
+        {
+          "t": "floral",
+          "f": 1
+        }
+      ]
+    }
+  },
   "meta": {
-    "en_notes": 2243,
-    "es_notes": 61,
-    "en_products": 3960,
-    "es_pages": 200,
-    "roasters": 20,
-    "scraped": "April 06, 2026",
-    "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring"
+    "en_notes": 3320,
+    "es_notes": 59,
+    "en_products": 4098,
+    "es_pages": 197,
+    "roasters": 31,
+    "scraped": "April 09, 2026",
+    "method": "TF-IDF distinctive terms + multilingual embedding alignment + NMF topics + valence scoring",
+    "source_counts": {
+      "roaster": 2247,
+      "importer": 58,
+      "institution": 1015,
+      "producer": 59
+    }
   }
 }

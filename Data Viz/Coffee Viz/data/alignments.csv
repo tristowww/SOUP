@@ -1,6 +1,6 @@
 en,es,score,level,bidirectional
 chocolate,chocolate,1.0,strong,True
-fruit,frutas,0.983,strong,True
+fruit,frutos,0.982,strong,True
 honey,miel,0.951,strong,True
 sweet,dulce,0.937,strong,True
 acidity,acidez,0.921,strong,True
@@ -8,7 +8,7 @@ sweetness,dulce,0.877,strong,False
 profile,perfil,0.844,strong,True
 flavors,sabor,0.82,strong,True
 citrus,naranja,0.765,strong,True
-peach,frutas,0.746,strong,False
+peach,frutos,0.742,strong,False
 citrus,limón,0.724,strong,False
 flavors,aroma,0.703,strong,False
 like,dulzor,0.692,partial,True
@@ -19,13 +19,13 @@ cherry,dulce,0.644,partial,False
 tea,café,0.634,partial,True
 citrus,jugosa,0.619,partial,False
 tropical,jugosa,0.605,partial,False
-floral,frutas,0.567,partial,False
-red,naranja,0.561,partial,False
+cupping,jugosa,0.589,partial,False
+floral,dulce,0.533,partial,False
 notes,dulzor,0.531,partial,False
-stone,leche,0.498,partial,False
 milk,jugosa,0.496,partial,False
-milk,piña,0.473,partial,False
+cupping,piña,0.482,partial,False
 fruit,cacao,0.465,partial,False
 dark,dulzor,0.454,partial,False
+intensity,cuerpo,0.451,partial,False
 like,taza,0.434,partial,False
-stone,kiwi,0.372,weak,False
+like,kiwi,0.356,weak,False

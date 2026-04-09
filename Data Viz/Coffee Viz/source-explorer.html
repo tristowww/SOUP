@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Source Explorer | Lost in Translation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --cream:#faf7f2;--warm:#fffcf8;--ink:#1e1410;--loom:#2a1810;
+  --med:#4a3528;--sienna:#6b4a30;--accent:#a04420;--gold:#a07418;
+  --faint:#d0c4b4;--green:#2e7228;
+  --roaster:#0b6d8c;--importer:#1a8a5c;--institution:#7b4bb3;--producer:#c43a18;
+  --roaster-bg:rgba(11,109,140,.06);--importer-bg:rgba(26,138,92,.06);
+  --institution-bg:rgba(123,75,179,.06);--producer-bg:rgba(196,58,24,.06);
+}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* Site bar */
+.site-bar{padding:20px 40px;display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto}
+.site-bar .logo{font-family:'Fraunces',serif;font-weight:700;font-size:16px;color:var(--loom);letter-spacing:1.5px;text-transform:uppercase}
+.site-bar .meta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
+.site-bar .meta a{color:var(--accent);text-decoration:none}
+
+/* Hero */
+.hero{padding:48px 40px 32px;max-width:1200px;margin:0 auto}
+.hero-kicker{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(32px,4.5vw,52px);line-height:1.08;color:var(--loom);max-width:700px;margin-bottom:16px}
+.hero h1 em{font-weight:300;font-style:italic;color:var(--accent)}
+.hero-deck{font-size:16px;font-weight:300;line-height:1.8;color:var(--med);max-width:600px}
+
+/* Stats strip */
+.stats-strip{max-width:1200px;margin:0 auto;padding:0 40px 32px}
+.stats-row{display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px}
+.stat-card{background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:6px;padding:16px 20px;flex:1;min-width:140px}
+.stat-card .stat-label{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--sienna);margin-bottom:4px}
+.stat-card .stat-value{font-family:'Fraunces',serif;font-size:28px;font-weight:600;color:var(--loom);line-height:1.2}
+.stat-card .stat-sub{font-family:'DM Mono',monospace;font-size:10px;color:var(--med);margin-top:2px}
+
+/* Corpus balance bar */
+.balance-section{margin-bottom:8px}
+.balance-label{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--sienna);margin-bottom:10px}
+.balance-bar{display:flex;height:32px;border-radius:5px;overflow:hidden;background:rgba(0,0,0,.04)}
+.balance-bar .seg{position:relative;display:flex;align-items:center;justify-content:center;transition:flex .4s ease}
+.balance-bar .seg span{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;color:#fff;letter-spacing:0.5px;white-space:nowrap;text-shadow:0 1px 3px rgba(0,0,0,.3)}
+.balance-bar .seg.tiny span{display:none}
+.balance-legend{display:flex;gap:16px;margin-top:10px;flex-wrap:wrap}
+.balance-legend .bl-item{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--med)}
+.balance-legend .bl-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.balance-legend .bl-pct{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna)}
+.balance-warn{margin-top:12px;padding:10px 14px;background:var(--producer-bg);border-left:3px solid var(--producer);border-radius:0 4px 4px 0;font-family:'DM Mono',monospace;font-size:11px;color:var(--accent);line-height:1.5}
+
+/* Category sections */
+.categories{max-width:1200px;margin:0 auto;padding:0 40px 60px}
+.cat-section{margin-bottom:48px}
+.cat-header{display:flex;align-items:baseline;gap:16px;margin-bottom:6px;flex-wrap:wrap}
+.cat-header h2{font-family:'Fraunces',serif;font-weight:600;font-size:26px;line-height:1.2}
+.cat-header .cat-stats{font-family:'DM Mono',monospace;font-size:11px;color:var(--sienna)}
+.cat-desc{font-size:14px;line-height:1.7;color:var(--med);max-width:700px;margin-bottom:20px}
+.cat-sub{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--sienna);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.06)}
+
+/* Source cards */
+.source-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+.source-card{background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:6px;padding:16px 18px;position:relative;transition:box-shadow .2s,border-color .2s}
+.source-card:hover{box-shadow:0 4px 20px rgba(0,0,0,.06);border-color:rgba(0,0,0,.1)}
+.source-card .card-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
+.source-card h3{font-family:'Fraunces',serif;font-weight:600;font-size:16px;color:var(--loom);line-height:1.3}
+.badge{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:3px;flex-shrink:0;margin-left:8px}
+.badge.active{background:rgba(46,114,40,.1);color:var(--green)}
+.badge.planned{background:rgba(160,116,24,.1);color:var(--gold)}
+.badge.priority{background:rgba(196,58,24,.1);color:var(--producer)}
+.badge.skipped{background:rgba(0,0,0,.05);color:var(--faint)}
+.source-card .card-url{font-family:'DM Mono',monospace;font-size:10px;color:var(--sienna);margin-bottom:8px;word-break:break-all}
+.source-card .card-url a{color:var(--accent);text-decoration:none}
+.source-card .card-url a:hover{text-decoration:underline}
+.source-card .card-content{font-size:13px;line-height:1.6;color:var(--med);margin-bottom:8px}
+.source-card .card-why{font-size:12px;line-height:1.5;color:var(--sienna);font-style:italic}
+.source-card .card-paths{font-family:'DM Mono',monospace;font-size:10px;color:var(--faint);margin-top:6px;line-height:1.6}
+
+/* Roaster compact list */
+.roaster-chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.roaster-chips .chip{font-family:'DM Mono',monospace;font-size:11px;padding:4px 10px;background:var(--roaster-bg);border:1px solid rgba(11,109,140,.12);border-radius:3px;color:var(--roaster)}
+
+/* SCA doc list */
+.doc-list{display:flex;flex-direction:column;gap:8px}
+.doc-item{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:var(--warm);border:1px solid rgba(0,0,0,.05);border-radius:5px}
+.doc-item .doc-icon{font-family:'DM Mono',monospace;font-size:9px;font-weight:500;letter-spacing:1px;text-transform:uppercase;padding:2px 6px;border-radius:3px;flex-shrink:0;margin-top:2px}
+.doc-item .doc-icon.included{background:rgba(123,75,179,.1);color:var(--institution)}
+.doc-item .doc-icon.skipped{background:rgba(0,0,0,.04);color:var(--faint)}
+.doc-item .doc-info h4{font-size:13px;font-weight:600;color:var(--loom);line-height:1.3}
+.doc-item .doc-info p{font-size:12px;color:var(--med);line-height:1.5;margin-top:2px}
+
+/* Footer */
+.explorer-footer{max-width:1200px;margin:0 auto;padding:24px 40px 48px}
+.footer-note{padding:16px 20px;background:rgba(0,0,0,.03);border-radius:5px;border-left:3px solid var(--accent);font-family:'DM Mono',monospace;font-size:11px;line-height:1.7;color:var(--sienna)}
+.footer-note strong{color:var(--loom);font-weight:500}
+.footer-note code{background:rgba(0,0,0,.06);padding:1px 5px;border-radius:3px;font-size:10px}
+.site-footer{padding:30px 40px;max-width:1200px;margin:0 auto;border-top:1px solid rgba(0,0,0,.06);display:flex;justify-content:space-between}
+.site-footer span{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--sienna)}
+
+/* Filter tabs */
+.filter-bar{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.filter-btn{font-family:'DM Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:6px 14px;border:1.5px solid rgba(0,0,0,.08);border-radius:4px;background:transparent;color:var(--med);cursor:pointer;transition:all .15s}
+.filter-btn:hover{border-color:rgba(0,0,0,.15);color:var(--loom)}
+.filter-btn.on{background:var(--loom);color:var(--cream);border-color:var(--loom)}
+
+@media(max-width:700px){
+  .hero,.stats-strip,.categories,.explorer-footer{padding-left:20px;padding-right:20px}
+  .stats-row{flex-direction:column}
+  .source-grid{grid-template-columns:1fr}
+  .site-bar,.site-footer{padding-left:20px;padding-right:20px}
+}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.cat-section{animation:fadeUp .5s ease both}
+.cat-section:nth-child(2){animation-delay:.08s}
+.cat-section:nth-child(3){animation-delay:.16s}
+.cat-section:nth-child(4){animation-delay:.24s}
+</style></head><body>
+
+<div class="site-bar">
+  <div class="logo">Loom Coffee Co.</div>
+  <div class="meta"><a href="lost-in-translation-blog.html">&larr; Back to blog</a></div>
+</div>
+
+<div class="hero">
+  <div class="hero-kicker">Pipeline &middot; Data Sources &middot; Coverage</div>
+  <h1>Source <em>Explorer</em></h1>
+  <p class="hero-deck">Every data source feeding the Lost in Translation analysis, organized by supply chain position. Active sources are currently scraped; planned sources are next in the pipeline.</p>
+</div>
+
+<!-- Stats strip -->
+<div class="stats-strip">
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-label">Active Sources</div>
+      <div class="stat-value">44</div>
+      <div class="stat-sub">24 roasters + 10 importers + 8 institutions + 10 producers</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">SCA Local Docs</div>
+      <div class="stat-value">5</div>
+      <div class="stat-sub">109 chunks from standards documents</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Phrases</div>
+      <div class="stat-value">3,379</div>
+      <div class="stat-sub">Tasting note phrases extracted</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Planned Additions</div>
+      <div class="stat-value">12</div>
+      <div class="stat-sub">7 high-priority producer sources</div>
+    </div>
+  </div>
+
+  <!-- Corpus balance -->
+  <div class="balance-section">
+    <div class="balance-label">Corpus Balance</div>
+    <div class="balance-bar">
+      <div class="seg" style="flex:2247;background:var(--roaster)"><span>Roaster 66.5%</span></div>
+      <div class="seg" style="flex:58;background:var(--importer)"><span>1.7%</span></div>
+      <div class="seg" style="flex:1015;background:var(--institution)"><span>Institution 30.0%</span></div>
+      <div class="seg tiny" style="flex:59;background:var(--producer)"><span>1.7%</span></div>
+    </div>
+    <div class="balance-legend">
+      <div class="bl-item"><span class="bl-dot" style="background:var(--roaster)"></span>Roaster <span class="bl-pct">2,247 (66.5%)</span></div>
+      <div class="bl-item"><span class="bl-dot" style="background:var(--importer)"></span>Importer <span class="bl-pct">58 (1.7%)</span></div>
+      <div class="bl-item"><span class="bl-dot" style="background:var(--institution)"></span>Institution <span class="bl-pct">1,015 (30.0%)</span></div>
+      <div class="bl-item"><span class="bl-dot" style="background:var(--producer)"></span>Producer <span class="bl-pct">59 (1.7%)</span></div>
+    </div>
+    <div class="balance-warn">Producer phrases represent just 1.7% of the corpus. The planned additions below prioritize closing this gap, which is central to the project's thesis about whose voice gets heard.</div>
+  </div>
+</div>
+
+<!-- Categories -->
+<div class="categories">
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="filter-btn on" data-filter="all">All Sources</button>
+    <button class="filter-btn" data-filter="active">Active Only</button>
+    <button class="filter-btn" data-filter="planned">Planned Only</button>
+    <button class="filter-btn" data-filter="priority">High Priority</button>
+  </div>
+
+  <!-- ROASTERS -->
+  <div class="cat-section" data-cat="roaster">
+    <div class="cat-header">
+      <h2 style="color:var(--roaster)">Roasters</h2>
+      <span class="cat-stats">24 sources &middot; 3,966 products &middot; 2,247 phrases</span>
+    </div>
+    <p class="cat-desc">US specialty roasters scraped via the Shopify JSON API. Product descriptions are filtered to exclude merchandise, then tasting note phrases are extracted from structured HTML elements, regex patterns, and comma-separated flavor lists.</p>
+
+    <div class="roaster-chips" data-status="active">
+      <span class="chip">Counter Culture</span><span class="chip">Onyx</span><span class="chip">Verve</span>
+      <span class="chip">Stumptown</span><span class="chip">Blue Bottle</span><span class="chip">Ritual</span>
+      <span class="chip">Heart</span><span class="chip">Sey</span><span class="chip">Passenger</span>
+      <span class="chip">Madcap</span><span class="chip">Little Waves</span><span class="chip">Black &amp; White</span>
+      <span class="chip">Brandywine</span><span class="chip">Parlor</span><span class="chip">Ruby</span>
+      <span class="chip">Tandem</span><span class="chip">Proud Mary</span><span class="chip">Olympia</span>
+      <span class="chip">Equator</span><span class="chip">Cat &amp; Cloud</span><span class="chip">George Howell</span>
+      <span class="chip">Methodical</span><span class="chip">Ceremony</span><span class="chip">Coava</span>
+    </div>
+  </div>
+
+  <!-- IMPORTERS -->
+  <div class="cat-section" data-cat="importer">
+    <div class="cat-header">
+      <h2 style="color:var(--importer)">Importers</h2>
+      <span class="cat-stats">10 active sources &middot; 58 phrases &middot; 3 planned</span>
+    </div>
+    <p class="cat-desc">Green coffee importers sit between producer and roaster. Their language bridges origin descriptions and market vocabulary. Many importers gate offering lists behind logins or PDFs, making web scraping harder &mdash; the broad extraction function captures what's publicly available.</p>
+
+    <div class="cat-sub">Active</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Ally Coffee</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.allycoffee.com/our-coffees/">allycoffee.com</a> + <a href="https://allyopen.com/blogs/get-inspired">allyopen.com blog</a></div>
+        <div class="card-content">Core coffee tasting notes (Paubrasil, Palmera, Guanacaste, Acacia, Ceiba), Brazilian grading system explainer, origin harvesting profiles.</div>
+        <div class="card-why">One of the largest US green importers. Blog has structured tasting notes per origin program.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Cafe Imports</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.cafeimports.com/north-america/offerings">cafeimports.com</a></div>
+        <div class="card-content">Extensive offering catalog with flavor profiles per lot. Descriptions like "Mellow Kahlua, cocoa, fresh coffee cherry with tart acidity and mild sweetness."</div>
+        <div class="card-why">Rich publicly-accessible offering data with per-lot tasting notes.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Royal Coffee</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://royalcoffee.com/offerings">royalcoffee.com</a></div>
+        <div class="card-content">Offerings list and blog. Hosts "The Crown" tasting room and publishes origin-focused articles.</div>
+        <div class="card-why">Blog content discusses scoring methodology and Colombian coffee regions.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Genuine Origin</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.genuineorigin.com">genuineorigin.com</a></div>
+        <div class="card-content">Coffee offerings, origin profiles, and resources. Content may be gated behind login.</div>
+        <div class="card-why">Volcafe subsidiary focused on direct trade transparency.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Olam Specialty &middot; Mercanta &middot; InterAmerican &middot; Sucafina &middot; Volcafe &middot; Sustainable Harvest</h3><span class="badge active">Active</span></div>
+        <div class="card-content">Offering lists and origin info. Most returned 0 flavor-content pages &mdash; likely gated or dynamically loaded.</div>
+        <div class="card-why">Major importers included for completeness; may yield more with authenticated access or PDF parsing.</div>
+      </div>
+    </div>
+
+    <div class="cat-sub">Planned Additions</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Caravela Coffee</h3><span class="badge planned">Planned</span></div>
+        <div class="card-url"><a href="https://caravelacoffee.com">caravelacoffee.com</a></div>
+        <div class="card-content">Colombian exporter with bilingual tasting notes. Bridges the importer/producer gap with origin-side perspective.</div>
+        <div class="card-why">One of few sources offering the same coffees described in both EN and ES.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Algrano</h3><span class="badge planned">Planned</span></div>
+        <div class="card-url"><a href="https://www.algrano.com">algrano.com</a></div>
+        <div class="card-content">Transparent trade platform where producers list coffees directly. Origin-side descriptions with flavor profiles.</div>
+        <div class="card-why">Producer-authored descriptions that bypass the traditional importer rewrite.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Cropster Marketplace</h3><span class="badge planned">Planned</span></div>
+        <div class="card-url">cropster.com</div>
+        <div class="card-content">Cupping data and offering descriptions from the industry's standard roast profiling platform.</div>
+        <div class="card-why">Standardized cupping data that shows how importers score and describe lots.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTITUTIONS -->
+  <div class="cat-section" data-cat="institution">
+    <div class="cat-header">
+      <h2 style="color:var(--institution)">Institutions</h2>
+      <span class="cat-stats">8 web sources + 5 local SCA docs &middot; 1,015 phrases &middot; 2 planned</span>
+    </div>
+    <p class="cat-desc">Coffee institutions codify the vocabulary that roasters and cuppers use. Their standards documents, flavor wheels, and educational content define the official sensory language &mdash; making them essential for understanding where the terminology originates.</p>
+
+    <div class="cat-sub">Active &mdash; Web Sources</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>SCA (Main + Research + 25 Magazine)</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://sca.coffee">sca.coffee</a></div>
+        <div class="card-content">Flavor wheel page, sensory analysis, green coffee standards, cupping form, processing, arabica varieties, water quality, brewing standards. Research portal and 25 Magazine articles.</div>
+        <div class="card-paths">14 paths scraped across 3 subdomains</div>
+        <div class="card-why">The SCA defines the vocabulary. Their standards are the source of truth for specialty coffee sensory language.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>National Coffee Association</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.ncausa.org">ncausa.org</a></div>
+        <div class="card-content">Consumer-facing educational content: roasts guide, brewing methods, seed-to-cup journey, coffee history.</div>
+        <div class="card-why">Shows how institutional language gets simplified for consumers.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Coffee Quality Institute</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.coffeeinstitute.org">coffeeinstitute.org</a></div>
+        <div class="card-content">Q Program, sensory skills, coffee science, research on quality assessment.</div>
+        <div class="card-why">CQI trains Q Graders who use a standardized sensory vocabulary worldwide.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>World Coffee Research</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://worldcoffeeresearch.org">worldcoffeeresearch.org</a></div>
+        <div class="card-content">Sensory lexicon, breeding programs, agronomy, variety catalog. 4 pages collected.</div>
+        <div class="card-why">WCR's Sensory Lexicon is the scientific foundation behind the SCA Flavor Wheel.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Barista Hustle &middot; Perfect Daily Grind</h3><span class="badge active">Active</span></div>
+        <div class="card-content">Blog content, glossaries, coffee science articles, origin reporting, roasting science.</div>
+        <div class="card-why">Industry media that reflects how professionals discuss flavor in practice.</div>
+      </div>
+    </div>
+
+    <div class="cat-sub">Active &mdash; Local SCA Documents</div>
+    <div class="doc-list">
+      <div class="doc-item" data-status="active">
+        <span class="doc-icon included">Included</span>
+        <div class="doc-info">
+          <h4>SCA-103 Descriptive Assessment (2024)</h4>
+          <p>The vocabulary standard. Three lexicons (olfactory, taste, mouthfeel) with intensity ratings. CATA methodology for sensory attributes. 9 chunks.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="active">
+        <span class="doc-icon included">Included</span>
+        <div class="doc-info">
+          <h4>SCA-A System to Assess Coffee Value (2024)</h4>
+          <p>Master framework. Seven cupping sections (fragrance, aroma, flavor, aftertaste, acidity, sweetness, mouthfeel). Sensory science context. 64 chunks.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="active">
+        <span class="doc-icon included">Included</span>
+        <div class="doc-info">
+          <h4>Attributes Framework Whitepaper (2021)</h4>
+          <p>Theoretical grounding. Flavor Wheel as attribute collection. Attribute-pricing correlation. Preference mapping. 7 chunks.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="active">
+        <span class="doc-icon included">Included</span>
+        <div class="doc-info">
+          <h4>CVAS Evolution Report (2022)</h4>
+          <p>Why vocabulary was restructured. User perception survey (1,575 respondents). Which sensory terms caused confusion. 20 chunks.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="active">
+        <span class="doc-icon included">Included</span>
+        <div class="doc-info">
+          <h4>SCA-104 Affective Assessment (2024)</h4>
+          <p>Preference vs. description distinction. Defect categorization. How sensory perception maps to quality scores. 9 chunks.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="skipped">
+        <span class="doc-icon skipped">Skipped</span>
+        <div class="doc-info">
+          <h4>SCA-102 Sample Preparation (2024)</h4>
+          <p>Brewing protocol, equipment specs, water parameters. No sensory vocabulary.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="skipped">
+        <span class="doc-icon skipped">Skipped</span>
+        <div class="doc-info">
+          <h4>SCA-105 Extrinsic Assessment (2025)</h4>
+          <p>Origin, certifications, environmental/social attributes. No flavor language.</p>
+        </div>
+      </div>
+      <div class="doc-item" data-status="skipped">
+        <span class="doc-icon skipped">Skipped</span>
+        <div class="doc-info">
+          <h4>Extrinsic Assessment Beta Proposal (2024)</h4>
+          <p>Research report on non-sensory attribute development. No flavor vocabulary.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cat-sub">Planned Additions</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>SCA Flavor Wheel (Structured Data)</h3><span class="badge planned">Planned</span></div>
+        <div class="card-content">The actual 110 descriptors organized into 9 categories as structured data. Currently the SCA docs describe the framework but don't contain the wheel taxonomy itself.</div>
+        <div class="card-why">The Flavor Wheel is the single most influential document in specialty coffee vocabulary. Adding it as structured data would anchor the institutional lexicon.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Cup of Excellence Judging Protocols</h3><span class="badge planned">Planned</span></div>
+        <div class="card-url"><a href="https://cupofexcellence.org">cupofexcellence.org</a></div>
+        <div class="card-content">Scoring rubrics and evaluation criteria used by international judges in CoE competitions.</div>
+        <div class="card-why">Shows how institutional vocabulary is applied in competitive evaluation contexts.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCERS -->
+  <div class="cat-section" data-cat="producer">
+    <div class="cat-header">
+      <h2 style="color:var(--producer)">Producers</h2>
+      <span class="cat-stats">10 active sources &middot; 59 phrases &middot; 7 planned (HIGH PRIORITY)</span>
+    </div>
+    <p class="cat-desc">The weakest corpus and the most important one. The entire thesis of Lost in Translation is that producer voices get overwritten. With only 59 phrases from 197 scraped rows, this side of the analysis needs the most attention. Planned additions focus here.</p>
+
+    <div class="cat-sub">Active &mdash; Shopify</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Nomad Coffee</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.nomadcoffee.es">nomadcoffee.es</a></div>
+        <div class="card-content">97 coffees via Shopify. Spanish-language specialty roaster based in Barcelona with origin-focused descriptions.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Right Side Coffee</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.rightsidecoffee.com">rightsidecoffee.com</a></div>
+        <div class="card-content">96 coffees via Shopify. Spanish-language specialty roaster.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Pergamino &middot; Amor Perfecto &middot; Quora &middot; Cafe San Alberto &middot; White Rabbit &middot; Sublime</h3><span class="badge active">Active</span></div>
+        <div class="card-content">Spanish-language Shopify roasters. Most returned no Shopify data &mdash; may use different e-commerce platforms or gate products.</div>
+      </div>
+    </div>
+
+    <div class="cat-sub">Active &mdash; HTML</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Cafe de Colombia</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.cafedecolombia.com">cafedecolombia.com</a></div>
+        <div class="card-content">Regional coffee profiles and general cafe content. Scraped /regiones and /cafe paths.</div>
+        <div class="card-why">Official FNC consumer-facing site with regional flavor descriptions.</div>
+      </div>
+      <div class="source-card" data-status="active">
+        <div class="card-top"><h3>Anacafe</h3><span class="badge active">Active</span></div>
+        <div class="card-url"><a href="https://www.anacafe.org">anacafe.org</a></div>
+        <div class="card-content">Guatemala's national coffee association. Scraped /cafes-de-guatemala for regional profiles.</div>
+        <div class="card-why">Origin-side institutional voice describing Guatemalan coffee in Spanish.</div>
+      </div>
+    </div>
+
+    <div class="cat-sub">Planned Additions &mdash; High Priority</div>
+    <div class="source-grid">
+      <div class="source-card" data-status="priority">
+        <div class="card-top"><h3>Cup of Excellence</h3><span class="badge priority">High Priority</span></div>
+        <div class="card-url"><a href="https://cupofexcellence.org">cupofexcellence.org</a></div>
+        <div class="card-content">Auction results with bilingual cupping notes. The same coffee described by both origin-country and consuming-country cuppers in structured scoring formats.</div>
+        <div class="card-why">The single most valuable planned addition. Provides controlled comparisons of the same coffee described in two vocabularies &mdash; the heart of the project's research question.</div>
+      </div>
+      <div class="source-card" data-status="priority">
+        <div class="card-top"><h3>BSCA</h3><span class="badge priority">High Priority</span></div>
+        <div class="card-url"><a href="https://bsca.com.br">bsca.com.br</a></div>
+        <div class="card-content">Brazilian Specialty Coffee Association. Portuguese-language flavor profiles and quality descriptions from the world's largest producer country.</div>
+        <div class="card-why">Adds Portuguese as a third language dimension. Brazil produces ~35% of global coffee.</div>
+      </div>
+      <div class="source-card" data-status="priority">
+        <div class="card-top"><h3>Azahar Coffee</h3><span class="badge priority">High Priority</span></div>
+        <div class="card-url"><a href="https://azaharcoffee.com">azaharcoffee.com</a></div>
+        <div class="card-content">Colombian exporter with Shopify store. Tasting notes from the producer side in both English and Spanish.</div>
+        <div class="card-why">Shopify API compatible &mdash; can use the existing scraping infrastructure directly.</div>
+      </div>
+      <div class="source-card" data-status="priority">
+        <div class="card-top"><h3>FNC (Federaci&oacute;n Nacional de Cafeteros)</h3><span class="badge priority">High Priority</span></div>
+        <div class="card-url"><a href="https://federaciondecafeteros.org">federaciondecafeteros.org</a></div>
+        <div class="card-content">Colombia's national coffee federation. Regional profiles, quality standards, and producer-oriented content in Spanish.</div>
+        <div class="card-why">The institutional voice of Colombian producers &mdash; how the origin country's own federation describes its coffee.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Caravela Coffee</h3><span class="badge planned">Planned</span></div>
+        <div class="card-url"><a href="https://caravelacoffee.com">caravelacoffee.com</a></div>
+        <div class="card-content">Origin-side exporter with Spanish descriptions. Bilingual content bridges the producer/importer boundary.</div>
+        <div class="card-why">Dual-language source that shows how the same exporter translates flavor language for different markets.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Ethiopian Coffee Exporters (ECTA)</h3><span class="badge planned">Planned</span></div>
+        <div class="card-content">Ethiopian Coffee and Tea Authority. Non-Latin American producer voice describing coffee in English from the origin perspective.</div>
+        <div class="card-why">Expands producer corpus beyond Latin America. Ethiopia is coffee's birthplace with distinct descriptive traditions.</div>
+      </div>
+      <div class="source-card" data-status="planned">
+        <div class="card-top"><h3>Kenyan Coffee Boards</h3><span class="badge planned">Planned</span></div>
+        <div class="card-content">Kenya's coffee auction system and board descriptions. Origin-perspective English descriptions using a distinct East African vocabulary.</div>
+        <div class="card-why">Kenyan auction language (AA, AB grading + tasting notes) is a distinct third vocabulary tradition.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="explorer-footer">
+  <div class="footer-note">
+    <strong>Adding a source:</strong> To activate a planned source, add it to the corresponding list in <code>scrape.py</code> (<code>ROASTERS</code>, <code>IMPORTERS</code>, <code>INSTITUTIONS</code>, <code>ES_SHOPIFY_ROASTERS</code>, or <code>PRODUCERS_HTML</code>) and re-run the pipeline with <code>python scrape.py</code>. The blog HTML will be automatically patched with the new data.
+  </div>
+</div>
+
+<div class="site-footer">
+  <span>Loom Coffee Co. &middot; Greensboro, NC</span>
+  <span>Source Explorer &middot; Pipeline Documentation</span>
+</div>
+
+<script>
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    document.querySelectorAll('.filter-btn').forEach(function(b){b.classList.remove('on')});
+    btn.classList.add('on');
+    var f=btn.dataset.filter;
+    document.querySelectorAll('.source-card, .doc-item, .roaster-chips').forEach(function(el){
+      var s=el.dataset.status||'active';
+      if(f==='all') el.style.display='';
+      else if(f==='active') el.style.display=(s==='active'||s==='skipped')?'':'none';
+      else if(f==='planned') el.style.display=(s==='planned'||s==='priority')?'':'none';
+      else if(f==='priority') el.style.display=(s==='priority')?'':'none';
+    });
+    // Show/hide sub-headers based on visible children
+    document.querySelectorAll('.cat-sub').forEach(function(sub){
+      var next=sub.nextElementSibling;
+      if(!next)return;
+      var visible=next.querySelectorAll('.source-card:not([style*="display: none"]), .doc-item:not([style*="display: none"]), .roaster-chips:not([style*="display: none"])');
+      sub.style.display=visible.length?'':'none';
+    });
+  });
+});
+</script>
+</body></html>

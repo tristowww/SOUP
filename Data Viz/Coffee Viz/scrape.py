@@ -105,12 +105,19 @@ PRODUCERS_HTML = [
 
 # Green coffee importers — offering lists, origin profiles, tasting notes
 IMPORTERS = [
+    # Ally Coffee: main site + allyopen.com blog with tasting notes
     ("Ally Coffee",       "https://www.allycoffee.com",
-     ["/offerings", "/origins", "/about-coffee"]),
+     ["/our-coffees/", "/about-us/"]),
+    ("Ally Coffee Blog",  "https://allyopen.com",
+     ["/blogs/get-inspired/core-coffees-from-ally-2021",
+      "/blogs/get-inspired/understanding-the-brazilian-coffee-grading-system",
+      "/blogs/get-inspired/understanding-colombias-coffee-harvesting-seasons",
+      "/blogs/get-inspired"]),
     ("Cafe Imports",      "https://www.cafeimports.com",
-     ["/offerings", "/origins", "/blog"]),
+     ["/north-america/offerings", "/north-america/origins",
+      "/north-america/blog", "/north-america/"]),
     ("Royal Coffee",      "https://royalcoffee.com",
-     ["/offerings", "/the-crown"]),
+     ["/offerings", "/blog"]),
     ("Genuine Origin",    "https://www.genuineorigin.com",
      ["/coffee-offerings", "/origins", "/resources"]),
     ("Olam Specialty",    "https://www.olamspecialtycoffee.com",
@@ -121,6 +128,10 @@ IMPORTERS = [
      ["/offerings", "/origins"]),
     ("Sucafina Specialty","https://specialty.sucafina.com",
      ["/coffees", "/origins"]),
+    ("Volcafe Specialty", "https://www.volcafespecialty.com",
+     ["/coffees", "/origins", "/about"]),
+    ("Sustainable Harvest","https://www.sustainableharvest.com",
+     ["/coffees", "/origins", "/our-approach"]),
 ]
 
 # Coffee institutions — educational content, research, cupping standards
@@ -318,6 +329,56 @@ def scrape_institutions():
     return rows
 
 
+# Local SCA documents directory (markdown files checked into the repo)
+SCA_DOCS_DIR = Path(__file__).parent / "SCA Docs"
+
+# SCA docs to skip: non-sensory/procedural content with no flavor vocabulary
+SCA_DOCS_SKIP = {
+    "CLAUDE.md",                                        # navigation guide
+    "SCA-102-Sample-Preparation-2024.md",               # brewing/equipment protocol
+    "SCA-105-Extrinsic-Assessment-2025.md",             # origin/certification attributes
+    "SCA-Extrinsic-Assessment-Report-Beta-Proposal-2024.md",  # environmental/social attributes
+}
+
+def scrape_sca_docs():
+    """Read local SCA markdown documents as institution source data."""
+    log.info("STEP 1e: READING LOCAL SCA DOCUMENTS")
+    rows = []
+    if not SCA_DOCS_DIR.is_dir():
+        log.info(f"  SCA Docs directory not found at {SCA_DOCS_DIR}")
+        return rows
+    for md_path in sorted(SCA_DOCS_DIR.glob("*.md")):
+        if md_path.name in SCA_DOCS_SKIP:
+            log.info(f"  {md_path.name}: skipped (non-sensory)")
+            continue
+        text = md_path.read_text(encoding="utf-8", errors="replace")
+        # Strip markdown frontmatter if present
+        text = re.sub(r'^---.*?---\s*', '', text, count=1, flags=re.DOTALL)
+        # Strip markdown heading markers, links, images for cleaner extraction
+        text = re.sub(r'#+\s*', '', text)
+        text = re.sub(r'!\[.*?\]\(.*?\)', '', text)
+        text = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', text)
+        text = text.strip()
+        if len(text) < 100:
+            log.info(f"  {md_path.name}: too short, skipping")
+            continue
+        # Split into chunks of ~3000 chars to get multiple rows for better TF-IDF
+        name = md_path.stem.replace("-", " ").replace("_", " ")
+        chunks = [text[i:i+3000] for i in range(0, len(text), 2500)]  # overlapping chunks
+        for ci, chunk in enumerate(chunks):
+            if len(chunk) < 80:
+                continue
+            rows.append({
+                "source": "SCA Docs", "source_type": "institution",
+                "language": "en", "coffee_name": f"SCA: {name}",
+                "description": chunk, "body_html": "",
+                "url": f"local://{md_path.name}",
+            })
+        log.info(f"  {md_path.name}: {len(chunks)} chunks")
+    log.info(f"  {len(rows)} SCA document rows collected")
+    return rows
+
+
 # ═══════════════════════════════════════════════════════════
 #  STEP 2: TASTING NOTE PHRASE EXTRACTION
 # ═══════════════════════════════════════════════════════════
@@ -380,6 +441,73 @@ def extract_notes_en(row):
                 notes.append(s)
     seen = set()
     return [n for n in notes if not (n.lower() in seen or seen.add(n.lower()))]
+
+# Broader vocabulary for institutional/importer content (definitional prose, not product listings)
+SENSORY_SEEDS = FLAVOR_SEEDS | {
+    "acidity","body","mouthfeel","aroma","fragrance","aftertaste","finish",
+    "intensity","descriptor","attribute","defect","fermentation",
+    "washed","natural","anaerobic","processing","cupping","roast",
+    "olfactory","gustatory","tactile","astringent","bitter","sour","salty",
+    "winey","woody","papery","musty","grassy","herbal","cereal","grain",
+    "dried fruit","stone fruit","dark chocolate","milk chocolate",
+    "brown sugar","maple","molasses","butter","cream","tobacco",
+    "pepper","clove","cardamom","bergamot","lime","lemon","grapefruit",
+    "tangerine","orange","pineapple","melon","grape","fig","date","raisin",
+    "blackberry","strawberry","cranberry","pomegranate",
+}
+SENSORY_SIGNALS = NOTE_SIGNALS | {
+    "sensory","descriptor","attribute","quality","intensity","perception",
+    "sweetness","bitterness","sourness","acidity","body","mouthfeel",
+    "olfactory","gustatory","tactile","assessment","evaluation","cupping",
+    "fragrance","aftertaste","defect","fermented","processing","roast",
+    "category","spectrum","scale","lexicon","wheel","protocol",
+}
+
+def has_sensory_words(text, threshold=1):
+    """Broader flavor/sensory check for institutional content."""
+    low = text.lower()
+    return sum(1 for t in SENSORY_SEEDS if re.search(r'\b'+re.escape(t)+r'\b', low)) >= threshold
+
+
+def extract_notes_broad(row):
+    """
+    Broader extraction for institutional/importer content.
+    Captures definitional prose, vocabulary lists, sensory descriptions,
+    and any sentence mentioning sensory attributes — not just product-style
+    comma-separated tasting notes.
+    """
+    desc = row.get("description", "")
+    notes = []
+
+    # 1. First try the standard product-style extraction
+    notes.extend(extract_notes_en(row))
+
+    # 2. Sentences with any sensory signal word + at least 1 flavor/sensory term
+    for sentence in re.split(r'[.;!\n]', desc):
+        s = sentence.strip()
+        if len(s) < 15 or len(s) > 400:
+            continue
+        sl = s.lower()
+        if any(re.search(r'\b'+re.escape(w)+r'\b', sl) for w in SENSORY_SIGNALS):
+            if has_sensory_words(s, threshold=1):
+                notes.append(s)
+
+    # 3. Sentences with 2+ sensory seed words even without signal words
+    for sentence in re.split(r'[.;!\n]', desc):
+        s = sentence.strip()
+        if 15 < len(s) < 400 and has_sensory_words(s, threshold=2):
+            notes.append(s)
+
+    # 4. Bullet/list items containing flavor terms (common in standards docs)
+    for line in desc.split('\n'):
+        line = line.strip().lstrip('-*•–— ')
+        if 10 < len(line) < 200 and has_sensory_words(line, threshold=1):
+            notes.append(line)
+
+    # Deduplicate
+    seen = set()
+    return [n for n in notes if not (n.lower() in seen or seen.add(n.lower()))]
+
 
 def extract_notes_es(row):
     desc = row.get("description", "")
@@ -874,14 +1002,16 @@ def main():
     es_rows = scrape_es()
     importer_rows = scrape_importers()
     institution_rows = scrape_institutions()
+    sca_doc_rows = scrape_sca_docs()
+    institution_rows = institution_rows + sca_doc_rows
     all_rows = en_rows + es_rows + importer_rows + institution_rows
     for r in all_rows:
         r["scraped_at"] = datetime.now().isoformat()
         r.setdefault("source_type", "roaster")
     pd.DataFrame(all_rows).to_csv(DATA / "all_coffees.csv", index=False)
     log.info(f"\n  {len(en_rows)} roaster + {len(importer_rows)} importer + "
-             f"{len(institution_rows)} institution + {len(es_rows)} ES = "
-             f"{len(all_rows)} total descriptions -> data/all_coffees.csv")
+             f"{len(institution_rows)} institution ({len(sca_doc_rows)} from local SCA docs) + "
+             f"{len(es_rows)} ES = {len(all_rows)} total descriptions -> data/all_coffees.csv")
 
     # Step 2: Extract tasting note phrases (tracked by source type)
     log.info("\nSTEP 2: EXTRACTING TASTING NOTE PHRASES")
@@ -894,11 +1024,11 @@ def main():
         en_notes.extend(extracted)
         notes_by_type["roaster"].extend(extracted)
     for row in importer_rows:
-        extracted = extract_notes_en(row)
+        extracted = extract_notes_broad(row)
         en_notes.extend(extracted)
         notes_by_type["importer"].extend(extracted)
     for row in institution_rows:
-        extracted = extract_notes_en(row)
+        extracted = extract_notes_broad(row)
         en_notes.extend(extracted)
         notes_by_type["institution"].extend(extracted)
     for row in es_rows:
