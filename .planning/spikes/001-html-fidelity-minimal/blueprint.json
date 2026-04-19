@@ -1,0 +1,16 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "preferredVersions": { "php": "8.3", "wp": "latest" },
+  "login": true,
+  "steps": [
+    {
+      "step": "writeFile",
+      "path": "/wordpress/wp-content/mu-plugins/spike-auth-fix.php",
+      "data": "<?php\n// Force HTTP_AUTHORIZATION into PHP_AUTH_USER/PW (WASM SAPI doesn't auto-populate)\nif (!empty($_SERVER['HTTP_AUTHORIZATION']) && empty($_SERVER['PHP_AUTH_USER'])) {\n    if (preg_match('/Basic\\s+(.*)$/i', $_SERVER['HTTP_AUTHORIZATION'], $m)) {\n        $creds = explode(':', base64_decode($m[1]), 2);\n        $_SERVER['PHP_AUTH_USER'] = $creds[0] ?? '';\n        $_SERVER['PHP_AUTH_PW']   = $creds[1] ?? '';\n    }\n}\nadd_filter('wp_is_application_passwords_available', '__return_true');\nadd_filter('wp_is_application_passwords_available_for_user', '__return_true');\n"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; $u = get_user_by('login','admin'); if (!$u) { echo 'ERR: no admin user\\n'; exit; } list($pw) = WP_Application_Passwords::create_new_application_password($u->ID, ['name' => 'spike-001']); file_put_contents('/wordpress/wp-content/spike-app-password.txt', $pw); echo 'APP_PASS_WRITTEN len=' . strlen($pw) . PHP_EOL;"
+    }
+  ]
+}
