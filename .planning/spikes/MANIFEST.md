@@ -9,5 +9,5 @@ Validate LearnDash (self-hosted WordPress + LearnDash LMS plugin) as the backend
 | # | Name | Validates | Verdict | Tags |
 |---|------|-----------|---------|------|
 | 001 | html-fidelity-minimal | WP REST API accepts raw HTML with `<style>` and renders faithfully in the student view, unsanitized | PARTIAL ⚠ | learndash, wordpress, rest-api, html, kill-switch |
-| 002 | course-hierarchy-api | Course → Lesson → Topic hierarchy is creatable via `ldlms/v2` REST endpoints with correct parent linkage | PENDING | learndash, rest-api, hierarchy |
-| 003 | bulk-push-auth-perf | Batch-pushing 10 markdown-authored lessons via Application Passwords lands cleanly within rate limits at usable throughput | PENDING | learndash, auth, rate-limits, performance |
+| 002 | course-hierarchy-api | Course → Lesson → Topic hierarchy is creatable via `ldlms/v2` REST endpoints with correct parent linkage | DEFERRED (needs LearnDash license) | learndash, rest-api, hierarchy |
+| 003 | bulk-push-perf-lite | Vanilla WP absorbs 10 sequential + 10 concurrent lesson pushes without auth degradation or rate-limiting | PARTIAL ⚠ | wordpress, rest-api, performance, auth, bulk |
