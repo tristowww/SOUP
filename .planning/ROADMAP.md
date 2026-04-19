@@ -35,7 +35,7 @@ When the shape of an unstarted phase changes materially, update it here rather t
 ### Gate before closing milestone 1.0
 
 - Spike 002 (course/lesson/topic hierarchy API with real LearnDash) must have been run and passed — this remains deferred pending LearnDash license purchase, and should be folded into Phase 1's plan rather than kept as a standalone spike.
-- Production LearnDash host chosen (InstaWP paid vs. managed WP host vs. Local by Flywheel) — decision expected during Phase 1 planning.
+- **Host:** WordPress.com Business plan (~$25/mo annual) + LearnDash license (~$199/yr). Decided 2026-04-18 — InstaWP and Local by Flywheel rejected as unnecessary intermediate layers. No local staging; draft-review workflow on production is sufficient.
 - Mu-plugin (`remove_filter('the_content', 'wpautop')` + `wptexturize` on `sfwd-lessons` post type) shipped and verified on the production host.
 
 ---
@@ -129,3 +129,4 @@ Courses 8-10: Science of Getting Hired, Choose Wisely, Hiring Insider's Toolkit.
 ## Change log
 
 - **2026-04-18** — Roadmap created. Milestone 1.0 defined with Phase 1 (pipeline) + Phase 2 (Course 1 import) based on spike 001 + spike 003-lite findings. Platform flipped from Kajabi to LearnDash.
+- **2026-04-18** — Host decided: WordPress.com Business plan. InstaWP and Local by Flywheel rejected as unnecessary intermediate layers. Draft-review on production replaces local staging.
